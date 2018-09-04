@@ -1,0 +1,13 @@
+[Desktop Entry]
+Type=Application
+TryExec=qmlkonsole
+Exec=qmlkonsole
+Icon=utilities-terminal
+Terminal=false
+Categories=Qt;KDE;System;TerminalEmulator;
+Actions=NewWindow;NewTab;
+StartupNotify=true
+X-KDE-AuthorizeAction=shell_access
+
+Name=Terminal
+GenericName=Terminal
