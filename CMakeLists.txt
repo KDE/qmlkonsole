@@ -10,9 +10,6 @@ if("${CMAKE_SOURCE_DIR}" STREQUAL "${CMAKE_BINARY_DIR}")
    message(FATAL_ERROR "This application requires an out of source build. Please create a separate build directory.")
 endif()
 
-
-# Make CPack available to easy generate binary packages
-include(CPack)
 include(FeatureSummary)
 
 ################# set KDE specific information #################
@@ -29,11 +26,10 @@ include(KDECMakeSettings)
 include(ECMPoQmTools)
 include(KDECompilerSettings NO_POLICY_SCOPE)
 
-set(KF5_VERSION "5.22.0")
+################# Find dependencies #################
 
 find_package(Qt5 ${QT_MIN_VERSION} REQUIRED NO_MODULE COMPONENTS Core Quick Test Gui Svg QuickControls2)
-
-find_package(KF5Kirigami2 ${KF5_DEP_VERSION} "5.22.0")
+find_package(KF5Kirigami2 ${KF5_MIN_VERSION})
 
 ################# Enable C++11 features for clang and gcc #################
 
@@ -41,16 +37,10 @@ if(UNIX)
    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -std=c++0x")
 endif()
 
-################# now find all used packages #################
-
-set (QT_MIN_VERSION "5.6.0")
-
-find_package(PkgConfig)
-#########################################################################
-
+################# build and install #################
 add_subdirectory(src)
 
-install(PROGRAMS org.kde.qmlkonsole.desktop DESTINATION ${KDE_INSTALL_APPDIR})
+install(PROGRAMS org.kde.mobile.qmlkonsole.desktop DESTINATION ${KDE_INSTALL_APPDIR})
+install(FILES org.kde.mobile.qmlkonsole.appdata.xml DESTINATION ${KDE_INSTALL_METAINFODIR})
 
 feature_summary(WHAT ALL INCLUDE_QUIET_PACKAGES FATAL_ON_MISSING_REQUIRED_PACKAGES)
-
