@@ -1,16 +1,17 @@
-import QtQuick 2.0
+import QtQuick 2.7
 import QtQuick.Layouts 1.1
-import QMLTermWidget 1.0
 import QtQuick.Controls 1.2
+
+import QMLTermWidget 1.0
 import org.kde.kirigami 2.3 as Kirigami
 
 Kirigami.ApplicationWindow {
-    Action{
+    Kirigami.Action {
         onTriggered: terminal.copyClipboard();
         shortcut: "Ctrl+Shift+C"
     }
 
-    Action{
+    Kirigami.Action {
         onTriggered: terminal.pasteClipboard();
         shortcut: "Ctrl+Shift+V"
     }
@@ -28,6 +29,7 @@ Kirigami.ApplicationWindow {
             session: QMLTermSession{
                 id: mainsession
                 initialWorkingDirectory: "$HOME"
+                onFinished: Qt.quit()
                 onMatchFound: {
                     console.log("found at: %1 %2 %3 %4".arg(startColumn).arg(startLine).arg(endColumn).arg(endLine));
                 }
