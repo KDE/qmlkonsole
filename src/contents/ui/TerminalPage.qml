@@ -11,20 +11,41 @@ Kirigami.Page {
     bottomPadding: 0
     topPadding: 0
 
+    title: mainsession.title
+
     Kirigami.Theme.colorSet: Kirigami.Theme.Complementary
 
     background: Rectangle {
         color: Kirigami.Theme.backgroundColor
     }
 
-    Kirigami.Action {
-        onTriggered: terminal.copyClipboard()
-        shortcut: "Ctrl+Shift+C"
-    }
-
-    Kirigami.Action {
-        onTriggered: terminal.pasteClipboard()
-        shortcut: "Ctrl+Shift+V"
+    actions {
+        main: Kirigami.Action {
+            text: "New session"
+            icon.name: "list-add-symbolic"
+            shortcut: "Ctrl+Shift+T"
+            onTriggered: pageStack.push(terminalPage)
+        }
+        contextualActions: [
+            Kirigami.Action {
+                icon.name: "edit-copy-symbolic"
+                text: "Copy"
+                onTriggered: terminal.copyClipboard()
+                shortcut: "Ctrl+Shift+C"
+            },
+            Kirigami.Action {
+                icon.name: "edit-paste-symbolic"
+                text: "Paste"
+                onTriggered: terminal.pasteClipboard()
+                shortcut: "Ctrl+Shift+V"
+            },
+            Kirigami.Action {
+                icon.name: "tab-close"
+                text: "Close Tab"
+                onTriggered: closeTab()
+                shortcut: "Ctrl+Shift+W"
+            }
+        ]
     }
 
     ColumnLayout {
@@ -44,7 +65,7 @@ Kirigami.Page {
             session: QMLTermSession {
                 id: mainsession
                 initialWorkingDirectory: "$HOME"
-                onFinished: Qt.quit()
+                onFinished: closeTab()
                 onMatchFound: {
                     console.log("found at: %1 %2 %3 %4".arg(startColumn).arg(
                                     startLine).arg(endColumn).arg(endLine))
@@ -85,55 +106,56 @@ Kirigami.Page {
                 }
             }
         }
+    }
 
-        RowLayout {
-            focus: false
-            Controls.ToolButton {
-                Kirigami.Theme.inherit: true
-                Layout.maximumWidth: height
-                text: "Tab"
-                onClicked: simulateKeyPress(Qt.Key_Tab, 0, true, 0, "")
-            }
-            Controls.ToolButton {
-                Kirigami.Theme.inherit: true
-                Layout.maximumWidth: height
-                text: "←"
-                onClicked: simulateKeyPress(Qt.Key_Left, 0, true, 0, "")
-            }
-            Controls.ToolButton {
-                Kirigami.Theme.inherit: true
-                Layout.maximumWidth: height
-                text: "↑"
-                onClicked: simulateKeyPress(Qt.Key_Up, 0, true, 0, "")
-            }
-            Controls.ToolButton {
-                Kirigami.Theme.inherit: true
-                Layout.maximumWidth: height
-                text: "→"
-                onClicked: simulateKeyPress(Qt.Key_Right, 0, true, 0, "")
-            }
-            Controls.ToolButton {
-                Kirigami.Theme.inherit: true
-                Layout.maximumWidth: height
-                text: "↓"
-                onClicked: simulateKeyPress(Qt.Key_Down, 0, true, 0, "")
-            }
-            Controls.ToolButton {
-                Kirigami.Theme.inherit: true
-                Layout.maximumWidth: height
-                text: "|"
-                onClicked: simulateKeyPress(Qt.Key_Bar, 0, true, 0, "|")
-            }
-            Controls.ToolButton {
-                Kirigami.Theme.inherit: true
-                Layout.maximumWidth: height
-                text: "~"
-                onClicked: simulateKeyPress(Qt.Key_AsciiTilde, 0, true, 0, "~")
-            }
+    Item {
+        Layout.minimumHeight: Qt.inputMethod.keyboardRectangle.height
+        Layout.fillWidth: true
+    }
+
+    footer: RowLayout {
+        focus: false
+        Controls.ToolButton {
+            Kirigami.Theme.inherit: true
+            Layout.maximumWidth: height
+            text: "Tab"
+            onClicked: simulateKeyPress(Qt.Key_Tab, 0, true, 0, "")
         }
-        Item {
-            Layout.minimumHeight: Qt.inputMethod.keyboardRectangle.height
-            Layout.fillWidth: true
+        Controls.ToolButton {
+            Kirigami.Theme.inherit: true
+            Layout.maximumWidth: height
+            text: "←"
+            onClicked: simulateKeyPress(Qt.Key_Left, 0, true, 0, "")
+        }
+        Controls.ToolButton {
+            Kirigami.Theme.inherit: true
+            Layout.maximumWidth: height
+            text: "↑"
+            onClicked: simulateKeyPress(Qt.Key_Up, 0, true, 0, "")
+        }
+        Controls.ToolButton {
+            Kirigami.Theme.inherit: true
+            Layout.maximumWidth: height
+            text: "→"
+            onClicked: simulateKeyPress(Qt.Key_Right, 0, true, 0, "")
+        }
+        Controls.ToolButton {
+            Kirigami.Theme.inherit: true
+            Layout.maximumWidth: height
+            text: "↓"
+            onClicked: simulateKeyPress(Qt.Key_Down, 0, true, 0, "")
+        }
+        Controls.ToolButton {
+            Kirigami.Theme.inherit: true
+            Layout.maximumWidth: height
+            text: "|"
+            onClicked: simulateKeyPress(Qt.Key_Bar, 0, true, 0, "|")
+        }
+        Controls.ToolButton {
+            Kirigami.Theme.inherit: true
+            Layout.maximumWidth: height
+            text: "~"
+            onClicked: simulateKeyPress(Qt.Key_AsciiTilde, 0, true, 0, "~")
         }
     }
 
@@ -144,7 +166,15 @@ Kirigami.Page {
         terminal.forceActiveFocus()
     }
 
+    function closeTab() {
+        pageStack.pop()
+
+        if (pageStack.depth < 1)
+            pageStack.push(terminalPage)
+    }
+
     Component.onCompleted: {
         mainsession.startShellProgram()
+        terminal.forceActiveFocus()
     }
 }
