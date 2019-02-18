@@ -1,0 +1,150 @@
+import QtQuick 2.7
+import QtQuick.Layouts 1.3
+import QtQuick.Controls 2.4 as Controls
+
+import QMLTermWidget 1.0
+import org.kde.kirigami 2.3 as Kirigami
+
+Kirigami.Page {
+    leftPadding: 0
+    rightPadding: 0
+    bottomPadding: 0
+    topPadding: 0
+
+    Kirigami.Theme.colorSet: Kirigami.Theme.Complementary
+
+    background: Rectangle {
+        color: Kirigami.Theme.backgroundColor
+    }
+
+    Kirigami.Action {
+        onTriggered: terminal.copyClipboard()
+        shortcut: "Ctrl+Shift+C"
+    }
+
+    Kirigami.Action {
+        onTriggered: terminal.pasteClipboard()
+        shortcut: "Ctrl+Shift+V"
+    }
+
+    ColumnLayout {
+        anchors.fill: parent
+        QMLTermWidget {
+            id: terminal
+
+            Layout.fillWidth: true
+            Layout.fillHeight: true
+
+            font.family: "Monospace"
+            colorScheme: "DarkPastels"
+
+            focus: true
+            smooth: true
+
+            session: QMLTermSession {
+                id: mainsession
+                initialWorkingDirectory: "$HOME"
+                onFinished: Qt.quit()
+                onMatchFound: {
+                    console.log("found at: %1 %2 %3 %4".arg(startColumn).arg(
+                                    startLine).arg(endColumn).arg(endLine))
+                }
+                onNoMatchFound: {
+                    console.log("not found")
+                }
+            }
+
+            onTerminalUsesMouseChanged: console.log(terminalUsesMouse)
+            onTerminalSizeChanged: {
+                console.log(terminalSize)
+                terminal.forceActiveFocus()
+            }
+
+            QMLTermScrollbar {
+                terminal: terminal
+                width: Kirigami.Units.gridUnit
+                Rectangle {
+                    opacity: 0.2
+                    anchors.margins: 5
+                    radius: width * 0.5
+                    anchors.fill: parent
+                }
+            }
+
+            MouseArea {
+                anchors.fill: parent
+                property real oldY
+                onPressed: oldY = mouse.y
+                onPositionChanged: {
+                    terminal.simulateWheel(0, 0, 0, 0, Qt.point(0, (mouse.y - oldY) * 2))
+                    oldY = mouse.y
+                }
+                onClicked: {
+                    terminal.forceActiveFocus()
+                    Qt.inputMethod.show()
+                }
+            }
+        }
+
+        RowLayout {
+            focus: false
+            Controls.ToolButton {
+                Kirigami.Theme.inherit: true
+                Layout.maximumWidth: height
+                text: "Tab"
+                onClicked: simulateKeyPress(Qt.Key_Tab, 0, true, 0, "")
+            }
+            Controls.ToolButton {
+                Kirigami.Theme.inherit: true
+                Layout.maximumWidth: height
+                text: "←"
+                onClicked: simulateKeyPress(Qt.Key_Left, 0, true, 0, "")
+            }
+            Controls.ToolButton {
+                Kirigami.Theme.inherit: true
+                Layout.maximumWidth: height
+                text: "↑"
+                onClicked: simulateKeyPress(Qt.Key_Up, 0, true, 0, "")
+            }
+            Controls.ToolButton {
+                Kirigami.Theme.inherit: true
+                Layout.maximumWidth: height
+                text: "→"
+                onClicked: simulateKeyPress(Qt.Key_Right, 0, true, 0, "")
+            }
+            Controls.ToolButton {
+                Kirigami.Theme.inherit: true
+                Layout.maximumWidth: height
+                text: "↓"
+                onClicked: simulateKeyPress(Qt.Key_Down, 0, true, 0, "")
+            }
+            Controls.ToolButton {
+                Kirigami.Theme.inherit: true
+                Layout.maximumWidth: height
+                text: "|"
+                onClicked: simulateKeyPress(Qt.Key_Bar, 0, true, 0, "|")
+            }
+            Controls.ToolButton {
+                Kirigami.Theme.inherit: true
+                Layout.maximumWidth: height
+                text: "~"
+                onClicked: simulateKeyPress(Qt.Key_AsciiTilde, 0, true, 0, "~")
+            }
+        }
+        Item {
+            Layout.minimumHeight: Qt.inputMethod.keyboardRectangle.height
+            Layout.fillWidth: true
+        }
+    }
+
+    // Wrapper function that allows us to force active focus to recieve
+    // non-simulated key events
+    function simulateKeyPress(key, modifiers, pressed, nativeScanCode, text) {
+        terminal.simulateKeyPress(key, modifiers, pressed, nativeScanCode, text)
+        terminal.forceActiveFocus()
+    }
+
+    Component.onCompleted: {
+        mainsession.startShellProgram()
+    }
+}
