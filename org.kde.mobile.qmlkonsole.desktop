@@ -5,7 +5,6 @@ Exec=qmlkonsole
 Icon=utilities-terminal
 Terminal=false
 Categories=Qt;KDE;System;TerminalEmulator;
-Actions=NewWindow;NewTab;
 StartupNotify=true
 X-KDE-AuthorizeAction=shell_access
 
