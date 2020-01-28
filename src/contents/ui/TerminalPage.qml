@@ -58,8 +58,8 @@ Kirigami.Page {
             Layout.fillWidth: true
             Layout.fillHeight: true
             font.family: "Monospace"
-            font.pointSize: 7
             colorScheme: settings.value("colorScheme", "cool-retro-term")
+            font.pixelSize: 12
 
             function pressKey(key, modifiers, pressed, nativeScanCode, text) {
                 terminal.simulateKeyPress(key, modifiers, pressed, nativeScanCode, text)
