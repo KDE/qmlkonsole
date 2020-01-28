@@ -68,6 +68,12 @@ Kirigami.ApplicationWindow {
         }
         RowLayout {
             ToolButton {
+                text: "Cancel"
+                onClicked: {
+                    terminal.simulateKeyPress(Qt.Key_C, Qt.ControlModifier, true, 0, "")
+                }
+            }
+            ToolButton {
                 Layout.maximumWidth: height
                 text: "Tab"
                 onClicked: terminal.simulateKeyPress(Qt.Key_Tab, 0, true, 0, "")
