@@ -1,6 +1,6 @@
 import QtQuick 2.7
 import QtQuick.Layouts 1.1
-import QtQuick.Controls 1.2
+import QtQuick.Controls 2.2
 
 import QMLTermWidget 1.0
 import org.kde.kirigami 2.3 as Kirigami
@@ -25,6 +25,11 @@ Kirigami.ApplicationWindow {
             font.family: "Monospace"
             font.pointSize: 7
             colorScheme: "cool-retro-term"
+
+            function pressKey(key, modifiers, pressed, nativeScanCode, text) {
+                terminal.simulateKeyPress(key, modifiers, pressed, nativeScanCode, text)
+                terminal.forceActiveFocus()
+            }
 
             session: QMLTermSession{
                 id: mainsession
@@ -70,43 +75,43 @@ Kirigami.ApplicationWindow {
             ToolButton {
                 text: "Cancel"
                 onClicked: {
-                    terminal.simulateKeyPress(Qt.Key_C, Qt.ControlModifier, true, 0, "")
+                    terminal.pressKey(Qt.Key_C, Qt.ControlModifier, true)
                 }
             }
             ToolButton {
                 Layout.maximumWidth: height
                 text: "Tab"
-                onClicked: terminal.simulateKeyPress(Qt.Key_Tab, 0, true, 0, "")
+                onClicked: terminal.pressKey(Qt.Key_Tab, 0, true, 0, "")
             }
             ToolButton {
                 Layout.maximumWidth: height
                 text: "←"
-                onClicked: terminal.simulateKeyPress(Qt.Key_Left, 0, true, 0, "")
+                onClicked: terminal.pressKey(Qt.Key_Left, 0, true, 0, "")
             }
             ToolButton {
                 Layout.maximumWidth: height
                 text: "↑"
-                onClicked: terminal.simulateKeyPress(Qt.Key_Up, 0, true, 0, "")
+                onClicked: terminal.pressKey(Qt.Key_Up, 0, true, 0, "")
             }
             ToolButton {
                 Layout.maximumWidth: height
                 text: "→"
-                onClicked: terminal.simulateKeyPress(Qt.Key_Right, 0, true, 0, "")
+                onClicked: terminal.pressKey(Qt.Key_Right, 0, true, 0, "")
             }
             ToolButton {
                 Layout.maximumWidth: height
                 text: "↓"
-                onClicked: terminal.simulateKeyPress(Qt.Key_Down, 0, true, 0, "")
+                onClicked: terminal.pressKey(Qt.Key_Down, 0, true,0, "")
             }
             ToolButton {
                 Layout.maximumWidth: height
                 text: "|"
-                onClicked: terminal.simulateKeyPress(Qt.Key_Bar, 0, true, 0, "|")
+                onClicked: terminal.pressKey(Qt.Key_Bar, 0, true, 0, "|")
             }
             ToolButton {
                 Layout.maximumWidth: height
                 text: "~"
-                onClicked: terminal.simulateKeyPress(Qt.Key_AsciiTilde, 0, true, 0, "~")
+                onClicked: terminal.pressKey(Qt.Key_AsciiTilde, 0, true, 0, "~")
             }
         }
         Item {
