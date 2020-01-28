@@ -41,6 +41,8 @@ Kirigami.ApplicationWindow {
                 implicitWidth: parent.width
                 text: i18n("selection mode")
 
+                onVisibleChanged: terminal.forceActiveFocus()
+
                 type: Kirigami.MessageType.Information
 
                 actions: [
@@ -107,6 +109,7 @@ Kirigami.ApplicationWindow {
                     property real oldY
                     onPressed: oldY = mouse.y
                     onClicked: {
+                        terminal.forceActiveFocus();
                         Qt.inputMethod.show();
                     }
                 }
