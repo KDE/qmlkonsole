@@ -153,7 +153,7 @@ Kirigami.Page {
             ToolButton {
                 Layout.maximumWidth: height
                 text: "↓"
-                onClicked: terminal.pressKey(Qt.Key_Down, 0, true,0, "")
+                onClicked: terminal.pressKey(Qt.Key_Down, 0, true, 0, "")
             }
             ToolButton {
                 Layout.maximumWidth: height

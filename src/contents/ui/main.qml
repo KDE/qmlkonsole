@@ -14,6 +14,8 @@ Kirigami.ApplicationWindow {
     }
 
     globalDrawer: Kirigami.GlobalDrawer {
+        enabled: pageStack.layers.depth === 1
+
         actions: [
             Kirigami.Action {
                 text: i18n("Settings")
