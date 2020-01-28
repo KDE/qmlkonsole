@@ -23,6 +23,7 @@ Kirigami.Page {
 
         ComboBox {
             model: terminal.availableColorSchemes
+            currentIndex: terminal.availableColorSchemes.indexOf(settings.value("colorScheme", "cool-retro-term"))
             onCurrentValueChanged: {
                 settings.setValue("colorScheme", currentValue)
                 terminal.colorScheme = currentValue
