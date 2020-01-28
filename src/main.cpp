@@ -4,6 +4,8 @@
 #include <QUrl>
 #include <KLocalizedContext>
 
+#include "settings.h"
+
 Q_DECL_EXPORT int main(int argc, char *argv[])
 {
     QGuiApplication::setAttribute(Qt::AA_EnableHighDpiScaling);
@@ -11,6 +13,8 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
     QCoreApplication::setOrganizationName("KDE");
     QCoreApplication::setOrganizationDomain("kde.org");
     QCoreApplication::setApplicationName("QMLKonsole");
+
+    qmlRegisterType<Settings>("org.kde.qmlkonsole", 0, 1, "Settings");
 
     QQmlApplicationEngine engine;
     engine.rootContext()->setContextObject(new KLocalizedContext(&engine));

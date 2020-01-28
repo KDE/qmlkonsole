@@ -1,5 +1,6 @@
 set(qmlkonsole_SRCS
     main.cpp
+    settings.cpp
 )
 
 qt5_add_resources(RESOURCES resources.qrc)

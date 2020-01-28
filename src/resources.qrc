@@ -1,5 +1,7 @@
 <RCC>
     <qresource prefix="/">
         <file alias="main.qml">contents/ui/main.qml</file>
+        <file alias="SettingsPage.qml">contents/ui/SettingsPage.qml</file>
+        <file alias="TerminalPage.qml">contents/ui/TerminalPage.qml</file>
     </qresource>
 </RCC>
