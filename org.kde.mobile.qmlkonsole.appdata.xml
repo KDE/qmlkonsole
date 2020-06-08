@@ -3,6 +3,7 @@
   <id>org.kde.mobile.qmlkonsole</id>
   <name>QMLKonsole</name>
   <name xml:lang="ca">QMLKonsole</name>
+  <name xml:lang="es">QMLKonsole</name>
   <name xml:lang="et">QMLKonsole</name>
   <name xml:lang="fr">QMLKonsole</name>
   <name xml:lang="nl">QMLKonsole</name>
@@ -29,6 +30,7 @@
   <project_license>GPL-3.0+</project_license>
   <developer_name>KDE Community</developer_name>
   <developer_name xml:lang="ca">La comunitat KDE</developer_name>
+  <developer_name xml:lang="es">Comunidad KDE</developer_name>
   <developer_name xml:lang="et">KDE kogukond</developer_name>
   <developer_name xml:lang="fr">Communauté KDE</developer_name>
   <developer_name xml:lang="nl">KDE gemeenschap</developer_name>
