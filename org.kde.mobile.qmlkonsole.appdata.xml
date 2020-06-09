@@ -6,6 +6,7 @@
   <name xml:lang="es">QMLKonsole</name>
   <name xml:lang="et">QMLKonsole</name>
   <name xml:lang="fr">QMLKonsole</name>
+  <name xml:lang="it">QMLKonsole</name>
   <name xml:lang="nl">QMLKonsole</name>
   <name xml:lang="nn">QMLKonsole</name>
   <name xml:lang="pt">QMLKonsole</name>
@@ -16,8 +17,10 @@
   <name xml:lang="x-test">xxQMLKonsolexx</name>
   <summary>Mobile terminal application</summary>
   <summary xml:lang="ca">Aplicació de terminal per al mòbil</summary>
+  <summary xml:lang="es">Aplicación de terminal móvil</summary>
   <summary xml:lang="et">Mobiili terminal</summary>
   <summary xml:lang="fr">Application mobile de console</summary>
+  <summary xml:lang="it">Applicazione di terminale mobile</summary>
   <summary xml:lang="nl">Terminalprogramma voor mobiel</summary>
   <summary xml:lang="nn">Terminalprogral for mobilar</summary>
   <summary xml:lang="pt">Aplicação móvel de terminal</summary>
@@ -33,6 +36,7 @@
   <developer_name xml:lang="es">Comunidad KDE</developer_name>
   <developer_name xml:lang="et">KDE kogukond</developer_name>
   <developer_name xml:lang="fr">Communauté KDE</developer_name>
+  <developer_name xml:lang="it">Comunità KDE</developer_name>
   <developer_name xml:lang="nl">KDE gemeenschap</developer_name>
   <developer_name xml:lang="nn">KDE-fellesskapet</developer_name>
   <developer_name xml:lang="pt">Comunidade do KDE</developer_name>
@@ -44,8 +48,10 @@
   <description>
     <p>Terminal application offering additional keyboard buttons useful on touch devices.</p>
     <p xml:lang="ca">Aplicació de terminal que ofereix botons de teclat addicionals que és útil als dispositius tàctils.</p>
+    <p xml:lang="es">Aplicación de terminal que ofrece botones de teclado adicionales para dispositivos táctiles.</p>
     <p xml:lang="et">Terminalirakendus, mis pakub puuteseadmetele kasulikke täiendavaid klaviatuurinuppe,</p>
     <p xml:lang="fr">L'application de console propose des boutons additionnels utiles pour les périphériques tactiles.</p>
+    <p xml:lang="it">Applicazione di terminale che offre pulsanti della tastiera aggiuntivi utili su dispositivi tattili.</p>
     <p xml:lang="nl">Terminalprogramma die extra toetsen biedt nuttig op aanraakapparaten.</p>
     <p xml:lang="nn">Terminalprogram med fleire tastatur­knappar som er nyttige på trykkskjermar.</p>
     <p xml:lang="pt">Uma aplicação de terminal que oferece botões de teclado adicionais em dispositivos tácteis.</p>
