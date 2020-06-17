@@ -17,7 +17,6 @@
   <name xml:lang="sl">QMLKonsole</name>
   <name xml:lang="sv">QML-terminal</name>
   <name xml:lang="uk">QMLKonsole</name>
-  <name xml:lang="x-test">xxQMLKonsolexx</name>
   <name xml:lang="zh-CN">QMLKonsole</name>
   <summary>Mobile terminal application</summary>
   <summary xml:lang="ca">Aplicació de terminal per al mòbil</summary>
@@ -35,7 +34,6 @@
   <summary xml:lang="sl">Aplikacija mobilnega terminala</summary>
   <summary xml:lang="sv">Mobilt terminalprogram</summary>
   <summary xml:lang="uk">Програма-термінал для мобільних пристроїв</summary>
-  <summary xml:lang="x-test">xxMobile terminal applicationxx</summary>
   <summary xml:lang="zh-CN">移动终端程序</summary>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-3.0+</project_license>
@@ -55,7 +53,6 @@
   <developer_name xml:lang="sl">Skupnost KDE</developer_name>
   <developer_name xml:lang="sv">KDE-gemenskapen</developer_name>
   <developer_name xml:lang="uk">Спільнота KDE</developer_name>
-  <developer_name xml:lang="x-test">xxKDE Communityxx</developer_name>
   <developer_name xml:lang="zh-CN">KDE 社区</developer_name>
   <description>
     <p>Terminal application offering additional keyboard buttons useful on touch devices.</p>
@@ -72,7 +69,6 @@
     <p xml:lang="sl">Aplikacija terminala nudi dodatne tipke na tipkovnici, koristne pri napravah na dotik.</p>
     <p xml:lang="sv">Terminalprogram som erbjuder ytterligare tangentbordsknappar användbar på pekenheter.</p>
     <p xml:lang="uk">Програма-термінал, у якій передбачено додаткові клавіші, які є зручними на сенсорних пристроях.</p>
-    <p xml:lang="x-test">xxTerminal application offering additional keyboard buttons useful on touch devices.xx</p>
     <p xml:lang="zh-CN">提供额外实用触屏键盘按钮的终端应用程序。</p>
   </description>
 </component>
