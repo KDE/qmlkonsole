@@ -10,6 +10,7 @@ X-KDE-AuthorizeAction=shell_access
 
 Name=Terminal
 Name[ca]=Terminal
+Name[ca@valencia]=Terminal
 Name[cs]=Terminál
 Name[es]=Terminal
 Name[fr]=Console
@@ -27,6 +28,7 @@ Name[x-test]=xxTerminalxx
 Name[zh_CN]=终端
 GenericName=Terminal
 GenericName[ca]=Terminal
+GenericName[ca@valencia]=Terminal
 GenericName[cs]=Terminál
 GenericName[es]=Terminal
 GenericName[fr]=Console
