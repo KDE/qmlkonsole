@@ -3,5 +3,6 @@
         <file alias="main.qml">contents/ui/main.qml</file>
         <file alias="SettingsPage.qml">contents/ui/SettingsPage.qml</file>
         <file alias="TerminalPage.qml">contents/ui/TerminalPage.qml</file>
+        <file alias="TerminalKeyButton.qml">contents/ui/TerminalKeyButton.qml</file>
     </qresource>
 </RCC>
