@@ -14,7 +14,8 @@ Kirigami.Page {
     rightPadding: 0
 
     property alias terminal: terminal
-    property Settings settings
+
+    globalToolBarStyle: Kirigami.Settings.isMobile ? Kirigami.ApplicationHeaderStyle.None : Kirigami.ApplicationHeaderStyle.ToolBar
 
     contextualActions: [
         Kirigami.Action {

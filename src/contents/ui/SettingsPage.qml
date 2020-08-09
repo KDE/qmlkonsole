@@ -17,7 +17,6 @@ Kirigami.Page {
             applicationWindow().pageStack.globalToolBar.style = Kirigami.ApplicationHeaderStyle.None
     }
 
-
     Kirigami.FormLayout {
         anchors.fill: parent
 

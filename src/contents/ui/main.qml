@@ -27,7 +27,5 @@ Kirigami.ApplicationWindow {
     }
 
     pageStack.globalToolBar.style: Kirigami.ApplicationHeaderStyle.None
-    Component.onCompleted: pageStack.push("qrc:/TerminalPage.qml",
-        { "settings": settings }
-    )
+    pageStack.initialPage: "qrc:/TerminalPage.qml"
 }
