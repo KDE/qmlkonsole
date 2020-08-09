@@ -119,6 +119,8 @@ Kirigami.Page {
     }
 
     footer: ScrollView {
+        visible: Kirigami.Settings.isMobile
+        height: visible ? undefined : 0
         ToolBar {
             RowLayout {
                 anchors.fill: parent
