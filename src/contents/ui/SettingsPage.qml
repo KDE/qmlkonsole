@@ -2,13 +2,13 @@ import QtQuick 2.0
 import QtQuick.Controls 2.0
 
 import org.kde.kirigami 2.7 as Kirigami
-import org.kde.qmlkonsole 0.1
 import QMLTermWidget 1.0
+
+import org.kde.qmlkonsole 1.0
 
 Kirigami.Page {
     title: i18n("Settings")
     property QMLTermWidget terminal
-    property Settings settings
 
     onIsCurrentPageChanged: {
         if (isCurrentPage)
@@ -23,12 +23,8 @@ Kirigami.Page {
 
         ComboBox {
             model: terminal.availableColorSchemes
-            currentIndex: terminal.availableColorSchemes.indexOf(settings.value("colorScheme", "cool-retro-term"))
-            onCurrentValueChanged: {
-                settings.setValue("colorScheme", currentValue)
-                terminal.colorScheme = currentValue
-            }
-
+            currentIndex: terminal.availableColorSchemes.indexOf(TerminalSettings.colorScheme)
+            onCurrentValueChanged: TerminalSettings.colorScheme = currentValue
             Kirigami.FormData.label: i18n("Color Scheme")
         }
     }

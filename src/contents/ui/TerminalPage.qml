@@ -3,8 +3,9 @@ import QtQuick.Layouts 1.1
 import QtQuick.Controls 2.2
 
 import QMLTermWidget 1.0
-import org.kde.qmlkonsole 0.1
 import org.kde.kirigami 2.7 as Kirigami
+
+import org.kde.qmlkonsole 1.0
 
 Kirigami.Page {
     topPadding: 0
@@ -58,7 +59,7 @@ Kirigami.Page {
             Layout.fillWidth: true
             Layout.fillHeight: true
             font.family: "Monospace"
-            colorScheme: settings.value("colorScheme", "cool-retro-term")
+            colorScheme: TerminalSettings.colorScheme
             font.pixelSize: 12
 
             function pressKey(key, modifiers, pressed, nativeScanCode, text) {

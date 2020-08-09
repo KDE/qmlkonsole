@@ -4,7 +4,9 @@
 #include <QUrl>
 #include <KLocalizedContext>
 
-#include "settings.h"
+#include "terminalsettings.h"
+
+constexpr auto URI = "org.kde.qmlkonsole";
 
 Q_DECL_EXPORT int main(int argc, char *argv[])
 {
@@ -14,7 +16,12 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
     QCoreApplication::setOrganizationDomain("kde.org");
     QCoreApplication::setApplicationName("QMLKonsole");
 
-    qmlRegisterType<Settings>("org.kde.qmlkonsole", 0, 1, "Settings");
+    qmlRegisterSingletonInstance<TerminalSettings>(URI, 1, 0, "TerminalSettings", TerminalSettings::self());
+
+    QObject::connect(QApplication::instance(), &QCoreApplication::aboutToQuit, QApplication::instance(), [] {
+        TerminalSettings::self()->save();
+        qDebug() << "saving config";
+    });
 
     QQmlApplicationEngine engine;
     engine.rootContext()->setContextObject(new KLocalizedContext(&engine));
