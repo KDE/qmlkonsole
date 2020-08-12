@@ -1,3 +1,7 @@
+// SPDX-FileCopyrightText: 2019-2020 Jonah Brüchert
+//
+// SPDX-License-Identifier: GPL-2.0-or-later
+
 #include <QApplication>
 #include <QQmlApplicationEngine>
 #include <QtQml>
