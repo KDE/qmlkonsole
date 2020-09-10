@@ -122,60 +122,83 @@ Kirigami.Page {
         }
     }
 
-    footer: ScrollView {
+    Binding {
+        target: applicationWindow().globalDrawer.handle
+        property: "handleAnchor"
+        value: leftHandleAnchor
+        when: leftHandleAnchor.visible
+    }
+    Binding {
+        target: applicationWindow().contextDrawer.handle
+        property: "handleAnchor"
+        value: rightHandleAnchor
+        when: rightHandleAnchor.visible
+    }
+    footer: ToolBar {
         visible: Kirigami.Settings.isMobile
-        height: visible ? undefined : 0
-        ToolBar {
-            RowLayout {
-                anchors.fill: parent
-
-                TerminalKeyButton {
-                    text: "Cancel"
-                    onClicked: {
-                        terminal.pressKey(Qt.Key_C, Qt.ControlModifier, true)
+        height: visible ? implicitHeight + Kirigami.Units.smallSpacing * 2 : 0
+        contentItem: RowLayout {
+            Item {
+                id: leftHandleAnchor
+                Layout.fillHeight: true
+                Layout.preferredWidth: height
+            }
+            ScrollView {
+                Layout.fillWidth: true
+                RowLayout {
+                    TerminalKeyButton {
+                        text: "Cancel"
+                        onClicked: {
+                            terminal.pressKey(Qt.Key_C, Qt.ControlModifier, true)
+                        }
+                    }
+                    TerminalKeyButton {
+                        text: "Esc"
+                        onClicked: {
+                            terminal.pressKey(Qt.Key_Escape, 0, true)
+                        }
+                    }
+                    TerminalKeyButton {
+                        Layout.maximumWidth: height
+                        text: "Tab"
+                        onClicked: terminal.pressKey(Qt.Key_Tab, 0, true, 0, "")
+                    }
+                    TerminalKeyButton {
+                        Layout.maximumWidth: height
+                        text: "←"
+                        onClicked: terminal.pressKey(Qt.Key_Left, 0, true, 0, "")
+                    }
+                    TerminalKeyButton {
+                        Layout.maximumWidth: height
+                        text: "↑"
+                        onClicked: terminal.pressKey(Qt.Key_Up, 0, true, 0, "")
+                    }
+                    TerminalKeyButton {
+                        Layout.maximumWidth: height
+                        text: "→"
+                        onClicked: terminal.pressKey(Qt.Key_Right, 0, true, 0, "")
+                    }
+                    TerminalKeyButton {
+                        Layout.maximumWidth: height
+                        text: "↓"
+                        onClicked: terminal.pressKey(Qt.Key_Down, 0, true, 0, "")
+                    }
+                    TerminalKeyButton {
+                        Layout.maximumWidth: height
+                        text: "|"
+                        onClicked: terminal.pressKey(Qt.Key_Bar, 0, true, 0, "|")
+                    }
+                    TerminalKeyButton {
+                        Layout.maximumWidth: height
+                        text: "~"
+                        onClicked: terminal.pressKey(Qt.Key_AsciiTilde, 0, true, 0, "~")
                     }
                 }
-                TerminalKeyButton {
-                    text: "Esc"
-                    onClicked: {
-                        terminal.pressKey(Qt.Key_Escape, 0, true)
-                    }
-                }
-                TerminalKeyButton {
-                    Layout.maximumWidth: height
-                    text: "Tab"
-                    onClicked: terminal.pressKey(Qt.Key_Tab, 0, true, 0, "")
-                }
-                TerminalKeyButton {
-                    Layout.maximumWidth: height
-                    text: "←"
-                    onClicked: terminal.pressKey(Qt.Key_Left, 0, true, 0, "")
-                }
-                TerminalKeyButton {
-                    Layout.maximumWidth: height
-                    text: "↑"
-                    onClicked: terminal.pressKey(Qt.Key_Up, 0, true, 0, "")
-                }
-                TerminalKeyButton {
-                    Layout.maximumWidth: height
-                    text: "→"
-                    onClicked: terminal.pressKey(Qt.Key_Right, 0, true, 0, "")
-                }
-                TerminalKeyButton {
-                    Layout.maximumWidth: height
-                    text: "↓"
-                    onClicked: terminal.pressKey(Qt.Key_Down, 0, true, 0, "")
-                }
-                TerminalKeyButton {
-                    Layout.maximumWidth: height
-                    text: "|"
-                    onClicked: terminal.pressKey(Qt.Key_Bar, 0, true, 0, "|")
-                }
-                TerminalKeyButton {
-                    Layout.maximumWidth: height
-                    text: "~"
-                    onClicked: terminal.pressKey(Qt.Key_AsciiTilde, 0, true, 0, "~")
-                }
+            }
+            Item {
+                id: rightHandleAnchor
+                Layout.fillHeight: true
+                Layout.preferredWidth: height
             }
         }
     }
