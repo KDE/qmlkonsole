@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 2019-2020 Jonah Brüchert <jbb@kaidan.im>
+﻿// SPDX-FileCopyrightText: 2019-2020 Jonah Brüchert <jbb@kaidan.im>
 //
 // SPDX-License-Identifier: GPL-2.0-or-later
 
 import QtQuick 2.0
-import QtQuick.Controls 2.0
+import QtQuick.Controls 2.14
 
 import org.kde.kirigami 2.7 as Kirigami
 import QMLTermWidget 1.0
@@ -27,7 +27,7 @@ Kirigami.Page {
         ComboBox {
             model: terminal.availableColorSchemes
             currentIndex: terminal.availableColorSchemes.indexOf(TerminalSettings.colorScheme)
-            onCurrentIndexChanged: TerminalSettings.colorScheme = currentValue
+            onCurrentValueChanged: TerminalSettings.colorScheme = currentValue
             Kirigami.FormData.label: i18n("Color Scheme")
         }
     }
