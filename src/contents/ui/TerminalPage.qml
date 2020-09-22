@@ -72,7 +72,7 @@ Kirigami.Page {
                 terminal.forceActiveFocus()
             }
 
-            session: QMLTermSession{
+            session: QMLTermSession {
                 id: mainsession
                 initialWorkingDirectory: "$HOME"
                 onFinished: Qt.quit()
@@ -87,15 +87,19 @@ Kirigami.Page {
             onTerminalUsesMouseChanged: console.log(terminalUsesMouse);
             Component.onCompleted: mainsession.startShellProgram();
 
-            QMLTermScrollbar {
-                terminal: terminal
-                width: 20
-                Rectangle {
-                    opacity: 0.4
-                    anchors.margins: 5
-                    radius: width * 0.5
-                    anchors.fill: parent
+            ScrollBar {
+                Kirigami.Theme.colorSet: Kirigami.Theme.Complementary // text color of terminal is also complementary
+                Kirigami.Theme.inherit: false
+                anchors {
+                    right: parent.right
+                    top: parent.top
+                    bottom: parent.bottom
                 }
+                visible: true
+                orientation: Qt.Vertical
+                size: (terminal.lines / (terminal.lines + terminal.scrollbarMaximum - terminal.scrollbarMinimum))
+                position: terminal.scrollbarCurrentValue / (terminal.lines + terminal.scrollbarMaximum)
+                interactive: false
             }
 
             MouseArea {
