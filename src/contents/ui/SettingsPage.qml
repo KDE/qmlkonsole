@@ -27,7 +27,7 @@ Kirigami.Page {
         ComboBox {
             model: terminal.availableColorSchemes
             currentIndex: terminal.availableColorSchemes.indexOf(TerminalSettings.colorScheme)
-            onCurrentValueChanged: TerminalSettings.colorScheme = currentValue
+            onCurrentIndexChanged: TerminalSettings.colorScheme = currentValue
             Kirigami.FormData.label: i18n("Color Scheme")
         }
     }
