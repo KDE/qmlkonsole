@@ -5,6 +5,7 @@
   <name xml:lang="ca">QMLKonsole</name>
   <name xml:lang="ca-valencia">QMLKonsole</name>
   <name xml:lang="cs">QMLKonsole</name>
+  <name xml:lang="de">QMLKonsole</name>
   <name xml:lang="en-GB">QMLKonsole</name>
   <name xml:lang="es">QMLKonsole</name>
   <name xml:lang="et">QMLKonsole</name>
@@ -27,6 +28,7 @@
   <summary xml:lang="ca">Aplicació de terminal per al mòbil</summary>
   <summary xml:lang="ca-valencia">Aplicació de terminal per al mòbil</summary>
   <summary xml:lang="cs">Mobilní terminálová aplikace</summary>
+  <summary xml:lang="de">Mobile Terminal-Anwendung</summary>
   <summary xml:lang="en-GB">Mobile terminal application</summary>
   <summary xml:lang="es">Aplicación de terminal móvil</summary>
   <summary xml:lang="et">Mobiili terminal</summary>
@@ -51,6 +53,7 @@
   <developer_name xml:lang="ca">La comunitat KDE</developer_name>
   <developer_name xml:lang="ca-valencia">La comunitat KDE</developer_name>
   <developer_name xml:lang="cs">Komunita KDE</developer_name>
+  <developer_name xml:lang="de">KDE-Gemeinschaft</developer_name>
   <developer_name xml:lang="en-GB">KDE Community</developer_name>
   <developer_name xml:lang="es">Comunidad KDE</developer_name>
   <developer_name xml:lang="et">KDE kogukond</developer_name>
@@ -73,6 +76,7 @@
     <p>Terminal application offering additional keyboard buttons useful on touch devices.</p>
     <p xml:lang="ca">Aplicació de terminal que ofereix botons de teclat addicionals, el qual és útil en els dispositius tàctils.</p>
     <p xml:lang="ca-valencia">Aplicació de terminal que ofereix botons de teclat addicionals, el qual és útil en els dispositius tàctils.</p>
+    <p xml:lang="de">Terminal-Anwendung mit zusätzlichen Tasten-Knöpfen für Touch-Geräte.</p>
     <p xml:lang="en-GB">Terminal application offering additional keyboard buttons useful on touch devices.</p>
     <p xml:lang="es">Aplicación de terminal que ofrece botones de teclado adicionales para dispositivos táctiles.</p>
     <p xml:lang="et">Terminalirakendus, mis pakub puuteseadmetele kasulikke täiendavaid klaviatuurinuppe,</p>
