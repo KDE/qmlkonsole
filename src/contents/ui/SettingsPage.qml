@@ -14,13 +14,6 @@ Kirigami.Page {
     title: i18n("Settings")
     property QMLTermWidget terminal
 
-    onIsCurrentPageChanged: {
-        if (isCurrentPage)
-            applicationWindow().pageStack.globalToolBar.style = Kirigami.ApplicationHeaderStyle.ToolBar
-        else
-            applicationWindow().pageStack.globalToolBar.style = Kirigami.ApplicationHeaderStyle.None
-    }
-
     Kirigami.FormLayout {
         anchors.fill: parent
 

@@ -30,6 +30,5 @@ Kirigami.ApplicationWindow {
         ]
     }
 
-    pageStack.globalToolBar.style: Kirigami.ApplicationHeaderStyle.None
     pageStack.initialPage: "qrc:/TerminalPage.qml"
 }
