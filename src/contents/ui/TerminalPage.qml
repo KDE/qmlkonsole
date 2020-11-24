@@ -104,12 +104,14 @@ Kirigami.Page {
 
             MouseArea {
                 id: scrollMouseArea
+                property bool scrolling: false
 
                 onPressAndHold: {
-                    enabled = !enabled
+                    enabled = scrolling ? enabled : !enabled
                 }
 
                 onPositionChanged: {
+                    scrolling = scrolling ? true : Math.abs(mouse.y - oldY) >= 1
                     terminal.simulateWheel(0, 0, 0, 0, Qt.point(0, (mouse.y - oldY)*2))
                     oldY = mouse.y
                 }
@@ -117,10 +119,14 @@ Kirigami.Page {
                 propagateComposedEvents: true
                 anchors.fill: parent
                 property real oldY
-                onPressed: oldY = mouse.y
+                onPressed: {
+                    scrolling = false
+                    oldY = mouse.y
+                }
                 onClicked: {
                     terminal.forceActiveFocus();
                     Qt.inputMethod.show();
+                    scrolling = false
                 }
             }
         }
