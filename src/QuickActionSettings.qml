@@ -60,7 +60,8 @@ Kirigami.ScrollablePage {
             text: i18n("Add action")
         }
         showCloseButton: true
-        contentItem: RowLayout{
+        contentItem: RowLayout {
+            Layout.preferredWidth: 500
             TextField {
                 id: textField
                 Layout.fillWidth: true
