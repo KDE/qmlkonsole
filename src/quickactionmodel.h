@@ -15,12 +15,9 @@ public:
     };
     int rowCount(const QModelIndex &parent) const override
     {
-        return m_actions.size();
+        return parent.isValid() ? 0 : m_actions.size();
     };
-    QVariant data(const QModelIndex &index, int role) const override
-    {
-        return m_actions.at(index.row());
-    };
+    QVariant data(const QModelIndex &index, int role) const override;
     void save();
     Q_INVOKABLE void addAction(QString action);
     Q_INVOKABLE bool removeRows(int row, int count, const QModelIndex &parent = QModelIndex()) override;
