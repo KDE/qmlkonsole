@@ -8,5 +8,8 @@
         <entry key="colorScheme" type="string">
             <default>"cool-retro-term"</default>
         </entry>
+        <entry key="actions" type="StringList">
+            <default></default>
+        </entry>
     </group>
 </kcfg>

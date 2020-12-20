@@ -9,7 +9,7 @@
 #include <KLocalizedContext>
 
 #include "terminalsettings.h"
-
+#include "quickactionmodel.h"
 constexpr auto URI = "org.kde.qmlkonsole";
 
 Q_DECL_EXPORT int main(int argc, char *argv[])
@@ -23,13 +23,14 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
     qmlRegisterSingletonInstance<TerminalSettings>(URI, 1, 0, "TerminalSettings", TerminalSettings::self());
 
     QObject::connect(QApplication::instance(), &QCoreApplication::aboutToQuit, QApplication::instance(), [] {
+        QuickActionModel::self()->save();
         TerminalSettings::self()->save();
         qDebug() << "saving config";
     });
 
     QQmlApplicationEngine engine;
     engine.rootContext()->setContextObject(new KLocalizedContext(&engine));
-
+    engine.rootContext()->setContextProperty("quickActionModel", QuickActionModel::self());
     engine.load(QUrl(QStringLiteral("qrc:///main.qml")));
 
     if (engine.rootObjects().isEmpty()) {
