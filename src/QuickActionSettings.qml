@@ -27,14 +27,30 @@ Kirigami.ScrollablePage {
         model: quickActionModel
         width: parent.width
         height: contentHeight
-        delegate: Kirigami.BasicListItem {
-            label: model.display
-            icon: "delete"
-
-            onClicked: {
-                quickActionModel.removeRows(index, 1);
-                showPassiveNotification(i18n("Action %1 removed", label));
+        delegate: Kirigami.SwipeListItem {
+            RowLayout {
+                Kirigami.Icon {
+                    source: "dialog-scripts"
+                }
+                Label {
+                    id: label
+                    text: model.display
+                    font.family: "Monospace"
+                }
+                Item {
+                    Layout.fillWidth: true
+                }
             }
+
+            actions: [
+                Kirigami.Action {
+                    icon.name: "delete"
+                    onTriggered: {
+                        quickActionModel.removeRows(index, 1);
+                        showPassiveNotification(i18n("Action %1 removed", label.text));
+                    }
+                }
+            ]
         }
     }
 
