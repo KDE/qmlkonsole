@@ -70,8 +70,10 @@ Kirigami.ScrollablePage {
                 text: i18n("Save")
                 icon.name: "dialog-ok"
                 onClicked: {
-                    if(textField.text != "")
+                    if(textField.text != "") {
                         quickActionModel.addAction(textField.text);
+                        textField.text = ""
+                    }
 
                     actionDialog.close();
                 }
