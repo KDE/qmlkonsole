@@ -10,6 +10,7 @@
   <name xml:lang="es">QMLKonsole</name>
   <name xml:lang="et">QMLKonsole</name>
   <name xml:lang="eu">QMLKonsole</name>
+  <name xml:lang="fi">QMLKonsole</name>
   <name xml:lang="fr">QMLKonsole</name>
   <name xml:lang="hi">QMLKonsole</name>
   <name xml:lang="it">QMLKonsole</name>
@@ -35,6 +36,7 @@
   <summary xml:lang="es">Aplicación de terminal móvil</summary>
   <summary xml:lang="et">Mobiili terminal</summary>
   <summary xml:lang="eu">Mugikorreko terminal aplikazioa</summary>
+  <summary xml:lang="fi">Mobiilipäätesovellus</summary>
   <summary xml:lang="fr">Application mobile de console</summary>
   <summary xml:lang="hi">मोबाइल टर्मिनल अनुप्रयोग</summary>
   <summary xml:lang="it">Applicazione di terminale mobile</summary>
@@ -62,6 +64,7 @@
   <developer_name xml:lang="es">Comunidad KDE</developer_name>
   <developer_name xml:lang="et">KDE kogukond</developer_name>
   <developer_name xml:lang="eu">KDE komunitatea</developer_name>
+  <developer_name xml:lang="fi">KDE-yhteisö</developer_name>
   <developer_name xml:lang="fr">Communauté KDE</developer_name>
   <developer_name xml:lang="hi">केडीई समुदाय</developer_name>
   <developer_name xml:lang="it">Comunità KDE</developer_name>
@@ -87,6 +90,7 @@
     <p xml:lang="es">Aplicación de terminal que ofrece botones de teclado adicionales para dispositivos táctiles.</p>
     <p xml:lang="et">Terminalirakendus, mis pakub puuteseadmetele kasulikke täiendavaid klaviatuurinuppe,</p>
     <p xml:lang="eu">Ukimen gailuetan erabilgarriak diren teklatuko botoi osagarriak eskaintzen dituen terminal aplikazioa.</p>
+    <p xml:lang="fi">Päätesovellus, joka tarjoaa kosketusnäytöillä hyödyllisiä näppäimistön lisäpainikkeita.</p>
     <p xml:lang="fr">L'application de console propose des boutons additionnels utiles pour les périphériques tactiles.</p>
     <p xml:lang="it">Applicazione di terminale che offre pulsanti della tastiera aggiuntivi utili su dispositivi tattili.</p>
     <p xml:lang="ko">터치 장치에서 유용한 추가 키보드 단추가 있는 터미널 프로그램입니다.</p>
