@@ -155,6 +155,7 @@ Kirigami.Page {
             }
             ScrollView {
                 Layout.fillWidth: true
+                clip: true
                 RowLayout {
                     TerminalKeyButton {
                         text: "Cancel"
