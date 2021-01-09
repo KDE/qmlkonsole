@@ -23,6 +23,20 @@ Kirigami.Page {
 
     contextualActions: [
         Kirigami.Action {
+            icon.name: "search"
+            text: i18n("reverse-i-search")
+            onTriggered: {
+                terminal.pressKey(Qt.Key_R, Qt.ControlModifier, true)
+            }
+        },
+        Kirigami.Action {
+            icon.name: "dialog-cancel"
+            text: i18n("Cancel current command")
+            onTriggered: {
+                terminal.pressKey(Qt.Key_C, Qt.ControlModifier, true)
+            }
+        },
+        Kirigami.Action {
             icon.name: "edit-copy"
             text: i18n("Copy")
             onTriggered: {
@@ -158,20 +172,14 @@ Kirigami.Page {
                 clip: true
                 RowLayout {
                     TerminalKeyButton {
-                        text: "Cancel"
-                        onClicked: {
-                            terminal.pressKey(Qt.Key_C, Qt.ControlModifier, true)
-                        }
-                    }
-                    TerminalKeyButton {
-                        text: "Esc"
+                        text: i18nc("Escape key", "Esc")
                         onClicked: {
                             terminal.pressKey(Qt.Key_Escape, 0, true)
                         }
                     }
                     TerminalKeyButton {
                         Layout.maximumWidth: height
-                        text: "Tab"
+                        text: i18nc("Tab character key", "Tab")
                         onClicked: terminal.pressKey(Qt.Key_Tab, 0, true, 0, "")
                     }
                     TerminalKeyButton {
