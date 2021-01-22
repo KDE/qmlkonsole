@@ -17,6 +17,7 @@
   <name xml:lang="ko">QMLKonsole</name>
   <name xml:lang="nl">QMLKonsole</name>
   <name xml:lang="nn">QMLKonsole</name>
+  <name xml:lang="pa">QML-ਕਨਸੋਲ</name>
   <name xml:lang="pt">QMLKonsole</name>
   <name xml:lang="pt-BR">QMLKonsole</name>
   <name xml:lang="ro">QMLKonsole</name>
@@ -43,6 +44,7 @@
   <summary xml:lang="ko">모바일 터미널 프로그램</summary>
   <summary xml:lang="nl">Terminalprogramma voor mobiel</summary>
   <summary xml:lang="nn">Terminalprogral for mobilar</summary>
+  <summary xml:lang="pa">ਮੋਬਾਈਲ ਟਰਮੀਨਲ ਐਪਲੀਕੇਸ਼ਨ</summary>
   <summary xml:lang="pt">Aplicação móvel de terminal</summary>
   <summary xml:lang="pt-BR">Aplicativo de terminal móvel</summary>
   <summary xml:lang="ro">Aplicație mobilă de terminal</summary>
@@ -71,6 +73,7 @@
   <developer_name xml:lang="ko">KDE 커뮤니티</developer_name>
   <developer_name xml:lang="nl">KDE-gemeenschap</developer_name>
   <developer_name xml:lang="nn">KDE-fellesskapet</developer_name>
+  <developer_name xml:lang="pa">ਕੇਡੀਈ ਕਮਿਊਨਟੀ</developer_name>
   <developer_name xml:lang="pt">Comunidade do KDE</developer_name>
   <developer_name xml:lang="pt-BR">Comunidade KDE</developer_name>
   <developer_name xml:lang="ro">Comunitatea KDE</developer_name>
