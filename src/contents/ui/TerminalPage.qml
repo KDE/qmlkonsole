@@ -98,6 +98,18 @@ Kirigami.Page {
                 }
             }
 
+            Keys.onPressed: {
+                if(ctrlButton.modifier | altButton.modifier)
+                {
+                    pressKey(event.key, ctrlButton.modifier | altButton.modifier, true);
+                    ctrlButton.down = false;
+                    altButton.down = false;
+                    event.accepted = true;
+                    ctrlButton.modifier = 0;
+                    altButton.modifier = 0;
+                }
+            }
+
             onTerminalUsesMouseChanged: console.log(terminalUsesMouse);
             Component.onCompleted: mainsession.startShellProgram();
 
@@ -171,6 +183,24 @@ Kirigami.Page {
                 Layout.fillWidth: true
                 clip: true
                 RowLayout {
+                    TerminalModifierButton {
+                        id: ctrlButton
+                        text: i18nc("Control Key", "Ctrl")
+                        onClicked: {
+                            modifier = modifier ^ Qt.ControlModifier
+                            down = !down;
+                        }
+                    }
+
+                    TerminalModifierButton {
+                        id: altButton
+                        text: i18nc("Alt Key", "Alt")
+                        onClicked: {
+                            modifier = modifier ^ Qt.AltModifier
+                            down = !down;
+                        }
+                    }
+
                     TerminalKeyButton {
                         text: i18nc("Escape key", "Esc")
                         onClicked: {

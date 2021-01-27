@@ -5,5 +5,6 @@
         <file alias="TerminalPage.qml">contents/ui/TerminalPage.qml</file>
         <file alias="TerminalKeyButton.qml">contents/ui/TerminalKeyButton.qml</file>
         <file>QuickActionSettings.qml</file>
+        <file>TerminalModifierButton.qml</file>
     </qresource>
 </RCC>
