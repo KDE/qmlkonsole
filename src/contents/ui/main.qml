@@ -14,6 +14,11 @@ import org.kde.qmlkonsole 1.0
 Kirigami.ApplicationWindow {
     property QMLTermWidget terminal: pageStack.items[0].terminal
     contextDrawer: Kirigami.ContextDrawer {}
+    
+    Component.onCompleted: {
+        applicationWindow().globalDrawer.handle.visible = false;
+        applicationWindow().contextDrawer.handle.visible = false;
+    }
 
     globalDrawer: Kirigami.GlobalDrawer {
         id: globalDrawer

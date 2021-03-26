@@ -158,33 +158,26 @@ Kirigami.Page {
         }
     }
 
-    Binding {
-        target: applicationWindow().globalDrawer.handle
-        property: "handleAnchor"
-        value: leftHandleAnchor
-        when: leftHandleAnchor.visible
-    }
-    Binding {
-        target: applicationWindow().contextDrawer.handle
-        property: "handleAnchor"
-        value: rightHandleAnchor
-        when: rightHandleAnchor.visible
-    }
     footer: ToolBar {
         visible: Kirigami.Settings.isMobile
-        height: visible ? implicitHeight + Kirigami.Units.smallSpacing * 2 : 0
+        height: visible ? implicitHeight : 0
         contentItem: RowLayout {
-            Item {
-                id: leftHandleAnchor
-                Layout.fillHeight: true
+            spacing: Kirigami.Units.smallSpacing
+            ToolButton {
                 Layout.preferredWidth: height
+                Layout.preferredHeight: Kirigami.Units.gridUnit * 2
+                icon.name: "application-menu"
+                onClicked: applicationWindow().globalDrawer.open()
             }
+            Kirigami.Separator { Layout.fillHeight: true }
             ScrollView {
                 Layout.fillWidth: true
                 clip: true
                 RowLayout {
                     TerminalModifierButton {
                         id: ctrlButton
+                        Layout.preferredWidth: Kirigami.Units.gridUnit * 3
+                        Layout.preferredHeight: Kirigami.Units.gridUnit * 2
                         text: i18nc("Control Key", "Ctrl")
                         onClicked: {
                             modifier = modifier ^ Qt.ControlModifier
@@ -194,6 +187,8 @@ Kirigami.Page {
 
                     TerminalModifierButton {
                         id: altButton
+                        Layout.preferredWidth: Kirigami.Units.gridUnit * 3
+                        Layout.preferredHeight: Kirigami.Units.gridUnit * 2
                         text: i18nc("Alt Key", "Alt")
                         onClicked: {
                             modifier = modifier ^ Qt.AltModifier
@@ -202,52 +197,48 @@ Kirigami.Page {
                     }
 
                     TerminalKeyButton {
+                        Layout.preferredWidth: Kirigami.Units.gridUnit * 3
                         text: i18nc("Escape key", "Esc")
                         onClicked: {
                             terminal.pressKey(Qt.Key_Escape, 0, true)
                         }
                     }
                     TerminalKeyButton {
-                        Layout.maximumWidth: height
                         text: i18nc("Tab character key", "Tab")
                         onClicked: terminal.pressKey(Qt.Key_Tab, 0, true, 0, "")
                     }
                     TerminalKeyButton {
-                        Layout.maximumWidth: height
                         text: "←"
                         onClicked: terminal.pressKey(Qt.Key_Left, 0, true, 0, "")
                     }
                     TerminalKeyButton {
-                        Layout.maximumWidth: height
                         text: "↑"
                         onClicked: terminal.pressKey(Qt.Key_Up, 0, true, 0, "")
                     }
                     TerminalKeyButton {
-                        Layout.maximumWidth: height
                         text: "→"
                         onClicked: terminal.pressKey(Qt.Key_Right, 0, true, 0, "")
                     }
                     TerminalKeyButton {
-                        Layout.maximumWidth: height
                         text: "↓"
                         onClicked: terminal.pressKey(Qt.Key_Down, 0, true, 0, "")
                     }
                     TerminalKeyButton {
-                        Layout.maximumWidth: height
                         text: "|"
                         onClicked: terminal.pressKey(Qt.Key_Bar, 0, true, 0, "|")
                     }
                     TerminalKeyButton {
-                        Layout.maximumWidth: height
                         text: "~"
                         onClicked: terminal.pressKey(Qt.Key_AsciiTilde, 0, true, 0, "~")
                     }
                 }
             }
-            Item {
-                id: rightHandleAnchor
-                Layout.fillHeight: true
+            Kirigami.Separator { Layout.fillHeight: true }
+            ToolButton {
                 Layout.preferredWidth: height
+                Layout.preferredHeight: Kirigami.Units.gridUnit * 2
+                icon.name: "overflow-menu"
+                onClicked: applicationWindow().contextDrawer.open()
             }
         }
     }
