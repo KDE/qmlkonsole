@@ -1,4 +1,5 @@
 // SPDX-FileCopyrightText: 2019-2020 Jonah Brüchert <jbb@kaidan.im>
+// SPDX-FileCopyrightText: 2021 Devin Lin <espidev@gmail.com>
 //
 // SPDX-License-Identifier: GPL-2.0-or-later
 
@@ -210,18 +211,22 @@ Kirigami.Page {
                     TerminalKeyButton {
                         text: "←"
                         onClicked: terminal.pressKey(Qt.Key_Left, 0, true, 0, "")
+                        autoRepeat: true
                     }
                     TerminalKeyButton {
                         text: "↑"
                         onClicked: terminal.pressKey(Qt.Key_Up, 0, true, 0, "")
+                        autoRepeat: true
                     }
                     TerminalKeyButton {
                         text: "→"
                         onClicked: terminal.pressKey(Qt.Key_Right, 0, true, 0, "")
+                        autoRepeat: true
                     }
                     TerminalKeyButton {
                         text: "↓"
                         onClicked: terminal.pressKey(Qt.Key_Down, 0, true, 0, "")
+                        autoRepeat: true
                     }
                     TerminalKeyButton {
                         text: "|"
