@@ -60,7 +60,7 @@
   <summary xml:lang="x-test">xxMobile terminal applicationxx</summary>
   <summary xml:lang="zh-CN">移动终端程序</summary>
   <metadata_license>CC0-1.0</metadata_license>
-  <project_license>GPL-3.0+</project_license>
+  <project_license>GPL-2.0-or-later</project_license>
   <developer_name>KDE Community</developer_name>
   <developer_name xml:lang="ca">La comunitat KDE</developer_name>
   <developer_name xml:lang="ca-valencia">La comunitat KDE</developer_name>
