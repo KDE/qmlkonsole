@@ -1,4 +1,5 @@
 project(qmlkonsole)
+set(PROJECT_VERSION "21.05")
 
 cmake_minimum_required(VERSION 2.8.12)
 set(KF5_MIN_VERSION "5.18.0")
@@ -26,6 +27,11 @@ include(KDECMakeSettings)
 include(ECMPoQmTools)
 include(KDECompilerSettings NO_POLICY_SCOPE)
 
+# setup version
+ecm_setup_version(${PROJECT_VERSION}
+    VARIABLE_PREFIX QMLKONSOLE
+    VERSION_HEADER ${CMAKE_CURRENT_BINARY_DIR}/version.h
+)
 ################# Find dependencies #################
 
 find_package(Qt5 ${QT_MIN_VERSION} REQUIRED NO_MODULE COMPONENTS Core Quick Test Gui Svg QuickControls2)
