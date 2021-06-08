@@ -123,6 +123,13 @@
     <p xml:lang="zh-CN">提供额外实用触屏键盘按钮的终端应用程序。</p>
   </description>
   <releases>
-    <release version="21.06" date="2021-06-10"/>
+    <release version="21.06" date="2021-06-10">
+      <description>
+        <p>Plasma Mobile Gear 21.06</p>
+        <ul>
+          <li>buildsystem: search for qmltermwidget</li>
+        </ul>
+      </description>
+    </release>
   </releases>
 </component>
