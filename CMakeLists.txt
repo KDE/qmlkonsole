@@ -1,5 +1,5 @@
 project(qmlkonsole)
-set(PROJECT_VERSION "21.05")
+set(PROJECT_VERSION "21.06")
 
 cmake_minimum_required(VERSION 2.8.12)
 set(KF5_MIN_VERSION "5.18.0")
