@@ -17,6 +17,7 @@
   <name xml:lang="id">QMLKonsole</name>
   <name xml:lang="it">QMLKonsole</name>
   <name xml:lang="ko">QMLKonsole</name>
+  <name xml:lang="lt">QMLKonsole</name>
   <name xml:lang="nl">QMLKonsole</name>
   <name xml:lang="nn">QMLKonsole</name>
   <name xml:lang="pa">QML-ਕਨਸੋਲ</name>
@@ -47,6 +48,7 @@
   <summary xml:lang="id">Aplikasi terminal ponsel</summary>
   <summary xml:lang="it">Applicazione di terminale mobile</summary>
   <summary xml:lang="ko">모바일 터미널 프로그램</summary>
+  <summary xml:lang="lt">Mobiliojo terminalo programa</summary>
   <summary xml:lang="nl">Terminalprogramma voor mobiel</summary>
   <summary xml:lang="nn">Terminalprogral for mobilar</summary>
   <summary xml:lang="pa">ਮੋਬਾਈਲ ਟਰਮੀਨਲ ਐਪਲੀਕੇਸ਼ਨ</summary>
@@ -79,6 +81,7 @@
   <developer_name xml:lang="id">Komunitas KDE</developer_name>
   <developer_name xml:lang="it">Comunità KDE</developer_name>
   <developer_name xml:lang="ko">KDE 커뮤니티</developer_name>
+  <developer_name xml:lang="lt">KDE bendruomenė</developer_name>
   <developer_name xml:lang="nl">KDE-gemeenschap</developer_name>
   <developer_name xml:lang="nn">KDE-fellesskapet</developer_name>
   <developer_name xml:lang="pa">ਕੇਡੀਈ ਕਮਿਊਨਟੀ</developer_name>
@@ -108,6 +111,7 @@
     <p xml:lang="id">Aplikasi terminal menawarkan tombol keyboard tambahan yang berguna pada perangkat sentuh.</p>
     <p xml:lang="it">Applicazione di terminale che offre pulsanti della tastiera aggiuntivi utili su dispositivi tattili.</p>
     <p xml:lang="ko">터치 장치에서 유용한 추가 키보드 단추가 있는 터미널 프로그램입니다.</p>
+    <p xml:lang="lt">Terminalo programa, siūlanti papildomus klaviatūros mygtukus, kurie praverčia jutiklinės įvesties įrenginiuose.</p>
     <p xml:lang="nl">Terminalprogramma die extra toetsen biedt nuttig op aanraakapparaten.</p>
     <p xml:lang="nn">Terminalprogram med fleire tastatur­knappar som er nyttige på trykkskjermar.</p>
     <p xml:lang="pa">ਟਰਮੀਨਲ ਐਪਲੀਕੇਸ਼ਨ ਵਧੀਕ ਕੀਬੋਰਡ ਬਟਨ ਦਿੰਦੀ ਹੈ, ਜੋ ਕਿ ਟੱਚ ਸਕਰੀਨ ਡਿਵਾਈਸਾਂ ਲਈ ਫਾਇਦੇਮੰਦ ਹੁੰਦੇ ਹਨ।</p>
