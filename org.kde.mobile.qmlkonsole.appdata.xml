@@ -12,7 +12,7 @@
   <name xml:lang="eu">QMLKonsole</name>
   <name xml:lang="fi">QMLKonsole</name>
   <name xml:lang="fr">QMLKonsole</name>
-  <name xml:lang="hi">QMLKonsole</name>
+  <name xml:lang="hi">क्यूएमएल कॉनसोल</name>
   <name xml:lang="hu">QMLKonsole</name>
   <name xml:lang="id">QMLKonsole</name>
   <name xml:lang="it">QMLKonsole</name>
@@ -107,6 +107,7 @@
     <p xml:lang="eu">Ukimen gailuetan erabilgarriak diren teklatuko botoi osagarriak eskaintzen dituen terminal aplikazioa.</p>
     <p xml:lang="fi">Päätesovellus, joka tarjoaa kosketusnäytöillä hyödyllisiä näppäimistön lisäpainikkeita.</p>
     <p xml:lang="fr">L'application de console propose des boutons additionnels utiles pour les périphériques tactiles.</p>
+    <p xml:lang="hi">टर्मिनल अनुप्रयोग जो स्पर्श उपकरणों के लिए अतिरिक्त कुञ्जीयाँ प्रदान करता है।</p>
     <p xml:lang="hu">Érintőképernyős eszközökön hasznos billentyűzetet biztosító terminálalkalmazás.</p>
     <p xml:lang="id">Aplikasi terminal menawarkan tombol keyboard tambahan yang berguna pada perangkat sentuh.</p>
     <p xml:lang="it">Applicazione di terminale che offre pulsanti della tastiera aggiuntivi utili su dispositivi tattili.</p>
