@@ -202,7 +202,7 @@ Kirigami.Page {
             ToolButton {
                 Layout.preferredWidth: height
                 Layout.preferredHeight: Kirigami.Units.gridUnit * 2
-                icon.name: "configure"
+                icon.name: "application-menu"
                 onClicked: applicationWindow().globalDrawer.open()
             }
             Kirigami.Separator { Layout.fillHeight: true }
@@ -278,7 +278,7 @@ Kirigami.Page {
             ToolButton {
                 Layout.preferredWidth: height
                 Layout.preferredHeight: Kirigami.Units.gridUnit * 2
-                icon.name: "application-menu"
+                icon.name: "overflow-menu"
                 onClicked: applicationWindow().contextDrawer.open()
             }
         }
