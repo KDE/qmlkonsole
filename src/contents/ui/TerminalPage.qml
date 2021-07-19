@@ -38,6 +38,41 @@ Kirigami.Page {
             }
         },
         Kirigami.Action {
+            icon.name: "document-close"
+            text: i18n("Send EOF")
+            onTriggered: {
+                terminal.pressKey(Qt.Key_D, Qt.ControlModifier, true)
+            }
+        },
+        Kirigami.Action {
+            icon.name: "bboxprev"
+            text: i18n("Cursor to line start")
+            onTriggered: {
+                terminal.pressKey(Qt.Key_A, Qt.ControlModifier, true)
+            }
+        },
+        Kirigami.Action {
+            icon.name: "bboxnext"
+            text: i18n("Cursor to line end")
+            onTriggered: {
+                terminal.pressKey(Qt.Key_E, Qt.ControlModifier, true)
+            }
+        },
+        Kirigami.Action {
+            icon.name: "edit-cut"
+            text: i18n("Kill to line end")
+            onTriggered: {
+                terminal.pressKey(Qt.Key_K, Qt.ControlModifier, true)
+            }
+        },
+        Kirigami.Action {
+            icon.name: "edit-paste"
+            text: i18n("Paste from kill buffer")
+            onTriggered: {
+                terminal.pressKey(Qt.Key_Y, Qt.ControlModifier, true)
+            }
+        },
+        Kirigami.Action {
             icon.name: "edit-copy"
             text: i18n("Copy")
             onTriggered: {
@@ -167,7 +202,7 @@ Kirigami.Page {
             ToolButton {
                 Layout.preferredWidth: height
                 Layout.preferredHeight: Kirigami.Units.gridUnit * 2
-                icon.name: "application-menu"
+                icon.name: "configure"
                 onClicked: applicationWindow().globalDrawer.open()
             }
             Kirigami.Separator { Layout.fillHeight: true }
@@ -177,9 +212,9 @@ Kirigami.Page {
                 RowLayout {
                     TerminalModifierButton {
                         id: ctrlButton
-                        Layout.preferredWidth: Kirigami.Units.gridUnit * 3
+                        Layout.preferredWidth: Math.round(Kirigami.Units.gridUnit * 1.5)
                         Layout.preferredHeight: Kirigami.Units.gridUnit * 2
-                        text: i18nc("Control Key", "Ctrl")
+                        text: i18nc("Control Key", "C-")
                         onClicked: {
                             modifier = modifier ^ Qt.ControlModifier
                             down = !down;
@@ -188,9 +223,9 @@ Kirigami.Page {
 
                     TerminalModifierButton {
                         id: altButton
-                        Layout.preferredWidth: Kirigami.Units.gridUnit * 3
+                        Layout.preferredWidth: Math.round(Kirigami.Units.gridUnit * 1.5)
                         Layout.preferredHeight: Kirigami.Units.gridUnit * 2
-                        text: i18nc("Alt Key", "Alt")
+                        text: i18nc("Alt Key", "A-")
                         onClicked: {
                             modifier = modifier ^ Qt.AltModifier
                             down = !down;
@@ -198,13 +233,14 @@ Kirigami.Page {
                     }
 
                     TerminalKeyButton {
-                        Layout.preferredWidth: Kirigami.Units.gridUnit * 3
+                        Layout.preferredWidth: Kirigami.Units.gridUnit * 2
                         text: i18nc("Escape key", "Esc")
                         onClicked: {
                             terminal.pressKey(Qt.Key_Escape, 0, true)
                         }
                     }
                     TerminalKeyButton {
+                        Layout.preferredWidth: Kirigami.Units.gridUnit * 2
                         text: i18nc("Tab character key", "Tab")
                         onClicked: terminal.pressKey(Qt.Key_Tab, 0, true, 0, "")
                     }
@@ -242,7 +278,7 @@ Kirigami.Page {
             ToolButton {
                 Layout.preferredWidth: height
                 Layout.preferredHeight: Kirigami.Units.gridUnit * 2
-                icon.name: "overflow-menu"
+                icon.name: "application-menu"
                 onClicked: applicationWindow().contextDrawer.open()
             }
         }

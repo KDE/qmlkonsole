@@ -10,7 +10,7 @@ import org.kde.kirigami 2.5 as Kirigami
 Controls.ToolButton {
     id: button
     implicitHeight: Kirigami.Units.gridUnit * 2
-    implicitWidth: Math.round(Kirigami.Units.gridUnit * 2.5)
+    implicitWidth: Math.round(Kirigami.Units.gridUnit * 1.5)
     activeFocusOnTab: false
     focusPolicy: Qt.NoFocus
 }
