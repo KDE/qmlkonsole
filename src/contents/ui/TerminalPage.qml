@@ -212,9 +212,9 @@ Kirigami.Page {
                 RowLayout {
                     TerminalModifierButton {
                         id: ctrlButton
-                        Layout.preferredWidth: Math.round(Kirigami.Units.gridUnit * 1.5)
+                        Layout.preferredWidth: Math.round(Kirigami.Units.gridUnit * 2)
                         Layout.preferredHeight: Kirigami.Units.gridUnit * 2
-                        text: i18nc("Control Key", "C-")
+                        text: i18nc("Control Key", "Ctrl")
                         onClicked: {
                             modifier = modifier ^ Qt.ControlModifier
                             down = !down;
@@ -223,9 +223,9 @@ Kirigami.Page {
 
                     TerminalModifierButton {
                         id: altButton
-                        Layout.preferredWidth: Math.round(Kirigami.Units.gridUnit * 1.5)
+                        Layout.preferredWidth: Math.round(Kirigami.Units.gridUnit * 1.75)
                         Layout.preferredHeight: Kirigami.Units.gridUnit * 2
-                        text: i18nc("Alt Key", "A-")
+                        text: i18nc("Alt Key", "Alt")
                         onClicked: {
                             modifier = modifier ^ Qt.AltModifier
                             down = !down;
