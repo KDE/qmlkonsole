@@ -28,21 +28,24 @@ QVariant TerminalTabModel::data(const QModelIndex &index, int role) const
         return {};
     }
     
-    if (role == NameRole)
+    if (role == NameRole) {
         return m_tabNames[index.row()];
-    else
+    } else {
         return {};
+    }
 }
 
 bool TerminalTabModel::setData(const QModelIndex &index, const QVariant &value, int role)
 {
-    if (!index.isValid() || index.row() >= m_tabNames.count())
+    if (!index.isValid() || index.row() >= m_tabNames.count()) {
         return false;
+    }
     
-    if (role == NameRole)
+    if (role == NameRole) {
         m_tabNames[index.row()] = value.toString();
-    else
+    } else {
         return false;
+    }
     
     Q_EMIT dataChanged(index, index);
     return true;
@@ -72,8 +75,9 @@ Q_INVOKABLE void TerminalTabModel::newTab()
 
 void TerminalTabModel::removeTab(int index)
 {
-    if (index < 0 || index >= m_tabNames.count())
+    if (index < 0 || index >= m_tabNames.count()) {
         return;
+    }
     
     Q_EMIT beginRemoveRows(QModelIndex(), index, index);
     m_tabNames.removeAt(index);

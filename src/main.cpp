@@ -39,7 +39,14 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
     QQmlApplicationEngine engine;
     engine.rootContext()->setContextObject(new KLocalizedContext(&engine));
     engine.rootContext()->setContextProperty("quickActionModel", QuickActionModel::self());
-    engine.rootContext()->setContextProperty("terminalTabModel", TerminalTabModel::self());
+    
+    qmlRegisterSingletonType<TerminalTabModel>("org.kde.qmlkonsole", 1, 0, "TerminalTabModel", [](QQmlEngine *engine, QJSEngine *scriptEngine) -> QObject * {
+        Q_UNUSED(engine)
+        Q_UNUSED(scriptEngine)
+
+        return TerminalTabModel::self();
+    });
+    
     engine.load(QUrl(QStringLiteral("qrc:///main.qml")));
 
     if (engine.rootObjects().isEmpty()) {

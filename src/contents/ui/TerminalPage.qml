@@ -55,7 +55,7 @@ Kirigami.Page {
             icon.name: "list-add"
             text: i18nc("@action:intoolbar", "New Tab")
             onTriggered: {
-                terminalTabModel.newTab();
+                TerminalTabModel.newTab();
                 tabSwipeView.currentIndex = tabSwipeView.contentChildren.length - 1;
             }
             shortcut: "Ctrl+Shift+T"
@@ -159,7 +159,7 @@ Kirigami.Page {
                 implicitHeight: Kirigami.Units.gridUnit * 18
                 Kirigami.Theme.inherit: false
                 Kirigami.Theme.colorSet: Kirigami.Theme.View
-                model: terminalTabModel
+                model: TerminalTabModel
                 
                 delegate: Kirigami.SwipeListItem {
                     topPadding: Kirigami.Units.smallSpacing
@@ -188,7 +188,7 @@ Kirigami.Page {
                         Kirigami.Action {
                             iconName: "delete"
                             text: i18n("Close")
-                            onTriggered: terminalTabModel.removeTab(index)
+                            onTriggered: TerminalTabModel.removeTab(index)
                         }
                     ]
                 }
@@ -220,7 +220,7 @@ Kirigami.Page {
             
             Repeater {
                 id: terminalRepeater
-                model: terminalTabModel
+                model: TerminalTabModel
                 
                 delegate: QMLTermWidget {
                     id: terminal
