@@ -15,7 +15,8 @@ import org.kde.qmlkonsole 1.0
 Kirigami.ApplicationWindow {
     property var terminal: pageStack.items[0].currentTerminal
     
-    pageStack.globalToolBar.style: Kirigami.ApplicationHeaderStyle.ToolBar
+    // fix layers not showing actions
+    pageStack.globalToolBar.style: pageStack.layers.depth > 1 ? Kirigami.ApplicationHeaderStyle.Auto : Kirigami.ApplicationHeaderStyle.ToolBar
 
     contextDrawer: Kirigami.ContextDrawer {}
     globalDrawer: Kirigami.GlobalDrawer {
