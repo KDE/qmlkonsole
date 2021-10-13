@@ -150,6 +150,31 @@ Kirigami.Page {
         anchors.fill: parent
 
         PopupDialog {
+            id: confirmDialog
+            property int indexToClose: 0
+            property var selectedTerminal: tabSwipeView.contentChildren[indexToClose]
+            title: i18nc("@title:window", "Confirm closing %1", selectedTerminal ? selectedTerminal.tabName : "")
+            standardButtons: Dialog.Yes | Dialog.Cancel
+            padding: Kirigami.Units.gridUnit
+            
+            onAccepted: {
+                TerminalTabModel.removeTab(indexToClose);
+                selectTabDialog.open();
+            }
+            onRejected: {
+                selectTabDialog.open();
+            }
+            
+            RowLayout {
+                Label {
+                    Layout.maximumWidth: Kirigami.Units.gridUnit * 15
+                    wrapMode: Text.Wrap
+                    text: i18n("A process is currently running in this tab. Are you sure you want to close it?")
+                }
+            }
+        }
+        
+        PopupDialog {
             id: selectTabDialog
             title: i18nc("@title:window", "Select Tab")
             standardButtons: Dialog.Close
@@ -188,7 +213,15 @@ Kirigami.Page {
                         Kirigami.Action {
                             iconName: "delete"
                             text: i18n("Close")
-                            onTriggered: TerminalTabModel.removeTab(index)
+                            onTriggered: {
+                                if (tabSwipeView.contentChildren[index].session.hasActiveProcess) {
+                                    selectTabDialog.close();
+                                    confirmDialog.indexToClose = index;
+                                    confirmDialog.open();
+                                } else {
+                                    TerminalTabModel.removeTab(index);
+                                }
+                            }
                         }
                     ]
                 }
