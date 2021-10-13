@@ -22,7 +22,7 @@ Kirigami.Page {
     rightPadding: 0
 
     function forceTerminalFocus() {
-        let wasVisible = Qt.inputMethod.visible;
+        const wasVisible = Qt.inputMethod.visible;
         currentTerminal.forceActiveFocus();
         if (!wasVisible) {
             Qt.inputMethod.hide();
@@ -53,7 +53,7 @@ Kirigami.Page {
     contextualActions: [
         Kirigami.Action {
             icon.name: "list-add"
-            text: i18n("New Tab")
+            text: i18nc("@action:intoolbar", "New Tab")
             onTriggered: {
                 terminalTabModel.newTab();
                 tabSwipeView.currentIndex = tabSwipeView.contentChildren.length - 1;
@@ -139,7 +139,7 @@ Kirigami.Page {
             icon.name: "settings-configure"
             onTriggered: pageStack.layers.push("qrc:/SettingsPage.qml",
                 {
-                    "terminal": currentTerminal
+                    terminal: currentTerminal
                 }
             )
         }
@@ -151,7 +151,7 @@ Kirigami.Page {
 
         PopupDialog {
             id: selectTabDialog
-            title: i18n("Select Tab")
+            title: i18nc("@title:window", "Select Tab")
             standardButtons: Dialog.Close
             
             ListView {
