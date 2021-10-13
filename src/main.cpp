@@ -11,6 +11,7 @@
 
 #include "terminalsettings.h"
 #include "quickactionmodel.h"
+#include "terminaltabmodel.h"
 #include "version.h"
 
 constexpr auto URI = "org.kde.qmlkonsole";
@@ -38,6 +39,7 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
     QQmlApplicationEngine engine;
     engine.rootContext()->setContextObject(new KLocalizedContext(&engine));
     engine.rootContext()->setContextProperty("quickActionModel", QuickActionModel::self());
+    engine.rootContext()->setContextProperty("terminalTabModel", TerminalTabModel::self());
     engine.load(QUrl(QStringLiteral("qrc:///main.qml")));
 
     if (engine.rootObjects().isEmpty()) {

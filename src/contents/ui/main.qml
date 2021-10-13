@@ -1,4 +1,5 @@
 // SPDX-FileCopyrightText: 2019-2020 Jonah Brüchert <jbb@kaidan.im>
+// SPDX-FileCopyrightText: 2021 Devin Lin <devin@kde.org>
 //
 // SPDX-License-Identifier: GPL-2.0-or-later
 
@@ -12,28 +13,16 @@ import org.kde.kirigami 2.7 as Kirigami
 import org.kde.qmlkonsole 1.0
 
 Kirigami.ApplicationWindow {
-    property QMLTermWidget terminal: pageStack.items[0].terminal
-    contextDrawer: Kirigami.ContextDrawer {}
+    property var terminal: pageStack.items[0].currentTerminal
     
-    Component.onCompleted: {
-        applicationWindow().globalDrawer.handle.visible = false;
-        applicationWindow().contextDrawer.handle.visible = false;
-    }
+    pageStack.globalToolBar.style: Kirigami.ApplicationHeaderStyle.ToolBar
 
+    contextDrawer: Kirigami.ContextDrawer {}
     globalDrawer: Kirigami.GlobalDrawer {
         id: globalDrawer
         enabled: pageStack.layers.depth === 1
 
         actions: [
-            Kirigami.Action {
-                text: i18n("Settings")
-                icon.name: "settings-configure"
-                onTriggered: pageStack.layers.push("qrc:/SettingsPage.qml",
-                    {
-                        "terminal": pageStack.items[0].terminal
-                    }
-                )
-            },
             Kirigami.Action {
                 text: i18n("Quick Actions")
                 icon.name: "new-command-alarm"
