@@ -14,7 +14,7 @@ import org.kde.qmlkonsole 1.0
 
 Kirigami.Page {
     id: root
-    property var currentTerminal: tabSwipeView.contentChildren[tabSwipeView.currentIndex]
+    property var currentTerminal: tabSwipeView.contentChildren[tabSwipeView.currentIndex].termWidget
 
     topPadding: 0
     bottomPadding: 0
@@ -122,7 +122,7 @@ Kirigami.Page {
             text: i18n("Copy")
             onTriggered: {
                 currentTerminal.copyClipboard();
-                onTriggered: root.currentTerminal.scrollMouseArea.enabled = true
+                onTriggered: root.currentTerminal.touchSelectionMode = false
             }
             shortcut: "Ctrl+Shift+C"
         },
@@ -229,7 +229,8 @@ Kirigami.Page {
         }
 
         Kirigami.InlineMessage {
-            visible: !root.currentTerminal.scrollMouseArea.enabled
+            id: selectionModePopup
+            visible: root.currentTerminal.touchSelectionMode
             implicitWidth: parent.width
             text: i18n("selection mode")
 
@@ -240,7 +241,7 @@ Kirigami.Page {
             actions: [
                 Kirigami.Action {
                     text: i18n("Disable")
-                    onTriggered: root.currentTerminal.scrollMouseArea.enabled = true
+                    onTriggered: root.currentTerminal.touchSelectionMode = false
                 }
             ]
         }
@@ -248,6 +249,8 @@ Kirigami.Page {
         // tabs
         SwipeView {
             id: tabSwipeView
+            interactive: !selectionModePopup.visible // don't conflict with selection mode
+            
             Layout.fillWidth: true
             Layout.fillHeight: true
             
@@ -255,87 +258,95 @@ Kirigami.Page {
                 id: terminalRepeater
                 model: TerminalTabModel
                 
-                delegate: QMLTermWidget {
-                    id: terminal
-                    property string tabName: model.name
-                    property bool isCurrentItem: SwipeView.isCurrentItem
+                delegate: Item {
+                    property alias termWidget: terminal
                     
-                    property alias scrollMouseArea: scrollMouseArea
-                    
-                    onIsCurrentItemChanged: {
-                        if (isCurrentItem) {
-                            root.forceTerminalFocus();
-                        }
-                    }
-                    
-                    font.family: "Monospace"
-                    colorScheme: TerminalSettings.colorScheme
-                    font.pixelSize: 12
-
-                    Component.onCompleted: {
-                        mainsession.startShellProgram();                        
-                        root.forceTerminalFocus();
-                    }
-
-                    function pressKey(key, modifiers, pressed, nativeScanCode, text) {
-                        terminal.simulateKeyPress(key, modifiers, pressed, nativeScanCode, text);
-                        root.forceTerminalFocus();
-                    }
-
-                    session: QMLTermSession {
-                        id: mainsession
-                        initialWorkingDirectory: "$HOME"
-                        onFinished: Qt.quit()
-                        onMatchFound: {
-                            console.log("found at: %1 %2 %3 %4".arg(startColumn).arg(startLine).arg(endColumn).arg(endLine));
-                        }
-                        onNoMatchFound: {
-                            console.log("not found");
-                        }
-                    }
-
-                    onTerminalUsesMouseChanged: console.log(terminalUsesMouse);
-
-                    ScrollBar {
-                        Kirigami.Theme.colorSet: Kirigami.Theme.Complementary // text color of terminal is also complementary
-                        Kirigami.Theme.inherit: false
-                        anchors {
-                            right: parent.right
-                            top: parent.top
-                            bottom: parent.bottom
-                        }
-                        visible: true
-                        orientation: Qt.Vertical
-                        size: (terminal.lines / (terminal.lines + terminal.scrollbarMaximum - terminal.scrollbarMinimum))
-                        position: terminal.scrollbarCurrentValue / (terminal.lines + terminal.scrollbarMaximum)
-                        interactive: false
-                    }
-
-                    MouseArea {
-                        id: scrollMouseArea
-                        property bool scrolling: false
-
-                        onPressAndHold: {
-                            enabled = scrolling ? enabled : !enabled
-                        }
-
-                        onPositionChanged: {
-                            scrolling = scrolling ? true : Math.abs(mouse.y - oldY) >= 1
-                            terminal.simulateWheel(0, 0, 0, 0, Qt.point(0, (mouse.y - oldY)*2))
-                            oldY = mouse.y
-                        }
-
-                        propagateComposedEvents: true
+                    QMLTermWidget {
+                        id: terminal
                         anchors.fill: parent
-                        property real oldY
-                        onPressed: {
-                            scrolling = false
-                            oldY = mouse.y
+                        
+                        property string tabName: model.name
+                        property bool isCurrentItem: SwipeView.isCurrentItem
+                        
+                        // with touch, to select text we first require users to press-and-hold to enter the selection mode
+                        property bool touchSelectionMode: false
+                        
+                        onIsCurrentItemChanged: {
+                            if (isCurrentItem) {
+                                root.forceTerminalFocus();
+                            }
                         }
                         
+                        font.family: "Monospace"
+                        colorScheme: TerminalSettings.colorScheme
+                        font.pixelSize: 12
+
+                        Component.onCompleted: {
+                            mainsession.startShellProgram();                        
+                            root.forceTerminalFocus();
+                        }
+
+                        function pressKey(key, modifiers, pressed, nativeScanCode, text) {
+                            terminal.simulateKeyPress(key, modifiers, pressed, nativeScanCode, text);
+                            root.forceTerminalFocus();
+                        }
+
+                        session: QMLTermSession {
+                            id: mainsession
+                            initialWorkingDirectory: "$HOME"
+                            onFinished: Qt.quit()
+                            onMatchFound: {
+                                console.log("found at: %1 %2 %3 %4".arg(startColumn).arg(startLine).arg(endColumn).arg(endLine));
+                            }
+                            onNoMatchFound: {
+                                console.log("not found");
+                            }
+                        }
+
+                        onTerminalUsesMouseChanged: console.log(terminalUsesMouse);
+
+                        ScrollBar {
+                            Kirigami.Theme.colorSet: Kirigami.Theme.Complementary // text color of terminal is also complementary
+                            Kirigami.Theme.inherit: false
+                            anchors {
+                                right: parent.right
+                                top: parent.top
+                                bottom: parent.bottom
+                            }
+                            visible: true
+                            orientation: Qt.Vertical
+                            size: (terminal.lines / (terminal.lines + terminal.scrollbarMaximum - terminal.scrollbarMinimum))
+                            position: terminal.scrollbarCurrentValue / (terminal.lines + terminal.scrollbarMaximum)
+                            interactive: false
+                        }
+                        
+                        // terminal focus on mouse click
                         TapHandler {
                             acceptedDevices: PointerDevice.Mouse | PointerDevice.Stylus
+                            cursorShape: Qt.IBeamCursor
                             onTapped: root.forceTerminalFocus();
+                        }
+                        
+                        // enter touch selection mode
+                        TapHandler {
+                            acceptedDevices: PointerDevice.TouchScreen
+                            enabled: !terminal.touchSelectionMode
+                            onLongPressed: terminal.touchSelectionMode = true
+                        }
+                        
+                        // simulate scrolling for touch (TODO velocity)
+                        DragHandler {
+                            acceptedDevices: PointerDevice.TouchScreen
+                            enabled: !terminal.touchSelectionMode
+                            
+                            property real previousY
+                            onActiveChanged: {
+                                previousY = 0;
+                            }
+                            onTranslationChanged: {
+                                terminal.simulateWheel(0, 0, 0, 0, Qt.point(0, (translation.y - previousY) * 2));
+                                previousY = translation.y;
+                            }
                         }
                     }
                 }
