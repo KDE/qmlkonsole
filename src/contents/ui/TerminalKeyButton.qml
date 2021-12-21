@@ -7,7 +7,7 @@ import QtQuick.Controls 2.0 as Controls
 
 import org.kde.kirigami 2.5 as Kirigami
 
-Controls.ToolButton {
+Controls.Button {
     id: button
     implicitHeight: Kirigami.Units.gridUnit * 2
     implicitWidth: Math.round(Kirigami.Units.gridUnit * 1.5)

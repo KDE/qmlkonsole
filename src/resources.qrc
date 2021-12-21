@@ -5,7 +5,7 @@
         <file alias="TerminalPage.qml">contents/ui/TerminalPage.qml</file>
         <file alias="TerminalKeyButton.qml">contents/ui/TerminalKeyButton.qml</file>
         <file alias="PopupDialog.qml">contents/ui/PopupDialog.qml</file>
+        <file alias="TerminalKeyToolBar.qml">contents/ui/TerminalKeyToolBar.qml</file>
         <file>QuickActionSettings.qml</file>
-        <file>TerminalModifierButton.qml</file>
     </qresource>
 </RCC>

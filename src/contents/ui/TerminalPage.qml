@@ -294,18 +294,6 @@ Kirigami.Page {
                         }
                     }
 
-                    Keys.onPressed: {
-                        if(ctrlButton.modifier | altButton.modifier)
-                        {
-                            pressKey(event.key, ctrlButton.modifier | altButton.modifier, true);
-                            ctrlButton.down = false;
-                            altButton.down = false;
-                            event.accepted = true;
-                            ctrlButton.modifier = 0;
-                            altButton.modifier = 0;
-                        }
-                    }
-
                     onTerminalUsesMouseChanged: console.log(terminalUsesMouse);
 
                     ScrollBar {
@@ -355,102 +343,8 @@ Kirigami.Page {
         }
     }
 
-    footer: ToolBar {
+    footer: TerminalKeyToolBar {
         visible: Kirigami.Settings.isMobile
-        height: visible ? implicitHeight : 0
-        contentItem: RowLayout {
-            spacing: Kirigami.Units.smallSpacing
-            ScrollView {
-                Layout.fillWidth: true
-                clip: true
-                RowLayout {
-                    TerminalModifierButton {
-                        id: ctrlButton
-                        Layout.preferredWidth: Math.round(Kirigami.Units.gridUnit * 2)
-                        Layout.preferredHeight: Kirigami.Units.gridUnit * 2
-                        text: i18nc("Control Key", "Ctrl")
-                        onClicked: {
-                            modifier = modifier ^ Qt.ControlModifier
-                            down = !down;
-                        }
-                    }
-                    TerminalModifierButton {
-                        id: altButton
-                        Layout.preferredWidth: Math.round(Kirigami.Units.gridUnit * 1.75)
-                        Layout.preferredHeight: Kirigami.Units.gridUnit * 2
-                        text: i18nc("Alt Key", "Alt")
-                        onClicked: {
-                            modifier = modifier ^ Qt.AltModifier
-                            down = !down;
-                        }
-                    }
-
-                    TerminalKeyButton {
-                        Layout.preferredWidth: Kirigami.Units.gridUnit * 2
-                        text: i18nc("Escape key", "Esc")
-                        onClicked: {
-                            currentTerminal.pressKey(Qt.Key_Escape, 0, true)
-                        }
-                    }
-                    TerminalKeyButton {
-                        Layout.preferredWidth: Kirigami.Units.gridUnit * 2
-                        text: i18nc("Tab character key", "Tab")
-                        onClicked: currentTerminal.pressKey(Qt.Key_Tab, 0, true, 0, "")
-                    }
-
-                    TerminalKeyButton {
-                        Layout.preferredWidth: Kirigami.Units.gridUnit * 2
-                        text: "↑"
-                        onClicked: currentTerminal.pressKey(Qt.Key_Up, 0, true, 0, "")
-                        autoRepeat: true
-                    }
-                    TerminalKeyButton {
-                        Layout.preferredWidth: Kirigami.Units.gridUnit * 2
-                        text: "↓"
-                        onClicked: currentTerminal.pressKey(Qt.Key_Down, 0, true, 0, "")
-                        autoRepeat: true
-                    }
-                    TerminalKeyButton {
-                        Layout.preferredWidth: Kirigami.Units.gridUnit * 2
-                        text: "←"
-                        onClicked: currentTerminal.pressKey(Qt.Key_Left, 0, true, 0, "")
-                        autoRepeat: true
-                    }
-                    TerminalKeyButton {
-                        Layout.preferredWidth: Kirigami.Units.gridUnit * 2
-                        text: "→"
-                        onClicked: currentTerminal.pressKey(Qt.Key_Right, 0, true, 0, "")
-                        autoRepeat: true
-                    }
-                    
-                    TerminalKeyButton {
-                        Layout.preferredWidth: Kirigami.Units.gridUnit * 2
-                        text: "|"
-                        onClicked: currentTerminal.pressKey(Qt.Key_Bar, 0, true, 0, "|")
-                    }
-                    TerminalKeyButton {
-                        Layout.preferredWidth: Kirigami.Units.gridUnit * 2
-                        text: "~"
-                        onClicked: currentTerminal.pressKey(Qt.Key_AsciiTilde, 0, true, 0, "~")
-                    }
-                }
-            }
-            Kirigami.Separator { Layout.fillHeight: true }
-            ToolButton {
-                Layout.preferredWidth: height
-                Layout.preferredHeight: Kirigami.Units.gridUnit * 2
-                icon.name: "input-keyboard-virtual"
-                text: i18n("Toggle Virtual Keyboard")
-                display: AbstractButton.IconOnly
-                onClicked: {
-                    if (Qt.inputMethod.visible) {
-                        Qt.inputMethod.hide();
-                    } else {
-                        currentTerminal.forceActiveFocus();
-                        Qt.inputMethod.show();
-                    }
-                }
-            }
-        }
+        terminal: root.currentTerminal
     }
 }

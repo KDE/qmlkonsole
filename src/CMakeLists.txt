@@ -2,6 +2,7 @@ set(qmlkonsole_SRCS
     main.cpp
     quickactionmodel.cpp
     terminaltabmodel.cpp
+    util.cpp
 )
 
 qt5_add_resources(RESOURCES resources.qrc)

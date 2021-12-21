@@ -13,6 +13,7 @@
 #include "quickactionmodel.h"
 #include "terminaltabmodel.h"
 #include "version.h"
+#include "util.h"
 
 constexpr auto URI = "org.kde.qmlkonsole";
 
@@ -40,11 +41,18 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
     engine.rootContext()->setContextObject(new KLocalizedContext(&engine));
     engine.rootContext()->setContextProperty("quickActionModel", QuickActionModel::self());
     
-    qmlRegisterSingletonType<TerminalTabModel>("org.kde.qmlkonsole", 1, 0, "TerminalTabModel", [](QQmlEngine *engine, QJSEngine *scriptEngine) -> QObject * {
+    qmlRegisterSingletonType<TerminalTabModel>(URI, 1, 0, "TerminalTabModel", [](QQmlEngine *engine, QJSEngine *scriptEngine) -> QObject * {
         Q_UNUSED(engine)
         Q_UNUSED(scriptEngine)
 
         return TerminalTabModel::self();
+    });
+    
+    qmlRegisterSingletonType<Util>(URI, 1, 0, "Util", [](QQmlEngine *engine, QJSEngine *scriptEngine) -> QObject * {
+        Q_UNUSED(engine)
+        Q_UNUSED(scriptEngine)
+
+        return Util::self();
     });
     
     engine.load(QUrl(QStringLiteral("qrc:///main.qml")));
