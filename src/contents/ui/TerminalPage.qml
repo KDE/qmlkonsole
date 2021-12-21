@@ -337,6 +337,7 @@ Kirigami.Page {
                         // simulate scrolling for touch (TODO velocity)
                         DragHandler {
                             acceptedDevices: PointerDevice.TouchScreen
+                            xAxis.enabled: false
                             enabled: !terminal.touchSelectionMode
                             
                             property real previousY
