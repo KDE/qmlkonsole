@@ -25,7 +25,6 @@ ToolBar {
     }
     
     function pressModifierButton(modifier) {
-        modifierHolder.modifier = modifier;
         modifierHolder.text = "";
         modifierHolder.forceActiveFocus();
     }
@@ -50,11 +49,9 @@ ToolBar {
             visible: false
             inputMethodHints: Qt.ImhNoPredictiveText | Qt.ImhNoAutoUppercase
             
-            property var modifier
-            
             onTextChanged: {
                 if (text.length == 1) {
-                    root.pressKeyWithModifier(Util.getKeyFromString(text), modifier);
+                    root.pressKey(Util.getKeyFromString(text));
                 }
                 text = "";
             }
