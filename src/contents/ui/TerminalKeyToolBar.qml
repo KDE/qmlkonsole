@@ -66,7 +66,7 @@ ToolBar {
                 
                 TerminalKeyButton {
                     id: ctrlButton
-                    Layout.preferredWidth: Math.round(Kirigami.Units.gridUnit * 2)
+                    Layout.preferredWidth: Math.max(implicitWidth + Kirigami.Units.smallSpacing * 2, Math.round(Kirigami.Units.gridUnit * 2))
                     Layout.preferredHeight: Kirigami.Units.gridUnit * 2
                     text: i18nc("Control Key", "Ctrl")
                     checkable: true
@@ -84,7 +84,7 @@ ToolBar {
                 
                 TerminalKeyButton {
                     id: altButton
-                    Layout.preferredWidth: Math.round(Kirigami.Units.gridUnit * 1.75)
+                    Layout.preferredWidth: Math.max(implicitWidth + Kirigami.Units.smallSpacing * 2, Math.round(Kirigami.Units.gridUnit * 1.75))
                     Layout.preferredHeight: Kirigami.Units.gridUnit * 2
                     text: i18nc("Alt Key", "Alt")
                     checkable: true
