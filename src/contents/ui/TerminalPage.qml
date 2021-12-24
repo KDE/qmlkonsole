@@ -214,7 +214,7 @@ Kirigami.Page {
                             iconName: "delete"
                             text: i18n("Close")
                             onTriggered: {
-                                if (tabSwipeView.contentChildren[index].session.hasActiveProcess) {
+                                if (tabSwipeView.contentChildren[index].termWidget.session.hasActiveProcess) {
                                     selectTabDialog.close();
                                     confirmDialog.indexToClose = index;
                                     confirmDialog.open();
