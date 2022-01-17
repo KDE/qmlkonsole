@@ -29,6 +29,11 @@ Kirigami.Page {
         }
     }
     
+    Component.onCompleted: {
+        // focus terminal text input immediately after load
+        forceTerminalFocus();
+    }
+    
     // switch tab button
     titleDelegate: ToolButton {
         Layout.fillHeight: true
@@ -280,12 +285,11 @@ Kirigami.Page {
                         font.family: "Monospace"
                         colorScheme: TerminalSettings.colorScheme
                         font.pixelSize: 12
-
+                        
                         Component.onCompleted: {
-                            mainsession.startShellProgram();                        
-                            root.forceTerminalFocus();
+                            mainsession.startShellProgram();
                         }
-
+                        
                         function pressKey(key, modifiers, pressed, nativeScanCode, text) {
                             terminal.simulateKeyPress(key, modifiers, pressed, nativeScanCode, text);
                             root.forceTerminalFocus();
