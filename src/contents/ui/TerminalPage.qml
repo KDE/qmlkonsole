@@ -208,7 +208,7 @@ Kirigami.Page {
                             Layout.alignment: Qt.AlignRight | Qt.AlignVCenter
                             checked: tabSwipeView.currentIndex == index
                             onClicked: {
-                                tabSwipeView.currentIndex = index;
+                                tabSwipeView.setCurrentIndex(index);
                                 selectTabDialog.close();
                             }
                         }
@@ -341,7 +341,6 @@ Kirigami.Page {
                         // simulate scrolling for touch (TODO velocity)
                         DragHandler {
                             acceptedDevices: PointerDevice.TouchScreen
-                            xAxis.enabled: false
                             enabled: !terminal.touchSelectionMode
                             
                             property real previousY
