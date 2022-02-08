@@ -128,6 +128,15 @@
     <p xml:lang="zh-CN">提供额外实用触屏键盘按钮的终端应用程序。</p>
   </description>
   <releases>
+    <release version="22.02" date="2021-02-09">
+      <url>https://www.plasma-mobile.org/2022/02/09/plasma-mobile-gear-22-02/</url>
+      <description>
+        <ul>
+          <li>Fix support for modifier keys like Alt and Ctrl</li>
+          <li>Code refactoring and general user interface improvements</li>
+        </ul>
+      </description>
+    </release>
     <release version="21.12" date="2021-12-07">
       <url>https://www.plasma-mobile.org/2021/12/07/plasma-mobile-gear-21-12/</url>
       <description>
