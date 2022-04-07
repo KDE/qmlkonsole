@@ -51,6 +51,8 @@ endif()
 ################# build and install #################
 add_subdirectory(src)
 
+ki18n_install(po)
+
 install(PROGRAMS org.kde.mobile.qmlkonsole.desktop DESTINATION ${KDE_INSTALL_APPDIR})
 install(FILES org.kde.mobile.qmlkonsole.appdata.xml DESTINATION ${KDE_INSTALL_METAINFODIR})
 
