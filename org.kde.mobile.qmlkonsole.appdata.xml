@@ -59,7 +59,7 @@
   <summary xml:lang="sk">Mobilná terminálová aplikácia</summary>
   <summary xml:lang="sl">Aplikacija mobilnega terminala</summary>
   <summary xml:lang="sv">Mobilt terminalprogram</summary>
-  <summary xml:lang="tr">Mobil uçbirim uygulaması</summary>
+  <summary xml:lang="tr">Taşınabilir uçbirim uygulaması</summary>
   <summary xml:lang="uk">Програма-термінал для мобільних пристроїв</summary>
   <summary xml:lang="x-test">xxMobile terminal applicationxx</summary>
   <summary xml:lang="zh-CN">移动终端程序</summary>
@@ -122,7 +122,7 @@
     <p xml:lang="ro">Aplicație de terminal ce oferă butoane de tastatură suplimentare, utile pe dispozitivele tactile.</p>
     <p xml:lang="sl">Aplikacija terminala nudi dodatne tipke na tipkovnici, koristne pri napravah na dotik.</p>
     <p xml:lang="sv">Terminalprogram som erbjuder ytterligare tangentbordsknappar användbar på pekenheter.</p>
-    <p xml:lang="tr">Dokunmatik cihazlarda kullanışlı ek klavye düğmeleri sunan uçbirim uygulaması.</p>
+    <p xml:lang="tr">Dokunmatik aygıtlarda kullanışlı ek klavye düğmeleri sunan uçbirim uygulaması.</p>
     <p xml:lang="uk">Програма-термінал, у якій передбачено додаткові клавіші, які є зручними на сенсорних пристроях.</p>
     <p xml:lang="x-test">xxTerminal application offering additional keyboard buttons useful on touch devices.xx</p>
     <p xml:lang="zh-CN">提供额外实用触屏键盘按钮的终端应用程序。</p>
