@@ -1,0 +1,179 @@
+# Copyright (C) YEAR This file is copyright:
+# This file is distributed under the same license as the qmlkonsole package.
+#
+# Stefan Asserhäll <stefan.asserhall@bredband.net>, 2020, 2021.
+msgid ""
+msgstr ""
+"Project-Id-Version: qmlkonsole\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-01-18 00:46+0000\n"
+"PO-Revision-Date: 2021-10-14 16:56+0200\n"
+"Last-Translator: Stefan Asserhäll <stefan.asserhall@bredband.net>\n"
+"Language-Team: Swedish <kde-i18n-doc@kde.org>\n"
+"Language: sv\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 20.08.1\n"
+
+#: contents/ui/main.qml:28
+#, kde-format
+msgid "Quick Actions"
+msgstr "Snabbåtgärder"
+
+#: contents/ui/SettingsPage.qml:14 contents/ui/TerminalPage.qml:143
+#, kde-format
+msgid "Settings"
+msgstr "Inställningar"
+
+#: contents/ui/SettingsPage.qml:24
+#, kde-format
+msgid "Color Scheme"
+msgstr "Färgschema"
+
+#: contents/ui/TerminalKeyToolBar.qml:71
+#, kde-format
+msgctxt "Control Key"
+msgid "Ctrl"
+msgstr "Ctrl"
+
+#: contents/ui/TerminalKeyToolBar.qml:89
+#, kde-format
+msgctxt "Alt Key"
+msgid "Alt"
+msgstr "Alt"
+
+#: contents/ui/TerminalKeyToolBar.qml:105
+#, kde-format
+msgctxt "Escape key"
+msgid "Esc"
+msgstr "Esc"
+
+#: contents/ui/TerminalKeyToolBar.qml:112
+#, kde-format
+msgctxt "Tab character key"
+msgid "Tab"
+msgstr "Tabulator"
+
+#: contents/ui/TerminalKeyToolBar.qml:161
+#, kde-format
+msgid "Toggle Virtual Keyboard"
+msgstr "Visa eller dölj virtuellt tangentbord"
+
+#: contents/ui/TerminalPage.qml:61
+#, kde-format
+msgctxt "@action:intoolbar"
+msgid "New Tab"
+msgstr "Ny flik"
+
+#: contents/ui/TerminalPage.qml:71
+#, kde-format
+msgid "reverse-i-search"
+msgstr "omvänd interaktiv sökning"
+
+#: contents/ui/TerminalPage.qml:79
+#, kde-format
+msgid "Cancel current command"
+msgstr "Avbryt pågående kommando"
+
+#: contents/ui/TerminalPage.qml:87
+#, kde-format
+msgid "Send EOF"
+msgstr "Skicka EOF"
+
+#: contents/ui/TerminalPage.qml:95
+#, kde-format
+msgid "Cursor to line start"
+msgstr "Markör till radens början"
+
+#: contents/ui/TerminalPage.qml:103
+#, kde-format
+msgid "Cursor to line end"
+msgstr "Markör till radens slut"
+
+#: contents/ui/TerminalPage.qml:111
+#, kde-format
+msgid "Kill to line end"
+msgstr "Ta bort till radens slut"
+
+#: contents/ui/TerminalPage.qml:119
+#, kde-format
+msgid "Paste from kill buffer"
+msgstr "Klistra in från borttagningsbuffert"
+
+#: contents/ui/TerminalPage.qml:127
+#, kde-format
+msgid "Copy"
+msgstr "Kopiera"
+
+#: contents/ui/TerminalPage.qml:137
+#, kde-format
+msgid "Paste"
+msgstr "Klistra in"
+
+#: contents/ui/TerminalPage.qml:161
+#, kde-format
+msgctxt "@title:window"
+msgid "Confirm closing %1"
+msgstr "Bekräfta stängning av %1"
+
+#: contents/ui/TerminalPage.qml:177
+#, kde-format
+msgid ""
+"A process is currently running in this tab. Are you sure you want to close "
+"it?"
+msgstr ""
+"Ett process kör för närvarande under fliken. Är du säker på att du vill "
+"stänga den?"
+
+#: contents/ui/TerminalPage.qml:184
+#, kde-format
+msgctxt "@title:window"
+msgid "Select Tab"
+msgstr "Välj flik"
+
+#: contents/ui/TerminalPage.qml:220
+#, kde-format
+msgid "Close"
+msgstr "Stäng"
+
+#: contents/ui/TerminalPage.qml:240
+#, kde-format
+msgid "selection mode"
+msgstr "markeringsläge"
+
+#: contents/ui/TerminalPage.qml:248
+#, kde-format
+msgid "Disable"
+msgstr "Inaktivera"
+
+#: QuickActionSettings.qml:14
+#, kde-format
+msgid "Quick Action Settings"
+msgstr "Inställningar av snabbåtgärder"
+
+#: QuickActionSettings.qml:19
+#, kde-format
+msgid "Add Actions"
+msgstr "Lägg till åtgärder"
+
+#: QuickActionSettings.qml:50
+#, kde-format
+msgid "Action %1 removed"
+msgstr "Åtgärd %1 borttagen"
+
+#: QuickActionSettings.qml:60
+#, kde-format
+msgid "Add action"
+msgstr "Lägg till åtgärd"
+
+#: QuickActionSettings.qml:71
+#, kde-format
+msgid "Save"
+msgstr "Spara"
+
+#: terminaltabmodel.cpp:70
+#, kde-format
+msgid "Tab %1"
+msgstr "Flik %1"

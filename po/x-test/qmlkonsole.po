@@ -1,0 +1,179 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR This file is copyright:
+# This file is distributed under the same license as the qmlkonsole package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: qmlkonsole\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-01-18 00:46+0000\n"
+"PO-Revision-Date: 2021-10-14 01:19+0000\n"
+"Last-Translator: transxx.py program <null@kde.org>\n"
+"Language-Team: KDE Test Language <kde-i18n-doc@kde.org>\n"
+"Language: x-test\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: contents/ui/main.qml:28
+#, kde-format
+msgid "Quick Actions"
+msgstr "xxQuick Actionsxx"
+
+#: contents/ui/SettingsPage.qml:14 contents/ui/TerminalPage.qml:143
+#, kde-format
+msgid "Settings"
+msgstr "xxSettingsxx"
+
+#: contents/ui/SettingsPage.qml:24
+#, kde-format
+msgid "Color Scheme"
+msgstr "xxColor Schemexx"
+
+#: contents/ui/TerminalKeyToolBar.qml:71
+#, kde-format
+msgctxt "Control Key"
+msgid "Ctrl"
+msgstr "xxCtrlxx"
+
+#: contents/ui/TerminalKeyToolBar.qml:89
+#, kde-format
+msgctxt "Alt Key"
+msgid "Alt"
+msgstr "xxAltxx"
+
+#: contents/ui/TerminalKeyToolBar.qml:105
+#, kde-format
+msgctxt "Escape key"
+msgid "Esc"
+msgstr "xxEscxx"
+
+#: contents/ui/TerminalKeyToolBar.qml:112
+#, kde-format
+msgctxt "Tab character key"
+msgid "Tab"
+msgstr "xxTabxx"
+
+#: contents/ui/TerminalKeyToolBar.qml:161
+#, kde-format
+msgid "Toggle Virtual Keyboard"
+msgstr "xxToggle Virtual Keyboardxx"
+
+#: contents/ui/TerminalPage.qml:61
+#, kde-format
+msgctxt "@action:intoolbar"
+msgid "New Tab"
+msgstr "xxNew Tabxx"
+
+#: contents/ui/TerminalPage.qml:71
+#, kde-format
+msgid "reverse-i-search"
+msgstr "xxreverse-i-searchxx"
+
+#: contents/ui/TerminalPage.qml:79
+#, kde-format
+msgid "Cancel current command"
+msgstr "xxCancel current commandxx"
+
+#: contents/ui/TerminalPage.qml:87
+#, kde-format
+msgid "Send EOF"
+msgstr "xxSend EOFxx"
+
+#: contents/ui/TerminalPage.qml:95
+#, kde-format
+msgid "Cursor to line start"
+msgstr "xxCursor to line startxx"
+
+#: contents/ui/TerminalPage.qml:103
+#, kde-format
+msgid "Cursor to line end"
+msgstr "xxCursor to line endxx"
+
+#: contents/ui/TerminalPage.qml:111
+#, kde-format
+msgid "Kill to line end"
+msgstr "xxKill to line endxx"
+
+#: contents/ui/TerminalPage.qml:119
+#, kde-format
+msgid "Paste from kill buffer"
+msgstr "xxPaste from kill bufferxx"
+
+#: contents/ui/TerminalPage.qml:127
+#, kde-format
+msgid "Copy"
+msgstr "xxCopyxx"
+
+#: contents/ui/TerminalPage.qml:137
+#, kde-format
+msgid "Paste"
+msgstr "xxPastexx"
+
+#: contents/ui/TerminalPage.qml:161
+#, kde-format
+msgctxt "@title:window"
+msgid "Confirm closing %1"
+msgstr "xxConfirm closing %1xx"
+
+#: contents/ui/TerminalPage.qml:177
+#, kde-format
+msgid ""
+"A process is currently running in this tab. Are you sure you want to close "
+"it?"
+msgstr ""
+"xxA process is currently running in this tab. Are you sure you want to close "
+"it?xx"
+
+#: contents/ui/TerminalPage.qml:184
+#, kde-format
+msgctxt "@title:window"
+msgid "Select Tab"
+msgstr "xxSelect Tabxx"
+
+#: contents/ui/TerminalPage.qml:220
+#, kde-format
+msgid "Close"
+msgstr "xxClosexx"
+
+#: contents/ui/TerminalPage.qml:240
+#, kde-format
+msgid "selection mode"
+msgstr "xxselection modexx"
+
+#: contents/ui/TerminalPage.qml:248
+#, kde-format
+msgid "Disable"
+msgstr "xxDisablexx"
+
+#: QuickActionSettings.qml:14
+#, kde-format
+msgid "Quick Action Settings"
+msgstr "xxQuick Action Settingsxx"
+
+#: QuickActionSettings.qml:19
+#, kde-format
+msgid "Add Actions"
+msgstr "xxAdd Actionsxx"
+
+#: QuickActionSettings.qml:50
+#, kde-format
+msgid "Action %1 removed"
+msgstr "xxAction %1 removedxx"
+
+#: QuickActionSettings.qml:60
+#, kde-format
+msgid "Add action"
+msgstr "xxAdd actionxx"
+
+#: QuickActionSettings.qml:71
+#, kde-format
+msgid "Save"
+msgstr "xxSavexx"
+
+#: terminaltabmodel.cpp:70
+#, kde-format
+msgid "Tab %1"
+msgstr "xxTab %1xx"

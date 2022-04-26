@@ -1,0 +1,179 @@
+# Copyright (C) YEAR This file is copyright:
+# This file is distributed under the same license as the qmlkonsole package.
+#
+# Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>, 2021, 2022.
+msgid ""
+msgstr ""
+"Project-Id-Version: qmlkonsole\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-01-18 00:46+0000\n"
+"PO-Revision-Date: 2022-02-12 15:59+0100\n"
+"Last-Translator: Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>\n"
+"Language-Team: Polish <kde-i18n-doc@kde.org>\n"
+"Language: pl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
+"|| n%100>=20) ? 1 : 2);\n"
+"X-Generator: Lokalize 22.03.70\n"
+
+#: contents/ui/main.qml:28
+#, kde-format
+msgid "Quick Actions"
+msgstr "Szybkie działania"
+
+#: contents/ui/SettingsPage.qml:14 contents/ui/TerminalPage.qml:143
+#, kde-format
+msgid "Settings"
+msgstr "Ustawienia"
+
+#: contents/ui/SettingsPage.qml:24
+#, kde-format
+msgid "Color Scheme"
+msgstr "Zestaw barw"
+
+#: contents/ui/TerminalKeyToolBar.qml:71
+#, kde-format
+msgctxt "Control Key"
+msgid "Ctrl"
+msgstr "Ctrl"
+
+#: contents/ui/TerminalKeyToolBar.qml:89
+#, kde-format
+msgctxt "Alt Key"
+msgid "Alt"
+msgstr "Alt"
+
+#: contents/ui/TerminalKeyToolBar.qml:105
+#, kde-format
+msgctxt "Escape key"
+msgid "Esc"
+msgstr "Esc"
+
+#: contents/ui/TerminalKeyToolBar.qml:112
+#, kde-format
+msgctxt "Tab character key"
+msgid "Tab"
+msgstr "Tab"
+
+#: contents/ui/TerminalKeyToolBar.qml:161
+#, kde-format
+msgid "Toggle Virtual Keyboard"
+msgstr "Wł./Wył. klawiaturę wirtualną"
+
+#: contents/ui/TerminalPage.qml:61
+#, kde-format
+msgctxt "@action:intoolbar"
+msgid "New Tab"
+msgstr "Nowa karta"
+
+#: contents/ui/TerminalPage.qml:71
+#, kde-format
+msgid "reverse-i-search"
+msgstr "odwróć-i-szukaj"
+
+#: contents/ui/TerminalPage.qml:79
+#, kde-format
+msgid "Cancel current command"
+msgstr "Anuluj bieżące polecenie"
+
+#: contents/ui/TerminalPage.qml:87
+#, kde-format
+msgid "Send EOF"
+msgstr "Wyślij EOF"
+
+#: contents/ui/TerminalPage.qml:95
+#, kde-format
+msgid "Cursor to line start"
+msgstr "Kursor na początek wiersza"
+
+#: contents/ui/TerminalPage.qml:103
+#, kde-format
+msgid "Cursor to line end"
+msgstr "Kursor na koniec wiersza"
+
+#: contents/ui/TerminalPage.qml:111
+#, kde-format
+msgid "Kill to line end"
+msgstr "Zniszczenie na koniec wiersza"
+
+#: contents/ui/TerminalPage.qml:119
+#, kde-format
+msgid "Paste from kill buffer"
+msgstr "Wklej z bufora zniszczenia"
+
+#: contents/ui/TerminalPage.qml:127
+#, kde-format
+msgid "Copy"
+msgstr "Skopiuj"
+
+#: contents/ui/TerminalPage.qml:137
+#, kde-format
+msgid "Paste"
+msgstr "Wklej"
+
+#: contents/ui/TerminalPage.qml:161
+#, kde-format
+msgctxt "@title:window"
+msgid "Confirm closing %1"
+msgstr "Potwierdź zamknięcie %1"
+
+#: contents/ui/TerminalPage.qml:177
+#, kde-format
+msgid ""
+"A process is currently running in this tab. Are you sure you want to close "
+"it?"
+msgstr ""
+"Na tej karcie działa obecnie jakiś proces. Czy na pewno chcesz ją zamknąć?"
+
+#: contents/ui/TerminalPage.qml:184
+#, kde-format
+msgctxt "@title:window"
+msgid "Select Tab"
+msgstr "Zaznaczanie karty"
+
+#: contents/ui/TerminalPage.qml:220
+#, kde-format
+msgid "Close"
+msgstr "Zamknij"
+
+#: contents/ui/TerminalPage.qml:240
+#, kde-format
+msgid "selection mode"
+msgstr "tryb zaznaczania"
+
+#: contents/ui/TerminalPage.qml:248
+#, kde-format
+msgid "Disable"
+msgstr "Wyłącz"
+
+#: QuickActionSettings.qml:14
+#, kde-format
+msgid "Quick Action Settings"
+msgstr "Ustawienia szybkich działań"
+
+#: QuickActionSettings.qml:19
+#, kde-format
+msgid "Add Actions"
+msgstr "Dodaj działania"
+
+#: QuickActionSettings.qml:50
+#, kde-format
+msgid "Action %1 removed"
+msgstr "Usunięto działanie %1"
+
+#: QuickActionSettings.qml:60
+#, kde-format
+msgid "Add action"
+msgstr "Dodaj działanie"
+
+#: QuickActionSettings.qml:71
+#, kde-format
+msgid "Save"
+msgstr "Zapisz"
+
+#: terminaltabmodel.cpp:70
+#, kde-format
+msgid "Tab %1"
+msgstr "Karta %1"

@@ -1,0 +1,179 @@
+# Copyright (C) YEAR This file is copyright:
+# This file is distributed under the same license as the qmlkonsole package.
+#
+# Luiz Fernando Ranghetti <elchevive@opensuse.org>, 2020, 2021.
+msgid ""
+msgstr ""
+"Project-Id-Version: qmlkonsole\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-01-18 00:46+0000\n"
+"PO-Revision-Date: 2021-10-26 14:08-0300\n"
+"Last-Translator: Luiz Fernando Ranghetti <elchevive@opensuse.org>\n"
+"Language-Team: Portuguese <kde-i18n-pt_BR@kde.org>\n"
+"Language: pt_BR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Lokalize 20.04.2\n"
+
+#: contents/ui/main.qml:28
+#, kde-format
+msgid "Quick Actions"
+msgstr "Ações rápidas"
+
+#: contents/ui/SettingsPage.qml:14 contents/ui/TerminalPage.qml:143
+#, kde-format
+msgid "Settings"
+msgstr "Configurações"
+
+#: contents/ui/SettingsPage.qml:24
+#, kde-format
+msgid "Color Scheme"
+msgstr "Esquema de cores"
+
+#: contents/ui/TerminalKeyToolBar.qml:71
+#, kde-format
+msgctxt "Control Key"
+msgid "Ctrl"
+msgstr "Ctrl"
+
+#: contents/ui/TerminalKeyToolBar.qml:89
+#, kde-format
+msgctxt "Alt Key"
+msgid "Alt"
+msgstr "Alt"
+
+#: contents/ui/TerminalKeyToolBar.qml:105
+#, kde-format
+msgctxt "Escape key"
+msgid "Esc"
+msgstr "Esc"
+
+#: contents/ui/TerminalKeyToolBar.qml:112
+#, kde-format
+msgctxt "Tab character key"
+msgid "Tab"
+msgstr "Tab"
+
+#: contents/ui/TerminalKeyToolBar.qml:161
+#, kde-format
+msgid "Toggle Virtual Keyboard"
+msgstr "Alternar teclado virtual"
+
+#: contents/ui/TerminalPage.qml:61
+#, kde-format
+msgctxt "@action:intoolbar"
+msgid "New Tab"
+msgstr "Nova aba"
+
+#: contents/ui/TerminalPage.qml:71
+#, kde-format
+msgid "reverse-i-search"
+msgstr "pesquisa reversa"
+
+#: contents/ui/TerminalPage.qml:79
+#, kde-format
+msgid "Cancel current command"
+msgstr "Cancelar comando atual"
+
+#: contents/ui/TerminalPage.qml:87
+#, kde-format
+msgid "Send EOF"
+msgstr "Enviar EOF"
+
+#: contents/ui/TerminalPage.qml:95
+#, kde-format
+msgid "Cursor to line start"
+msgstr "Cursor no início da linha"
+
+#: contents/ui/TerminalPage.qml:103
+#, kde-format
+msgid "Cursor to line end"
+msgstr "Cursor no final da linha"
+
+#: contents/ui/TerminalPage.qml:111
+#, kde-format
+msgid "Kill to line end"
+msgstr ""
+
+#: contents/ui/TerminalPage.qml:119
+#, kde-format
+msgid "Paste from kill buffer"
+msgstr ""
+
+#: contents/ui/TerminalPage.qml:127
+#, kde-format
+msgid "Copy"
+msgstr "Copiar"
+
+#: contents/ui/TerminalPage.qml:137
+#, kde-format
+msgid "Paste"
+msgstr "Colar"
+
+#: contents/ui/TerminalPage.qml:161
+#, kde-format
+msgctxt "@title:window"
+msgid "Confirm closing %1"
+msgstr "Confirmar fechamento de %1"
+
+#: contents/ui/TerminalPage.qml:177
+#, kde-format
+msgid ""
+"A process is currently running in this tab. Are you sure you want to close "
+"it?"
+msgstr ""
+"Um processo está atualmente em execução nesta aba. Tem certeza de que deseja "
+"fechá-la?"
+
+#: contents/ui/TerminalPage.qml:184
+#, kde-format
+msgctxt "@title:window"
+msgid "Select Tab"
+msgstr "Selecionar aba"
+
+#: contents/ui/TerminalPage.qml:220
+#, kde-format
+msgid "Close"
+msgstr "Fechar"
+
+#: contents/ui/TerminalPage.qml:240
+#, kde-format
+msgid "selection mode"
+msgstr "modo de seleção"
+
+#: contents/ui/TerminalPage.qml:248
+#, kde-format
+msgid "Disable"
+msgstr "Desativar"
+
+#: QuickActionSettings.qml:14
+#, kde-format
+msgid "Quick Action Settings"
+msgstr "Configurações das ações rápidas"
+
+#: QuickActionSettings.qml:19
+#, kde-format
+msgid "Add Actions"
+msgstr "Adicionar ações"
+
+#: QuickActionSettings.qml:50
+#, kde-format
+msgid "Action %1 removed"
+msgstr "Ação %1 removida"
+
+#: QuickActionSettings.qml:60
+#, kde-format
+msgid "Add action"
+msgstr "Adicionar ação"
+
+#: QuickActionSettings.qml:71
+#, kde-format
+msgid "Save"
+msgstr "Salvar"
+
+#: terminaltabmodel.cpp:70
+#, kde-format
+msgid "Tab %1"
+msgstr "Aba %1"
