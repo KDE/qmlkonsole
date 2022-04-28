@@ -1,5 +1,5 @@
 // SPDX-FileCopyrightText: 2019-2020 Jonah Brüchert <jbb@kaidan.im>
-// SPDX-FileCopyrightText: 2021 Devin Lin <espidev@gmail.com>
+// SPDX-FileCopyrightText: 2021-2022 Devin Lin <espidev@gmail.com>
 //
 // SPDX-License-Identifier: GPL-2.0-or-later
 
@@ -8,7 +8,7 @@ import QtQuick.Layouts 1.1
 import QtQuick.Controls 2.15
 
 import QMLTermWidget 1.0
-import org.kde.kirigami 2.7 as Kirigami
+import org.kde.kirigami 2.19 as Kirigami
 
 import org.kde.qmlkonsole 1.0
 
@@ -154,11 +154,13 @@ Kirigami.Page {
         spacing: 0
         anchors.fill: parent
 
-        PopupDialog {
+        Kirigami.Dialog {
             id: confirmDialog
+            
             property int indexToClose: 0
             property var selectedTerminal: tabSwipeView.contentChildren[indexToClose]
-            title: i18nc("@title:window", "Confirm closing %1", selectedTerminal ? selectedTerminal.tabName : "")
+            
+            title: i18n("Confirm closing %1", selectedTerminal ? selectedTerminal.termWidget.tabName : "")
             standardButtons: Dialog.Yes | Dialog.Cancel
             padding: Kirigami.Units.gridUnit
             
@@ -179,7 +181,7 @@ Kirigami.Page {
             }
         }
         
-        PopupDialog {
+        Kirigami.Dialog {
             id: selectTabDialog
             title: i18nc("@title:window", "Select Tab")
             standardButtons: Dialog.Close
@@ -306,8 +308,6 @@ Kirigami.Page {
                                 console.log("not found");
                             }
                         }
-
-                        onTerminalUsesMouseChanged: console.log(terminalUsesMouse);
 
                         ScrollBar {
                             Kirigami.Theme.colorSet: Kirigami.Theme.Complementary // text color of terminal is also complementary
