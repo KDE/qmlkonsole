@@ -1,7 +1,7 @@
 set(qmlkonsole_SRCS
     main.cpp
     abouttype.cpp
-    quickactionmodel.cpp
+    savedcommandsmodel.cpp
     terminaltabmodel.cpp
     util.cpp
 )

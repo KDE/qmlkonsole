@@ -64,6 +64,13 @@ Kirigami.Page {
                 tabSwipeView.currentIndex = tabSwipeView.contentChildren.length - 1;
             }
             shortcut: "Ctrl+Shift+T"
+            displayHint: Kirigami.Action.KeepVisible
+        },
+        Kirigami.Action {
+            icon.name: "dialog-scripts"
+            text: i18nc("@action:intoolbar", "Saved Commands")
+            onTriggered: savedCommandsDialog.open()
+            displayHint: Kirigami.Action.KeepVisible
         },
         Kirigami.Action {
             displayHint: Kirigami.Action.AlwaysHide
@@ -155,12 +162,76 @@ Kirigami.Page {
         anchors.fill: parent
 
         Kirigami.Dialog {
+            id: savedCommandsDialog
+            title: i18nc("@title:window", "Saved Commands")
+            preferredHeight: Kirigami.Units.gridUnit * 25
+            preferredWidth: Kirigami.Units.gridUnit * 16
+            standardButtons: Kirigami.Dialog.NoButton
+            
+            customFooterActions: [
+                Kirigami.Action {
+                    text: i18n("Configure")
+                    iconName: "settings-configure"
+                    onTriggered: {
+                        pageStack.layers.push("qrc:/SavedCommandsSettings.qml");
+                        savedCommandsDialog.close();
+                    }
+                },
+                Kirigami.Action {
+                    text: i18n("Close")
+                    iconName: "dialog-close"
+                    onTriggered: savedCommandsDialog.close()
+                }
+            ]
+            
+            ListView {
+                id: listView
+                model: SavedCommandsModel
+                
+                Kirigami.PlaceholderMessage {
+                    anchors.verticalCenter: parent.verticalCenter
+                    anchors.horizontalCenter: parent.horizontalCenter
+                    anchors.left: parent.left
+                    anchors.right: parent.right
+                    anchors.leftMargin: Kirigami.Units.largeSpacing
+                    anchors.rightMargin: Kirigami.Units.largeSpacing
+                    
+                    visible: listView.count === 0
+                    icon.name: "dialog-scripts"
+                    text: i18n("No saved commands")
+                    explanation: i18n("Save commands to quickly run them without typing them out.")
+                }
+                
+                delegate: Kirigami.SwipeListItem {
+                    RowLayout {
+                        Kirigami.Icon {
+                            source: "dialog-scripts"
+                        }
+                        Label {
+                            id: label
+                            text: model.display
+                            font.family: "Monospace"
+                        }
+                        Item {
+                            Layout.fillWidth: true
+                        }
+                    }
+                    
+                    onClicked: {
+                        root.currentTerminal.simulateKeyPress(0, 0, 0, 0, model.display);
+                        savedCommandsDialog.close();
+                    }
+                }
+            }
+        }
+        
+        Kirigami.Dialog {
             id: confirmDialog
             
             property int indexToClose: 0
             property var selectedTerminal: tabSwipeView.contentChildren[indexToClose]
             
-            title: i18n("Confirm closing %1", selectedTerminal ? selectedTerminal.termWidget.tabName : "")
+            title: i18nc("@title:window", "Confirm closing %1", selectedTerminal ? selectedTerminal.termWidget.tabName : "")
             standardButtons: Dialog.Yes | Dialog.Cancel
             padding: Kirigami.Units.gridUnit
             

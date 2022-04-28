@@ -6,6 +6,6 @@
         <file alias="TerminalPage.qml">contents/ui/TerminalPage.qml</file>
         <file alias="TerminalKeyButton.qml">contents/ui/TerminalKeyButton.qml</file>
         <file alias="TerminalKeyToolBar.qml">contents/ui/TerminalKeyToolBar.qml</file>
-        <file alias="QuickActionSettings.qml">contents/ui/QuickActionSettings.qml</file>
+        <file alias="SavedCommandsSettings.qml">contents/ui/SavedCommandsSettings.qml</file>
     </qresource>
 </RCC>

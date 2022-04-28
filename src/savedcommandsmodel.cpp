@@ -1,16 +1,20 @@
 // SPDX-FileCopyrightText: 2020 Han Young <hanyoung@protonmail.com>
 //
 // SPDX-License-Identifier: GPL-2.0-or-later
-#include "quickactionmodel.h"
 
+#include "savedcommandsmodel.h"
 #include "terminalsettings.h"
-QuickActionModel::QuickActionModel(QObject *parent)
+
+SavedCommandsModel::SavedCommandsModel(QObject *parent)
     : QAbstractListModel(parent)
     , m_actions(TerminalSettings::self()->actions())
 {
 }
 
-QVariant QuickActionModel::data(const QModelIndex &index, int role) const
+SavedCommandsModel::~SavedCommandsModel()
+{}
+
+QVariant SavedCommandsModel::data(const QModelIndex &index, int role) const
 {
     Q_UNUSED(role)
 
@@ -21,18 +25,21 @@ QVariant QuickActionModel::data(const QModelIndex &index, int role) const
     return m_actions.at(index.row());
 }
 
-void QuickActionModel::save()
+void SavedCommandsModel::save()
 {
     TerminalSettings::self()->setActions(m_actions);
 }
-void QuickActionModel::addAction(QString action)
+
+void SavedCommandsModel::addAction(QString action)
 {
     beginInsertRows(QModelIndex(), m_actions.size(), m_actions.size());
     m_actions.push_back(action);
     endInsertRows();
+    
+    TerminalSettings::self()->save();
 }
 
-bool QuickActionModel::removeRows(int row, int count, const QModelIndex &parent)
+bool SavedCommandsModel::removeRows(int row, int count, const QModelIndex &parent)
 {
     Q_UNUSED(parent)
 

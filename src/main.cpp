@@ -15,7 +15,7 @@
 
 #include "abouttype.h"
 #include "terminalsettings.h"
-#include "quickactionmodel.h"
+#include "savedcommandsmodel.h"
 #include "terminaltabmodel.h"
 #include "version.h"
 #include "util.h"
@@ -44,16 +44,17 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
     parser.process(app);
     qmlRegisterSingletonInstance<TerminalSettings>(URI, 1, 0, "TerminalSettings", TerminalSettings::self());
 
-    QObject::connect(QApplication::instance(), &QCoreApplication::aboutToQuit, QApplication::instance(), [] {
-        QuickActionModel::self()->save();
+    QObject::connect(TerminalSettings::self(), &TerminalSettings::configChanged, QApplication::instance(), [] {
         TerminalSettings::self()->save();
         qDebug() << "saving config";
     });
 
     QQmlApplicationEngine engine;
     engine.rootContext()->setContextObject(new KLocalizedContext(&engine));
-    engine.rootContext()->setContextProperty("quickActionModel", QuickActionModel::self());
     
+    qmlRegisterSingletonType<TerminalTabModel>(URI, 1, 0, "SavedCommandsModel", [](QQmlEngine *, QJSEngine *) -> QObject * {
+        return SavedCommandsModel::self();
+    });
     qmlRegisterSingletonType<TerminalTabModel>(URI, 1, 0, "TerminalTabModel", [](QQmlEngine *, QJSEngine *) -> QObject * {
         return TerminalTabModel::self();
     });
