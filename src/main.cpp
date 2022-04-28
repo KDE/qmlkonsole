@@ -1,4 +1,5 @@
 // SPDX-FileCopyrightText: 2019-2020 Jonah Brüchert <jbb@kaidan.im>
+// SPDX-FileCopyrightText: 2022 Devin Lin <devin@kde.org>
 //
 // SPDX-License-Identifier: GPL-2.0-or-later
 
@@ -7,8 +8,12 @@
 #include <QQmlApplicationEngine>
 #include <QtQml>
 #include <QUrl>
-#include <KLocalizedContext>
 
+#include <KLocalizedContext>
+#include <KLocalizedString>
+#include <KAboutData>
+
+#include "abouttype.h"
 #include "terminalsettings.h"
 #include "quickactionmodel.h"
 #include "terminaltabmodel.h"
@@ -21,11 +26,19 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
 {
     QCommandLineParser parser;
     QGuiApplication::setAttribute(Qt::AA_EnableHighDpiScaling);
+    
     QApplication app(argc, argv);
-    QCoreApplication::setOrganizationName("KDE");
-    QCoreApplication::setOrganizationDomain("kde.org");
-    QCoreApplication::setApplicationName("QMLKonsole");
-    QCoreApplication::setApplicationVersion(QStringLiteral(QMLKONSOLE_VERSION_STRING));
+    
+    KAboutData aboutData(QStringLiteral("qmlkonsole"),
+                         QStringLiteral("QMLKonsole"),
+                         QStringLiteral(QMLKONSOLE_VERSION_STRING),
+                         QStringLiteral("Mobile terminal application"),
+                         KAboutLicense::GPL,
+                         i18n("© 2020-2022 KDE Community"));
+    aboutData.setBugAddress("https://invent.kde.org/plasma-mobile/qmlkonsole/-/issues");
+    aboutData.addAuthor(i18n("Jonah Brüchert"), QString(), QStringLiteral("jbb@kaidan.im"));
+    aboutData.addAuthor(i18n("Devin Lin"), QString(), QStringLiteral("devin@kde.org"));
+    KAboutData::setApplicationData(aboutData);
 
     parser.addVersionOption();
     parser.process(app);
@@ -41,19 +54,13 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
     engine.rootContext()->setContextObject(new KLocalizedContext(&engine));
     engine.rootContext()->setContextProperty("quickActionModel", QuickActionModel::self());
     
-    qmlRegisterSingletonType<TerminalTabModel>(URI, 1, 0, "TerminalTabModel", [](QQmlEngine *engine, QJSEngine *scriptEngine) -> QObject * {
-        Q_UNUSED(engine)
-        Q_UNUSED(scriptEngine)
-
+    qmlRegisterSingletonType<TerminalTabModel>(URI, 1, 0, "TerminalTabModel", [](QQmlEngine *, QJSEngine *) -> QObject * {
         return TerminalTabModel::self();
     });
-    
-    qmlRegisterSingletonType<Util>(URI, 1, 0, "Util", [](QQmlEngine *engine, QJSEngine *scriptEngine) -> QObject * {
-        Q_UNUSED(engine)
-        Q_UNUSED(scriptEngine)
-
+    qmlRegisterSingletonType<Util>(URI, 1, 0, "Util", [](QQmlEngine *, QJSEngine *) -> QObject * {
         return Util::self();
     });
+    qmlRegisterSingletonInstance(URI, 1, 0, "AboutType", &AboutType::instance());
     
     engine.load(QUrl(QStringLiteral("qrc:///main.qml")));
 

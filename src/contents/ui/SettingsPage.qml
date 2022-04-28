@@ -21,7 +21,14 @@ Kirigami.Page {
             model: terminal.availableColorSchemes
             currentIndex: terminal.availableColorSchemes.indexOf(TerminalSettings.colorScheme)
             onCurrentValueChanged: TerminalSettings.colorScheme = currentValue
-            Kirigami.FormData.label: i18n("Color Scheme")
+            Kirigami.FormData.label: i18n("Color Scheme:")
+        }
+        
+        Button {
+            Kirigami.FormData.label: i18n("More Info:")
+            text: i18n("About")
+            icon.name: "help-about-symbolic"
+            onClicked: applicationWindow().pageStack.layers.push("AboutPage.qml")
         }
     }
 }

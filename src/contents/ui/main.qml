@@ -13,6 +13,8 @@ import org.kde.kirigami 2.7 as Kirigami
 import org.kde.qmlkonsole 1.0
 
 Kirigami.ApplicationWindow {
+    title: i18n("Terminal")
+    
     property var terminal: pageStack.items[0].currentTerminal
     
     // fix layers not showing actions
