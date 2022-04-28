@@ -149,7 +149,7 @@ Kirigami.Page {
             displayHint: Kirigami.Action.AlwaysHide
             text: i18n("Settings")
             icon.name: "settings-configure"
-            onTriggered: pageStack.layers.push("qrc:/SettingsPage.qml",
+            onTriggered: pageStack.push("qrc:/SettingsPage.qml",
                 {
                     terminal: currentTerminal
                 }
@@ -173,7 +173,7 @@ Kirigami.Page {
                     text: i18n("Configure")
                     iconName: "settings-configure"
                     onTriggered: {
-                        pageStack.layers.push("qrc:/SavedCommandsSettings.qml");
+                        pageStack.push("qrc:/SavedCommandsSettings.qml");
                         savedCommandsDialog.close();
                     }
                 },

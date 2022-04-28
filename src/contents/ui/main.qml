@@ -14,13 +14,33 @@ import org.kde.qmlkonsole 1.0
 
 Kirigami.ApplicationWindow {
     title: i18n("Terminal")
-    
-    property var terminal: pageStack.items[0].currentTerminal
-    
-    // fix layers not showing actions
-    pageStack.globalToolBar.style: pageStack.layers.depth > 1 ? Kirigami.ApplicationHeaderStyle.Auto : Kirigami.ApplicationHeaderStyle.ToolBar
 
     contextDrawer: Kirigami.ContextDrawer {}
 
     pageStack.initialPage: "qrc:/TerminalPage.qml"
+    
+    pageStack.globalToolBar.style: Kirigami.ApplicationHeaderStyle.ToolBar
+    pageStack.globalToolBar.showNavigationButtons: Kirigami.ApplicationHeaderStyle.ShowBackButton;
+    
+    pageStack.columnView.columnResizeMode: Kirigami.ColumnView.SingleColumn
+    
+    // pop pages when not in use
+    Connections {
+        target: applicationWindow().pageStack
+        function onCurrentIndexChanged() {
+            // wait for animation to finish before popping pages
+            timer.restart();
+        }
+    }
+    
+    Timer {
+        id: timer
+        interval: 300
+        onTriggered: {
+            let currentIndex = applicationWindow().pageStack.currentIndex;
+            while (applicationWindow().pageStack.depth > (currentIndex + 1) && currentIndex >= 0) {
+                applicationWindow().pageStack.pop();
+            }
+        }
+    }
 }
