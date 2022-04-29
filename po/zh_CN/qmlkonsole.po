@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-01-18 00:46+0000\n"
+"POT-Creation-Date: 2022-04-29 00:46+0000\n"
 "PO-Revision-Date: 2022-04-26 15:21\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
@@ -17,20 +17,73 @@ msgstr ""
 "X-Crowdin-File: /kf5-trunk/messages/qmlkonsole/qmlkonsole.pot\n"
 "X-Crowdin-File-ID: 24326\n"
 
-#: contents/ui/main.qml:28
 #, kde-format
-msgid "Quick Actions"
-msgstr "快捷操作"
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr ""
 
-#: contents/ui/SettingsPage.qml:14 contents/ui/TerminalPage.qml:143
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr ""
+
+#: contents/ui/main.qml:16
+#, kde-format
+msgid "Terminal"
+msgstr ""
+
+#: contents/ui/SavedCommandsSettings.qml:17
+#, kde-format
+msgid "Saved Commands"
+msgstr ""
+
+#: contents/ui/SavedCommandsSettings.qml:22
+#: contents/ui/SavedCommandsSettings.qml:83
+#, kde-format
+msgid "Add Command"
+msgstr ""
+
+#: contents/ui/SavedCommandsSettings.qml:44 contents/ui/TerminalPage.qml:201
+#, kde-format
+msgid "No saved commands"
+msgstr ""
+
+#: contents/ui/SavedCommandsSettings.qml:45 contents/ui/TerminalPage.qml:202
+#, kde-format
+msgid "Save commands to quickly run them without typing them out."
+msgstr ""
+
+#: contents/ui/SavedCommandsSettings.qml:49
+#, fuzzy, kde-format
+#| msgid "Add action"
+msgid "Add command"
+msgstr "添加操作"
+
+#: contents/ui/SavedCommandsSettings.qml:74
+#, kde-format
+msgid "Action %1 removed"
+msgstr "操作 %1 已移除"
+
+#: contents/ui/SettingsPage.qml:14 contents/ui/TerminalPage.qml:150
 #, kde-format
 msgid "Settings"
 msgstr "设置"
 
 #: contents/ui/SettingsPage.qml:24
-#, kde-format
-msgid "Color Scheme"
+#, fuzzy, kde-format
+#| msgid "Color Scheme"
+msgid "Color Scheme:"
 msgstr "配色方案"
+
+#: contents/ui/SettingsPage.qml:28
+#, kde-format
+msgid "More Info:"
+msgstr ""
+
+#: contents/ui/SettingsPage.qml:29
+#, kde-format
+msgid "About"
+msgstr ""
 
 #: contents/ui/TerminalKeyToolBar.qml:71
 #, kde-format
@@ -69,109 +122,128 @@ msgstr "新建标签页"
 
 #: contents/ui/TerminalPage.qml:71
 #, kde-format
+msgctxt "@action:intoolbar"
+msgid "Saved Commands"
+msgstr ""
+
+#: contents/ui/TerminalPage.qml:78
+#, kde-format
 msgid "reverse-i-search"
 msgstr "反向搜索"
 
-#: contents/ui/TerminalPage.qml:79
+#: contents/ui/TerminalPage.qml:86
 #, kde-format
 msgid "Cancel current command"
 msgstr "取消当前命令"
 
-#: contents/ui/TerminalPage.qml:87
+#: contents/ui/TerminalPage.qml:94
 #, kde-format
 msgid "Send EOF"
 msgstr "发送文件结束符"
 
-#: contents/ui/TerminalPage.qml:95
+#: contents/ui/TerminalPage.qml:102
 #, kde-format
 msgid "Cursor to line start"
 msgstr "光标移动到行首"
 
-#: contents/ui/TerminalPage.qml:103
+#: contents/ui/TerminalPage.qml:110
 #, kde-format
 msgid "Cursor to line end"
 msgstr "光标移动到行末"
 
-#: contents/ui/TerminalPage.qml:111
+#: contents/ui/TerminalPage.qml:118
 #, kde-format
 msgid "Kill to line end"
 msgstr "杀死进程到行末"
 
-#: contents/ui/TerminalPage.qml:119
+#: contents/ui/TerminalPage.qml:126
 #, kde-format
 msgid "Paste from kill buffer"
 msgstr "从杀死进程缓冲区粘贴"
 
-#: contents/ui/TerminalPage.qml:127
+#: contents/ui/TerminalPage.qml:134
 #, kde-format
 msgid "Copy"
 msgstr "复制"
 
-#: contents/ui/TerminalPage.qml:137
+#: contents/ui/TerminalPage.qml:144
 #, kde-format
 msgid "Paste"
 msgstr "粘贴"
 
-#: contents/ui/TerminalPage.qml:161
+#: contents/ui/TerminalPage.qml:166
+#, kde-format
+msgctxt "@title:window"
+msgid "Saved Commands"
+msgstr ""
+
+#: contents/ui/TerminalPage.qml:173
+#, kde-format
+msgid "Configure"
+msgstr ""
+
+#: contents/ui/TerminalPage.qml:181 contents/ui/TerminalPage.qml:293
+#, kde-format
+msgid "Close"
+msgstr "关闭"
+
+#: contents/ui/TerminalPage.qml:234
 #, kde-format
 msgctxt "@title:window"
 msgid "Confirm closing %1"
 msgstr "确认关闭 %1"
 
-#: contents/ui/TerminalPage.qml:177
+#: contents/ui/TerminalPage.qml:250
 #, kde-format
 msgid ""
 "A process is currently running in this tab. Are you sure you want to close "
 "it?"
 msgstr "此标签页当前有正在运行的进程。您确定要关闭它吗？"
 
-#: contents/ui/TerminalPage.qml:184
+#: contents/ui/TerminalPage.qml:257
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Tab"
 msgstr "选择标签页"
 
-#: contents/ui/TerminalPage.qml:220
-#, kde-format
-msgid "Close"
-msgstr "关闭"
-
-#: contents/ui/TerminalPage.qml:240
+#: contents/ui/TerminalPage.qml:313
 #, kde-format
 msgid "selection mode"
 msgstr "选择模式"
 
-#: contents/ui/TerminalPage.qml:248
+#: contents/ui/TerminalPage.qml:321
 #, kde-format
 msgid "Disable"
 msgstr "禁用"
 
-#: QuickActionSettings.qml:14
+#: main.cpp:37
 #, kde-format
-msgid "Quick Action Settings"
-msgstr "快捷操作设置"
+msgid "© 2020-2022 KDE Community"
+msgstr ""
 
-#: QuickActionSettings.qml:19
+#: main.cpp:39
 #, kde-format
-msgid "Add Actions"
-msgstr "添加操作"
+msgid "Jonah Brüchert"
+msgstr ""
 
-#: QuickActionSettings.qml:50
+#: main.cpp:40
 #, kde-format
-msgid "Action %1 removed"
-msgstr "操作 %1 已移除"
-
-#: QuickActionSettings.qml:60
-#, kde-format
-msgid "Add action"
-msgstr "添加操作"
-
-#: QuickActionSettings.qml:71
-#, kde-format
-msgid "Save"
-msgstr "保存"
+msgid "Devin Lin"
+msgstr ""
 
 #: terminaltabmodel.cpp:70
 #, kde-format
 msgid "Tab %1"
 msgstr "标签页 %1"
+
+#~ msgid "Quick Actions"
+#~ msgstr "快捷操作"
+
+#~ msgid "Quick Action Settings"
+#~ msgstr "快捷操作设置"
+
+#~ msgid "Add Actions"
+#~ msgstr "添加操作"
+
+#~ msgid "Save"
+#~ msgstr "保存"

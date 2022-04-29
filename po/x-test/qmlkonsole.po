@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qmlkonsole\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-01-18 00:46+0000\n"
-"PO-Revision-Date: 2021-10-14 01:19+0000\n"
+"POT-Creation-Date: 2022-04-29 00:46+0000\n"
+"PO-Revision-Date: 2022-04-29 01:46+0000\n"
 "Last-Translator: transxx.py program <null@kde.org>\n"
 "Language-Team: KDE Test Language <kde-i18n-doc@kde.org>\n"
 "Language: x-test\n"
@@ -17,20 +17,71 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: contents/ui/main.qml:28
 #, kde-format
-msgid "Quick Actions"
-msgstr "xxQuick Actionsxx"
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "xxYour namesxx"
 
-#: contents/ui/SettingsPage.qml:14 contents/ui/TerminalPage.qml:143
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "xxYour emailsxx"
+
+#: contents/ui/main.qml:16
+#, kde-format
+msgid "Terminal"
+msgstr "xxTerminalxx"
+
+#: contents/ui/SavedCommandsSettings.qml:17
+#, kde-format
+msgid "Saved Commands"
+msgstr "xxSaved Commandsxx"
+
+#: contents/ui/SavedCommandsSettings.qml:22
+#: contents/ui/SavedCommandsSettings.qml:83
+#, kde-format
+msgid "Add Command"
+msgstr "xxAdd Commandxx"
+
+#: contents/ui/SavedCommandsSettings.qml:44 contents/ui/TerminalPage.qml:201
+#, kde-format
+msgid "No saved commands"
+msgstr "xxNo saved commandsxx"
+
+#: contents/ui/SavedCommandsSettings.qml:45 contents/ui/TerminalPage.qml:202
+#, kde-format
+msgid "Save commands to quickly run them without typing them out."
+msgstr "xxSave commands to quickly run them without typing them out.xx"
+
+#: contents/ui/SavedCommandsSettings.qml:49
+#, kde-format
+msgid "Add command"
+msgstr "xxAdd commandxx"
+
+#: contents/ui/SavedCommandsSettings.qml:74
+#, kde-format
+msgid "Action %1 removed"
+msgstr "xxAction %1 removedxx"
+
+#: contents/ui/SettingsPage.qml:14 contents/ui/TerminalPage.qml:150
 #, kde-format
 msgid "Settings"
 msgstr "xxSettingsxx"
 
 #: contents/ui/SettingsPage.qml:24
 #, kde-format
-msgid "Color Scheme"
-msgstr "xxColor Schemexx"
+msgid "Color Scheme:"
+msgstr "xxColor Scheme:xx"
+
+#: contents/ui/SettingsPage.qml:28
+#, kde-format
+msgid "More Info:"
+msgstr "xxMore Info:xx"
+
+#: contents/ui/SettingsPage.qml:29
+#, kde-format
+msgid "About"
+msgstr "xxAboutxx"
 
 #: contents/ui/TerminalKeyToolBar.qml:71
 #, kde-format
@@ -69,56 +120,78 @@ msgstr "xxNew Tabxx"
 
 #: contents/ui/TerminalPage.qml:71
 #, kde-format
+msgctxt "@action:intoolbar"
+msgid "Saved Commands"
+msgstr "xxSaved Commandsxx"
+
+#: contents/ui/TerminalPage.qml:78
+#, kde-format
 msgid "reverse-i-search"
 msgstr "xxreverse-i-searchxx"
 
-#: contents/ui/TerminalPage.qml:79
+#: contents/ui/TerminalPage.qml:86
 #, kde-format
 msgid "Cancel current command"
 msgstr "xxCancel current commandxx"
 
-#: contents/ui/TerminalPage.qml:87
+#: contents/ui/TerminalPage.qml:94
 #, kde-format
 msgid "Send EOF"
 msgstr "xxSend EOFxx"
 
-#: contents/ui/TerminalPage.qml:95
+#: contents/ui/TerminalPage.qml:102
 #, kde-format
 msgid "Cursor to line start"
 msgstr "xxCursor to line startxx"
 
-#: contents/ui/TerminalPage.qml:103
+#: contents/ui/TerminalPage.qml:110
 #, kde-format
 msgid "Cursor to line end"
 msgstr "xxCursor to line endxx"
 
-#: contents/ui/TerminalPage.qml:111
+#: contents/ui/TerminalPage.qml:118
 #, kde-format
 msgid "Kill to line end"
 msgstr "xxKill to line endxx"
 
-#: contents/ui/TerminalPage.qml:119
+#: contents/ui/TerminalPage.qml:126
 #, kde-format
 msgid "Paste from kill buffer"
 msgstr "xxPaste from kill bufferxx"
 
-#: contents/ui/TerminalPage.qml:127
+#: contents/ui/TerminalPage.qml:134
 #, kde-format
 msgid "Copy"
 msgstr "xxCopyxx"
 
-#: contents/ui/TerminalPage.qml:137
+#: contents/ui/TerminalPage.qml:144
 #, kde-format
 msgid "Paste"
 msgstr "xxPastexx"
 
-#: contents/ui/TerminalPage.qml:161
+#: contents/ui/TerminalPage.qml:166
+#, kde-format
+msgctxt "@title:window"
+msgid "Saved Commands"
+msgstr "xxSaved Commandsxx"
+
+#: contents/ui/TerminalPage.qml:173
+#, kde-format
+msgid "Configure"
+msgstr "xxConfigurexx"
+
+#: contents/ui/TerminalPage.qml:181 contents/ui/TerminalPage.qml:293
+#, kde-format
+msgid "Close"
+msgstr "xxClosexx"
+
+#: contents/ui/TerminalPage.qml:234
 #, kde-format
 msgctxt "@title:window"
 msgid "Confirm closing %1"
 msgstr "xxConfirm closing %1xx"
 
-#: contents/ui/TerminalPage.qml:177
+#: contents/ui/TerminalPage.qml:250
 #, kde-format
 msgid ""
 "A process is currently running in this tab. Are you sure you want to close "
@@ -127,51 +200,36 @@ msgstr ""
 "xxA process is currently running in this tab. Are you sure you want to close "
 "it?xx"
 
-#: contents/ui/TerminalPage.qml:184
+#: contents/ui/TerminalPage.qml:257
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Tab"
 msgstr "xxSelect Tabxx"
 
-#: contents/ui/TerminalPage.qml:220
-#, kde-format
-msgid "Close"
-msgstr "xxClosexx"
-
-#: contents/ui/TerminalPage.qml:240
+#: contents/ui/TerminalPage.qml:313
 #, kde-format
 msgid "selection mode"
 msgstr "xxselection modexx"
 
-#: contents/ui/TerminalPage.qml:248
+#: contents/ui/TerminalPage.qml:321
 #, kde-format
 msgid "Disable"
 msgstr "xxDisablexx"
 
-#: QuickActionSettings.qml:14
+#: main.cpp:37
 #, kde-format
-msgid "Quick Action Settings"
-msgstr "xxQuick Action Settingsxx"
+msgid "© 2020-2022 KDE Community"
+msgstr "xx© 2020-2022 KDE Communityxx"
 
-#: QuickActionSettings.qml:19
+#: main.cpp:39
 #, kde-format
-msgid "Add Actions"
-msgstr "xxAdd Actionsxx"
+msgid "Jonah Brüchert"
+msgstr "xxJonah Brüchertxx"
 
-#: QuickActionSettings.qml:50
+#: main.cpp:40
 #, kde-format
-msgid "Action %1 removed"
-msgstr "xxAction %1 removedxx"
-
-#: QuickActionSettings.qml:60
-#, kde-format
-msgid "Add action"
-msgstr "xxAdd actionxx"
-
-#: QuickActionSettings.qml:71
-#, kde-format
-msgid "Save"
-msgstr "xxSavexx"
+msgid "Devin Lin"
+msgstr "xxDevin Linxx"
 
 #: terminaltabmodel.cpp:70
 #, kde-format
