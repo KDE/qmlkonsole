@@ -1,13 +1,13 @@
 # Copyright (C) YEAR This file is copyright:
 # This file is distributed under the same license as the qmlkonsole package.
 #
-# Freek de Kruijf <freekdekruijf@kde.nl>, 2020, 2021.
+# Freek de Kruijf <freekdekruijf@kde.nl>, 2020, 2021, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: qmlkonsole\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-04-29 00:46+0000\n"
-"PO-Revision-Date: 2021-10-14 11:33+0200\n"
+"PO-Revision-Date: 2022-04-29 11:30+0200\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: \n"
 "Language: nl\n"
@@ -15,49 +15,48 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 21.08.1\n"
+"X-Generator: Lokalize 22.04.0\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr ""
+msgstr "Freek de Kruijf - 2022"
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr ""
+msgstr "freekdekruijf@kde.nl"
 
 #: contents/ui/main.qml:16
 #, kde-format
 msgid "Terminal"
-msgstr ""
+msgstr "Terminal"
 
 #: contents/ui/SavedCommandsSettings.qml:17
 #, kde-format
 msgid "Saved Commands"
-msgstr ""
+msgstr "Opgeslagen commando's"
 
 #: contents/ui/SavedCommandsSettings.qml:22
 #: contents/ui/SavedCommandsSettings.qml:83
 #, kde-format
 msgid "Add Command"
-msgstr ""
+msgstr "Commando toevoegen"
 
 #: contents/ui/SavedCommandsSettings.qml:44 contents/ui/TerminalPage.qml:201
 #, kde-format
 msgid "No saved commands"
-msgstr ""
+msgstr "Geen opgeslagen commando's"
 
 #: contents/ui/SavedCommandsSettings.qml:45 contents/ui/TerminalPage.qml:202
 #, kde-format
 msgid "Save commands to quickly run them without typing them out."
-msgstr ""
+msgstr "Commando's opslaan om ze snel uit te voeren zonder ze in te typen."
 
 #: contents/ui/SavedCommandsSettings.qml:49
-#, fuzzy, kde-format
-#| msgid "Add action"
+#, kde-format
 msgid "Add command"
-msgstr "Actie toevoegen"
+msgstr "Commando toevoegen"
 
 #: contents/ui/SavedCommandsSettings.qml:74
 #, kde-format
@@ -70,20 +69,19 @@ msgid "Settings"
 msgstr "Instellingen"
 
 #: contents/ui/SettingsPage.qml:24
-#, fuzzy, kde-format
-#| msgid "Color Scheme"
+#, kde-format
 msgid "Color Scheme:"
-msgstr "Kleurenschema"
+msgstr "Kleurenschema:"
 
 #: contents/ui/SettingsPage.qml:28
 #, kde-format
 msgid "More Info:"
-msgstr ""
+msgstr "Meer informatie:"
 
 #: contents/ui/SettingsPage.qml:29
 #, kde-format
 msgid "About"
-msgstr ""
+msgstr "Info over"
 
 #: contents/ui/TerminalKeyToolBar.qml:71
 #, kde-format
@@ -124,7 +122,7 @@ msgstr "Nieuw tabblad"
 #, kde-format
 msgctxt "@action:intoolbar"
 msgid "Saved Commands"
-msgstr ""
+msgstr "Opgeslagen commando's"
 
 #: contents/ui/TerminalPage.qml:78
 #, kde-format
@@ -175,12 +173,12 @@ msgstr "Plakken"
 #, kde-format
 msgctxt "@title:window"
 msgid "Saved Commands"
-msgstr ""
+msgstr "Opgeslagen commando's"
 
 #: contents/ui/TerminalPage.qml:173
 #, kde-format
 msgid "Configure"
-msgstr ""
+msgstr "Configureren"
 
 #: contents/ui/TerminalPage.qml:181 contents/ui/TerminalPage.qml:293
 #, kde-format
@@ -220,17 +218,17 @@ msgstr "Uitschakelen"
 #: main.cpp:37
 #, kde-format
 msgid "© 2020-2022 KDE Community"
-msgstr ""
+msgstr "© 2020-2022 KDE gemeenschap"
 
 #: main.cpp:39
 #, kde-format
 msgid "Jonah Brüchert"
-msgstr ""
+msgstr "Jonah Brüchert"
 
 #: main.cpp:40
 #, kde-format
 msgid "Devin Lin"
-msgstr ""
+msgstr "Devin Lin"
 
 #: terminaltabmodel.cpp:70
 #, kde-format

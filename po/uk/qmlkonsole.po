@@ -3,13 +3,13 @@
 # This file is distributed under the license LGPL version 2.1 or
 # version 3 or later versions approved by the membership of KDE e.V.
 #
-# Yuri Chornoivan <yurchor@ukr.net>, 2020, 2021.
+# Yuri Chornoivan <yurchor@ukr.net>, 2020, 2021, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: qmlkonsole\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-04-29 00:46+0000\n"
-"PO-Revision-Date: 2021-10-14 15:50+0300\n"
+"PO-Revision-Date: 2022-04-29 08:22+0300\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
 "Language: uk\n"
@@ -23,44 +23,45 @@ msgstr ""
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr ""
+msgstr "Юрій Чорноіван"
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr ""
+msgstr "yurchor@ukr.net"
 
 #: contents/ui/main.qml:16
 #, kde-format
 msgid "Terminal"
-msgstr ""
+msgstr "Термінал"
 
 #: contents/ui/SavedCommandsSettings.qml:17
 #, kde-format
 msgid "Saved Commands"
-msgstr ""
+msgstr "Збережені команди"
 
 #: contents/ui/SavedCommandsSettings.qml:22
 #: contents/ui/SavedCommandsSettings.qml:83
 #, kde-format
 msgid "Add Command"
-msgstr ""
+msgstr "Додати команду"
 
 #: contents/ui/SavedCommandsSettings.qml:44 contents/ui/TerminalPage.qml:201
 #, kde-format
 msgid "No saved commands"
-msgstr ""
+msgstr "Немає збережених команд"
 
 #: contents/ui/SavedCommandsSettings.qml:45 contents/ui/TerminalPage.qml:202
 #, kde-format
 msgid "Save commands to quickly run them without typing them out."
 msgstr ""
+"Зберегти команди для швидкого запуску без потреби у їхньому повторному "
+"введенні."
 
 #: contents/ui/SavedCommandsSettings.qml:49
-#, fuzzy, kde-format
-#| msgid "Add action"
+#, kde-format
 msgid "Add command"
-msgstr "Додавання дії"
+msgstr "Додати команду"
 
 #: contents/ui/SavedCommandsSettings.qml:74
 #, kde-format
@@ -73,20 +74,19 @@ msgid "Settings"
 msgstr "Параметри"
 
 #: contents/ui/SettingsPage.qml:24
-#, fuzzy, kde-format
-#| msgid "Color Scheme"
+#, kde-format
 msgid "Color Scheme:"
-msgstr "Схема кольорів"
+msgstr "Схема кольорів:"
 
 #: contents/ui/SettingsPage.qml:28
 #, kde-format
 msgid "More Info:"
-msgstr ""
+msgstr "Додаткова інформація:"
 
 #: contents/ui/SettingsPage.qml:29
 #, kde-format
 msgid "About"
-msgstr ""
+msgstr "Про програму"
 
 #: contents/ui/TerminalKeyToolBar.qml:71
 #, kde-format
@@ -127,7 +127,7 @@ msgstr "Нова вкладка"
 #, kde-format
 msgctxt "@action:intoolbar"
 msgid "Saved Commands"
-msgstr ""
+msgstr "Збережені команди"
 
 #: contents/ui/TerminalPage.qml:78
 #, kde-format
@@ -178,12 +178,12 @@ msgstr "Вставити"
 #, kde-format
 msgctxt "@title:window"
 msgid "Saved Commands"
-msgstr ""
+msgstr "Збережені команди"
 
 #: contents/ui/TerminalPage.qml:173
 #, kde-format
 msgid "Configure"
-msgstr ""
+msgstr "Налаштувати"
 
 #: contents/ui/TerminalPage.qml:181 contents/ui/TerminalPage.qml:293
 #, kde-format
@@ -222,17 +222,17 @@ msgstr "Вимкнути"
 #: main.cpp:37
 #, kde-format
 msgid "© 2020-2022 KDE Community"
-msgstr ""
+msgstr "© Спільнота KDE, 2020–2022"
 
 #: main.cpp:39
 #, kde-format
 msgid "Jonah Brüchert"
-msgstr ""
+msgstr "Jonah Brüchert"
 
 #: main.cpp:40
 #, kde-format
 msgid "Devin Lin"
-msgstr ""
+msgstr "Devin Lin"
 
 #: terminaltabmodel.cpp:70
 #, kde-format

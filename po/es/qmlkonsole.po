@@ -3,13 +3,13 @@
 # This file is distributed under the same license as the qmlkonsole package.
 #
 # Automatically generated, 2020.
-# Eloy Cuadra <ecuadra@eloihr.net>, 2020, 2021.
+# Eloy Cuadra <ecuadra@eloihr.net>, 2020, 2021, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: qmlkonsole\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-04-29 00:46+0000\n"
-"PO-Revision-Date: 2021-10-15 01:14+0200\n"
+"PO-Revision-Date: 2022-04-29 17:39+0200\n"
 "Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
 "Language: es\n"
@@ -17,49 +17,49 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 21.08.2\n"
+"X-Generator: Lokalize 22.04.0\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr ""
+msgstr "Eloy Cuadra"
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr ""
+msgstr "ecuadra@eloihr.net"
 
 #: contents/ui/main.qml:16
 #, kde-format
 msgid "Terminal"
-msgstr ""
+msgstr "Terminal"
 
 #: contents/ui/SavedCommandsSettings.qml:17
 #, kde-format
 msgid "Saved Commands"
-msgstr ""
+msgstr "Órdenes guardadas"
 
 #: contents/ui/SavedCommandsSettings.qml:22
 #: contents/ui/SavedCommandsSettings.qml:83
 #, kde-format
 msgid "Add Command"
-msgstr ""
+msgstr "Añadir orden"
 
 #: contents/ui/SavedCommandsSettings.qml:44 contents/ui/TerminalPage.qml:201
 #, kde-format
 msgid "No saved commands"
-msgstr ""
+msgstr "No hay órdenes guardadas"
 
 #: contents/ui/SavedCommandsSettings.qml:45 contents/ui/TerminalPage.qml:202
 #, kde-format
 msgid "Save commands to quickly run them without typing them out."
 msgstr ""
+"Guardar órdenes para ejecutarlas rápidamente sin necesidad de escribirlas."
 
 #: contents/ui/SavedCommandsSettings.qml:49
-#, fuzzy, kde-format
-#| msgid "Add action"
+#, kde-format
 msgid "Add command"
-msgstr "Añadir acción"
+msgstr "Añadir orden"
 
 #: contents/ui/SavedCommandsSettings.qml:74
 #, kde-format
@@ -72,20 +72,19 @@ msgid "Settings"
 msgstr "Preferencias"
 
 #: contents/ui/SettingsPage.qml:24
-#, fuzzy, kde-format
-#| msgid "Color Scheme"
+#, kde-format
 msgid "Color Scheme:"
-msgstr "Esquema de color"
+msgstr "Esquema de color:"
 
 #: contents/ui/SettingsPage.qml:28
 #, kde-format
 msgid "More Info:"
-msgstr ""
+msgstr "Más información:"
 
 #: contents/ui/SettingsPage.qml:29
 #, kde-format
 msgid "About"
-msgstr ""
+msgstr "Acerca de"
 
 #: contents/ui/TerminalKeyToolBar.qml:71
 #, kde-format
@@ -126,7 +125,7 @@ msgstr "Nueva pestaña"
 #, kde-format
 msgctxt "@action:intoolbar"
 msgid "Saved Commands"
-msgstr ""
+msgstr "Órdenes guardadas"
 
 #: contents/ui/TerminalPage.qml:78
 #, kde-format
@@ -177,12 +176,12 @@ msgstr "Pegar"
 #, kde-format
 msgctxt "@title:window"
 msgid "Saved Commands"
-msgstr ""
+msgstr "Órdenes guardadas"
 
 #: contents/ui/TerminalPage.qml:173
 #, kde-format
 msgid "Configure"
-msgstr ""
+msgstr "Configurar"
 
 #: contents/ui/TerminalPage.qml:181 contents/ui/TerminalPage.qml:293
 #, kde-format
@@ -222,17 +221,17 @@ msgstr "Desactivar"
 #: main.cpp:37
 #, kde-format
 msgid "© 2020-2022 KDE Community"
-msgstr ""
+msgstr "© 2020-2022 La Comunidad KDE"
 
 #: main.cpp:39
 #, kde-format
 msgid "Jonah Brüchert"
-msgstr ""
+msgstr "Jonah Brüchert"
 
 #: main.cpp:40
 #, kde-format
 msgid "Devin Lin"
-msgstr ""
+msgstr "Devin Lin"
 
 #: terminaltabmodel.cpp:70
 #, kde-format
