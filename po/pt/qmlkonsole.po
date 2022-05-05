@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: qmlkonsole\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-04-29 00:46+0000\n"
-"PO-Revision-Date: 2021-11-09 18:48+0000\n"
+"PO-Revision-Date: 2022-05-04 19:01+0100\n"
 "Last-Translator: José Nuno Coelho Pires <zepires@gmail.com>\n"
 "Language-Team: Portuguese <kde-i18n-pt@kde.org>\n"
 "Language: pt\n"
@@ -11,49 +11,48 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-POFile-SpellExtra: Tab EOF\n"
+"X-POFile-SpellExtra: Tab EOF Jonah Brüchert Devin Lin\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr ""
+msgstr "José Nuno Pires"
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr ""
+msgstr "zepires@gmail.com"
 
 #: contents/ui/main.qml:16
 #, kde-format
 msgid "Terminal"
-msgstr ""
+msgstr "Terminal"
 
 #: contents/ui/SavedCommandsSettings.qml:17
 #, kde-format
 msgid "Saved Commands"
-msgstr ""
+msgstr "Comandos Gravados"
 
 #: contents/ui/SavedCommandsSettings.qml:22
 #: contents/ui/SavedCommandsSettings.qml:83
 #, kde-format
 msgid "Add Command"
-msgstr ""
+msgstr "Adicionar um Comando"
 
 #: contents/ui/SavedCommandsSettings.qml:44 contents/ui/TerminalPage.qml:201
 #, kde-format
 msgid "No saved commands"
-msgstr ""
+msgstr "Sem comandos gravados"
 
 #: contents/ui/SavedCommandsSettings.qml:45 contents/ui/TerminalPage.qml:202
 #, kde-format
 msgid "Save commands to quickly run them without typing them out."
-msgstr ""
+msgstr "Grave os comandos para os executar rapidamente sem ter de os escrever."
 
 #: contents/ui/SavedCommandsSettings.qml:49
-#, fuzzy, kde-format
-#| msgid "Add action"
+#, kde-format
 msgid "Add command"
-msgstr "Adicionar uma acção"
+msgstr "Adicionar um comando"
 
 #: contents/ui/SavedCommandsSettings.qml:74
 #, kde-format
@@ -66,20 +65,19 @@ msgid "Settings"
 msgstr "Configuração"
 
 #: contents/ui/SettingsPage.qml:24
-#, fuzzy, kde-format
-#| msgid "Color Scheme"
+#, kde-format
 msgid "Color Scheme:"
-msgstr "Esquema de Cores"
+msgstr "Esquema de Cores:"
 
 #: contents/ui/SettingsPage.qml:28
 #, kde-format
 msgid "More Info:"
-msgstr ""
+msgstr "Mais Informações:"
 
 #: contents/ui/SettingsPage.qml:29
 #, kde-format
 msgid "About"
-msgstr ""
+msgstr "Acerca"
 
 #: contents/ui/TerminalKeyToolBar.qml:71
 #, kde-format
@@ -120,7 +118,7 @@ msgstr "Nova Página"
 #, kde-format
 msgctxt "@action:intoolbar"
 msgid "Saved Commands"
-msgstr ""
+msgstr "Comandos Gravados"
 
 #: contents/ui/TerminalPage.qml:78
 #, kde-format
@@ -171,12 +169,12 @@ msgstr "Colar"
 #, kde-format
 msgctxt "@title:window"
 msgid "Saved Commands"
-msgstr ""
+msgstr "Comandos Gravados"
 
 #: contents/ui/TerminalPage.qml:173
 #, kde-format
 msgid "Configure"
-msgstr ""
+msgstr "Configurar"
 
 #: contents/ui/TerminalPage.qml:181 contents/ui/TerminalPage.qml:293
 #, kde-format
@@ -216,31 +214,19 @@ msgstr "Desactivar"
 #: main.cpp:37
 #, kde-format
 msgid "© 2020-2022 KDE Community"
-msgstr ""
+msgstr "© 2020-2022 da Comunidade do KDE"
 
 #: main.cpp:39
 #, kde-format
 msgid "Jonah Brüchert"
-msgstr ""
+msgstr "Jonah Brüchert"
 
 #: main.cpp:40
 #, kde-format
 msgid "Devin Lin"
-msgstr ""
+msgstr "Devin Lin"
 
 #: terminaltabmodel.cpp:70
 #, kde-format
 msgid "Tab %1"
 msgstr "Página %1"
-
-#~ msgid "Quick Actions"
-#~ msgstr "Acções Rápidas"
-
-#~ msgid "Quick Action Settings"
-#~ msgstr "Configuração das Acções Rápidas"
-
-#~ msgid "Add Actions"
-#~ msgstr "Adicionar Acções"
-
-#~ msgid "Save"
-#~ msgstr "Gravar"
