@@ -30,7 +30,7 @@ msgstr ""
 #: contents/ui/main.qml:16
 #, kde-format
 msgid "Terminal"
-msgstr ""
+msgstr "Terminál"
 
 #: contents/ui/SavedCommandsSettings.qml:17
 #, kde-format
@@ -41,7 +41,7 @@ msgstr ""
 #: contents/ui/SavedCommandsSettings.qml:83
 #, kde-format
 msgid "Add Command"
-msgstr ""
+msgstr "Přidat příkaz"
 
 #: contents/ui/SavedCommandsSettings.qml:44 contents/ui/TerminalPage.qml:201
 #, kde-format
@@ -54,10 +54,9 @@ msgid "Save commands to quickly run them without typing them out."
 msgstr ""
 
 #: contents/ui/SavedCommandsSettings.qml:49
-#, fuzzy, kde-format
-#| msgid "Add action"
+#, kde-format
 msgid "Add command"
-msgstr "Přidat činnost"
+msgstr "Přidat příkaz"
 
 #: contents/ui/SavedCommandsSettings.qml:74
 #, kde-format
@@ -70,10 +69,9 @@ msgid "Settings"
 msgstr "Nastavení"
 
 #: contents/ui/SettingsPage.qml:24
-#, fuzzy, kde-format
-#| msgid "Color Scheme"
+#, kde-format
 msgid "Color Scheme:"
-msgstr "Barevné schéma"
+msgstr ""
 
 #: contents/ui/SettingsPage.qml:28
 #, kde-format
@@ -83,7 +81,7 @@ msgstr ""
 #: contents/ui/SettingsPage.qml:29
 #, kde-format
 msgid "About"
-msgstr ""
+msgstr "O aplikaci"
 
 #: contents/ui/TerminalKeyToolBar.qml:71
 #, kde-format
@@ -180,7 +178,7 @@ msgstr ""
 #: contents/ui/TerminalPage.qml:173
 #, kde-format
 msgid "Configure"
-msgstr ""
+msgstr "Nastavit"
 
 #: contents/ui/TerminalPage.qml:181 contents/ui/TerminalPage.qml:293
 #, kde-format
@@ -224,26 +222,14 @@ msgstr ""
 #: main.cpp:39
 #, kde-format
 msgid "Jonah Brüchert"
-msgstr ""
+msgstr "Jonah Brüchert"
 
 #: main.cpp:40
 #, kde-format
 msgid "Devin Lin"
-msgstr ""
+msgstr "Devin Lin"
 
 #: terminaltabmodel.cpp:70
 #, kde-format
 msgid "Tab %1"
 msgstr "Karta %1"
-
-#~ msgid "Quick Actions"
-#~ msgstr "Rychlé akce"
-
-#~ msgid "Quick Action Settings"
-#~ msgstr "Nastavení rychlých činností"
-
-#~ msgid "Add Actions"
-#~ msgstr "Přidat činnosti"
-
-#~ msgid "Save"
-#~ msgstr "Uložit"
