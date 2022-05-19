@@ -114,7 +114,7 @@ msgstr "Tab"
 #: contents/ui/TerminalKeyToolBar.qml:161
 #, kde-format
 msgid "Toggle Virtual Keyboard"
-msgstr "Commuta el teclat virtual"
+msgstr "Canvia el teclat virtual"
 
 #: contents/ui/TerminalPage.qml:61
 #, kde-format
