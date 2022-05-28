@@ -136,7 +136,7 @@ msgstr "Busca inversa incremental"
 #: contents/ui/TerminalPage.qml:86
 #, kde-format
 msgid "Cancel current command"
-msgstr "Cancel·la l'ordre actual"
+msgstr "Cancela l'ordre actual"
 
 #: contents/ui/TerminalPage.qml:94
 #, kde-format
@@ -213,7 +213,7 @@ msgstr "Selecciona la pestanya"
 #: contents/ui/TerminalPage.qml:313
 #, kde-format
 msgid "selection mode"
-msgstr "mode de selecció"
+msgstr "modo de selecció"
 
 #: contents/ui/TerminalPage.qml:321
 #, kde-format
