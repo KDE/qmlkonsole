@@ -146,17 +146,17 @@ msgstr "Envia un EOF (final de fitxer)"
 #: contents/ui/TerminalPage.qml:102
 #, kde-format
 msgid "Cursor to line start"
-msgstr "Cursor al començament de línia"
+msgstr "Cursor al començament de llínea"
 
 #: contents/ui/TerminalPage.qml:110
 #, kde-format
 msgid "Cursor to line end"
-msgstr "Cursor al final de línia"
+msgstr "Cursor al final de llínea"
 
 #: contents/ui/TerminalPage.qml:118
 #, kde-format
 msgid "Kill to line end"
-msgstr "Neteja fins al final de línia"
+msgstr "Neteja fins al final de llínea"
 
 #: contents/ui/TerminalPage.qml:126
 #, kde-format
