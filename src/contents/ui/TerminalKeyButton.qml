@@ -26,9 +26,9 @@ Controls.Button {
         Kirigami.Theme.inherit: false
         Kirigami.Theme.colorSet: Kirigami.Theme.View
         
-        border.color: Qt.rgba(Kirigami.Theme.textColor.r, Kirigami.Theme.textColor.g, Kirigami.Theme.textColor.b, 0.3)
+        border.color: (button.down || button.checked) ? Kirigami.Theme.highlightColor : Qt.rgba(Kirigami.Theme.textColor.r, Kirigami.Theme.textColor.g, Kirigami.Theme.textColor.b, 0.3)
         border.width: 1
-        color: Qt.darker(Kirigami.Theme.alternateBackgroundColor, button.down ? 1.5 : 1)
+        color: (button.down || button.checked) ? Qt.rgba(Kirigami.Theme.highlightColor.r, Kirigami.Theme.highlightColor.g, Kirigami.Theme.highlightColor.b, 0.3) : Kirigami.Theme.alternateBackgroundColor
         radius: Kirigami.Units.smallSpacing
     }
 }
