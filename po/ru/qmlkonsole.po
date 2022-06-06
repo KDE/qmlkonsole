@@ -1,87 +1,88 @@
+# Copyright (C) YEAR This file is copyright:
+# This file is distributed under the same license as the qmlkonsole package.
+#
+# Alexander Yavorsky <kekcuha@gmail.com>, 2022.
 msgid ""
 msgstr ""
-"Project-Id-Version: kdeorg\n"
+"Project-Id-Version: qmlkonsole\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-04-29 00:46+0000\n"
-"PO-Revision-Date: 2022-06-05 04:18\n"
-"Last-Translator: \n"
-"Language-Team: Chinese Simplified\n"
-"Language: zh_CN\n"
+"PO-Revision-Date: 2022-05-14 18:17+0300\n"
+"Last-Translator: Alexander Yavorsky <kekcuha@gmail.com>\n"
+"Language-Team: Russian <kde-russian@lists.kde.ru>\n"
+"Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"X-Crowdin-Project: kdeorg\n"
-"X-Crowdin-Project-ID: 269464\n"
-"X-Crowdin-Language: zh-CN\n"
-"X-Crowdin-File: /kf5-trunk/messages/qmlkonsole/qmlkonsole.pot\n"
-"X-Crowdin-File-ID: 24326\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Lokalize 21.08.3\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr "Guo Yunhe, Tyson Tan"
+msgstr "Александр Яворский"
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr "i@guoyunhe.me, tysontan@tysontan.com"
+msgstr "kekcuha@gmail.com"
 
 #: contents/ui/main.qml:16
 #, kde-format
 msgid "Terminal"
-msgstr "终端"
+msgstr "Терминал"
 
 #: contents/ui/SavedCommandsSettings.qml:17
 #, kde-format
 msgid "Saved Commands"
-msgstr "已保存的命令"
+msgstr "Сохранённые команды"
 
 #: contents/ui/SavedCommandsSettings.qml:22
 #: contents/ui/SavedCommandsSettings.qml:83
 #, kde-format
 msgid "Add Command"
-msgstr "添加命令"
+msgstr "Добавить команду"
 
 #: contents/ui/SavedCommandsSettings.qml:44 contents/ui/TerminalPage.qml:201
 #, kde-format
 msgid "No saved commands"
-msgstr "未保存的命令"
+msgstr "Нет ни одной сохранённой команды"
 
 #: contents/ui/SavedCommandsSettings.qml:45 contents/ui/TerminalPage.qml:202
 #, kde-format
 msgid "Save commands to quickly run them without typing them out."
-msgstr "保存命令以便日后在无需输入它们的情况下快速执行。"
+msgstr ""
 
 #: contents/ui/SavedCommandsSettings.qml:49
 #, kde-format
 msgid "Add command"
-msgstr "添加命令"
+msgstr "Добавить команду"
 
 #: contents/ui/SavedCommandsSettings.qml:74
 #, kde-format
 msgid "Action %1 removed"
-msgstr "操作 %1 已移除"
+msgstr ""
 
 #: contents/ui/SettingsPage.qml:14 contents/ui/TerminalPage.qml:150
 #, kde-format
 msgid "Settings"
-msgstr "设置"
+msgstr "Параметры"
 
 #: contents/ui/SettingsPage.qml:24
-#, kde-format
+#, fuzzy, kde-format
 msgid "Color Scheme:"
-msgstr "配色方案："
+msgstr "Цветовые схемы"
 
 #: contents/ui/SettingsPage.qml:28
-#, kde-format
+#, fuzzy, kde-format
 msgid "More Info:"
-msgstr "更多信息："
+msgstr "Подробнее:"
 
 #: contents/ui/SettingsPage.qml:29
 #, kde-format
 msgid "About"
-msgstr "关于"
+msgstr "О программе"
 
 #: contents/ui/TerminalKeyToolBar.qml:71
 #, kde-format
@@ -110,114 +111,114 @@ msgstr "Tab"
 #: contents/ui/TerminalKeyToolBar.qml:161
 #, kde-format
 msgid "Toggle Virtual Keyboard"
-msgstr "虚拟键盘开关"
+msgstr "Виртуальная клавиатура"
 
 #: contents/ui/TerminalPage.qml:61
 #, kde-format
 msgctxt "@action:intoolbar"
 msgid "New Tab"
-msgstr "新建标签页"
+msgstr "Новая вкладка"
 
 #: contents/ui/TerminalPage.qml:71
 #, kde-format
 msgctxt "@action:intoolbar"
 msgid "Saved Commands"
-msgstr "已保存的命令"
+msgstr "Сохранённые команды"
 
 #: contents/ui/TerminalPage.qml:78
 #, kde-format
 msgid "reverse-i-search"
-msgstr "反向搜索"
+msgstr ""
 
 #: contents/ui/TerminalPage.qml:86
 #, kde-format
 msgid "Cancel current command"
-msgstr "取消当前命令"
+msgstr ""
 
 #: contents/ui/TerminalPage.qml:94
 #, kde-format
 msgid "Send EOF"
-msgstr "发送文件结束符"
+msgstr ""
 
 #: contents/ui/TerminalPage.qml:102
 #, kde-format
 msgid "Cursor to line start"
-msgstr "光标移动到行首"
+msgstr ""
 
 #: contents/ui/TerminalPage.qml:110
 #, kde-format
 msgid "Cursor to line end"
-msgstr "光标移动到行末"
+msgstr ""
 
 #: contents/ui/TerminalPage.qml:118
 #, kde-format
 msgid "Kill to line end"
-msgstr "杀死进程到行末"
+msgstr ""
 
 #: contents/ui/TerminalPage.qml:126
 #, kde-format
 msgid "Paste from kill buffer"
-msgstr "从杀死进程缓冲区粘贴"
+msgstr ""
 
 #: contents/ui/TerminalPage.qml:134
 #, kde-format
 msgid "Copy"
-msgstr "复制"
+msgstr "Копировать"
 
 #: contents/ui/TerminalPage.qml:144
 #, kde-format
 msgid "Paste"
-msgstr "粘贴"
+msgstr "Вставить"
 
 #: contents/ui/TerminalPage.qml:166
 #, kde-format
 msgctxt "@title:window"
 msgid "Saved Commands"
-msgstr "已保存的命令"
+msgstr "Сохранённые команды"
 
 #: contents/ui/TerminalPage.qml:173
-#, kde-format
+#, fuzzy, kde-format
 msgid "Configure"
-msgstr "配置"
+msgstr "Настройка"
 
 #: contents/ui/TerminalPage.qml:181 contents/ui/TerminalPage.qml:293
 #, kde-format
 msgid "Close"
-msgstr "关闭"
+msgstr "Закрыть"
 
 #: contents/ui/TerminalPage.qml:234
 #, kde-format
 msgctxt "@title:window"
 msgid "Confirm closing %1"
-msgstr "确认关闭 %1"
+msgstr "Подтверждение закрытия %1"
 
 #: contents/ui/TerminalPage.qml:250
 #, kde-format
 msgid ""
 "A process is currently running in this tab. Are you sure you want to close "
 "it?"
-msgstr "此标签页当前有正在运行的进程。您确定要关闭它吗？"
+msgstr ""
 
 #: contents/ui/TerminalPage.qml:257
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Tab"
-msgstr "选择标签页"
+msgstr ""
 
 #: contents/ui/TerminalPage.qml:313
-#, kde-format
+#, fuzzy, kde-format
 msgid "selection mode"
-msgstr "选择模式"
+msgstr "Режим выделения:"
 
 #: contents/ui/TerminalPage.qml:321
-#, kde-format
+#, fuzzy, kde-format
 msgid "Disable"
-msgstr "禁用"
+msgstr "Выключить"
 
 #: main.cpp:37
 #, kde-format
 msgid "© 2020-2022 KDE Community"
-msgstr "© 2020-2022 KDE Community"
+msgstr "© Сообщество KDE, 2020-2022"
 
 #: main.cpp:39
 #, kde-format
@@ -232,4 +233,4 @@ msgstr "Devin Lin"
 #: terminaltabmodel.cpp:70
 #, kde-format
 msgid "Tab %1"
-msgstr "标签页 %1"
+msgstr "Вкладка %1"
