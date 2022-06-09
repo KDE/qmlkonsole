@@ -141,7 +141,7 @@ msgstr "Cancela l'ordre actual"
 #: contents/ui/TerminalPage.qml:94
 #, kde-format
 msgid "Send EOF"
-msgstr "Envia un EOF (final de ficher)"
+msgstr "Envia un EOF (final de fitxer)"
 
 #: contents/ui/TerminalPage.qml:102
 #, kde-format
