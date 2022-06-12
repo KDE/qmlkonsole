@@ -35,7 +35,7 @@ ToolBar {
         } else if (altButton.checked) {
             pressKeyWithModifier(key, Qt.AltModifier);
         } else {
-            terminal.pressKey(key, 0, true, 0, "");
+            terminal.pressKey(key, 0, true, 0, String.fromCharCode(key));
         }
     }
     
