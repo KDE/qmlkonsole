@@ -29,13 +29,13 @@ ToolBar {
         modifierHolder.forceActiveFocus();
     }
     
-    function pressKey(key) {
+    function pressKey(key, keyString) {
         if (ctrlButton.checked) {
             pressKeyWithModifier(key, Qt.ControlModifier);
         } else if (altButton.checked) {
             pressKeyWithModifier(key, Qt.AltModifier);
         } else {
-            terminal.pressKey(key, 0, true, 0, String.fromCharCode(key));
+            terminal.pressKey(key, 0, true, 0, keyString);
         }
     }
     
@@ -51,7 +51,7 @@ ToolBar {
             
             onTextChanged: {
                 if (text.length == 1) {
-                    root.pressKey(Util.getKeyFromString(text));
+                    root.pressKey(Util.getKeyFromString(text),text);
                 }
                 text = "";
             }
@@ -116,37 +116,37 @@ ToolBar {
                 TerminalKeyButton {
                     Layout.preferredWidth: Kirigami.Units.gridUnit * 2
                     text: "↑"
-                    onClicked: root.pressKey(Qt.Key_Up)
+                    onClicked: root.pressKey(Qt.Key_Up, "")
                     autoRepeat: true
                 }
                 TerminalKeyButton {
                     Layout.preferredWidth: Kirigami.Units.gridUnit * 2
                     text: "↓"
-                    onClicked: root.pressKey(Qt.Key_Down)
+                    onClicked: root.pressKey(Qt.Key_Down, "")
                     autoRepeat: true
                 }
                 TerminalKeyButton {
                     Layout.preferredWidth: Kirigami.Units.gridUnit * 2
                     text: "←"
-                    onClicked: root.pressKey(Qt.Key_Left)
+                    onClicked: root.pressKey(Qt.Key_Left, "")
                     autoRepeat: true
                 }
                 TerminalKeyButton {
                     Layout.preferredWidth: Kirigami.Units.gridUnit * 2
                     text: "→"
-                    onClicked: root.pressKey(Qt.Key_Right)
+                    onClicked: root.pressKey(Qt.Key_Right, "")
                     autoRepeat: true
                 }
                 
                 TerminalKeyButton {
                     Layout.preferredWidth: Kirigami.Units.gridUnit * 2
                     text: "|"
-                    onClicked: root.pressKey(Qt.Key_Bar)
+                    onClicked: root.pressKey(Qt.Key_Bar, "|")
                 }
                 TerminalKeyButton {
                     Layout.preferredWidth: Kirigami.Units.gridUnit * 2
                     text: "~"
-                    onClicked: root.pressKey(Qt.Key_AsciiTilde)
+                    onClicked: root.pressKey(Qt.Key_AsciiTilde, "~")
                 }
             }
         }
