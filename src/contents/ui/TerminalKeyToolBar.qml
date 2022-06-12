@@ -51,7 +51,7 @@ ToolBar {
             
             onTextChanged: {
                 if (text.length == 1) {
-                    root.pressKey(Util.getKeyFromString(text),text);
+                    root.pressKey(Util.getKeyFromString(text), text);
                 }
                 text = "";
             }
