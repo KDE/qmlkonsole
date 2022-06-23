@@ -142,7 +142,7 @@ Kirigami.Page {
             displayHint: Kirigami.Action.AlwaysHide
             icon.name: "edit-paste"
             text: i18n("Paste")
-            onTriggered: terminal.pasteClipboard();
+            onTriggered: currentTerminal.pasteClipboard();
             shortcut: "Ctrl+Shift+V"
         },
         Kirigami.Action {
