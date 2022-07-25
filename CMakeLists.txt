@@ -31,7 +31,7 @@ ecm_setup_version(${PROJECT_VERSION}
     VERSION_HEADER ${CMAKE_CURRENT_BINARY_DIR}/version.h
 )
 
-find_package(Qt5 ${QT_MIN_VERSION} REQUIRED NO_MODULE COMPONENTS 
+find_package(Qt${QT_MAJOR_VERSION} ${QT_MIN_VERSION} REQUIRED NO_MODULE COMPONENTS
     Core 
     Quick 
     Test 
@@ -39,14 +39,14 @@ find_package(Qt5 ${QT_MIN_VERSION} REQUIRED NO_MODULE COMPONENTS
     Svg 
     QuickControls2
 )
-find_package(KF5 ${KF5_MIN_VERSION} REQUIRED COMPONENTS 
+find_package(KF${QT_MAJOR_VERSION} ${KF5_MIN_VERSION} REQUIRED COMPONENTS
     Kirigami2 
     I18n 
     Config 
     CoreAddons 
     WindowSystem
 )
-find_package(KF5KirigamiAddons 0.6 REQUIRED)
+find_package(KF${QT_MAJOR_VERSION}KirigamiAddons 0.6 REQUIRED)
 
 ecm_find_qmlmodule(QMLTermWidget 1.0)
 set_package_properties(QMLTermWidget-QMLModule PROPERTIES
