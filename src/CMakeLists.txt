@@ -21,6 +21,7 @@ target_link_libraries(qmlkonsole
     Qt::Qml
     Qt::Quick
     Qt::Svg
+    Qt::Widgets
     KF${QT_MAJOR_VERSION}::I18n
     KF${QT_MAJOR_VERSION}::ConfigGui
     KF${QT_MAJOR_VERSION}::CoreAddons

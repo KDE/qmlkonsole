@@ -38,6 +38,7 @@ find_package(Qt${QT_MAJOR_VERSION} ${QT_MIN_VERSION} REQUIRED NO_MODULE COMPONEN
     Gui 
     Svg 
     QuickControls2
+    Widgets
 )
 find_package(KF${QT_MAJOR_VERSION} ${KF5_MIN_VERSION} REQUIRED COMPONENTS
     Kirigami2 
