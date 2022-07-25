@@ -8,10 +8,10 @@ set(qmlkonsole_SRCS
     util.cpp
     fontlistmodel.cpp
     shellcommand.cpp
+    resources.qrc
 )
 
-qt5_add_resources(RESOURCES resources.qrc)
-add_executable(qmlkonsole ${qmlkonsole_SRCS} ${RESOURCES})
+add_executable(qmlkonsole ${qmlkonsole_SRCS})
 
 kconfig_add_kcfg_files(qmlkonsole GENERATE_MOC terminalsettings.kcfgc)
 target_include_directories(qmlkonsole PRIVATE ${CMAKE_CURRENT_BINARY_DIR} ${CMAKE_BINARY_DIR})
@@ -27,4 +27,4 @@ target_link_libraries(qmlkonsole
     KF5::WindowSystem
 )
 install(TARGETS qmlkonsole ${KDE_INSTALL_TARGETS_DEFAULT_ARGS})
-install(FILES terminalsettings.kcfg DESTINATION ${KCFG_INSTALL_DIR})
+install(FILES terminalsettings.kcfg DESTINATION ${KDE_INSTALL_KCFGDIR})
