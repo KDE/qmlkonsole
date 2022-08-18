@@ -29,6 +29,7 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
     
     QApplication app(argc, argv);
     
+    KLocalizedString::setApplicationDomain("qmlkonsole");
     KAboutData aboutData(QStringLiteral("qmlkonsole"),
                          QStringLiteral("QMLKonsole"),
                          QStringLiteral(QMLKONSOLE_VERSION_STRING),

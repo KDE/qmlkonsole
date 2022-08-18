@@ -38,6 +38,7 @@ ecm_setup_version(${PROJECT_VERSION}
 find_package(Qt5 ${QT_MIN_VERSION} REQUIRED NO_MODULE COMPONENTS Core Quick Test Gui Svg QuickControls2)
 find_package(KF5 ${KF5_MIN_VERSION} REQUIRED COMPONENTS Kirigami2 I18n Config CoreAddons)
 
+ecm_find_qmlmodule(org.kde.kirigamiaddons.labs.mobileform 0.1)
 ecm_find_qmlmodule(QMLTermWidget 1.0)
 set_package_properties(QMLTermWidget-QMLModule PROPERTIES
     URL "https://github.com/Swordfish90/qmltermwidget")

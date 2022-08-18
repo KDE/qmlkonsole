@@ -4,6 +4,7 @@ set(qmlkonsole_SRCS
     savedcommandsmodel.cpp
     terminaltabmodel.cpp
     util.cpp
+    fontlistmodel.cpp
 )
 
 qt5_add_resources(RESOURCES resources.qrc)

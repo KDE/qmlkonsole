@@ -355,9 +355,9 @@ Kirigami.Page {
                             }
                         }
                         
-                        font.family: "Monospace"
+                        font.family: TerminalSettings.fontFamily
+                        font.pixelSize: TerminalSettings.fontSize
                         colorScheme: TerminalSettings.colorScheme
-                        font.pixelSize: 12
                         
                         Component.onCompleted: {
                             mainsession.startShellProgram();

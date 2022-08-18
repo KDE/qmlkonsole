@@ -8,6 +8,12 @@
         <entry key="colorScheme" type="string">
             <default>"cool-retro-term"</default>
         </entry>
+        <entry key="fontFamily" type="string">
+            <default>"Monospace"</default>
+        </entry>
+        <entry key="fontSize" type="int">
+            <default>12</default>
+        </entry>
         <entry key="actions" type="StringList">
             <default></default>
         </entry>
