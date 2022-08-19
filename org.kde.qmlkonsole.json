@@ -1,5 +1,5 @@
 {
-    "id": "org.kde.mobile.qmlkonsole",
+    "id": "org.kde.qmlkonsole",
     "runtime": "org.kde.Platform",
     "runtime-version": "5.12",
     "sdk": "org.kde.Sdk",
