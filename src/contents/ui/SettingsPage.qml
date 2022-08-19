@@ -34,7 +34,7 @@ Kirigami.ScrollablePage {
                 spacing: 0
 
                 MobileForm.FormCardHeader {
-                    title: "General"
+                    title: i18n("General")
                 }
                 
                 MobileForm.FormButtonDelegate {
@@ -53,7 +53,7 @@ Kirigami.ScrollablePage {
                 spacing: 0
 
                 MobileForm.FormCardHeader {
-                    title: "General"
+                    title: i18n("Appearance")
                 }
                 
                 MobileForm.FormComboBoxDelegate {
@@ -139,6 +139,7 @@ Kirigami.ScrollablePage {
                             
                             header: ColumnLayout {
                                 Kirigami.Heading {
+                                    level: 2
                                     text: i18nc("@title:window", "Pick font")
                                 }
                                 Kirigami.SearchField {

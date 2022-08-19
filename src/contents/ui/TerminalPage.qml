@@ -258,40 +258,44 @@ Kirigami.Page {
             standardButtons: Dialog.Close
             
             ListView {
+                id: tabListView
                 implicitWidth: Kirigami.Units.gridUnit * 16
                 implicitHeight: Kirigami.Units.gridUnit * 18
                 Kirigami.Theme.inherit: false
                 Kirigami.Theme.colorSet: Kirigami.Theme.View
                 model: TerminalTabModel
                 
-                delegate: Kirigami.SwipeListItem {
+                delegate: ItemDelegate {
+                    width: tabListView.width
                     topPadding: Kirigami.Units.smallSpacing
                     bottomPadding: Kirigami.Units.smallSpacing
-                    alwaysVisibleActions: true
+                    
                     onClicked: {
                         tabSwipeView.currentIndex = index;
                         selectTabDialog.close();
                     }
                     
-                    RowLayout {
+                    contentItem: RowLayout {
                         Label {
                             text: model.name
+                            Layout.fillWidth: true
                         }
+                        
                         RadioButton {
-                            Layout.alignment: Qt.AlignRight | Qt.AlignVCenter
+                            Layout.alignment: Qt.AlignVCenter
                             checked: tabSwipeView.currentIndex == index
                             onClicked: {
                                 tabSwipeView.setCurrentIndex(index);
                                 selectTabDialog.close();
                             }
                         }
-                    }
-
-                    actions: [
-                        Kirigami.Action {
-                            iconName: "delete"
+                        
+                        ToolButton {
+                            Layout.alignment: Qt.AlignVCenter
+                            icon.name: "delete"
                             text: i18n("Close")
-                            onTriggered: {
+                            display: ToolButton.IconOnly
+                            onClicked: {
                                 if (tabSwipeView.contentChildren[index].termWidget.session.hasActiveProcess) {
                                     selectTabDialog.close();
                                     confirmDialog.indexToClose = index;
@@ -301,7 +305,7 @@ Kirigami.Page {
                                 }
                             }
                         }
-                    ]
+                    }
                 }
             }
         }
