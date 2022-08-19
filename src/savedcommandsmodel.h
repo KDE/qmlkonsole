@@ -28,7 +28,7 @@ public:
     void save();
     
     Q_INVOKABLE void addAction(QString action);
-    Q_INVOKABLE bool removeRows(int row, int count, const QModelIndex &parent = QModelIndex()) override;
+    Q_INVOKABLE bool removeRow(int row);
 
 private:
     QStringList m_actions;

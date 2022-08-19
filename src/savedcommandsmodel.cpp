@@ -39,15 +39,14 @@ void SavedCommandsModel::addAction(QString action)
     TerminalSettings::self()->save();
 }
 
-bool SavedCommandsModel::removeRows(int row, int count, const QModelIndex &parent)
+bool SavedCommandsModel::removeRow(int row)
 {
-    Q_UNUSED(parent)
-
-    if (row < 0 || count <= 0 || row + count - 1 >= static_cast<int>(m_actions.size()))
+    if (row < 0 || row >= m_actions.size()) {
         return false;
+    }
 
-    beginRemoveRows(QModelIndex(), row, row + count - 1);
-    m_actions.erase(m_actions.begin() + row, m_actions.begin() + count);
+    beginRemoveRows(QModelIndex(), row, row);
+    m_actions.erase(m_actions.begin() + row);
     endRemoveRows();
 
     return true;

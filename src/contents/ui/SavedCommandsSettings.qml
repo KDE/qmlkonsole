@@ -33,7 +33,6 @@ Kirigami.ScrollablePage {
         
         Kirigami.PlaceholderMessage {
             anchors.verticalCenter: parent.verticalCenter
-            anchors.horizontalCenter: parent.horizontalCenter
             anchors.left: parent.left
             anchors.right: parent.right
             anchors.leftMargin: Kirigami.Units.largeSpacing
@@ -70,7 +69,7 @@ Kirigami.ScrollablePage {
                 Kirigami.Action {
                     icon.name: "delete"
                     onTriggered: {
-                        SavedCommandsModel.removeRows(index, 1);
+                        SavedCommandsModel.removeRow(index);
                         showPassiveNotification(i18n("Action %1 removed", label.text));
                     }
                 }
