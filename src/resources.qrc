@@ -2,7 +2,9 @@
     <qresource prefix="/">
         <file alias="main.qml">contents/ui/main.qml</file>
         <file alias="AboutPage.qml">contents/ui/AboutPage.qml</file>
+        <file alias="SettingsComponent.qml">contents/ui/SettingsComponent.qml</file>
         <file alias="SettingsPage.qml">contents/ui/SettingsPage.qml</file>
+        <file alias="SettingsDialog.qml">contents/ui/SettingsDialog.qml</file>
         <file alias="TerminalPage.qml">contents/ui/TerminalPage.qml</file>
         <file alias="TerminalKeyButton.qml">contents/ui/TerminalKeyButton.qml</file>
         <file alias="TerminalKeyToolBar.qml">contents/ui/TerminalKeyToolBar.qml</file>

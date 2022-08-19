@@ -57,6 +57,29 @@ Kirigami.Page {
         }
     }
     
+    property bool isWideScreen: root.width > 540
+    
+    function openSettings() {
+        if (isWideScreen) {
+            root.settingsDialogLoader.active = true;
+            root.settingsDialogLoader.item.open();
+        } else {
+            pageStack.push("qrc:/SettingsPage.qml",
+                {
+                    terminal: currentTerminal
+                }
+            );
+        }
+    }
+    
+    property var settingsDialogLoader: Loader {
+        active: false
+        sourceComponent: SettingsDialog {
+            id: settingsDialog
+            terminal: currentTerminal
+        }
+    }
+    
     contextualActions: [
         Kirigami.Action {
             icon.name: "list-add"
@@ -151,11 +174,7 @@ Kirigami.Page {
             displayHint: Kirigami.Action.IconOnly
             text: i18n("Settings")
             icon.name: "settings-configure"
-            onTriggered: pageStack.push("qrc:/SettingsPage.qml",
-                {
-                    terminal: currentTerminal
-                }
-            )
+            onTriggered: root.openSettings()
         }
     ]
 
