@@ -14,6 +14,7 @@
 #include <KAboutData>
 
 #include "abouttype.h"
+#include "fontlistmodel.h"
 #include "terminalsettings.h"
 #include "savedcommandsmodel.h"
 #include "terminaltabmodel.h"
@@ -58,6 +59,9 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
     });
     qmlRegisterSingletonType<TerminalTabModel>(URI, 1, 0, "TerminalTabModel", [](QQmlEngine *, QJSEngine *) -> QObject * {
         return TerminalTabModel::self();
+    });
+    qmlRegisterSingletonType<FontListSearchModel>(URI, 1, 0, "FontListSearchModel", [](QQmlEngine *, QJSEngine *) -> QObject * {
+        return FontListSearchModel::self();
     });
     qmlRegisterSingletonType<Util>(URI, 1, 0, "Util", [](QQmlEngine *, QJSEngine *) -> QObject * {
         return Util::self();

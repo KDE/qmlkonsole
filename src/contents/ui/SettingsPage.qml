@@ -5,6 +5,7 @@
 import QtQuick 2.15
 import QtQuick.Controls 2.15 as Controls
 import QtQuick.Layouts 1.15
+import QtQuick.Dialogs 1.1 as Dialogs
 
 import org.kde.kirigami 2.19 as Kirigami
 import QMLTermWidget 1.0
@@ -79,14 +80,101 @@ Kirigami.ScrollablePage {
                 
                 MobileForm.FormDelegateSeparator { above: colorSchemeDropdown; below: fontFamilyDelegate }
                 
-                MobileForm.FormButtonDelegate {
+                MobileForm.AbstractFormDelegate {
                     id: fontFamilyDelegate
+                    Layout.fillWidth: true
                     text: i18n("Font Family")
-//                     onClicked: applicationWindow().pageStack.push("qrc:/AboutPage.qml")
                     
-                    //Kirigami.Dialog {
-                        //id: fontFamilyDelegate
-                    //}
+                    onClicked: {
+                        if (fontFamilyPickerLoader.active) {
+                            fontFamilyPickerLoader.item.open();
+                        } else {
+                            fontFamilyPickerLoader.active = true;
+                            fontFamilyPickerLoader.requestOpen = true;
+                        }
+                    }
+                    
+                    contentItem: RowLayout {
+                        Controls.Label {
+                            Layout.fillWidth: true
+                            text: i18n("Font Family")
+                            elide: Text.ElideRight
+                        }
+                        
+                        Controls.Label {
+                            Layout.alignment: Qt.AlignRight
+                            Layout.rightMargin: Kirigami.Units.smallSpacing
+                            color: Kirigami.Theme.disabledTextColor
+                            text: TerminalSettings.fontFamily
+                            font.family: TerminalSettings.fontFamily
+                        }
+                        
+                        MobileForm.FormArrow {
+                            Layout.alignment: Qt.AlignRight | Qt.AlignVCenter
+                            direction: MobileForm.FormArrow.Down
+                        }
+                    }
+                    
+                    Loader {
+                        id: fontFamilyPickerLoader
+                        active: false
+                        asynchronous: true
+                        
+                        property bool requestOpen: false
+                        onLoaded: {
+                            if (requestOpen) {
+                                item.open();
+                                requestOpen = false;
+                            }
+                        }
+                        
+                        sourceComponent: Kirigami.OverlaySheet {
+                            id: fontFamilyPicker
+                            
+                            onSheetOpenChanged: {
+                                if (sheetOpen) {
+                                    searchField.text = "";
+                                }
+                            }
+                            
+                            header: ColumnLayout {
+                                Kirigami.Heading {
+                                    text: i18nc("@title:window", "Pick font")
+                                }
+                                Kirigami.SearchField {
+                                    id: searchField
+                                    Layout.fillWidth: true
+                                    width: parent.width
+                                    onTextChanged: {
+                                        FontListSearchModel.setFilterFixedString(text)
+                                    }
+                                }
+                            }
+
+                            footer: RowLayout {
+                                Controls.Button {
+                                    Layout.alignment: Qt.AlignHCenter
+                                    text: i18nc("@action:button", "Close")
+                                    onClicked: fontFamilyPicker.close()
+                                }
+                            }
+                            
+                            ListView {
+                                reuseItems: true
+                                anchors.fill: parent
+                                implicitWidth: 18 * Kirigami.Units.gridUnit
+                                model: FontListSearchModel
+                                
+                                delegate: Kirigami.BasicListItem {
+                                    text: model.name
+                                    onClicked: {
+                                        TerminalSettings.fontFamily = model.name
+                                        fontFamilyPicker.close();
+                                    }
+                                }
+                            }
+                        }
+                    }
                 }
                 
                 MobileForm.FormDelegateSeparator { above: fontFamilyDelegate }
