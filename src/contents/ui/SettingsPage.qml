@@ -73,6 +73,7 @@ Kirigami.ScrollablePage {
                             if (checked) {
                                 colorSchemeDropdown.currentValue = modelData;
                                 TerminalSettings.colorScheme = modelData;
+                                TerminalSettings.save();
                             }
                         }
                     }
@@ -169,7 +170,8 @@ Kirigami.ScrollablePage {
                                 delegate: Kirigami.BasicListItem {
                                     text: model.name
                                     onClicked: {
-                                        TerminalSettings.fontFamily = model.name
+                                        TerminalSettings.fontFamily = model.name;
+                                        TerminalSettings.save();
                                         fontFamilyPicker.close();
                                     }
                                 }
@@ -194,7 +196,44 @@ Kirigami.ScrollablePage {
                         
                         Controls.SpinBox {
                             value: TerminalSettings.fontSize
-                            onValueChanged: TerminalSettings.fontSize = value
+                            onValueChanged: {
+                                TerminalSettings.fontSize = value;
+                                TerminalSettings.save();
+                            }
+                            from: 5
+                            to: 100
+                        }
+                    }
+                }
+                
+                MobileForm.FormDelegateSeparator { below: fontFamilyDelegate }
+                
+                MobileForm.FormComboBoxDelegate {
+                    id: opacityDelegate
+                    text: i18n("Window Transparency")
+                    currentValue: i18n("%1\%", sliderValue.value)
+                    
+                    dialog: Kirigami.PromptDialog {
+                        title: i18n("Background Transparency")
+                        
+                        RowLayout {
+                            Controls.Slider {
+                                id: sliderValue
+                                Layout.fillWidth: true
+                                from: 0
+                                to: 100
+                                value: (1 - TerminalSettings.windowOpacity) * 100
+                                stepSize: 5
+                                snapMode: Controls.Slider.SnapAlways
+                                
+                                onMoved: {
+                                    TerminalSettings.windowOpacity = 1 - (value / 100);
+                                    TerminalSettings.save();
+                                }
+                            }
+                            Controls.Label {
+                                text: opacityDelegate.currentValue
+                            }
                         }
                     }
                 }

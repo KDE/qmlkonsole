@@ -14,6 +14,9 @@
         <entry key="fontSize" type="int">
             <default>12</default>
         </entry>
+        <entry key="windowOpacity" type="double">
+            <default>1</default>
+        </entry>
         <entry key="actions" type="StringList">
             <default></default>
         </entry>

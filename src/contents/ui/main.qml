@@ -24,6 +24,8 @@ Kirigami.ApplicationWindow {
     
     pageStack.columnView.columnResizeMode: Kirigami.ColumnView.SingleColumn
     
+    color: "transparent"
+    
     // pop pages when not in use
     Connections {
         target: applicationWindow().pageStack

@@ -16,6 +16,8 @@ Kirigami.Page {
     id: root
     property var currentTerminal: tabSwipeView.contentChildren[tabSwipeView.currentIndex].termWidget
 
+    background: Item {}
+    
     topPadding: 0
     bottomPadding: 0
     leftPadding: 0
@@ -146,7 +148,7 @@ Kirigami.Page {
             shortcut: "Ctrl+Shift+V"
         },
         Kirigami.Action {
-            displayHint: Kirigami.Action.AlwaysHide
+            displayHint: Kirigami.Action.IconOnly
             text: i18n("Settings")
             icon.name: "settings-configure"
             onTriggered: pageStack.push("qrc:/SettingsPage.qml",
@@ -347,8 +349,8 @@ Kirigami.Page {
                         id: terminal
                         anchors.fill: parent
                         
-                        property string tabName: model.name
-                        property bool isCurrentItem: SwipeView.isCurrentItem
+                        readonly property string tabName: model.name
+                        readonly property bool isCurrentItem: SwipeView.isCurrentItem
                         
                         // with touch, to select text we first require users to press-and-hold to enter the selection mode
                         property bool touchSelectionMode: false
@@ -361,7 +363,9 @@ Kirigami.Page {
                         
                         font.family: TerminalSettings.fontFamily
                         font.pixelSize: TerminalSettings.fontSize
+                        
                         colorScheme: TerminalSettings.colorScheme
+                        opacity: TerminalSettings.windowOpacity
                         
                         Component.onCompleted: {
                             mainsession.startShellProgram();
