@@ -10,5 +10,6 @@
         <file alias="TerminalKeyToolBar.qml">contents/ui/TerminalKeyToolBar.qml</file>
         <file alias="SavedCommandsSettings.qml">contents/ui/SavedCommandsSettings.qml</file>
         <file alias="SavedCommandsDialog.qml">contents/ui/SavedCommandsDialog.qml</file>
+        <file alias="Tabs.qml">contents/ui/Tabs.qml</file>
     </qresource>
 </RCC>

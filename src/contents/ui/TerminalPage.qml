@@ -80,8 +80,23 @@ Kirigami.Page {
         }
     }
     
+    function switchToTab(index) {
+        tabSwipeView.setCurrentIndex(index);
+    }
+    
+    function closeTab(index) {
+        if (tabSwipeView.contentChildren[index].termWidget.session.hasActiveProcess) {
+            selectTabDialog.close();
+            confirmDialog.indexToClose = index;
+            confirmDialog.open();
+        } else {
+            TerminalTabModel.removeTab(index);
+        }
+    }
+    
     contextualActions: [
         Kirigami.Action {
+            id: newTabAction
             icon.name: "list-add"
             text: i18nc("@action:intoolbar", "New Tab")
             onTriggered: {
@@ -177,6 +192,36 @@ Kirigami.Page {
             onTriggered: root.openSettings()
         }
     ]
+    
+    header: Loader {
+        visible: active
+        active: root.isWideScreen && root.height > 360
+        sourceComponent: Control {
+            id: tabControl
+            height: visible ? implicitHeight : 0
+            visible: tabControlListView.count > 1
+            
+            leftPadding: 0
+            rightPadding: 0
+            topPadding: 0
+            bottomPadding: 0
+            
+            width: root.width
+            
+            background: Rectangle {
+                color: Kirigami.Theme.backgroundColor
+            }
+            
+            contentItem: Tabs {
+                id: tabControlListView
+                currentIndex: tabSwipeView.currentIndex
+                
+                onSwitchToTabRequested: root.switchToTab(index)
+                onCloseTabRequested: root.closeTab(index)
+                onAddTabRequested: newTabAction.trigger()
+            }
+        }
+    }
 
     ColumnLayout {
         spacing: 0
@@ -247,7 +292,7 @@ Kirigami.Page {
                             Layout.alignment: Qt.AlignVCenter
                             checked: tabSwipeView.currentIndex == index
                             onClicked: {
-                                tabSwipeView.setCurrentIndex(index);
+                                root.switchToTab(index);
                                 selectTabDialog.close();
                             }
                         }
@@ -257,15 +302,7 @@ Kirigami.Page {
                             icon.name: "delete"
                             text: i18n("Close")
                             display: ToolButton.IconOnly
-                            onClicked: {
-                                if (tabSwipeView.contentChildren[index].termWidget.session.hasActiveProcess) {
-                                    selectTabDialog.close();
-                                    confirmDialog.indexToClose = index;
-                                    confirmDialog.open();
-                                } else {
-                                    TerminalTabModel.removeTab(index);
-                                }
-                            }
+                            onClicked: root.closeTab(index)
                         }
                     }
                 }

@@ -262,7 +262,7 @@ ColumnLayout {
                 
                 dialog: Kirigami.PromptDialog {
                     showCloseButton: false
-                    title: i18n("Background Transparency")
+                    title: i18n("Window Transparency")
                     
                     RowLayout {
                         Controls.Slider {
