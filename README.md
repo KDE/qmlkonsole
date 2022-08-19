@@ -1,6 +1,6 @@
 # QMLKonsole <img src="logo.png" width="40"/> 
 
-A terminal built for mobile devices, based on [qmltermwidget](https://github.com/Swordfish90/qmltermwidget).
+A terminal application built for touch, based on [qmltermwidget](https://github.com/Swordfish90/qmltermwidget).
 
 ## Links
 
