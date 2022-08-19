@@ -180,6 +180,7 @@ ColumnLayout {
                             reuseItems: true
                             model: FontListSearchModel
                             currentIndex: -1
+                            clip: true
                             
                             header: Controls.Control {
                                 topPadding: Kirigami.Units.smallSpacing
