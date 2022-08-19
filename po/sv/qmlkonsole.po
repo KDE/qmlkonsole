@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qmlkonsole\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-04-29 00:46+0000\n"
+"POT-Creation-Date: 2022-08-19 00:47+0000\n"
 "PO-Revision-Date: 2022-04-30 11:47+0200\n"
 "Last-Translator: Stefan Asserhäll <stefan.asserhall@bredband.net>\n"
 "Language-Team: Swedish <kde-i18n-doc@kde.org>\n"
@@ -63,25 +63,44 @@ msgstr "Lägg till kommando"
 msgid "Action %1 removed"
 msgstr "Åtgärd %1 borttagen"
 
-#: contents/ui/SettingsPage.qml:14 contents/ui/TerminalPage.qml:150
+#: contents/ui/SettingsPage.qml:18 contents/ui/TerminalPage.qml:150
 #, kde-format
 msgid "Settings"
 msgstr "Inställningar"
 
-#: contents/ui/SettingsPage.qml:24
-#, kde-format
-msgid "Color Scheme:"
-msgstr "Färgschema:"
-
-#: contents/ui/SettingsPage.qml:28
-#, kde-format
-msgid "More Info:"
-msgstr "Mer information:"
-
-#: contents/ui/SettingsPage.qml:29
+#: contents/ui/SettingsPage.qml:42
 #, kde-format
 msgid "About"
 msgstr "Om"
+
+#: contents/ui/SettingsPage.qml:61
+#, fuzzy, kde-format
+#| msgid "Color Scheme:"
+msgid "Color scheme"
+msgstr "Färgschema:"
+
+#: contents/ui/SettingsPage.qml:86 contents/ui/SettingsPage.qml:100
+#, kde-format
+msgid "Font Family"
+msgstr ""
+
+#: contents/ui/SettingsPage.qml:142
+#, kde-format
+msgctxt "@title:window"
+msgid "Pick font"
+msgstr ""
+
+#: contents/ui/SettingsPage.qml:157
+#, fuzzy, kde-format
+#| msgid "Close"
+msgctxt "@action:button"
+msgid "Close"
+msgstr "Stäng"
+
+#: contents/ui/SettingsPage.qml:191
+#, kde-format
+msgid "Font Size"
+msgstr ""
 
 #: contents/ui/TerminalKeyToolBar.qml:71
 #, kde-format
@@ -216,25 +235,28 @@ msgstr "markeringsläge"
 msgid "Disable"
 msgstr "Inaktivera"
 
-#: main.cpp:37
+#: main.cpp:39
 #, kde-format
 msgid "© 2020-2022 KDE Community"
 msgstr "© 2020-2022 KDE-gemenskapen"
 
-#: main.cpp:39
+#: main.cpp:41
 #, kde-format
 msgid "Jonah Brüchert"
 msgstr "Jonah Brüchert"
 
-#: main.cpp:40
+#: main.cpp:42
 #, kde-format
 msgid "Devin Lin"
 msgstr "Devin Lin"
 
-#: terminaltabmodel.cpp:70
+#: terminaltabmodel.cpp:71
 #, kde-format
 msgid "Tab %1"
 msgstr "Flik %1"
+
+#~ msgid "More Info:"
+#~ msgstr "Mer information:"
 
 #~ msgid "Quick Actions"
 #~ msgstr "Snabbåtgärder"

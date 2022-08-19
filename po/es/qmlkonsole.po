@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qmlkonsole\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-04-29 00:46+0000\n"
+"POT-Creation-Date: 2022-08-19 00:47+0000\n"
 "PO-Revision-Date: 2022-04-29 17:39+0200\n"
 "Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
@@ -66,25 +66,44 @@ msgstr "Añadir orden"
 msgid "Action %1 removed"
 msgstr "Acción %1 eliminada"
 
-#: contents/ui/SettingsPage.qml:14 contents/ui/TerminalPage.qml:150
+#: contents/ui/SettingsPage.qml:18 contents/ui/TerminalPage.qml:150
 #, kde-format
 msgid "Settings"
 msgstr "Preferencias"
 
-#: contents/ui/SettingsPage.qml:24
-#, kde-format
-msgid "Color Scheme:"
-msgstr "Esquema de color:"
-
-#: contents/ui/SettingsPage.qml:28
-#, kde-format
-msgid "More Info:"
-msgstr "Más información:"
-
-#: contents/ui/SettingsPage.qml:29
+#: contents/ui/SettingsPage.qml:42
 #, kde-format
 msgid "About"
 msgstr "Acerca de"
+
+#: contents/ui/SettingsPage.qml:61
+#, fuzzy, kde-format
+#| msgid "Color Scheme:"
+msgid "Color scheme"
+msgstr "Esquema de color:"
+
+#: contents/ui/SettingsPage.qml:86 contents/ui/SettingsPage.qml:100
+#, kde-format
+msgid "Font Family"
+msgstr ""
+
+#: contents/ui/SettingsPage.qml:142
+#, kde-format
+msgctxt "@title:window"
+msgid "Pick font"
+msgstr ""
+
+#: contents/ui/SettingsPage.qml:157
+#, fuzzy, kde-format
+#| msgid "Close"
+msgctxt "@action:button"
+msgid "Close"
+msgstr "Cerrar"
+
+#: contents/ui/SettingsPage.qml:191
+#, kde-format
+msgid "Font Size"
+msgstr ""
 
 #: contents/ui/TerminalKeyToolBar.qml:71
 #, kde-format
@@ -218,25 +237,28 @@ msgstr "modo de selección"
 msgid "Disable"
 msgstr "Desactivar"
 
-#: main.cpp:37
+#: main.cpp:39
 #, kde-format
 msgid "© 2020-2022 KDE Community"
 msgstr "© 2020-2022 La Comunidad KDE"
 
-#: main.cpp:39
+#: main.cpp:41
 #, kde-format
 msgid "Jonah Brüchert"
 msgstr "Jonah Brüchert"
 
-#: main.cpp:40
+#: main.cpp:42
 #, kde-format
 msgid "Devin Lin"
 msgstr "Devin Lin"
 
-#: terminaltabmodel.cpp:70
+#: terminaltabmodel.cpp:71
 #, kde-format
 msgid "Tab %1"
 msgstr "Pestaña %1"
+
+#~ msgid "More Info:"
+#~ msgstr "Más información:"
 
 #~ msgid "Quick Actions"
 #~ msgstr "Acciones rápidas"

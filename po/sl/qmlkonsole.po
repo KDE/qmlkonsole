@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qmlkonsole\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-04-29 00:46+0000\n"
+"POT-Creation-Date: 2022-08-19 00:47+0000\n"
 "PO-Revision-Date: 2022-05-02 12:22+0200\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
@@ -64,25 +64,44 @@ msgstr "Dodaj ukaz"
 msgid "Action %1 removed"
 msgstr "Dejanje %1 odstranjeno"
 
-#: contents/ui/SettingsPage.qml:14 contents/ui/TerminalPage.qml:150
+#: contents/ui/SettingsPage.qml:18 contents/ui/TerminalPage.qml:150
 #, kde-format
 msgid "Settings"
 msgstr "Nastavitve"
 
-#: contents/ui/SettingsPage.qml:24
-#, kde-format
-msgid "Color Scheme:"
-msgstr "Barvna shema:"
-
-#: contents/ui/SettingsPage.qml:28
-#, kde-format
-msgid "More Info:"
-msgstr "Več informacij:"
-
-#: contents/ui/SettingsPage.qml:29
+#: contents/ui/SettingsPage.qml:42
 #, kde-format
 msgid "About"
 msgstr "O programu"
+
+#: contents/ui/SettingsPage.qml:61
+#, fuzzy, kde-format
+#| msgid "Color Scheme:"
+msgid "Color scheme"
+msgstr "Barvna shema:"
+
+#: contents/ui/SettingsPage.qml:86 contents/ui/SettingsPage.qml:100
+#, kde-format
+msgid "Font Family"
+msgstr ""
+
+#: contents/ui/SettingsPage.qml:142
+#, kde-format
+msgctxt "@title:window"
+msgid "Pick font"
+msgstr ""
+
+#: contents/ui/SettingsPage.qml:157
+#, fuzzy, kde-format
+#| msgid "Close"
+msgctxt "@action:button"
+msgid "Close"
+msgstr "Zapri"
+
+#: contents/ui/SettingsPage.qml:191
+#, kde-format
+msgid "Font Size"
+msgstr ""
 
 #: contents/ui/TerminalKeyToolBar.qml:71
 #, kde-format
@@ -217,25 +236,28 @@ msgstr "način izbire"
 msgid "Disable"
 msgstr "Onemogoči"
 
-#: main.cpp:37
+#: main.cpp:39
 #, kde-format
 msgid "© 2020-2022 KDE Community"
 msgstr "© 2020-2022 skupnost KDE"
 
-#: main.cpp:39
+#: main.cpp:41
 #, kde-format
 msgid "Jonah Brüchert"
 msgstr "Jonah Brüchert"
 
-#: main.cpp:40
+#: main.cpp:42
 #, kde-format
 msgid "Devin Lin"
 msgstr "Devin Lin"
 
-#: terminaltabmodel.cpp:70
+#: terminaltabmodel.cpp:71
 #, kde-format
 msgid "Tab %1"
 msgstr "Zavihek %1"
+
+#~ msgid "More Info:"
+#~ msgstr "Več informacij:"
 
 #~ msgid "Quick Actions"
 #~ msgstr "Hitre aktivnosti"
