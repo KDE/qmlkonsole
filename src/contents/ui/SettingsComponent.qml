@@ -245,6 +245,7 @@ ColumnLayout {
                 currentValue: i18n("%1\%", sliderValue.value)
                 
                 onClicked: {
+                    dialog.open();
                     if (root.dialog) {
                         dialogTimer.dialog = opacityDelegate.dialog;
                         dialogTimer.restart();
