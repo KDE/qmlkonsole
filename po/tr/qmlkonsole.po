@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qmlkonsole\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-08-19 00:47+0000\n"
-"PO-Revision-Date: 2022-04-29 10:44+0300\n"
+"POT-Creation-Date: 2022-08-20 00:47+0000\n"
+"PO-Revision-Date: 2022-08-19 10:42+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 22.04.0\n"
+"X-Generator: Lokalize 22.04.3\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -32,75 +32,106 @@ msgstr "emir_sari@icloud.com"
 msgid "Terminal"
 msgstr "Uçbirim"
 
+#: contents/ui/SavedCommandsDialog.qml:19
+#, kde-format
+msgctxt "@title:window"
+msgid "Saved Commands"
+msgstr "Kaydedilen Komutlar"
+
+#: contents/ui/SavedCommandsDialog.qml:26
+#, kde-format
+msgid "Configure"
+msgstr "Yapılandır"
+
+#: contents/ui/SavedCommandsDialog.qml:34 contents/ui/TerminalPage.qml:303
+#, kde-format
+msgid "Close"
+msgstr "Kapat"
+
+#: contents/ui/SavedCommandsDialog.qml:54
+#: contents/ui/SavedCommandsSettings.qml:43
+#, kde-format
+msgid "No saved commands"
+msgstr "Kaydedilen komut yok"
+
+#: contents/ui/SavedCommandsDialog.qml:55
+#: contents/ui/SavedCommandsSettings.qml:44
+#, kde-format
+msgid "Save commands to quickly run them without typing them out."
+msgstr "Komutları yazmadan hızlıca çalıştırmak için onları kaydedin."
+
 #: contents/ui/SavedCommandsSettings.qml:17
 #, kde-format
 msgid "Saved Commands"
 msgstr "Kaydedilen Komutlar"
 
 #: contents/ui/SavedCommandsSettings.qml:22
-#: contents/ui/SavedCommandsSettings.qml:83
+#: contents/ui/SavedCommandsSettings.qml:82
 #, kde-format
 msgid "Add Command"
 msgstr "Komut Ekle"
 
-#: contents/ui/SavedCommandsSettings.qml:44 contents/ui/TerminalPage.qml:201
-#, kde-format
-msgid "No saved commands"
-msgstr "Kaydedilen komut yok"
-
-#: contents/ui/SavedCommandsSettings.qml:45 contents/ui/TerminalPage.qml:202
-#, kde-format
-msgid "Save commands to quickly run them without typing them out."
-msgstr "Komutları yazmadan hızlıca çalıştırmak için onları kaydedin."
-
-#: contents/ui/SavedCommandsSettings.qml:49
+#: contents/ui/SavedCommandsSettings.qml:48
 #, kde-format
 msgid "Add command"
 msgstr "Komut ekle"
 
-#: contents/ui/SavedCommandsSettings.qml:74
+#: contents/ui/SavedCommandsSettings.qml:73
 #, kde-format
 msgid "Action %1 removed"
 msgstr "%1 eylemi kaldırıldı"
 
-#: contents/ui/SettingsPage.qml:18 contents/ui/TerminalPage.qml:150
+#: contents/ui/SettingsComponent.qml:43
 #, kde-format
-msgid "Settings"
-msgstr "Ayarlar"
+msgid "General"
+msgstr ""
 
-#: contents/ui/SettingsPage.qml:42
+#: contents/ui/SettingsComponent.qml:48
 #, kde-format
 msgid "About"
 msgstr "Hakkında"
 
-#: contents/ui/SettingsPage.qml:61
-#, fuzzy, kde-format
-#| msgid "Color Scheme:"
-msgid "Color scheme"
-msgstr "Renk Şeması:"
-
-#: contents/ui/SettingsPage.qml:86 contents/ui/SettingsPage.qml:100
+#: contents/ui/SettingsComponent.qml:68
 #, kde-format
-msgid "Font Family"
+msgid "Appearance"
 msgstr ""
 
-#: contents/ui/SettingsPage.qml:142
+#: contents/ui/SettingsComponent.qml:73
+#, kde-format
+msgid "Color scheme"
+msgstr "Renk şeması"
+
+#: contents/ui/SettingsComponent.qml:115 contents/ui/SettingsComponent.qml:129
+#, kde-format
+msgid "Font Family"
+msgstr "Yazıtipi Ailesi"
+
+#: contents/ui/SettingsComponent.qml:162
 #, kde-format
 msgctxt "@title:window"
 msgid "Pick font"
-msgstr ""
+msgstr "Yazıtipi seç"
 
-#: contents/ui/SettingsPage.qml:157
-#, fuzzy, kde-format
-#| msgid "Close"
-msgctxt "@action:button"
-msgid "Close"
-msgstr "Kapat"
-
-#: contents/ui/SettingsPage.qml:191
+#: contents/ui/SettingsComponent.qml:225
 #, kde-format
 msgid "Font Size"
+msgstr "Yazıtipi Boyutu"
+
+#: contents/ui/SettingsComponent.qml:244 contents/ui/SettingsComponent.qml:265
+#, kde-format
+msgid "Window Transparency"
 msgstr ""
+
+#: contents/ui/SettingsComponent.qml:245
+#, kde-format
+msgid "%1%"
+msgstr ""
+
+#: contents/ui/SettingsDialog.qml:17 contents/ui/SettingsPage.qml:18
+#: contents/ui/TerminalPage.qml:190
+#, kde-format
+msgid "Settings"
+msgstr "Ayarlar"
 
 #: contents/ui/TerminalKeyToolBar.qml:71
 #, kde-format
@@ -131,86 +162,70 @@ msgstr "Sekme"
 msgid "Toggle Virtual Keyboard"
 msgstr "Sanal Klavyeyi Aç/Kapat"
 
-#: contents/ui/TerminalPage.qml:61
+#: contents/ui/TerminalPage.qml:101
 #, kde-format
 msgctxt "@action:intoolbar"
 msgid "New Tab"
 msgstr "Yeni Sekme"
 
-#: contents/ui/TerminalPage.qml:71
+#: contents/ui/TerminalPage.qml:111
 #, kde-format
 msgctxt "@action:intoolbar"
 msgid "Saved Commands"
 msgstr "Kaydedilen Komutlar"
 
-#: contents/ui/TerminalPage.qml:78
+#: contents/ui/TerminalPage.qml:118
 #, kde-format
 msgid "reverse-i-search"
 msgstr "ters-i-arama"
 
-#: contents/ui/TerminalPage.qml:86
+#: contents/ui/TerminalPage.qml:126
 #, kde-format
 msgid "Cancel current command"
 msgstr "Geçerli komutu iptal et"
 
-#: contents/ui/TerminalPage.qml:94
+#: contents/ui/TerminalPage.qml:134
 #, kde-format
 msgid "Send EOF"
 msgstr "Dosya Sonu Gönder"
 
-#: contents/ui/TerminalPage.qml:102
+#: contents/ui/TerminalPage.qml:142
 #, kde-format
 msgid "Cursor to line start"
 msgstr "İmleç satır başına"
 
-#: contents/ui/TerminalPage.qml:110
+#: contents/ui/TerminalPage.qml:150
 #, kde-format
 msgid "Cursor to line end"
 msgstr "İmleç satır sonuna"
 
-#: contents/ui/TerminalPage.qml:118
+#: contents/ui/TerminalPage.qml:158
 #, kde-format
 msgid "Kill to line end"
 msgstr "Satır sonuna dek öldür"
 
-#: contents/ui/TerminalPage.qml:126
+#: contents/ui/TerminalPage.qml:166
 #, kde-format
 msgid "Paste from kill buffer"
 msgstr "Öldürme arabelleğinden yapıştır"
 
-#: contents/ui/TerminalPage.qml:134
+#: contents/ui/TerminalPage.qml:174
 #, kde-format
 msgid "Copy"
 msgstr "Kopyala"
 
-#: contents/ui/TerminalPage.qml:144
+#: contents/ui/TerminalPage.qml:184
 #, kde-format
 msgid "Paste"
 msgstr "Yapıştır"
 
-#: contents/ui/TerminalPage.qml:166
-#, kde-format
-msgctxt "@title:window"
-msgid "Saved Commands"
-msgstr "Kaydedilen Komutlar"
-
-#: contents/ui/TerminalPage.qml:173
-#, kde-format
-msgid "Configure"
-msgstr "Yapılandır"
-
-#: contents/ui/TerminalPage.qml:181 contents/ui/TerminalPage.qml:293
-#, kde-format
-msgid "Close"
-msgstr "Kapat"
-
-#: contents/ui/TerminalPage.qml:234
+#: contents/ui/TerminalPage.qml:241
 #, kde-format
 msgctxt "@title:window"
 msgid "Confirm closing %1"
 msgstr "%1 kapatmayı onayla"
 
-#: contents/ui/TerminalPage.qml:250
+#: contents/ui/TerminalPage.qml:257
 #, kde-format
 msgid ""
 "A process is currently running in this tab. Are you sure you want to close "
@@ -218,18 +233,18 @@ msgid ""
 msgstr ""
 "Bu sekmede şu an bir süreç çalışıyor. Kapatmak istediğinize emin misiniz?"
 
-#: contents/ui/TerminalPage.qml:257
+#: contents/ui/TerminalPage.qml:264
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Tab"
 msgstr "Sekmeyi Seç"
 
-#: contents/ui/TerminalPage.qml:313
+#: contents/ui/TerminalPage.qml:316
 #, kde-format
 msgid "selection mode"
 msgstr "seçim kipi"
 
-#: contents/ui/TerminalPage.qml:321
+#: contents/ui/TerminalPage.qml:324
 #, kde-format
 msgid "Disable"
 msgstr "Devre Dışı Bırak"
@@ -253,6 +268,11 @@ msgstr "Devin Lin"
 #, kde-format
 msgid "Tab %1"
 msgstr "Sekme %1"
+
+#~| msgid "Close"
+#~ msgctxt "@action:button"
+#~ msgid "Close"
+#~ msgstr "Kapat"
 
 #~ msgid "More Info:"
 #~ msgstr "Daha Fazla Bilgi:"

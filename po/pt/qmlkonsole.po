@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qmlkonsole\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-08-19 00:47+0000\n"
+"POT-Creation-Date: 2022-08-20 00:47+0000\n"
 "PO-Revision-Date: 2022-05-04 19:01+0100\n"
 "Last-Translator: José Nuno Coelho Pires <zepires@gmail.com>\n"
 "Language-Team: Portuguese <kde-i18n-pt@kde.org>\n"
@@ -28,75 +28,107 @@ msgstr "zepires@gmail.com"
 msgid "Terminal"
 msgstr "Terminal"
 
+#: contents/ui/SavedCommandsDialog.qml:19
+#, kde-format
+msgctxt "@title:window"
+msgid "Saved Commands"
+msgstr "Comandos Gravados"
+
+#: contents/ui/SavedCommandsDialog.qml:26
+#, kde-format
+msgid "Configure"
+msgstr "Configurar"
+
+#: contents/ui/SavedCommandsDialog.qml:34 contents/ui/TerminalPage.qml:303
+#, kde-format
+msgid "Close"
+msgstr "Fechar"
+
+#: contents/ui/SavedCommandsDialog.qml:54
+#: contents/ui/SavedCommandsSettings.qml:43
+#, kde-format
+msgid "No saved commands"
+msgstr "Sem comandos gravados"
+
+#: contents/ui/SavedCommandsDialog.qml:55
+#: contents/ui/SavedCommandsSettings.qml:44
+#, kde-format
+msgid "Save commands to quickly run them without typing them out."
+msgstr "Grave os comandos para os executar rapidamente sem ter de os escrever."
+
 #: contents/ui/SavedCommandsSettings.qml:17
 #, kde-format
 msgid "Saved Commands"
 msgstr "Comandos Gravados"
 
 #: contents/ui/SavedCommandsSettings.qml:22
-#: contents/ui/SavedCommandsSettings.qml:83
+#: contents/ui/SavedCommandsSettings.qml:82
 #, kde-format
 msgid "Add Command"
 msgstr "Adicionar um Comando"
 
-#: contents/ui/SavedCommandsSettings.qml:44 contents/ui/TerminalPage.qml:201
-#, kde-format
-msgid "No saved commands"
-msgstr "Sem comandos gravados"
-
-#: contents/ui/SavedCommandsSettings.qml:45 contents/ui/TerminalPage.qml:202
-#, kde-format
-msgid "Save commands to quickly run them without typing them out."
-msgstr "Grave os comandos para os executar rapidamente sem ter de os escrever."
-
-#: contents/ui/SavedCommandsSettings.qml:49
+#: contents/ui/SavedCommandsSettings.qml:48
 #, kde-format
 msgid "Add command"
 msgstr "Adicionar um comando"
 
-#: contents/ui/SavedCommandsSettings.qml:74
+#: contents/ui/SavedCommandsSettings.qml:73
 #, kde-format
 msgid "Action %1 removed"
 msgstr "A acção %1 foi removida"
 
-#: contents/ui/SettingsPage.qml:18 contents/ui/TerminalPage.qml:150
+#: contents/ui/SettingsComponent.qml:43
 #, kde-format
-msgid "Settings"
-msgstr "Configuração"
+msgid "General"
+msgstr ""
 
-#: contents/ui/SettingsPage.qml:42
+#: contents/ui/SettingsComponent.qml:48
 #, kde-format
 msgid "About"
 msgstr "Acerca"
 
-#: contents/ui/SettingsPage.qml:61
+#: contents/ui/SettingsComponent.qml:68
+#, kde-format
+msgid "Appearance"
+msgstr ""
+
+#: contents/ui/SettingsComponent.qml:73
 #, fuzzy, kde-format
 #| msgid "Color Scheme:"
 msgid "Color scheme"
 msgstr "Esquema de Cores:"
 
-#: contents/ui/SettingsPage.qml:86 contents/ui/SettingsPage.qml:100
+#: contents/ui/SettingsComponent.qml:115 contents/ui/SettingsComponent.qml:129
 #, kde-format
 msgid "Font Family"
 msgstr ""
 
-#: contents/ui/SettingsPage.qml:142
+#: contents/ui/SettingsComponent.qml:162
 #, kde-format
 msgctxt "@title:window"
 msgid "Pick font"
 msgstr ""
 
-#: contents/ui/SettingsPage.qml:157
-#, fuzzy, kde-format
-#| msgid "Close"
-msgctxt "@action:button"
-msgid "Close"
-msgstr "Fechar"
-
-#: contents/ui/SettingsPage.qml:191
+#: contents/ui/SettingsComponent.qml:225
 #, kde-format
 msgid "Font Size"
 msgstr ""
+
+#: contents/ui/SettingsComponent.qml:244 contents/ui/SettingsComponent.qml:265
+#, kde-format
+msgid "Window Transparency"
+msgstr ""
+
+#: contents/ui/SettingsComponent.qml:245
+#, kde-format
+msgid "%1%"
+msgstr ""
+
+#: contents/ui/SettingsDialog.qml:17 contents/ui/SettingsPage.qml:18
+#: contents/ui/TerminalPage.qml:190
+#, kde-format
+msgid "Settings"
+msgstr "Configuração"
 
 #: contents/ui/TerminalKeyToolBar.qml:71
 #, kde-format
@@ -127,86 +159,70 @@ msgstr "Tab"
 msgid "Toggle Virtual Keyboard"
 msgstr "Comutar o Teclado Virtual"
 
-#: contents/ui/TerminalPage.qml:61
+#: contents/ui/TerminalPage.qml:101
 #, kde-format
 msgctxt "@action:intoolbar"
 msgid "New Tab"
 msgstr "Nova Página"
 
-#: contents/ui/TerminalPage.qml:71
+#: contents/ui/TerminalPage.qml:111
 #, kde-format
 msgctxt "@action:intoolbar"
 msgid "Saved Commands"
 msgstr "Comandos Gravados"
 
-#: contents/ui/TerminalPage.qml:78
+#: contents/ui/TerminalPage.qml:118
 #, kde-format
 msgid "reverse-i-search"
 msgstr "pesquisa-inversa"
 
-#: contents/ui/TerminalPage.qml:86
+#: contents/ui/TerminalPage.qml:126
 #, kde-format
 msgid "Cancel current command"
 msgstr "Cancelar o comando actual"
 
-#: contents/ui/TerminalPage.qml:94
+#: contents/ui/TerminalPage.qml:134
 #, kde-format
 msgid "Send EOF"
 msgstr "Enviar um EOF"
 
-#: contents/ui/TerminalPage.qml:102
+#: contents/ui/TerminalPage.qml:142
 #, kde-format
 msgid "Cursor to line start"
 msgstr "Cursor até ao início da linha"
 
-#: contents/ui/TerminalPage.qml:110
+#: contents/ui/TerminalPage.qml:150
 #, kde-format
 msgid "Cursor to line end"
 msgstr "Cursor até ao fim da linha"
 
-#: contents/ui/TerminalPage.qml:118
+#: contents/ui/TerminalPage.qml:158
 #, kde-format
 msgid "Kill to line end"
 msgstr "Eliminação até ao fim da linha"
 
-#: contents/ui/TerminalPage.qml:126
+#: contents/ui/TerminalPage.qml:166
 #, kde-format
 msgid "Paste from kill buffer"
 msgstr "Colar da eliminação"
 
-#: contents/ui/TerminalPage.qml:134
+#: contents/ui/TerminalPage.qml:174
 #, kde-format
 msgid "Copy"
 msgstr "Copiar"
 
-#: contents/ui/TerminalPage.qml:144
+#: contents/ui/TerminalPage.qml:184
 #, kde-format
 msgid "Paste"
 msgstr "Colar"
 
-#: contents/ui/TerminalPage.qml:166
-#, kde-format
-msgctxt "@title:window"
-msgid "Saved Commands"
-msgstr "Comandos Gravados"
-
-#: contents/ui/TerminalPage.qml:173
-#, kde-format
-msgid "Configure"
-msgstr "Configurar"
-
-#: contents/ui/TerminalPage.qml:181 contents/ui/TerminalPage.qml:293
-#, kde-format
-msgid "Close"
-msgstr "Fechar"
-
-#: contents/ui/TerminalPage.qml:234
+#: contents/ui/TerminalPage.qml:241
 #, kde-format
 msgctxt "@title:window"
 msgid "Confirm closing %1"
 msgstr "Confirmar o fecho de %1"
 
-#: contents/ui/TerminalPage.qml:250
+#: contents/ui/TerminalPage.qml:257
 #, kde-format
 msgid ""
 "A process is currently running in this tab. Are you sure you want to close "
@@ -214,18 +230,18 @@ msgid ""
 msgstr ""
 "Está um processo em execução nesta página. Tem a certeza que a deseja fechar?"
 
-#: contents/ui/TerminalPage.qml:257
+#: contents/ui/TerminalPage.qml:264
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Tab"
 msgstr "Seleccionar a Página"
 
-#: contents/ui/TerminalPage.qml:313
+#: contents/ui/TerminalPage.qml:316
 #, kde-format
 msgid "selection mode"
 msgstr "modo de selecção"
 
-#: contents/ui/TerminalPage.qml:321
+#: contents/ui/TerminalPage.qml:324
 #, kde-format
 msgid "Disable"
 msgstr "Desactivar"
@@ -249,6 +265,12 @@ msgstr "Devin Lin"
 #, kde-format
 msgid "Tab %1"
 msgstr "Página %1"
+
+#, fuzzy
+#~| msgid "Close"
+#~ msgctxt "@action:button"
+#~ msgid "Close"
+#~ msgstr "Fechar"
 
 #~ msgid "More Info:"
 #~ msgstr "Mais Informações:"

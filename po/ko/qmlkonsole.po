@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qmlkonsole\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-08-19 00:47+0000\n"
+"POT-Creation-Date: 2022-08-20 00:47+0000\n"
 "PO-Revision-Date: 2022-05-05 23:48+0200\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
@@ -32,75 +32,107 @@ msgstr "kde@peremen.name"
 msgid "Terminal"
 msgstr "터미널"
 
+#: contents/ui/SavedCommandsDialog.qml:19
+#, kde-format
+msgctxt "@title:window"
+msgid "Saved Commands"
+msgstr "저장된 명령"
+
+#: contents/ui/SavedCommandsDialog.qml:26
+#, kde-format
+msgid "Configure"
+msgstr "설정"
+
+#: contents/ui/SavedCommandsDialog.qml:34 contents/ui/TerminalPage.qml:303
+#, kde-format
+msgid "Close"
+msgstr "닫기"
+
+#: contents/ui/SavedCommandsDialog.qml:54
+#: contents/ui/SavedCommandsSettings.qml:43
+#, kde-format
+msgid "No saved commands"
+msgstr "저장된 명령 없음"
+
+#: contents/ui/SavedCommandsDialog.qml:55
+#: contents/ui/SavedCommandsSettings.qml:44
+#, kde-format
+msgid "Save commands to quickly run them without typing them out."
+msgstr "명령을 저장하여 입력하지 않고 빠르게 실행할 수 있습니다."
+
 #: contents/ui/SavedCommandsSettings.qml:17
 #, kde-format
 msgid "Saved Commands"
 msgstr "저장된 명령"
 
 #: contents/ui/SavedCommandsSettings.qml:22
-#: contents/ui/SavedCommandsSettings.qml:83
+#: contents/ui/SavedCommandsSettings.qml:82
 #, kde-format
 msgid "Add Command"
 msgstr "명령 추가"
 
-#: contents/ui/SavedCommandsSettings.qml:44 contents/ui/TerminalPage.qml:201
-#, kde-format
-msgid "No saved commands"
-msgstr "저장된 명령 없음"
-
-#: contents/ui/SavedCommandsSettings.qml:45 contents/ui/TerminalPage.qml:202
-#, kde-format
-msgid "Save commands to quickly run them without typing them out."
-msgstr "명령을 저장하여 입력하지 않고 빠르게 실행할 수 있습니다."
-
-#: contents/ui/SavedCommandsSettings.qml:49
+#: contents/ui/SavedCommandsSettings.qml:48
 #, kde-format
 msgid "Add command"
 msgstr "명령 추가"
 
-#: contents/ui/SavedCommandsSettings.qml:74
+#: contents/ui/SavedCommandsSettings.qml:73
 #, kde-format
 msgid "Action %1 removed"
 msgstr "동작 %1 삭제됨"
 
-#: contents/ui/SettingsPage.qml:18 contents/ui/TerminalPage.qml:150
+#: contents/ui/SettingsComponent.qml:43
 #, kde-format
-msgid "Settings"
-msgstr "설정"
+msgid "General"
+msgstr ""
 
-#: contents/ui/SettingsPage.qml:42
+#: contents/ui/SettingsComponent.qml:48
 #, kde-format
 msgid "About"
 msgstr "정보"
 
-#: contents/ui/SettingsPage.qml:61
+#: contents/ui/SettingsComponent.qml:68
+#, kde-format
+msgid "Appearance"
+msgstr ""
+
+#: contents/ui/SettingsComponent.qml:73
 #, fuzzy, kde-format
 #| msgid "Color Scheme:"
 msgid "Color scheme"
 msgstr "색 배열:"
 
-#: contents/ui/SettingsPage.qml:86 contents/ui/SettingsPage.qml:100
+#: contents/ui/SettingsComponent.qml:115 contents/ui/SettingsComponent.qml:129
 #, kde-format
 msgid "Font Family"
 msgstr ""
 
-#: contents/ui/SettingsPage.qml:142
+#: contents/ui/SettingsComponent.qml:162
 #, kde-format
 msgctxt "@title:window"
 msgid "Pick font"
 msgstr ""
 
-#: contents/ui/SettingsPage.qml:157
-#, fuzzy, kde-format
-#| msgid "Close"
-msgctxt "@action:button"
-msgid "Close"
-msgstr "닫기"
-
-#: contents/ui/SettingsPage.qml:191
+#: contents/ui/SettingsComponent.qml:225
 #, kde-format
 msgid "Font Size"
 msgstr ""
+
+#: contents/ui/SettingsComponent.qml:244 contents/ui/SettingsComponent.qml:265
+#, kde-format
+msgid "Window Transparency"
+msgstr ""
+
+#: contents/ui/SettingsComponent.qml:245
+#, kde-format
+msgid "%1%"
+msgstr ""
+
+#: contents/ui/SettingsDialog.qml:17 contents/ui/SettingsPage.qml:18
+#: contents/ui/TerminalPage.qml:190
+#, kde-format
+msgid "Settings"
+msgstr "설정"
 
 #: contents/ui/TerminalKeyToolBar.qml:71
 #, kde-format
@@ -131,104 +163,88 @@ msgstr "탭"
 msgid "Toggle Virtual Keyboard"
 msgstr "가상 키보드 전환"
 
-#: contents/ui/TerminalPage.qml:61
+#: contents/ui/TerminalPage.qml:101
 #, kde-format
 msgctxt "@action:intoolbar"
 msgid "New Tab"
 msgstr "새 탭"
 
-#: contents/ui/TerminalPage.qml:71
+#: contents/ui/TerminalPage.qml:111
 #, kde-format
 msgctxt "@action:intoolbar"
 msgid "Saved Commands"
 msgstr "저장된 명령"
 
-#: contents/ui/TerminalPage.qml:78
+#: contents/ui/TerminalPage.qml:118
 #, kde-format
 msgid "reverse-i-search"
 msgstr "역순-증분-검색"
 
-#: contents/ui/TerminalPage.qml:86
+#: contents/ui/TerminalPage.qml:126
 #, kde-format
 msgid "Cancel current command"
 msgstr "현재 명령 취소"
 
-#: contents/ui/TerminalPage.qml:94
+#: contents/ui/TerminalPage.qml:134
 #, kde-format
 msgid "Send EOF"
 msgstr "EOF 보내기"
 
-#: contents/ui/TerminalPage.qml:102
+#: contents/ui/TerminalPage.qml:142
 #, kde-format
 msgid "Cursor to line start"
 msgstr "줄 시작으로 커서 이동"
 
-#: contents/ui/TerminalPage.qml:110
+#: contents/ui/TerminalPage.qml:150
 #, kde-format
 msgid "Cursor to line end"
 msgstr "줄 끝으로 커서 이동"
 
-#: contents/ui/TerminalPage.qml:118
+#: contents/ui/TerminalPage.qml:158
 #, kde-format
 msgid "Kill to line end"
 msgstr "줄 끝까지 Kill"
 
-#: contents/ui/TerminalPage.qml:126
+#: contents/ui/TerminalPage.qml:166
 #, kde-format
 msgid "Paste from kill buffer"
 msgstr "Kill 버퍼에서 붙여넣기"
 
-#: contents/ui/TerminalPage.qml:134
+#: contents/ui/TerminalPage.qml:174
 #, kde-format
 msgid "Copy"
 msgstr "복사"
 
-#: contents/ui/TerminalPage.qml:144
+#: contents/ui/TerminalPage.qml:184
 #, kde-format
 msgid "Paste"
 msgstr "붙여넣기"
 
-#: contents/ui/TerminalPage.qml:166
-#, kde-format
-msgctxt "@title:window"
-msgid "Saved Commands"
-msgstr "저장된 명령"
-
-#: contents/ui/TerminalPage.qml:173
-#, kde-format
-msgid "Configure"
-msgstr "설정"
-
-#: contents/ui/TerminalPage.qml:181 contents/ui/TerminalPage.qml:293
-#, kde-format
-msgid "Close"
-msgstr "닫기"
-
-#: contents/ui/TerminalPage.qml:234
+#: contents/ui/TerminalPage.qml:241
 #, kde-format
 msgctxt "@title:window"
 msgid "Confirm closing %1"
 msgstr "%1 닫기 확인"
 
-#: contents/ui/TerminalPage.qml:250
+#: contents/ui/TerminalPage.qml:257
 #, kde-format
 msgid ""
 "A process is currently running in this tab. Are you sure you want to close "
 "it?"
 msgstr "이 탭에서 프로세스가 실행 중입니다. 종료하시겠습니까?"
 
-#: contents/ui/TerminalPage.qml:257
+#: contents/ui/TerminalPage.qml:264
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Tab"
 msgstr "탭 선택"
 
-#: contents/ui/TerminalPage.qml:313
+#: contents/ui/TerminalPage.qml:316
 #, kde-format
 msgid "selection mode"
 msgstr "선택 모드"
 
-#: contents/ui/TerminalPage.qml:321
+#: contents/ui/TerminalPage.qml:324
 #, kde-format
 msgid "Disable"
 msgstr "비활성화"
@@ -252,6 +268,12 @@ msgstr "Devin Lin"
 #, kde-format
 msgid "Tab %1"
 msgstr "탭 %1"
+
+#, fuzzy
+#~| msgid "Close"
+#~ msgctxt "@action:button"
+#~ msgid "Close"
+#~ msgstr "닫기"
 
 #~ msgid "More Info:"
 #~ msgstr "자세한 정보:"

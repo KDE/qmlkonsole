@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qmlkonsole\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-08-19 00:47+0000\n"
+"POT-Creation-Date: 2022-08-20 00:47+0000\n"
 "PO-Revision-Date: 2022-05-02 12:22+0200\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
@@ -33,75 +33,107 @@ msgstr "matjaz.jeran@amis.net"
 msgid "Terminal"
 msgstr "Terminal"
 
+#: contents/ui/SavedCommandsDialog.qml:19
+#, kde-format
+msgctxt "@title:window"
+msgid "Saved Commands"
+msgstr "Shranjeni ukazi"
+
+#: contents/ui/SavedCommandsDialog.qml:26
+#, kde-format
+msgid "Configure"
+msgstr "Sestavi"
+
+#: contents/ui/SavedCommandsDialog.qml:34 contents/ui/TerminalPage.qml:303
+#, kde-format
+msgid "Close"
+msgstr "Zapri"
+
+#: contents/ui/SavedCommandsDialog.qml:54
+#: contents/ui/SavedCommandsSettings.qml:43
+#, kde-format
+msgid "No saved commands"
+msgstr "Ni shranjenih ukazov"
+
+#: contents/ui/SavedCommandsDialog.qml:55
+#: contents/ui/SavedCommandsSettings.qml:44
+#, kde-format
+msgid "Save commands to quickly run them without typing them out."
+msgstr "Shrani ukaze, da jih lahko hitro zaženete brez tipkanja."
+
 #: contents/ui/SavedCommandsSettings.qml:17
 #, kde-format
 msgid "Saved Commands"
 msgstr "Shranjeni ukazi"
 
 #: contents/ui/SavedCommandsSettings.qml:22
-#: contents/ui/SavedCommandsSettings.qml:83
+#: contents/ui/SavedCommandsSettings.qml:82
 #, kde-format
 msgid "Add Command"
 msgstr "Dodaj ukaz"
 
-#: contents/ui/SavedCommandsSettings.qml:44 contents/ui/TerminalPage.qml:201
-#, kde-format
-msgid "No saved commands"
-msgstr "Ni shranjenih ukazov"
-
-#: contents/ui/SavedCommandsSettings.qml:45 contents/ui/TerminalPage.qml:202
-#, kde-format
-msgid "Save commands to quickly run them without typing them out."
-msgstr "Shrani ukaze, da jih lahko hitro zaženete brez tipkanja."
-
-#: contents/ui/SavedCommandsSettings.qml:49
+#: contents/ui/SavedCommandsSettings.qml:48
 #, kde-format
 msgid "Add command"
 msgstr "Dodaj ukaz"
 
-#: contents/ui/SavedCommandsSettings.qml:74
+#: contents/ui/SavedCommandsSettings.qml:73
 #, kde-format
 msgid "Action %1 removed"
 msgstr "Dejanje %1 odstranjeno"
 
-#: contents/ui/SettingsPage.qml:18 contents/ui/TerminalPage.qml:150
+#: contents/ui/SettingsComponent.qml:43
 #, kde-format
-msgid "Settings"
-msgstr "Nastavitve"
+msgid "General"
+msgstr ""
 
-#: contents/ui/SettingsPage.qml:42
+#: contents/ui/SettingsComponent.qml:48
 #, kde-format
 msgid "About"
 msgstr "O programu"
 
-#: contents/ui/SettingsPage.qml:61
+#: contents/ui/SettingsComponent.qml:68
+#, kde-format
+msgid "Appearance"
+msgstr ""
+
+#: contents/ui/SettingsComponent.qml:73
 #, fuzzy, kde-format
 #| msgid "Color Scheme:"
 msgid "Color scheme"
 msgstr "Barvna shema:"
 
-#: contents/ui/SettingsPage.qml:86 contents/ui/SettingsPage.qml:100
+#: contents/ui/SettingsComponent.qml:115 contents/ui/SettingsComponent.qml:129
 #, kde-format
 msgid "Font Family"
 msgstr ""
 
-#: contents/ui/SettingsPage.qml:142
+#: contents/ui/SettingsComponent.qml:162
 #, kde-format
 msgctxt "@title:window"
 msgid "Pick font"
 msgstr ""
 
-#: contents/ui/SettingsPage.qml:157
-#, fuzzy, kde-format
-#| msgid "Close"
-msgctxt "@action:button"
-msgid "Close"
-msgstr "Zapri"
-
-#: contents/ui/SettingsPage.qml:191
+#: contents/ui/SettingsComponent.qml:225
 #, kde-format
 msgid "Font Size"
 msgstr ""
+
+#: contents/ui/SettingsComponent.qml:244 contents/ui/SettingsComponent.qml:265
+#, kde-format
+msgid "Window Transparency"
+msgstr ""
+
+#: contents/ui/SettingsComponent.qml:245
+#, kde-format
+msgid "%1%"
+msgstr ""
+
+#: contents/ui/SettingsDialog.qml:17 contents/ui/SettingsPage.qml:18
+#: contents/ui/TerminalPage.qml:190
+#, kde-format
+msgid "Settings"
+msgstr "Nastavitve"
 
 #: contents/ui/TerminalKeyToolBar.qml:71
 #, kde-format
@@ -132,86 +164,70 @@ msgstr "Tab"
 msgid "Toggle Virtual Keyboard"
 msgstr "Preklopi navidezno tipkovnico"
 
-#: contents/ui/TerminalPage.qml:61
+#: contents/ui/TerminalPage.qml:101
 #, kde-format
 msgctxt "@action:intoolbar"
 msgid "New Tab"
 msgstr "Novi zavihek"
 
-#: contents/ui/TerminalPage.qml:71
+#: contents/ui/TerminalPage.qml:111
 #, kde-format
 msgctxt "@action:intoolbar"
 msgid "Saved Commands"
 msgstr "Shranjeni ukazi"
 
-#: contents/ui/TerminalPage.qml:78
+#: contents/ui/TerminalPage.qml:118
 #, kde-format
 msgid "reverse-i-search"
 msgstr "povratno-i-iskanje"
 
-#: contents/ui/TerminalPage.qml:86
+#: contents/ui/TerminalPage.qml:126
 #, kde-format
 msgid "Cancel current command"
 msgstr "Prekliči trenutni ukaz"
 
-#: contents/ui/TerminalPage.qml:94
+#: contents/ui/TerminalPage.qml:134
 #, kde-format
 msgid "Send EOF"
 msgstr "Pošlji EOF"
 
-#: contents/ui/TerminalPage.qml:102
+#: contents/ui/TerminalPage.qml:142
 #, kde-format
 msgid "Cursor to line start"
 msgstr "Kazalka na začetek vrstice"
 
-#: contents/ui/TerminalPage.qml:110
+#: contents/ui/TerminalPage.qml:150
 #, kde-format
 msgid "Cursor to line end"
 msgstr "Kazalka na konec vrstice"
 
-#: contents/ui/TerminalPage.qml:118
+#: contents/ui/TerminalPage.qml:158
 #, kde-format
 msgid "Kill to line end"
 msgstr "Uniči do konca vrstice"
 
-#: contents/ui/TerminalPage.qml:126
+#: contents/ui/TerminalPage.qml:166
 #, kde-format
 msgid "Paste from kill buffer"
 msgstr "Prilepi iz medpomnilnika uničenega"
 
-#: contents/ui/TerminalPage.qml:134
+#: contents/ui/TerminalPage.qml:174
 #, kde-format
 msgid "Copy"
 msgstr "Kopiraj"
 
-#: contents/ui/TerminalPage.qml:144
+#: contents/ui/TerminalPage.qml:184
 #, kde-format
 msgid "Paste"
 msgstr "Prilepi"
 
-#: contents/ui/TerminalPage.qml:166
-#, kde-format
-msgctxt "@title:window"
-msgid "Saved Commands"
-msgstr "Shranjeni ukazi"
-
-#: contents/ui/TerminalPage.qml:173
-#, kde-format
-msgid "Configure"
-msgstr "Sestavi"
-
-#: contents/ui/TerminalPage.qml:181 contents/ui/TerminalPage.qml:293
-#, kde-format
-msgid "Close"
-msgstr "Zapri"
-
-#: contents/ui/TerminalPage.qml:234
+#: contents/ui/TerminalPage.qml:241
 #, kde-format
 msgctxt "@title:window"
 msgid "Confirm closing %1"
 msgstr "Potrdi zapiranje %1"
 
-#: contents/ui/TerminalPage.qml:250
+#: contents/ui/TerminalPage.qml:257
 #, kde-format
 msgid ""
 "A process is currently running in this tab. Are you sure you want to close "
@@ -220,18 +236,18 @@ msgstr ""
 "V tem zavihku se trenutno odvija postopek. Ali ste prepričani, da ga želite "
 "zapreti?"
 
-#: contents/ui/TerminalPage.qml:257
+#: contents/ui/TerminalPage.qml:264
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Tab"
 msgstr "Izberi zavihek"
 
-#: contents/ui/TerminalPage.qml:313
+#: contents/ui/TerminalPage.qml:316
 #, kde-format
 msgid "selection mode"
 msgstr "način izbire"
 
-#: contents/ui/TerminalPage.qml:321
+#: contents/ui/TerminalPage.qml:324
 #, kde-format
 msgid "Disable"
 msgstr "Onemogoči"
@@ -255,6 +271,12 @@ msgstr "Devin Lin"
 #, kde-format
 msgid "Tab %1"
 msgstr "Zavihek %1"
+
+#, fuzzy
+#~| msgid "Close"
+#~ msgctxt "@action:button"
+#~ msgid "Close"
+#~ msgstr "Zapri"
 
 #~ msgid "More Info:"
 #~ msgstr "Več informacij:"
