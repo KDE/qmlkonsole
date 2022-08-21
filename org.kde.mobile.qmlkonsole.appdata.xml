@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <component type="desktop-application">
   <id>org.kde.mobile.qmlkonsole</id>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-2.0-or-later</project_license>
+  <content_rating type="oars-1.1"/>
   <name>QMLKonsole</name>
   <name xml:lang="ca">QMLKonsole</name>
   <name xml:lang="ca-valencia">QMLKonsole</name>
@@ -67,8 +70,6 @@
   <summary xml:lang="x-test">xxMobile terminal applicationxx</summary>
   <summary xml:lang="zh-CN">移动终端程序</summary>
   <summary xml:lang="zh-TW">行動端終端機應用程式</summary>
-  <metadata_license>CC0-1.0</metadata_license>
-  <project_license>GPL-2.0-or-later</project_license>
   <developer_name>KDE Community</developer_name>
   <developer_name xml:lang="ca">La comunitat KDE</developer_name>
   <developer_name xml:lang="ca-valencia">La comunitat KDE</developer_name>
