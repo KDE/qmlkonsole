@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qmlkonsole\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-08-20 00:47+0000\n"
+"POT-Creation-Date: 2022-08-21 00:47+0000\n"
 "PO-Revision-Date: 2022-06-28 14:10+0200\n"
 "Last-Translator: Vit Pelcak <vpelcak@suse.cz>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
@@ -118,7 +118,7 @@ msgstr ""
 msgid "Font Size"
 msgstr ""
 
-#: contents/ui/SettingsComponent.qml:244 contents/ui/SettingsComponent.qml:265
+#: contents/ui/SettingsComponent.qml:244 contents/ui/SettingsComponent.qml:266
 #, kde-format
 msgid "Window Transparency"
 msgstr ""

@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-08-20 00:47+0000\n"
-"PO-Revision-Date: 2022-08-13 03:53\n"
+"POT-Creation-Date: 2022-08-21 00:47+0000\n"
+"PO-Revision-Date: 2022-08-20 14:18\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
@@ -97,10 +97,9 @@ msgid "Appearance"
 msgstr ""
 
 #: contents/ui/SettingsComponent.qml:73
-#, fuzzy, kde-format
-#| msgid "Color Scheme:"
+#, kde-format
 msgid "Color scheme"
-msgstr "配色方案："
+msgstr ""
 
 #: contents/ui/SettingsComponent.qml:115 contents/ui/SettingsComponent.qml:129
 #, kde-format
@@ -118,7 +117,7 @@ msgstr ""
 msgid "Font Size"
 msgstr ""
 
-#: contents/ui/SettingsComponent.qml:244 contents/ui/SettingsComponent.qml:265
+#: contents/ui/SettingsComponent.qml:244 contents/ui/SettingsComponent.qml:266
 #, kde-format
 msgid "Window Transparency"
 msgstr ""
@@ -268,12 +267,3 @@ msgstr "Devin Lin"
 #, kde-format
 msgid "Tab %1"
 msgstr "标签页 %1"
-
-#, fuzzy
-#~| msgid "Close"
-#~ msgctxt "@action:button"
-#~ msgid "Close"
-#~ msgstr "关闭"
-
-#~ msgid "More Info:"
-#~ msgstr "更多信息："

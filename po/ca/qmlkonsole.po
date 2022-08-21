@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qmlkonsole\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-08-20 00:47+0000\n"
-"PO-Revision-Date: 2022-08-19 18:27+0200\n"
+"POT-Creation-Date: 2022-08-21 00:47+0000\n"
+"PO-Revision-Date: 2022-08-20 10:27+0200\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca\n"
@@ -87,7 +87,7 @@ msgstr "S'ha eliminat l'acció %1"
 #: contents/ui/SettingsComponent.qml:43
 #, kde-format
 msgid "General"
-msgstr ""
+msgstr "General"
 
 #: contents/ui/SettingsComponent.qml:48
 #, kde-format
@@ -97,7 +97,7 @@ msgstr "Quant al"
 #: contents/ui/SettingsComponent.qml:68
 #, kde-format
 msgid "Appearance"
-msgstr ""
+msgstr "Aparença"
 
 #: contents/ui/SettingsComponent.qml:73
 #, kde-format
@@ -120,15 +120,15 @@ msgstr "Selecció de tipus de lletra"
 msgid "Font Size"
 msgstr "Mida del tipus de lletra"
 
-#: contents/ui/SettingsComponent.qml:244 contents/ui/SettingsComponent.qml:265
+#: contents/ui/SettingsComponent.qml:244 contents/ui/SettingsComponent.qml:266
 #, kde-format
 msgid "Window Transparency"
-msgstr ""
+msgstr "Transparència de les finestres"
 
 #: contents/ui/SettingsComponent.qml:245
 #, kde-format
 msgid "%1%"
-msgstr ""
+msgstr "%1%"
 
 #: contents/ui/SettingsDialog.qml:17 contents/ui/SettingsPage.qml:18
 #: contents/ui/TerminalPage.qml:190

@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qmlkonsole\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-08-20 00:47+0000\n"
-"PO-Revision-Date: 2022-05-02 12:22+0200\n"
+"POT-Creation-Date: 2022-08-21 00:47+0000\n"
+"PO-Revision-Date: 2022-08-20 21:47+0200\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
 "Language: sl\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || n"
 "%100==4 ? 3 : 0);\n"
-"X-Generator: Lokalize 21.12.2\n"
+"X-Generator: Lokalize 22.04.1\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -85,7 +85,7 @@ msgstr "Dejanje %1 odstranjeno"
 #: contents/ui/SettingsComponent.qml:43
 #, kde-format
 msgid "General"
-msgstr ""
+msgstr "Splošno"
 
 #: contents/ui/SettingsComponent.qml:48
 #, kde-format
@@ -95,39 +95,38 @@ msgstr "O programu"
 #: contents/ui/SettingsComponent.qml:68
 #, kde-format
 msgid "Appearance"
-msgstr ""
+msgstr "Videz"
 
 #: contents/ui/SettingsComponent.qml:73
-#, fuzzy, kde-format
-#| msgid "Color Scheme:"
+#, kde-format
 msgid "Color scheme"
-msgstr "Barvna shema:"
+msgstr "Barvna shema"
 
 #: contents/ui/SettingsComponent.qml:115 contents/ui/SettingsComponent.qml:129
 #, kde-format
 msgid "Font Family"
-msgstr ""
+msgstr "Družina pisav"
 
 #: contents/ui/SettingsComponent.qml:162
 #, kde-format
 msgctxt "@title:window"
 msgid "Pick font"
-msgstr ""
+msgstr "Poberi pisavo"
 
 #: contents/ui/SettingsComponent.qml:225
 #, kde-format
 msgid "Font Size"
-msgstr ""
+msgstr "Velikost pisave"
 
-#: contents/ui/SettingsComponent.qml:244 contents/ui/SettingsComponent.qml:265
+#: contents/ui/SettingsComponent.qml:244 contents/ui/SettingsComponent.qml:266
 #, kde-format
 msgid "Window Transparency"
-msgstr ""
+msgstr "Prosojnost okna"
 
 #: contents/ui/SettingsComponent.qml:245
 #, kde-format
 msgid "%1%"
-msgstr ""
+msgstr "%1%"
 
 #: contents/ui/SettingsDialog.qml:17 contents/ui/SettingsPage.qml:18
 #: contents/ui/TerminalPage.qml:190

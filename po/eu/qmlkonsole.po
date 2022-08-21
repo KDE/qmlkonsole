@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qmlkonsole\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-08-20 00:47+0000\n"
-"PO-Revision-Date: 2022-08-19 10:04+0200\n"
+"POT-Creation-Date: 2022-08-21 00:47+0000\n"
+"PO-Revision-Date: 2022-08-20 15:36+0200\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
 "Language: eu\n"
@@ -87,7 +87,7 @@ msgstr "%1 ekintza kendu da"
 #: contents/ui/SettingsComponent.qml:43
 #, kde-format
 msgid "General"
-msgstr ""
+msgstr "Orokorra"
 
 #: contents/ui/SettingsComponent.qml:48
 #, kde-format
@@ -97,7 +97,7 @@ msgstr "Honi buruz"
 #: contents/ui/SettingsComponent.qml:68
 #, kde-format
 msgid "Appearance"
-msgstr ""
+msgstr "Itxura"
 
 #: contents/ui/SettingsComponent.qml:73
 #, kde-format
@@ -120,15 +120,15 @@ msgstr "Aukeratu letra-tipoa"
 msgid "Font Size"
 msgstr "Letra-tipo neurria"
 
-#: contents/ui/SettingsComponent.qml:244 contents/ui/SettingsComponent.qml:265
+#: contents/ui/SettingsComponent.qml:244 contents/ui/SettingsComponent.qml:266
 #, kde-format
 msgid "Window Transparency"
-msgstr ""
+msgstr "Leiho-gardentasuna"
 
 #: contents/ui/SettingsComponent.qml:245
 #, kde-format
 msgid "%1%"
-msgstr ""
+msgstr "%%1"
 
 #: contents/ui/SettingsDialog.qml:17 contents/ui/SettingsPage.qml:18
 #: contents/ui/TerminalPage.qml:190
