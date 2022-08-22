@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: qmlkonsole\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-08-21 00:47+0000\n"
-"PO-Revision-Date: 2022-05-04 19:01+0100\n"
+"PO-Revision-Date: 2022-08-21 18:35+0100\n"
 "Last-Translator: José Nuno Coelho Pires <zepires@gmail.com>\n"
 "Language-Team: Portuguese <kde-i18n-pt@kde.org>\n"
 "Language: pt\n"
@@ -80,7 +80,7 @@ msgstr "A acção %1 foi removida"
 #: contents/ui/SettingsComponent.qml:43
 #, kde-format
 msgid "General"
-msgstr ""
+msgstr "Geral"
 
 #: contents/ui/SettingsComponent.qml:48
 #, kde-format
@@ -90,39 +90,38 @@ msgstr "Acerca"
 #: contents/ui/SettingsComponent.qml:68
 #, kde-format
 msgid "Appearance"
-msgstr ""
+msgstr "Aparência"
 
 #: contents/ui/SettingsComponent.qml:73
-#, fuzzy, kde-format
-#| msgid "Color Scheme:"
+#, kde-format
 msgid "Color scheme"
-msgstr "Esquema de Cores:"
+msgstr "Esquema de cores"
 
 #: contents/ui/SettingsComponent.qml:115 contents/ui/SettingsComponent.qml:129
 #, kde-format
 msgid "Font Family"
-msgstr ""
+msgstr "Família do Tipo de Letra"
 
 #: contents/ui/SettingsComponent.qml:162
 #, kde-format
 msgctxt "@title:window"
 msgid "Pick font"
-msgstr ""
+msgstr "Escolher o tipo de letra"
 
 #: contents/ui/SettingsComponent.qml:225
 #, kde-format
 msgid "Font Size"
-msgstr ""
+msgstr "Tamanho da Letra"
 
 #: contents/ui/SettingsComponent.qml:244 contents/ui/SettingsComponent.qml:266
 #, kde-format
 msgid "Window Transparency"
-msgstr ""
+msgstr "Transparência da Janela"
 
 #: contents/ui/SettingsComponent.qml:245
 #, kde-format
 msgid "%1%"
-msgstr ""
+msgstr "%1%"
 
 #: contents/ui/SettingsDialog.qml:17 contents/ui/SettingsPage.qml:18
 #: contents/ui/TerminalPage.qml:190
@@ -265,12 +264,3 @@ msgstr "Devin Lin"
 #, kde-format
 msgid "Tab %1"
 msgstr "Página %1"
-
-#, fuzzy
-#~| msgid "Close"
-#~ msgctxt "@action:button"
-#~ msgid "Close"
-#~ msgstr "Fechar"
-
-#~ msgid "More Info:"
-#~ msgstr "Mais Informações:"
