@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2019 Jonah Brüchert <jbb@kaidan.im>
+# SPDX-License-Identifier: GPL-2.0-or-later
+
 set(qmlkonsole_SRCS
     main.cpp
     abouttype.cpp

@@ -1,6 +1,5 @@
 // SPDX-FileCopyrightText: 2019-2020 Jonah Brüchert <jbb@kaidan.im>
 // SPDX-FileCopyrightText: 2022 Devin Lin <devin@kde.org>
-//
 // SPDX-License-Identifier: GPL-2.0-or-later
 
 #include <QApplication>

@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2019 Jonah Brüchert <jbb@kaidan.im>
+# SPDX-License-Identifier: GPL-2.0-or-later
+
 project(qmlkonsole)
 set(PROJECT_VERSION "22.06")
 

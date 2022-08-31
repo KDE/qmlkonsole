@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: None
+# SPDX-License-Identifier: CC0-1.0
+
 *.swp
 .DS_Store
 build/
@@ -9,3 +12,4 @@ build/
 .cache
 .idea
 /cmake-build*
+*.kdev4
