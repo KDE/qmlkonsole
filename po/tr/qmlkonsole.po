@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qmlkonsole\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-08-21 00:47+0000\n"
+"POT-Creation-Date: 2022-09-01 00:47+0000\n"
 "PO-Revision-Date: 2022-08-20 12:05+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
@@ -249,22 +249,22 @@ msgstr "seçim kipi"
 msgid "Disable"
 msgstr "Devre Dışı Bırak"
 
-#: main.cpp:39
+#: main.cpp:38
 #, kde-format
 msgid "© 2020-2022 KDE Community"
 msgstr "© 2020-2022 KDE Topluluğu"
 
-#: main.cpp:41
+#: main.cpp:40
 #, kde-format
 msgid "Jonah Brüchert"
 msgstr "Jonah Brüchert"
 
-#: main.cpp:42
+#: main.cpp:41
 #, kde-format
 msgid "Devin Lin"
 msgstr "Devin Lin"
 
-#: terminaltabmodel.cpp:71
+#: terminaltabmodel.cpp:68
 #, kde-format
 msgid "Tab %1"
 msgstr "Sekme %1"

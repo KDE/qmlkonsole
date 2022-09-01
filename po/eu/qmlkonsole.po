@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qmlkonsole\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-08-21 00:47+0000\n"
+"POT-Creation-Date: 2022-09-01 00:47+0000\n"
 "PO-Revision-Date: 2022-08-20 15:36+0200\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
@@ -251,22 +251,22 @@ msgstr "Hautapen modua"
 msgid "Disable"
 msgstr "Ezgaitu"
 
-#: main.cpp:39
+#: main.cpp:38
 #, kde-format
 msgid "© 2020-2022 KDE Community"
 msgstr "© 2020-2022 KDE Community"
 
-#: main.cpp:41
+#: main.cpp:40
 #, kde-format
 msgid "Jonah Brüchert"
 msgstr "Jonah Brüchert"
 
-#: main.cpp:42
+#: main.cpp:41
 #, kde-format
 msgid "Devin Lin"
 msgstr "Devin Lin"
 
-#: terminaltabmodel.cpp:71
+#: terminaltabmodel.cpp:68
 #, kde-format
 msgid "Tab %1"
 msgstr "%1. fitxa"
