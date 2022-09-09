@@ -84,7 +84,7 @@ msgstr "Činnost %1 byla odstraněna."
 #: contents/ui/SettingsComponent.qml:43
 #, kde-format
 msgid "General"
-msgstr ""
+msgstr "Obecné"
 
 #: contents/ui/SettingsComponent.qml:48
 #, kde-format
@@ -94,18 +94,17 @@ msgstr "O aplikaci"
 #: contents/ui/SettingsComponent.qml:68
 #, kde-format
 msgid "Appearance"
-msgstr ""
+msgstr "Vzhled"
 
 #: contents/ui/SettingsComponent.qml:73
-#, fuzzy, kde-format
-#| msgid "Color Scheme:"
+#, kde-format
 msgid "Color scheme"
-msgstr "Barevné schéma:"
+msgstr "Barevné schéma"
 
 #: contents/ui/SettingsComponent.qml:115 contents/ui/SettingsComponent.qml:129
 #, kde-format
 msgid "Font Family"
-msgstr ""
+msgstr "Rodina písma"
 
 #: contents/ui/SettingsComponent.qml:162
 #, kde-format
@@ -116,7 +115,7 @@ msgstr ""
 #: contents/ui/SettingsComponent.qml:225
 #, kde-format
 msgid "Font Size"
-msgstr ""
+msgstr "Velikost písma"
 
 #: contents/ui/SettingsComponent.qml:244 contents/ui/SettingsComponent.qml:266
 #, kde-format
@@ -126,7 +125,7 @@ msgstr ""
 #: contents/ui/SettingsComponent.qml:245
 #, kde-format
 msgid "%1%"
-msgstr ""
+msgstr "%1%"
 
 #: contents/ui/SettingsDialog.qml:17 contents/ui/SettingsPage.qml:18
 #: contents/ui/TerminalPage.qml:190
@@ -268,12 +267,3 @@ msgstr "Devin Lin"
 #, kde-format
 msgid "Tab %1"
 msgstr "Karta %1"
-
-#, fuzzy
-#~| msgid "Close"
-#~ msgctxt "@action:button"
-#~ msgid "Close"
-#~ msgstr "Zavřít"
-
-#~ msgid "More Info:"
-#~ msgstr "Více informací:"
