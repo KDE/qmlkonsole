@@ -48,5 +48,6 @@ bool SavedCommandsModel::removeRow(int row)
     m_actions.erase(m_actions.begin() + row);
     endRemoveRows();
 
+    TerminalSettings::self()->save();
     return true;
 }
