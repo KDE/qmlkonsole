@@ -43,7 +43,6 @@ Kirigami.Dialog {
         
         Kirigami.PlaceholderMessage {
             anchors.verticalCenter: parent.verticalCenter
-            anchors.horizontalCenter: parent.horizontalCenter
             anchors.left: parent.left
             anchors.right: parent.right
             anchors.leftMargin: Kirigami.Units.largeSpacing
