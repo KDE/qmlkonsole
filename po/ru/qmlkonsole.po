@@ -2,31 +2,32 @@
 # This file is distributed under the same license as the qmlkonsole package.
 #
 # Alexander Yavorsky <kekcuha@gmail.com>, 2022.
+# Olesya Gerasimenko <translation-team@basealt.ru>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: qmlkonsole\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-09-01 00:47+0000\n"
-"PO-Revision-Date: 2022-05-14 18:17+0300\n"
-"Last-Translator: Alexander Yavorsky <kekcuha@gmail.com>\n"
-"Language-Team: Russian <kde-russian@lists.kde.ru>\n"
+"PO-Revision-Date: 2022-10-20 09:33+0300\n"
+"Last-Translator: Olesya Gerasimenko <translation-team@basealt.ru>\n"
+"Language-Team: Basealt Translation Team\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=n==1 ? 3 : n%10==1 && n%100!=11 ? 0 : n"
 "%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Lokalize 21.08.3\n"
+"X-Generator: Lokalize 22.04.3\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr "Александр Яворский"
+msgstr "Александр Яворский, Олеся Герасименко"
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr "kekcuha@gmail.com"
+msgstr "kekcuha@gmail.com, translation-team@basealt.ru"
 
 #: contents/ui/main.qml:16
 #, kde-format
@@ -40,9 +41,9 @@ msgid "Saved Commands"
 msgstr "Сохранённые команды"
 
 #: contents/ui/SavedCommandsDialog.qml:26
-#, fuzzy, kde-format
+#, kde-format
 msgid "Configure"
-msgstr "Настройка"
+msgstr "Настроить"
 
 #: contents/ui/SavedCommandsDialog.qml:34 contents/ui/TerminalPage.qml:303
 #, kde-format
@@ -60,6 +61,7 @@ msgstr "Нет ни одной сохранённой команды"
 #, kde-format
 msgid "Save commands to quickly run them without typing them out."
 msgstr ""
+"Сохраняйте команды, чтобы быстро запускать их без набора на клавиатуре."
 
 #: contents/ui/SavedCommandsSettings.qml:17
 #, kde-format
@@ -80,12 +82,12 @@ msgstr "Добавить команду"
 #: contents/ui/SavedCommandsSettings.qml:73
 #, kde-format
 msgid "Action %1 removed"
-msgstr ""
+msgstr "Удалено действие %1"
 
 #: contents/ui/SettingsComponent.qml:43
 #, kde-format
 msgid "General"
-msgstr ""
+msgstr "Общие"
 
 #: contents/ui/SettingsComponent.qml:48
 #, kde-format
@@ -95,38 +97,38 @@ msgstr "О программе"
 #: contents/ui/SettingsComponent.qml:68
 #, kde-format
 msgid "Appearance"
-msgstr ""
+msgstr "Внешний вид"
 
 #: contents/ui/SettingsComponent.qml:73
-#, fuzzy, kde-format
+#, kde-format
 msgid "Color scheme"
-msgstr "Цветовые схемы"
+msgstr "Цветовая схема"
 
 #: contents/ui/SettingsComponent.qml:115 contents/ui/SettingsComponent.qml:129
 #, kde-format
 msgid "Font Family"
-msgstr ""
+msgstr "Гарнитура шрифта"
 
 #: contents/ui/SettingsComponent.qml:162
 #, kde-format
 msgctxt "@title:window"
 msgid "Pick font"
-msgstr ""
+msgstr "Выбор шрифта"
 
 #: contents/ui/SettingsComponent.qml:225
 #, kde-format
 msgid "Font Size"
-msgstr ""
+msgstr "Размер шрифта"
 
 #: contents/ui/SettingsComponent.qml:244 contents/ui/SettingsComponent.qml:266
 #, kde-format
 msgid "Window Transparency"
-msgstr ""
+msgstr "Прозрачность окна"
 
 #: contents/ui/SettingsComponent.qml:245
 #, kde-format
 msgid "%1%"
-msgstr ""
+msgstr "%1%"
 
 #: contents/ui/SettingsDialog.qml:17 contents/ui/SettingsPage.qml:18
 #: contents/ui/TerminalPage.qml:190
@@ -178,37 +180,37 @@ msgstr "Сохранённые команды"
 #: contents/ui/TerminalPage.qml:118
 #, kde-format
 msgid "reverse-i-search"
-msgstr ""
+msgstr "Обратный поиск"
 
 #: contents/ui/TerminalPage.qml:126
 #, kde-format
 msgid "Cancel current command"
-msgstr ""
+msgstr "Отменить текущую команду"
 
 #: contents/ui/TerminalPage.qml:134
 #, kde-format
 msgid "Send EOF"
-msgstr ""
+msgstr "Отправить EOF"
 
 #: contents/ui/TerminalPage.qml:142
 #, kde-format
 msgid "Cursor to line start"
-msgstr ""
+msgstr "Курсор в начало строки"
 
 #: contents/ui/TerminalPage.qml:150
 #, kde-format
 msgid "Cursor to line end"
-msgstr ""
+msgstr "Курсор в конец строки"
 
 #: contents/ui/TerminalPage.qml:158
 #, kde-format
 msgid "Kill to line end"
-msgstr ""
+msgstr "Стереть до конца строки"
 
 #: contents/ui/TerminalPage.qml:166
 #, kde-format
 msgid "Paste from kill buffer"
-msgstr ""
+msgstr "Вставить из буфера стирания"
 
 #: contents/ui/TerminalPage.qml:174
 #, kde-format
@@ -231,23 +233,23 @@ msgstr "Подтверждение закрытия %1"
 msgid ""
 "A process is currently running in this tab. Are you sure you want to close "
 "it?"
-msgstr ""
+msgstr "На этой вкладке выполняется процесс. Закрыть её?"
 
 #: contents/ui/TerminalPage.qml:264
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Tab"
-msgstr ""
+msgstr "Выбор вкладки"
 
 #: contents/ui/TerminalPage.qml:316
-#, fuzzy, kde-format
+#, kde-format
 msgid "selection mode"
-msgstr "Режим выделения:"
+msgstr "Режим выделения"
 
 #: contents/ui/TerminalPage.qml:324
-#, fuzzy, kde-format
+#, kde-format
 msgid "Disable"
-msgstr "Выключить"
+msgstr "Отключить"
 
 #: main.cpp:38
 #, kde-format
