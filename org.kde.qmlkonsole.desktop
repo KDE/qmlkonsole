@@ -3,9 +3,8 @@
 
 [Desktop Entry]
 Type=Application
-TryExec=qmlkonsole
 Exec=qmlkonsole
-Icon=utilities-terminal
+Icon=qmlkonsole
 Terminal=false
 Categories=Qt;KDE;System;TerminalEmulator;
 StartupNotify=true
