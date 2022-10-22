@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qmlkonsole\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-09-01 00:47+0000\n"
+"POT-Creation-Date: 2022-10-22 00:47+0000\n"
 "PO-Revision-Date: 2022-06-28 14:10+0200\n"
 "Last-Translator: Vit Pelcak <vpelcak@suse.cz>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
@@ -48,13 +48,13 @@ msgstr "Nastavit"
 msgid "Close"
 msgstr "Zavřít"
 
-#: contents/ui/SavedCommandsDialog.qml:54
+#: contents/ui/SavedCommandsDialog.qml:53
 #: contents/ui/SavedCommandsSettings.qml:43
 #, kde-format
 msgid "No saved commands"
 msgstr "Žádné uložené příkazy"
 
-#: contents/ui/SavedCommandsDialog.qml:55
+#: contents/ui/SavedCommandsDialog.qml:54
 #: contents/ui/SavedCommandsSettings.qml:44
 #, kde-format
 msgid "Save commands to quickly run them without typing them out."

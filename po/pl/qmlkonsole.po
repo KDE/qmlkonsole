@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qmlkonsole\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-09-01 00:47+0000\n"
+"POT-Creation-Date: 2022-10-22 00:47+0000\n"
 "PO-Revision-Date: 2022-09-23 09:26+0200\n"
 "Last-Translator: Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>\n"
 "Language-Team: Polish <kde-i18n-doc@kde.org>\n"
@@ -49,13 +49,13 @@ msgstr "Ustawienia"
 msgid "Close"
 msgstr "Zamknij"
 
-#: contents/ui/SavedCommandsDialog.qml:54
+#: contents/ui/SavedCommandsDialog.qml:53
 #: contents/ui/SavedCommandsSettings.qml:43
 #, kde-format
 msgid "No saved commands"
 msgstr "Nie ma żadnego zapisanego polecenia"
 
-#: contents/ui/SavedCommandsDialog.qml:55
+#: contents/ui/SavedCommandsDialog.qml:54
 #: contents/ui/SavedCommandsSettings.qml:44
 #, kde-format
 msgid "Save commands to quickly run them without typing them out."
