@@ -9,3 +9,4 @@ Dependencies:
     'frameworks/kconfig': '@stable'
     'frameworks/ki18n': '@stable'
     'frameworks/kcoreaddons': '@stable'
+    'frameworks/kwindowsystem': '@stable'
