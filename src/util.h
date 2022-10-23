@@ -5,6 +5,7 @@
 
 #include <QObject>
 #include <QKeySequence>
+#include <QQuickItem>
 
 class Util : public QObject
 {
@@ -20,5 +21,6 @@ public:
     }
     
     Q_INVOKABLE uint getKeyFromString(QString key);
+    Q_INVOKABLE void setBlur(QQuickItem *item, bool blur);
 };
 

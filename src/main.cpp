@@ -69,7 +69,8 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
     qmlRegisterSingletonInstance(URI, 1, 0, "AboutType", &AboutType::instance());
     
     engine.load(QUrl(QStringLiteral("qrc:///main.qml")));
-    
+
+    // required for X11
     app.setWindowIcon(QIcon::fromTheme(QStringLiteral("org.kde.qmlkonsole")));
 
     if (engine.rootObjects().isEmpty()) {

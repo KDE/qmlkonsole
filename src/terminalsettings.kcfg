@@ -25,5 +25,8 @@
         <entry key="actions" type="StringList">
             <default></default>
         </entry>
+        <entry key="blurWindow" type="bool">
+            <default>false</default>
+        </entry>
     </group>
 </kcfg>

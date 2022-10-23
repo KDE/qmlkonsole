@@ -38,8 +38,21 @@ ecm_setup_version(${PROJECT_VERSION}
 )
 ################# Find dependencies #################
 
-find_package(Qt5 ${QT_MIN_VERSION} REQUIRED NO_MODULE COMPONENTS Core Quick Test Gui Svg QuickControls2)
-find_package(KF5 ${KF5_MIN_VERSION} REQUIRED COMPONENTS Kirigami2 I18n Config CoreAddons)
+find_package(Qt5 ${QT_MIN_VERSION} REQUIRED NO_MODULE COMPONENTS 
+    Core 
+    Quick 
+    Test 
+    Gui 
+    Svg 
+    QuickControls2
+)
+find_package(KF5 ${KF5_MIN_VERSION} REQUIRED COMPONENTS 
+    Kirigami2 
+    I18n 
+    Config 
+    CoreAddons 
+    WindowSystem
+)
 
 ecm_find_qmlmodule(org.kde.kirigamiaddons.labs.mobileform 0.1)
 ecm_find_qmlmodule(QMLTermWidget 1.0)

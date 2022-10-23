@@ -21,11 +21,10 @@ Kirigami.Dialog {
     preferredWidth: Kirigami.Units.gridUnit * 35
     
     Kirigami.Theme.inherit: false
-        Kirigami.Theme.colorSet: Kirigami.Theme.Window
+    Kirigami.Theme.colorSet: Kirigami.Theme.Window
     
     Control {
         id: control
-        implicitHeight: Kirigami.Units.gridUnit * 20
         
         leftPadding: 0
         rightPadding: 0

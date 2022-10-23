@@ -237,7 +237,7 @@ ColumnLayout {
                 }
             }
             
-            MobileForm.FormDelegateSeparator { below: fontFamilyDelegate }
+            MobileForm.FormDelegateSeparator { below: opacityDelegate }
             
             MobileForm.FormComboBoxDelegate {
                 id: opacityDelegate
@@ -284,6 +284,20 @@ ColumnLayout {
                             text: opacityDelegate.currentValue
                         }
                     }
+                }
+            }
+            
+            MobileForm.FormDelegateSeparator { above: opacityDelegate; below: blurDelegate }
+            
+            MobileForm.FormSwitchDelegate {
+                id: blurDelegate
+                text: i18n("Blur Background")
+                checked: TerminalSettings.blurWindow
+                
+                onCheckedChanged: {
+                    TerminalSettings.blurWindow = checked;
+                    TerminalSettings.save();
+                    Util.setBlur(applicationWindow().pageStack, TerminalSettings.blurWindow);
                 }
             }
         }

@@ -26,6 +26,12 @@ Kirigami.ApplicationWindow {
     
     color: "transparent"
     
+    Component.onCompleted: {
+        if (TerminalSettings.blurWindow) {
+            Util.setBlur(pageStack, true);
+        }
+    }
+    
     // pop pages when not in use
     Connections {
         target: applicationWindow().pageStack
