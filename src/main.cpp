@@ -7,6 +7,7 @@
 #include <QQmlApplicationEngine>
 #include <QtQml>
 #include <QUrl>
+#include <QIcon>
 
 #include <KLocalizedContext>
 #include <KLocalizedString>
@@ -68,6 +69,8 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
     qmlRegisterSingletonInstance(URI, 1, 0, "AboutType", &AboutType::instance());
     
     engine.load(QUrl(QStringLiteral("qrc:///main.qml")));
+    
+    app.setWindowIcon(QIcon::fromTheme(QStringLiteral("org.kde.qmlkonsole")));
 
     if (engine.rootObjects().isEmpty()) {
         return -1;
