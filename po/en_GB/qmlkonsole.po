@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qmlkonsole\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-10-22 00:47+0000\n"
+"POT-Creation-Date: 2022-10-24 00:50+0000\n"
 "PO-Revision-Date: 2022-08-22 17:18+0100\n"
 "Last-Translator: Steve Allewell <steve.allewell@gmail.com>\n"
 "Language-Team: British English <kde-l10n-en_gb@kde.org>\n"
@@ -126,6 +126,11 @@ msgstr "Window Transparency"
 #, kde-format
 msgid "%1%"
 msgstr "%1%"
+
+#: contents/ui/SettingsComponent.qml:294
+#, kde-format
+msgid "Blur Background"
+msgstr ""
 
 #: contents/ui/SettingsDialog.qml:17 contents/ui/SettingsPage.qml:18
 #: contents/ui/TerminalPage.qml:190
@@ -250,17 +255,17 @@ msgstr "selection mode"
 msgid "Disable"
 msgstr "Disable"
 
-#: main.cpp:38
+#: main.cpp:39
 #, kde-format
 msgid "© 2020-2022 KDE Community"
 msgstr "© 2020-2022 KDE Community"
 
-#: main.cpp:40
+#: main.cpp:41
 #, kde-format
 msgid "Jonah Brüchert"
 msgstr "Jonah Brüchert"
 
-#: main.cpp:41
+#: main.cpp:42
 #, kde-format
 msgid "Devin Lin"
 msgstr "Devin Lin"

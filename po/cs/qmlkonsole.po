@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qmlkonsole\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-10-22 00:47+0000\n"
+"POT-Creation-Date: 2022-10-24 00:50+0000\n"
 "PO-Revision-Date: 2022-06-28 14:10+0200\n"
 "Last-Translator: Vit Pelcak <vpelcak@suse.cz>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
@@ -126,6 +126,11 @@ msgstr ""
 #, kde-format
 msgid "%1%"
 msgstr "%1%"
+
+#: contents/ui/SettingsComponent.qml:294
+#, kde-format
+msgid "Blur Background"
+msgstr ""
 
 #: contents/ui/SettingsDialog.qml:17 contents/ui/SettingsPage.qml:18
 #: contents/ui/TerminalPage.qml:190
@@ -248,17 +253,17 @@ msgstr "režim označování"
 msgid "Disable"
 msgstr "Zakázat"
 
-#: main.cpp:38
+#: main.cpp:39
 #, kde-format
 msgid "© 2020-2022 KDE Community"
 msgstr "© 2020-2022 Komunita KDE"
 
-#: main.cpp:40
+#: main.cpp:41
 #, kde-format
 msgid "Jonah Brüchert"
 msgstr "Jonah Brüchert"
 
-#: main.cpp:41
+#: main.cpp:42
 #, kde-format
 msgid "Devin Lin"
 msgstr "Devin Lin"
