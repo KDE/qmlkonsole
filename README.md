@@ -10,7 +10,7 @@ A terminal application built for touch, based on [qmltermwidget](https://github.
 ## Links
 
 * Project page: https://invent.kde.org/plasma-mobile/qmlkonsole
-* File issues: https://invent.kde.org/plasma-mobile/qmlkonsole/-/issues
+* Bug reports & feature requests: https://bugs.kde.org/enter_bug.cgi?product=QMLKonsole
 * Development channel: https://matrix.to/#/#plasmamobile:matrix.org
 
 ## Building

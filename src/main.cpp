@@ -37,7 +37,7 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
                          QStringLiteral("Mobile terminal application"),
                          KAboutLicense::GPL,
                          i18n("© 2020-2022 KDE Community"));
-    aboutData.setBugAddress("https://invent.kde.org/plasma-mobile/qmlkonsole/-/issues");
+    aboutData.setBugAddress("https://bugs.kde.org/enter_bug.cgi?product=QMLKonsole");
     aboutData.addAuthor(i18n("Jonah Brüchert"), QString(), QStringLiteral("jbb@kaidan.im"));
     aboutData.addAuthor(i18n("Devin Lin"), QString(), QStringLiteral("devin@kde.org"));
     KAboutData::setApplicationData(aboutData);
