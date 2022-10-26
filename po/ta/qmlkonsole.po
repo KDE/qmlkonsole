@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: qmlkonsole\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-10-24 00:50+0000\n"
-"PO-Revision-Date: 2022-10-13 19:22+0530\n"
+"PO-Revision-Date: 2022-10-25 21:14+0530\n"
 "Last-Translator: Kishore G <kishore96@gmail.com>\n"
 "Language-Team: Tamil <kde-i18n-doc@kde.org>\n"
 "Language: ta\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 22.08.1\n"
+"X-Generator: Lokalize 22.08.2\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -130,7 +130,7 @@ msgstr "%1%"
 #: contents/ui/SettingsComponent.qml:294
 #, kde-format
 msgid "Blur Background"
-msgstr ""
+msgstr "பின்புலத்தை மங்கலாக்கு"
 
 #: contents/ui/SettingsDialog.qml:17 contents/ui/SettingsPage.qml:18
 #: contents/ui/TerminalPage.qml:190
@@ -217,46 +217,46 @@ msgstr ""
 #: contents/ui/TerminalPage.qml:174
 #, kde-format
 msgid "Copy"
-msgstr ""
+msgstr "நகலெடு"
 
 #: contents/ui/TerminalPage.qml:184
 #, kde-format
 msgid "Paste"
-msgstr ""
+msgstr "ஒட்டு"
 
 #: contents/ui/TerminalPage.qml:241
 #, kde-format
 msgctxt "@title:window"
 msgid "Confirm closing %1"
-msgstr ""
+msgstr "%1 தனை மூடுவதை உறுதி செய்யுங்கள்"
 
 #: contents/ui/TerminalPage.qml:257
 #, kde-format
 msgid ""
 "A process is currently running in this tab. Are you sure you want to close "
 "it?"
-msgstr ""
+msgstr "இக்கீற்றில் ஓர் பணி ஓடிக்கொண்டிருக்கிறது. உறுதியாக இதை மூட வேண்டுமா?"
 
 #: contents/ui/TerminalPage.qml:264
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Tab"
-msgstr ""
+msgstr "கீற்றை தேர்வு செய்வது"
 
 #: contents/ui/TerminalPage.qml:316
 #, kde-format
 msgid "selection mode"
-msgstr ""
+msgstr "தேர்வு பயன்முறை"
 
 #: contents/ui/TerminalPage.qml:324
 #, kde-format
 msgid "Disable"
-msgstr ""
+msgstr "முடக்கு"
 
 #: main.cpp:39
 #, kde-format
 msgid "© 2020-2022 KDE Community"
-msgstr ""
+msgstr "© 2020-2022 கே.டீ.யீ. சமூகம்"
 
 #: main.cpp:41
 #, kde-format
@@ -271,4 +271,4 @@ msgstr ""
 #: terminaltabmodel.cpp:68
 #, kde-format
 msgid "Tab %1"
-msgstr ""
+msgstr "கீற்று %1"
