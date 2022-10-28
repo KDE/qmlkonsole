@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qmlkonsole\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-09-01 00:47+0000\n"
+"POT-Creation-Date: 2022-10-24 00:50+0000\n"
 "PO-Revision-Date: 2022-04-10 17:26+0200\n"
 "Last-Translator: Karl Ove Hufthammer <karl@huftis.org>\n"
 "Language-Team: Norwegian Nynorsk <l10n-no@lister.huftis.org>\n"
@@ -50,13 +50,13 @@ msgstr ""
 msgid "Close"
 msgstr "Lukk"
 
-#: contents/ui/SavedCommandsDialog.qml:54
+#: contents/ui/SavedCommandsDialog.qml:53
 #: contents/ui/SavedCommandsSettings.qml:43
 #, kde-format
 msgid "No saved commands"
 msgstr ""
 
-#: contents/ui/SavedCommandsDialog.qml:55
+#: contents/ui/SavedCommandsDialog.qml:54
 #: contents/ui/SavedCommandsSettings.qml:44
 #, kde-format
 msgid "Save commands to quickly run them without typing them out."
@@ -127,6 +127,11 @@ msgstr ""
 #: contents/ui/SettingsComponent.qml:245
 #, kde-format
 msgid "%1%"
+msgstr ""
+
+#: contents/ui/SettingsComponent.qml:294
+#, kde-format
+msgid "Blur Background"
 msgstr ""
 
 #: contents/ui/SettingsDialog.qml:17 contents/ui/SettingsPage.qml:18
@@ -251,17 +256,17 @@ msgstr "utvalsmodus"
 msgid "Disable"
 msgstr "Slå av"
 
-#: main.cpp:38
+#: main.cpp:39
 #, kde-format
 msgid "© 2020-2022 KDE Community"
 msgstr ""
 
-#: main.cpp:40
+#: main.cpp:41
 #, kde-format
 msgid "Jonah Brüchert"
 msgstr ""
 
-#: main.cpp:41
+#: main.cpp:42
 #, kde-format
 msgid "Devin Lin"
 msgstr ""
