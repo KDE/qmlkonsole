@@ -67,20 +67,20 @@ ColumnLayout {
             MobileForm.FormCardHeader {
                 title: i18n("Appearance")
             }
-            
+
             MobileForm.FormComboBoxDelegate {
                 id: colorSchemeDropdown
                 text: i18n("Color scheme")
-                currentValue: TerminalSettings.colorScheme
+                Component.onCompleted: currentIndex = indexOfValue(TerminalSettings.colorScheme)
                 model: terminal.availableColorSchemes
-                
+
                 onClicked: {
                     if (root.dialog) {
                         dialogTimer.dialog = colorSchemeDropdown.dialog;
                         dialogTimer.restart();
                     }
                 }
-                
+
                 Connections {
                     target: colorSchemeDropdown.dialog
                     function onClosed() {
@@ -89,24 +89,13 @@ ColumnLayout {
                         }
                     }
                 }
-                
-                dialogDelegate: Controls.RadioDelegate {
-                    implicitWidth: Kirigami.Units.gridUnit * 16
-                    topPadding: Kirigami.Units.smallSpacing * 2
-                    bottomPadding: Kirigami.Units.smallSpacing * 2
-                    
-                    text: modelData
-                    checked: colorSchemeDropdown.currentValue == modelData
-                    onCheckedChanged: {
-                        if (checked) {
-                            colorSchemeDropdown.currentValue = modelData;
-                            TerminalSettings.colorScheme = modelData;
-                            TerminalSettings.save();
-                        }
-                    }
+
+                onCurrentValueChanged: {
+                    TerminalSettings.colorScheme = currentValue;
+                    TerminalSettings.save();
                 }
             }
-            
+
             MobileForm.FormDelegateSeparator { above: colorSchemeDropdown; below: fontFamilyDelegate }
             
             MobileForm.AbstractFormDelegate {
@@ -238,57 +227,51 @@ ColumnLayout {
             }
             
             MobileForm.FormDelegateSeparator { below: opacityDelegate }
-            
-            MobileForm.FormComboBoxDelegate {
+
+            MobileForm.AbstractFormDelegate {
                 id: opacityDelegate
-                text: i18n("Window Transparency")
-                currentValue: i18n("%1\%", sliderValue.value)
-                
-                onClicked: {
-                    dialog.open();
-                    if (root.dialog) {
-                        dialogTimer.dialog = opacityDelegate.dialog;
-                        dialogTimer.restart();
+                Layout.fillWidth: true
+
+                background: Item {}
+
+                contentItem: ColumnLayout {
+                    Controls.Label {
+                        text: i18n("Window Transparency")
                     }
-                }
-                
-                Connections {
-                    target: opacityDelegate.dialog
-                    function onClosed() {
-                        if (root.dialog) {
-                            root.dialog.open();
-                        }
-                    }
-                }
-                
-                dialog: Kirigami.PromptDialog {
-                    showCloseButton: false
-                    title: i18n("Window Transparency")
-                    
+
                     RowLayout {
+                        spacing: Kirigami.Units.gridUnit
+                        Kirigami.Icon {
+                            implicitWidth: Kirigami.Units.iconSizes.smallMedium
+                            implicitHeight: Kirigami.Units.iconSizes.smallMedium
+                            source: "brightness-low"
+                        }
+
                         Controls.Slider {
-                            id: sliderValue
                             Layout.fillWidth: true
                             from: 0
                             to: 100
                             value: (1 - TerminalSettings.windowOpacity) * 100
                             stepSize: 5
                             snapMode: Controls.Slider.SnapAlways
-                            
+
                             onMoved: {
                                 TerminalSettings.windowOpacity = 1 - (value / 100);
                                 TerminalSettings.save();
                             }
                         }
-                        Controls.Label {
-                            text: opacityDelegate.currentValue
+
+                        Kirigami.Icon {
+                            implicitWidth: Kirigami.Units.iconSizes.smallMedium
+                            implicitHeight: Kirigami.Units.iconSizes.smallMedium
+                            source: "brightness-high"
                         }
                     }
                 }
             }
-            
+
             MobileForm.FormDelegateSeparator { above: opacityDelegate; below: blurDelegate }
-            
+
             MobileForm.FormSwitchDelegate {
                 id: blurDelegate
                 text: i18n("Blur Background")
