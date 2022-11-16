@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qmlkonsole\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-10-24 00:50+0000\n"
+"POT-Creation-Date: 2022-11-16 00:49+0000\n"
 "PO-Revision-Date: 2022-10-25 09:05+0200\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
@@ -102,33 +102,28 @@ msgstr "Videz"
 msgid "Color scheme"
 msgstr "Barvna shema"
 
-#: contents/ui/SettingsComponent.qml:115 contents/ui/SettingsComponent.qml:129
+#: contents/ui/SettingsComponent.qml:104 contents/ui/SettingsComponent.qml:118
 #, kde-format
 msgid "Font Family"
 msgstr "Družina pisav"
 
-#: contents/ui/SettingsComponent.qml:162
+#: contents/ui/SettingsComponent.qml:151
 #, kde-format
 msgctxt "@title:window"
 msgid "Pick font"
 msgstr "Poberi pisavo"
 
-#: contents/ui/SettingsComponent.qml:225
+#: contents/ui/SettingsComponent.qml:214
 #, kde-format
 msgid "Font Size"
 msgstr "Velikost pisave"
 
-#: contents/ui/SettingsComponent.qml:244 contents/ui/SettingsComponent.qml:266
+#: contents/ui/SettingsComponent.qml:239
 #, kde-format
 msgid "Window Transparency"
 msgstr "Prosojnost okna"
 
-#: contents/ui/SettingsComponent.qml:245
-#, kde-format
-msgid "%1%"
-msgstr "%1%"
-
-#: contents/ui/SettingsComponent.qml:294
+#: contents/ui/SettingsComponent.qml:277
 #, kde-format
 msgid "Blur Background"
 msgstr "Zamegli ozadje"
@@ -275,6 +270,9 @@ msgstr "Devin Lin"
 #, kde-format
 msgid "Tab %1"
 msgstr "Zavihek %1"
+
+#~ msgid "%1%"
+#~ msgstr "%1%"
 
 #, fuzzy
 #~| msgid "Close"

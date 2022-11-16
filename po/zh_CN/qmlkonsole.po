@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-10-24 00:50+0000\n"
+"POT-Creation-Date: 2022-11-16 00:49+0000\n"
 "PO-Revision-Date: 2022-11-06 01:07\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
@@ -101,33 +101,28 @@ msgstr ""
 msgid "Color scheme"
 msgstr ""
 
-#: contents/ui/SettingsComponent.qml:115 contents/ui/SettingsComponent.qml:129
+#: contents/ui/SettingsComponent.qml:104 contents/ui/SettingsComponent.qml:118
 #, kde-format
 msgid "Font Family"
 msgstr ""
 
-#: contents/ui/SettingsComponent.qml:162
+#: contents/ui/SettingsComponent.qml:151
 #, kde-format
 msgctxt "@title:window"
 msgid "Pick font"
 msgstr ""
 
-#: contents/ui/SettingsComponent.qml:225
+#: contents/ui/SettingsComponent.qml:214
 #, kde-format
 msgid "Font Size"
 msgstr ""
 
-#: contents/ui/SettingsComponent.qml:244 contents/ui/SettingsComponent.qml:266
+#: contents/ui/SettingsComponent.qml:239
 #, kde-format
 msgid "Window Transparency"
 msgstr ""
 
-#: contents/ui/SettingsComponent.qml:245
-#, kde-format
-msgid "%1%"
-msgstr ""
-
-#: contents/ui/SettingsComponent.qml:294
+#: contents/ui/SettingsComponent.qml:277
 #, kde-format
 msgid "Blur Background"
 msgstr ""

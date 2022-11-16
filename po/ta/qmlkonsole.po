@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qmlkonsole\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-10-24 00:50+0000\n"
+"POT-Creation-Date: 2022-11-16 00:49+0000\n"
 "PO-Revision-Date: 2022-10-25 21:14+0530\n"
 "Last-Translator: Kishore G <kishore96@gmail.com>\n"
 "Language-Team: Tamil <kde-i18n-doc@kde.org>\n"
@@ -101,33 +101,28 @@ msgstr "தோற்றம்"
 msgid "Color scheme"
 msgstr "நிறத்திட்டம்"
 
-#: contents/ui/SettingsComponent.qml:115 contents/ui/SettingsComponent.qml:129
+#: contents/ui/SettingsComponent.qml:104 contents/ui/SettingsComponent.qml:118
 #, kde-format
 msgid "Font Family"
 msgstr "எழுத்துரு குடும்பம்"
 
-#: contents/ui/SettingsComponent.qml:162
+#: contents/ui/SettingsComponent.qml:151
 #, kde-format
 msgctxt "@title:window"
 msgid "Pick font"
 msgstr "எழுத்துருவை தேர்ந்தெடுத்தல்"
 
-#: contents/ui/SettingsComponent.qml:225
+#: contents/ui/SettingsComponent.qml:214
 #, kde-format
 msgid "Font Size"
 msgstr "எழுத்துருவின் அளவு"
 
-#: contents/ui/SettingsComponent.qml:244 contents/ui/SettingsComponent.qml:266
+#: contents/ui/SettingsComponent.qml:239
 #, kde-format
 msgid "Window Transparency"
 msgstr "சாளர ஒளிபுகுமை"
 
-#: contents/ui/SettingsComponent.qml:245
-#, kde-format
-msgid "%1%"
-msgstr "%1%"
-
-#: contents/ui/SettingsComponent.qml:294
+#: contents/ui/SettingsComponent.qml:277
 #, kde-format
 msgid "Blur Background"
 msgstr "பின்புலத்தை மங்கலாக்கு"
@@ -272,3 +267,6 @@ msgstr ""
 #, kde-format
 msgid "Tab %1"
 msgstr "கீற்று %1"
+
+#~ msgid "%1%"
+#~ msgstr "%1%"

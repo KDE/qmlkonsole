@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qmlkonsole\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-10-24 00:50+0000\n"
+"POT-Creation-Date: 2022-11-16 00:49+0000\n"
 "PO-Revision-Date: 2022-09-24 15:12+0200\n"
 "Last-Translator: Stefan Asserhäll <stefan.asserhall@bredband.net>\n"
 "Language-Team: Swedish <kde-i18n-doc@kde.org>\n"
@@ -101,33 +101,28 @@ msgstr "Utseende"
 msgid "Color scheme"
 msgstr "Färgschema"
 
-#: contents/ui/SettingsComponent.qml:115 contents/ui/SettingsComponent.qml:129
+#: contents/ui/SettingsComponent.qml:104 contents/ui/SettingsComponent.qml:118
 #, kde-format
 msgid "Font Family"
 msgstr "Teckenfamilj"
 
-#: contents/ui/SettingsComponent.qml:162
+#: contents/ui/SettingsComponent.qml:151
 #, kde-format
 msgctxt "@title:window"
 msgid "Pick font"
 msgstr "Välj teckensnitt"
 
-#: contents/ui/SettingsComponent.qml:225
+#: contents/ui/SettingsComponent.qml:214
 #, kde-format
 msgid "Font Size"
 msgstr "Teckenstorlek"
 
-#: contents/ui/SettingsComponent.qml:244 contents/ui/SettingsComponent.qml:266
+#: contents/ui/SettingsComponent.qml:239
 #, kde-format
 msgid "Window Transparency"
 msgstr "Fönstergenomskinlighet"
 
-#: contents/ui/SettingsComponent.qml:245
-#, kde-format
-msgid "%1%"
-msgstr "%1 %"
-
-#: contents/ui/SettingsComponent.qml:294
+#: contents/ui/SettingsComponent.qml:277
 #, kde-format
 msgid "Blur Background"
 msgstr ""
@@ -274,6 +269,9 @@ msgstr "Devin Lin"
 #, kde-format
 msgid "Tab %1"
 msgstr "Flik %1"
+
+#~ msgid "%1%"
+#~ msgstr "%1 %"
 
 #, fuzzy
 #~| msgid "Close"
