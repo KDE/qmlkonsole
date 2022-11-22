@@ -347,6 +347,7 @@ Kirigami.Page {
                         anchors.fill: parent
                         
                         readonly property string tabName: model.name
+                        readonly property int modelIndex: model.index
                         readonly property bool isCurrentItem: SwipeView.isCurrentItem
                         
                         // with touch, to select text we first require users to press-and-hold to enter the selection mode
@@ -376,7 +377,7 @@ Kirigami.Page {
                         session: QMLTermSession {
                             id: mainsession
                             initialWorkingDirectory: "$HOME"
-                            onFinished: Qt.quit()
+                            onFinished: root.closeTab(terminal.modelIndex)
                             onMatchFound: {
                                 console.log("found at: %1 %2 %3 %4".arg(startColumn).arg(startLine).arg(endColumn).arg(endLine));
                             }
