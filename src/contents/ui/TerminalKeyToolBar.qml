@@ -63,6 +63,7 @@ ToolBar {
             clip: true
             
             RowLayout {
+                property real delegateWidth: root.width 
                 
                 TerminalKeyButton {
                     id: ctrlButton

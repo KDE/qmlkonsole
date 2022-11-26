@@ -71,11 +71,12 @@ ColumnLayout {
             MobileForm.FormComboBoxDelegate {
                 id: colorSchemeDropdown
                 text: i18n("Color scheme")
+                displayMode: MobileForm.FormComboBoxDelegate.Dialog
                 Component.onCompleted: currentIndex = indexOfValue(TerminalSettings.colorScheme)
                 model: terminal.availableColorSchemes
 
                 onClicked: {
-                    if (root.dialog) {
+                    if (root.dialog && displayMode === MobileForm.FormComboBoxDelegate.Dialog) {
                         dialogTimer.dialog = colorSchemeDropdown.dialog;
                         dialogTimer.restart();
                     }
@@ -226,7 +227,7 @@ ColumnLayout {
                 }
             }
             
-            MobileForm.FormDelegateSeparator { below: opacityDelegate }
+            MobileForm.FormDelegateSeparator {}
 
             MobileForm.AbstractFormDelegate {
                 id: opacityDelegate
@@ -270,7 +271,7 @@ ColumnLayout {
                 }
             }
 
-            MobileForm.FormDelegateSeparator { above: opacityDelegate; below: blurDelegate }
+            MobileForm.FormDelegateSeparator { below: blurDelegate }
 
             MobileForm.FormSwitchDelegate {
                 id: blurDelegate
