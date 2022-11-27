@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qmlkonsole\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-11-16 00:49+0000\n"
+"POT-Creation-Date: 2022-11-27 00:48+0000\n"
 "PO-Revision-Date: 2022-10-25 21:14+0530\n"
 "Last-Translator: Kishore G <kishore96@gmail.com>\n"
 "Language-Team: Tamil <kde-i18n-doc@kde.org>\n"
@@ -101,28 +101,28 @@ msgstr "தோற்றம்"
 msgid "Color scheme"
 msgstr "நிறத்திட்டம்"
 
-#: contents/ui/SettingsComponent.qml:104 contents/ui/SettingsComponent.qml:118
+#: contents/ui/SettingsComponent.qml:105 contents/ui/SettingsComponent.qml:119
 #, kde-format
 msgid "Font Family"
 msgstr "எழுத்துரு குடும்பம்"
 
-#: contents/ui/SettingsComponent.qml:151
+#: contents/ui/SettingsComponent.qml:152
 #, kde-format
 msgctxt "@title:window"
 msgid "Pick font"
 msgstr "எழுத்துருவை தேர்ந்தெடுத்தல்"
 
-#: contents/ui/SettingsComponent.qml:214
+#: contents/ui/SettingsComponent.qml:215
 #, kde-format
 msgid "Font Size"
 msgstr "எழுத்துருவின் அளவு"
 
-#: contents/ui/SettingsComponent.qml:239
+#: contents/ui/SettingsComponent.qml:240
 #, kde-format
 msgid "Window Transparency"
 msgstr "சாளர ஒளிபுகுமை"
 
-#: contents/ui/SettingsComponent.qml:277
+#: contents/ui/SettingsComponent.qml:278
 #, kde-format
 msgid "Blur Background"
 msgstr "பின்புலத்தை மங்கலாக்கு"
@@ -133,31 +133,31 @@ msgstr "பின்புலத்தை மங்கலாக்கு"
 msgid "Settings"
 msgstr "அமைப்புகள்"
 
-#: contents/ui/TerminalKeyToolBar.qml:71
+#: contents/ui/TerminalKeyToolBar.qml:72
 #, kde-format
 msgctxt "Control Key"
 msgid "Ctrl"
 msgstr "Ctrl"
 
-#: contents/ui/TerminalKeyToolBar.qml:89
+#: contents/ui/TerminalKeyToolBar.qml:90
 #, kde-format
 msgctxt "Alt Key"
 msgid "Alt"
 msgstr "Alt"
 
-#: contents/ui/TerminalKeyToolBar.qml:105
+#: contents/ui/TerminalKeyToolBar.qml:106
 #, kde-format
 msgctxt "Escape key"
 msgid "Esc"
 msgstr "Esc"
 
-#: contents/ui/TerminalKeyToolBar.qml:112
+#: contents/ui/TerminalKeyToolBar.qml:113
 #, kde-format
 msgctxt "Tab character key"
 msgid "Tab"
 msgstr "Tab"
 
-#: contents/ui/TerminalKeyToolBar.qml:161
+#: contents/ui/TerminalKeyToolBar.qml:162
 #, kde-format
 msgid "Toggle Virtual Keyboard"
 msgstr "மெய்நிகர் விசைப்பலகையை காட்டு/மறை"

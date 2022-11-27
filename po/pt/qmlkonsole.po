@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qmlkonsole\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-11-16 00:49+0000\n"
+"POT-Creation-Date: 2022-11-27 00:48+0000\n"
 "PO-Revision-Date: 2022-10-24 11:41+0100\n"
 "Last-Translator: José Nuno Coelho Pires <zepires@gmail.com>\n"
 "Language-Team: Portuguese <kde-i18n-pt@kde.org>\n"
@@ -97,28 +97,28 @@ msgstr "Aparência"
 msgid "Color scheme"
 msgstr "Esquema de cores"
 
-#: contents/ui/SettingsComponent.qml:104 contents/ui/SettingsComponent.qml:118
+#: contents/ui/SettingsComponent.qml:105 contents/ui/SettingsComponent.qml:119
 #, kde-format
 msgid "Font Family"
 msgstr "Família do Tipo de Letra"
 
-#: contents/ui/SettingsComponent.qml:151
+#: contents/ui/SettingsComponent.qml:152
 #, kde-format
 msgctxt "@title:window"
 msgid "Pick font"
 msgstr "Escolher o tipo de letra"
 
-#: contents/ui/SettingsComponent.qml:214
+#: contents/ui/SettingsComponent.qml:215
 #, kde-format
 msgid "Font Size"
 msgstr "Tamanho da Letra"
 
-#: contents/ui/SettingsComponent.qml:239
+#: contents/ui/SettingsComponent.qml:240
 #, kde-format
 msgid "Window Transparency"
 msgstr "Transparência da Janela"
 
-#: contents/ui/SettingsComponent.qml:277
+#: contents/ui/SettingsComponent.qml:278
 #, kde-format
 msgid "Blur Background"
 msgstr "Borrar o Fundo"
@@ -129,31 +129,31 @@ msgstr "Borrar o Fundo"
 msgid "Settings"
 msgstr "Configuração"
 
-#: contents/ui/TerminalKeyToolBar.qml:71
+#: contents/ui/TerminalKeyToolBar.qml:72
 #, kde-format
 msgctxt "Control Key"
 msgid "Ctrl"
 msgstr "Ctrl"
 
-#: contents/ui/TerminalKeyToolBar.qml:89
+#: contents/ui/TerminalKeyToolBar.qml:90
 #, kde-format
 msgctxt "Alt Key"
 msgid "Alt"
 msgstr "Alt"
 
-#: contents/ui/TerminalKeyToolBar.qml:105
+#: contents/ui/TerminalKeyToolBar.qml:106
 #, kde-format
 msgctxt "Escape key"
 msgid "Esc"
 msgstr "Esc"
 
-#: contents/ui/TerminalKeyToolBar.qml:112
+#: contents/ui/TerminalKeyToolBar.qml:113
 #, kde-format
 msgctxt "Tab character key"
 msgid "Tab"
 msgstr "Tab"
 
-#: contents/ui/TerminalKeyToolBar.qml:161
+#: contents/ui/TerminalKeyToolBar.qml:162
 #, kde-format
 msgid "Toggle Virtual Keyboard"
 msgstr "Comutar o Teclado Virtual"

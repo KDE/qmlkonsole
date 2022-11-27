@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qmlkonsole\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-11-16 00:49+0000\n"
+"POT-Creation-Date: 2022-11-27 00:48+0000\n"
 "PO-Revision-Date: 2022-10-25 15:45+0200\n"
 "Last-Translator: Xavier Besnard <xavier.besnard@neuf.fr>\n"
 "Language-Team: French <kde-francophone@kde.org>\n"
@@ -98,28 +98,28 @@ msgstr "Apparence"
 msgid "Color scheme"
 msgstr "Thème de couleurs"
 
-#: contents/ui/SettingsComponent.qml:104 contents/ui/SettingsComponent.qml:118
+#: contents/ui/SettingsComponent.qml:105 contents/ui/SettingsComponent.qml:119
 #, kde-format
 msgid "Font Family"
 msgstr "Famille de polices"
 
-#: contents/ui/SettingsComponent.qml:151
+#: contents/ui/SettingsComponent.qml:152
 #, kde-format
 msgctxt "@title:window"
 msgid "Pick font"
 msgstr "Sélectionner une police"
 
-#: contents/ui/SettingsComponent.qml:214
+#: contents/ui/SettingsComponent.qml:215
 #, kde-format
 msgid "Font Size"
 msgstr "Taille de la police"
 
-#: contents/ui/SettingsComponent.qml:239
+#: contents/ui/SettingsComponent.qml:240
 #, kde-format
 msgid "Window Transparency"
 msgstr "Transparence de fenêtre"
 
-#: contents/ui/SettingsComponent.qml:277
+#: contents/ui/SettingsComponent.qml:278
 #, kde-format
 msgid "Blur Background"
 msgstr "Flouter l'arrière-plan"
@@ -130,31 +130,31 @@ msgstr "Flouter l'arrière-plan"
 msgid "Settings"
 msgstr "Configuration"
 
-#: contents/ui/TerminalKeyToolBar.qml:71
+#: contents/ui/TerminalKeyToolBar.qml:72
 #, kde-format
 msgctxt "Control Key"
 msgid "Ctrl"
 msgstr "CTRL"
 
-#: contents/ui/TerminalKeyToolBar.qml:89
+#: contents/ui/TerminalKeyToolBar.qml:90
 #, kde-format
 msgctxt "Alt Key"
 msgid "Alt"
 msgstr "ALT"
 
-#: contents/ui/TerminalKeyToolBar.qml:105
+#: contents/ui/TerminalKeyToolBar.qml:106
 #, kde-format
 msgctxt "Escape key"
 msgid "Esc"
 msgstr "Échap"
 
-#: contents/ui/TerminalKeyToolBar.qml:112
+#: contents/ui/TerminalKeyToolBar.qml:113
 #, kde-format
 msgctxt "Tab character key"
 msgid "Tab"
 msgstr "Tab"
 
-#: contents/ui/TerminalKeyToolBar.qml:161
+#: contents/ui/TerminalKeyToolBar.qml:162
 #, kde-format
 msgid "Toggle Virtual Keyboard"
 msgstr "Ouvrir ou quitter le clavier virtuel"

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qmlkonsole\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-11-16 00:49+0000\n"
+"POT-Creation-Date: 2022-11-27 00:48+0000\n"
 "PO-Revision-Date: 2022-10-25 09:05+0200\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
@@ -102,28 +102,28 @@ msgstr "Videz"
 msgid "Color scheme"
 msgstr "Barvna shema"
 
-#: contents/ui/SettingsComponent.qml:104 contents/ui/SettingsComponent.qml:118
+#: contents/ui/SettingsComponent.qml:105 contents/ui/SettingsComponent.qml:119
 #, kde-format
 msgid "Font Family"
 msgstr "Družina pisav"
 
-#: contents/ui/SettingsComponent.qml:151
+#: contents/ui/SettingsComponent.qml:152
 #, kde-format
 msgctxt "@title:window"
 msgid "Pick font"
 msgstr "Poberi pisavo"
 
-#: contents/ui/SettingsComponent.qml:214
+#: contents/ui/SettingsComponent.qml:215
 #, kde-format
 msgid "Font Size"
 msgstr "Velikost pisave"
 
-#: contents/ui/SettingsComponent.qml:239
+#: contents/ui/SettingsComponent.qml:240
 #, kde-format
 msgid "Window Transparency"
 msgstr "Prosojnost okna"
 
-#: contents/ui/SettingsComponent.qml:277
+#: contents/ui/SettingsComponent.qml:278
 #, kde-format
 msgid "Blur Background"
 msgstr "Zamegli ozadje"
@@ -134,31 +134,31 @@ msgstr "Zamegli ozadje"
 msgid "Settings"
 msgstr "Nastavitve"
 
-#: contents/ui/TerminalKeyToolBar.qml:71
+#: contents/ui/TerminalKeyToolBar.qml:72
 #, kde-format
 msgctxt "Control Key"
 msgid "Ctrl"
 msgstr "Ctrl"
 
-#: contents/ui/TerminalKeyToolBar.qml:89
+#: contents/ui/TerminalKeyToolBar.qml:90
 #, kde-format
 msgctxt "Alt Key"
 msgid "Alt"
 msgstr "Alt"
 
-#: contents/ui/TerminalKeyToolBar.qml:105
+#: contents/ui/TerminalKeyToolBar.qml:106
 #, kde-format
 msgctxt "Escape key"
 msgid "Esc"
 msgstr "Esc"
 
-#: contents/ui/TerminalKeyToolBar.qml:112
+#: contents/ui/TerminalKeyToolBar.qml:113
 #, kde-format
 msgctxt "Tab character key"
 msgid "Tab"
 msgstr "Tab"
 
-#: contents/ui/TerminalKeyToolBar.qml:161
+#: contents/ui/TerminalKeyToolBar.qml:162
 #, kde-format
 msgid "Toggle Virtual Keyboard"
 msgstr "Preklopi navidezno tipkovnico"
