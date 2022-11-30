@@ -2,7 +2,7 @@
 # SPDX-License-Identifier: GPL-2.0-or-later
 
 project(qmlkonsole)
-set(PROJECT_VERSION "22.09")
+set(PROJECT_VERSION "22.11")
 
 cmake_minimum_required(VERSION 2.8.12)
 set(KF5_MIN_VERSION "5.18.0")
