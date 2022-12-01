@@ -1,7 +1,7 @@
 {
     "id": "org.kde.qmlkonsole",
     "runtime": "org.kde.Platform",
-    "runtime-version": "5.12",
+    "runtime-version": "5.15-21.08",
     "sdk": "org.kde.Sdk",
     "command": "qmlkonsole",
     "tags": ["nightly"],
@@ -18,6 +18,12 @@
     "separate-locales": false,
 
     "modules": [
+        {
+            "name": "kirigamiaddons",
+            "config-opts": [ "-DBUILD_TESTING=OFF" ],
+            "buildsystem": "cmake-ninja",
+            "sources": [ { "type": "git", "url": "https://invent.kde.org/libraries/kirigami-addons.git", "branch": "master" } ]
+        },
         {
             "name": "qmltermwidget",
             "buildsystem": "qmake",
