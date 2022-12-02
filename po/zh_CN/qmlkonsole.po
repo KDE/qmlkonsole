@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-11-27 00:48+0000\n"
-"PO-Revision-Date: 2022-11-19 14:49\n"
+"PO-Revision-Date: 2022-12-01 06:53\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
@@ -84,7 +84,7 @@ msgstr "操作 %1 已移除"
 #: contents/ui/SettingsComponent.qml:43
 #, kde-format
 msgid "General"
-msgstr ""
+msgstr "常规"
 
 #: contents/ui/SettingsComponent.qml:48
 #, kde-format
@@ -94,38 +94,38 @@ msgstr "关于"
 #: contents/ui/SettingsComponent.qml:68
 #, kde-format
 msgid "Appearance"
-msgstr ""
+msgstr "外观"
 
 #: contents/ui/SettingsComponent.qml:73
 #, kde-format
 msgid "Color scheme"
-msgstr ""
+msgstr "配色方案"
 
 #: contents/ui/SettingsComponent.qml:105 contents/ui/SettingsComponent.qml:119
 #, kde-format
 msgid "Font Family"
-msgstr ""
+msgstr "字体"
 
 #: contents/ui/SettingsComponent.qml:152
 #, kde-format
 msgctxt "@title:window"
 msgid "Pick font"
-msgstr ""
+msgstr "选择字体"
 
 #: contents/ui/SettingsComponent.qml:215
 #, kde-format
 msgid "Font Size"
-msgstr ""
+msgstr "字体大小"
 
 #: contents/ui/SettingsComponent.qml:240
 #, kde-format
 msgid "Window Transparency"
-msgstr ""
+msgstr "窗口透明"
 
 #: contents/ui/SettingsComponent.qml:278
 #, kde-format
 msgid "Blur Background"
-msgstr ""
+msgstr "背景模糊"
 
 #: contents/ui/SettingsDialog.qml:17 contents/ui/SettingsPage.qml:18
 #: contents/ui/TerminalPage.qml:190
