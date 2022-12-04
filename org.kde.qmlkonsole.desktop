@@ -9,6 +9,7 @@ Terminal=false
 Categories=Qt;KDE;System;TerminalEmulator;
 StartupNotify=true
 X-KDE-AuthorizeAction=shell_access
+X-KDE-FormFactor=desktop;tablet;handset;
 
 Name=Terminal
 Name[ca]=Terminal

@@ -22,6 +22,8 @@ Kirigami.Page {
     bottomPadding: 0
     leftPadding: 0
     rightPadding: 0
+    
+    property bool initialSessionCreated: false
 
     function forceTerminalFocus() {
         const wasVisible = Qt.inputMethod.visible;
@@ -366,6 +368,20 @@ Kirigami.Page {
                         opacity: TerminalSettings.windowOpacity
                         
                         Component.onCompleted: {
+                            if (!root.initialSessionCreated) {
+                                
+                                // setup for CLI arguments
+                                if (INITIAL_WORK_DIR != "") {
+                                    mainsession.initialWorkingDirectory = INITIAL_WORK_DIR;
+                                }
+                                if (INITIAL_COMMAND != "") {
+                                    mainsession.sendText(INITIAL_COMMAND);
+                                    terminal.pressKey(Qt.Key_Enter, Qt.NoModifier, true);
+                                }
+                                
+                                root.initialSessionCreated = true;
+                            }
+                            
                             mainsession.startShellProgram();
                         }
                         

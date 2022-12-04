@@ -23,9 +23,18 @@
 
 constexpr auto URI = "org.kde.qmlkonsole";
 
+QCommandLineParser *createParser()
+{
+    QCommandLineParser *parser = new QCommandLineParser;
+    parser->addOption(QCommandLineOption(QStringLiteral("e"), i18n("Command to execute"), QStringLiteral("command")));
+    parser->addOption(QCommandLineOption(QStringLiteral("workdir"), i18n("Set the initial working directory to 'dir'"), QStringLiteral("dir")));
+    parser->addVersionOption();
+    parser->addHelpOption();
+    return parser;
+}
+
 Q_DECL_EXPORT int main(int argc, char *argv[])
 {
-    QCommandLineParser parser;
     QGuiApplication::setAttribute(Qt::AA_EnableHighDpiScaling);
     
     QApplication app(argc, argv);
@@ -42,8 +51,6 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
     aboutData.addAuthor(i18n("Devin Lin"), QString(), QStringLiteral("devin@kde.org"));
     KAboutData::setApplicationData(aboutData);
 
-    parser.addVersionOption();
-    parser.process(app);
     qmlRegisterSingletonInstance<TerminalSettings>(URI, 1, 0, "TerminalSettings", TerminalSettings::self());
 
     QObject::connect(TerminalSettings::self(), &TerminalSettings::configChanged, QApplication::instance(), [] {
@@ -53,6 +60,15 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
 
     QQmlApplicationEngine engine;
     engine.rootContext()->setContextObject(new KLocalizedContext(&engine));
+    
+    // ~~~~ Parse command line arguments ~~~~
+    {
+        QScopedPointer<QCommandLineParser> parser(createParser());
+        parser->process(app);
+
+        engine.rootContext()->setContextProperty("INITIAL_COMMAND", parser->isSet(QStringLiteral("e")) ? parser->value(QStringLiteral("e")) : "");
+        engine.rootContext()->setContextProperty("INITIAL_WORK_DIR", parser->isSet(QStringLiteral("workdir")) ? parser->value(QStringLiteral("workdir")) : QDir::currentPath());
+    }
     
     qmlRegisterSingletonType<TerminalTabModel>(URI, 1, 0, "SavedCommandsModel", [](QQmlEngine *, QJSEngine *) -> QObject * {
         return SavedCommandsModel::self();
@@ -70,12 +86,12 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
     
     engine.load(QUrl(QStringLiteral("qrc:///main.qml")));
 
-    // required for X11
-    app.setWindowIcon(QIcon::fromTheme(QStringLiteral("org.kde.qmlkonsole")));
-
     if (engine.rootObjects().isEmpty()) {
         return -1;
     }
-    int ret = app.exec();
-    return ret;
+    
+    // required for X11
+    app.setWindowIcon(QIcon::fromTheme(QStringLiteral("org.kde.qmlkonsole")));
+    
+    return app.exec();
 }
