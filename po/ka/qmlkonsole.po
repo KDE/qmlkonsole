@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qmlkonsole\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-11-27 00:48+0000\n"
+"POT-Creation-Date: 2022-12-05 00:49+0000\n"
 "PO-Revision-Date: 2022-10-30 20:56+0100\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
@@ -44,7 +44,7 @@ msgstr "შენახული ბრძანებები"
 msgid "Configure"
 msgstr "მორგება"
 
-#: contents/ui/SavedCommandsDialog.qml:34 contents/ui/TerminalPage.qml:303
+#: contents/ui/SavedCommandsDialog.qml:34 contents/ui/TerminalPage.qml:305
 #, kde-format
 msgid "Close"
 msgstr "დახურვა"
@@ -129,7 +129,7 @@ msgid "Blur Background"
 msgstr "ფონის გაბუნდოვნება"
 
 #: contents/ui/SettingsDialog.qml:17 contents/ui/SettingsPage.qml:18
-#: contents/ui/TerminalPage.qml:190
+#: contents/ui/TerminalPage.qml:192
 #, kde-format
 msgid "Settings"
 msgstr "პარამეტრები"
@@ -163,70 +163,70 @@ msgstr "Tab"
 msgid "Toggle Virtual Keyboard"
 msgstr "ვირტუალური კლავიატურის გადართვა"
 
-#: contents/ui/TerminalPage.qml:101
+#: contents/ui/TerminalPage.qml:103
 #, kde-format
 msgctxt "@action:intoolbar"
 msgid "New Tab"
 msgstr "ახალი ჩანართი"
 
-#: contents/ui/TerminalPage.qml:111
+#: contents/ui/TerminalPage.qml:113
 #, kde-format
 msgctxt "@action:intoolbar"
 msgid "Saved Commands"
 msgstr "შენახული ბრძანებები"
 
-#: contents/ui/TerminalPage.qml:118
+#: contents/ui/TerminalPage.qml:120
 #, kde-format
 msgid "reverse-i-search"
 msgstr "უკუღმა-ძებნა"
 
-#: contents/ui/TerminalPage.qml:126
+#: contents/ui/TerminalPage.qml:128
 #, kde-format
 msgid "Cancel current command"
 msgstr "მიმდინარე ბრძანების გაუქმება"
 
-#: contents/ui/TerminalPage.qml:134
+#: contents/ui/TerminalPage.qml:136
 #, kde-format
 msgid "Send EOF"
 msgstr "EOF-ის გაგზავნა"
 
-#: contents/ui/TerminalPage.qml:142
+#: contents/ui/TerminalPage.qml:144
 #, kde-format
 msgid "Cursor to line start"
 msgstr "კურსორი ხაზის დასაწყისში"
 
-#: contents/ui/TerminalPage.qml:150
+#: contents/ui/TerminalPage.qml:152
 #, kde-format
 msgid "Cursor to line end"
 msgstr "კურორი ხაზის ბოლოში"
 
-#: contents/ui/TerminalPage.qml:158
+#: contents/ui/TerminalPage.qml:160
 #, kde-format
 msgid "Kill to line end"
 msgstr "მოკვლა ხაზის დასასრულამდე"
 
-#: contents/ui/TerminalPage.qml:166
+#: contents/ui/TerminalPage.qml:168
 #, kde-format
 msgid "Paste from kill buffer"
 msgstr "მოკვლის ბუფერდან ჩასმა"
 
-#: contents/ui/TerminalPage.qml:174
+#: contents/ui/TerminalPage.qml:176
 #, kde-format
 msgid "Copy"
 msgstr "კოპირება"
 
-#: contents/ui/TerminalPage.qml:184
+#: contents/ui/TerminalPage.qml:186
 #, kde-format
 msgid "Paste"
 msgstr "ჩასმა"
 
-#: contents/ui/TerminalPage.qml:241
+#: contents/ui/TerminalPage.qml:243
 #, kde-format
 msgctxt "@title:window"
 msgid "Confirm closing %1"
 msgstr "%1-ის დახურვის დადასტურება"
 
-#: contents/ui/TerminalPage.qml:257
+#: contents/ui/TerminalPage.qml:259
 #, kde-format
 msgid ""
 "A process is currently running in this tab. Are you sure you want to close "
@@ -235,33 +235,43 @@ msgstr ""
 "ამ ჩანართში ამჟამად პროცესია გაშვებული. დარწმუნებული ბრძანდებით, რომ "
 "გნებავთ, დახუროთ ის?"
 
-#: contents/ui/TerminalPage.qml:264
+#: contents/ui/TerminalPage.qml:266
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Tab"
 msgstr "აირჩიეთ ჩანართი"
 
-#: contents/ui/TerminalPage.qml:316
+#: contents/ui/TerminalPage.qml:318
 #, kde-format
 msgid "selection mode"
 msgstr "არჩევის რეჟიმი"
 
-#: contents/ui/TerminalPage.qml:324
+#: contents/ui/TerminalPage.qml:326
 #, kde-format
 msgid "Disable"
 msgstr "გამორთვა"
 
-#: main.cpp:39
+#: main.cpp:29
+#, kde-format
+msgid "Command to execute"
+msgstr ""
+
+#: main.cpp:30
+#, kde-format
+msgid "Set the initial working directory to 'dir'"
+msgstr ""
+
+#: main.cpp:48
 #, kde-format
 msgid "© 2020-2022 KDE Community"
 msgstr "© 2020-2022 KDE-ის საზოგადოება"
 
-#: main.cpp:41
+#: main.cpp:50
 #, kde-format
 msgid "Jonah Brüchert"
 msgstr "Jonah Brüchert"
 
-#: main.cpp:42
+#: main.cpp:51
 #, kde-format
 msgid "Devin Lin"
 msgstr "Devin Lin"

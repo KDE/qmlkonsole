@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qmlkonsole\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-11-27 00:48+0000\n"
+"POT-Creation-Date: 2022-12-05 00:49+0000\n"
 "PO-Revision-Date: 2022-10-25 07:13+0200\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
@@ -46,7 +46,7 @@ msgstr "Gordetako komandoak"
 msgid "Configure"
 msgstr "Konfiguratu"
 
-#: contents/ui/SavedCommandsDialog.qml:34 contents/ui/TerminalPage.qml:303
+#: contents/ui/SavedCommandsDialog.qml:34 contents/ui/TerminalPage.qml:305
 #, kde-format
 msgid "Close"
 msgstr "Itxi"
@@ -131,7 +131,7 @@ msgid "Blur Background"
 msgstr "Atzeko-plano lausoa"
 
 #: contents/ui/SettingsDialog.qml:17 contents/ui/SettingsPage.qml:18
-#: contents/ui/TerminalPage.qml:190
+#: contents/ui/TerminalPage.qml:192
 #, kde-format
 msgid "Settings"
 msgstr "Ezarpenak"
@@ -165,103 +165,113 @@ msgstr "Tab"
 msgid "Toggle Virtual Keyboard"
 msgstr "Txandakatu alegiazko teklatua"
 
-#: contents/ui/TerminalPage.qml:101
+#: contents/ui/TerminalPage.qml:103
 #, kde-format
 msgctxt "@action:intoolbar"
 msgid "New Tab"
 msgstr "Fitxa berria"
 
-#: contents/ui/TerminalPage.qml:111
+#: contents/ui/TerminalPage.qml:113
 #, kde-format
 msgctxt "@action:intoolbar"
 msgid "Saved Commands"
 msgstr "Gordetako komandoak"
 
-#: contents/ui/TerminalPage.qml:118
+#: contents/ui/TerminalPage.qml:120
 #, kde-format
 msgid "reverse-i-search"
 msgstr "alderantzizko bilaketa elkarreragilea"
 
-#: contents/ui/TerminalPage.qml:126
+#: contents/ui/TerminalPage.qml:128
 #, kde-format
 msgid "Cancel current command"
 msgstr "Bertan behera utzi uneko komandoa"
 
-#: contents/ui/TerminalPage.qml:134
+#: contents/ui/TerminalPage.qml:136
 #, kde-format
 msgid "Send EOF"
 msgstr "Bidali EOF (fitxategi amaiera)"
 
-#: contents/ui/TerminalPage.qml:142
+#: contents/ui/TerminalPage.qml:144
 #, kde-format
 msgid "Cursor to line start"
 msgstr "Kurtsorea lerro hasierara"
 
-#: contents/ui/TerminalPage.qml:150
+#: contents/ui/TerminalPage.qml:152
 #, kde-format
 msgid "Cursor to line end"
 msgstr "Kurtsorea lerro amaierara"
 
-#: contents/ui/TerminalPage.qml:158
+#: contents/ui/TerminalPage.qml:160
 #, kde-format
 msgid "Kill to line end"
 msgstr "Hil lerro amaiera arte"
 
-#: contents/ui/TerminalPage.qml:166
+#: contents/ui/TerminalPage.qml:168
 #, kde-format
 msgid "Paste from kill buffer"
 msgstr "Itsatsi hildako bufferretik"
 
-#: contents/ui/TerminalPage.qml:174
+#: contents/ui/TerminalPage.qml:176
 #, kde-format
 msgid "Copy"
 msgstr "Kopiatu"
 
-#: contents/ui/TerminalPage.qml:184
+#: contents/ui/TerminalPage.qml:186
 #, kde-format
 msgid "Paste"
 msgstr "Itsatsi"
 
-#: contents/ui/TerminalPage.qml:241
+#: contents/ui/TerminalPage.qml:243
 #, kde-format
 msgctxt "@title:window"
 msgid "Confirm closing %1"
 msgstr "Berretsi %1 ixtea"
 
-#: contents/ui/TerminalPage.qml:257
+#: contents/ui/TerminalPage.qml:259
 #, kde-format
 msgid ""
 "A process is currently running in this tab. Are you sure you want to close "
 "it?"
 msgstr "Prozesu bat martxan dago fitxa horretan. Ziur zaude itxi nahi duzula?"
 
-#: contents/ui/TerminalPage.qml:264
+#: contents/ui/TerminalPage.qml:266
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Tab"
 msgstr "Hautatu fitxa"
 
-#: contents/ui/TerminalPage.qml:316
+#: contents/ui/TerminalPage.qml:318
 #, kde-format
 msgid "selection mode"
 msgstr "Hautapen modua"
 
-#: contents/ui/TerminalPage.qml:324
+#: contents/ui/TerminalPage.qml:326
 #, kde-format
 msgid "Disable"
 msgstr "Ezgaitu"
 
-#: main.cpp:39
+#: main.cpp:29
+#, kde-format
+msgid "Command to execute"
+msgstr ""
+
+#: main.cpp:30
+#, kde-format
+msgid "Set the initial working directory to 'dir'"
+msgstr ""
+
+#: main.cpp:48
 #, kde-format
 msgid "© 2020-2022 KDE Community"
 msgstr "© 2020-2022 KDE Community"
 
-#: main.cpp:41
+#: main.cpp:50
 #, kde-format
 msgid "Jonah Brüchert"
 msgstr "Jonah Brüchert"
 
-#: main.cpp:42
+#: main.cpp:51
 #, kde-format
 msgid "Devin Lin"
 msgstr "Devin Lin"
