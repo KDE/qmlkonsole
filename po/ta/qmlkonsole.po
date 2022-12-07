@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: qmlkonsole\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-12-05 00:49+0000\n"
-"PO-Revision-Date: 2022-10-25 21:14+0530\n"
+"PO-Revision-Date: 2022-12-06 19:50+0530\n"
 "Last-Translator: Kishore G <kishore96@gmail.com>\n"
 "Language-Team: Tamil <kde-i18n-doc@kde.org>\n"
 "Language: ta\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 22.08.2\n"
+"X-Generator: Lokalize 22.08.3\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -251,12 +251,12 @@ msgstr "முடக்கு"
 #: main.cpp:29
 #, kde-format
 msgid "Command to execute"
-msgstr ""
+msgstr "செயல்படுத்த வேண்டிய கட்டளை"
 
 #: main.cpp:30
 #, kde-format
 msgid "Set the initial working directory to 'dir'"
-msgstr ""
+msgstr "துவக்க அடைவை 'dir' என்பதாக அமைக்கும்"
 
 #: main.cpp:48
 #, kde-format
