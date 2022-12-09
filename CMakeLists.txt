@@ -5,7 +5,7 @@ project(qmlkonsole)
 set(PROJECT_VERSION "22.11")
 
 cmake_minimum_required(VERSION 2.8.12)
-set(KF5_MIN_VERSION "5.18.0")
+set(KF5_MIN_VERSION "5.101.0")
 set(QT_MIN_VERSION "5.5.0")
 
 ################# Disallow in-source build #################
