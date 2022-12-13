@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: qmlkonsole\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-12-05 00:49+0000\n"
-"PO-Revision-Date: 2022-10-24 11:41+0100\n"
+"PO-Revision-Date: 2022-12-12 18:21+0000\n"
 "Last-Translator: José Nuno Coelho Pires <zepires@gmail.com>\n"
 "Language-Team: Portuguese <kde-i18n-pt@kde.org>\n"
 "Language: pt\n"
@@ -248,12 +248,12 @@ msgstr "Desactivar"
 #: main.cpp:29
 #, kde-format
 msgid "Command to execute"
-msgstr ""
+msgstr "Comando a executar"
 
 #: main.cpp:30
 #, kde-format
 msgid "Set the initial working directory to 'dir'"
-msgstr ""
+msgstr "Definir a pasta de trabalho inicial como 'pasta'"
 
 #: main.cpp:48
 #, kde-format
@@ -274,6 +274,3 @@ msgstr "Devin Lin"
 #, kde-format
 msgid "Tab %1"
 msgstr "Página %1"
-
-#~ msgid "%1%"
-#~ msgstr "%1%"
