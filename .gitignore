@@ -13,3 +13,4 @@ build/
 .idea
 /cmake-build*
 *.kdev4
+/CMakeLists.txt.user
