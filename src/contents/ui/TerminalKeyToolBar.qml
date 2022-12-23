@@ -69,7 +69,7 @@ ToolBar {
                     id: ctrlButton
                     Layout.preferredWidth: Math.max(implicitWidth + Kirigami.Units.smallSpacing * 2, Math.round(Kirigami.Units.gridUnit * 2))
                     Layout.preferredHeight: Kirigami.Units.gridUnit * 2
-                    text: i18nc("Control Key", "Ctrl")
+                    text: i18nc("Control Key (should match the key on the keyboard of the locale)", "Ctrl")
                     checkable: true
                     
                     onClicked: {
@@ -87,7 +87,7 @@ ToolBar {
                     id: altButton
                     Layout.preferredWidth: Math.max(implicitWidth + Kirigami.Units.smallSpacing * 2, Math.round(Kirigami.Units.gridUnit * 1.75))
                     Layout.preferredHeight: Kirigami.Units.gridUnit * 2
-                    text: i18nc("Alt Key", "Alt")
+                    text: i18nc("Alt Key (should match the key on the keyboard of the locale)", "Alt")
                     checkable: true
                     
                     onClicked: {
@@ -103,14 +103,14 @@ ToolBar {
 
                 TerminalKeyButton {
                     Layout.preferredWidth: Kirigami.Units.gridUnit * 2
-                    text: i18nc("Escape key", "Esc")
+                    text: i18nc("Escape key (should match the key on the keyboard of the locale)", "Esc")
                     onClicked: {
                         terminal.pressKey(Qt.Key_Escape, 0, true)
                     }
                 }
                 TerminalKeyButton {
                     Layout.preferredWidth: Kirigami.Units.gridUnit * 2
-                    text: i18nc("Tab character key", "Tab")
+                    text: i18nc("Tab character key (should match the key on the keyboard of the locale)", "Tab")
                     onClicked: terminal.pressKey(Qt.Key_Tab, 0, true, 0, "")
                 }
 
