@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qmlkonsole\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-12-05 00:49+0000\n"
+"POT-Creation-Date: 2022-12-24 00:52+0000\n"
 "PO-Revision-Date: 2020-06-13 17:20-0700\n"
 "Last-Translator: Japanese KDE translation team <kde-jp@kde.org>\n"
 "Language-Team: Japanese <kde-jp@kde.org>\n"
@@ -132,25 +132,26 @@ msgstr ""
 
 #: contents/ui/TerminalKeyToolBar.qml:72
 #, kde-format
-msgctxt "Control Key"
+msgctxt "Control Key (should match the key on the keyboard of the locale)"
 msgid "Ctrl"
 msgstr ""
 
 #: contents/ui/TerminalKeyToolBar.qml:90
 #, kde-format
-msgctxt "Alt Key"
+msgctxt "Alt Key (should match the key on the keyboard of the locale)"
 msgid "Alt"
 msgstr ""
 
 #: contents/ui/TerminalKeyToolBar.qml:106
 #, kde-format
-msgctxt "Escape key"
+msgctxt "Escape key (should match the key on the keyboard of the locale)"
 msgid "Esc"
 msgstr ""
 
 #: contents/ui/TerminalKeyToolBar.qml:113
 #, kde-format
-msgctxt "Tab character key"
+msgctxt ""
+"Tab character key (should match the key on the keyboard of the locale)"
 msgid "Tab"
 msgstr ""
 
