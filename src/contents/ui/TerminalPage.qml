@@ -393,6 +393,8 @@ Kirigami.Page {
                         session: QMLTermSession {
                             id: mainsession
                             initialWorkingDirectory: "$HOME"
+                            shellProgram: ShellCommand.executable
+                            shellProgramArgs: ShellCommand.args
                             onFinished: root.closeTab(terminal.modelIndex)
                             onMatchFound: {
                                 console.log("found at: %1 %2 %3 %4".arg(startColumn).arg(startLine).arg(endColumn).arg(endLine));

@@ -20,6 +20,7 @@
 #include "terminaltabmodel.h"
 #include "version.h"
 #include "util.h"
+#include "shellcommand.h"
 
 constexpr auto URI = "org.kde.qmlkonsole";
 
@@ -52,6 +53,9 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
     KAboutData::setApplicationData(aboutData);
 
     qmlRegisterSingletonInstance<TerminalSettings>(URI, 1, 0, "TerminalSettings", TerminalSettings::self());
+    qmlRegisterSingletonType<ShellCommand>(URI, 1, 0, "ShellCommand", [](QQmlEngine *, QJSEngine *) {
+        return new ShellCommand();
+    });
 
     QObject::connect(TerminalSettings::self(), &TerminalSettings::configChanged, QApplication::instance(), [] {
         TerminalSettings::self()->save();
