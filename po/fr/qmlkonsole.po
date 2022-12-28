@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qmlkonsole\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-12-24 00:52+0000\n"
-"PO-Revision-Date: 2022-12-05 19:16+0100\n"
+"POT-Creation-Date: 2022-12-28 00:52+0000\n"
+"PO-Revision-Date: 2022-12-27 10:08+0100\n"
 "Last-Translator: Xavier Besnard <xavier.besnard@neuf.fr>\n"
 "Language-Team: French <kde-francophone@kde.org>\n"
 "Language: fr\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 22.11.90\n"
+"X-Generator: Lokalize 22.12.0\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -131,33 +131,25 @@ msgid "Settings"
 msgstr "Configuration"
 
 #: contents/ui/TerminalKeyToolBar.qml:72
-#, fuzzy, kde-format
-#| msgctxt "Control Key"
-#| msgid "Ctrl"
+#, kde-format
 msgctxt "Control Key (should match the key on the keyboard of the locale)"
 msgid "Ctrl"
 msgstr "CTRL"
 
 #: contents/ui/TerminalKeyToolBar.qml:90
-#, fuzzy, kde-format
-#| msgctxt "Alt Key"
-#| msgid "Alt"
+#, kde-format
 msgctxt "Alt Key (should match the key on the keyboard of the locale)"
 msgid "Alt"
 msgstr "ALT"
 
 #: contents/ui/TerminalKeyToolBar.qml:106
-#, fuzzy, kde-format
-#| msgctxt "Escape key"
-#| msgid "Esc"
+#, kde-format
 msgctxt "Escape key (should match the key on the keyboard of the locale)"
 msgid "Esc"
 msgstr "Échap"
 
 #: contents/ui/TerminalKeyToolBar.qml:113
-#, fuzzy, kde-format
-#| msgctxt "Tab character key"
-#| msgid "Tab"
+#, kde-format
 msgctxt ""
 "Tab character key (should match the key on the keyboard of the locale)"
 msgid "Tab"
@@ -256,27 +248,27 @@ msgstr "Mode de sélection"
 msgid "Disable"
 msgstr "Désactiver"
 
-#: main.cpp:29
+#: main.cpp:30
 #, kde-format
 msgid "Command to execute"
 msgstr "Commande à exécuter"
 
-#: main.cpp:30
+#: main.cpp:31
 #, kde-format
 msgid "Set the initial working directory to 'dir'"
 msgstr "Définir le dossier initial de travail à « dir »"
 
-#: main.cpp:48
+#: main.cpp:49
 #, kde-format
 msgid "© 2020-2022 KDE Community"
 msgstr "© 2020-2022 Communauté KDE"
 
-#: main.cpp:50
+#: main.cpp:51
 #, kde-format
 msgid "Jonah Brüchert"
 msgstr "Jonah Brüchert"
 
-#: main.cpp:51
+#: main.cpp:52
 #, kde-format
 msgid "Devin Lin"
 msgstr "Devin Lin"

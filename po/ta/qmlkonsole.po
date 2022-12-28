@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qmlkonsole\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-12-24 00:52+0000\n"
-"PO-Revision-Date: 2022-12-06 19:50+0530\n"
+"POT-Creation-Date: 2022-12-28 00:52+0000\n"
+"PO-Revision-Date: 2022-12-27 21:42+0530\n"
 "Last-Translator: Kishore G <kishore96@gmail.com>\n"
 "Language-Team: Tamil <kde-i18n-doc@kde.org>\n"
 "Language: ta\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 22.08.3\n"
+"X-Generator: Lokalize 22.12.0\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -134,33 +134,25 @@ msgid "Settings"
 msgstr "அமைப்புகள்"
 
 #: contents/ui/TerminalKeyToolBar.qml:72
-#, fuzzy, kde-format
-#| msgctxt "Control Key"
-#| msgid "Ctrl"
+#, kde-format
 msgctxt "Control Key (should match the key on the keyboard of the locale)"
 msgid "Ctrl"
 msgstr "Ctrl"
 
 #: contents/ui/TerminalKeyToolBar.qml:90
-#, fuzzy, kde-format
-#| msgctxt "Alt Key"
-#| msgid "Alt"
+#, kde-format
 msgctxt "Alt Key (should match the key on the keyboard of the locale)"
 msgid "Alt"
 msgstr "Alt"
 
 #: contents/ui/TerminalKeyToolBar.qml:106
-#, fuzzy, kde-format
-#| msgctxt "Escape key"
-#| msgid "Esc"
+#, kde-format
 msgctxt "Escape key (should match the key on the keyboard of the locale)"
 msgid "Esc"
 msgstr "Esc"
 
 #: contents/ui/TerminalKeyToolBar.qml:113
-#, fuzzy, kde-format
-#| msgctxt "Tab character key"
-#| msgid "Tab"
+#, kde-format
 msgctxt ""
 "Tab character key (should match the key on the keyboard of the locale)"
 msgid "Tab"
@@ -257,27 +249,27 @@ msgstr "தேர்வு பயன்முறை"
 msgid "Disable"
 msgstr "முடக்கு"
 
-#: main.cpp:29
+#: main.cpp:30
 #, kde-format
 msgid "Command to execute"
 msgstr "செயல்படுத்த வேண்டிய கட்டளை"
 
-#: main.cpp:30
+#: main.cpp:31
 #, kde-format
 msgid "Set the initial working directory to 'dir'"
 msgstr "துவக்க அடைவை 'dir' என்பதாக அமைக்கும்"
 
-#: main.cpp:48
+#: main.cpp:49
 #, kde-format
 msgid "© 2020-2022 KDE Community"
 msgstr "© 2020-2022 கே.டீ.யீ. சமூகம்"
 
-#: main.cpp:50
+#: main.cpp:51
 #, kde-format
 msgid "Jonah Brüchert"
 msgstr ""
 
-#: main.cpp:51
+#: main.cpp:52
 #, kde-format
 msgid "Devin Lin"
 msgstr ""
