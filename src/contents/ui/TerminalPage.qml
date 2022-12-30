@@ -454,7 +454,7 @@ Kirigami.Page {
     }
 
     footer: TerminalKeyToolBar {
-        visible: Kirigami.Settings.isMobile
+        visible: Kirigami.Settings.isMobile || Kirigami.Settings.tabletMode
         terminal: root.currentTerminal
     }
 }
