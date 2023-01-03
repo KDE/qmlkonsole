@@ -1,80 +1,83 @@
 # Copyright (C) YEAR This file is copyright:
 # This file is distributed under the same license as the qmlkonsole package.
-#
 # Burkhard Lück <lueck@hube-lueck.de>, 2020, 2021.
+# Frank Steinmetzger <dev-kde@felsenfleischer.de>, 2022.
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: qmlkonsole\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-12-28 00:52+0000\n"
-"PO-Revision-Date: 2021-04-16 10:15+0200\n"
-"Last-Translator: Burkhard Lück <lueck@hube-lueck.de>\n"
+"PO-Revision-Date: 2022-12-27 21:21+0100\n"
+"Last-Translator: Frank Steinmetzger <dev-kde@felsenfleischer.de>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 22.12.0\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr ""
+msgstr "Frank Steinmetzger"
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr ""
+msgstr "dev-kde@felsenfleischer.de"
 
 #: contents/ui/main.qml:16
 #, kde-format
 msgid "Terminal"
-msgstr ""
+msgstr "Terminal"
 
 #: contents/ui/SavedCommandsDialog.qml:19
 #, kde-format
 msgctxt "@title:window"
 msgid "Saved Commands"
-msgstr ""
+msgstr "Gespeicherte Befehle"
 
 #: contents/ui/SavedCommandsDialog.qml:26
 #, kde-format
 msgid "Configure"
-msgstr ""
+msgstr "Einrichten"
 
 #: contents/ui/SavedCommandsDialog.qml:34 contents/ui/TerminalPage.qml:305
 #, kde-format
 msgid "Close"
-msgstr ""
+msgstr "Schließen"
 
 #: contents/ui/SavedCommandsDialog.qml:53
 #: contents/ui/SavedCommandsSettings.qml:43
 #, kde-format
 msgid "No saved commands"
-msgstr ""
+msgstr "Keine gespeicherten Befehle"
 
 #: contents/ui/SavedCommandsDialog.qml:54
 #: contents/ui/SavedCommandsSettings.qml:44
 #, kde-format
 msgid "Save commands to quickly run them without typing them out."
 msgstr ""
+"Speichern Sie Befehle ab, um sie schnell auszuführen ohne sie eingeben zu "
+"müssen."
 
 #: contents/ui/SavedCommandsSettings.qml:17
 #, kde-format
 msgid "Saved Commands"
-msgstr ""
+msgstr "Gespeicherte Befehle"
 
 #: contents/ui/SavedCommandsSettings.qml:22
 #: contents/ui/SavedCommandsSettings.qml:82
 #, kde-format
 msgid "Add Command"
-msgstr ""
+msgstr "Befehl hinzufügen"
 
 #: contents/ui/SavedCommandsSettings.qml:48
-#, fuzzy, kde-format
-#| msgid "Add action"
+#, kde-format
 msgid "Add command"
-msgstr "Aktion hinzufügen"
+msgstr "Befehl hinzufügen"
 
 #: contents/ui/SavedCommandsSettings.qml:73
 #, kde-format
@@ -84,49 +87,48 @@ msgstr "Aktion %1 entfernt"
 #: contents/ui/SettingsComponent.qml:43
 #, kde-format
 msgid "General"
-msgstr ""
+msgstr "Allgemein"
 
 #: contents/ui/SettingsComponent.qml:48
 #, kde-format
 msgid "About"
-msgstr ""
+msgstr "Über"
 
 #: contents/ui/SettingsComponent.qml:68
 #, kde-format
 msgid "Appearance"
-msgstr ""
+msgstr "Erscheinungsbild"
 
 #: contents/ui/SettingsComponent.qml:73
-#, fuzzy, kde-format
-#| msgid "Color Scheme"
+#, kde-format
 msgid "Color scheme"
 msgstr "Farbschema"
 
 #: contents/ui/SettingsComponent.qml:105 contents/ui/SettingsComponent.qml:119
 #, kde-format
 msgid "Font Family"
-msgstr ""
+msgstr "Schriftart"
 
 #: contents/ui/SettingsComponent.qml:152
 #, kde-format
 msgctxt "@title:window"
 msgid "Pick font"
-msgstr ""
+msgstr "Schrift auswählen"
 
 #: contents/ui/SettingsComponent.qml:215
 #, kde-format
 msgid "Font Size"
-msgstr ""
+msgstr "Schriftgröße"
 
 #: contents/ui/SettingsComponent.qml:240
 #, kde-format
 msgid "Window Transparency"
-msgstr ""
+msgstr "Transparenz"
 
 #: contents/ui/SettingsComponent.qml:278
 #, kde-format
 msgid "Blur Background"
-msgstr ""
+msgstr "Hintergrund verwischen"
 
 #: contents/ui/SettingsDialog.qml:17 contents/ui/SettingsPage.qml:18
 #: contents/ui/TerminalPage.qml:192
@@ -170,19 +172,19 @@ msgstr "Tabulator"
 #: contents/ui/TerminalKeyToolBar.qml:162
 #, kde-format
 msgid "Toggle Virtual Keyboard"
-msgstr ""
+msgstr "Virtuelle Tastatur"
 
 #: contents/ui/TerminalPage.qml:103
 #, kde-format
 msgctxt "@action:intoolbar"
 msgid "New Tab"
-msgstr ""
+msgstr "Neues Unterfenster"
 
 #: contents/ui/TerminalPage.qml:113
 #, kde-format
 msgctxt "@action:intoolbar"
 msgid "Saved Commands"
-msgstr ""
+msgstr "Gespeicherte Befehle"
 
 #: contents/ui/TerminalPage.qml:120
 #, kde-format
@@ -197,17 +199,17 @@ msgstr "Aktuellen Befehl abbrechen"
 #: contents/ui/TerminalPage.qml:136
 #, kde-format
 msgid "Send EOF"
-msgstr ""
+msgstr "EOF senden"
 
 #: contents/ui/TerminalPage.qml:144
 #, kde-format
 msgid "Cursor to line start"
-msgstr ""
+msgstr "Cursor zum Zeilenanfang"
 
 #: contents/ui/TerminalPage.qml:152
 #, kde-format
 msgid "Cursor to line end"
-msgstr ""
+msgstr "Cursor zum Zeilenende"
 
 #: contents/ui/TerminalPage.qml:160
 #, kde-format
@@ -233,7 +235,7 @@ msgstr "Einfügen"
 #, kde-format
 msgctxt "@title:window"
 msgid "Confirm closing %1"
-msgstr ""
+msgstr "Schließen von %1 bestätigen"
 
 #: contents/ui/TerminalPage.qml:259
 #, kde-format
@@ -241,12 +243,14 @@ msgid ""
 "A process is currently running in this tab. Are you sure you want to close "
 "it?"
 msgstr ""
+"In dem Unterfenster läuft gerade ein Prozess. Möchten Sie es wirklich "
+"schließen?"
 
 #: contents/ui/TerminalPage.qml:266
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Tab"
-msgstr ""
+msgstr "Unterfenster auswählen"
 
 #: contents/ui/TerminalPage.qml:318
 #, kde-format
@@ -261,32 +265,32 @@ msgstr "Deaktivieren"
 #: main.cpp:30
 #, kde-format
 msgid "Command to execute"
-msgstr ""
+msgstr "Auszuführender Befehl"
 
 #: main.cpp:31
 #, kde-format
 msgid "Set the initial working directory to 'dir'"
-msgstr ""
+msgstr "Anfänglichen Arbeitsordner zu „dir“ ändern"
 
 #: main.cpp:49
 #, kde-format
 msgid "© 2020-2022 KDE Community"
-msgstr ""
+msgstr "© 2020-2022 KDE-Gemeinschaft"
 
 #: main.cpp:51
 #, kde-format
 msgid "Jonah Brüchert"
-msgstr ""
+msgstr "Jonah Brüchert"
 
 #: main.cpp:52
 #, kde-format
 msgid "Devin Lin"
-msgstr ""
+msgstr "Devin Lin"
 
 #: terminaltabmodel.cpp:68
 #, kde-format
 msgid "Tab %1"
-msgstr ""
+msgstr "Tab %1"
 
 #~ msgid "Quick Actions"
 #~ msgstr "Kurzaktionen"
