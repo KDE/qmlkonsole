@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qmlkonsole\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-12-05 00:49+0000\n"
+"POT-Creation-Date: 2022-12-28 00:52+0000\n"
 "PO-Revision-Date: 2022-04-10 17:26+0200\n"
 "Last-Translator: Karl Ove Hufthammer <karl@huftis.org>\n"
 "Language-Team: Norwegian Nynorsk <l10n-no@lister.huftis.org>\n"
@@ -137,27 +137,28 @@ msgstr "Innstillingar"
 
 #: contents/ui/TerminalKeyToolBar.qml:72
 #, kde-format
-msgctxt "Control Key"
+msgctxt "Control Key (should match the key on the keyboard of the locale)"
 msgid "Ctrl"
-msgstr "Ctrl"
+msgstr ""
 
 #: contents/ui/TerminalKeyToolBar.qml:90
 #, kde-format
-msgctxt "Alt Key"
+msgctxt "Alt Key (should match the key on the keyboard of the locale)"
 msgid "Alt"
-msgstr "Alt"
+msgstr ""
 
 #: contents/ui/TerminalKeyToolBar.qml:106
 #, kde-format
-msgctxt "Escape key"
+msgctxt "Escape key (should match the key on the keyboard of the locale)"
 msgid "Esc"
-msgstr "Escape"
+msgstr ""
 
 #: contents/ui/TerminalKeyToolBar.qml:113
 #, kde-format
-msgctxt "Tab character key"
+msgctxt ""
+"Tab character key (should match the key on the keyboard of the locale)"
 msgid "Tab"
-msgstr "Tab"
+msgstr ""
 
 #: contents/ui/TerminalKeyToolBar.qml:162
 #, kde-format
@@ -251,27 +252,27 @@ msgstr "utvalsmodus"
 msgid "Disable"
 msgstr "Slå av"
 
-#: main.cpp:29
+#: main.cpp:30
 #, kde-format
 msgid "Command to execute"
 msgstr ""
 
-#: main.cpp:30
+#: main.cpp:31
 #, kde-format
 msgid "Set the initial working directory to 'dir'"
 msgstr ""
 
-#: main.cpp:48
+#: main.cpp:49
 #, kde-format
 msgid "© 2020-2022 KDE Community"
 msgstr ""
 
-#: main.cpp:50
+#: main.cpp:51
 #, kde-format
 msgid "Jonah Brüchert"
 msgstr ""
 
-#: main.cpp:51
+#: main.cpp:52
 #, kde-format
 msgid "Devin Lin"
 msgstr ""
