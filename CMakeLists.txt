@@ -1,10 +1,11 @@
 # SPDX-FileCopyrightText: 2019 Jonah Brüchert <jbb@kaidan.im>
 # SPDX-License-Identifier: GPL-2.0-or-later
 
-project(qmlkonsole)
-set(PROJECT_VERSION "22.11")
-
 cmake_minimum_required(VERSION 3.16)
+
+set(PROJECT_VERSION "23.01")
+project(qmlkonsole VERSION ${PROJECT_VERSION})
+
 set(KF5_MIN_VERSION "5.101.0")
 set(QT_MIN_VERSION "5.5.0")
 
