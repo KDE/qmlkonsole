@@ -92,3 +92,10 @@ GenericName[x-test]=xxTerminalxx
 GenericName[zh_CN]=终端
 
 Comment=Command line access
+Comment[ca]=Accés a la línia d'ordres
+Comment[es]=Acceso a la línea de órdenes
+Comment[eu]=Komando-lerroko sarbidea
+Comment[nl]=Toegang tot de opdrachtregel
+Comment[tr]=Komut satırı erişimi
+Comment[uk]=Доступ до командного рядка
+Comment[x-test]=xxCommand line accessxx
