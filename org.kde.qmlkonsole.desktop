@@ -93,11 +93,13 @@ GenericName[zh_CN]=终端
 
 Comment=Command line access
 Comment[ca]=Accés a la línia d'ordres
+Comment[cs]=Přístup k příkazové řádce
 Comment[es]=Acceso a la línea de órdenes
 Comment[eu]=Komando-lerroko sarbidea
 Comment[fr]=Accès par ligne de commandes
 Comment[ka]=ბრძანების სტრიქონთან წვდომა
 Comment[nl]=Toegang tot de opdrachtregel
+Comment[pt]=Acesso à linha de comandos
 Comment[sl]=Dostop do ukazne vrstice
 Comment[tr]=Komut satırı erişimi
 Comment[uk]=Доступ до командного рядка
