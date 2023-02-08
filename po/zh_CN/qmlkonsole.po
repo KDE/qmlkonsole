@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-12-28 00:52+0000\n"
-"PO-Revision-Date: 2023-01-12 10:32\n"
+"PO-Revision-Date: 2023-02-07 11:03\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
@@ -120,7 +120,7 @@ msgstr "字体大小"
 #: contents/ui/SettingsComponent.qml:240
 #, kde-format
 msgid "Window Transparency"
-msgstr "窗口透明"
+msgstr "窗口透明度"
 
 #: contents/ui/SettingsComponent.qml:278
 #, kde-format
@@ -137,26 +137,26 @@ msgstr "设置"
 #, kde-format
 msgctxt "Control Key (should match the key on the keyboard of the locale)"
 msgid "Ctrl"
-msgstr ""
+msgstr "Ctrl"
 
 #: contents/ui/TerminalKeyToolBar.qml:90
 #, kde-format
 msgctxt "Alt Key (should match the key on the keyboard of the locale)"
 msgid "Alt"
-msgstr ""
+msgstr "Alt"
 
 #: contents/ui/TerminalKeyToolBar.qml:106
 #, kde-format
 msgctxt "Escape key (should match the key on the keyboard of the locale)"
 msgid "Esc"
-msgstr ""
+msgstr "Esc"
 
 #: contents/ui/TerminalKeyToolBar.qml:113
 #, kde-format
 msgctxt ""
 "Tab character key (should match the key on the keyboard of the locale)"
 msgid "Tab"
-msgstr ""
+msgstr "Tab"
 
 #: contents/ui/TerminalKeyToolBar.qml:162
 #, kde-format
