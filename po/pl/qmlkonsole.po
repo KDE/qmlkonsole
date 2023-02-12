@@ -1,13 +1,13 @@
 # Copyright (C) YEAR This file is copyright:
 # This file is distributed under the same license as the qmlkonsole package.
 #
-# Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>, 2021, 2022.
+# Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>, 2021, 2022, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: qmlkonsole\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-12-28 00:52+0000\n"
-"PO-Revision-Date: 2022-09-23 09:26+0200\n"
+"PO-Revision-Date: 2023-02-11 08:40+0100\n"
 "Last-Translator: Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>\n"
 "Language-Team: Polish <kde-i18n-doc@kde.org>\n"
 "Language: pl\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2);\n"
-"X-Generator: Lokalize 22.04.1\n"
+"X-Generator: Lokalize 22.12.2\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -127,7 +127,7 @@ msgstr "Przezroczystość okna"
 #: contents/ui/SettingsComponent.qml:278
 #, kde-format
 msgid "Blur Background"
-msgstr ""
+msgstr "Rozmyj tło"
 
 #: contents/ui/SettingsDialog.qml:17 contents/ui/SettingsPage.qml:18
 #: contents/ui/TerminalPage.qml:192
@@ -136,33 +136,25 @@ msgid "Settings"
 msgstr "Ustawienia"
 
 #: contents/ui/TerminalKeyToolBar.qml:72
-#, fuzzy, kde-format
-#| msgctxt "Control Key"
-#| msgid "Ctrl"
+#, kde-format
 msgctxt "Control Key (should match the key on the keyboard of the locale)"
 msgid "Ctrl"
 msgstr "Ctrl"
 
 #: contents/ui/TerminalKeyToolBar.qml:90
-#, fuzzy, kde-format
-#| msgctxt "Alt Key"
-#| msgid "Alt"
+#, kde-format
 msgctxt "Alt Key (should match the key on the keyboard of the locale)"
 msgid "Alt"
 msgstr "Alt"
 
 #: contents/ui/TerminalKeyToolBar.qml:106
-#, fuzzy, kde-format
-#| msgctxt "Escape key"
-#| msgid "Esc"
+#, kde-format
 msgctxt "Escape key (should match the key on the keyboard of the locale)"
 msgid "Esc"
 msgstr "Esc"
 
 #: contents/ui/TerminalKeyToolBar.qml:113
-#, fuzzy, kde-format
-#| msgctxt "Tab character key"
-#| msgid "Tab"
+#, kde-format
 msgctxt ""
 "Tab character key (should match the key on the keyboard of the locale)"
 msgid "Tab"
@@ -263,12 +255,12 @@ msgstr "Wyłącz"
 #: main.cpp:30
 #, kde-format
 msgid "Command to execute"
-msgstr ""
+msgstr "Polecenie do wykonania"
 
 #: main.cpp:31
 #, kde-format
 msgid "Set the initial working directory to 'dir'"
-msgstr ""
+msgstr "Ustaw początkowy katalog pracy na 'dir'"
 
 #: main.cpp:49
 #, kde-format
