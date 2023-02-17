@@ -15,10 +15,46 @@
         "--talk-name=org.freedesktop.Flatpak"
     ],
     "separate-locales": false,
+    "sdk-extensions": [ "org.freedesktop.Sdk.Extension.golang" ],
 
     "modules": [
         {
-            "name": "kirigami-addons",
+            "name": "host-spawn",
+            "buildsystem": "simple",
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://github.com/1player/host-spawn/archive/refs/tags/1.2.1.zip",
+                    "sha256": "6a255bee35f4804d09ff85521632385273bf95a29d1f79e7dadcae6fd02b4d06",
+                    "dest": "host-spawn"
+                },
+                {
+                    "type": "git",
+                    "url": "https://github.com/godbus/dbus",
+                    "commit": "e523abc905595cf17fb0001a7d77eaaddfaa216d",
+                    "dest": "src/github.com/godbus/dbus/v5"
+                },
+                {
+                    "type": "git",
+                    "url": "https://github.com/pkg/term",
+                    "commit": "d02e49dd31404f3c3cf4b5469b28942194e0ca23",
+                    "dest": "src/github.com/pkg/term"
+                },
+                {
+                    "type": "git",
+                    "url": "https://go.googlesource.com/sys",
+                    "tag": "v0.5.0",
+                    "dest": "src/golang.org/x/sys"
+                }
+            ],
+            "build-commands": [
+                ". /usr/lib/sdk/golang/enable.sh; export GOPATH=$PWD; export GO111MODULE=off; cd host-spawn; go build -v",
+                "install -Dm755 host-spawn/host-spawn -t /app/bin"
+            ]
+        },
+        {
+            "name": "kirigamiaddons",
+            "config-opts": [ "-DBUILD_TESTING=OFF" ],
             "buildsystem": "cmake-ninja",
             "sources": [
                 {
