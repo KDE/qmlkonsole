@@ -29,6 +29,9 @@ QStringList ShellCommand::args() const
 
 QString ShellCommand::command() const
 {
+    // Signal to running processes that we can handle colors
+    qputenv("TERM", "xterm-256color");
+
     if (KSandbox::isFlatpak()) {
         auto shell = []() {
             // From Konsole: https://github.com/KDE/konsole/blob/c450e754c789915b6dd27514a18f311ba9249981/src/profile/Profile.cpp#L177
