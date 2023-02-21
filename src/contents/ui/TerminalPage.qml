@@ -336,6 +336,8 @@ Kirigami.Page {
             
             Layout.fillWidth: true
             Layout.fillHeight: true
+
+            onCurrentItemChanged: currentTerminal.forceActiveFocus()
             
             Repeater {
                 id: terminalRepeater
