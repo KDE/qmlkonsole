@@ -60,6 +60,7 @@ Kirigami.Dialog {
             onClicked: {
                 terminal.simulateKeyPress(0, 0, 0, 0, model.display);
                 savedCommandsDialog.close();
+                terminal.forceActiveFocus()
             }
         
             contentItem: RowLayout {
