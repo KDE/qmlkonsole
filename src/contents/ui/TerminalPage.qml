@@ -95,7 +95,23 @@ Kirigami.Page {
             TerminalTabModel.removeTab(index);
         }
     }
-    
+
+    Shortcut {
+        sequence: "Shift+Left"
+        onActivated: {
+            if (tabSwipeView.currentIndex > 0)
+                tabSwipeView.currentIndex--
+        }
+    }
+
+    Shortcut {
+        sequence: "Shift+Right"
+        onActivated: {
+            if (tabSwipeView.currentIndex < tabSwipeView.count - 1)
+                tabSwipeView.currentIndex++
+        }
+    }
+
     contextualActions: [
         Kirigami.Action {
             id: newTabAction
