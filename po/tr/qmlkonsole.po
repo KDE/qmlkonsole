@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qmlkonsole\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-12-28 00:52+0000\n"
+"POT-Creation-Date: 2023-02-22 01:00+0000\n"
 "PO-Revision-Date: 2022-12-26 21:52+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
@@ -43,7 +43,7 @@ msgstr "Kaydedilen Komutlar"
 msgid "Configure"
 msgstr "Yapılandır"
 
-#: contents/ui/SavedCommandsDialog.qml:34 contents/ui/TerminalPage.qml:305
+#: contents/ui/SavedCommandsDialog.qml:34 contents/ui/TerminalPage.qml:321
 #, kde-format
 msgid "Close"
 msgstr "Kapat"
@@ -128,7 +128,7 @@ msgid "Blur Background"
 msgstr "Arka Planı Bulanıklaştır"
 
 #: contents/ui/SettingsDialog.qml:17 contents/ui/SettingsPage.qml:18
-#: contents/ui/TerminalPage.qml:192
+#: contents/ui/TerminalPage.qml:208
 #, kde-format
 msgid "Settings"
 msgstr "Ayarlar"
@@ -163,70 +163,70 @@ msgstr "Sekme"
 msgid "Toggle Virtual Keyboard"
 msgstr "Sanal Klavyeyi Aç/Kapat"
 
-#: contents/ui/TerminalPage.qml:103
+#: contents/ui/TerminalPage.qml:119
 #, kde-format
 msgctxt "@action:intoolbar"
 msgid "New Tab"
 msgstr "Yeni Sekme"
 
-#: contents/ui/TerminalPage.qml:113
+#: contents/ui/TerminalPage.qml:129
 #, kde-format
 msgctxt "@action:intoolbar"
 msgid "Saved Commands"
 msgstr "Kaydedilen Komutlar"
 
-#: contents/ui/TerminalPage.qml:120
+#: contents/ui/TerminalPage.qml:136
 #, kde-format
 msgid "reverse-i-search"
 msgstr "ters-i-arama"
 
-#: contents/ui/TerminalPage.qml:128
+#: contents/ui/TerminalPage.qml:144
 #, kde-format
 msgid "Cancel current command"
 msgstr "Geçerli komutu iptal et"
 
-#: contents/ui/TerminalPage.qml:136
+#: contents/ui/TerminalPage.qml:152
 #, kde-format
 msgid "Send EOF"
 msgstr "Dosya Sonu Gönder"
 
-#: contents/ui/TerminalPage.qml:144
+#: contents/ui/TerminalPage.qml:160
 #, kde-format
 msgid "Cursor to line start"
 msgstr "İmleç satır başına"
 
-#: contents/ui/TerminalPage.qml:152
+#: contents/ui/TerminalPage.qml:168
 #, kde-format
 msgid "Cursor to line end"
 msgstr "İmleç satır sonuna"
 
-#: contents/ui/TerminalPage.qml:160
+#: contents/ui/TerminalPage.qml:176
 #, kde-format
 msgid "Kill to line end"
 msgstr "Satır sonuna dek öldür"
 
-#: contents/ui/TerminalPage.qml:168
+#: contents/ui/TerminalPage.qml:184
 #, kde-format
 msgid "Paste from kill buffer"
 msgstr "Öldürme arabelleğinden yapıştır"
 
-#: contents/ui/TerminalPage.qml:176
+#: contents/ui/TerminalPage.qml:192
 #, kde-format
 msgid "Copy"
 msgstr "Kopyala"
 
-#: contents/ui/TerminalPage.qml:186
+#: contents/ui/TerminalPage.qml:202
 #, kde-format
 msgid "Paste"
 msgstr "Yapıştır"
 
-#: contents/ui/TerminalPage.qml:243
+#: contents/ui/TerminalPage.qml:259
 #, kde-format
 msgctxt "@title:window"
 msgid "Confirm closing %1"
 msgstr "%1 kapatmayı onayla"
 
-#: contents/ui/TerminalPage.qml:259
+#: contents/ui/TerminalPage.qml:275
 #, kde-format
 msgid ""
 "A process is currently running in this tab. Are you sure you want to close "
@@ -234,18 +234,18 @@ msgid ""
 msgstr ""
 "Bu sekmede şu an bir süreç çalışıyor. Kapatmak istediğinize emin misiniz?"
 
-#: contents/ui/TerminalPage.qml:266
+#: contents/ui/TerminalPage.qml:282
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Tab"
 msgstr "Sekmeyi Seç"
 
-#: contents/ui/TerminalPage.qml:318
+#: contents/ui/TerminalPage.qml:334
 #, kde-format
 msgid "selection mode"
 msgstr "seçim kipi"
 
-#: contents/ui/TerminalPage.qml:326
+#: contents/ui/TerminalPage.qml:342
 #, kde-format
 msgid "Disable"
 msgstr "Devre Dışı Bırak"

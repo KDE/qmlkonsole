@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qmlkonsole\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-12-28 00:52+0000\n"
+"POT-Creation-Date: 2023-02-22 01:00+0000\n"
 "PO-Revision-Date: 2022-08-19 16:48+0300\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
@@ -43,7 +43,7 @@ msgstr "Tallennetut komennot"
 msgid "Configure"
 msgstr "Asetukset"
 
-#: contents/ui/SavedCommandsDialog.qml:34 contents/ui/TerminalPage.qml:305
+#: contents/ui/SavedCommandsDialog.qml:34 contents/ui/TerminalPage.qml:321
 #, kde-format
 msgid "Close"
 msgstr "Sulje"
@@ -129,7 +129,7 @@ msgid "Blur Background"
 msgstr ""
 
 #: contents/ui/SettingsDialog.qml:17 contents/ui/SettingsPage.qml:18
-#: contents/ui/TerminalPage.qml:192
+#: contents/ui/TerminalPage.qml:208
 #, kde-format
 msgid "Settings"
 msgstr "Asetukset"
@@ -172,88 +172,88 @@ msgstr "Sarkain"
 msgid "Toggle Virtual Keyboard"
 msgstr "Näytä tai piilota näyttönäppäimistö"
 
-#: contents/ui/TerminalPage.qml:103
+#: contents/ui/TerminalPage.qml:119
 #, kde-format
 msgctxt "@action:intoolbar"
 msgid "New Tab"
 msgstr "Uusi välilehti"
 
-#: contents/ui/TerminalPage.qml:113
+#: contents/ui/TerminalPage.qml:129
 #, kde-format
 msgctxt "@action:intoolbar"
 msgid "Saved Commands"
 msgstr "Tallennetut komennot"
 
-#: contents/ui/TerminalPage.qml:120
+#: contents/ui/TerminalPage.qml:136
 #, kde-format
 msgid "reverse-i-search"
 msgstr "käänteinen-i-haku"
 
-#: contents/ui/TerminalPage.qml:128
+#: contents/ui/TerminalPage.qml:144
 #, kde-format
 msgid "Cancel current command"
 msgstr "Peru nykyinen komento"
 
-#: contents/ui/TerminalPage.qml:136
+#: contents/ui/TerminalPage.qml:152
 #, kde-format
 msgid "Send EOF"
 msgstr "Lähetä EOF"
 
-#: contents/ui/TerminalPage.qml:144
+#: contents/ui/TerminalPage.qml:160
 #, kde-format
 msgid "Cursor to line start"
 msgstr "Kohdistin rivin alkuun"
 
-#: contents/ui/TerminalPage.qml:152
+#: contents/ui/TerminalPage.qml:168
 #, kde-format
 msgid "Cursor to line end"
 msgstr "Kohdistin rivin loppuun"
 
-#: contents/ui/TerminalPage.qml:160
+#: contents/ui/TerminalPage.qml:176
 #, kde-format
 msgid "Kill to line end"
 msgstr "Poista rivin loppuun"
 
-#: contents/ui/TerminalPage.qml:168
+#: contents/ui/TerminalPage.qml:184
 #, kde-format
 msgid "Paste from kill buffer"
 msgstr "Liitä poistopuskurista"
 
-#: contents/ui/TerminalPage.qml:176
+#: contents/ui/TerminalPage.qml:192
 #, kde-format
 msgid "Copy"
 msgstr "Kopioi"
 
-#: contents/ui/TerminalPage.qml:186
+#: contents/ui/TerminalPage.qml:202
 #, kde-format
 msgid "Paste"
 msgstr "Liitä"
 
-#: contents/ui/TerminalPage.qml:243
+#: contents/ui/TerminalPage.qml:259
 #, kde-format
 msgctxt "@title:window"
 msgid "Confirm closing %1"
 msgstr "%1 – vahvista sulkeminen"
 
-#: contents/ui/TerminalPage.qml:259
+#: contents/ui/TerminalPage.qml:275
 #, kde-format
 msgid ""
 "A process is currently running in this tab. Are you sure you want to close "
 "it?"
 msgstr "Välilehdessä on yhä prosessi käynnissä. Haluatko varmasti sulkea sen?"
 
-#: contents/ui/TerminalPage.qml:266
+#: contents/ui/TerminalPage.qml:282
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Tab"
 msgstr "Valitse välilehti"
 
-#: contents/ui/TerminalPage.qml:318
+#: contents/ui/TerminalPage.qml:334
 #, kde-format
 msgid "selection mode"
 msgstr "valintatapa"
 
-#: contents/ui/TerminalPage.qml:326
+#: contents/ui/TerminalPage.qml:342
 #, kde-format
 msgid "Disable"
 msgstr "Poista käytöstä"

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qmlkonsole\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-12-28 00:52+0000\n"
+"POT-Creation-Date: 2023-02-22 01:00+0000\n"
 "PO-Revision-Date: 2022-09-24 15:12+0200\n"
 "Last-Translator: Stefan Asserhäll <stefan.asserhall@bredband.net>\n"
 "Language-Team: Swedish <kde-i18n-doc@kde.org>\n"
@@ -43,7 +43,7 @@ msgstr "Sparade kommandon"
 msgid "Configure"
 msgstr "Anpassa"
 
-#: contents/ui/SavedCommandsDialog.qml:34 contents/ui/TerminalPage.qml:305
+#: contents/ui/SavedCommandsDialog.qml:34 contents/ui/TerminalPage.qml:321
 #, kde-format
 msgid "Close"
 msgstr "Stäng"
@@ -128,7 +128,7 @@ msgid "Blur Background"
 msgstr ""
 
 #: contents/ui/SettingsDialog.qml:17 contents/ui/SettingsPage.qml:18
-#: contents/ui/TerminalPage.qml:192
+#: contents/ui/TerminalPage.qml:208
 #, kde-format
 msgid "Settings"
 msgstr "Inställningar"
@@ -171,70 +171,70 @@ msgstr "Tabulator"
 msgid "Toggle Virtual Keyboard"
 msgstr "Visa eller dölj virtuellt tangentbord"
 
-#: contents/ui/TerminalPage.qml:103
+#: contents/ui/TerminalPage.qml:119
 #, kde-format
 msgctxt "@action:intoolbar"
 msgid "New Tab"
 msgstr "Ny flik"
 
-#: contents/ui/TerminalPage.qml:113
+#: contents/ui/TerminalPage.qml:129
 #, kde-format
 msgctxt "@action:intoolbar"
 msgid "Saved Commands"
 msgstr "Sparade kommandon"
 
-#: contents/ui/TerminalPage.qml:120
+#: contents/ui/TerminalPage.qml:136
 #, kde-format
 msgid "reverse-i-search"
 msgstr "omvänd interaktiv sökning"
 
-#: contents/ui/TerminalPage.qml:128
+#: contents/ui/TerminalPage.qml:144
 #, kde-format
 msgid "Cancel current command"
 msgstr "Avbryt pågående kommando"
 
-#: contents/ui/TerminalPage.qml:136
+#: contents/ui/TerminalPage.qml:152
 #, kde-format
 msgid "Send EOF"
 msgstr "Skicka EOF"
 
-#: contents/ui/TerminalPage.qml:144
+#: contents/ui/TerminalPage.qml:160
 #, kde-format
 msgid "Cursor to line start"
 msgstr "Markör till radens början"
 
-#: contents/ui/TerminalPage.qml:152
+#: contents/ui/TerminalPage.qml:168
 #, kde-format
 msgid "Cursor to line end"
 msgstr "Markör till radens slut"
 
-#: contents/ui/TerminalPage.qml:160
+#: contents/ui/TerminalPage.qml:176
 #, kde-format
 msgid "Kill to line end"
 msgstr "Ta bort till radens slut"
 
-#: contents/ui/TerminalPage.qml:168
+#: contents/ui/TerminalPage.qml:184
 #, kde-format
 msgid "Paste from kill buffer"
 msgstr "Klistra in från borttagningsbuffert"
 
-#: contents/ui/TerminalPage.qml:176
+#: contents/ui/TerminalPage.qml:192
 #, kde-format
 msgid "Copy"
 msgstr "Kopiera"
 
-#: contents/ui/TerminalPage.qml:186
+#: contents/ui/TerminalPage.qml:202
 #, kde-format
 msgid "Paste"
 msgstr "Klistra in"
 
-#: contents/ui/TerminalPage.qml:243
+#: contents/ui/TerminalPage.qml:259
 #, kde-format
 msgctxt "@title:window"
 msgid "Confirm closing %1"
 msgstr "Bekräfta stängning av %1"
 
-#: contents/ui/TerminalPage.qml:259
+#: contents/ui/TerminalPage.qml:275
 #, kde-format
 msgid ""
 "A process is currently running in this tab. Are you sure you want to close "
@@ -243,18 +243,18 @@ msgstr ""
 "Ett process kör för närvarande under fliken. Är du säker på att du vill "
 "stänga den?"
 
-#: contents/ui/TerminalPage.qml:266
+#: contents/ui/TerminalPage.qml:282
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Tab"
 msgstr "Välj flik"
 
-#: contents/ui/TerminalPage.qml:318
+#: contents/ui/TerminalPage.qml:334
 #, kde-format
 msgid "selection mode"
 msgstr "markeringsläge"
 
-#: contents/ui/TerminalPage.qml:326
+#: contents/ui/TerminalPage.qml:342
 #, kde-format
 msgid "Disable"
 msgstr "Inaktivera"
