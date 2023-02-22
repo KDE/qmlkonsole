@@ -150,6 +150,39 @@
   <screenshots>
     <screenshot type="default">
       <caption>QMLKonsole</caption>
+      <caption xml:lang="ca">QMLKonsole</caption>
+      <caption xml:lang="ca-valencia">QMLKonsole</caption>
+      <caption xml:lang="cs">QMLKonsole</caption>
+      <caption xml:lang="de">QMLKonsole</caption>
+      <caption xml:lang="en-GB">QMLKonsole</caption>
+      <caption xml:lang="es">QMLKonsole</caption>
+      <caption xml:lang="et">QMLKonsole</caption>
+      <caption xml:lang="eu">QMLKonsole</caption>
+      <caption xml:lang="fi">QMLKonsole</caption>
+      <caption xml:lang="fr">QMLKonsole</caption>
+      <caption xml:lang="hi">क्यूएमएल कॉनसोल</caption>
+      <caption xml:lang="hu">QMLKonsole</caption>
+      <caption xml:lang="id">QMLKonsole</caption>
+      <caption xml:lang="it">QMLKonsole</caption>
+      <caption xml:lang="ka">QMLKonsole</caption>
+      <caption xml:lang="ko">QMLKonsole</caption>
+      <caption xml:lang="lt">QMLKonsole</caption>
+      <caption xml:lang="nl">QMLKonsole</caption>
+      <caption xml:lang="nn">QMLKonsole</caption>
+      <caption xml:lang="pa">QML-ਕਨਸੋਲ</caption>
+      <caption xml:lang="pl">QMLKonsole</caption>
+      <caption xml:lang="pt">QMLKonsole</caption>
+      <caption xml:lang="pt-BR">QMLKonsole</caption>
+      <caption xml:lang="ro">QMLKonsole</caption>
+      <caption xml:lang="ru">QMLKonsole</caption>
+      <caption xml:lang="sk">QMLKonsole</caption>
+      <caption xml:lang="sl">QMLKonsole</caption>
+      <caption xml:lang="sv">QML-terminal</caption>
+      <caption xml:lang="tr">QMLKonsole</caption>
+      <caption xml:lang="uk">QMLKonsole</caption>
+      <caption xml:lang="x-test">xxQMLKonsolexx</caption>
+      <caption xml:lang="zh-CN">QMLKonsole</caption>
+      <caption xml:lang="zh-TW">QMLKonsole</caption>
       <image>https://cdn.kde.org/screenshots/qmlkonsole/main.png</image>
     </screenshot>
     <screenshot type="default">
