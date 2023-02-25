@@ -192,11 +192,14 @@
       <caption xml:lang="cs">Nastavení</caption>
       <caption xml:lang="es">Preferencias</caption>
       <caption xml:lang="fr">Configuration</caption>
+      <caption xml:lang="it">Impostazioni</caption>
       <caption xml:lang="nl">Instellingen</caption>
+      <caption xml:lang="pt-BR">Configurações</caption>
       <caption xml:lang="sl">Nastavitve</caption>
       <caption xml:lang="tr">Ayarlar</caption>
       <caption xml:lang="uk">Параметри</caption>
       <caption xml:lang="x-test">xxSettingsxx</caption>
+      <caption xml:lang="zh-CN">设置</caption>
       <image>https://cdn.kde.org/screenshots/qmlkonsole/settings.png</image>
     </screenshot>
   </screenshots>
