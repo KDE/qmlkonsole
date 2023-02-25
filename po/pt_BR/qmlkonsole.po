@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: qmlkonsole\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-02-22 01:00+0000\n"
-"PO-Revision-Date: 2023-01-16 23:09-0300\n"
+"PO-Revision-Date: 2023-02-24 17:13-0300\n"
 "Last-Translator: Luiz Fernando Ranghetti <elchevive@opensuse.org>\n"
 "Language-Team: Portuguese <kde-i18n-pt_BR@kde.org>\n"
 "Language: pt_BR\n"
@@ -125,7 +125,7 @@ msgstr "Transparência da janela"
 #: contents/ui/SettingsComponent.qml:278
 #, kde-format
 msgid "Blur Background"
-msgstr ""
+msgstr "Desfocar fundo"
 
 #: contents/ui/SettingsDialog.qml:17 contents/ui/SettingsPage.qml:18
 #: contents/ui/TerminalPage.qml:208
@@ -259,7 +259,7 @@ msgstr "Comando a executar"
 #: main.cpp:31
 #, kde-format
 msgid "Set the initial working directory to 'dir'"
-msgstr ""
+msgstr "Definir a pasta de trabalho inicial como 'dir'"
 
 #: main.cpp:49
 #, kde-format
