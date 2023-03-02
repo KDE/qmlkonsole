@@ -1,13 +1,13 @@
 # Copyright (C) YEAR This file is copyright:
 # This file is distributed under the same license as the qmlkonsole package.
-# Shinjo Park <kde@peremen.name>, 2020, 2021, 2022.
+# Shinjo Park <kde@peremen.name>, 2020, 2021, 2022, 2023.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: qmlkonsole\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-02-22 01:00+0000\n"
-"PO-Revision-Date: 2022-05-05 23:48+0200\n"
+"PO-Revision-Date: 2023-03-01 02:18+0100\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
 "Language: ko\n"
@@ -84,7 +84,7 @@ msgstr "동작 %1 삭제됨"
 #: contents/ui/SettingsComponent.qml:43
 #, kde-format
 msgid "General"
-msgstr ""
+msgstr "일반"
 
 #: contents/ui/SettingsComponent.qml:48
 #, kde-format
@@ -94,39 +94,38 @@ msgstr "정보"
 #: contents/ui/SettingsComponent.qml:68
 #, kde-format
 msgid "Appearance"
-msgstr ""
+msgstr "모양"
 
 #: contents/ui/SettingsComponent.qml:73
-#, fuzzy, kde-format
-#| msgid "Color Scheme:"
+#, kde-format
 msgid "Color scheme"
-msgstr "색 배열:"
+msgstr "색 구성표"
 
 #: contents/ui/SettingsComponent.qml:105 contents/ui/SettingsComponent.qml:119
 #, kde-format
 msgid "Font Family"
-msgstr ""
+msgstr "글꼴 종류"
 
 #: contents/ui/SettingsComponent.qml:152
 #, kde-format
 msgctxt "@title:window"
 msgid "Pick font"
-msgstr ""
+msgstr "글꼴 선택"
 
 #: contents/ui/SettingsComponent.qml:215
 #, kde-format
 msgid "Font Size"
-msgstr ""
+msgstr "글꼴 크기"
 
 #: contents/ui/SettingsComponent.qml:240
 #, kde-format
 msgid "Window Transparency"
-msgstr ""
+msgstr "창 투명도"
 
 #: contents/ui/SettingsComponent.qml:278
 #, kde-format
 msgid "Blur Background"
-msgstr ""
+msgstr "배경 흐리게 하기"
 
 #: contents/ui/SettingsDialog.qml:17 contents/ui/SettingsPage.qml:18
 #: contents/ui/TerminalPage.qml:208
@@ -135,33 +134,25 @@ msgid "Settings"
 msgstr "설정"
 
 #: contents/ui/TerminalKeyToolBar.qml:72
-#, fuzzy, kde-format
-#| msgctxt "Control Key"
-#| msgid "Ctrl"
+#, kde-format
 msgctxt "Control Key (should match the key on the keyboard of the locale)"
 msgid "Ctrl"
 msgstr "Ctrl"
 
 #: contents/ui/TerminalKeyToolBar.qml:90
-#, fuzzy, kde-format
-#| msgctxt "Alt Key"
-#| msgid "Alt"
+#, kde-format
 msgctxt "Alt Key (should match the key on the keyboard of the locale)"
 msgid "Alt"
 msgstr "Alt"
 
 #: contents/ui/TerminalKeyToolBar.qml:106
-#, fuzzy, kde-format
-#| msgctxt "Escape key"
-#| msgid "Esc"
+#, kde-format
 msgctxt "Escape key (should match the key on the keyboard of the locale)"
 msgid "Esc"
 msgstr "Esc"
 
 #: contents/ui/TerminalKeyToolBar.qml:113
-#, fuzzy, kde-format
-#| msgctxt "Tab character key"
-#| msgid "Tab"
+#, kde-format
 msgctxt ""
 "Tab character key (should match the key on the keyboard of the locale)"
 msgid "Tab"
@@ -261,12 +252,12 @@ msgstr "비활성화"
 #: main.cpp:30
 #, kde-format
 msgid "Command to execute"
-msgstr ""
+msgstr "실행할 명령"
 
 #: main.cpp:31
 #, kde-format
 msgid "Set the initial working directory to 'dir'"
-msgstr ""
+msgstr "초기 작업 디렉터리를 'dir'로 설정하기"
 
 #: main.cpp:49
 #, kde-format
