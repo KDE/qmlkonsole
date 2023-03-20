@@ -14,7 +14,7 @@ import org.kde.qmlkonsole 1.0
 
 Kirigami.Page {
     id: root
-    property var currentTerminal: tabSwipeView.contentChildren[tabSwipeView.currentIndex].termWidget
+    property QMLTermWidget currentTerminal: tabSwipeView.contentChildren[tabSwipeView.currentIndex].termWidget
 
     background: Item {}
     
@@ -348,7 +348,7 @@ Kirigami.Page {
         // tabs
         SwipeView {
             id: tabSwipeView
-            interactive: !selectionModePopup.visible // don't conflict with selection mode
+            interactive: !selectionModePopup.visible && Kirigami.Settings.hasTransientTouchInput // don't conflict with selection mode
             
             Layout.fillWidth: true
             Layout.fillHeight: true
