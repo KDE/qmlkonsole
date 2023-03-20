@@ -24,9 +24,9 @@ ListView {
     implicitHeight: Kirigami.Units.gridUnit + Kirigami.Units.largeSpacing * 2
     model: TerminalTabModel
     orientation: ListView.Horizontal
-    
+
     Shortcut {
-        sequence: "Ctrl+W"
+        sequence: "Ctrl+Shift+W"
         onActivated: {
             root.closeTabRequested(root.currentIndex);
         }
