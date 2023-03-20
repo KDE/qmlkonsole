@@ -4,7 +4,9 @@
     "runtime-version": "5.15-22.08",
     "sdk": "org.kde.Sdk",
     "command": "qmlkonsole",
-    "tags": ["nightly"],
+    "tags": [
+        "nightly"
+    ],
     "desktop-file-name-suffix": " (Nightly)",
     "finish-args": [
         "--share=ipc",
@@ -15,18 +17,23 @@
         "--talk-name=org.freedesktop.Flatpak"
     ],
     "separate-locales": false,
-    "sdk-extensions": [ "org.freedesktop.Sdk.Extension.golang" ],
-
+    "sdk-extensions": [
+        "org.freedesktop.Sdk.Extension.golang"
+    ],
     "modules": [
         {
             "name": "host-spawn",
             "buildsystem": "simple",
             "sources": [
                 {
-                    "type": "archive",
-                    "url": "https://github.com/1player/host-spawn/archive/refs/tags/1.2.1.zip",
-                    "sha256": "6a255bee35f4804d09ff85521632385273bf95a29d1f79e7dadcae6fd02b4d06",
-                    "dest": "host-spawn"
+                    "type": "git",
+                    "url": "https://github.com/1player/host-spawn/",
+                    "tag": "1.4.1",
+                    "x-checker-data": {
+                        "type": "git",
+                        "tag-pattern": "^([\\d.]+)$"
+                    },
+                    "commit": "2d7561681b97186f7f9fb9385435ef7d2dff9a13"
                 },
                 {
                     "type": "git",
@@ -49,18 +56,20 @@
             ],
             "build-commands": [
                 ". /usr/lib/sdk/golang/enable.sh; export GOPATH=$PWD; export GO111MODULE=off; cd host-spawn; go build -v",
-                "install -Dm755 host-spawn/host-spawn -t /app/bin"
+                "install -Dm755 host-spawn -t /app/bin"
             ]
         },
         {
             "name": "kirigamiaddons",
-            "config-opts": [ "-DBUILD_TESTING=OFF" ],
+            "config-opts": [
+                "-DBUILD_TESTING=OFF"
+            ],
             "buildsystem": "cmake-ninja",
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/kirigami-addons/kirigami-addons-0.7.0.tar.xz",
-                    "sha256": "0132a58b150229544a61e17e792c48cfc6daa03a8be9c7acd873a6c30d283df7",
+                    "url": "https://download.kde.org/stable/kirigami-addons/kirigami-addons-0.7.2.tar.xz",
+                    "sha256": "f8629c597d6df715b3eece9ffed94926bf3cab829f22f3aab22e3c822e2b7b76",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 242933,
@@ -68,21 +77,25 @@
                         "url-template": "https://download.kde.org/stable/kirigami-addons/kirigami-addons-$version.tar.xz"
                     }
                 }
-            ],
-            "config-opts": [
-                "-DBUILD_TESTING=OFF"
             ]
         },
         {
             "name": "qmltermwidget",
             "buildsystem": "qmake",
-            "make-install-args": [ "INSTALL_ROOT=/app" ],
+            "make-install-args": [
+                "INSTALL_ROOT=/app"
+            ],
             "post-install": [
                 "mkdir -p /app/lib/qml",
                 "ln -s /app/usr/lib/qml/QMLTermWidget /app/lib/qml",
                 "ln -s /app/usr/lib/lib* /app/lib"
             ],
-            "sources": [ { "type": "git", "url": "https://github.com/Swordfish90/qmltermwidget" } ]
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://github.com/Swordfish90/qmltermwidget"
+                }
+            ]
         },
         {
             "name": "qmlkonsole",
@@ -91,7 +104,15 @@
             "post-install": [
                 "install -D -m644 /app/share/icons/hicolor/scalable/apps/org.kde.qmlkonsole.svg /app/usr/share/icons/hicolor/scalable/apps/org.kde.qmlkonsole.svg"
             ],
-            "sources": [ { "type": "dir", "path": ".", "skip": [".git"] } ]
+            "sources": [
+                {
+                    "type": "dir",
+                    "path": ".",
+                    "skip": [
+                        ".git"
+                    ]
+                }
+            ]
         }
     ]
 }
