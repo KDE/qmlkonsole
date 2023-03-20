@@ -10,6 +10,6 @@ import org.kde.qmlkonsole 1.0
 
 Kirigami.AboutPage {
     id: aboutPage
-    aboutData: AboutType.aboutData
+    aboutData: About
 }
 

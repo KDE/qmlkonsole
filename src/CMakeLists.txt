@@ -3,7 +3,6 @@
 
 set(qmlkonsole_SRCS
     main.cpp
-    abouttype.cpp
     savedcommandsmodel.cpp
     terminaltabmodel.cpp
     util.cpp

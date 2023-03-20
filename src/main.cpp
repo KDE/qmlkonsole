@@ -13,7 +13,6 @@
 #include <KLocalizedString>
 #include <KAboutData>
 
-#include "abouttype.h"
 #include "fontlistmodel.h"
 #include "terminalsettings.h"
 #include "savedcommandsmodel.h"
@@ -86,7 +85,9 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
     qmlRegisterSingletonType<Util>(URI, 1, 0, "Util", [](QQmlEngine *, QJSEngine *) -> QObject * {
         return Util::self();
     });
-    qmlRegisterSingletonInstance(URI, 1, 0, "AboutType", &AboutType::instance());
+    qmlRegisterSingletonType(URI, 1, 0, "About", [](QQmlEngine *, QJSEngine *engine) {
+        return engine->toScriptValue(KAboutData::applicationData());
+    });
     
     engine.load(QUrl(QStringLiteral("qrc:///main.qml")));
 
