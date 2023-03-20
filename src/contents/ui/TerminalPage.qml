@@ -389,11 +389,11 @@ Kirigami.Page {
                             if (!root.initialSessionCreated) {
                                 
                                 // setup for CLI arguments
-                                if (INITIAL_WORK_DIR != "") {
-                                    mainsession.initialWorkingDirectory = INITIAL_WORK_DIR;
+                                if (Util.initialWorkDir) {
+                                    mainsession.initialWorkingDirectory = Util.initialWorkDir;
                                 }
-                                if (INITIAL_COMMAND != "") {
-                                    mainsession.sendText(INITIAL_COMMAND);
+                                if (Util.initialCommand) {
+                                    mainsession.sendText(Util.initialCommand);
                                     terminal.pressKey(Qt.Key_Enter, Qt.NoModifier, true);
                                 }
                                 

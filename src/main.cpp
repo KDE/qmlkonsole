@@ -23,16 +23,6 @@
 
 constexpr auto URI = "org.kde.qmlkonsole";
 
-QCommandLineParser *createParser()
-{
-    QCommandLineParser *parser = new QCommandLineParser;
-    parser->addOption(QCommandLineOption(QStringLiteral("e"), i18n("Command to execute"), QStringLiteral("command")));
-    parser->addOption(QCommandLineOption(QStringLiteral("workdir"), i18n("Set the initial working directory to 'dir'"), QStringLiteral("dir")));
-    parser->addVersionOption();
-    parser->addHelpOption();
-    return parser;
-}
-
 Q_DECL_EXPORT int main(int argc, char *argv[])
 {
     QGuiApplication::setAttribute(Qt::AA_EnableHighDpiScaling);
@@ -63,16 +53,22 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
 
     QQmlApplicationEngine engine;
     engine.rootContext()->setContextObject(new KLocalizedContext(&engine));
-    
-    // ~~~~ Parse command line arguments ~~~~
-    {
-        QScopedPointer<QCommandLineParser> parser(createParser());
-        parser->process(app);
 
-        engine.rootContext()->setContextProperty("INITIAL_COMMAND", parser->isSet(QStringLiteral("e")) ? parser->value(QStringLiteral("e")) : "");
-        engine.rootContext()->setContextProperty("INITIAL_WORK_DIR", parser->isSet(QStringLiteral("workdir")) ? parser->value(QStringLiteral("workdir")) : QDir::currentPath());
+    Util util;
+    {
+        QCommandLineParser parser;
+        parser.addOption(QCommandLineOption(QStringLiteral("e"), i18n("Command to execute"), QStringLiteral("command")));
+        parser.addOption(QCommandLineOption(QStringLiteral("workdir"), i18n("Set the initial working directory to 'dir'"), QStringLiteral("dir")));
+        parser.addVersionOption();
+        parser.addHelpOption();
+        parser.process(app);
+
+        QString initialCommand = parser.isSet(QStringLiteral("e")) ? parser.value(QStringLiteral("e")) : "";
+        QString initialWorkDir = parser.isSet(QStringLiteral("workdir")) ? parser.value(QStringLiteral("workdir")) : QDir::currentPath();
+        util.setInitialCommand(std::move(initialCommand));
+        util.setInitialWorkDir(std::move(initialWorkDir));
     }
-    
+
     qmlRegisterSingletonType<TerminalTabModel>(URI, 1, 0, "SavedCommandsModel", [](QQmlEngine *, QJSEngine *) -> QObject * {
         return SavedCommandsModel::self();
     });
@@ -82,9 +78,7 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
     qmlRegisterSingletonType<FontListSearchModel>(URI, 1, 0, "FontListSearchModel", [](QQmlEngine *, QJSEngine *) -> QObject * {
         return FontListSearchModel::self();
     });
-    qmlRegisterSingletonType<Util>(URI, 1, 0, "Util", [](QQmlEngine *, QJSEngine *) -> QObject * {
-        return Util::self();
-    });
+    qmlRegisterSingletonInstance(URI, 1, 0, "Util", &util);
     qmlRegisterSingletonType(URI, 1, 0, "About", [](QQmlEngine *, QJSEngine *engine) {
         return engine->toScriptValue(KAboutData::applicationData());
     });

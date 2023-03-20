@@ -31,3 +31,15 @@ void Util::setBlur(QQuickItem *item, bool blur)
     connect(item->window(), &QQuickWindow::widthChanged, this, setWindows);
     setWindows();
 }
+
+void Util::setInitialWorkDir(QString &&initialWorkDir)
+{
+    m_initialWorkDir = std::move(initialWorkDir);
+    Q_EMIT initialWorkDirChanged();
+}
+
+void Util::setInitialCommand(QString &&command)
+{
+    m_initialCommand = std::move(command);
+    Q_EMIT initialCommandChanged();
+}
