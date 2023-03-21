@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qmlkonsole\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-02-22 01:00+0000\n"
+"POT-Creation-Date: 2023-03-21 00:49+0000\n"
 "PO-Revision-Date: 2023-02-11 08:40+0100\n"
 "Last-Translator: Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>\n"
 "Language-Team: Polish <kde-i18n-doc@kde.org>\n"
@@ -252,30 +252,30 @@ msgstr "tryb zaznaczania"
 msgid "Disable"
 msgstr "Wyłącz"
 
-#: main.cpp:30
-#, kde-format
-msgid "Command to execute"
-msgstr "Polecenie do wykonania"
-
-#: main.cpp:31
-#, kde-format
-msgid "Set the initial working directory to 'dir'"
-msgstr "Ustaw początkowy katalog pracy na 'dir'"
-
-#: main.cpp:49
+#: main.cpp:38
 #, kde-format
 msgid "© 2020-2022 KDE Community"
 msgstr "© 2020-2022 Społeczność KDE"
 
-#: main.cpp:51
+#: main.cpp:40
 #, kde-format
 msgid "Jonah Brüchert"
 msgstr "Jonah Brüchert"
 
-#: main.cpp:52
+#: main.cpp:41
 #, kde-format
 msgid "Devin Lin"
 msgstr "Devin Lin"
+
+#: main.cpp:60
+#, kde-format
+msgid "Command to execute"
+msgstr "Polecenie do wykonania"
+
+#: main.cpp:61
+#, kde-format
+msgid "Set the initial working directory to 'dir'"
+msgstr "Ustaw początkowy katalog pracy na 'dir'"
 
 #: terminaltabmodel.cpp:68
 #, kde-format

@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qmlkonsole\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-02-22 01:00+0000\n"
+"POT-Creation-Date: 2023-03-21 00:49+0000\n"
 "PO-Revision-Date: 2022-04-15 19:17+0200\n"
 "Last-Translator: Roman Paholik <wizzardsk@gmail.com>\n"
 "Language-Team: Slovak <kde-sk@linux.sk>\n"
@@ -258,29 +258,29 @@ msgstr "Režim výberu"
 msgid "Disable"
 msgstr "Zakázať"
 
-#: main.cpp:30
-#, kde-format
-msgid "Command to execute"
-msgstr ""
-
-#: main.cpp:31
-#, kde-format
-msgid "Set the initial working directory to 'dir'"
-msgstr ""
-
-#: main.cpp:49
+#: main.cpp:38
 #, kde-format
 msgid "© 2020-2022 KDE Community"
 msgstr ""
 
-#: main.cpp:51
+#: main.cpp:40
 #, kde-format
 msgid "Jonah Brüchert"
 msgstr ""
 
-#: main.cpp:52
+#: main.cpp:41
 #, kde-format
 msgid "Devin Lin"
+msgstr ""
+
+#: main.cpp:60
+#, kde-format
+msgid "Command to execute"
+msgstr ""
+
+#: main.cpp:61
+#, kde-format
+msgid "Set the initial working directory to 'dir'"
 msgstr ""
 
 #: terminaltabmodel.cpp:68
