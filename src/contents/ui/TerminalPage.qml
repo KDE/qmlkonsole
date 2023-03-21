@@ -112,7 +112,7 @@ Kirigami.Page {
         }
     }
 
-    contextualActions: [
+    property list<Kirigami.Action> menuActions: [
         Kirigami.Action {
             id: newTabAction
             icon.name: "list-add"
@@ -387,7 +387,6 @@ Kirigami.Page {
                         
                         Component.onCompleted: {
                             if (!root.initialSessionCreated) {
-                                
                                 // setup for CLI arguments
                                 if (Util.initialWorkDir) {
                                     mainsession.initialWorkingDirectory = Util.initialWorkDir;
@@ -399,8 +398,14 @@ Kirigami.Page {
                                 
                                 root.initialSessionCreated = true;
                             }
-                            
+
                             mainsession.startShellProgram();
+
+                            if (root.hasOwnProperty("contextualActions")) {
+                                root.contextualActions = Qt.binding(() => menuActions)
+                            } else {
+                                root.actions = Qt.binding(() => menuActions)
+                            }
                         }
                         
                         function pressKey(key, modifiers, pressed, nativeScanCode, text) {
