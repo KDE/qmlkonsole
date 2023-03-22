@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qmlkonsole\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-21 00:49+0000\n"
+"POT-Creation-Date: 2023-03-22 00:49+0000\n"
 "PO-Revision-Date: 2022-10-20 09:33+0300\n"
 "Last-Translator: Olesya Gerasimenko <translation-team@basealt.ru>\n"
 "Language-Team: Basealt Translation Team\n"
@@ -84,53 +84,53 @@ msgstr "Добавить команду"
 msgid "Action %1 removed"
 msgstr "Удалено действие %1"
 
-#: contents/ui/SettingsComponent.qml:43
+#: contents/ui/SettingsComponent.qml:42
 #, kde-format
 msgid "General"
 msgstr "Общие"
 
-#: contents/ui/SettingsComponent.qml:48
+#: contents/ui/SettingsComponent.qml:47
 #, kde-format
 msgid "About"
 msgstr "О программе"
 
-#: contents/ui/SettingsComponent.qml:68
+#: contents/ui/SettingsComponent.qml:67
 #, kde-format
 msgid "Appearance"
 msgstr "Внешний вид"
 
-#: contents/ui/SettingsComponent.qml:73
+#: contents/ui/SettingsComponent.qml:72
 #, kde-format
 msgid "Color scheme"
 msgstr "Цветовая схема"
 
-#: contents/ui/SettingsComponent.qml:105 contents/ui/SettingsComponent.qml:119
+#: contents/ui/SettingsComponent.qml:104 contents/ui/SettingsComponent.qml:118
 #, kde-format
 msgid "Font Family"
 msgstr "Гарнитура шрифта"
 
-#: contents/ui/SettingsComponent.qml:152
+#: contents/ui/SettingsComponent.qml:151
 #, kde-format
 msgctxt "@title:window"
 msgid "Pick font"
 msgstr "Выбор шрифта"
 
-#: contents/ui/SettingsComponent.qml:215
+#: contents/ui/SettingsComponent.qml:214
 #, kde-format
 msgid "Font Size"
 msgstr "Размер шрифта"
 
-#: contents/ui/SettingsComponent.qml:240
+#: contents/ui/SettingsComponent.qml:239
 #, kde-format
 msgid "Window Transparency"
 msgstr "Прозрачность окна"
 
-#: contents/ui/SettingsComponent.qml:278
+#: contents/ui/SettingsComponent.qml:277
 #, kde-format
 msgid "Blur Background"
 msgstr ""
 
-#: contents/ui/SettingsDialog.qml:17 contents/ui/SettingsPage.qml:18
+#: contents/ui/SettingsDialog.qml:17 contents/ui/SettingsPage.qml:17
 #: contents/ui/TerminalPage.qml:208
 #, kde-format
 msgid "Settings"
