@@ -1,7 +1,7 @@
 {
     "id": "org.kde.qmlkonsole",
     "runtime": "org.kde.Platform",
-    "runtime-version": "5.15-22.08",
+    "runtime-version": "6.4",
     "sdk": "org.kde.Sdk",
     "command": "qmlkonsole",
     "tags": [
@@ -60,46 +60,131 @@
             ]
         },
         {
+            "name": "extra-cmake-modules",
+            "buildsystem": "cmake-ninja",
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://invent.kde.org/frameworks/extra-cmake-modules.git"
+                }
+            ]
+        },
+        {
+            "name": "kcoreaddons",
+            "buildsystem": "cmake-ninja",
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://invent.kde.org/frameworks/kcoreaddons.git"
+                }
+            ]
+        },
+        {
+            "name": "ki18n",
+            "buildsystem": "cmake-ninja",
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://invent.kde.org/frameworks/ki18n.git"
+                }
+            ]
+        },
+        {
+            "name": "kpty",
+            "buildsystem": "cmake-ninja",
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://invent.kde.org/frameworks/kpty.git"
+                }
+            ]
+        },
+        {
+            "name": "kirigami",
+            "buildsystem": "cmake-ninja",
+            "builddir": true,
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://invent.kde.org/frameworks/kirigami.git"
+                }
+            ]
+        },
+        {
             "name": "kirigamiaddons",
             "config-opts": [
-                "-DBUILD_TESTING=OFF"
+                "-DBUILD_TESTING=OFF",
+                "-DQT_MAJOR_VERSION=6"
             ],
             "buildsystem": "cmake-ninja",
             "sources": [
                 {
-                    "type": "archive",
-                    "url": "https://download.kde.org/stable/kirigami-addons/kirigami-addons-0.7.2.tar.xz",
-                    "sha256": "f8629c597d6df715b3eece9ffed94926bf3cab829f22f3aab22e3c822e2b7b76",
-                    "x-checker-data": {
-                        "type": "anitya",
-                        "project-id": 242933,
-                        "stable-only": true,
-                        "url-template": "https://download.kde.org/stable/kirigami-addons/kirigami-addons-$version.tar.xz"
-                    }
+                    "type": "git",
+                    "url": "https://invent.kde.org/libraries/kirigami-addons/"
+                }
+            ]
+        },
+        {
+            "name": "kconfig",
+            "config-opts": [
+                "-DBUILD_TESTING=OFF",
+                "-DQT_MAJOR_VERSION=6"
+            ],
+            "buildsystem": "cmake-ninja",
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://invent.kde.org/frameworks/kconfig/"
+                }
+            ]
+        },
+        {
+            "name": "kconfig",
+            "config-opts": [
+                "-DBUILD_TESTING=OFF",
+                "-DQT_MAJOR_VERSION=6"
+            ],
+            "buildsystem": "cmake-ninja",
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://invent.kde.org/frameworks/kconfig/"
+                }
+            ]
+        },
+        {
+            "name": "kwindowsystem",
+            "config-opts": [
+                "-DBUILD_TESTING=OFF",
+                "-DQT_MAJOR_VERSION=6"
+            ],
+            "buildsystem": "cmake-ninja",
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://invent.kde.org/frameworks/kwindowsystem/"
                 }
             ]
         },
         {
             "name": "qmltermwidget",
-            "buildsystem": "qmake",
-            "make-install-args": [
-                "INSTALL_ROOT=/app"
+            "config-opts": [
+                "-DQT_MAJOR_VERSION=6"
             ],
-            "post-install": [
-                "mkdir -p /app/lib/qml",
-                "ln -s /app/usr/lib/qml/QMLTermWidget /app/lib/qml",
-                "ln -s /app/usr/lib/lib* /app/lib"
-            ],
+            "buildsystem": "cmake-ninja",
             "sources": [
                 {
                     "type": "git",
-                    "url": "https://github.com/Swordfish90/qmltermwidget"
+                    "url": "https://invent.kde.org/jbbgameich/qmltermwidget.git"
                 }
             ]
         },
         {
             "name": "qmlkonsole",
             "buildsystem": "cmake-ninja",
+            "config-opts": [
+                "-DQT_MAJOR_VERSION=6"
+            ],
             "builddir": true,
             "post-install": [
                 "install -D -m644 /app/share/icons/hicolor/scalable/apps/org.kde.qmlkonsole.svg /app/usr/share/icons/hicolor/scalable/apps/org.kde.qmlkonsole.svg"
