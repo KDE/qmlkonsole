@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qmlkonsole\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-02-22 01:00+0000\n"
+"POT-Creation-Date: 2023-03-22 00:49+0000\n"
 "PO-Revision-Date: 2023-03-04 15:41+0100\n"
 "Last-Translator: Karl Ove Hufthammer <karl@huftis.org>\n"
 "Language-Team: Norwegian Nynorsk <l10n-no@lister.huftis.org>\n"
@@ -83,53 +83,53 @@ msgstr "Legg til kommando"
 msgid "Action %1 removed"
 msgstr "Handlinga %1 er no fjerna"
 
-#: contents/ui/SettingsComponent.qml:43
+#: contents/ui/SettingsComponent.qml:42
 #, kde-format
 msgid "General"
 msgstr "Generelt"
 
-#: contents/ui/SettingsComponent.qml:48
+#: contents/ui/SettingsComponent.qml:47
 #, kde-format
 msgid "About"
 msgstr "Om"
 
-#: contents/ui/SettingsComponent.qml:68
+#: contents/ui/SettingsComponent.qml:67
 #, kde-format
 msgid "Appearance"
 msgstr "Utsjånad"
 
-#: contents/ui/SettingsComponent.qml:73
+#: contents/ui/SettingsComponent.qml:72
 #, kde-format
 msgid "Color scheme"
 msgstr "Fargeoppsett"
 
-#: contents/ui/SettingsComponent.qml:105 contents/ui/SettingsComponent.qml:119
+#: contents/ui/SettingsComponent.qml:104 contents/ui/SettingsComponent.qml:118
 #, kde-format
 msgid "Font Family"
 msgstr "Skriftfamile"
 
-#: contents/ui/SettingsComponent.qml:152
+#: contents/ui/SettingsComponent.qml:151
 #, kde-format
 msgctxt "@title:window"
 msgid "Pick font"
 msgstr "Vel skrift"
 
-#: contents/ui/SettingsComponent.qml:215
+#: contents/ui/SettingsComponent.qml:214
 #, kde-format
 msgid "Font Size"
 msgstr "Skriftstorleik"
 
-#: contents/ui/SettingsComponent.qml:240
+#: contents/ui/SettingsComponent.qml:239
 #, kde-format
 msgid "Window Transparency"
 msgstr "Vindaugsgjennomsikt"
 
-#: contents/ui/SettingsComponent.qml:278
+#: contents/ui/SettingsComponent.qml:277
 #, kde-format
 msgid "Blur Background"
 msgstr "Uklar bakgrunn"
 
-#: contents/ui/SettingsDialog.qml:17 contents/ui/SettingsPage.qml:18
+#: contents/ui/SettingsDialog.qml:17 contents/ui/SettingsPage.qml:17
 #: contents/ui/TerminalPage.qml:208
 #, kde-format
 msgid "Settings"
@@ -252,30 +252,30 @@ msgstr "utvalsmodus"
 msgid "Disable"
 msgstr "Slå av"
 
-#: main.cpp:30
-#, kde-format
-msgid "Command to execute"
-msgstr "Kommando som skal køyrast"
-
-#: main.cpp:31
-#, kde-format
-msgid "Set the initial working directory to 'dir'"
-msgstr "Mappa terminalen startar i for nye økter"
-
-#: main.cpp:49
+#: main.cpp:38
 #, kde-format
 msgid "© 2020-2022 KDE Community"
 msgstr "© 2020–2022 KDE-fellesskapet"
 
-#: main.cpp:51
+#: main.cpp:40
 #, kde-format
 msgid "Jonah Brüchert"
 msgstr "Jonah Brüchert"
 
-#: main.cpp:52
+#: main.cpp:41
 #, kde-format
 msgid "Devin Lin"
 msgstr "Devin Lin"
+
+#: main.cpp:60
+#, kde-format
+msgid "Command to execute"
+msgstr "Kommando som skal køyrast"
+
+#: main.cpp:61
+#, kde-format
+msgid "Set the initial working directory to 'dir'"
+msgstr "Mappa terminalen startar i for nye økter"
 
 #: terminaltabmodel.cpp:68
 #, kde-format
