@@ -2,13 +2,13 @@
 # This file is distributed under the same license as the qmlkonsole package.
 #
 # Alexander Yavorsky <kekcuha@gmail.com>, 2022.
-# Olesya Gerasimenko <translation-team@basealt.ru>, 2022.
+# Olesya Gerasimenko <translation-team@basealt.ru>, 2022, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: qmlkonsole\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-03-22 00:49+0000\n"
-"PO-Revision-Date: 2022-10-20 09:33+0300\n"
+"PO-Revision-Date: 2023-04-24 09:45+0300\n"
 "Last-Translator: Olesya Gerasimenko <translation-team@basealt.ru>\n"
 "Language-Team: Basealt Translation Team\n"
 "Language: ru\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=n==1 ? 3 : n%10==1 && n%100!=11 ? 0 : n"
 "%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Lokalize 22.04.3\n"
+"X-Generator: Lokalize 22.12.3\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -128,7 +128,7 @@ msgstr "Прозрачность окна"
 #: contents/ui/SettingsComponent.qml:277
 #, kde-format
 msgid "Blur Background"
-msgstr ""
+msgstr "Размытие фона"
 
 #: contents/ui/SettingsDialog.qml:17 contents/ui/SettingsPage.qml:17
 #: contents/ui/TerminalPage.qml:208
@@ -137,33 +137,25 @@ msgid "Settings"
 msgstr "Параметры"
 
 #: contents/ui/TerminalKeyToolBar.qml:72
-#, fuzzy, kde-format
-#| msgctxt "Control Key"
-#| msgid "Ctrl"
+#, kde-format
 msgctxt "Control Key (should match the key on the keyboard of the locale)"
 msgid "Ctrl"
 msgstr "Ctrl"
 
 #: contents/ui/TerminalKeyToolBar.qml:90
-#, fuzzy, kde-format
-#| msgctxt "Alt Key"
-#| msgid "Alt"
+#, kde-format
 msgctxt "Alt Key (should match the key on the keyboard of the locale)"
 msgid "Alt"
 msgstr "Alt"
 
 #: contents/ui/TerminalKeyToolBar.qml:106
-#, fuzzy, kde-format
-#| msgctxt "Escape key"
-#| msgid "Esc"
+#, kde-format
 msgctxt "Escape key (should match the key on the keyboard of the locale)"
 msgid "Esc"
 msgstr "Esc"
 
 #: contents/ui/TerminalKeyToolBar.qml:113
-#, fuzzy, kde-format
-#| msgctxt "Tab character key"
-#| msgid "Tab"
+#, kde-format
 msgctxt ""
 "Tab character key (should match the key on the keyboard of the locale)"
 msgid "Tab"
@@ -278,12 +270,12 @@ msgstr "Devin Lin"
 #: main.cpp:60
 #, kde-format
 msgid "Command to execute"
-msgstr ""
+msgstr "Команда для выполнения"
 
 #: main.cpp:61
 #, kde-format
 msgid "Set the initial working directory to 'dir'"
-msgstr ""
+msgstr "Установить начальный рабочий каталог в «dir»"
 
 #: terminaltabmodel.cpp:68
 #, kde-format
@@ -294,7 +286,6 @@ msgstr "Вкладка %1"
 #~ msgstr "%1%"
 
 #, fuzzy
-#~| msgid "Close"
 #~ msgctxt "@action:button"
 #~ msgid "Close"
 #~ msgstr "Закрыть"
