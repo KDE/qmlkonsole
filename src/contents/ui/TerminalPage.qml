@@ -192,7 +192,7 @@ Kirigami.Page {
             text: i18n("Copy")
             onTriggered: {
                 currentTerminal.copyClipboard();
-                onTriggered: root.currentTerminal.touchSelectionMode = false
+                root.currentTerminal.touchSelectionMode = false;
             }
             shortcut: "Ctrl+Shift+C"
         },
