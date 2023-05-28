@@ -1,13 +1,13 @@
 # Copyright (C) YEAR This file is copyright:
 # This file is distributed under the same license as the qmlkonsole package.
-# Tommi Nieminen <translator@legisign.org>, 2022.
+# Tommi Nieminen <translator@legisign.org>, 2022, 2023.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: qmlkonsole\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-03-22 00:49+0000\n"
-"PO-Revision-Date: 2022-08-19 16:48+0300\n"
+"PO-Revision-Date: 2023-05-02 18:24+0300\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
 "Language: fi\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 20.12.0\n"
+"X-Generator: Lokalize 23.04.0\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -85,7 +85,7 @@ msgstr "Toiminto %1 poistettu"
 #: contents/ui/SettingsComponent.qml:42
 #, kde-format
 msgid "General"
-msgstr ""
+msgstr "Perusasetukset"
 
 #: contents/ui/SettingsComponent.qml:47
 #, kde-format
@@ -95,7 +95,7 @@ msgstr "Tietoa"
 #: contents/ui/SettingsComponent.qml:67
 #, kde-format
 msgid "Appearance"
-msgstr ""
+msgstr "Ulkoasu"
 
 #: contents/ui/SettingsComponent.qml:72
 #, kde-format
@@ -121,12 +121,12 @@ msgstr "Fonttikoko"
 #: contents/ui/SettingsComponent.qml:239
 #, kde-format
 msgid "Window Transparency"
-msgstr ""
+msgstr "Ikkunan läpikuultavuus"
 
 #: contents/ui/SettingsComponent.qml:277
 #, kde-format
 msgid "Blur Background"
-msgstr ""
+msgstr "Sumenna tausta"
 
 #: contents/ui/SettingsDialog.qml:17 contents/ui/SettingsPage.qml:17
 #: contents/ui/TerminalPage.qml:208
@@ -135,33 +135,25 @@ msgid "Settings"
 msgstr "Asetukset"
 
 #: contents/ui/TerminalKeyToolBar.qml:72
-#, fuzzy, kde-format
-#| msgctxt "Control Key"
-#| msgid "Ctrl"
+#, kde-format
 msgctxt "Control Key (should match the key on the keyboard of the locale)"
 msgid "Ctrl"
 msgstr "Ctrl"
 
 #: contents/ui/TerminalKeyToolBar.qml:90
-#, fuzzy, kde-format
-#| msgctxt "Alt Key"
-#| msgid "Alt"
+#, kde-format
 msgctxt "Alt Key (should match the key on the keyboard of the locale)"
 msgid "Alt"
 msgstr "Alt"
 
 #: contents/ui/TerminalKeyToolBar.qml:106
-#, fuzzy, kde-format
-#| msgctxt "Escape key"
-#| msgid "Esc"
+#, kde-format
 msgctxt "Escape key (should match the key on the keyboard of the locale)"
 msgid "Esc"
 msgstr "Esc"
 
 #: contents/ui/TerminalKeyToolBar.qml:113
-#, fuzzy, kde-format
-#| msgctxt "Tab character key"
-#| msgid "Tab"
+#, kde-format
 msgctxt ""
 "Tab character key (should match the key on the keyboard of the locale)"
 msgid "Tab"
@@ -276,12 +268,12 @@ msgstr "Devin Lin"
 #: main.cpp:60
 #, kde-format
 msgid "Command to execute"
-msgstr ""
+msgstr "Suoritettava komento"
 
 #: main.cpp:61
 #, kde-format
 msgid "Set the initial working directory to 'dir'"
-msgstr ""
+msgstr "Aseta alustavaksi työkansioksi ”kansio”"
 
 #: terminaltabmodel.cpp:68
 #, kde-format
