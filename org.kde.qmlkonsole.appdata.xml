@@ -19,6 +19,7 @@
   <name xml:lang="eu">QMLKonsole</name>
   <name xml:lang="fi">QMLKonsole</name>
   <name xml:lang="fr">QMLKonsole</name>
+  <name xml:lang="gl">QMLKonsole</name>
   <name xml:lang="hi">क्यूएमएल कॉनसोल</name>
   <name xml:lang="hu">QMLKonsole</name>
   <name xml:lang="id">QMLKonsole</name>
@@ -53,6 +54,7 @@
   <summary xml:lang="eu">Mugikorreko terminal aplikazioa</summary>
   <summary xml:lang="fi">Mobiilipäätesovellus</summary>
   <summary xml:lang="fr">Application mobile de console</summary>
+  <summary xml:lang="gl">Aplicación móbil de terminal</summary>
   <summary xml:lang="hi">मोबाइल टर्मिनल अनुप्रयोग</summary>
   <summary xml:lang="hu">Mobil terminálalkalmazás</summary>
   <summary xml:lang="id">Aplikasi terminal ponsel</summary>
@@ -90,6 +92,7 @@
   <developer_name xml:lang="eu">KDE komunitatea</developer_name>
   <developer_name xml:lang="fi">KDE-yhteisö</developer_name>
   <developer_name xml:lang="fr">Communauté KDE</developer_name>
+  <developer_name xml:lang="gl">Comunidade KDE</developer_name>
   <developer_name xml:lang="hi">केडीई समुदाय</developer_name>
   <developer_name xml:lang="hu">A KDE Közösség</developer_name>
   <developer_name xml:lang="id">Komunitas KDE</developer_name>
@@ -124,6 +127,7 @@
     <p xml:lang="eu">Ukimen gailuetan erabilgarriak diren teklatuko botoi osagarriak eskaintzen dituen terminal aplikazioa.</p>
     <p xml:lang="fi">Päätesovellus, joka tarjoaa kosketusnäytöillä hyödyllisiä näppäimistön lisäpainikkeita.</p>
     <p xml:lang="fr">L'application de console propose des boutons additionnels utiles pour les périphériques tactiles.</p>
+    <p xml:lang="gl">Aplicación de terminal que fornece botóns de teclado adicionais que resultan útiles en dispositivos táctiles.</p>
     <p xml:lang="hi">टर्मिनल अनुप्रयोग जो स्पर्श उपकरणों के लिए अतिरिक्त कुञ्जीयाँ प्रदान करता है।</p>
     <p xml:lang="hu">Érintőképernyős eszközökön hasznos billentyűzetet biztosító terminálalkalmazás.</p>
     <p xml:lang="id">Aplikasi terminal menawarkan tombol keyboard tambahan yang berguna pada peranti sentuh.</p>
@@ -160,6 +164,7 @@
       <caption xml:lang="eu">QMLKonsole</caption>
       <caption xml:lang="fi">QMLKonsole</caption>
       <caption xml:lang="fr">QMLKonsole</caption>
+      <caption xml:lang="gl">QMLKonsole</caption>
       <caption xml:lang="hi">क्यूएमएल कॉनसोल</caption>
       <caption xml:lang="hu">QMLKonsole</caption>
       <caption xml:lang="id">QMLKonsole</caption>
@@ -196,6 +201,7 @@
       <caption xml:lang="eu">Ezarpenak</caption>
       <caption xml:lang="fi">Asetukset</caption>
       <caption xml:lang="fr">Configuration</caption>
+      <caption xml:lang="gl">Configuración</caption>
       <caption xml:lang="it">Impostazioni</caption>
       <caption xml:lang="ka">მორგება</caption>
       <caption xml:lang="ko">설정</caption>
