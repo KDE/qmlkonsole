@@ -56,7 +56,7 @@
   <summary xml:lang="eu">Mugikorreko terminal aplikazioa</summary>
   <summary xml:lang="fi">Mobiilipäätesovellus</summary>
   <summary xml:lang="fr">Application mobile de console</summary>
-  <summary xml:lang="gl">Aplicación móbil de terminal</summary>
+  <summary xml:lang="gl">Aplicación móbil de terminal.</summary>
   <summary xml:lang="hi">मोबाइल टर्मिनल अनुप्रयोग</summary>
   <summary xml:lang="hu">Mobil terminálalkalmazás</summary>
   <summary xml:lang="id">Aplikasi terminal ponsel</summary>
@@ -207,7 +207,7 @@
       <caption xml:lang="eu">Ezarpenak</caption>
       <caption xml:lang="fi">Asetukset</caption>
       <caption xml:lang="fr">Configuration</caption>
-      <caption xml:lang="gl">Configuración</caption>
+      <caption xml:lang="gl">Configuración.</caption>
       <caption xml:lang="it">Impostazioni</caption>
       <caption xml:lang="ka">მორგება</caption>
       <caption xml:lang="ko">설정</caption>
