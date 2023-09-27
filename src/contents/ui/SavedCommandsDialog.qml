@@ -24,7 +24,7 @@ Kirigami.Dialog {
     customFooterActions: [
         Kirigami.Action {
             text: i18n("Configure")
-            iconName: "settings-configure"
+            icon.name: "settings-configure"
             onTriggered: {
                 pageStack.push("qrc:/SavedCommandsSettings.qml");
                 savedCommandsDialog.close();
@@ -32,7 +32,7 @@ Kirigami.Dialog {
         },
         Kirigami.Action {
             text: i18n("Close")
-            iconName: "dialog-close"
+            icon.name: "dialog-close"
             onTriggered: savedCommandsDialog.close()
         }
     ]
