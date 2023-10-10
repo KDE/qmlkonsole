@@ -113,7 +113,7 @@ msgstr "Família del tipus de lletra"
 #, kde-format
 msgctxt "@title:window"
 msgid "Pick font"
-msgstr "Seleccioneu ei tipus de lletra"
+msgstr "Seleccioneu un tipus de lletra"
 
 #: contents/ui/SettingsComponent.qml:214
 #, kde-format
