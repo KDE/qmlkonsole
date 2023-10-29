@@ -3,15 +3,15 @@
 //
 // SPDX-License-Identifier: GPL-2.0-or-later
 
-import QtQuick 2.0
-import QtQuick.Controls 2.14
-import QtQuick.Layouts 1.2
+import QtQuick
+import QtQuick.Controls
+import QtQuick.Layouts
 
-import org.kde.kirigami 2.19 as Kirigami
+import org.kde.kirigami as Kirigami
 
-import QMLTermWidget 1.0
+import QMLTermWidget
 
-import org.kde.qmlkonsole 1.0
+import org.kde.qmlkonsole
 
 Kirigami.ScrollablePage {
     title: i18n("Saved Commands")

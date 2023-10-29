@@ -22,10 +22,10 @@ target_link_libraries(qmlkonsole
     Qt::Quick
     Qt::Svg
     Qt::Widgets
-    KF${QT_MAJOR_VERSION}::I18n
-    KF${QT_MAJOR_VERSION}::ConfigGui
-    KF${QT_MAJOR_VERSION}::CoreAddons
-    KF${QT_MAJOR_VERSION}::WindowSystem
+    KF6::I18n
+    KF6::ConfigGui
+    KF6::CoreAddons
+    KF6::WindowSystem
 )
 install(TARGETS qmlkonsole ${KDE_INSTALL_TARGETS_DEFAULT_ARGS})
 install(FILES terminalsettings.kcfg DESTINATION ${KDE_INSTALL_KCFGDIR})

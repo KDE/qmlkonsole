@@ -10,11 +10,11 @@ set(RELEASE_SERVICE_VERSION "${RELEASE_SERVICE_VERSION_MAJOR}.${RELEASE_SERVICE_
 
 project(qmlkonsole VERSION ${RELEASE_SERVICE_VERSION})
 
-set(KF5_MIN_VERSION "5.101.0")
-set(QT_MIN_VERSION "5.15.2")
+set(KF6_MIN_VERSION "5.240.0")
+set(QT_MIN_VERSION "6.5.2")
 set(KDE_COMPILERSETTINGS_LEVEL "5.84.0")
 
-find_package(ECM ${KF5_MIN_VERSION} REQUIRED NO_MODULE)
+find_package(ECM ${KF6_MIN_VERSION} REQUIRED NO_MODULE)
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${ECM_MODULE_PATH})
 
 include(ECMSetupVersion)
@@ -30,7 +30,7 @@ ecm_setup_version(${RELEASE_SERVICE_VERSION}
     VERSION_HEADER ${CMAKE_CURRENT_BINARY_DIR}/version.h
 )
 
-find_package(Qt${QT_MAJOR_VERSION} ${QT_MIN_VERSION} REQUIRED NO_MODULE COMPONENTS
+find_package(Qt6 ${QT_MIN_VERSION} REQUIRED NO_MODULE COMPONENTS
     Core 
     Quick 
     Test 
@@ -39,14 +39,14 @@ find_package(Qt${QT_MAJOR_VERSION} ${QT_MIN_VERSION} REQUIRED NO_MODULE COMPONEN
     QuickControls2
     Widgets
 )
-find_package(KF${QT_MAJOR_VERSION} ${KF5_MIN_VERSION} REQUIRED COMPONENTS
+find_package(KF6 ${KF6_MIN_VERSION} REQUIRED COMPONENTS
     Kirigami2 
     I18n 
     Config 
     CoreAddons 
     WindowSystem
 )
-find_package(KF${QT_MAJOR_VERSION}KirigamiAddons 0.6 REQUIRED)
+find_package(KF6KirigamiAddons 0.6 REQUIRED)
 
 ecm_find_qmlmodule(QMLTermWidget 1.0)
 set_package_properties(QMLTermWidget-QMLModule PROPERTIES

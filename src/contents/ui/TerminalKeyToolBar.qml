@@ -3,14 +3,14 @@
 //
 // SPDX-License-Identifier: GPL-2.0-or-later
 
-import QtQuick 2.15
-import QtQuick.Layouts 1.1
-import QtQuick.Controls 2.15
+import QtQuick
+import QtQuick.Layouts
+import QtQuick.Controls
 
-import QMLTermWidget 1.0
-import org.kde.kirigami 2.7 as Kirigami
+import QMLTermWidget
+import org.kde.kirigami as Kirigami
 
-import org.kde.qmlkonsole 1.0
+import org.kde.qmlkonsole
 
 ToolBar {
     id: root
