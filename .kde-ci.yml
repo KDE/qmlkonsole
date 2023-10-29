@@ -11,6 +11,7 @@ Dependencies:
     'frameworks/kcoreaddons': '@stable'
     'frameworks/kwindowsystem': '@stable'
     'libraries/kirigami-addons': '@latest'
+    'third-party/qmltermwidget': '@latest'
 
 - 'on': ['Linux/Qt6', 'Android/Qt6', 'FreeBSD/Qt6', 'Windows/Qt6']
   'require':
@@ -21,3 +22,4 @@ Dependencies:
     'frameworks/kcoreaddons': '@latest-kf6'
     'frameworks/kwindowsystem': '@latest-kf6'
     'libraries/kirigami-addons': '@latest-kf6'
+    'third-party/qmltermwidget': '@latest'
