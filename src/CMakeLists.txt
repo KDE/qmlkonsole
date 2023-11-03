@@ -4,10 +4,15 @@
 set(qmlkonsole_SRCS
     main.cpp
     savedcommandsmodel.cpp
+    savedcommandsmodel.h
     terminaltabmodel.cpp
+    terminaltabmodel.h
     util.cpp
+    util.h
     fontlistmodel.cpp
+    fontlistmodel.h
     shellcommand.cpp
+    shellcommand.h
     resources.qrc
 )
 
