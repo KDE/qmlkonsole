@@ -29,7 +29,7 @@ void SavedCommandsModel::save()
     TerminalSettings::self()->setActions(m_actions);
 }
 
-void SavedCommandsModel::addAction(QString action)
+void SavedCommandsModel::addAction(const QString &action)
 {
     beginInsertRows(QModelIndex(), m_actions.size(), m_actions.size());
     m_actions.push_back(action);

@@ -10,8 +10,8 @@ class SavedCommandsModel : public QAbstractListModel
     Q_OBJECT
 
 public:
-    SavedCommandsModel(QObject *parent = nullptr);
-    virtual ~SavedCommandsModel();
+    explicit SavedCommandsModel(QObject *parent = nullptr);
+    ~SavedCommandsModel() override;
     
     static SavedCommandsModel* self(){
         static SavedCommandsModel *singleton = new SavedCommandsModel();
@@ -26,7 +26,7 @@ public:
     QVariant data(const QModelIndex &index, int role) const override;
     void save();
     
-    Q_INVOKABLE void addAction(QString action);
+    Q_INVOKABLE void addAction(const QString &action);
     Q_INVOKABLE bool removeRow(int row);
 
 private:

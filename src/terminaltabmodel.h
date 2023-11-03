@@ -11,7 +11,7 @@ class TerminalTabModel : public QAbstractListModel
     Q_OBJECT
     
 public:
-    TerminalTabModel(QObject *parent = nullptr);
+    explicit TerminalTabModel(QObject *parent = nullptr);
     
     static TerminalTabModel *self()
     {

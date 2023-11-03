@@ -12,7 +12,7 @@ class ShellCommand : public QObject
     Q_PROPERTY(QStringList args READ args CONSTANT)
 
 public:
-    ShellCommand(QObject *parent = nullptr);
+    explicit ShellCommand(QObject *parent = nullptr);
 
     QString executable() const;
     QStringList args() const;

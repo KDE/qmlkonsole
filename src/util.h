@@ -15,7 +15,7 @@ class Util : public QObject
     Q_PROPERTY(QString initialWorkDir MEMBER m_initialWorkDir NOTIFY initialWorkDirChanged)
 
 public:
-    Util(QObject *parent = nullptr);
+    explicit Util(QObject *parent = nullptr);
     
     static Util *self()
     {
