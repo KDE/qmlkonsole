@@ -9,6 +9,7 @@
   <project_license>GPL-2.0-or-later</project_license>
   <content_rating type="oars-1.1"/>
   <name>QMLKonsole</name>
+  <name xml:lang="ast">QMLKonsole</name>
   <name xml:lang="ca">QMLKonsole</name>
   <name xml:lang="ca-valencia">QMLKonsole</name>
   <name xml:lang="cs">QMLKonsole</name>
@@ -84,6 +85,7 @@
   <url type="donation">https://kde.org/community/donations</url>
   <url type="bugtracker">https://bugs.kde.org/enter_bug.cgi?product=QMLKonsole</url>
   <developer_name>KDE Community</developer_name>
+  <developer_name xml:lang="ast">La comunidá KDE</developer_name>
   <developer_name xml:lang="ca">La comunitat KDE</developer_name>
   <developer_name xml:lang="ca-valencia">La comunitat KDE</developer_name>
   <developer_name xml:lang="cs">Komunita KDE</developer_name>
@@ -158,6 +160,7 @@
   <screenshots>
     <screenshot type="default">
       <caption>QMLKonsole</caption>
+      <caption xml:lang="ast">QMLKonsole</caption>
       <caption xml:lang="ca">QMLKonsole</caption>
       <caption xml:lang="ca-valencia">QMLKonsole</caption>
       <caption xml:lang="cs">QMLKonsole</caption>
@@ -197,6 +200,7 @@
     </screenshot>
     <screenshot type="default">
       <caption>Settings</caption>
+      <caption xml:lang="ast">Configuración</caption>
       <caption xml:lang="ca">Configuració</caption>
       <caption xml:lang="ca-valencia">Configuració</caption>
       <caption xml:lang="cs">Nastavení</caption>
