@@ -1,140 +1,138 @@
-# Translation of qmlkonsole.po to Catalan (Valencian)
-# Copyright (C) 2020-2023 This_file_is_part_of_KDE
-# This file is distributed under the license LGPL version 2.1 or
-# version 3 or later versions approved by the membership of KDE e.V.
+# translation of qmlkonsole.pot to esperanto
+# Copyright (C) 2023 Free Software Foundation, Inc.
+# This file is distributed under the same license as the qmlkonsole package.
+# Oliver Kellogg <okellogg@users.sourceforge.net, 2023.
 #
-# Josep M. Ferrer <txemaq@gmail.com>, 2020, 2021, 2022, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: qmlkonsole\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-11-04 01:39+0000\n"
-"PO-Revision-Date: 2023-11-03 09:34+0100\n"
-"Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
-"Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
-"Language: ca@valencia\n"
+"PO-Revision-Date: 2023-11-04 19:37+0100\n"
+"Last-Translator: Oliver Kellogg <okellogg@users.sourceforge.net>\n"
+"Language-Team: Esperanto <kde-i18n-eo@kde.org>\n"
+"Language: eo\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: translate-po (https://github.com/zcribe/translate-po)\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 22.12.3\n"
-"X-Accelerator-Marker: &\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr "Josep M. Ferrer"
+msgstr "Oliver Kellogg"
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr "txemaq@gmail.com"
+msgstr "okellogg@users.sourceforge.net"
 
 #: contents/ui/main.qml:16
 #, kde-format
 msgid "Terminal"
-msgstr "Terminal"
+msgstr "Terminalo"
 
 #: contents/ui/SavedCommandsDialog.qml:19
 #, kde-format
 msgctxt "@title:window"
 msgid "Saved Commands"
-msgstr "Ordres guardades"
+msgstr "Konservitaj Komandoj"
 
 #: contents/ui/SavedCommandsDialog.qml:26
 #, kde-format
 msgid "Configure"
-msgstr "Configura"
+msgstr "Agordi"
 
 #: contents/ui/SavedCommandsDialog.qml:34 contents/ui/TerminalPage.qml:321
 #, kde-format
 msgid "Close"
-msgstr "Tanca"
+msgstr "Fermi"
 
 #: contents/ui/SavedCommandsDialog.qml:53
 #: contents/ui/SavedCommandsSettings.qml:43
 #, kde-format
 msgid "No saved commands"
-msgstr "No hi ha cap ordre guardada"
+msgstr "Neniuj konservitaj komandoj"
 
 #: contents/ui/SavedCommandsDialog.qml:54
 #: contents/ui/SavedCommandsSettings.qml:44
 #, kde-format
 msgid "Save commands to quickly run them without typing them out."
-msgstr "Guarda ordres per a executar-les ràpidament sense escriure-les."
+msgstr "Konservi komandojn por rapide ruli ilin sen tajpi ilin."
 
 #: contents/ui/SavedCommandsSettings.qml:17
 #, kde-format
 msgid "Saved Commands"
-msgstr "Ordres guardades"
+msgstr "Konservitaj Komandoj"
 
 #: contents/ui/SavedCommandsSettings.qml:22
 #: contents/ui/SavedCommandsSettings.qml:82
 #, kde-format
 msgid "Add Command"
-msgstr "Afig una ordre"
+msgstr "Aldoni Komandon"
 
 #: contents/ui/SavedCommandsSettings.qml:48
 #, kde-format
 msgid "Add command"
-msgstr "Afig una ordre"
+msgstr "Aldoni komandon"
 
 #: contents/ui/SavedCommandsSettings.qml:73
 #, kde-format
 msgid "Action %1 removed"
-msgstr "S'ha eliminat l'acció %1"
+msgstr "Ago %1 forigita"
 
 #: contents/ui/SettingsComponent.qml:42
 #, kde-format
 msgid "General"
-msgstr "General"
+msgstr "Ĝenerala"
 
 #: contents/ui/SettingsComponent.qml:47
 #, kde-format
 msgid "About"
-msgstr "Quant a"
+msgstr "Pri"
 
 #: contents/ui/SettingsComponent.qml:67
 #, kde-format
 msgid "Appearance"
-msgstr "Aparença"
+msgstr "Aspekto"
 
 #: contents/ui/SettingsComponent.qml:72
 #, kde-format
 msgid "Color scheme"
-msgstr "Esquema de color"
+msgstr "Kolorskemo"
 
 #: contents/ui/SettingsComponent.qml:104 contents/ui/SettingsComponent.qml:118
 #, kde-format
 msgid "Font Family"
-msgstr "Família de la lletra"
+msgstr "Tipara Familio"
 
 #: contents/ui/SettingsComponent.qml:151
 #, kde-format
 msgctxt "@title:window"
 msgid "Pick font"
-msgstr "Selecció de lletra"
+msgstr "Elekti tiparon"
 
 #: contents/ui/SettingsComponent.qml:214
 #, kde-format
 msgid "Font Size"
-msgstr "Mida de la lletra"
+msgstr "Tipara Grandeco"
 
 #: contents/ui/SettingsComponent.qml:239
 #, kde-format
 msgid "Window Transparency"
-msgstr "Transparència de les finestres"
+msgstr "Fenestra Travidebleco"
 
 #: contents/ui/SettingsComponent.qml:277
 #, kde-format
 msgid "Blur Background"
-msgstr "Difumina el fons"
+msgstr "Neklara Fono"
 
 #: contents/ui/SettingsDialog.qml:17 contents/ui/SettingsPage.qml:17
 #: contents/ui/TerminalPage.qml:208
 #, kde-format
 msgid "Settings"
-msgstr "Configuració"
+msgstr "Agordoj"
 
 #: contents/ui/TerminalKeyToolBar.qml:72
 #, kde-format
@@ -154,7 +152,6 @@ msgctxt "Escape key (should match the key on the keyboard of the locale)"
 msgid "Esc"
 msgstr "Esc"
 
-# skip-rule: kct-tab
 #: contents/ui/TerminalKeyToolBar.qml:113
 #, kde-format
 msgctxt ""
@@ -165,70 +162,70 @@ msgstr "Tab"
 #: contents/ui/TerminalKeyToolBar.qml:162
 #, kde-format
 msgid "Toggle Virtual Keyboard"
-msgstr "Canvia el teclat virtual"
+msgstr "Baskuligi Virtualan Klavaron"
 
 #: contents/ui/TerminalPage.qml:119
 #, kde-format
 msgctxt "@action:intoolbar"
 msgid "New Tab"
-msgstr "Pestanya nova"
+msgstr "Nova Langeto"
 
 #: contents/ui/TerminalPage.qml:129
 #, kde-format
 msgctxt "@action:intoolbar"
 msgid "Saved Commands"
-msgstr "Ordres guardades"
+msgstr "Konservitaj Komandoj"
 
 #: contents/ui/TerminalPage.qml:136
 #, kde-format
 msgid "reverse-i-search"
-msgstr "Busca inversa incremental"
+msgstr "inversa-i-serĉo"
 
 #: contents/ui/TerminalPage.qml:144
 #, kde-format
 msgid "Cancel current command"
-msgstr "Cancel·la l'ordre actual"
+msgstr "Nuligi aktualan komandon"
 
 #: contents/ui/TerminalPage.qml:152
 #, kde-format
 msgid "Send EOF"
-msgstr "Envia un EOF (final de fitxer)"
+msgstr "Sendu EOF"
 
 #: contents/ui/TerminalPage.qml:160
 #, kde-format
 msgid "Cursor to line start"
-msgstr "Cursor al començament de línia"
+msgstr "Kursoro al liniokomenco"
 
 #: contents/ui/TerminalPage.qml:168
 #, kde-format
 msgid "Cursor to line end"
-msgstr "Cursor al final de línia"
+msgstr "Kursoro al liniofino"
 
 #: contents/ui/TerminalPage.qml:176
 #, kde-format
 msgid "Kill to line end"
-msgstr "Neteja fins al final de línia"
+msgstr "Mortigi al liniofino"
 
 #: contents/ui/TerminalPage.qml:184
 #, kde-format
 msgid "Paste from kill buffer"
-msgstr "Apega des de la memòria intermèdia de neteja"
+msgstr "Alglui el mortiga bufro"
 
 #: contents/ui/TerminalPage.qml:192
 #, kde-format
 msgid "Copy"
-msgstr "Copia"
+msgstr "Kopii"
 
 #: contents/ui/TerminalPage.qml:202
 #, kde-format
 msgid "Paste"
-msgstr "Apega"
+msgstr "Alglui"
 
 #: contents/ui/TerminalPage.qml:259
 #, kde-format
 msgctxt "@title:window"
 msgid "Confirm closing %1"
-msgstr "Confirma el tancament de %1"
+msgstr "Konfirmi fermon de %1"
 
 #: contents/ui/TerminalPage.qml:275
 #, kde-format
@@ -236,29 +233,29 @@ msgid ""
 "A process is currently running in this tab. Are you sure you want to close "
 "it?"
 msgstr ""
-"Actualment hi ha un procés executant-se en esta pestanya. Segur que voleu "
-"tancar-la?"
+"Procezo nuntempe rulas en ĉi tiu langeto. Ĉu vi certas, ke vi volas fermi "
+"ĝin?"
 
 #: contents/ui/TerminalPage.qml:282
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Tab"
-msgstr "Selecciona la pestanya"
+msgstr "Elekti Langeton"
 
 #: contents/ui/TerminalPage.qml:334
 #, kde-format
 msgid "selection mode"
-msgstr "mode de selecció"
+msgstr "elekta reĝimo"
 
 #: contents/ui/TerminalPage.qml:342
 #, kde-format
 msgid "Disable"
-msgstr "Desactiva"
+msgstr "Malebligi"
 
 #: main.cpp:36
 #, kde-format
 msgid "© 2020-2022 KDE Community"
-msgstr "© 2020-2022 Comunitat KDE"
+msgstr "© 2020-2022 KDE-Komunumo"
 
 #: main.cpp:38
 #, kde-format
@@ -273,14 +270,14 @@ msgstr "Devin Lin"
 #: main.cpp:58
 #, kde-format
 msgid "Command to execute"
-msgstr "Ordre que s'ha d'executar"
+msgstr "Ordono plenumenda"
 
 #: main.cpp:59
 #, kde-format
 msgid "Set the initial working directory to 'dir'"
-msgstr "Establix el directori de treball inicial a «dir»"
+msgstr "Agordi la komencan labordosierujon al 'dir'"
 
 #: terminaltabmodel.cpp:68
 #, kde-format
 msgid "Tab %1"
-msgstr "Pestanya %1"
+msgstr "Langeto %1"
