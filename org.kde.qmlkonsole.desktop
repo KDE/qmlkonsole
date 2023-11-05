@@ -38,6 +38,7 @@ Keywords[x-test]=xxterminalxx;xxconsolexx;xxscriptxx;xxrunxx;xxexecutexx;xxcomma
 Keywords[zh_CN]=terminal;console;script;run;execute;command;command-line;commandline;cli;bash;sh;shell;zsh;终端;控制台;脚本;执行;运行;命令;命令行;命令行界面;外壳;命令行提示
 
 Name=Terminal
+Name[ast]=Terminal
 Name[ca]=Terminal
 Name[ca@valencia]=Terminal
 Name[cs]=Terminál
@@ -72,6 +73,7 @@ Name[uk]=Термінал
 Name[x-test]=xxTerminalxx
 Name[zh_CN]=终端
 GenericName=Terminal
+GenericName[ast]=Terminal
 GenericName[ca]=Terminal
 GenericName[ca@valencia]=Terminal
 GenericName[cs]=Terminál
