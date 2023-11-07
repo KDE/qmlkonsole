@@ -187,8 +187,9 @@ ColumnLayout {
                                 }
                             }
                             
-                            delegate: Kirigami.BasicListItem {
+                            delegate: Controls.ItemDelegate {
                                 text: model.name
+                                width: ListView.view.width
                                 onClicked: {
                                     TerminalSettings.fontFamily = model.name;
                                     TerminalSettings.save();
