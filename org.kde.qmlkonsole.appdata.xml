@@ -24,6 +24,7 @@
   <name xml:lang="gl">QMLKonsole</name>
   <name xml:lang="hi">क्यूएमएल कॉनसोल</name>
   <name xml:lang="hu">QMLKonsole</name>
+  <name xml:lang="ia">QMLKonsole</name>
   <name xml:lang="id">QMLKonsole</name>
   <name xml:lang="it">QMLKonsole</name>
   <name xml:lang="ka">QMLKonsole</name>
@@ -60,6 +61,7 @@
   <summary xml:lang="gl">Aplicación móbil de terminal.</summary>
   <summary xml:lang="hi">मोबाइल टर्मिनल अनुप्रयोग</summary>
   <summary xml:lang="hu">Mobil terminálalkalmazás</summary>
+  <summary xml:lang="ia">Application de terminal mobile</summary>
   <summary xml:lang="id">Aplikasi terminal ponsel</summary>
   <summary xml:lang="it">Applicazione di terminale mobile</summary>
   <summary xml:lang="ka">მობილური ტერმინალის აპლიკაცია</summary>
@@ -100,6 +102,7 @@
   <developer_name xml:lang="gl">Comunidade KDE</developer_name>
   <developer_name xml:lang="hi">केडीई समुदाय</developer_name>
   <developer_name xml:lang="hu">A KDE Közösség</developer_name>
+  <developer_name xml:lang="ia">Communitate de KDE</developer_name>
   <developer_name xml:lang="id">Komunitas KDE</developer_name>
   <developer_name xml:lang="it">Comunità KDE</developer_name>
   <developer_name xml:lang="ka">KDE-ის საზოგადოება</developer_name>
@@ -136,6 +139,7 @@
     <p xml:lang="gl">Aplicación de terminal que fornece botóns de teclado adicionais que resultan útiles en dispositivos táctiles.</p>
     <p xml:lang="hi">टर्मिनल अनुप्रयोग जो स्पर्श उपकरणों के लिए अतिरिक्त कुञ्जीयाँ प्रदान करता है।</p>
     <p xml:lang="hu">Érintőképernyős eszközökön hasznos billentyűzetet biztosító terminálalkalmazás.</p>
+    <p xml:lang="ia">Application de Terminal offerente buttones de claviero additional utile sur dispositivos tactile</p>
     <p xml:lang="id">Aplikasi terminal menawarkan tombol keyboard tambahan yang berguna pada peranti sentuh.</p>
     <p xml:lang="it">Applicazione di terminale che offre pulsanti della tastiera aggiuntivi utili su dispositivi tattili.</p>
     <p xml:lang="ka">ტერმინალის აპლიკაცია, რომელიც სენსორული მოწყობილობებისთვის განკუთვნილ დამატებით ღილაკებს შეიცავს.</p>
@@ -175,6 +179,7 @@
       <caption xml:lang="gl">QMLKonsole</caption>
       <caption xml:lang="hi">क्यूएमएल कॉनसोल</caption>
       <caption xml:lang="hu">QMLKonsole</caption>
+      <caption xml:lang="ia">QMLKonsole</caption>
       <caption xml:lang="id">QMLKonsole</caption>
       <caption xml:lang="it">QMLKonsole</caption>
       <caption xml:lang="ka">QMLKonsole</caption>
@@ -212,6 +217,7 @@
       <caption xml:lang="fi">Asetukset</caption>
       <caption xml:lang="fr">Configuration</caption>
       <caption xml:lang="gl">Configuración.</caption>
+      <caption xml:lang="ia">Preferentias</caption>
       <caption xml:lang="it">Impostazioni</caption>
       <caption xml:lang="ka">მორგება</caption>
       <caption xml:lang="ko">설정</caption>
