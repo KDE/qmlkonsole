@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qmlkonsole\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-11-04 01:39+0000\n"
+"POT-Creation-Date: 2023-11-08 08:48+0000\n"
 "PO-Revision-Date: 2023-01-30 11:23+0100\n"
 "Last-Translator: Vit Pelcak <vit@pelcak.org>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
@@ -112,17 +112,17 @@ msgctxt "@title:window"
 msgid "Pick font"
 msgstr "Vyberte písmo"
 
-#: contents/ui/SettingsComponent.qml:214
+#: contents/ui/SettingsComponent.qml:215
 #, kde-format
 msgid "Font Size"
 msgstr "Velikost písma"
 
-#: contents/ui/SettingsComponent.qml:239
+#: contents/ui/SettingsComponent.qml:240
 #, kde-format
 msgid "Window Transparency"
 msgstr "Průhlednost okna"
 
-#: contents/ui/SettingsComponent.qml:277
+#: contents/ui/SettingsComponent.qml:278
 #, kde-format
 msgid "Blur Background"
 msgstr "Rozmazat pozadí"

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qmlkonsole\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-11-04 01:39+0000\n"
+"POT-Creation-Date: 2023-11-08 08:48+0000\n"
 "PO-Revision-Date: 2023-07-31 11:10+0200\n"
 "Last-Translator: Stefan Asserhäll <stefan.asserhall@bredband.net>\n"
 "Language-Team: Swedish <kde-i18n-doc@kde.org>\n"
@@ -112,17 +112,17 @@ msgctxt "@title:window"
 msgid "Pick font"
 msgstr "Välj teckensnitt"
 
-#: contents/ui/SettingsComponent.qml:214
+#: contents/ui/SettingsComponent.qml:215
 #, kde-format
 msgid "Font Size"
 msgstr "Teckenstorlek"
 
-#: contents/ui/SettingsComponent.qml:239
+#: contents/ui/SettingsComponent.qml:240
 #, kde-format
 msgid "Window Transparency"
 msgstr "Fönstergenomskinlighet"
 
-#: contents/ui/SettingsComponent.qml:277
+#: contents/ui/SettingsComponent.qml:278
 #, kde-format
 msgid "Blur Background"
 msgstr "Gör bakgrund suddig"
