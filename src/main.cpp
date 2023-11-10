@@ -68,13 +68,19 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
     }
 
     qmlRegisterSingletonType<SavedCommandsModel>(URI, 1, 0, "SavedCommandsModel", [](QQmlEngine *, QJSEngine *) -> QObject * {
-        return SavedCommandsModel::self();
+        const auto self = SavedCommandsModel::self();
+        QQmlEngine::setObjectOwnership(self, QQmlEngine::CppOwnership);
+        return self;
     });
     qmlRegisterSingletonType<TerminalTabModel>(URI, 1, 0, "TerminalTabModel", [](QQmlEngine *, QJSEngine *) -> QObject * {
-        return TerminalTabModel::self();
+        const auto self = TerminalTabModel::self();
+        QQmlEngine::setObjectOwnership(self, QQmlEngine::CppOwnership);
+        return self;
     });
     qmlRegisterSingletonType<FontListSearchModel>(URI, 1, 0, "FontListSearchModel", [](QQmlEngine *, QJSEngine *) -> QObject * {
-        return FontListSearchModel::self();
+        const auto self = FontListSearchModel::self();
+        QQmlEngine::setObjectOwnership(self, QQmlEngine::CppOwnership);
+        return self;
     });
     qmlRegisterSingletonInstance(URI, 1, 0, "Util", &util);
     qmlRegisterSingletonType(URI, 1, 0, "About", [](QQmlEngine *, QJSEngine *engine) {
