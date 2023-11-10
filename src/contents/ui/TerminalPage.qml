@@ -122,16 +122,16 @@ Kirigami.Page {
                 tabSwipeView.currentIndex = tabSwipeView.contentChildren.length - 1;
             }
             shortcut: "Ctrl+Shift+T"
-            displayHint: Kirigami.Action.KeepVisible
+            displayHint: Kirigami.DisplayHint.KeepVisible
         },
         Kirigami.Action {
             icon.name: "dialog-scripts"
             text: i18nc("@action:intoolbar", "Saved Commands")
             onTriggered: savedCommandsDialog.open()
-            displayHint: Kirigami.Action.KeepVisible
+            displayHint: Kirigami.DisplayHint.KeepVisible
         },
         Kirigami.Action {
-            displayHint: Kirigami.Action.AlwaysHide
+            displayHint: Kirigami.DisplayHint.AlwaysHide
             icon.name: "search"
             text: i18n("reverse-i-search")
             onTriggered: {
@@ -139,7 +139,7 @@ Kirigami.Page {
             }
         },
         Kirigami.Action {
-            displayHint: Kirigami.Action.AlwaysHide
+            displayHint: Kirigami.DisplayHint.AlwaysHide
             icon.name: "dialog-cancel"
             text: i18n("Cancel current command")
             onTriggered: {
@@ -147,7 +147,7 @@ Kirigami.Page {
             }
         },
         Kirigami.Action {
-            displayHint: Kirigami.Action.AlwaysHide
+            displayHint: Kirigami.DisplayHint.AlwaysHide
             icon.name: "document-close"
             text: i18n("Send EOF")
             onTriggered: {
@@ -155,7 +155,7 @@ Kirigami.Page {
             }
         },
         Kirigami.Action {
-            displayHint: Kirigami.Action.AlwaysHide
+            displayHint: Kirigami.DisplayHint.AlwaysHide
             icon.name: "bboxprev"
             text: i18n("Cursor to line start")
             onTriggered: {
@@ -163,7 +163,7 @@ Kirigami.Page {
             }
         },
         Kirigami.Action {
-            displayHint: Kirigami.Action.AlwaysHide
+            displayHint: Kirigami.DisplayHint.AlwaysHide
             icon.name: "bboxnext"
             text: i18n("Cursor to line end")
             onTriggered: {
@@ -171,7 +171,7 @@ Kirigami.Page {
             }
         },
         Kirigami.Action {
-            displayHint: Kirigami.Action.AlwaysHide
+            displayHint: Kirigami.DisplayHint.AlwaysHide
             icon.name: "edit-cut"
             text: i18n("Kill to line end")
             onTriggered: {
@@ -179,7 +179,7 @@ Kirigami.Page {
             }
         },
         Kirigami.Action {
-            displayHint: Kirigami.Action.AlwaysHide
+            displayHint: Kirigami.DisplayHint.AlwaysHide
             icon.name: "edit-paste"
             text: i18n("Paste from kill buffer")
             onTriggered: {
@@ -187,7 +187,7 @@ Kirigami.Page {
             }
         },
         Kirigami.Action {
-            displayHint: Kirigami.Action.AlwaysHide
+            displayHint: Kirigami.DisplayHint.AlwaysHide
             icon.name: "edit-copy"
             text: i18n("Copy")
             onTriggered: {
@@ -197,14 +197,14 @@ Kirigami.Page {
             shortcut: "Ctrl+Shift+C"
         },
         Kirigami.Action {
-            displayHint: Kirigami.Action.AlwaysHide
+            displayHint: Kirigami.DisplayHint.AlwaysHide
             icon.name: "edit-paste"
             text: i18n("Paste")
             onTriggered: currentTerminal.pasteClipboard();
             shortcut: "Ctrl+Shift+V"
         },
         Kirigami.Action {
-            displayHint: Kirigami.Action.IconOnly
+            displayHint: Kirigami.DisplayHint.IconOnly
             text: i18n("Settings")
             icon.name: "settings-configure"
             onTriggered: root.openSettings()
