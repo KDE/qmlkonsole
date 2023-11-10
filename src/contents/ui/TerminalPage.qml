@@ -234,8 +234,8 @@ Kirigami.Page {
                 id: tabControlListView
                 currentIndex: tabSwipeView.currentIndex
 
-                onSwitchToTabRequested: root.switchToTab(index)
-                onCloseTabRequested: root.closeTab(index)
+                onSwitchToTabRequested: index => root.switchToTab(index)
+                onCloseTabRequested: index => root.closeTab(index)
                 onAddTabRequested: newTabAction.trigger()
             }
         }

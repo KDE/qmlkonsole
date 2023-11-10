@@ -89,7 +89,7 @@ ListView {
             MouseArea {
                 anchors.fill: parent
                 acceptedButtons: Qt.AllButtons
-                onClicked: {
+                onClicked: mouse => {
                     if (mouse.button === Qt.LeftButton) {
                         root.switchToTabRequested(model.index);
                     } else if (mouse.button === Qt.MiddleButton) {
