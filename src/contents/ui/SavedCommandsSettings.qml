@@ -17,13 +17,13 @@ Kirigami.ScrollablePage {
     title: i18n("Saved Commands")
     property QMLTermWidget terminal
 
-    actions {
-        main: Kirigami.Action {
+    actions: [
+        Kirigami.Action {
             text: i18n("Add Command")
             icon.name: "contact-new"
             onTriggered: actionDialog.open()
         }
-    }
+    ]
 
     ListView {
         id: listView
