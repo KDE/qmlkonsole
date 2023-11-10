@@ -67,7 +67,7 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
         util.setInitialWorkDir(std::move(initialWorkDir));
     }
 
-    qmlRegisterSingletonType<TerminalTabModel>(URI, 1, 0, "SavedCommandsModel", [](QQmlEngine *, QJSEngine *) -> QObject * {
+    qmlRegisterSingletonType<SavedCommandsModel>(URI, 1, 0, "SavedCommandsModel", [](QQmlEngine *, QJSEngine *) -> QObject * {
         return SavedCommandsModel::self();
     });
     qmlRegisterSingletonType<TerminalTabModel>(URI, 1, 0, "TerminalTabModel", [](QQmlEngine *, QJSEngine *) -> QObject * {
