@@ -17,9 +17,9 @@ ColumnLayout {
     id: root
     property QMLTermWidget terminal
     property var dialog: null // dialog component if this is within a dialog
-    
+
     spacing: 0
-    
+
     // HACK: dialog switching requires some time between closing and opening
     Timer {
         id: dialogTimer
@@ -30,18 +30,18 @@ ColumnLayout {
             dialog.open();
         }
     }
-    
+
     MobileForm.FormCard {
         Layout.alignment: Qt.AlignTop
         Layout.fillWidth: true
-        
+
         delegates: ColumnLayout {
             spacing: 0
 
             MobileForm.FormHeader {
                 title: i18n("General")
             }
-            
+
             MobileForm.FormButtonDelegate {
                 id: aboutDelegate
                 text: i18n("About")
@@ -54,12 +54,12 @@ ColumnLayout {
             }
         }
     }
-    
+
     MobileForm.FormCard {
         Layout.alignment: Qt.AlignTop
         Layout.topMargin: Kirigami.Units.largeSpacing
         Layout.fillWidth: true
-        
+
         delegates: ColumnLayout {
             spacing: 0
 
@@ -97,12 +97,12 @@ ColumnLayout {
             }
 
             MobileForm.FormDelegateSeparator { above: colorSchemeDropdown; below: fontFamilyDelegate }
-            
+
             MobileForm.AbstractFormDelegate {
                 id: fontFamilyDelegate
                 Layout.fillWidth: true
                 text: i18n("Font Family")
-                
+
                 onClicked: {
                     if (fontFamilyPickerLoader.active) {
                         fontFamilyPickerLoader.item.open();
@@ -111,14 +111,14 @@ ColumnLayout {
                         fontFamilyPickerLoader.requestOpen = true;
                     }
                 }
-                
+
                 contentItem: RowLayout {
                     Controls.Label {
                         Layout.fillWidth: true
                         text: i18n("Font Family")
                         elide: Text.ElideRight
                     }
-                    
+
                     Controls.Label {
                         Layout.alignment: Qt.AlignRight
                         Layout.rightMargin: Kirigami.Units.smallSpacing
@@ -126,18 +126,18 @@ ColumnLayout {
                         text: TerminalSettings.fontFamily
                         font.family: TerminalSettings.fontFamily
                     }
-                    
+
                     MobileForm.FormArrow {
                         Layout.alignment: Qt.AlignRight | Qt.AlignVCenter
                         direction: MobileForm.FormArrow.Down
                     }
                 }
-                
+
                 Loader {
                     id: fontFamilyPickerLoader
                     active: false
                     asynchronous: true
-                    
+
                     property bool requestOpen: false
                     onLoaded: {
                         if (requestOpen) {
@@ -145,23 +145,23 @@ ColumnLayout {
                             requestOpen = false;
                         }
                     }
-                    
+
                     sourceComponent: Kirigami.Dialog {
                         id: fontFamilyPicker
                         title: i18nc("@title:window", "Pick font")
-                        
+
                         onClosed: {
                             if (root.dialog) {
                                 root.dialog.open();
                             }
                         }
-                        
+
                         onOpened: {
                             if (root.dialog) {
                                 root.dialog.close();
                             }
                         }
-                        
+
                         ListView {
                             implicitWidth: Kirigami.Units.gridUnit * 18
                             implicitHeight: Kirigami.Units.gridUnit * 24
@@ -170,14 +170,14 @@ ColumnLayout {
                             model: FontListSearchModel
                             currentIndex: -1
                             clip: true
-                            
+
                             header: Controls.Control {
                                 topPadding: Kirigami.Units.smallSpacing
                                 bottomPadding: Kirigami.Units.smallSpacing
                                 rightPadding: Kirigami.Units.smallSpacing
                                 leftPadding: Kirigami.Units.smallSpacing
                                 width: fontFamilyPicker.width
-                                
+
                                 contentItem: Kirigami.SearchField {
                                     id: searchField
                                     onTextChanged: {
@@ -186,7 +186,7 @@ ColumnLayout {
                                     }
                                 }
                             }
-                            
+
                             delegate: Controls.ItemDelegate {
                                 text: model.name
                                 width: ListView.view.width
@@ -200,21 +200,21 @@ ColumnLayout {
                     }
                 }
             }
-            
+
             MobileForm.FormDelegateSeparator { above: fontFamilyDelegate }
-            
+
             MobileForm.AbstractFormDelegate {
                 id: fontSizeDelegate
                 Layout.fillWidth: true
                 background: Item {}
-                
+
                 contentItem: RowLayout {
                     width: fontSizeDelegate.width
                     Controls.Label {
                         Layout.fillWidth: true
                         text: i18n("Font Size")
                     }
-                    
+
                     Controls.SpinBox {
                         value: TerminalSettings.fontSize
                         onValueChanged: {
@@ -226,7 +226,7 @@ ColumnLayout {
                     }
                 }
             }
-            
+
             MobileForm.FormDelegateSeparator {}
 
             MobileForm.AbstractFormDelegate {
@@ -277,7 +277,7 @@ ColumnLayout {
                 id: blurDelegate
                 text: i18n("Blur Background")
                 checked: TerminalSettings.blurWindow
-                
+
                 onCheckedChanged: {
                     TerminalSettings.blurWindow = checked;
                     TerminalSettings.save();
@@ -286,6 +286,6 @@ ColumnLayout {
             }
         }
     }
-    
+
     Item { Layout.fillHeight: true }
 }

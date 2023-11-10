@@ -26,7 +26,7 @@ constexpr auto URI = "org.kde.qmlkonsole";
 Q_DECL_EXPORT int main(int argc, char *argv[])
 {
     QApplication app(argc, argv);
-    
+
     KLocalizedString::setApplicationDomain("qmlkonsole");
     KAboutData aboutData(QStringLiteral("qmlkonsole"),
                          QStringLiteral("QMLKonsole"),
@@ -80,15 +80,15 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
     qmlRegisterSingletonType(URI, 1, 0, "About", [](QQmlEngine *, QJSEngine *engine) {
         return engine->toScriptValue(KAboutData::applicationData());
     });
-    
+
     engine.load(QUrl(QStringLiteral("qrc:///main.qml")));
 
     if (engine.rootObjects().isEmpty()) {
         return -1;
     }
-    
+
     // required for X11
     app.setWindowIcon(QIcon::fromTheme(QStringLiteral("org.kde.qmlkonsole")));
-    
+
     return app.exec();
 }

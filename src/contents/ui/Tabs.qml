@@ -16,11 +16,11 @@ import org.kde.qmlkonsole
 
 ListView {
     id: root
-    
+
     signal switchToTabRequested(int index)
     signal closeTabRequested(int index)
     signal addTabRequested()
-    
+
     implicitHeight: Kirigami.Units.gridUnit + Kirigami.Units.largeSpacing * 2
     model: TerminalTabModel
     orientation: ListView.Horizontal
@@ -31,7 +31,7 @@ ListView {
             root.closeTabRequested(root.currentIndex);
         }
     }
-    
+
     Shortcut {
         sequences: ["Ctrl+Tab", "Ctrl+PgDown"]
         onActivated: {
@@ -42,7 +42,7 @@ ListView {
             }
         }
     }
-    
+
     Shortcut {
         sequences: ["Ctrl+Shift+Tab", "Ctrl+PgUp"]
         onActivated: {
@@ -53,7 +53,7 @@ ListView {
             }
         }
     }
-    
+
     delegate: ItemDelegate {
         id: control
 

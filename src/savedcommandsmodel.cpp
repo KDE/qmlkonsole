@@ -11,7 +11,8 @@ SavedCommandsModel::SavedCommandsModel(QObject *parent)
 }
 
 SavedCommandsModel::~SavedCommandsModel()
-{}
+{
+}
 
 QVariant SavedCommandsModel::data(const QModelIndex &index, int role) const
 {
@@ -34,7 +35,7 @@ void SavedCommandsModel::addAction(const QString &action)
     beginInsertRows(QModelIndex(), m_actions.size(), m_actions.size());
     m_actions.push_back(action);
     endInsertRows();
-    
+
     TerminalSettings::self()->save();
 }
 

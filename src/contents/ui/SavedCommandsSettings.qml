@@ -30,26 +30,26 @@ Kirigami.ScrollablePage {
         model: SavedCommandsModel
         width: parent.width
         height: contentHeight
-        
+
         Kirigami.PlaceholderMessage {
             anchors.verticalCenter: parent.verticalCenter
             anchors.left: parent.left
             anchors.right: parent.right
             anchors.leftMargin: Kirigami.Units.largeSpacing
             anchors.rightMargin: Kirigami.Units.largeSpacing
-            
+
             visible: listView.count === 0
             icon.name: "dialog-scripts"
             text: i18n("No saved commands")
             explanation: i18n("Save commands to quickly run them without typing them out.")
-            
+
             helpfulAction: Kirigami.Action {
                 icon.name: "list-add"
                 text: i18n("Add command")
                 onTriggered: actionDialog.open()
             }
         }
-        
+
         delegate: Kirigami.SwipeListItem {
             RowLayout {
                 Kirigami.Icon {
@@ -83,7 +83,7 @@ Kirigami.ScrollablePage {
         preferredWidth: Kirigami.Units.gridUnit * 30
         padding: Kirigami.Units.largeSpacing
         standardButtons: Dialog.Save | Dialog.Cancel
-        
+
         onAccepted: {
             if (textField.text != "") {
                 SavedCommandsModel.addAction(textField.text);

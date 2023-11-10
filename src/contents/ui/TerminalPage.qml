@@ -17,12 +17,12 @@ Kirigami.Page {
     property QMLTermWidget currentTerminal: tabSwipeView.contentChildren[tabSwipeView.currentIndex].termWidget
 
     background: Item {}
-    
+
     topPadding: 0
     bottomPadding: 0
     leftPadding: 0
     rightPadding: 0
-    
+
     property bool initialSessionCreated: false
 
     function forceTerminalFocus() {
@@ -32,12 +32,12 @@ Kirigami.Page {
             Qt.inputMethod.hide();
         }
     }
-    
+
     Component.onCompleted: {
         // focus terminal text input immediately after load
         forceTerminalFocus();
     }
-    
+
     // switch tab button
     titleDelegate: ToolButton {
         Layout.fillHeight: true
@@ -58,9 +58,9 @@ Kirigami.Page {
             }
         }
     }
-    
+
     property bool isWideScreen: root.width > 540
-    
+
     function openSettings() {
         if (isWideScreen) {
             root.settingsDialogLoader.active = true;
@@ -73,7 +73,7 @@ Kirigami.Page {
             );
         }
     }
-    
+
     property var settingsDialogLoader: Loader {
         active: false
         sourceComponent: SettingsDialog {
@@ -81,11 +81,11 @@ Kirigami.Page {
             terminal: currentTerminal
         }
     }
-    
+
     function switchToTab(index) {
         tabSwipeView.setCurrentIndex(index);
     }
-    
+
     function closeTab(index) {
         if (tabSwipeView.contentChildren[index].termWidget.session.hasActiveProcess) {
             selectTabDialog.close();
@@ -210,7 +210,7 @@ Kirigami.Page {
             onTriggered: root.openSettings()
         }
     ]
-    
+
     header: Loader {
         visible: active
         active: root.isWideScreen && root.height > 360
@@ -218,22 +218,22 @@ Kirigami.Page {
             id: tabControl
             height: visible ? implicitHeight : 0
             visible: tabControlListView.count > 1
-            
+
             leftPadding: 0
             rightPadding: 0
             topPadding: 0
             bottomPadding: 0
-            
+
             width: root.width
-            
+
             background: Rectangle {
                 color: Kirigami.Theme.backgroundColor
             }
-            
+
             contentItem: Tabs {
                 id: tabControlListView
                 currentIndex: tabSwipeView.currentIndex
-                
+
                 onSwitchToTabRequested: root.switchToTab(index)
                 onCloseTabRequested: root.closeTab(index)
                 onAddTabRequested: newTabAction.trigger()
@@ -249,17 +249,17 @@ Kirigami.Page {
             id: savedCommandsDialog
             terminal: root.currentTerminal
         }
-        
+
         Kirigami.Dialog {
             id: confirmDialog
-            
+
             property int indexToClose: 0
             property var selectedTerminal: tabSwipeView.contentChildren[indexToClose]
-            
+
             title: i18nc("@title:window", "Confirm closing %1", selectedTerminal ? selectedTerminal.termWidget.tabName : "")
             standardButtons: Dialog.Yes | Dialog.Cancel
             padding: Kirigami.Units.gridUnit
-            
+
             onAccepted: {
                 TerminalTabModel.removeTab(indexToClose);
                 selectTabDialog.open();
@@ -267,7 +267,7 @@ Kirigami.Page {
             onRejected: {
                 selectTabDialog.open();
             }
-            
+
             RowLayout {
                 Label {
                     Layout.maximumWidth: Kirigami.Units.gridUnit * 15
@@ -276,12 +276,12 @@ Kirigami.Page {
                 }
             }
         }
-        
+
         Kirigami.Dialog {
             id: selectTabDialog
             title: i18nc("@title:window", "Select Tab")
             standardButtons: Dialog.Close
-            
+
             ListView {
                 id: tabListView
                 implicitWidth: Kirigami.Units.gridUnit * 16
@@ -289,23 +289,23 @@ Kirigami.Page {
                 Kirigami.Theme.inherit: false
                 Kirigami.Theme.colorSet: Kirigami.Theme.View
                 model: TerminalTabModel
-                
+
                 delegate: ItemDelegate {
                     width: tabListView.width
                     topPadding: Kirigami.Units.smallSpacing
                     bottomPadding: Kirigami.Units.smallSpacing
-                    
+
                     onClicked: {
                         tabSwipeView.currentIndex = index;
                         selectTabDialog.close();
                     }
-                    
+
                     contentItem: RowLayout {
                         Label {
                             text: model.name
                             Layout.fillWidth: true
                         }
-                        
+
                         RadioButton {
                             Layout.alignment: Qt.AlignVCenter
                             checked: tabSwipeView.currentIndex == index
@@ -314,7 +314,7 @@ Kirigami.Page {
                                 selectTabDialog.close();
                             }
                         }
-                        
+
                         ToolButton {
                             Layout.alignment: Qt.AlignVCenter
                             icon.name: "delete"
@@ -349,42 +349,42 @@ Kirigami.Page {
         SwipeView {
             id: tabSwipeView
             interactive: !selectionModePopup.visible && Kirigami.Settings.hasTransientTouchInput // don't conflict with selection mode
-            
+
             Layout.fillWidth: true
             Layout.fillHeight: true
 
             onCurrentItemChanged: currentTerminal.forceActiveFocus()
-            
+
             Repeater {
                 id: terminalRepeater
                 model: TerminalTabModel
-                
+
                 delegate: Item {
                     property alias termWidget: terminal
-                    
+
                     QMLTermWidget {
                         id: terminal
                         anchors.fill: parent
-                        
+
                         readonly property string tabName: model.name
                         readonly property int modelIndex: model.index
                         readonly property bool isCurrentItem: SwipeView.isCurrentItem
-                        
+
                         // with touch, to select text we first require users to press-and-hold to enter the selection mode
                         property bool touchSelectionMode: false
-                        
+
                         onIsCurrentItemChanged: {
                             if (isCurrentItem) {
                                 root.forceTerminalFocus();
                             }
                         }
-                        
+
                         font.family: TerminalSettings.fontFamily
                         font.pixelSize: TerminalSettings.fontSize
-                        
+
                         colorScheme: TerminalSettings.colorScheme
                         opacity: TerminalSettings.windowOpacity
-                        
+
                         Component.onCompleted: {
                             if (!root.initialSessionCreated) {
                                 // setup for CLI arguments
@@ -395,7 +395,7 @@ Kirigami.Page {
                                     mainsession.sendText(Util.initialCommand);
                                     terminal.pressKey(Qt.Key_Enter, Qt.NoModifier, true);
                                 }
-                                
+
                                 root.initialSessionCreated = true;
                             }
 
@@ -407,7 +407,7 @@ Kirigami.Page {
                                 root.actions = Qt.binding(() => menuActions)
                             }
                         }
-                        
+
                         function pressKey(key, modifiers, pressed, nativeScanCode, text) {
                             terminal.simulateKeyPress(key, modifiers, pressed, nativeScanCode, text);
                             root.forceTerminalFocus();
@@ -447,26 +447,26 @@ Kirigami.Page {
                             position: terminal.scrollbarCurrentValue / (terminal.lines + terminal.scrollbarMaximum)
                             interactive: false
                         }
-                        
+
                         // terminal focus on mouse click
                         TapHandler {
                             acceptedDevices: PointerDevice.Mouse | PointerDevice.Stylus
                             cursorShape: Qt.IBeamCursor
                             onTapped: root.forceTerminalFocus();
                         }
-                        
+
                         // enter touch selection mode
                         TapHandler {
                             acceptedDevices: PointerDevice.TouchScreen
                             enabled: !terminal.touchSelectionMode
                             onLongPressed: terminal.touchSelectionMode = true
                         }
-                        
+
                         // simulate scrolling for touch (TODO velocity)
                         DragHandler {
                             acceptedDevices: PointerDevice.TouchScreen
                             enabled: !terminal.touchSelectionMode
-                            
+
                             property real previousY
                             onActiveChanged: {
                                 previousY = 0;
