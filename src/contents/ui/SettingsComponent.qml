@@ -129,7 +129,7 @@ ColumnLayout {
 
                     MobileForm.FormArrow {
                         Layout.alignment: Qt.AlignRight | Qt.AlignVCenter
-                        direction: MobileForm.FormArrow.Down
+                        direction: Qt.DownArrow
                     }
                 }
 
