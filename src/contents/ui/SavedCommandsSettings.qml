@@ -51,7 +51,7 @@ Kirigami.ScrollablePage {
         }
 
         delegate: Kirigami.SwipeListItem {
-            RowLayout {
+            contentItem: RowLayout {
                 Kirigami.Icon {
                     source: "dialog-scripts"
                 }
