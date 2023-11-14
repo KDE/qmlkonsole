@@ -40,7 +40,7 @@ find_package(Qt6 ${QT_MIN_VERSION} REQUIRED NO_MODULE COMPONENTS
     Widgets
 )
 find_package(KF6 ${KF6_MIN_VERSION} REQUIRED COMPONENTS
-    Kirigami2 
+    Kirigami
     I18n 
     Config 
     CoreAddons 
