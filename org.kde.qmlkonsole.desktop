@@ -36,7 +36,7 @@ Keywords[ta]=terminal;console;script;run;execute;command;command-line;commandlin
 Keywords[tr]=terminal;uçbirim;konsol;betik;çalıştır;yürüt;komut;komut satırı;komutsatırı;cli;bash;sh;shell;zsh;cmd;komut istemi
 Keywords[uk]=terminal;console;script;run;execute;command;command-line;commandline;cli;bash;sh;shell;zsh;cmd;command prompt;термінал;консоль;скрипт;сценарій;виконати;запустити;команда;командний рядок;клі;командний інтерфейс;баш;оболонка;шел;зш;кмд;командний запит
 Keywords[x-test]=xxterminalxx;xxconsolexx;xxscriptxx;xxrunxx;xxexecutexx;xxcommandxx;xxcommand-linexx;xxcommandlinexx;xxclixx;xxbashxx;xxshxx;xxshellxx;xxzshxx;xxcmdxx;xxcommand promptxx
-Keywords[zh_CN]=terminal;console;script;run;execute;command;command-line;commandline;cli;bash;sh;shell;zsh;终端;控制台;脚本;执行;运行;命令;命令行;命令行界面;外壳;命令行提示
+Keywords[zh_CN]=terminal;console;script;run;execute;command;command-line;commandline;cli;bash;sh;shell;zsh;终端;控制台;脚本;执行;运行;命令;命令行;命令行界面;外壳;命令行提示;zhongduan;kongzhitai;jiaoben;zhixing;yunxing;mingling;minglinghang;minglinghangjiemian;waike;minglinghangtishi
 
 Name=Terminal
 Name[ast]=Terminal
