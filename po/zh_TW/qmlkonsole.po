@@ -2,280 +2,282 @@
 # qmlkonsole 套件的正體中文翻譯.
 # Copyright (C) 2022 This file is copyright:
 # This file is distributed under the same license as the qmlkonsole package.
-# Automatically generated, 2022.
 #
+# Automatically generated, 2022.
+# Kisaragi Hiu <mail@kisaragi-hiu.com>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: qmlkonsole\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-11-08 08:48+0000\n"
-"PO-Revision-Date: 2022-04-29 00:46+0000\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2023-12-15 19:32+0900\n"
+"Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
+"Language-Team: Traditional Chinese <zh-l10n@lists.slat.org>\n"
 "Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Lokalize 24.01.80\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr ""
+msgstr "Kisaragi Hiu"
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr ""
+msgstr "mail@kisaragi-hiu.com"
 
 #: contents/ui/main.qml:16
 #, kde-format
 msgid "Terminal"
-msgstr ""
+msgstr "終端機"
 
 #: contents/ui/SavedCommandsDialog.qml:19
 #, kde-format
 msgctxt "@title:window"
 msgid "Saved Commands"
-msgstr ""
+msgstr "已儲存指令"
 
 #: contents/ui/SavedCommandsDialog.qml:26
 #, kde-format
 msgid "Configure"
-msgstr ""
+msgstr "設定"
 
 #: contents/ui/SavedCommandsDialog.qml:34 contents/ui/TerminalPage.qml:321
 #, kde-format
 msgid "Close"
-msgstr ""
+msgstr "關閉"
 
 #: contents/ui/SavedCommandsDialog.qml:53
 #: contents/ui/SavedCommandsSettings.qml:43
 #, kde-format
 msgid "No saved commands"
-msgstr ""
+msgstr "沒有已儲存指令"
 
 #: contents/ui/SavedCommandsDialog.qml:54
 #: contents/ui/SavedCommandsSettings.qml:44
 #, kde-format
 msgid "Save commands to quickly run them without typing them out."
-msgstr ""
+msgstr "儲存指令以快速執行它們而不需要將其打出來。"
 
 #: contents/ui/SavedCommandsSettings.qml:17
 #, kde-format
 msgid "Saved Commands"
-msgstr ""
+msgstr "已儲存指令"
 
 #: contents/ui/SavedCommandsSettings.qml:22
 #: contents/ui/SavedCommandsSettings.qml:82
 #, kde-format
 msgid "Add Command"
-msgstr ""
+msgstr "新增指令"
 
 #: contents/ui/SavedCommandsSettings.qml:48
 #, kde-format
 msgid "Add command"
-msgstr ""
+msgstr "新增指令"
 
 #: contents/ui/SavedCommandsSettings.qml:73
 #, kde-format
 msgid "Action %1 removed"
-msgstr ""
+msgstr "已移除動作 %1"
 
 #: contents/ui/SettingsComponent.qml:42
 #, kde-format
 msgid "General"
-msgstr ""
+msgstr "一般"
 
 #: contents/ui/SettingsComponent.qml:47
 #, kde-format
 msgid "About"
-msgstr ""
+msgstr "關於"
 
 #: contents/ui/SettingsComponent.qml:67
 #, kde-format
 msgid "Appearance"
-msgstr ""
+msgstr "外觀"
 
 #: contents/ui/SettingsComponent.qml:72
 #, kde-format
 msgid "Color scheme"
-msgstr ""
+msgstr "配色方案"
 
 #: contents/ui/SettingsComponent.qml:104 contents/ui/SettingsComponent.qml:118
 #, kde-format
 msgid "Font Family"
-msgstr ""
+msgstr "字型家族"
 
 #: contents/ui/SettingsComponent.qml:151
 #, kde-format
 msgctxt "@title:window"
 msgid "Pick font"
-msgstr ""
+msgstr "選取字型"
 
 #: contents/ui/SettingsComponent.qml:215
 #, kde-format
 msgid "Font Size"
-msgstr ""
+msgstr "字型大小"
 
 #: contents/ui/SettingsComponent.qml:240
 #, kde-format
 msgid "Window Transparency"
-msgstr ""
+msgstr "視窗透明度"
 
 #: contents/ui/SettingsComponent.qml:278
 #, kde-format
 msgid "Blur Background"
-msgstr ""
+msgstr "模糊背景"
 
 #: contents/ui/SettingsDialog.qml:17 contents/ui/SettingsPage.qml:17
 #: contents/ui/TerminalPage.qml:208
 #, kde-format
 msgid "Settings"
-msgstr ""
+msgstr "設定"
 
 #: contents/ui/TerminalKeyToolBar.qml:72
 #, kde-format
 msgctxt "Control Key (should match the key on the keyboard of the locale)"
 msgid "Ctrl"
-msgstr ""
+msgstr "Ctrl"
 
 #: contents/ui/TerminalKeyToolBar.qml:90
 #, kde-format
 msgctxt "Alt Key (should match the key on the keyboard of the locale)"
 msgid "Alt"
-msgstr ""
+msgstr "Alt"
 
 #: contents/ui/TerminalKeyToolBar.qml:106
 #, kde-format
 msgctxt "Escape key (should match the key on the keyboard of the locale)"
 msgid "Esc"
-msgstr ""
+msgstr "Esc"
 
 #: contents/ui/TerminalKeyToolBar.qml:113
 #, kde-format
 msgctxt ""
 "Tab character key (should match the key on the keyboard of the locale)"
 msgid "Tab"
-msgstr ""
+msgstr "Tab"
 
 #: contents/ui/TerminalKeyToolBar.qml:162
 #, kde-format
 msgid "Toggle Virtual Keyboard"
-msgstr ""
+msgstr "切換虛擬鍵盤"
 
 #: contents/ui/TerminalPage.qml:119
 #, kde-format
 msgctxt "@action:intoolbar"
 msgid "New Tab"
-msgstr ""
+msgstr "新分頁"
 
 #: contents/ui/TerminalPage.qml:129
 #, kde-format
 msgctxt "@action:intoolbar"
 msgid "Saved Commands"
-msgstr ""
+msgstr "已儲存指令"
 
 #: contents/ui/TerminalPage.qml:136
 #, kde-format
 msgid "reverse-i-search"
-msgstr ""
+msgstr "反向不分大小寫搜尋"
 
 #: contents/ui/TerminalPage.qml:144
 #, kde-format
 msgid "Cancel current command"
-msgstr ""
+msgstr "取消目前指令"
 
 #: contents/ui/TerminalPage.qml:152
 #, kde-format
 msgid "Send EOF"
-msgstr ""
+msgstr "傳送 EOF"
 
 #: contents/ui/TerminalPage.qml:160
 #, kde-format
 msgid "Cursor to line start"
-msgstr ""
+msgstr "游標移至行開頭"
 
 #: contents/ui/TerminalPage.qml:168
 #, kde-format
 msgid "Cursor to line end"
-msgstr ""
+msgstr "游標移至行尾"
 
 #: contents/ui/TerminalPage.qml:176
 #, kde-format
 msgid "Kill to line end"
-msgstr ""
+msgstr "剪下至行尾"
 
 #: contents/ui/TerminalPage.qml:184
 #, kde-format
 msgid "Paste from kill buffer"
-msgstr ""
+msgstr "從剪貼簿貼上"
 
 #: contents/ui/TerminalPage.qml:192
 #, kde-format
 msgid "Copy"
-msgstr ""
+msgstr "複製"
 
 #: contents/ui/TerminalPage.qml:202
 #, kde-format
 msgid "Paste"
-msgstr ""
+msgstr "貼上"
 
 #: contents/ui/TerminalPage.qml:259
 #, kde-format
 msgctxt "@title:window"
 msgid "Confirm closing %1"
-msgstr ""
+msgstr "確認關閉 %1"
 
 #: contents/ui/TerminalPage.qml:275
 #, kde-format
 msgid ""
 "A process is currently running in this tab. Are you sure you want to close "
 "it?"
-msgstr ""
+msgstr "有行程正在此分頁中執行。您確定要將它關閉嗎？"
 
 #: contents/ui/TerminalPage.qml:282
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Tab"
-msgstr ""
+msgstr "選擇分頁"
 
 #: contents/ui/TerminalPage.qml:334
 #, kde-format
 msgid "selection mode"
-msgstr ""
+msgstr "選取模式"
 
 #: contents/ui/TerminalPage.qml:342
 #, kde-format
 msgid "Disable"
-msgstr ""
+msgstr "停用"
 
 #: main.cpp:36
 #, kde-format
 msgid "© 2020-2022 KDE Community"
-msgstr ""
+msgstr "© 2020-2022 KDE 社群"
 
 #: main.cpp:38
 #, kde-format
 msgid "Jonah Brüchert"
-msgstr ""
+msgstr "Jonah Brüchert"
 
 #: main.cpp:39
 #, kde-format
 msgid "Devin Lin"
-msgstr ""
+msgstr "Devin Lin"
 
 #: main.cpp:58
 #, kde-format
 msgid "Command to execute"
-msgstr ""
+msgstr "要執行的指令"
 
 #: main.cpp:59
 #, kde-format
 msgid "Set the initial working directory to 'dir'"
-msgstr ""
+msgstr "設定起始目錄為 'dir'"
 
 #: terminaltabmodel.cpp:68
 #, kde-format
 msgid "Tab %1"
-msgstr ""
+msgstr "分頁 %1"
