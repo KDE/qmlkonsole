@@ -13,6 +13,7 @@ X-KDE-FormFactor=desktop;tablet;handset;
 Keywords=terminal;console;script;run;execute;command;command-line;commandline;cli;bash;sh;shell;zsh;cmd;command prompt
 Keywords[ca]=terminal;consola;script;executar;ordre;línia d'ordres;línia ordres;cli;bash;sh;shell;zsh;cmd;indicador d'ordres
 Keywords[ca@valencia]=terminal;consola;script;executar;ordre;línia d'ordres;línia ordres;cli;bash;sh;shell;zsh;cmd;indicatiu d'ordres
+Keywords[de]=Terminal;Konsole;Skript;ausführen;Befehl;Befehlszeile;Befehlseingabe
 Keywords[en_GB]=terminal;console;script;run;execute;command;command-line;commandline;cli;bash;sh;shell;zsh;cmd;command prompt
 Keywords[eo]=terminalo;konzolo;skripto;ruli;efektivigi;komando;komandlinio;kli;bash;sh;ŝelo;zsh;cmd;komandinvito
 Keywords[es]=terminal;consola;guion;ejecutar;lanzar;orden;comando;línea de órdenes;línea de comandos;bash;sh;shell;intérprete;intérprete de órdenes;zsh;orden;introducción de órdenes;introducción de comandos
