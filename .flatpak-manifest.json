@@ -1,7 +1,7 @@
 {
     "id": "org.kde.qmlkonsole",
     "runtime": "org.kde.Platform",
-    "runtime-version": "5.15-22.08",
+    "runtime-version": "6.6-kf6preview",
     "sdk": "org.kde.Sdk",
     "command": "qmlkonsole",
     "tags": [
@@ -66,35 +66,20 @@
             ],
             "buildsystem": "cmake-ninja",
             "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://download.kde.org/stable/kirigami-addons/kirigami-addons-0.11.0.tar.xz",
-                    "sha256": "05296c5afbe6804308bf9c0d2751f3b748b40d00fa784946d1dcdf3af4bffbad",
-                    "x-checker-data": {
-                        "type": "anitya",
-                        "project-id": 242933,
-                        "stable-only": true,
-                        "url-template": "https://download.kde.org/stable/kirigami-addons/kirigami-addons-$version.tar.xz"
-                    }
-                }
+                { "type": "git", "url": "https://invent.kde.org/libraries/kirigami-addons.git", "branch": "master" }
             ]
         },
         {
             "name": "qmltermwidget",
-            "buildsystem": "qmake",
-            "make-install-args": [
-                "INSTALL_ROOT=/app"
-            ],
-            "post-install": [
-                "mkdir -p /app/lib/qml",
-                "ln -s /app/usr/lib/qml/QMLTermWidget /app/lib/qml",
-                "ln -s /app/usr/lib/lib* /app/lib"
+            "buildsystem": "cmake-ninja",
+            "config-opts": [
+                "-DQT_MAJOR_VERSION=6"
             ],
             "sources": [
                 {
                     "type": "git",
-                    "url": "https://github.com/Swordfish90/qmltermwidget.git",
-                    "commit": "63228027e1f97c24abb907550b22ee91836929c5"
+                    "url": "https://invent.kde.org/jbbgameich/qmltermwidget.git",
+                    "commit": "299c27c07fdb3fe090bbd43626e22efe76712cf1"
                 }
             ]
         },
