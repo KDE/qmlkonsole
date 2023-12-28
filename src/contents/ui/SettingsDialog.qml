@@ -28,7 +28,7 @@ Kirigami.Dialog {
         
         leftPadding: 0
         rightPadding: 0
-        topPadding: Kirigami.Units.gridUnit
+        topPadding: 0
         bottomPadding: Kirigami.Units.gridUnit
         
         background: Rectangle {

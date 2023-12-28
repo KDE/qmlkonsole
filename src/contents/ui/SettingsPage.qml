@@ -7,18 +7,17 @@ import QtQuick.Controls as Controls
 import QtQuick.Layouts
 
 import org.kde.kirigami 2.19 as Kirigami
-import QMLTermWidge
+import QMLTermWidget
 
 import org.kde.qmlkonsole
-import org.kde.kirigamiaddons.labs.mobileform as MobileForm
 
 Kirigami.ScrollablePage {
     id: root
     title: i18n("Settings")
     property QMLTermWidget terminal
     
-    topPadding: Kirigami.Units.gridUnit
-    bottomPadding: 0
+    topPadding: 0
+    bottomPadding: Kirigami.Units.gridUnit
     leftPadding: 0
     rightPadding: 0
     

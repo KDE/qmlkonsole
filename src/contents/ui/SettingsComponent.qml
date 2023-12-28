@@ -31,258 +31,249 @@ ColumnLayout {
         }
     }
 
-    MobileForm.FormCard {
-        Layout.alignment: Qt.AlignTop
-        Layout.fillWidth: true
-
-        delegates: ColumnLayout {
-            spacing: 0
-
-            MobileForm.FormHeader {
-                title: i18n("General")
-            }
-
-            MobileForm.FormButtonDelegate {
-                id: aboutDelegate
-                text: i18n("About")
-                onClicked: {
-                    if (root.dialog) {
-                        root.dialog.close();
-                    }
-                    applicationWindow().pageStack.push("qrc:/AboutPage.qml")
-                }
-            }
-        }
+    MobileForm.FormHeader {
+        title: i18n("General")
     }
 
     MobileForm.FormCard {
         Layout.alignment: Qt.AlignTop
-        Layout.topMargin: Kirigami.Units.largeSpacing
         Layout.fillWidth: true
 
-        delegates: ColumnLayout {
-            spacing: 0
+        MobileForm.FormButtonDelegate {
+            id: aboutDelegate
+            text: i18n("About")
+            onClicked: {
+                if (root.dialog) {
+                    root.dialog.close();
+                }
+                applicationWindow().pageStack.push("qrc:/AboutPage.qml")
+            }
+        }
+    }
 
-            MobileForm.FormHeader {
-                title: i18n("Appearance")
+    MobileForm.FormHeader {
+        title: i18n("Appearance")
+    }
+
+    MobileForm.FormCard {
+        Layout.alignment: Qt.AlignTop
+        Layout.fillWidth: true
+
+        MobileForm.FormComboBoxDelegate {
+            id: colorSchemeDropdown
+            text: i18n("Color scheme")
+            displayMode: MobileForm.FormComboBoxDelegate.Dialog
+            Component.onCompleted: currentIndex = indexOfValue(TerminalSettings.colorScheme)
+            model: terminal.availableColorSchemes
+
+            onClicked: {
+                if (root.dialog && displayMode === MobileForm.FormComboBoxDelegate.Dialog) {
+                    dialogTimer.dialog = colorSchemeDropdown.dialog;
+                    dialogTimer.restart();
+                }
             }
 
-            MobileForm.FormComboBoxDelegate {
-                id: colorSchemeDropdown
-                text: i18n("Color scheme")
-                displayMode: MobileForm.FormComboBoxDelegate.Dialog
-                Component.onCompleted: currentIndex = indexOfValue(TerminalSettings.colorScheme)
-                model: terminal.availableColorSchemes
+            Connections {
+                target: colorSchemeDropdown.dialog
+                function onClosed() {
+                    if (root.dialog) {
+                        root.dialog.open();
+                    }
+                }
+            }
 
-                onClicked: {
-                    if (root.dialog && displayMode === MobileForm.FormComboBoxDelegate.Dialog) {
-                        dialogTimer.dialog = colorSchemeDropdown.dialog;
-                        dialogTimer.restart();
+            onCurrentValueChanged: {
+                TerminalSettings.colorScheme = currentValue;
+                TerminalSettings.save();
+            }
+        }
+
+        MobileForm.FormDelegateSeparator { above: colorSchemeDropdown; below: fontFamilyDelegate }
+
+        MobileForm.AbstractFormDelegate {
+            id: fontFamilyDelegate
+            Layout.fillWidth: true
+            text: i18n("Font Family")
+
+            onClicked: {
+                if (fontFamilyPickerLoader.active) {
+                    fontFamilyPickerLoader.item.open();
+                } else {
+                    fontFamilyPickerLoader.active = true;
+                    fontFamilyPickerLoader.requestOpen = true;
+                }
+            }
+
+            contentItem: RowLayout {
+                Controls.Label {
+                    Layout.fillWidth: true
+                    text: i18n("Font Family")
+                    elide: Text.ElideRight
+                }
+
+                Controls.Label {
+                    Layout.alignment: Qt.AlignRight
+                    Layout.rightMargin: Kirigami.Units.smallSpacing
+                    color: Kirigami.Theme.disabledTextColor
+                    text: TerminalSettings.fontFamily
+                    font.family: TerminalSettings.fontFamily
+                }
+
+                MobileForm.FormArrow {
+                    Layout.alignment: Qt.AlignRight | Qt.AlignVCenter
+                    direction: Qt.DownArrow
+                }
+            }
+
+            Loader {
+                id: fontFamilyPickerLoader
+                active: false
+                asynchronous: true
+
+                property bool requestOpen: false
+                onLoaded: {
+                    if (requestOpen) {
+                        item.open();
+                        requestOpen = false;
                     }
                 }
 
-                Connections {
-                    target: colorSchemeDropdown.dialog
-                    function onClosed() {
+                sourceComponent: Kirigami.Dialog {
+                    id: fontFamilyPicker
+                    title: i18nc("@title:window", "Pick font")
+
+                    onClosed: {
                         if (root.dialog) {
                             root.dialog.open();
                         }
                     }
-                }
 
-                onCurrentValueChanged: {
-                    TerminalSettings.colorScheme = currentValue;
-                    TerminalSettings.save();
-                }
-            }
-
-            MobileForm.FormDelegateSeparator { above: colorSchemeDropdown; below: fontFamilyDelegate }
-
-            MobileForm.AbstractFormDelegate {
-                id: fontFamilyDelegate
-                Layout.fillWidth: true
-                text: i18n("Font Family")
-
-                onClicked: {
-                    if (fontFamilyPickerLoader.active) {
-                        fontFamilyPickerLoader.item.open();
-                    } else {
-                        fontFamilyPickerLoader.active = true;
-                        fontFamilyPickerLoader.requestOpen = true;
-                    }
-                }
-
-                contentItem: RowLayout {
-                    Controls.Label {
-                        Layout.fillWidth: true
-                        text: i18n("Font Family")
-                        elide: Text.ElideRight
-                    }
-
-                    Controls.Label {
-                        Layout.alignment: Qt.AlignRight
-                        Layout.rightMargin: Kirigami.Units.smallSpacing
-                        color: Kirigami.Theme.disabledTextColor
-                        text: TerminalSettings.fontFamily
-                        font.family: TerminalSettings.fontFamily
-                    }
-
-                    MobileForm.FormArrow {
-                        Layout.alignment: Qt.AlignRight | Qt.AlignVCenter
-                        direction: Qt.DownArrow
-                    }
-                }
-
-                Loader {
-                    id: fontFamilyPickerLoader
-                    active: false
-                    asynchronous: true
-
-                    property bool requestOpen: false
-                    onLoaded: {
-                        if (requestOpen) {
-                            item.open();
-                            requestOpen = false;
+                    onOpened: {
+                        if (root.dialog) {
+                            root.dialog.close();
                         }
                     }
 
-                    sourceComponent: Kirigami.Dialog {
-                        id: fontFamilyPicker
-                        title: i18nc("@title:window", "Pick font")
+                    ListView {
+                        implicitWidth: Kirigami.Units.gridUnit * 18
+                        implicitHeight: Kirigami.Units.gridUnit * 24
 
-                        onClosed: {
-                            if (root.dialog) {
-                                root.dialog.open();
-                            }
-                        }
+                        reuseItems: true
+                        model: FontListSearchModel
+                        currentIndex: -1
+                        clip: true
 
-                        onOpened: {
-                            if (root.dialog) {
-                                root.dialog.close();
-                            }
-                        }
+                        header: Controls.Control {
+                            topPadding: Kirigami.Units.smallSpacing
+                            bottomPadding: Kirigami.Units.smallSpacing
+                            rightPadding: Kirigami.Units.smallSpacing
+                            leftPadding: Kirigami.Units.smallSpacing
+                            width: fontFamilyPicker.width
 
-                        ListView {
-                            implicitWidth: Kirigami.Units.gridUnit * 18
-                            implicitHeight: Kirigami.Units.gridUnit * 24
-
-                            reuseItems: true
-                            model: FontListSearchModel
-                            currentIndex: -1
-                            clip: true
-
-                            header: Controls.Control {
-                                topPadding: Kirigami.Units.smallSpacing
-                                bottomPadding: Kirigami.Units.smallSpacing
-                                rightPadding: Kirigami.Units.smallSpacing
-                                leftPadding: Kirigami.Units.smallSpacing
-                                width: fontFamilyPicker.width
-
-                                contentItem: Kirigami.SearchField {
-                                    id: searchField
-                                    onTextChanged: {
-                                        FontListSearchModel.setFilterFixedString(text)
-                                        searchField.forceActiveFocus()
-                                    }
+                            contentItem: Kirigami.SearchField {
+                                id: searchField
+                                onTextChanged: {
+                                    FontListSearchModel.setFilterFixedString(text)
+                                    searchField.forceActiveFocus()
                                 }
                             }
+                        }
 
-                            delegate: Controls.ItemDelegate {
-                                text: model.name
-                                width: ListView.view.width
-                                onClicked: {
-                                    TerminalSettings.fontFamily = model.name;
-                                    TerminalSettings.save();
-                                    fontFamilyPicker.close();
-                                }
+                        delegate: Controls.ItemDelegate {
+                            text: model.name
+                            width: ListView.view.width
+                            onClicked: {
+                                TerminalSettings.fontFamily = model.name;
+                                TerminalSettings.save();
+                                fontFamilyPicker.close();
                             }
                         }
                     }
                 }
             }
+        }
 
-            MobileForm.FormDelegateSeparator { above: fontFamilyDelegate }
+        MobileForm.FormDelegateSeparator { above: fontFamilyDelegate }
 
-            MobileForm.AbstractFormDelegate {
-                id: fontSizeDelegate
-                Layout.fillWidth: true
-                background: Item {}
+        MobileForm.AbstractFormDelegate {
+            id: fontSizeDelegate
+            Layout.fillWidth: true
+            background: Item {}
 
-                contentItem: RowLayout {
-                    width: fontSizeDelegate.width
-                    Controls.Label {
-                        Layout.fillWidth: true
-                        text: i18n("Font Size")
+            contentItem: RowLayout {
+                width: fontSizeDelegate.width
+                Controls.Label {
+                    Layout.fillWidth: true
+                    text: i18n("Font Size")
+                }
+
+                Controls.SpinBox {
+                    value: TerminalSettings.fontSize
+                    onValueChanged: {
+                        TerminalSettings.fontSize = value;
+                        TerminalSettings.save();
+                    }
+                    from: 5
+                    to: 100
+                }
+            }
+        }
+
+        MobileForm.FormDelegateSeparator {}
+
+        MobileForm.AbstractFormDelegate {
+            id: opacityDelegate
+            Layout.fillWidth: true
+
+            background: Item {}
+
+            contentItem: ColumnLayout {
+                Controls.Label {
+                    text: i18n("Window Transparency")
+                }
+
+                RowLayout {
+                    spacing: Kirigami.Units.gridUnit
+                    Kirigami.Icon {
+                        implicitWidth: Kirigami.Units.iconSizes.smallMedium
+                        implicitHeight: Kirigami.Units.iconSizes.smallMedium
+                        source: "brightness-low"
                     }
 
-                    Controls.SpinBox {
-                        value: TerminalSettings.fontSize
-                        onValueChanged: {
-                            TerminalSettings.fontSize = value;
+                    Controls.Slider {
+                        Layout.fillWidth: true
+                        from: 0
+                        to: 100
+                        value: (1 - TerminalSettings.windowOpacity) * 100
+                        stepSize: 5
+                        snapMode: Controls.Slider.SnapAlways
+
+                        onMoved: {
+                            TerminalSettings.windowOpacity = 1 - (value / 100);
                             TerminalSettings.save();
                         }
-                        from: 5
-                        to: 100
+                    }
+
+                    Kirigami.Icon {
+                        implicitWidth: Kirigami.Units.iconSizes.smallMedium
+                        implicitHeight: Kirigami.Units.iconSizes.smallMedium
+                        source: "brightness-high"
                     }
                 }
             }
+        }
 
-            MobileForm.FormDelegateSeparator {}
+        MobileForm.FormDelegateSeparator { below: blurDelegate }
 
-            MobileForm.AbstractFormDelegate {
-                id: opacityDelegate
-                Layout.fillWidth: true
+        MobileForm.FormSwitchDelegate {
+            id: blurDelegate
+            text: i18n("Blur Background")
+            checked: TerminalSettings.blurWindow
 
-                background: Item {}
-
-                contentItem: ColumnLayout {
-                    Controls.Label {
-                        text: i18n("Window Transparency")
-                    }
-
-                    RowLayout {
-                        spacing: Kirigami.Units.gridUnit
-                        Kirigami.Icon {
-                            implicitWidth: Kirigami.Units.iconSizes.smallMedium
-                            implicitHeight: Kirigami.Units.iconSizes.smallMedium
-                            source: "brightness-low"
-                        }
-
-                        Controls.Slider {
-                            Layout.fillWidth: true
-                            from: 0
-                            to: 100
-                            value: (1 - TerminalSettings.windowOpacity) * 100
-                            stepSize: 5
-                            snapMode: Controls.Slider.SnapAlways
-
-                            onMoved: {
-                                TerminalSettings.windowOpacity = 1 - (value / 100);
-                                TerminalSettings.save();
-                            }
-                        }
-
-                        Kirigami.Icon {
-                            implicitWidth: Kirigami.Units.iconSizes.smallMedium
-                            implicitHeight: Kirigami.Units.iconSizes.smallMedium
-                            source: "brightness-high"
-                        }
-                    }
-                }
-            }
-
-            MobileForm.FormDelegateSeparator { below: blurDelegate }
-
-            MobileForm.FormSwitchDelegate {
-                id: blurDelegate
-                text: i18n("Blur Background")
-                checked: TerminalSettings.blurWindow
-
-                onCheckedChanged: {
-                    TerminalSettings.blurWindow = checked;
-                    TerminalSettings.save();
-                    Util.setBlur(applicationWindow().pageStack, TerminalSettings.blurWindow);
-                }
+            onCheckedChanged: {
+                TerminalSettings.blurWindow = checked;
+                TerminalSettings.save();
+                Util.setBlur(applicationWindow().pageStack, TerminalSettings.blurWindow);
             }
         }
     }
