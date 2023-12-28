@@ -14,22 +14,30 @@ import QMLTermWidget
 import org.kde.qmlkonsole
 
 Kirigami.ScrollablePage {
+    id: root
     title: i18n("Saved Commands")
+
     property QMLTermWidget terminal
+    property bool editMode: false
 
     actions: [
         Kirigami.Action {
             text: i18n("Add Command")
             icon.name: "contact-new"
             onTriggered: actionDialog.open()
+        },
+        Kirigami.Action {
+            text: i18n("Edit")
+            icon.name: 'entry-edit'
+            checkable: true
+            onCheckedChanged: root.editMode = checked
+            visible: listView.count > 0
         }
     ]
 
     ListView {
         id: listView
         model: SavedCommandsModel
-        width: parent.width
-        height: contentHeight
 
         Kirigami.PlaceholderMessage {
             anchors.verticalCenter: parent.verticalCenter
@@ -50,8 +58,16 @@ Kirigami.ScrollablePage {
             }
         }
 
-        delegate: Kirigami.SwipeListItem {
+        delegate: Control {
+            leftPadding: Kirigami.Units.largeSpacing
+            rightPadding: Kirigami.Units.largeSpacing
+            topPadding: Kirigami.Units.largeSpacing
+            bottomPadding: Kirigami.Units.largeSpacing
+            width: ListView.view.width
+
             contentItem: RowLayout {
+                id: row
+
                 Kirigami.Icon {
                     source: "dialog-scripts"
                 }
@@ -63,17 +79,15 @@ Kirigami.ScrollablePage {
                 Item {
                     Layout.fillWidth: true
                 }
-            }
-
-            actions: [
-                Kirigami.Action {
-                    icon.name: "delete"
-                    onTriggered: {
+                ToolButton {
+                    visible: root.editMode
+                    icon.name: 'delete'
+                    onClicked: {
                         SavedCommandsModel.removeRow(index);
-                        showPassiveNotification(i18n("Action %1 removed", label.text));
+                        showPassiveNotification(i18n("Command %1 removed", label.text));
                     }
                 }
-            ]
+            }
         }
     }
 

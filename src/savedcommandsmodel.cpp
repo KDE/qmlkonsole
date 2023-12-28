@@ -28,6 +28,7 @@ QVariant SavedCommandsModel::data(const QModelIndex &index, int role) const
 void SavedCommandsModel::save()
 {
     TerminalSettings::self()->setActions(m_actions);
+    TerminalSettings::self()->save();
 }
 
 void SavedCommandsModel::addAction(const QString &action)
@@ -36,7 +37,7 @@ void SavedCommandsModel::addAction(const QString &action)
     m_actions.push_back(action);
     endInsertRows();
 
-    TerminalSettings::self()->save();
+    save();
 }
 
 bool SavedCommandsModel::removeRow(int row)
@@ -49,6 +50,6 @@ bool SavedCommandsModel::removeRow(int row)
     m_actions.erase(m_actions.begin() + row);
     endRemoveRows();
 
-    TerminalSettings::self()->save();
+    save();
     return true;
 }

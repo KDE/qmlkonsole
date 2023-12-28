@@ -15,8 +15,6 @@ import org.kde.qmlkonsole
 Kirigami.ApplicationWindow {
     title: i18n("Terminal")
 
-    contextDrawer: Kirigami.ContextDrawer {}
-
     pageStack.initialPage: "qrc:/TerminalPage.qml"
     
     pageStack.globalToolBar.style: Kirigami.ApplicationHeaderStyle.ToolBar
