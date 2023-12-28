@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qmlkonsole\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-11-08 08:48+0000\n"
+"POT-Creation-Date: 2023-12-28 01:34+0000\n"
 "PO-Revision-Date: 2022-12-24 08:45+0200\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
@@ -52,87 +52,93 @@ msgid "Close"
 msgstr "Закрити"
 
 #: contents/ui/SavedCommandsDialog.qml:53
-#: contents/ui/SavedCommandsSettings.qml:43
+#: contents/ui/SavedCommandsSettings.qml:51
 #, kde-format
 msgid "No saved commands"
 msgstr "Немає збережених команд"
 
 #: contents/ui/SavedCommandsDialog.qml:54
-#: contents/ui/SavedCommandsSettings.qml:44
+#: contents/ui/SavedCommandsSettings.qml:52
 #, kde-format
 msgid "Save commands to quickly run them without typing them out."
 msgstr ""
 "Зберегти команди для швидкого запуску без потреби у їхньому повторному "
 "введенні."
 
-#: contents/ui/SavedCommandsSettings.qml:17
+#: contents/ui/SavedCommandsSettings.qml:18
 #, kde-format
 msgid "Saved Commands"
 msgstr "Збережені команди"
 
-#: contents/ui/SavedCommandsSettings.qml:22
-#: contents/ui/SavedCommandsSettings.qml:82
+#: contents/ui/SavedCommandsSettings.qml:25
+#: contents/ui/SavedCommandsSettings.qml:96
 #, kde-format
 msgid "Add Command"
 msgstr "Додати команду"
 
-#: contents/ui/SavedCommandsSettings.qml:48
+#: contents/ui/SavedCommandsSettings.qml:30
+#, kde-format
+msgid "Edit"
+msgstr ""
+
+#: contents/ui/SavedCommandsSettings.qml:56
 #, kde-format
 msgid "Add command"
 msgstr "Додати команду"
 
-#: contents/ui/SavedCommandsSettings.qml:73
-#, kde-format
-msgid "Action %1 removed"
+#: contents/ui/SavedCommandsSettings.qml:87
+#, fuzzy, kde-format
+#| msgid "Action %1 removed"
+msgid "Command %1 removed"
 msgstr "Вилучено дію %1"
 
-#: contents/ui/SettingsComponent.qml:42
+#: contents/ui/SettingsComponent.qml:35
 #, kde-format
 msgid "General"
 msgstr "Загальне"
 
-#: contents/ui/SettingsComponent.qml:47
+#: contents/ui/SettingsComponent.qml:44
 #, kde-format
 msgid "About"
 msgstr "Про програму"
 
-#: contents/ui/SettingsComponent.qml:67
+#: contents/ui/SettingsComponent.qml:55
 #, kde-format
 msgid "Appearance"
 msgstr "Вигляд"
 
-#: contents/ui/SettingsComponent.qml:72
+#: contents/ui/SettingsComponent.qml:64
 #, kde-format
 msgid "Color scheme"
 msgstr "Схема кольорів"
 
-#: contents/ui/SettingsComponent.qml:104 contents/ui/SettingsComponent.qml:118
+#: contents/ui/SettingsComponent.qml:96 contents/ui/SettingsComponent.qml:110
 #, kde-format
 msgid "Font Family"
 msgstr "Гарнітура шрифту"
 
-#: contents/ui/SettingsComponent.qml:151
+#: contents/ui/SettingsComponent.qml:143
 #, kde-format
 msgctxt "@title:window"
 msgid "Pick font"
 msgstr "Вибрати шрифт"
 
-#: contents/ui/SettingsComponent.qml:215
+#: contents/ui/SettingsComponent.qml:207
 #, kde-format
 msgid "Font Size"
 msgstr "Розмір шрифту"
 
-#: contents/ui/SettingsComponent.qml:240
+#: contents/ui/SettingsComponent.qml:232
 #, kde-format
 msgid "Window Transparency"
 msgstr "Прозорість вікна"
 
-#: contents/ui/SettingsComponent.qml:278
+#: contents/ui/SettingsComponent.qml:270
 #, kde-format
 msgid "Blur Background"
 msgstr "Розмити тло"
 
-#: contents/ui/SettingsDialog.qml:17 contents/ui/SettingsPage.qml:17
+#: contents/ui/SettingsDialog.qml:17 contents/ui/SettingsPage.qml:16
 #: contents/ui/TerminalPage.qml:208
 #, kde-format
 msgid "Settings"

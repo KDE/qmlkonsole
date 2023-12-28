@@ -1,13 +1,13 @@
-# Copyright (C) YEAR This file is copyright:
+# Copyright (C) 2023 This file is copyright:
 # This file is distributed under the same license as the qmlkonsole package.
 #
-# Emir SARI <emir_sari@icloud.com>, 2022, 2023.
+# SPDX-FileCopyrightText: 2022, 2023 Emir SARI <emir_sari@icloud.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: qmlkonsole\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-11-08 08:48+0000\n"
-"PO-Revision-Date: 2023-04-18 05:31+0300\n"
+"POT-Creation-Date: 2023-12-28 01:34+0000\n"
+"PO-Revision-Date: 2023-12-27 14:09+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 23.03.70\n"
+"X-Generator: Lokalize 24.01.85\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -49,85 +49,91 @@ msgid "Close"
 msgstr "Kapat"
 
 #: contents/ui/SavedCommandsDialog.qml:53
-#: contents/ui/SavedCommandsSettings.qml:43
+#: contents/ui/SavedCommandsSettings.qml:51
 #, kde-format
 msgid "No saved commands"
 msgstr "Kaydedilen komut yok"
 
 #: contents/ui/SavedCommandsDialog.qml:54
-#: contents/ui/SavedCommandsSettings.qml:44
+#: contents/ui/SavedCommandsSettings.qml:52
 #, kde-format
 msgid "Save commands to quickly run them without typing them out."
-msgstr "Komutları yazmadan hızlıca çalıştırmak için onları kaydedin."
+msgstr "Komutları yazmadan tez çalıştırmak için onları kaydedin."
 
-#: contents/ui/SavedCommandsSettings.qml:17
+#: contents/ui/SavedCommandsSettings.qml:18
 #, kde-format
 msgid "Saved Commands"
 msgstr "Kaydedilen Komutlar"
 
-#: contents/ui/SavedCommandsSettings.qml:22
-#: contents/ui/SavedCommandsSettings.qml:82
+#: contents/ui/SavedCommandsSettings.qml:25
+#: contents/ui/SavedCommandsSettings.qml:96
 #, kde-format
 msgid "Add Command"
 msgstr "Komut Ekle"
 
-#: contents/ui/SavedCommandsSettings.qml:48
+#: contents/ui/SavedCommandsSettings.qml:30
+#, kde-format
+msgid "Edit"
+msgstr ""
+
+#: contents/ui/SavedCommandsSettings.qml:56
 #, kde-format
 msgid "Add command"
 msgstr "Komut ekle"
 
-#: contents/ui/SavedCommandsSettings.qml:73
-#, kde-format
-msgid "Action %1 removed"
+#: contents/ui/SavedCommandsSettings.qml:87
+#, fuzzy, kde-format
+#| msgid "Action %1 removed"
+msgid "Command %1 removed"
 msgstr "%1 eylemi kaldırıldı"
 
-#: contents/ui/SettingsComponent.qml:42
+#: contents/ui/SettingsComponent.qml:35
 #, kde-format
 msgid "General"
 msgstr "Genel"
 
-#: contents/ui/SettingsComponent.qml:47
+#: contents/ui/SettingsComponent.qml:44
 #, kde-format
 msgid "About"
 msgstr "Hakkında"
 
-#: contents/ui/SettingsComponent.qml:67
+#: contents/ui/SettingsComponent.qml:55
 #, kde-format
 msgid "Appearance"
 msgstr "Görünüş"
 
-#: contents/ui/SettingsComponent.qml:72
+#: contents/ui/SettingsComponent.qml:64
 #, kde-format
 msgid "Color scheme"
 msgstr "Renk şeması"
 
-#: contents/ui/SettingsComponent.qml:104 contents/ui/SettingsComponent.qml:118
+#: contents/ui/SettingsComponent.qml:96 contents/ui/SettingsComponent.qml:110
 #, kde-format
 msgid "Font Family"
 msgstr "Yazıtipi Ailesi"
 
-#: contents/ui/SettingsComponent.qml:151
+#: contents/ui/SettingsComponent.qml:143
 #, kde-format
 msgctxt "@title:window"
 msgid "Pick font"
 msgstr "Yazıtipi seç"
 
-#: contents/ui/SettingsComponent.qml:215
+#: contents/ui/SettingsComponent.qml:207
 #, kde-format
 msgid "Font Size"
 msgstr "Yazıtipi Boyutu"
 
-#: contents/ui/SettingsComponent.qml:240
+#: contents/ui/SettingsComponent.qml:232
 #, kde-format
 msgid "Window Transparency"
 msgstr "Pencere Saydamlığı"
 
-#: contents/ui/SettingsComponent.qml:278
+#: contents/ui/SettingsComponent.qml:270
 #, kde-format
 msgid "Blur Background"
 msgstr "Arka Planı Bulanıklaştır"
 
-#: contents/ui/SettingsDialog.qml:17 contents/ui/SettingsPage.qml:17
+#: contents/ui/SettingsDialog.qml:17 contents/ui/SettingsPage.qml:16
 #: contents/ui/TerminalPage.qml:208
 #, kde-format
 msgid "Settings"

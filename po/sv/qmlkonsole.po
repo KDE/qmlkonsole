@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qmlkonsole\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-11-08 08:48+0000\n"
+"POT-Creation-Date: 2023-12-28 01:34+0000\n"
 "PO-Revision-Date: 2023-07-31 11:10+0200\n"
 "Last-Translator: Stefan Asserhäll <stefan.asserhall@bredband.net>\n"
 "Language-Team: Swedish <kde-i18n-doc@kde.org>\n"
@@ -49,85 +49,91 @@ msgid "Close"
 msgstr "Stäng"
 
 #: contents/ui/SavedCommandsDialog.qml:53
-#: contents/ui/SavedCommandsSettings.qml:43
+#: contents/ui/SavedCommandsSettings.qml:51
 #, kde-format
 msgid "No saved commands"
 msgstr "Inga sparade kommandon"
 
 #: contents/ui/SavedCommandsDialog.qml:54
-#: contents/ui/SavedCommandsSettings.qml:44
+#: contents/ui/SavedCommandsSettings.qml:52
 #, kde-format
 msgid "Save commands to quickly run them without typing them out."
 msgstr "Spara.kommandon för att snabbt köra dem utan att skriva in dem."
 
-#: contents/ui/SavedCommandsSettings.qml:17
+#: contents/ui/SavedCommandsSettings.qml:18
 #, kde-format
 msgid "Saved Commands"
 msgstr "Sparade kommandon"
 
-#: contents/ui/SavedCommandsSettings.qml:22
-#: contents/ui/SavedCommandsSettings.qml:82
+#: contents/ui/SavedCommandsSettings.qml:25
+#: contents/ui/SavedCommandsSettings.qml:96
 #, kde-format
 msgid "Add Command"
 msgstr "Lägg till kommando"
 
-#: contents/ui/SavedCommandsSettings.qml:48
+#: contents/ui/SavedCommandsSettings.qml:30
+#, kde-format
+msgid "Edit"
+msgstr ""
+
+#: contents/ui/SavedCommandsSettings.qml:56
 #, kde-format
 msgid "Add command"
 msgstr "Lägg till kommando"
 
-#: contents/ui/SavedCommandsSettings.qml:73
-#, kde-format
-msgid "Action %1 removed"
+#: contents/ui/SavedCommandsSettings.qml:87
+#, fuzzy, kde-format
+#| msgid "Action %1 removed"
+msgid "Command %1 removed"
 msgstr "Åtgärd %1 borttagen"
 
-#: contents/ui/SettingsComponent.qml:42
+#: contents/ui/SettingsComponent.qml:35
 #, kde-format
 msgid "General"
 msgstr "Allmänt"
 
-#: contents/ui/SettingsComponent.qml:47
+#: contents/ui/SettingsComponent.qml:44
 #, kde-format
 msgid "About"
 msgstr "Om"
 
-#: contents/ui/SettingsComponent.qml:67
+#: contents/ui/SettingsComponent.qml:55
 #, kde-format
 msgid "Appearance"
 msgstr "Utseende"
 
-#: contents/ui/SettingsComponent.qml:72
+#: contents/ui/SettingsComponent.qml:64
 #, kde-format
 msgid "Color scheme"
 msgstr "Färgschema"
 
-#: contents/ui/SettingsComponent.qml:104 contents/ui/SettingsComponent.qml:118
+#: contents/ui/SettingsComponent.qml:96 contents/ui/SettingsComponent.qml:110
 #, kde-format
 msgid "Font Family"
 msgstr "Teckenfamilj"
 
-#: contents/ui/SettingsComponent.qml:151
+#: contents/ui/SettingsComponent.qml:143
 #, kde-format
 msgctxt "@title:window"
 msgid "Pick font"
 msgstr "Välj teckensnitt"
 
-#: contents/ui/SettingsComponent.qml:215
+#: contents/ui/SettingsComponent.qml:207
 #, kde-format
 msgid "Font Size"
 msgstr "Teckenstorlek"
 
-#: contents/ui/SettingsComponent.qml:240
+#: contents/ui/SettingsComponent.qml:232
 #, kde-format
 msgid "Window Transparency"
 msgstr "Fönstergenomskinlighet"
 
-#: contents/ui/SettingsComponent.qml:278
+#: contents/ui/SettingsComponent.qml:270
 #, kde-format
 msgid "Blur Background"
 msgstr "Gör bakgrund suddig"
 
-#: contents/ui/SettingsDialog.qml:17 contents/ui/SettingsPage.qml:17
+#: contents/ui/SettingsDialog.qml:17 contents/ui/SettingsPage.qml:16
 #: contents/ui/TerminalPage.qml:208
 #, kde-format
 msgid "Settings"

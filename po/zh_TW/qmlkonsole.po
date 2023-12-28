@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qmlkonsole\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-11-08 08:48+0000\n"
+"POT-Creation-Date: 2023-12-28 01:34+0000\n"
 "PO-Revision-Date: 2023-12-15 19:32+0900\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Traditional Chinese <zh-l10n@lists.slat.org>\n"
@@ -52,85 +52,91 @@ msgid "Close"
 msgstr "關閉"
 
 #: contents/ui/SavedCommandsDialog.qml:53
-#: contents/ui/SavedCommandsSettings.qml:43
+#: contents/ui/SavedCommandsSettings.qml:51
 #, kde-format
 msgid "No saved commands"
 msgstr "沒有已儲存指令"
 
 #: contents/ui/SavedCommandsDialog.qml:54
-#: contents/ui/SavedCommandsSettings.qml:44
+#: contents/ui/SavedCommandsSettings.qml:52
 #, kde-format
 msgid "Save commands to quickly run them without typing them out."
 msgstr "儲存指令以快速執行它們而不需要將其打出來。"
 
-#: contents/ui/SavedCommandsSettings.qml:17
+#: contents/ui/SavedCommandsSettings.qml:18
 #, kde-format
 msgid "Saved Commands"
 msgstr "已儲存指令"
 
-#: contents/ui/SavedCommandsSettings.qml:22
-#: contents/ui/SavedCommandsSettings.qml:82
+#: contents/ui/SavedCommandsSettings.qml:25
+#: contents/ui/SavedCommandsSettings.qml:96
 #, kde-format
 msgid "Add Command"
 msgstr "新增指令"
 
-#: contents/ui/SavedCommandsSettings.qml:48
+#: contents/ui/SavedCommandsSettings.qml:30
+#, kde-format
+msgid "Edit"
+msgstr ""
+
+#: contents/ui/SavedCommandsSettings.qml:56
 #, kde-format
 msgid "Add command"
 msgstr "新增指令"
 
-#: contents/ui/SavedCommandsSettings.qml:73
-#, kde-format
-msgid "Action %1 removed"
+#: contents/ui/SavedCommandsSettings.qml:87
+#, fuzzy, kde-format
+#| msgid "Action %1 removed"
+msgid "Command %1 removed"
 msgstr "已移除動作 %1"
 
-#: contents/ui/SettingsComponent.qml:42
+#: contents/ui/SettingsComponent.qml:35
 #, kde-format
 msgid "General"
 msgstr "一般"
 
-#: contents/ui/SettingsComponent.qml:47
+#: contents/ui/SettingsComponent.qml:44
 #, kde-format
 msgid "About"
 msgstr "關於"
 
-#: contents/ui/SettingsComponent.qml:67
+#: contents/ui/SettingsComponent.qml:55
 #, kde-format
 msgid "Appearance"
 msgstr "外觀"
 
-#: contents/ui/SettingsComponent.qml:72
+#: contents/ui/SettingsComponent.qml:64
 #, kde-format
 msgid "Color scheme"
 msgstr "配色方案"
 
-#: contents/ui/SettingsComponent.qml:104 contents/ui/SettingsComponent.qml:118
+#: contents/ui/SettingsComponent.qml:96 contents/ui/SettingsComponent.qml:110
 #, kde-format
 msgid "Font Family"
 msgstr "字型家族"
 
-#: contents/ui/SettingsComponent.qml:151
+#: contents/ui/SettingsComponent.qml:143
 #, kde-format
 msgctxt "@title:window"
 msgid "Pick font"
 msgstr "選取字型"
 
-#: contents/ui/SettingsComponent.qml:215
+#: contents/ui/SettingsComponent.qml:207
 #, kde-format
 msgid "Font Size"
 msgstr "字型大小"
 
-#: contents/ui/SettingsComponent.qml:240
+#: contents/ui/SettingsComponent.qml:232
 #, kde-format
 msgid "Window Transparency"
 msgstr "視窗透明度"
 
-#: contents/ui/SettingsComponent.qml:278
+#: contents/ui/SettingsComponent.qml:270
 #, kde-format
 msgid "Blur Background"
 msgstr "模糊背景"
 
-#: contents/ui/SettingsDialog.qml:17 contents/ui/SettingsPage.qml:17
+#: contents/ui/SettingsDialog.qml:17 contents/ui/SettingsPage.qml:16
 #: contents/ui/TerminalPage.qml:208
 #, kde-format
 msgid "Settings"

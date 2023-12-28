@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qmlkonsole\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-11-08 08:48+0000\n"
+"POT-Creation-Date: 2023-12-28 01:34+0000\n"
 "PO-Revision-Date: 2022-12-27 21:42+0530\n"
 "Last-Translator: Kishore G <kishore96@gmail.com>\n"
 "Language-Team: Tamil <kde-i18n-doc@kde.org>\n"
@@ -49,85 +49,91 @@ msgid "Close"
 msgstr "மூடு"
 
 #: contents/ui/SavedCommandsDialog.qml:53
-#: contents/ui/SavedCommandsSettings.qml:43
+#: contents/ui/SavedCommandsSettings.qml:51
 #, kde-format
 msgid "No saved commands"
 msgstr "எக்கட்டளையும் சேமிக்கப்படவில்லை"
 
 #: contents/ui/SavedCommandsDialog.qml:54
-#: contents/ui/SavedCommandsSettings.qml:44
+#: contents/ui/SavedCommandsSettings.qml:52
 #, kde-format
 msgid "Save commands to quickly run them without typing them out."
 msgstr "கட்டளைகளை தட்டச்சிடாமலேயே விரைவாக இயக்க அவற்றை சேமியுங்கள்."
 
-#: contents/ui/SavedCommandsSettings.qml:17
+#: contents/ui/SavedCommandsSettings.qml:18
 #, kde-format
 msgid "Saved Commands"
 msgstr "சேமித்துள்ள கட்டளைகள்"
 
-#: contents/ui/SavedCommandsSettings.qml:22
-#: contents/ui/SavedCommandsSettings.qml:82
+#: contents/ui/SavedCommandsSettings.qml:25
+#: contents/ui/SavedCommandsSettings.qml:96
 #, kde-format
 msgid "Add Command"
 msgstr "கட்டளையை சேர்"
 
-#: contents/ui/SavedCommandsSettings.qml:48
+#: contents/ui/SavedCommandsSettings.qml:30
+#, kde-format
+msgid "Edit"
+msgstr ""
+
+#: contents/ui/SavedCommandsSettings.qml:56
 #, kde-format
 msgid "Add command"
 msgstr "கட்டளையை சேர்"
 
-#: contents/ui/SavedCommandsSettings.qml:73
-#, kde-format
-msgid "Action %1 removed"
+#: contents/ui/SavedCommandsSettings.qml:87
+#, fuzzy, kde-format
+#| msgid "Action %1 removed"
+msgid "Command %1 removed"
 msgstr "%1 எனும் செயல் நீக்கப்பட்டது"
 
-#: contents/ui/SettingsComponent.qml:42
+#: contents/ui/SettingsComponent.qml:35
 #, kde-format
 msgid "General"
 msgstr "பொதுவானவை"
 
-#: contents/ui/SettingsComponent.qml:47
+#: contents/ui/SettingsComponent.qml:44
 #, kde-format
 msgid "About"
 msgstr "இதுபற்றி"
 
-#: contents/ui/SettingsComponent.qml:67
+#: contents/ui/SettingsComponent.qml:55
 #, kde-format
 msgid "Appearance"
 msgstr "தோற்றம்"
 
-#: contents/ui/SettingsComponent.qml:72
+#: contents/ui/SettingsComponent.qml:64
 #, kde-format
 msgid "Color scheme"
 msgstr "நிறத்திட்டம்"
 
-#: contents/ui/SettingsComponent.qml:104 contents/ui/SettingsComponent.qml:118
+#: contents/ui/SettingsComponent.qml:96 contents/ui/SettingsComponent.qml:110
 #, kde-format
 msgid "Font Family"
 msgstr "எழுத்துரு குடும்பம்"
 
-#: contents/ui/SettingsComponent.qml:151
+#: contents/ui/SettingsComponent.qml:143
 #, kde-format
 msgctxt "@title:window"
 msgid "Pick font"
 msgstr "எழுத்துருவை தேர்ந்தெடுத்தல்"
 
-#: contents/ui/SettingsComponent.qml:215
+#: contents/ui/SettingsComponent.qml:207
 #, kde-format
 msgid "Font Size"
 msgstr "எழுத்துருவின் அளவு"
 
-#: contents/ui/SettingsComponent.qml:240
+#: contents/ui/SettingsComponent.qml:232
 #, kde-format
 msgid "Window Transparency"
 msgstr "சாளர ஒளிபுகுமை"
 
-#: contents/ui/SettingsComponent.qml:278
+#: contents/ui/SettingsComponent.qml:270
 #, kde-format
 msgid "Blur Background"
 msgstr "பின்புலத்தை மங்கலாக்கு"
 
-#: contents/ui/SettingsDialog.qml:17 contents/ui/SettingsPage.qml:17
+#: contents/ui/SettingsDialog.qml:17 contents/ui/SettingsPage.qml:16
 #: contents/ui/TerminalPage.qml:208
 #, kde-format
 msgid "Settings"
