@@ -85,55 +85,55 @@ ListView {
                 anchors.left: parent.left
                 orientation: Qt.Vertical
             }
-
-            MouseArea {
-                anchors.fill: parent
-                acceptedButtons: Qt.AllButtons
-                onClicked: mouse => {
-                    if (mouse.button === Qt.LeftButton) {
-                        root.switchToTabRequested(model.index);
-                    } else if (mouse.button === Qt.MiddleButton) {
-                        root.closeTabRequested(model.index);
-                    }
-                }
-            }
         }
 
-        contentItem: RowLayout {
-            id: layout
-            spacing: Kirigami.Units.smallSpacing
-
-            Kirigami.Icon {
-                id: tabIcon
-                Layout.alignment: Qt.AlignLeft
-                Layout.preferredWidth: Kirigami.Units.iconSizes.small
-                Layout.preferredHeight: width
-                source: "tab-detach"
+        contentItem: MouseArea {
+            acceptedButtons: Qt.AllButtons
+            onClicked: mouse => {
+                if (mouse.button === Qt.LeftButton) {
+                    root.switchToTabRequested(model.index);
+                } else if (mouse.button === Qt.MiddleButton) {
+                    root.closeTabRequested(model.index);
+                }
             }
 
-            Label {
-                id: titleLabel
-                Layout.fillWidth: true
-                Layout.alignment: Qt.AlignLeft
-                Layout.leftMargin: Kirigami.Units.smallSpacing
-                Layout.rightMargin: Kirigami.Units.smallSpacing
-                text: model.name
-                elide: Text.ElideRight
-                horizontalAlignment: Text.AlignLeft
-            }
+            RowLayout {
+                id: layout
+                anchors.fill: parent
+                spacing: Kirigami.Units.smallSpacing
 
-            ToolButton {
-                Layout.alignment: Qt.AlignRight
-                Layout.preferredWidth: Kirigami.Units.iconSizes.small
-                Layout.preferredHeight: width
-                icon.name: "tab-close"
-                onClicked: root.closeTabRequested(model.index)
+                Kirigami.Icon {
+                    id: tabIcon
+                    Layout.alignment: Qt.AlignLeft | Qt.AlignVCenter
+                    Layout.preferredWidth: Kirigami.Units.iconSizes.small
+                    Layout.preferredHeight: width
+                    source: "tab-detach"
+                }
 
-                opacity: Kirigami.Settings.tabletMode ? 1 : (control.hovered ? 1 : 0);
-                Behavior on opacity {
-                    OpacityAnimator {
-                        duration: Kirigami.Units.shortDuration
-                        easing.type: Easing.InOutQuad
+                Label {
+                    id: titleLabel
+                    Layout.fillWidth: true
+                    Layout.alignment: Qt.AlignLeft | Qt.AlignVCenter
+                    Layout.leftMargin: Kirigami.Units.smallSpacing
+                    Layout.rightMargin: Kirigami.Units.smallSpacing
+                    text: model.name
+                    elide: Text.ElideRight
+                    horizontalAlignment: Text.AlignLeft
+                }
+
+                ToolButton {
+                    Layout.alignment: Qt.AlignRight | Qt.AlignVCenter
+                    Layout.preferredWidth: Kirigami.Units.iconSizes.small
+                    Layout.preferredHeight: width
+                    icon.name: "tab-close"
+                    onClicked: root.closeTabRequested(model.index)
+
+                    opacity: Kirigami.Settings.tabletMode ? 1 : (control.hovered ? 1 : 0);
+                    Behavior on opacity {
+                        OpacityAnimator {
+                            duration: Kirigami.Units.shortDuration
+                            easing.type: Easing.InOutQuad
+                        }
                     }
                 }
             }
