@@ -16,7 +16,7 @@ But in some cases (apple bundle) there can be more locations).
 */
 QString kbLayoutDir()
 {
-    return QStringLiteral(":/kb-layouts/");
+    return QStringLiteral(":/konsoleqml/kb-layouts/");
 }
 
 /*! Helper function to add custom location of color schemes.
@@ -36,5 +36,5 @@ But in some cases (apple bundle) there can be more locations).
 */
 const QStringList colorSchemesDirs()
 {
-    return {QStringLiteral(":/color-schemes/")};
+    return {QStringLiteral(":/konsoleqml/color-schemes/")};
 }

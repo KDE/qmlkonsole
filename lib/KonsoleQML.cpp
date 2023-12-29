@@ -12,6 +12,8 @@ using namespace Konsole;
 
 void KonsoleQML::registerTypes(const char *uri)
 {
+    Q_INIT_RESOURCE(terminal);
+
     // @uri org.kde.konsoleqml
     qmlRegisterType<TerminalDisplay>(uri, 1, 0, "TerminalEmulator");
     qmlRegisterType<TerminalSession>(uri, 1, 0, "TerminalSession");

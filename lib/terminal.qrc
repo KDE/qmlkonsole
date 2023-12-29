@@ -1,13 +1,5 @@
-<!--
-
-SPDX-FileCopyrightText: 2023 Jonah Brüchert <jbb@kaidan.im>
-
-SPDX-License-Identifier: GPL-2.0-or-later
-
--->
-
 <RCC>
-    <qresource prefix="/">
+    <qresource prefix="/konsoleqml">
         <file>color-schemes/BlackOnLightYellow.colorscheme</file>
         <file>color-schemes/BlackOnRandomLight.colorscheme</file>
         <file>color-schemes/BlackOnWhite.colorscheme</file>

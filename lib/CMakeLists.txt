@@ -21,7 +21,7 @@ add_library(KonsoleQML STATIC
     Vt102Emulation.cpp
     TerminalSession.cpp
     KonsoleQML.cpp
-    resources.qrc
+    terminal.qrc
 )
 
 target_link_libraries(KonsoleQML
