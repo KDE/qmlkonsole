@@ -26,7 +26,9 @@ include(KDEInstallDirs)
 include(KDECMakeSettings)
 include(ECMPoQmTools)
 include(KDECompilerSettings NO_POLICY_SCOPE)
+include(KDEClangFormat)
 include(ECMFindQmlModule)
+include(KDEGitCommitHooks)
 
 ecm_setup_version(${RELEASE_SERVICE_VERSION}
     VARIABLE_PREFIX QMLKONSOLE
@@ -34,20 +36,20 @@ ecm_setup_version(${RELEASE_SERVICE_VERSION}
 )
 
 find_package(Qt6 ${QT_MIN_VERSION} REQUIRED NO_MODULE COMPONENTS
-    Core 
-    Quick 
-    Test 
-    Gui 
-    Svg 
+    Core
+    Quick
+    Test
+    Gui
+    Svg
     QuickControls2
     Widgets
     Core5Compat
 )
 find_package(KF6 ${KF6_MIN_VERSION} REQUIRED COMPONENTS
     Kirigami
-    I18n 
-    Config 
-    CoreAddons 
+    I18n
+    Config
+    CoreAddons
     WindowSystem
     Pty
 )
@@ -63,3 +65,8 @@ install(FILES org.kde.qmlkonsole.appdata.xml DESTINATION ${KDE_INSTALL_METAINFOD
 install(FILES org.kde.qmlkonsole.svg DESTINATION ${KDE_INSTALL_FULL_ICONDIR}/hicolor/scalable/apps)
 
 feature_summary(WHAT ALL INCLUDE_QUIET_PACKAGES FATAL_ON_MISSING_REQUIRED_PACKAGES)
+
+file(GLOB_RECURSE ALL_CLANG_FORMAT_SOURCE_FILES src/*.cpp src/*.h lib/*.cpp lib/*.h)
+kde_clang_format(${ALL_CLANG_FORMAT_SOURCE_FILES})
+
+kde_configure_git_pre_commit_hook(CHECKS CLANG_FORMAT)

@@ -9,19 +9,17 @@
 class TerminalTabModel : public QAbstractListModel
 {
     Q_OBJECT
-    
+
 public:
     explicit TerminalTabModel(QObject *parent = nullptr);
-    
+
     static TerminalTabModel *self()
     {
         static TerminalTabModel *singleton = new TerminalTabModel();
         return singleton;
     }
-    
-    enum {
-        NameRole = Qt::DisplayRole
-    };
+
+    enum { NameRole = Qt::DisplayRole };
 
     int rowCount(const QModelIndex &parent) const override;
     QVariant data(const QModelIndex &index, int role) const override;

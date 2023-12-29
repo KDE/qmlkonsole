@@ -22,94 +22,96 @@
 
 // Qt
 #include <QBrush>
+#include <QDir>
 #include <QFile>
 #include <QFileInfo>
-#include <QtDebug>
-#include <QSettings>
-#include <QDir>
-#include <QRegularExpression>
 #include <QRandomGenerator>
-
+#include <QRegularExpression>
+#include <QSettings>
+#include <QtDebug>
 
 // KDE
-//#include <KColorScheme>
-//#include <KConfig>
-//#include <KLocale>
-//#include <KDebug>
-//#include <KConfigGroup>
-//#include <KStandardDirs>
+// #include <KColorScheme>
+// #include <KConfig>
+// #include <KLocale>
+// #include <KDebug>
+// #include <KConfigGroup>
+// #include <KStandardDirs>
 
 using namespace Konsole;
 
 constexpr std::array<ColorEntry, TABLE_COLORS> DEFAULT_TABLE =
- // The following are almost IBM standard color codes, with some slight
- // gamma correction for the dim colors to compensate for bright X screens.
- // It contains the 8 ansiterm/xterm colors in 2 intensities.
-{
-    ColorEntry(QColor(0x00,0x00,0x00), false), ColorEntry(QColor(0xFF,0xFF,0xFF), true), // Dfore, Dback
-    ColorEntry(QColor(0x00,0x00,0x00), false), ColorEntry(QColor(0xB2,0x18,0x18), false), // Black, Red
-    ColorEntry(QColor(0x18,0xB2,0x18), false), ColorEntry(QColor(0xB2,0x68,0x18), false), // Green, Yellow
-    ColorEntry(QColor(0x18,0x18,0xB2), false), ColorEntry(QColor(0xB2,0x18,0xB2), false), // Blue, Magenta
-    ColorEntry(QColor(0x18,0xB2,0xB2), false), ColorEntry(QColor(0xB2,0xB2,0xB2), false), // Cyan, White
-    // intensive
-    ColorEntry(QColor(0x00,0x00,0x00), false), ColorEntry(QColor(0xFF,0xFF,0xFF), true),
-    ColorEntry(QColor(0x68,0x68,0x68), false), ColorEntry(QColor(0xFF,0x54,0x54), false),
-    ColorEntry(QColor(0x54,0xFF,0x54), false), ColorEntry(QColor(0xFF,0xFF,0x54), false),
-    ColorEntry(QColor(0x54,0x54,0xFF), false), ColorEntry(QColor(0xFF,0x54,0xFF), false),
-    ColorEntry(QColor(0x54,0xFF,0xFF), false), ColorEntry(QColor(0xFF,0xFF,0xFF), false)
-};
+    // The following are almost IBM standard color codes, with some slight
+    // gamma correction for the dim colors to compensate for bright X screens.
+    // It contains the 8 ansiterm/xterm colors in 2 intensities.
+    {ColorEntry(QColor(0x00, 0x00, 0x00), false),
+     ColorEntry(QColor(0xFF, 0xFF, 0xFF), true), // Dfore, Dback
+     ColorEntry(QColor(0x00, 0x00, 0x00), false),
+     ColorEntry(QColor(0xB2, 0x18, 0x18), false), // Black, Red
+     ColorEntry(QColor(0x18, 0xB2, 0x18), false),
+     ColorEntry(QColor(0xB2, 0x68, 0x18), false), // Green, Yellow
+     ColorEntry(QColor(0x18, 0x18, 0xB2), false),
+     ColorEntry(QColor(0xB2, 0x18, 0xB2), false), // Blue, Magenta
+     ColorEntry(QColor(0x18, 0xB2, 0xB2), false),
+     ColorEntry(QColor(0xB2, 0xB2, 0xB2), false), // Cyan, White
+     // intensive
+     ColorEntry(QColor(0x00, 0x00, 0x00), false),
+     ColorEntry(QColor(0xFF, 0xFF, 0xFF), true),
+     ColorEntry(QColor(0x68, 0x68, 0x68), false),
+     ColorEntry(QColor(0xFF, 0x54, 0x54), false),
+     ColorEntry(QColor(0x54, 0xFF, 0x54), false),
+     ColorEntry(QColor(0xFF, 0xFF, 0x54), false),
+     ColorEntry(QColor(0x54, 0x54, 0xFF), false),
+     ColorEntry(QColor(0xFF, 0x54, 0xFF), false),
+     ColorEntry(QColor(0x54, 0xFF, 0xFF), false),
+     ColorEntry(QColor(0xFF, 0xFF, 0xFF), false)};
 
-std::array<ColorEntry, TABLE_COLORS> Konsole::defaultColorTable() {
+std::array<ColorEntry, TABLE_COLORS> Konsole::defaultColorTable()
+{
     return DEFAULT_TABLE;
 }
 
-constexpr std::array<QStringView, TABLE_COLORS> COLOR_NAMES =
-{
-    u"Foreground",
-    u"Background",
-    u"Color0",
-    u"Color1",
-    u"Color2",
-    u"Color3",
-    u"Color4",
-    u"Color5",
-    u"Color6",
-    u"Color7",
-    u"ForegroundIntense",
-    u"BackgroundIntense",
-    u"Color0Intense",
-    u"Color1Intense",
-    u"Color2Intense",
-    u"Color3Intense",
-    u"Color4Intense",
-    u"Color5Intense",
-    u"Color6Intense",
-    u"Color7Intense"
-};
+constexpr std::array<QStringView, TABLE_COLORS> COLOR_NAMES = {u"Foreground",
+                                                               u"Background",
+                                                               u"Color0",
+                                                               u"Color1",
+                                                               u"Color2",
+                                                               u"Color3",
+                                                               u"Color4",
+                                                               u"Color5",
+                                                               u"Color6",
+                                                               u"Color7",
+                                                               u"ForegroundIntense",
+                                                               u"BackgroundIntense",
+                                                               u"Color0Intense",
+                                                               u"Color1Intense",
+                                                               u"Color2Intense",
+                                                               u"Color3Intense",
+                                                               u"Color4Intense",
+                                                               u"Color5Intense",
+                                                               u"Color6Intense",
+                                                               u"Color7Intense"};
 
-std::array<const char *, TABLE_COLORS> TRANSLATED_COLOR_NAMES =
-{
-    QT_TR_NOOP("Foreground"),
-    QT_TR_NOOP("Background"),
-    QT_TR_NOOP("Color 1"),
-    QT_TR_NOOP("Color 2"),
-    QT_TR_NOOP("Color 3"),
-    QT_TR_NOOP("Color 4"),
-    QT_TR_NOOP("Color 5"),
-    QT_TR_NOOP("Color 6"),
-    QT_TR_NOOP("Color 7"),
-    QT_TR_NOOP("Color 8"),
-    QT_TR_NOOP("Foreground (Intense)"),
-    QT_TR_NOOP("Background (Intense)"),
-    QT_TR_NOOP("Color 1 (Intense)"),
-    QT_TR_NOOP("Color 2 (Intense)"),
-    QT_TR_NOOP("Color 3 (Intense)"),
-    QT_TR_NOOP("Color 4 (Intense)"),
-    QT_TR_NOOP("Color 5 (Intense)"),
-    QT_TR_NOOP("Color 6 (Intense)"),
-    QT_TR_NOOP("Color 7 (Intense)"),
-    QT_TR_NOOP("Color 8 (Intense)")
-};
+std::array<const char *, TABLE_COLORS> TRANSLATED_COLOR_NAMES = {QT_TR_NOOP("Foreground"),
+                                                                 QT_TR_NOOP("Background"),
+                                                                 QT_TR_NOOP("Color 1"),
+                                                                 QT_TR_NOOP("Color 2"),
+                                                                 QT_TR_NOOP("Color 3"),
+                                                                 QT_TR_NOOP("Color 4"),
+                                                                 QT_TR_NOOP("Color 5"),
+                                                                 QT_TR_NOOP("Color 6"),
+                                                                 QT_TR_NOOP("Color 7"),
+                                                                 QT_TR_NOOP("Color 8"),
+                                                                 QT_TR_NOOP("Foreground (Intense)"),
+                                                                 QT_TR_NOOP("Background (Intense)"),
+                                                                 QT_TR_NOOP("Color 1 (Intense)"),
+                                                                 QT_TR_NOOP("Color 2 (Intense)"),
+                                                                 QT_TR_NOOP("Color 3 (Intense)"),
+                                                                 QT_TR_NOOP("Color 4 (Intense)"),
+                                                                 QT_TR_NOOP("Color 5 (Intense)"),
+                                                                 QT_TR_NOOP("Color 6 (Intense)"),
+                                                                 QT_TR_NOOP("Color 7 (Intense)"),
+                                                                 QT_TR_NOOP("Color 8 (Intense)")};
 
 ColorScheme::ColorScheme()
 {
@@ -118,8 +120,8 @@ ColorScheme::ColorScheme()
     _opacity = 1.0;
 }
 
-ColorScheme::ColorScheme(const ColorScheme& other)
-      : _opacity(other._opacity)
+ColorScheme::ColorScheme(const ColorScheme &other)
+    : _opacity(other._opacity)
 {
     setName(other.name());
     setDescription(other.description());
@@ -131,47 +133,55 @@ ColorScheme::~ColorScheme()
 {
 }
 
-void ColorScheme::setDescription(const QString& description) { _description = description; }
-QString ColorScheme::description() const { return _description; }
-
-void ColorScheme::setName(const QString& name) { _name = name; }
-QString ColorScheme::name() const { return _name; }
-
-void ColorScheme::setColorTableEntry(int index , const ColorEntry& entry)
+void ColorScheme::setDescription(const QString &description)
 {
-    Q_ASSERT( index >= 0 && index < TABLE_COLORS );
+    _description = description;
+}
+QString ColorScheme::description() const
+{
+    return _description;
+}
 
-    if ( !_table )
-    {
+void ColorScheme::setName(const QString &name)
+{
+    _name = name;
+}
+QString ColorScheme::name() const
+{
+    return _name;
+}
+
+void ColorScheme::setColorTableEntry(int index, const ColorEntry &entry)
+{
+    Q_ASSERT(index >= 0 && index < TABLE_COLORS);
+
+    if (!_table) {
         _table = std::vector<ColorEntry>(DEFAULT_TABLE.begin(), DEFAULT_TABLE.end());
     }
 
     // we always have a value set at this point, see above
     _table.value()[index] = entry;
 }
-ColorEntry ColorScheme::colorEntry(int index , uint randomSeed) const
+ColorEntry ColorScheme::colorEntry(int index, uint randomSeed) const
 {
-    Q_ASSERT( index >= 0 && index < TABLE_COLORS );
+    Q_ASSERT(index >= 0 && index < TABLE_COLORS);
 
     ColorEntry entry = colorTable()[index];
 
-    if ( randomSeed != 0 &&
-        _randomTable.has_value() &&
-        !_randomTable->data()[index].isNull() )
-    {
-        const RandomizationRange& range = _randomTable->data()[index];
+    if (randomSeed != 0 && _randomTable.has_value() && !_randomTable->data()[index].isNull()) {
+        const RandomizationRange &range = _randomTable->data()[index];
 
-        int hueDifference = range.hue ? QRandomGenerator::system()->bounded(range.hue) - range.hue/2 : 0;
-        int saturationDifference = range.saturation ? (QRandomGenerator::system()->bounded(range.saturation)) - range.saturation/2 : 0;
-        int  valueDifference = range.value ? (QRandomGenerator::system()->bounded(range.value)) - range.value/2 : 0;
+        int hueDifference = range.hue ? QRandomGenerator::system()->bounded(range.hue) - range.hue / 2 : 0;
+        int saturationDifference = range.saturation ? (QRandomGenerator::system()->bounded(range.saturation)) - range.saturation / 2 : 0;
+        int valueDifference = range.value ? (QRandomGenerator::system()->bounded(range.value)) - range.value / 2 : 0;
 
-        QColor& color = entry.color;
+        QColor &color = entry.color;
 
-        int newHue = qAbs( (color.hue() + hueDifference) % MAX_HUE );
-        int newValue = qMin( qAbs(color.value() + valueDifference) , 255 );
-        int newSaturation = qMin( qAbs(color.saturation() + saturationDifference) , 255 );
+        int newHue = qAbs((color.hue() + hueDifference) % MAX_HUE);
+        int newValue = qMin(qAbs(color.value() + valueDifference), 255);
+        int newSaturation = qMin(qAbs(color.saturation() + saturationDifference), 255);
 
-        color.setHsv(newHue,newSaturation,newValue);
+        color.setHsv(newHue, newSaturation, newValue);
     }
 
     return entry;
@@ -180,8 +190,8 @@ ColorEntry ColorScheme::colorEntry(int index , uint randomSeed) const
 std::array<ColorEntry, TABLE_COLORS> ColorScheme::getColorTable(uint randomSeed) const
 {
     std::array<ColorEntry, TABLE_COLORS> table;
-    for ( int i = 0 ; i < TABLE_COLORS ; i++ )
-        table[i] = colorEntry(i,randomSeed);
+    for (int i = 0; i < TABLE_COLORS; i++)
+        table[i] = colorEntry(i, randomSeed);
 
     return table;
 }
@@ -197,24 +207,20 @@ void ColorScheme::setRandomizedBackgroundColor(bool randomize)
     // adjusted as much as possible.
     //
     // the value and saturation are left alone to maintain read-ability
-    if ( randomize )
-    {
-        setRandomizationRange( 1 /* background color index */ , MAX_HUE , 255 , 0 );
-    }
-    else
-    {
-        if ( _randomTable )
-            setRandomizationRange( 1 /* background color index */ , 0 , 0 , 0 );
+    if (randomize) {
+        setRandomizationRange(1 /* background color index */, MAX_HUE, 255, 0);
+    } else {
+        if (_randomTable)
+            setRandomizationRange(1 /* background color index */, 0, 0, 0);
     }
 }
 
-void ColorScheme::setRandomizationRange( int index , quint16 hue , quint8 saturation ,
-                                         quint8 value )
+void ColorScheme::setRandomizationRange(int index, quint16 hue, quint8 saturation, quint8 value)
 {
-    Q_ASSERT( hue <= MAX_HUE );
-    Q_ASSERT( index >= 0 && index < TABLE_COLORS );
+    Q_ASSERT(hue <= MAX_HUE);
+    Q_ASSERT(index >= 0 && index < TABLE_COLORS);
 
-    if ( !_randomTable )
+    if (!_randomTable)
         _randomTable = std::vector<RandomizationRange>(TABLE_COLORS);
 
     _randomTable->data()[index].hue = hue;
@@ -224,7 +230,7 @@ void ColorScheme::setRandomizationRange( int index , quint16 hue , quint8 satura
 
 const std::span<const ColorEntry> ColorScheme::colorTable() const
 {
-    if ( _table.has_value() )
+    if (_table.has_value())
         return *_table;
     else
         return std::span(DEFAULT_TABLE);
@@ -246,38 +252,43 @@ bool ColorScheme::hasDarkBackground() const
     // so 127 is in the middle, anything less is deemed 'dark'
     return backgroundColor().value() < 127;
 }
-void ColorScheme::setOpacity(qreal opacity) { _opacity = opacity; }
-qreal ColorScheme::opacity() const { return _opacity; }
+void ColorScheme::setOpacity(qreal opacity)
+{
+    _opacity = opacity;
+}
+qreal ColorScheme::opacity() const
+{
+    return _opacity;
+}
 
-void ColorScheme::read(const QString & fileName)
+void ColorScheme::read(const QString &fileName)
 {
     QSettings s(fileName, QSettings::IniFormat);
     s.beginGroup(QLatin1String("General"));
 
     _description = s.value(QLatin1String("Description"), QObject::tr("Un-named Color Scheme")).toString();
-    _opacity = s.value(QLatin1String("Opacity"),qreal(1.0)).toDouble();
+    _opacity = s.value(QLatin1String("Opacity"), qreal(1.0)).toDouble();
     s.endGroup();
 
-    for (int i=0 ; i < TABLE_COLORS ; i++)
-    {
+    for (int i = 0; i < TABLE_COLORS; i++) {
         readColorEntry(&s, i);
     }
 }
 
 QString ColorScheme::colorNameForIndex(int index)
 {
-    Q_ASSERT( index >= 0 && index < TABLE_COLORS );
+    Q_ASSERT(index >= 0 && index < TABLE_COLORS);
 
     return COLOR_NAMES.at(index).toString();
 }
 QString ColorScheme::translatedColorNameForIndex(int index)
 {
-    Q_ASSERT( index >= 0 && index < TABLE_COLORS );
+    Q_ASSERT(index >= 0 && index < TABLE_COLORS);
 
     return QObject::tr(TRANSLATED_COLOR_NAMES.at(index));
 }
 
-void ColorScheme::readColorEntry(QSettings * s , int index)
+void ColorScheme::readColorEntry(QSettings *s, int index)
 {
     QString colorName = colorNameForIndex(index);
 
@@ -299,8 +310,7 @@ void ColorScheme::readColorEntry(QSettings * s , int index)
     {
         QStringList rgbList = colorValue.toStringList();
         colorStr = rgbList.join(QLatin1Char(','));
-        if (rgbList.size() == 3)
-        {
+        if (rgbList.size() == 3) {
             bool parse_ok;
 
             ok = true;
@@ -311,14 +321,10 @@ void ColorScheme::readColorEntry(QSettings * s , int index)
             b = rgbList[2].toInt(&parse_ok);
             ok = ok && parse_ok && (b >= 0 && b <= 0xff);
         }
-    }
-    else
-    {
+    } else {
         colorStr = colorValue.toString();
-        QRegularExpression hexColorPattern(QLatin1String("^#[0-9a-f]{6}$"),
-                                           QRegularExpression::CaseInsensitiveOption);
-        if (hexColorPattern.match(colorStr).hasMatch())
-        {
+        QRegularExpression hexColorPattern(QLatin1String("^#[0-9a-f]{6}$"), QRegularExpression::CaseInsensitiveOption);
+        if (hexColorPattern.match(colorStr).hasMatch()) {
             // Parsing is always ok as already matched by the regexp
             r = QStringView(colorStr).mid(1, 2).toInt(nullptr, 16);
             g = QStringView(colorStr).mid(3, 2).toInt(nullptr, 16);
@@ -326,15 +332,13 @@ void ColorScheme::readColorEntry(QSettings * s , int index)
             ok = true;
         }
     }
-    if (!ok)
-    {
-        qWarning().nospace() << "Invalid color value " << colorStr
-                             << " for " << colorName << ". Fallback to black.";
+    if (!ok) {
+        qWarning().nospace() << "Invalid color value " << colorStr << " for " << colorName << ". Fallback to black.";
         r = g = b = 0;
     }
     entry.color = QColor(r, g, b);
 
-    entry.transparent = s->value(QLatin1String("Transparent"),false).toBool();
+    entry.transparent = s->value(QLatin1String("Transparent"), false).toBool();
 
     // Deprecated key from KDE 4.0 which set 'Bold' to true to force
     // a color to be bold or false to use the current format
@@ -342,17 +346,16 @@ void ColorScheme::readColorEntry(QSettings * s , int index)
     // TODO - Add a new tri-state key which allows for bold, normal or
     // current format
     if (s->contains(QLatin1String("Bold")))
-        entry.fontWeight = s->value(QLatin1String("Bold"),false).toBool() ? ColorEntry::Bold :
-                                                                 ColorEntry::UseCurrentFormat;
+        entry.fontWeight = s->value(QLatin1String("Bold"), false).toBool() ? ColorEntry::Bold : ColorEntry::UseCurrentFormat;
 
-    quint16 hue = s->value(QLatin1String("MaxRandomHue"),0).toInt();
-    quint8 value = s->value(QLatin1String("MaxRandomValue"),0).toInt();
-    quint8 saturation = s->value(QLatin1String("MaxRandomSaturation"),0).toInt();
+    quint16 hue = s->value(QLatin1String("MaxRandomHue"), 0).toInt();
+    quint8 value = s->value(QLatin1String("MaxRandomValue"), 0).toInt();
+    quint8 saturation = s->value(QLatin1String("MaxRandomSaturation"), 0).toInt();
 
-    setColorTableEntry( index , entry );
+    setColorTableEntry(index, entry);
 
-    if ( hue != 0 || value != 0 || saturation != 0 )
-       setRandomizationRange( index , hue , saturation , value );
+    if (hue != 0 || value != 0 || saturation != 0)
+        setRandomizationRange(index, hue, saturation, value);
 
     s->endGroup();
 }
@@ -430,14 +433,13 @@ ColorSchemeManager::~ColorSchemeManager() = default;
 
 void ColorSchemeManager::loadAllColorSchemes()
 {
-    //qDebug() << "loadAllColorSchemes";
+    // qDebug() << "loadAllColorSchemes";
     int failed = 0;
 
     QList<QString> nativeColorSchemes = listColorSchemes();
     QListIterator<QString> nativeIter(nativeColorSchemes);
-    while ( nativeIter.hasNext() )
-    {
-        if ( !loadColorScheme( nativeIter.next() ) )
+    while (nativeIter.hasNext()) {
+        if (!loadColorScheme(nativeIter.next()))
             failed++;
     }
 
@@ -448,8 +450,7 @@ void ColorSchemeManager::loadAllColorSchemes()
 }
 QList<ColorScheme *> ColorSchemeManager::allColorSchemes()
 {
-    if ( !_haveLoadedAll )
-    {
+    if (!_haveLoadedAll) {
         loadAllColorSchemes();
     }
 
@@ -473,7 +474,7 @@ void ColorSchemeManager::addColorScheme(ColorScheme* scheme)
 }
 #endif
 
-bool ColorSchemeManager::loadCustomColorScheme(const QString& path)
+bool ColorSchemeManager::loadCustomColorScheme(const QString &path)
 {
     if (path.endsWith(QLatin1String(".colorscheme")))
         return loadColorScheme(path);
@@ -481,37 +482,33 @@ bool ColorSchemeManager::loadCustomColorScheme(const QString& path)
     return false;
 }
 
-void ColorSchemeManager::addCustomColorSchemeDir(const QString& custom_dir)
+void ColorSchemeManager::addCustomColorSchemeDir(const QString &custom_dir)
 {
     add_custom_color_scheme_dir(custom_dir);
 }
 
-bool ColorSchemeManager::loadColorScheme(const QString& filePath)
+bool ColorSchemeManager::loadColorScheme(const QString &filePath)
 {
-    if ( !filePath.endsWith(QLatin1String(".colorscheme")) || !QFile::exists(filePath) )
+    if (!filePath.endsWith(QLatin1String(".colorscheme")) || !QFile::exists(filePath))
         return false;
 
     QFileInfo info(filePath);
 
-    const QString& schemeName = info.baseName();
+    const QString &schemeName = info.baseName();
 
     auto scheme = std::make_unique<ColorScheme>();
     scheme->setName(schemeName);
     scheme->read(filePath);
 
-    if (scheme->name().isEmpty())
-    {
-        //qDebug() << "Color scheme in" << filePath << "does not have a valid name and was not loaded.";
+    if (scheme->name().isEmpty()) {
+        // qDebug() << "Color scheme in" << filePath << "does not have a valid name and was not loaded.";
         scheme.reset();
         return false;
     }
 
-    if ( !_colorSchemes.contains(schemeName) )
-    {
+    if (!_colorSchemes.contains(schemeName)) {
         _colorSchemes.insert_or_assign(schemeName, std::move(scheme));
-    }
-    else
-    {
+    } else {
         /*qDebug() << "color scheme with name" << schemeName << "has already been" <<
             "found, ignoring.";*/
 
@@ -523,8 +520,7 @@ bool ColorSchemeManager::loadColorScheme(const QString& filePath)
 QList<QString> ColorSchemeManager::listColorSchemes()
 {
     QList<QString> ret;
-    for (const QString &scheme_dir : colorSchemesDirs())
-    {
+    for (const QString &scheme_dir : colorSchemesDirs()) {
         const QString dname(scheme_dir);
         QDir dir(dname);
         QStringList filters;
@@ -535,72 +531,67 @@ QList<QString> ColorSchemeManager::listColorSchemes()
             ret << dname + QLatin1Char('/') + i;
     }
     return ret;
-//    return KGlobal::dirs()->findAllResources("data",
-//                                             "konsole/*.colorscheme",
-//                                             KStandardDirs::NoDuplicates);
+    //    return KGlobal::dirs()->findAllResources("data",
+    //                                             "konsole/*.colorscheme",
+    //                                             KStandardDirs::NoDuplicates);
 }
 const ColorScheme ColorSchemeManager::_defaultColorScheme;
-const ColorScheme* ColorSchemeManager::defaultColorScheme() const
+const ColorScheme *ColorSchemeManager::defaultColorScheme() const
 {
     return &_defaultColorScheme;
 }
-bool ColorSchemeManager::deleteColorScheme(const QString& name)
+bool ColorSchemeManager::deleteColorScheme(const QString &name)
 {
-    Q_ASSERT( _colorSchemes.contains(name) );
+    Q_ASSERT(_colorSchemes.contains(name));
 
     // lookup the path and delete
     QString path = findColorSchemePath(name);
-    if ( QFile::remove(path) )
-    {
+    if (QFile::remove(path)) {
         _colorSchemes.erase(name);
         return true;
-    }
-    else
-    {
-        //qDebug() << "Failed to remove color scheme -" << path;
+    } else {
+        // qDebug() << "Failed to remove color scheme -" << path;
         return false;
     }
 }
-QString ColorSchemeManager::findColorSchemePath(const QString& name) const
+QString ColorSchemeManager::findColorSchemePath(const QString &name) const
 {
-//    QString path = KStandardDirs::locate("data","konsole/"+name+".colorscheme");
+    //    QString path = KStandardDirs::locate("data","konsole/"+name+".colorscheme");
     const QStringList dirs = colorSchemesDirs();
-    if ( dirs.isEmpty() )
+    if (dirs.isEmpty())
         return QString();
 
     const QString dir = dirs.first();
-    QString path(dir + QLatin1Char('/')+ name + QLatin1String(".colorscheme"));
-    if ( !path.isEmpty() )
+    QString path(dir + QLatin1Char('/') + name + QLatin1String(".colorscheme"));
+    if (!path.isEmpty())
         return path;
 
-    //path = KStandardDirs::locate("data","konsole/"+name+".schema");
-    path = dir + QLatin1Char('/')+ name + QLatin1String(".schema");
+    // path = KStandardDirs::locate("data","konsole/"+name+".schema");
+    path = dir + QLatin1Char('/') + name + QLatin1String(".schema");
 
     return path;
 }
-const ColorScheme* ColorSchemeManager::findColorScheme(const QString& name)
+const ColorScheme *ColorSchemeManager::findColorScheme(const QString &name)
 {
-    if ( name.isEmpty() )
+    if (name.isEmpty())
         return defaultColorScheme();
 
-    if ( _colorSchemes.contains(name) )
+    if (_colorSchemes.contains(name))
         return _colorSchemes[name].get();
-    else
-    {
+    else {
         // look for this color scheme
         QString path = findColorSchemePath(name);
-        if ( !path.isEmpty() && loadColorScheme(path) )
-        {
+        if (!path.isEmpty() && loadColorScheme(path)) {
             return findColorScheme(name);
         }
 
-        //qDebug() << "Could not find color scheme - " << name;
+        // qDebug() << "Could not find color scheme - " << name;
 
         return nullptr;
     }
 }
 Q_GLOBAL_STATIC(ColorSchemeManager, theColorSchemeManager)
-ColorSchemeManager* ColorSchemeManager::instance()
+ColorSchemeManager *ColorSchemeManager::instance()
 {
     return theColorSchemeManager;
 }

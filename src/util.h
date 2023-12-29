@@ -3,8 +3,8 @@
 
 #pragma once
 
-#include <QObject>
 #include <QKeySequence>
+#include <QObject>
 #include <QQuickItem>
 
 class Util : public QObject
@@ -16,7 +16,7 @@ class Util : public QObject
 
 public:
     explicit Util(QObject *parent = nullptr);
-    
+
     static Util *self()
     {
         static Util *singleton = new Util();
@@ -36,4 +36,3 @@ private:
     QString m_initialCommand;
     QString m_initialWorkDir;
 };
-

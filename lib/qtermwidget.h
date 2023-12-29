@@ -3,21 +3,21 @@
     SPDX-License-Identifier: LGPL-2.0-or-later
 */
 
-
 #ifndef _Q_TERM_WIDGET
 #define _Q_TERM_WIDGET
 
-#include <QTranslator>
-#include <QWidget>
 #include "Emulation.h"
 #include "Filter.h"
+#include <QTranslator>
+#include <QWidget>
 
 class QVBoxLayout;
 class TermWidgetImpl;
 class SearchBar;
 class QUrl;
 
-class QTermWidget {
+class QTermWidget
+{
 public:
     /**
      * This enum describes the location where the scroll bar is positioned in the display widget.
@@ -35,4 +35,3 @@ public:
 };
 
 #endif
-

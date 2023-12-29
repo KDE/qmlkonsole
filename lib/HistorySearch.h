@@ -14,15 +14,15 @@
     02110-1301  USA.
 */
 #ifndef TASK_H
-#define	TASK_H
+#define TASK_H
 
+#include <QMap>
 #include <QObject>
 #include <QPointer>
-#include <QMap>
 #include <QRegExp>
 
-#include <Session.h>
 #include <ScreenWindow.h>
+#include <Session.h>
 
 #include "Emulation.h"
 #include "TerminalCharacterDecoder.h"
@@ -38,8 +38,7 @@ class HistorySearch : public QObject
     Q_OBJECT
 
 public:
-    explicit HistorySearch(EmulationPtr emulation, const QRegExp& regExp, bool forwards,
-                           int startColumn, int startLine, QObject* parent);
+    explicit HistorySearch(EmulationPtr emulation, const QRegExp &regExp, bool forwards, int startColumn, int startLine, QObject *parent);
 
     ~HistorySearch() override;
 
@@ -65,5 +64,4 @@ private:
     int m_foundEndLine;
 };
 
-#endif	/* TASK_H */
-
+#endif /* TASK_H */

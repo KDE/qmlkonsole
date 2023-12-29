@@ -22,16 +22,16 @@ int FontListModel::rowCount(const QModelIndex &parent) const
     Q_UNUSED(parent)
     return m_fontList.count();
 }
- 
+
 QVariant FontListModel::data(const QModelIndex &index, int role) const
 {
     if (!index.isValid() || index.row() >= m_fontList.size() || index.row() < 0) {
         return {};
     }
-    
+
     switch (role) {
-        case NameRole:
-            return m_fontList[index.row()];
+    case NameRole:
+        return m_fontList[index.row()];
     }
     return {};
 }

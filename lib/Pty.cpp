@@ -13,9 +13,9 @@
 #include <termios.h>
 
 // Qt
+#include <QDebug>
 #include <QStringList>
 #include <qplatformdefs.h>
-#include <QDebug>
 
 // KDE
 #include <KPtyDevice>

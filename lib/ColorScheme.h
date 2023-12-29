@@ -21,9 +21,9 @@
 
 // Qt
 #include <QHash>
+#include <QIODevice>
 #include <QList>
 #include <QMetaType>
-#include <QIODevice>
 #include <QSet>
 #include <QSettings>
 
@@ -32,13 +32,13 @@
 
 // std
 #include <memory>
-#include <span>
 #include <optional>
-#include <vector>
+#include <span>
 #include <unordered_map>
+#include <vector>
 
 class QIODevice;
-//class KConfig;
+// class KConfig;
 
 namespace Konsole
 {
@@ -59,16 +59,16 @@ public:
      * for Konsole.
      */
     ColorScheme();
-    ColorScheme(const ColorScheme& other);
+    ColorScheme(const ColorScheme &other);
     ~ColorScheme();
 
     /** Sets the descriptive name of the color scheme. */
-    void setDescription(const QString& description);
+    void setDescription(const QString &description);
     /** Returns the descriptive name of the color scheme. */
     QString description() const;
 
     /** Sets the name of the color scheme */
-    void setName(const QString& name);
+    void setName(const QString &name);
     /** Returns the name of the color scheme */
     QString name() const;
 
@@ -79,10 +79,10 @@ public:
     /** Writes the color scheme to the specified configuration source */
     void write(KConfig& config) const;
 #endif
-    void read(const QString & filename);
+    void read(const QString &filename);
 
     /** Sets a single entry within the color palette. */
-    void setColorTableEntry(int index , const ColorEntry& entry);
+    void setColorTableEntry(int index, const ColorEntry &entry);
 
     /**
      * Copies the color entries which form the palette for this color scheme
@@ -100,7 +100,7 @@ public:
      *
      * See getColorTable()
      */
-    ColorEntry colorEntry(int index , uint randomSeed = 0) const;
+    ColorEntry colorEntry(int index, uint randomSeed = 0) const;
 
     /**
      * Convenience method.  Returns the
@@ -158,16 +158,21 @@ private:
     class RandomizationRange
     {
     public:
-        RandomizationRange() : hue(0) , saturation(0) , value(0) {}
+        RandomizationRange()
+            : hue(0)
+            , saturation(0)
+            , value(0)
+        {
+        }
 
         bool isNull() const
         {
-            return ( hue == 0 && saturation == 0 && value == 0 );
+            return (hue == 0 && saturation == 0 && value == 0);
         }
 
         quint16 hue;
-        quint8  saturation;
-        quint8  value;
+        quint8 saturation;
+        quint8 value;
     };
 
     // returns the active color table.  if none has been set specifically,
@@ -187,7 +192,7 @@ private:
     // sets the amount of randomization allowed for a particular color
     // in the palette.  creates the randomization table if
     // it does not already exist
-    void setRandomizationRange( int index , quint16 hue , quint8 saturation , quint8 value );
+    void setRandomizationRange(int index, quint16 hue, quint8 saturation, quint8 value);
 
     QString _description;
     QString _name;
@@ -195,12 +200,11 @@ private:
     std::optional<std::vector<ColorEntry>> _table; // pointer to custom color table or 0 if the default
                                                    // color scheme is being used
 
-
     static const quint16 MAX_HUE = 340;
 
-    std::optional<std::vector<RandomizationRange>> _randomTable;   // pointer to randomization table or 0
-                                                                   // if no colors in the color scheme support
-                                                                   // randomization
+    std::optional<std::vector<RandomizationRange>> _randomTable; // pointer to randomization table or 0
+                                                                 // if no colors in the color scheme support
+                                                                 // randomization
 };
 
 /**
@@ -225,7 +229,6 @@ public:
 class ColorSchemeManager
 {
 public:
-
     /**
      * Constructs a new ColorSchemeManager and loads the list
      * of available color schemes.
@@ -242,7 +245,7 @@ public:
     /**
      * Returns the default color scheme for Konsole
      */
-    const ColorScheme* defaultColorScheme() const;
+    const ColorScheme *defaultColorScheme() const;
 
     /**
      * Returns the color scheme with the given name or 0 if no
@@ -252,7 +255,7 @@ public:
      * The first time that a color scheme with a particular name is
      * requested, the configuration information is loaded from disk.
      */
-    const ColorScheme* findColorScheme(const QString& name);
+    const ColorScheme *findColorScheme(const QString &name);
 
 #if 0
     /**
@@ -266,7 +269,7 @@ public:
     /**
      * Deletes a color scheme.  Returns true on successful deletion or false otherwise.
      */
-    bool deleteColorScheme(const QString& name);
+    bool deleteColorScheme(const QString &name);
 
     /**
      * Returns a list of the all the available color schemes.
@@ -278,7 +281,7 @@ public:
     QList<ColorScheme *> allColorSchemes();
 
     /** Returns the global color scheme manager instance. */
-    static ColorSchemeManager* instance();
+    static ColorSchemeManager *instance();
 
     /** @brief Loads a custom color scheme under given \em path.
      *
@@ -292,27 +295,27 @@ public:
      * @param[in] path The path to KDE 4 .colorscheme or KDE 3 .schema.
      * @return Whether the color scheme is loaded successfully.
      */
-    bool loadCustomColorScheme(const QString& path);
+    bool loadCustomColorScheme(const QString &path);
 
     /**
      * @brief Allows to add a custom location of color schemes.
      *
      * @param[in] custom_dir Custom location of color schemes (must end with /).
      */
-    void addCustomColorSchemeDir(const QString& custom_dir);
+    void addCustomColorSchemeDir(const QString &custom_dir);
 
 private:
     // loads a color scheme from a KDE 4+ .colorscheme file
-    bool loadColorScheme(const QString& path);
+    bool loadColorScheme(const QString &path);
     // returns a list of paths of color schemes in the KDE 4+ .colorscheme file format
     QList<QString> listColorSchemes();
     // loads all of the color schemes
     void loadAllColorSchemes();
     // finds the path of a color scheme
-    QString findColorSchemePath(const QString& name) const;
+    QString findColorSchemePath(const QString &name) const;
 
     std::unordered_map<QString, std::unique_ptr<ColorScheme>> _colorSchemes;
-    QSet<ColorScheme*> _modifiedSchemes;
+    QSet<ColorScheme *> _modifiedSchemes;
 
     bool _haveLoadedAll;
 
@@ -321,6 +324,6 @@ private:
 
 }
 
-Q_DECLARE_METATYPE(const Konsole::ColorScheme*)
+Q_DECLARE_METATYPE(const Konsole::ColorScheme *)
 
-#endif //COLORSCHEME_H
+#endif // COLORSCHEME_H

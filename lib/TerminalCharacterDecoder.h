@@ -44,10 +44,12 @@ namespace Konsole
 class TerminalCharacterDecoder
 {
 public:
-    virtual ~TerminalCharacterDecoder() {}
+    virtual ~TerminalCharacterDecoder()
+    {
+    }
 
     /** Begin decoding characters.  The resulting text is appended to @p output. */
-    virtual void begin(QTextStream* output) = 0;
+    virtual void begin(QTextStream *output) = 0;
     /** End decoding. */
     virtual void end() = 0;
 
@@ -91,14 +93,13 @@ public:
     /** Enables recording of character positions at which new lines are added.  See linePositions() */
     void setRecordLinePositions(bool record);
 
-    void begin(QTextStream* output) override;
+    void begin(QTextStream *output) override;
     void end() override;
 
     void decodeLine(std::span<const Character> characters, LineProperty properties) override;
 
-
 private:
-    QTextStream* _output;
+    QTextStream *_output;
     bool _includeTrailingWhitespace;
 
     bool _recordLinePositions;

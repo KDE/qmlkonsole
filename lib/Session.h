@@ -31,12 +31,13 @@
 
 class KProcess;
 
-namespace Konsole {
+namespace Konsole
+{
 
 class Emulation;
 class Pty;
 class TerminalDisplay;
-//class ZModemDialog;
+// class ZModemDialog;
 
 /**
  * Represents a terminal session consisting of a pseudo-teletype and a terminal emulation.
@@ -49,7 +50,8 @@ class TerminalDisplay;
  * or send input to the program in the terminal in the form of keypresses and mouse
  * activity.
  */
-class Session : public QObject {
+class Session : public QObject
+{
     Q_OBJECT
 
 public:
@@ -69,7 +71,7 @@ public:
      * falls back to using the program specified in the SHELL environment
      * variable.
      */
-    Session(QObject* parent = nullptr);
+    Session(QObject *parent = nullptr);
     ~Session() override;
 
     /**
@@ -84,7 +86,7 @@ public:
      * @param profileKey A key which can be used to obtain the current
      * profile settings from the SessionManager
      */
-    void setProfileKey(const QString & profileKey);
+    void setProfileKey(const QString &profileKey);
     /**
      * Returns the profile key associated with this session.
      * This can be passed to the SessionManager to obtain the current
@@ -102,7 +104,7 @@ public:
      * Views can be removed using removeView().  The session is automatically
      * closed when the last view is removed.
      */
-    void setView(TerminalDisplay * widget);
+    void setView(TerminalDisplay *widget);
     /**
      * Removes a view from this session.  When the last view is removed,
      * the session will be closed automatically.
@@ -110,7 +112,7 @@ public:
      * @p widget will no longer display output from or send input
      * to the terminal
      */
-    void removeView(TerminalDisplay * widget);
+    void removeView(TerminalDisplay *widget);
 
     /**
      * Returns the view connected to this session
@@ -121,7 +123,7 @@ public:
      * Returns the terminal emulation instance being used to encode / decode
      * characters to / from the process.
      */
-    Emulation * emulation() const;
+    Emulation *emulation() const;
 
     /**
      * Returns the environment of this session as a list of strings like
@@ -133,7 +135,7 @@ public:
      * @p environment should be a list of strings like
      * VARIABLE=VALUE
      */
-    void setEnvironment(const QStringList & environment);
+    void setEnvironment(const QStringList &environment);
 
     /** Returns the unique ID for this session. */
     int sessionId() const;
@@ -166,10 +168,9 @@ public:
      * followed by a letter.  (eg. %d for directory).  The dynamic
      * elements available depend on the @p context
      */
-    void setTabTitleFormat(TabTitleContext context , const QString & format);
+    void setTabTitleFormat(TabTitleContext context, const QString &format);
     /** Returns the format used by this session for tab titles. */
     QString tabTitleFormat(TabTitleContext context) const;
-
 
     /** Returns the arguments passed to the shell process when run() is called. */
     QStringList arguments() const;
@@ -180,12 +181,13 @@ public:
      * Sets the command line arguments which the session's program will be passed when
      * run() is called.
      */
-    void setArguments(const QStringList & arguments);
+    void setArguments(const QStringList &arguments);
     /** Sets the program to be executed when run() is called. */
-    void setProgram(const QString & program);
+    void setProgram(const QString &program);
 
     /** Returns the session's current working directory. */
-    QString initialWorkingDirectory() {
+    QString initialWorkingDirectory()
+    {
         return _initialWorkingDir;
     }
 
@@ -193,7 +195,7 @@ public:
      * Sets the initial working directory for the session when it is run
      * This has no effect once the session has been started.
      */
-    void setInitialWorkingDirectory( const QString & dir );
+    void setInitialWorkingDirectory(const QString &dir);
 
     /**
      * Sets the type of history store used by this session.
@@ -203,11 +205,11 @@ public:
      * remembered before they are lost and the storage
      * (in memory, on-disk etc.) used.
      */
-    void setHistoryType(const HistoryType & type);
+    void setHistoryType(const HistoryType &type);
     /**
      * Returns the type of history store used by this session.
      */
-    const HistoryType & historyType() const;
+    const HistoryType &historyType() const;
     /**
      * Clears the history store used by this session.
      */
@@ -235,7 +237,7 @@ public:
      * Returns true if monitoring for inactivity (silence)
      * in the session is enabled.
      */
-    bool isMonitorSilence()  const;
+    bool isMonitorSilence() const;
     /** See setMonitorSilence() */
     void setMonitorSilenceSeconds(int seconds);
 
@@ -248,7 +250,7 @@ public:
      * names of available key bindings can be determined using the
      * KeyboardTranslatorManager class.
      */
-    void setKeyBindings(const QString & id);
+    void setKeyBindings(const QString &id);
     /** Returns the name of the key bindings used by this session. */
     QString keyBindings() const;
 
@@ -263,21 +265,22 @@ public:
     };
 
     /** Sets the session's title for the specified @p role to @p title. */
-    void setTitle(TitleRole role , const QString & title);
+    void setTitle(TitleRole role, const QString &title);
     /** Returns the session's title for the specified @p role. */
     QString title(TitleRole role) const;
     /** Convenience method used to read the name property.  Returns title(Session::NameRole). */
-    QString nameTitle() const {
+    QString nameTitle() const
+    {
         return title(Session::NameRole);
     }
 
     /** Sets the name of the icon associated with this session. */
-    void setIconName(const QString & iconName);
+    void setIconName(const QString &iconName);
     /** Returns the name of the icon associated with this session. */
     QString iconName() const;
 
     /** Sets the text of the icon associated with this session. */
-    void setIconText(const QString & iconText);
+    void setIconText(const QString &iconText);
     /** Returns the text of the icon associated with this session. */
     QString iconText() const;
 
@@ -294,7 +297,8 @@ public:
      * Specifies whether to close the session automatically when the terminal
      * process terminates.
      */
-    void setAutoClose(bool b) {
+    void setAutoClose(bool b)
+    {
         _autoClose = b;
     }
 
@@ -310,9 +314,9 @@ public:
     /**
      * Sends @p text to the current foreground terminal program.
      */
-    void sendText(const QString & text) const;
+    void sendText(const QString &text) const;
 
-    void sendKeyEvent(QKeyEvent* e) const;
+    void sendKeyEvent(QKeyEvent *e) const;
 
     /**
      * Returns the process id of the terminal process.
@@ -345,10 +349,10 @@ public:
      *
      * @param size The size in lines and columns to request.
      */
-    void setSize(const QSize & size);
+    void setSize(const QSize &size);
 
     /** Sets the text codec used by this session's terminal emulation. */
-    void setCodec(QTextCodec * codec) const;
+    void setCodec(QTextCodec *codec) const;
 
     /**
      * Sets whether the session has a dark background or not.  The session
@@ -372,9 +376,9 @@ public:
      */
     void refresh();
 
-//  void startZModem(const QString &rz, const QString &dir, const QStringList &list);
-//  void cancelZModem();
-//  bool isZModemBusy() { return _zmodemBusy; }
+    //  void startZModem(const QString &rz, const QString &dir, const QStringList &list);
+    //  void cancelZModem();
+    //  bool isZModemBusy() { return _zmodemBusy; }
 
     /**
      * Returns a pty slave file descriptor.
@@ -411,7 +415,7 @@ public Q_SLOTS:
      * emulation display. For a list of what may be changed see the
      * Emulation::titleChanged() signal.
      */
-    void setUserTitle( int, const QString & caption );
+    void setUserTitle(int, const QString &caption);
 
 Q_SIGNALS:
 
@@ -426,13 +430,13 @@ Q_SIGNALS:
     /**
      * Emitted when output is received from the terminal process.
      */
-    void receivedData( const QString & text );
+    void receivedData(const QString &text);
 
     /** Emitted when the session's title has changed. */
     void titleChanged();
 
     /** Emitted when the session's profile has changed. */
-    void profileChanged(const QString & profile);
+    void profileChanged(const QString &profile);
 
     /**
      * Emitted when the activity state of this session changes.
@@ -443,7 +447,7 @@ Q_SIGNALS:
     void stateChanged(int state);
 
     /** Emitted when a bell event occurs in the session. */
-    void bellRequest( const QString & message );
+    void bellRequest(const QString &message);
 
     /**
      * Requests that the color the text for any tabs associated with
@@ -460,10 +464,10 @@ Q_SIGNALS:
     void changeBackgroundColorRequest(const QColor &);
 
     /** TODO: Document me. */
-    void openUrlRequest(const QString & url);
+    void openUrlRequest(const QString &url);
 
     /** TODO: Document me. */
-//  void zmodemDetected();
+    //  void zmodemDetected();
 
     /**
      * Emitted when the terminal process requests a change
@@ -471,7 +475,7 @@ Q_SIGNALS:
      *
      * @param size The requested window size in terms of lines and columns.
      */
-    void resizeRequest(const QSize & size);
+    void resizeRequest(const QSize &size);
 
     /**
      * Emitted when a profile change command is received from the terminal.
@@ -479,7 +483,7 @@ Q_SIGNALS:
      * @param text The text of the command.  This is a string of the form
      * "PropertyName=Value;PropertyName=Value ..."
      */
-    void profileChangeCommandReceived(const QString & text);
+    void profileChangeCommandReceived(const QString &text);
 
     /**
      * Emitted when the flow control state changes.
@@ -499,9 +503,9 @@ Q_SIGNALS:
 private Q_SLOTS:
     void done(int);
 
-//  void fireZModemDetected();
+    //  void fireZModemDetected();
 
-    void onReceiveBlock( const char * buffer, int len );
+    void onReceiveBlock(const char *buffer, int len);
     void monitorTimerDone();
 
     void onViewSizeChange(int height, int width);
@@ -509,69 +513,68 @@ private Q_SLOTS:
 
     void activityStateSet(int);
 
-    //automatically detach views from sessions when view is destroyed
-    void viewDestroyed(QObject * view);
+    // automatically detach views from sessions when view is destroyed
+    void viewDestroyed(QObject *view);
 
-//  void zmodemReadStatus();
-//  void zmodemReadAndSendBlock();
-//  void zmodemRcvBlock(const char *data, int len);
-//  void zmodemFinished();
+    //  void zmodemReadStatus();
+    //  void zmodemReadAndSendBlock();
+    //  void zmodemRcvBlock(const char *data, int len);
+    //  void zmodemFinished();
 
 private:
-
     void updateTerminalSize();
     bool updateForegroundProcessInfo();
     WId windowId() const;
 
-    int            _uniqueIdentifier;
+    int _uniqueIdentifier;
 
-    std::unique_ptr<Pty>        _shellProcess;
-    std::unique_ptr<Emulation>  _emulation;
+    std::unique_ptr<Pty> _shellProcess;
+    std::unique_ptr<Emulation> _emulation;
 
-    TerminalDisplay * _view = nullptr;
+    TerminalDisplay *_view = nullptr;
 
-    bool           _monitorActivity;
-    bool           _monitorSilence;
-    bool           _notifiedActivity;
-    bool           _masterMode;
-    bool           _autoClose;
-    bool           _wantedClose;
-    QTimer    *    _monitorTimer;
+    bool _monitorActivity;
+    bool _monitorSilence;
+    bool _notifiedActivity;
+    bool _masterMode;
+    bool _autoClose;
+    bool _wantedClose;
+    QTimer *_monitorTimer;
 
-    int            _silenceSeconds;
+    int _silenceSeconds;
 
-    QString        _nameTitle;
-    QString        _displayTitle;
-    QString        _userTitle;
+    QString _nameTitle;
+    QString _displayTitle;
+    QString _userTitle;
 
-    QString        _localTabTitleFormat;
-    QString        _remoteTabTitleFormat;
+    QString _localTabTitleFormat;
+    QString _remoteTabTitleFormat;
 
-    QString        _iconName;
-    QString        _iconText; // as set by: echo -en '\033]1;IconText\007
-    bool           _isTitleChanged; ///< flag if the title/icon was changed by user
-    bool           _addToUtmp;
-    bool           _flowControl;
-    bool           _fullScripting;
+    QString _iconName;
+    QString _iconText; // as set by: echo -en '\033]1;IconText\007
+    bool _isTitleChanged; ///< flag if the title/icon was changed by user
+    bool _addToUtmp;
+    bool _flowControl;
+    bool _fullScripting;
 
-    QString        _program;
-    QStringList    _arguments;
+    QString _program;
+    QStringList _arguments;
 
-    QStringList    _environment;
-    int            _sessionId;
+    QStringList _environment;
+    int _sessionId;
 
-    QString        _initialWorkingDir;
+    QString _initialWorkingDir;
 
     // ZModem
-//  bool           _zmodemBusy;
-//  KProcess*      _zmodemProc;
-//  ZModemDialog*  _zmodemProgress;
+    //  bool           _zmodemBusy;
+    //  KProcess*      _zmodemProc;
+    //  ZModemDialog*  _zmodemProgress;
 
     // Color/Font Changes by ESC Sequences
 
-    QColor         _modifiedBackground; // as set by: echo -en '\033]11;Color\007
+    QColor _modifiedBackground; // as set by: echo -en '\033]11;Color\007
 
-    QString        _profileKey;
+    QString _profileKey;
 
     bool _hasDarkBackground;
 
@@ -587,7 +590,8 @@ private:
  * The type of activity which is propagated and method of propagation is controlled
  * by the masterMode() flags.
  */
-class SessionGroup : public QObject {
+class SessionGroup : public QObject
+{
     Q_OBJECT
 
 public:
@@ -597,9 +601,9 @@ public:
     ~SessionGroup() override;
 
     /** Adds a session to the group. */
-    void addSession( Session * session );
+    void addSession(Session *session);
     /** Removes a session from the group. */
-    void removeSession( Session * session );
+    void removeSession(Session *session);
 
     /** Returns the list of sessions currently in the group. */
     QList<Session *> sessions() const;
@@ -612,9 +616,9 @@ public:
      * @param session The session whoose master status should be changed.
      * @param master True to make this session a master or false otherwise
      */
-    void setMasterStatus( Session * session , bool master );
+    void setMasterStatus(Session *session, bool master);
     /** Returns the master status of a session.  See setMasterStatus() */
-    bool masterStatus( Session * session ) const;
+    bool masterStatus(Session *session) const;
 
     /**
      * This enum describes the options for propagating certain activity or
@@ -634,7 +638,7 @@ public:
      *
      * @param mode A bitwise OR of MasterMode flags.
      */
-    void setMasterMode( int mode );
+    void setMasterMode(int mode);
     /**
      * Returns a bitwise OR of the active MasterMode flags for this group.
      * See setMasterMode()
@@ -642,13 +646,13 @@ public:
     int masterMode() const;
 
 private:
-    void connectPair(Session * master , Session * other) const;
-    void disconnectPair(Session * master , Session * other) const;
+    void connectPair(Session *master, Session *other) const;
+    void disconnectPair(Session *master, Session *other) const;
     void connectAll(bool connect);
     QList<Session *> masters() const;
 
     // maps sessions to their master status
-    QHash<Session *,bool> _sessions;
+    QHash<Session *, bool> _sessions;
 
     int _masterMode;
 };

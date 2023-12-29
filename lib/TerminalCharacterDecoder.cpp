@@ -30,7 +30,7 @@
 #include <QTextStream>
 
 // KDE
-//#include <kdebug.h>
+// #include <kdebug.h>
 
 // Konsole
 #include "konsole_wcwidth.h"
@@ -39,11 +39,10 @@
 
 using namespace Konsole;
 PlainTextDecoder::PlainTextDecoder()
- : _output(nullptr)
- , _includeTrailingWhitespace(true)
- , _recordLinePositions(false)
+    : _output(nullptr)
+    , _includeTrailingWhitespace(true)
+    , _recordLinePositions(false)
 {
-
 }
 void PlainTextDecoder::setTrailingWhitespace(bool enable)
 {
@@ -53,11 +52,11 @@ bool PlainTextDecoder::trailingWhitespace() const
 {
     return _includeTrailingWhitespace;
 }
-void PlainTextDecoder::begin(QTextStream* output)
+void PlainTextDecoder::begin(QTextStream *output)
 {
-   _output = output;
-   if (!_linePositions.isEmpty())
-       _linePositions.clear();
+    _output = output;
+    if (!_linePositions.isEmpty())
+        _linePositions.clear();
 }
 void PlainTextDecoder::end()
 {
@@ -75,29 +74,26 @@ QList<int> PlainTextDecoder::linePositions() const
 
 void PlainTextDecoder::decodeLine(std::span<const Character> characters, LineProperty /*properties*/)
 {
-    Q_ASSERT( _output );
+    Q_ASSERT(_output);
     int count = characters.size();
 
-    if (_recordLinePositions && _output->string())
-    {
+    if (_recordLinePositions && _output->string()) {
         int pos = _output->string()->size();
         _linePositions << pos;
     }
 
     // check the real length
-    for (int i = 0 ; i < count ; i++)
-    {
-        if (characters.subspan(i).empty())
-        {
+    for (int i = 0; i < count; i++) {
+        if (characters.subspan(i).empty()) {
             count = i;
             break;
         }
     }
 
-    //TODO should we ignore or respect the LINE_WRAPPED line property?
+    // TODO should we ignore or respect the LINE_WRAPPED line property?
 
-    //note:  we build up a QString and send it to the text stream rather writing into the text
-    //stream a character at a time because it is more efficient.
+    // note:  we build up a QString and send it to the text stream rather writing into the text
+    // stream a character at a time because it is more efficient.
     //(since QTextStream always deals with QStrings internally anyway)
     QString plainText;
     plainText.reserve(count);
@@ -106,22 +102,18 @@ void PlainTextDecoder::decodeLine(std::span<const Character> characters, LinePro
 
     // if inclusion of trailing whitespace is disabled then find the end of the
     // line
-    if ( !_includeTrailingWhitespace )
-    {
-        for (int i = count-1 ; i >= 0 ; i--)
-        {
-            if ( characters[i].character != u' '  )
+    if (!_includeTrailingWhitespace) {
+        for (int i = count - 1; i >= 0; i--) {
+            if (characters[i].character != u' ')
                 break;
             else
                 outputCount--;
         }
     }
 
-    for (int i=0;i<outputCount;)
-    {
-        plainText.push_back( characters[i].character );
-        i += qMax(1,konsole_wcwidth(characters[i].character));
+    for (int i = 0; i < outputCount;) {
+        plainText.push_back(characters[i].character);
+        i += qMax(1, konsole_wcwidth(characters[i].character));
     }
     *_output << plainText;
 }
-

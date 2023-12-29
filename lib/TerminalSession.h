@@ -30,42 +30,42 @@ using namespace Konsole;
 class TerminalSession : public QObject
 {
     Q_OBJECT
-    Q_PROPERTY(QString  kbScheme  READ  getKeyBindings WRITE setKeyBindings NOTIFY changedKeyBindings)
-    Q_PROPERTY(QString  initialWorkingDirectory READ getInitialWorkingDirectory WRITE setInitialWorkingDirectory NOTIFY initialWorkingDirectoryChanged)
-    Q_PROPERTY(QString  title READ getTitle WRITE setTitle NOTIFY titleChanged)
-    Q_PROPERTY(QString  shellProgram READ shellProgram WRITE setShellProgram NOTIFY shellProgramChanged)
+    Q_PROPERTY(QString kbScheme READ getKeyBindings WRITE setKeyBindings NOTIFY changedKeyBindings)
+    Q_PROPERTY(QString initialWorkingDirectory READ getInitialWorkingDirectory WRITE setInitialWorkingDirectory NOTIFY initialWorkingDirectoryChanged)
+    Q_PROPERTY(QString title READ getTitle WRITE setTitle NOTIFY titleChanged)
+    Q_PROPERTY(QString shellProgram READ shellProgram WRITE setShellProgram NOTIFY shellProgramChanged)
     Q_PROPERTY(QStringList shellProgramArgs READ args WRITE setArgs NOTIFY argsChanged)
-    Q_PROPERTY(QString  history READ getHistory)
+    Q_PROPERTY(QString history READ getHistory)
     Q_PROPERTY(bool hasActiveProcess READ hasActiveProcess)
     Q_PROPERTY(QString foregroundProcessName READ foregroundProcessName)
     Q_PROPERTY(QString currentDir READ currentDir)
 
 public:
     TerminalSession(QObject *parent = nullptr);
-    ~TerminalSession() override ;
+    ~TerminalSession() override;
 
 public:
-    //bool setup();
+    // bool setup();
     void addView(TerminalDisplay *display);
     void removeView(TerminalDisplay *display);
 
     int getRandomSeed();
     QString getKeyBindings();
 
-    //look-n-feel, if you don`t like defaults
+    // look-n-feel, if you don`t like defaults
 
-    //environment
-    void setEnvironment(const QStringList & environment);
+    // environment
+    void setEnvironment(const QStringList &environment);
 
-    //Initial working directory
-    void setInitialWorkingDirectory(const QString & dir);
+    // Initial working directory
+    void setInitialWorkingDirectory(const QString &dir);
     QString getInitialWorkingDirectory();
 
-    //Text codec, default is UTF-8
-    void setTextCodec(QTextCodec * codec);
+    // Text codec, default is UTF-8
+    void setTextCodec(QTextCodec *codec);
 
     // History size for scrolling
-    void setHistorySize(int lines); //infinite if lines < 0
+    void setHistorySize(int lines); // infinite if lines < 0
     int historySize() const;
 
     QString getHistory() const;
@@ -80,7 +80,7 @@ public:
      * Sets whether the flow control warning box should be shown
      * when the flow control stop key (Ctrl+S) is pressed.
      */
-    //void setFlowControlWarningEnabled(bool enabled);
+    // void setFlowControlWarningEnabled(bool enabled);
 
     /*! Get all available keyboard bindings
      */
@@ -134,7 +134,7 @@ Q_SIGNALS:
 public Q_SLOTS:
     /*! Set named key binding for given widget
      */
-    void setKeyBindings(const QString & kb);
+    void setKeyBindings(const QString &kb);
     void setTitle(QString name);
 
     void startShellProgram();
@@ -143,14 +143,14 @@ public Q_SLOTS:
 
     //  Shell program, default is /bin/bash
     QString shellProgram() const;
-    void setShellProgram(const QString & progname);
+    void setShellProgram(const QString &progname);
 
     // Shell program args, default is none
     QStringList args() const;
     void setArgs(const QStringList &args);
 
     int getShellPID();
-    void changeDir(const QString & dir);
+    void changeDir(const QString &dir);
 
     // Send some text to terminal
     void sendText(QString text);
@@ -160,7 +160,7 @@ public Q_SLOTS:
     void clearScreen();
 
     // Search history
-    void search(const QString &regexp, int startLine = 0, int startColumn = 0, bool forwards = true );
+    void search(const QString &regexp, int startLine = 0, int startColumn = 0, bool forwards = true);
 
     void selectionChanged(bool textSelected);
 

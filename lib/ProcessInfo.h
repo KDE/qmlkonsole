@@ -87,7 +87,9 @@ public:
      */
     static std::unique_ptr<ProcessInfo> newInstance(int pid, bool readEnvironment = false);
 
-    virtual ~ProcessInfo() {}
+    virtual ~ProcessInfo()
+    {
+    }
 
     /**
      * Updates the information about the process.  This must
@@ -102,13 +104,13 @@ public:
      *
      * @param ok Set to true if the process id was read successfully or false otherwise
      */
-    int pid(bool* ok) const;
+    int pid(bool *ok) const;
     /**
      * Returns the id of the parent process id was read successfully or false otherwise
      *
      * @param ok Set to true if the parent process id
      */
-    int parentPid(bool* ok) const;
+    int parentPid(bool *ok) const;
 
     /**
      * Returns the id of the current foreground process
@@ -119,10 +121,10 @@ public:
      *
      * @param ok Set to true if the foreground process id was read successfully or false otherwise
      */
-    int foregroundPid(bool* ok) const;
+    int foregroundPid(bool *ok) const;
 
     /* Returns the user id of the process */
-    int userId(bool* ok) const;
+    int userId(bool *ok) const;
 
     /** Returns the user's name of the process */
     QString userName() const;
@@ -134,7 +136,7 @@ public:
     static QString localHost();
 
     /** Returns the name of the current process */
-    QString name(bool* ok) const;
+    QString name(bool *ok) const;
 
     /**
      * Returns the command-line arguments which the process
@@ -144,7 +146,7 @@ public:
      *
      * @param ok Set to true if the arguments were read successfully or false otherwise.
      */
-    QVector<QString> arguments(bool* ok) const;
+    QVector<QString> arguments(bool *ok) const;
     /**
      * Returns the environment bindings which the process
      * was started with.
@@ -153,14 +155,14 @@ public:
      *
      * @param ok Set to true if the environment bindings were read successfully or false otherwise
      */
-    QMap<QString, QString> environment(bool* ok) const;
+    QMap<QString, QString> environment(bool *ok) const;
 
     /**
      * Returns the current working directory of the process
      *
      * @param ok Set to true if the current working directory was read successfully or false otherwise
      */
-    QString currentDir(bool* ok) const;
+    QString currentDir(bool *ok) const;
 
     /**
      * Returns the current working directory of the process (or its parent)
@@ -188,7 +190,7 @@ public:
      * <li> %D - Replaced with the current working directory of the process. </li>
      * </ul>
      */
-    QString format(const QString& text) const;
+    QString format(const QString &text) const;
 
     /**
      * This enum describes the errors which can occur when trying to read
@@ -208,16 +210,7 @@ public:
      */
     Error error() const;
 
-    enum Field {
-        PROCESS_ID          = 1,
-        PARENT_PID          = 2,
-        FOREGROUND_PID      = 4,
-        ARGUMENTS           = 8,
-        ENVIRONMENT         = 16,
-        NAME                = 32,
-        CURRENT_DIR         = 64,
-        UID                 = 128
-    };
+    enum Field { PROCESS_ID = 1, PARENT_PID = 2, FOREGROUND_PID = 4, ARGUMENTS = 8, ENVIRONMENT = 16, NAME = 32, CURRENT_DIR = 64, UID = 128 };
     Q_DECLARE_FLAGS(Fields, Field)
 
 protected:
@@ -227,7 +220,7 @@ protected:
      * static ProcessInfo::newInstance() method which will return
      * a suitable ProcessInfo instance for the current platform.
      */
-    explicit ProcessInfo(int pid , bool readEnvironment = false);
+    explicit ProcessInfo(int pid, bool readEnvironment = false);
 
     /**
      * This is called on construction to read the process state
@@ -247,7 +240,7 @@ protected:
      * @param readEnvironment Specifies whether the environment bindings
      *                        for the process should be read
      */
-    virtual bool readProcessInfo(int pid , bool readEnvironment) = 0;
+    virtual bool readProcessInfo(int pid, bool readEnvironment) = 0;
 
     /* Read the user name */
     virtual void readUserName(void) = 0;
@@ -261,11 +254,11 @@ protected:
     /** Sets the user id associated with this ProcessInfo instance */
     void setUserId(int uid);
     /** Sets the user name of the process as set by readUserName() */
-    void setUserName(const QString& name);
+    void setUserName(const QString &name);
     /** Sets the name of the process as returned by name() */
-    void setName(const QString& name);
+    void setName(const QString &name);
     /** Sets the current working directory for the process */
-    void setCurrentDir(const QString& dir);
+    void setCurrentDir(const QString &dir);
 
     /** Sets the error */
     void setError(Error error);
@@ -277,7 +270,7 @@ protected:
      * Adds a commandline argument for the process, as returned
      * by arguments()
      */
-    void addArgument(const QString& argument);
+    void addArgument(const QString &argument);
 
     /**
      * clear the commandline arguments for the process, as returned
@@ -292,13 +285,13 @@ protected:
      * @param name The name of the environment variable, eg. "PATH"
      * @param value The value of the environment variable, eg. "/bin"
      */
-    void addEnvironmentBinding(const QString& name , const QString& value);
+    void addEnvironmentBinding(const QString &name, const QString &value);
 
 private:
     // takes a full directory path and returns a
     // shortened version suitable for display in
     // space-constrained UI elements (eg. tabs)
-    QString formatShortDir(const QString& dirPath) const;
+    QString formatShortDir(const QString &dirPath) const;
 
     Fields _fields;
 
@@ -339,6 +332,7 @@ public:
      * See ProcessInfo::newInstance()
      */
     explicit NullProcessInfo(int pid, bool readEnvironment = false);
+
 protected:
     bool readProcessInfo(int pid, bool readEnvironment) override;
     void readUserName(void) override;
@@ -363,7 +357,7 @@ protected:
      * Implementation of ProcessInfo::readProcessInfo(); calls the
      * four private methods below in turn.
      */
-    bool readProcessInfo(int pid , bool readEnvironment) override;
+    bool readProcessInfo(int pid, bool readEnvironment) override;
 
     void readUserName(void) override;
 
@@ -410,7 +404,7 @@ public:
      *
      * @param process A ProcessInfo instance for a SSH process.
      */
-    explicit SSHProcessInfo(const ProcessInfo& process);
+    explicit SSHProcessInfo(const ProcessInfo &process);
 
     /**
      * Returns the user name which the user initially logged into on
@@ -447,14 +441,14 @@ public:
      * %c - Replaced with the command which the user specified
      *      to execute when starting the SSH process.
      */
-    QString format(const QString& input) const;
+    QString format(const QString &input) const;
 
 private:
-    const ProcessInfo& _process;
+    const ProcessInfo &_process;
     QString _user;
     QString _host;
     QString _port;
     QString _command;
 };
 }
-#endif //PROCESSINFO_H
+#endif // PROCESSINFO_H

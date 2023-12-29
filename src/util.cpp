@@ -7,9 +7,10 @@
 
 #include <KWindowEffects>
 
-Util::Util(QObject *parent) 
-    : QObject{ parent }
-{}
+Util::Util(QObject *parent)
+    : QObject{parent}
+{
+}
 
 uint Util::getKeyFromString(QString key)
 {

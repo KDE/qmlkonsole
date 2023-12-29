@@ -4,22 +4,22 @@
 
 #include <QApplication>
 #include <QCommandLineParser>
-#include <QQmlApplicationEngine>
-#include <QtQml>
-#include <QUrl>
 #include <QIcon>
+#include <QQmlApplicationEngine>
+#include <QUrl>
+#include <QtQml>
 
+#include <KAboutData>
 #include <KLocalizedContext>
 #include <KLocalizedString>
-#include <KAboutData>
 
 #include "fontlistmodel.h"
-#include "terminalsettings.h"
 #include "savedcommandsmodel.h"
-#include "terminaltabmodel.h"
-#include "version.h"
-#include "util.h"
 #include "shellcommand.h"
+#include "terminalsettings.h"
+#include "terminaltabmodel.h"
+#include "util.h"
+#include "version.h"
 
 #include <KonsoleQML.h>
 

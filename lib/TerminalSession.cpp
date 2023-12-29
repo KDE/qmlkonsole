@@ -24,11 +24,12 @@
 #include <QTextCodec>
 
 // Konsole
-#include "KeyboardTranslator.h"
 #include "HistorySearch.h"
+#include "KeyboardTranslator.h"
 
-TerminalSession::TerminalSession(QObject *parent) :
-    QObject(parent), m_session(createSession(QString()))
+TerminalSession::TerminalSession(QObject *parent)
+    : QObject(parent)
+    , m_session(createSession(QString()))
 {
     connect(m_session.get(), &Konsole::Session::started, this, &TerminalSession::started);
     connect(m_session.get(), &Konsole::Session::finished, this, &TerminalSession::sessionFinished);
@@ -48,7 +49,6 @@ void TerminalSession::setTitle(QString name)
     m_session->setTitle(Session::NameRole, name);
 }
 
-
 std::unique_ptr<Session> TerminalSession::createSession(QString name)
 {
     auto session = std::make_unique<Session>();
@@ -63,7 +63,7 @@ std::unique_ptr<Session> TerminalSession::createSession(QString name)
      * But as iam not sure if you want to do anything else ill just let both checks in and set this to $SHELL anyway.
      */
 
-    //cool-old-term: There is another check in the code. Not sure if useful.
+    // cool-old-term: There is another check in the code. Not sure if useful.
 
     QString envshell = qEnvironmentVariable("SHELL");
     QString shellProg = !envshell.isNull() ? envshell : QStringLiteral("/bin/bash");
@@ -71,7 +71,7 @@ std::unique_ptr<Session> TerminalSession::createSession(QString name)
 
     setenv("TERM", "xterm", 1);
 
-    //session->setProgram();
+    // session->setProgram();
 
     QStringList args;
     session->setArguments(args);
@@ -92,13 +92,12 @@ std::unique_ptr<Session> TerminalSession::createSession(QString name)
 /////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////
 
-
-int  TerminalSession::getRandomSeed()
+int TerminalSession::getRandomSeed()
 {
     return m_session->sessionId() * 31;
 }
 
-void  TerminalSession::addView(TerminalDisplay *display)
+void TerminalSession::addView(TerminalDisplay *display)
 {
     m_session->setView(display);
 }
@@ -120,7 +119,7 @@ void TerminalSession::selectionChanged(bool textSelected)
 
 void TerminalSession::startShellProgram()
 {
-    if ( m_session->isRunning() ) {
+    if (m_session->isRunning()) {
         return;
     }
 
@@ -129,7 +128,7 @@ void TerminalSession::startShellProgram()
 
 bool TerminalSession::sendSignal(int signal)
 {
-    if ( !m_session->isRunning() ) {
+    if (!m_session->isRunning()) {
         return false;
     }
 
@@ -178,11 +177,12 @@ void TerminalSession::setShellProgram(const QString &progname)
 
 void TerminalSession::setInitialWorkingDirectory(const QString &dir)
 {
-    if ( _initialWorkingDirectory != dir ) {
+    if (_initialWorkingDirectory != dir) {
         _initialWorkingDirectory = dir;
         m_session->setInitialWorkingDirectory(dir);
         Q_EMIT initialWorkingDirectoryChanged();
-}   }
+    }
+}
 
 QString TerminalSession::getInitialWorkingDirectory()
 {
@@ -207,7 +207,7 @@ void TerminalSession::setTextCodec(QTextCodec *codec)
 
 void TerminalSession::setHistorySize(int lines)
 {
-    if ( historySize() != lines ) {
+    if (historySize() != lines) {
         if (lines < 0)
             m_session->setHistoryType(HistoryTypeFile());
         else
@@ -218,7 +218,7 @@ void TerminalSession::setHistorySize(int lines)
 
 int TerminalSession::historySize() const
 {
-    if ( m_session->historyType().isUnlimited() ) {
+    if (m_session->historyType().isUnlimited()) {
         return -1;
     } else {
         return m_session->historyType().maximumLineCount();
@@ -245,14 +245,14 @@ void TerminalSession::sendText(QString text)
 
 void TerminalSession::sendKey(int, int, int) const
 {
-    //TODO implement or remove this function.
-//    Qt::KeyboardModifier kbm = Qt::KeyboardModifier(mod);
+    // TODO implement or remove this function.
+    //    Qt::KeyboardModifier kbm = Qt::KeyboardModifier(mod);
 
-//    QKeyEvent qkey(QEvent::KeyPress, key, kbm);
+    //    QKeyEvent qkey(QEvent::KeyPress, key, kbm);
 
-//    while (rep > 0){
-//        m_session->sendKey(&qkey);
-//        --rep;
+    //    while (rep > 0){
+    //        m_session->sendKey(&qkey);
+    //        --rep;
     //    }
 }
 
@@ -263,9 +263,9 @@ void TerminalSession::clearScreen()
 
 void TerminalSession::search(const QString &regexp, int startLine, int startColumn, bool forwards)
 {
-    HistorySearch *history = new HistorySearch( QPointer<Emulation>(m_session->emulation()), QRegExp(regexp), forwards, startColumn, startLine, this);
-    connect( history, &HistorySearch::matchFound, this, &TerminalSession::matchFound);
-    connect( history, &HistorySearch::noMatchFound, this, &TerminalSession::noMatchFound);
+    HistorySearch *history = new HistorySearch(QPointer<Emulation>(m_session->emulation()), QRegExp(regexp), forwards, startColumn, startLine, this);
+    connect(history, &HistorySearch::matchFound, this, &TerminalSession::matchFound);
+    connect(history, &HistorySearch::noMatchFound, this, &TerminalSession::noMatchFound);
     history->search();
 }
 
@@ -287,7 +287,7 @@ void TerminalSession::setKeyBindings(const QString &kb)
 
 QString TerminalSession::getKeyBindings()
 {
-   return m_session->keyBindings();
+    return m_session->keyBindings();
 }
 
 QStringList TerminalSession::availableKeyBindings()

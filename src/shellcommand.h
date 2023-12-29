@@ -22,4 +22,3 @@ private:
 
     QStringList m_cmd;
 };
-
