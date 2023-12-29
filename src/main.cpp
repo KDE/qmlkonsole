@@ -21,6 +21,8 @@
 #include "util.h"
 #include "shellcommand.h"
 
+#include <KonsoleQML.h>
+
 constexpr auto URI = "org.kde.qmlkonsole";
 
 Q_DECL_EXPORT int main(int argc, char *argv[])

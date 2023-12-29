@@ -14,6 +14,9 @@ set(KF6_MIN_VERSION "5.240.0")
 set(QT_MIN_VERSION "6.5.2")
 set(KDE_COMPILERSETTINGS_LEVEL "5.84.0")
 
+set(CMAKE_CXX_STANDARD 20)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
 find_package(ECM ${KF6_MIN_VERSION} REQUIRED NO_MODULE)
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${ECM_MODULE_PATH})
 
@@ -38,6 +41,7 @@ find_package(Qt6 ${QT_MIN_VERSION} REQUIRED NO_MODULE COMPONENTS
     Svg 
     QuickControls2
     Widgets
+    Core5Compat
 )
 find_package(KF6 ${KF6_MIN_VERSION} REQUIRED COMPONENTS
     Kirigami
@@ -45,13 +49,11 @@ find_package(KF6 ${KF6_MIN_VERSION} REQUIRED COMPONENTS
     Config 
     CoreAddons 
     WindowSystem
+    Pty
 )
 find_package(KF6KirigamiAddons 0.6 REQUIRED)
 
-ecm_find_qmlmodule(QMLTermWidget 1.0)
-set_package_properties(QMLTermWidget-QMLModule PROPERTIES
-    URL "https://github.com/Swordfish90/qmltermwidget")
-
+add_subdirectory(lib)
 add_subdirectory(src)
 
 ki18n_install(po)

@@ -31,6 +31,7 @@ target_link_libraries(qmlkonsole
     KF6::ConfigGui
     KF6::CoreAddons
     KF6::WindowSystem
+    KonsoleQML
 )
 install(TARGETS qmlkonsole ${KDE_INSTALL_TARGETS_DEFAULT_ARGS})
 install(FILES terminalsettings.kcfg DESTINATION ${KDE_INSTALL_KCFGDIR})

@@ -1,0 +1,30 @@
+<!--
+
+SPDX-FileCopyrightText: 2023 Jonah Brüchert <jbb@kaidan.im>
+
+SPDX-License-Identifier: GPL-2.0-or-later
+
+-->
+
+<RCC>
+    <qresource prefix="/">
+        <file>color-schemes/BlackOnLightYellow.colorscheme</file>
+        <file>color-schemes/BlackOnRandomLight.colorscheme</file>
+        <file>color-schemes/BlackOnWhite.colorscheme</file>
+        <file>color-schemes/BreezeModified.colorscheme</file>
+        <file>color-schemes/cool-retro-term.colorscheme</file>
+        <file>color-schemes/DarkPastels.colorscheme</file>
+        <file>color-schemes/GreenOnBlack.colorscheme</file>
+        <file>color-schemes/Linux.colorscheme</file>
+        <file>color-schemes/Solarized.colorscheme</file>
+        <file>color-schemes/Tango.colorscheme</file>
+        <file>color-schemes/SolarizedLight.colorscheme</file>
+        <file>color-schemes/WhiteOnBlack.colorscheme</file>
+        <file>color-schemes/Ubuntu.colorscheme</file>
+        <file>kb-layouts/default.keytab</file>
+        <file>kb-layouts/linux.keytab</file>
+        <file>kb-layouts/macbook.keytab</file>
+        <file>kb-layouts/vt420pc.keytab</file>
+        <file>kb-layouts/solaris.keytab</file>
+    </qresource>
+</RCC>
