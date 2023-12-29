@@ -10,5 +10,6 @@ Dependencies:
     'frameworks/ki18n': '@latest-kf6'
     'frameworks/kcoreaddons': '@latest-kf6'
     'frameworks/kwindowsystem': '@latest-kf6'
+    'frameworks/kpty': '@latest-kf6'
     'libraries/kirigami-addons': '@latest-kf6'
     'third-party/qmltermwidget': '@latest'
