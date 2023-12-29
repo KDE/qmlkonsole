@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: qmlkonsole\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-12-28 01:34+0000\n"
-"PO-Revision-Date: 2023-12-27 14:09+0300\n"
+"PO-Revision-Date: 2023-12-28 10:25+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -74,7 +74,7 @@ msgstr "Komut Ekle"
 #: contents/ui/SavedCommandsSettings.qml:30
 #, kde-format
 msgid "Edit"
-msgstr ""
+msgstr "Düzenle"
 
 #: contents/ui/SavedCommandsSettings.qml:56
 #, kde-format
@@ -82,10 +82,9 @@ msgid "Add command"
 msgstr "Komut ekle"
 
 #: contents/ui/SavedCommandsSettings.qml:87
-#, fuzzy, kde-format
-#| msgid "Action %1 removed"
+#, kde-format
 msgid "Command %1 removed"
-msgstr "%1 eylemi kaldırıldı"
+msgstr "%1 komutu kaldırıldı"
 
 #: contents/ui/SettingsComponent.qml:35
 #, kde-format

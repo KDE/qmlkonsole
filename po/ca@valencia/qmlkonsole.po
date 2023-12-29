@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: qmlkonsole\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-12-28 01:34+0000\n"
-"PO-Revision-Date: 2023-11-03 09:34+0100\n"
+"PO-Revision-Date: 2023-12-28 07:51+0200\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca@valencia\n"
@@ -77,7 +77,7 @@ msgstr "Afig una ordre"
 #: contents/ui/SavedCommandsSettings.qml:30
 #, kde-format
 msgid "Edit"
-msgstr ""
+msgstr "Edita"
 
 #: contents/ui/SavedCommandsSettings.qml:56
 #, kde-format
@@ -85,10 +85,9 @@ msgid "Add command"
 msgstr "Afig una ordre"
 
 #: contents/ui/SavedCommandsSettings.qml:87
-#, fuzzy, kde-format
-#| msgid "Action %1 removed"
+#, kde-format
 msgid "Command %1 removed"
-msgstr "S'ha eliminat l'acció %1"
+msgstr "S'ha eliminat l'ordre %1"
 
 #: contents/ui/SettingsComponent.qml:35
 #, kde-format

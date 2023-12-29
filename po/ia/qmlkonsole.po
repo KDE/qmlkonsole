@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: qmlkonsole\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-12-28 01:34+0000\n"
-"PO-Revision-Date: 2023-11-06 17:06+0100\n"
+"PO-Revision-Date: 2023-12-28 18:52+0100\n"
 "Last-Translator: giovanni <g.sora@tiscali.it>\n"
 "Language-Team: Interlingua <kde-i18n-doc@kde.org>\n"
 "Language: ia\n"
@@ -75,7 +75,7 @@ msgstr "Adde Commando"
 #: contents/ui/SavedCommandsSettings.qml:30
 #, kde-format
 msgid "Edit"
-msgstr ""
+msgstr "Modifica"
 
 #: contents/ui/SavedCommandsSettings.qml:56
 #, kde-format
@@ -83,10 +83,9 @@ msgid "Add command"
 msgstr "Adde commando"
 
 #: contents/ui/SavedCommandsSettings.qml:87
-#, fuzzy, kde-format
-#| msgid "Action %1 removed"
+#, kde-format
 msgid "Command %1 removed"
-msgstr "Action %1 removite"
+msgstr "Commando %1 removite"
 
 #: contents/ui/SettingsComponent.qml:35
 #, kde-format
