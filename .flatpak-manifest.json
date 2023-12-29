@@ -70,7 +70,7 @@
             ]
         },
         {
-            "name": "qmltermwidget",
+            "name": "libkonsoleqml",
             "buildsystem": "cmake-ninja",
             "config-opts": [
                 "-DQT_MAJOR_VERSION=6"
@@ -78,8 +78,8 @@
             "sources": [
                 {
                     "type": "git",
-                    "url": "https://invent.kde.org/jbbgameich/qmltermwidget.git",
-                    "commit": "299c27c07fdb3fe090bbd43626e22efe76712cf1"
+                    "url": "https://invent.kde.org/jbbgameich/libkonsoleqml.git",
+                    "branch": "master"
                 }
             ]
         },
