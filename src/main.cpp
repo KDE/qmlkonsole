@@ -46,6 +46,8 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
         return new ShellCommand();
     });
 
+    KonsoleQML::registerTypes("org.kde.konsoleqml");
+
     QObject::connect(TerminalSettings::self(), &TerminalSettings::configChanged, QApplication::instance(), [] {
         TerminalSettings::self()->save();
         qDebug() << "saving config";

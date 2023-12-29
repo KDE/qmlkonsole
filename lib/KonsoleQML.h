@@ -4,11 +4,9 @@
 #ifndef QMLTERMWIDGET_PLUGIN_H
 #define QMLTERMWIDGET_PLUGIN_H
 
-class KonsoleQML
+struct KonsoleQML
 {
-    
-public:
-    void registerTypes(const char *uri);
+    static void registerTypes(const char *uri);
 };
 
 #endif // QMLTERMWIDGET_PLUGIN_H
