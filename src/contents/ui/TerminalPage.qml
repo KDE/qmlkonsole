@@ -7,14 +7,14 @@ import QtQuick
 import QtQuick.Layouts
 import QtQuick.Controls
 
-import QMLTermWidget
+import org.kde.konsoleqml
 import org.kde.kirigami as Kirigami
 
 import org.kde.qmlkonsole
 
 Kirigami.Page {
     id: root
-    property QMLTermWidget currentTerminal: tabSwipeView.contentChildren[tabSwipeView.currentIndex].termWidget
+    property TerminalEmulator currentTerminal: tabSwipeView.contentChildren[tabSwipeView.currentIndex].termWidget
 
     background: Item {}
 
@@ -362,7 +362,7 @@ Kirigami.Page {
                 delegate: Item {
                     property alias termWidget: terminal
 
-                    QMLTermWidget {
+                    TerminalEmulator {
                         id: terminal
                         anchors.fill: parent
 
@@ -413,7 +413,7 @@ Kirigami.Page {
                             root.forceTerminalFocus();
                         }
 
-                        session: QMLTermSession {
+                        session: TerminalSession {
                             id: mainsession
                             initialWorkingDirectory: "$HOME"
                             shellProgram: ShellCommand.executable

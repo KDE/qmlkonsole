@@ -7,7 +7,7 @@ import QtQuick
 import QtQuick.Layouts
 import QtQuick.Controls
 
-import QMLTermWidget
+import org.kde.konsoleqml
 import org.kde.kirigami as Kirigami
 
 import org.kde.qmlkonsole
@@ -17,7 +17,7 @@ Kirigami.Dialog {
     title: i18n("Settings")
     standardButtons: Kirigami.Dialog.NoButton
     
-    property QMLTermWidget terminal
+    property TerminalEmulator terminal
     preferredWidth: Kirigami.Units.gridUnit * 35
     
     Kirigami.Theme.inherit: false

@@ -7,7 +7,6 @@ import QtQuick
 import QtQuick.Layouts
 import QtQuick.Controls
 
-import QMLTermWidget
 import org.kde.kirigami as Kirigami
 
 import org.kde.qmlkonsole

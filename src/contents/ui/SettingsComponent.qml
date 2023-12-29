@@ -8,14 +8,14 @@ import QtQuick.Controls as Controls
 import QtQuick.Layouts
 
 import org.kde.kirigami as Kirigami
-import QMLTermWidget
+import org.kde.konsoleqml
 
 import org.kde.qmlkonsole
 import org.kde.kirigamiaddons.formcard as MobileForm
 
 ColumnLayout {
     id: root
-    property QMLTermWidget terminal
+    property TerminalEmulator terminal
     property var dialog: null // dialog component if this is within a dialog
 
     spacing: 0

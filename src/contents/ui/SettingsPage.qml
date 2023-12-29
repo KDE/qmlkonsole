@@ -7,14 +7,14 @@ import QtQuick.Controls as Controls
 import QtQuick.Layouts
 
 import org.kde.kirigami 2.19 as Kirigami
-import QMLTermWidget
+import org.kde.konsoleqml
 
 import org.kde.qmlkonsole
 
 Kirigami.ScrollablePage {
     id: root
     title: i18n("Settings")
-    property QMLTermWidget terminal
+    property TerminalEmulator terminal
     
     topPadding: 0
     bottomPadding: Kirigami.Units.gridUnit

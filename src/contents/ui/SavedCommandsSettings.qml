@@ -9,7 +9,7 @@ import QtQuick.Layouts
 
 import org.kde.kirigami as Kirigami
 
-import QMLTermWidget
+import org.kde.konsoleqml
 
 import org.kde.qmlkonsole
 
@@ -17,7 +17,7 @@ Kirigami.ScrollablePage {
     id: root
     title: i18n("Saved Commands")
 
-    property QMLTermWidget terminal
+    property TerminalEmulator terminal
     property bool editMode: false
 
     actions: [
