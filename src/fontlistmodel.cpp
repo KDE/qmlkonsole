@@ -14,8 +14,7 @@ FontListModel *FontListModel::self()
 FontListModel::FontListModel(QObject *parent)
     : QAbstractListModel{parent}
 {
-    QFontDatabase database;
-    m_fontList = database.families(QFontDatabase::Any);
+    m_fontList = QFontDatabase::families(QFontDatabase::Any);
 }
 
 int FontListModel::rowCount(const QModelIndex &parent) const
