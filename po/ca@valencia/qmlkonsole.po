@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qmlkonsole\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-12-28 01:34+0000\n"
+"POT-Creation-Date: 2023-12-30 01:39+0000\n"
 "PO-Revision-Date: 2023-12-28 07:51+0200\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
@@ -30,7 +30,7 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "txemaq@gmail.com"
 
-#: contents/ui/main.qml:16
+#: contents/ui/main.qml:15
 #, kde-format
 msgid "Terminal"
 msgstr "Terminal"
@@ -260,27 +260,27 @@ msgstr "mode de selecció"
 msgid "Disable"
 msgstr "Desactiva"
 
-#: main.cpp:36
+#: main.cpp:38
 #, kde-format
 msgid "© 2020-2022 KDE Community"
 msgstr "© 2020-2022 Comunitat KDE"
 
-#: main.cpp:38
+#: main.cpp:40
 #, kde-format
 msgid "Jonah Brüchert"
 msgstr "Jonah Brüchert"
 
-#: main.cpp:39
+#: main.cpp:41
 #, kde-format
 msgid "Devin Lin"
 msgstr "Devin Lin"
 
-#: main.cpp:58
+#: main.cpp:62
 #, kde-format
 msgid "Command to execute"
 msgstr "Ordre que s'ha d'executar"
 
-#: main.cpp:59
+#: main.cpp:63
 #, kde-format
 msgid "Set the initial working directory to 'dir'"
 msgstr "Establix el directori de treball inicial a «dir»"

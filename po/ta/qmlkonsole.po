@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qmlkonsole\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-12-28 01:34+0000\n"
+"POT-Creation-Date: 2023-12-30 01:39+0000\n"
 "PO-Revision-Date: 2022-12-27 21:42+0530\n"
 "Last-Translator: Kishore G <kishore96@gmail.com>\n"
 "Language-Team: Tamil <kde-i18n-doc@kde.org>\n"
@@ -27,7 +27,7 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "Kde-l10n-ta@kde.org"
 
-#: contents/ui/main.qml:16
+#: contents/ui/main.qml:15
 #, kde-format
 msgid "Terminal"
 msgstr "முனையம்"
@@ -255,27 +255,27 @@ msgstr "தேர்வு பயன்முறை"
 msgid "Disable"
 msgstr "முடக்கு"
 
-#: main.cpp:36
+#: main.cpp:38
 #, kde-format
 msgid "© 2020-2022 KDE Community"
 msgstr "© 2020-2022 கே.டீ.யீ. சமூகம்"
 
-#: main.cpp:38
+#: main.cpp:40
 #, kde-format
 msgid "Jonah Brüchert"
 msgstr ""
 
-#: main.cpp:39
+#: main.cpp:41
 #, kde-format
 msgid "Devin Lin"
 msgstr ""
 
-#: main.cpp:58
+#: main.cpp:62
 #, kde-format
 msgid "Command to execute"
 msgstr "செயல்படுத்த வேண்டிய கட்டளை"
 
-#: main.cpp:59
+#: main.cpp:63
 #, kde-format
 msgid "Set the initial working directory to 'dir'"
 msgstr "துவக்க அடைவை 'dir' என்பதாக அமைக்கும்"

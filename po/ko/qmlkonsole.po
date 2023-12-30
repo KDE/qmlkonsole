@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qmlkonsole\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-12-28 01:34+0000\n"
+"POT-Creation-Date: 2023-12-30 01:39+0000\n"
 "PO-Revision-Date: 2023-03-01 02:18+0100\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
@@ -27,7 +27,7 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "kde@peremen.name"
 
-#: contents/ui/main.qml:16
+#: contents/ui/main.qml:15
 #, kde-format
 msgid "Terminal"
 msgstr "터미널"
@@ -255,27 +255,27 @@ msgstr "선택 모드"
 msgid "Disable"
 msgstr "비활성화"
 
-#: main.cpp:36
+#: main.cpp:38
 #, kde-format
 msgid "© 2020-2022 KDE Community"
 msgstr "© 2020-2022 KDE Community"
 
-#: main.cpp:38
+#: main.cpp:40
 #, kde-format
 msgid "Jonah Brüchert"
 msgstr "Jonah Brüchert"
 
-#: main.cpp:39
+#: main.cpp:41
 #, kde-format
 msgid "Devin Lin"
 msgstr "Devin Lin"
 
-#: main.cpp:58
+#: main.cpp:62
 #, kde-format
 msgid "Command to execute"
 msgstr "실행할 명령"
 
-#: main.cpp:59
+#: main.cpp:63
 #, kde-format
 msgid "Set the initial working directory to 'dir'"
 msgstr "초기 작업 디렉터리를 'dir'로 설정하기"

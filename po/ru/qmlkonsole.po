@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qmlkonsole\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-12-28 01:34+0000\n"
+"POT-Creation-Date: 2023-12-30 01:39+0000\n"
 "PO-Revision-Date: 2023-04-24 09:45+0300\n"
 "Last-Translator: Olesya Gerasimenko <translation-team@basealt.ru>\n"
 "Language-Team: Basealt Translation Team\n"
@@ -29,7 +29,7 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "kekcuha@gmail.com, translation-team@basealt.ru"
 
-#: contents/ui/main.qml:16
+#: contents/ui/main.qml:15
 #, kde-format
 msgid "Terminal"
 msgstr "Терминал"
@@ -258,27 +258,27 @@ msgstr "Режим выделения"
 msgid "Disable"
 msgstr "Отключить"
 
-#: main.cpp:36
+#: main.cpp:38
 #, kde-format
 msgid "© 2020-2022 KDE Community"
 msgstr "© Сообщество KDE, 2020-2022"
 
-#: main.cpp:38
+#: main.cpp:40
 #, kde-format
 msgid "Jonah Brüchert"
 msgstr "Jonah Brüchert"
 
-#: main.cpp:39
+#: main.cpp:41
 #, kde-format
 msgid "Devin Lin"
 msgstr "Devin Lin"
 
-#: main.cpp:58
+#: main.cpp:62
 #, kde-format
 msgid "Command to execute"
 msgstr "Команда для выполнения"
 
-#: main.cpp:59
+#: main.cpp:63
 #, kde-format
 msgid "Set the initial working directory to 'dir'"
 msgstr "Установить начальный рабочий каталог в «dir»"
