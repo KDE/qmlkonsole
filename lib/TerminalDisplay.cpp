@@ -55,7 +55,7 @@
 
 inline void initResource()
 {
-    Q_INIT_RESOURCE(resources);
+    Q_INIT_RESOURCE(terminal);
 }
 
 using namespace Konsole;
