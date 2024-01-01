@@ -1,13 +1,13 @@
-# Copyright (C) YEAR This file is copyright:
+# Copyright (C) 2023 This file is copyright:
 # This file is distributed under the same license as the qmlkonsole package.
-# Vincenzo Reale <smart2128vr@gmail.com>, 2020, 2021, 2022.
+# SPDX-FileCopyrightText: 2020, 2021, 2022, 2023 Vincenzo Reale <smart2128vr@gmail.com>
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: qmlkonsole\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-12-30 01:39+0000\n"
-"PO-Revision-Date: 2022-12-25 01:53+0100\n"
+"PO-Revision-Date: 2023-12-28 20:24+0100\n"
 "Last-Translator: Vincenzo Reale <smart2128vr@gmail.com>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
 "Language: it\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 22.12.0\n"
+"X-Generator: Lokalize 23.08.4\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -74,7 +74,7 @@ msgstr "Aggiungi comando"
 #: contents/ui/SavedCommandsSettings.qml:30
 #, kde-format
 msgid "Edit"
-msgstr ""
+msgstr "Modifica"
 
 #: contents/ui/SavedCommandsSettings.qml:56
 #, kde-format
@@ -82,10 +82,9 @@ msgid "Add command"
 msgstr "Aggiungi comando"
 
 #: contents/ui/SavedCommandsSettings.qml:87
-#, fuzzy, kde-format
-#| msgid "Action %1 removed"
+#, kde-format
 msgid "Command %1 removed"
-msgstr "Azione %1 rimossa"
+msgstr "Comando %1 rimosso"
 
 #: contents/ui/SettingsComponent.qml:35
 #, kde-format

@@ -5,15 +5,15 @@ msgstr ""
 "Project-Id-Version: qmlkonsole\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-12-30 01:39+0000\n"
-"PO-Revision-Date: 2023-10-26 11:54+0200\n"
+"PO-Revision-Date: 2023-12-29 16:24+0100\n"
 "Last-Translator: Xavier Besnard <xavier.besnard@kde.org>\n"
-"Language-Team: fr\n"
+"Language-Team: \n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 23.08.1\n"
+"X-Generator: Lokalize 23.08.4\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -72,7 +72,7 @@ msgstr "Ajouter une commande"
 #: contents/ui/SavedCommandsSettings.qml:30
 #, kde-format
 msgid "Edit"
-msgstr ""
+msgstr "Modifier"
 
 #: contents/ui/SavedCommandsSettings.qml:56
 #, kde-format
@@ -80,10 +80,9 @@ msgid "Add command"
 msgstr "Ajouter une commande"
 
 #: contents/ui/SavedCommandsSettings.qml:87
-#, fuzzy, kde-format
-#| msgid "Action %1 removed"
+#, kde-format
 msgid "Command %1 removed"
-msgstr "Action %1 supprimée"
+msgstr "Commande %1 supprimée"
 
 #: contents/ui/SettingsComponent.qml:35
 #, kde-format
