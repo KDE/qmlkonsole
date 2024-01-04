@@ -80,6 +80,13 @@ void ScreenWindow::fillUnusedArea()
     int windowEndLine = currentLine() + windowLines() - 1;
 
     int unusedLines = windowEndLine - screenEndLine;
+
+    // stop when unusedLines is negative; there is an issue w/ charsToFill
+    //  being greater than an int can hold
+    if (unusedLines <= 0) {
+        return;
+    }
+
     int charsToFill = unusedLines * windowColumns();
 
     Screen::fillWithDefaultChar(std::span(_windowBuffer).subspan(_windowBufferSize - charsToFill), charsToFill);
