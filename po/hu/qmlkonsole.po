@@ -1,139 +1,137 @@
-# Copyright (C) YEAR This file is copyright:
+# Copyright (C) 2024 This file is copyright:
 # This file is distributed under the same license as the qmlkonsole package.
 #
 # Kristóf Kiszel <kiszel.kristof@gmail.com>, 2021.
+# SPDX-FileCopyrightText: 2024 Kristof Kiszel <ulysses@fsf.hu>
 msgid ""
 msgstr ""
 "Project-Id-Version: qmlkonsole\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-12-30 01:39+0000\n"
-"PO-Revision-Date: 2021-01-24 16:35+0100\n"
-"Last-Translator: Kristóf Kiszel <kiszel.kristof@gmail.com>\n"
+"PO-Revision-Date: 2024-01-03 11:40+0100\n"
+"Last-Translator: Kristof Kiszel <ulysses@fsf.hu>\n"
 "Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 21.03.70\n"
+"X-Generator: Lokalize 23.08.4\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr ""
+msgstr "Kiszel Kristóf"
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr ""
+msgstr "ulysses@fsf.hu"
 
 #: contents/ui/main.qml:15
 #, kde-format
 msgid "Terminal"
-msgstr ""
+msgstr "Terminál"
 
 #: contents/ui/SavedCommandsDialog.qml:19
 #, kde-format
 msgctxt "@title:window"
 msgid "Saved Commands"
-msgstr ""
+msgstr "Mentett parancsok"
 
 #: contents/ui/SavedCommandsDialog.qml:26
 #, kde-format
 msgid "Configure"
-msgstr ""
+msgstr "Beállítások"
 
 #: contents/ui/SavedCommandsDialog.qml:34 contents/ui/TerminalPage.qml:321
 #, kde-format
 msgid "Close"
-msgstr ""
+msgstr "Bezárás"
 
 #: contents/ui/SavedCommandsDialog.qml:53
 #: contents/ui/SavedCommandsSettings.qml:51
 #, kde-format
 msgid "No saved commands"
-msgstr ""
+msgstr "Nincsenek mentett parancsok"
 
 #: contents/ui/SavedCommandsDialog.qml:54
 #: contents/ui/SavedCommandsSettings.qml:52
 #, kde-format
 msgid "Save commands to quickly run them without typing them out."
-msgstr ""
+msgstr "Parancsok mentése a gyors futtatáshoz, anélkül, hogy begépelné őket."
 
 #: contents/ui/SavedCommandsSettings.qml:18
 #, kde-format
 msgid "Saved Commands"
-msgstr ""
+msgstr "Mentett parancsok"
 
 #: contents/ui/SavedCommandsSettings.qml:25
 #: contents/ui/SavedCommandsSettings.qml:96
 #, kde-format
 msgid "Add Command"
-msgstr ""
+msgstr "Parancs hozzáadása"
 
 #: contents/ui/SavedCommandsSettings.qml:30
 #, kde-format
 msgid "Edit"
-msgstr ""
+msgstr "Szerkesztés"
 
 #: contents/ui/SavedCommandsSettings.qml:56
-#, fuzzy, kde-format
-#| msgid "Add action"
+#, kde-format
 msgid "Add command"
-msgstr "Művelet hozzáadása"
+msgstr "Parancs hozzáadása"
 
 #: contents/ui/SavedCommandsSettings.qml:87
-#, fuzzy, kde-format
-#| msgid "Action %1 removed"
+#, kde-format
 msgid "Command %1 removed"
-msgstr "A(z) %1 művelet eltávolítva"
+msgstr "A(z) %1 parancs eltávolítva"
 
 #: contents/ui/SettingsComponent.qml:35
 #, kde-format
 msgid "General"
-msgstr ""
+msgstr "Általános"
 
 #: contents/ui/SettingsComponent.qml:44
 #, kde-format
 msgid "About"
-msgstr ""
+msgstr "Névjegy"
 
 #: contents/ui/SettingsComponent.qml:55
 #, kde-format
 msgid "Appearance"
-msgstr ""
+msgstr "Megjelenés"
 
 #: contents/ui/SettingsComponent.qml:64
-#, fuzzy, kde-format
-#| msgid "Color Scheme"
+#, kde-format
 msgid "Color scheme"
 msgstr "Színséma"
 
 #: contents/ui/SettingsComponent.qml:96 contents/ui/SettingsComponent.qml:110
 #, kde-format
 msgid "Font Family"
-msgstr ""
+msgstr "Betűcsalád"
 
 #: contents/ui/SettingsComponent.qml:143
 #, kde-format
 msgctxt "@title:window"
 msgid "Pick font"
-msgstr ""
+msgstr "Betűtípus kiválasztása"
 
 #: contents/ui/SettingsComponent.qml:207
 #, kde-format
 msgid "Font Size"
-msgstr ""
+msgstr "Betűméret"
 
 #: contents/ui/SettingsComponent.qml:232
 #, kde-format
 msgid "Window Transparency"
-msgstr ""
+msgstr "Átlátszóság"
 
 #: contents/ui/SettingsComponent.qml:270
 #, kde-format
 msgid "Blur Background"
-msgstr ""
+msgstr "Háttér elmosása"
 
 #: contents/ui/SettingsDialog.qml:17 contents/ui/SettingsPage.qml:16
 #: contents/ui/TerminalPage.qml:208
@@ -145,26 +143,22 @@ msgstr "Beállítások"
 #, kde-format
 msgctxt "Control Key (should match the key on the keyboard of the locale)"
 msgid "Ctrl"
-msgstr ""
+msgstr "Ctrl"
 
 #: contents/ui/TerminalKeyToolBar.qml:90
 #, kde-format
 msgctxt "Alt Key (should match the key on the keyboard of the locale)"
 msgid "Alt"
-msgstr ""
+msgstr "Alt"
 
 #: contents/ui/TerminalKeyToolBar.qml:106
-#, fuzzy, kde-format
-#| msgctxt "Escape key"
-#| msgid "Esc"
+#, kde-format
 msgctxt "Escape key (should match the key on the keyboard of the locale)"
 msgid "Esc"
 msgstr "Esc"
 
 #: contents/ui/TerminalKeyToolBar.qml:113
-#, fuzzy, kde-format
-#| msgctxt "Tab character key"
-#| msgid "Tab"
+#, kde-format
 msgctxt ""
 "Tab character key (should match the key on the keyboard of the locale)"
 msgid "Tab"
@@ -173,19 +167,19 @@ msgstr "Tab"
 #: contents/ui/TerminalKeyToolBar.qml:162
 #, kde-format
 msgid "Toggle Virtual Keyboard"
-msgstr ""
+msgstr "Virtuális billentyűzet kapcsolása"
 
 #: contents/ui/TerminalPage.qml:119
 #, kde-format
 msgctxt "@action:intoolbar"
 msgid "New Tab"
-msgstr ""
+msgstr "Új lap"
 
 #: contents/ui/TerminalPage.qml:129
 #, kde-format
 msgctxt "@action:intoolbar"
 msgid "Saved Commands"
-msgstr ""
+msgstr "Mentett parancsok"
 
 #: contents/ui/TerminalPage.qml:136
 #, kde-format
@@ -200,27 +194,27 @@ msgstr "Jelenlegi parancs megszakítása"
 #: contents/ui/TerminalPage.qml:152
 #, kde-format
 msgid "Send EOF"
-msgstr ""
+msgstr "EOF küldése"
 
 #: contents/ui/TerminalPage.qml:160
 #, kde-format
 msgid "Cursor to line start"
-msgstr ""
+msgstr "Kurzor a sor elejére"
 
 #: contents/ui/TerminalPage.qml:168
 #, kde-format
 msgid "Cursor to line end"
-msgstr ""
+msgstr "Kurzor a sor végére"
 
 #: contents/ui/TerminalPage.qml:176
 #, kde-format
 msgid "Kill to line end"
-msgstr ""
+msgstr "Kilövés a sor végére"
 
 #: contents/ui/TerminalPage.qml:184
 #, kde-format
 msgid "Paste from kill buffer"
-msgstr ""
+msgstr "Beillesztés a kilövési pufferből"
 
 #: contents/ui/TerminalPage.qml:192
 #, kde-format
@@ -236,7 +230,7 @@ msgstr "Beillesztés"
 #, kde-format
 msgctxt "@title:window"
 msgid "Confirm closing %1"
-msgstr ""
+msgstr "%1 bezárásának megerősítése"
 
 #: contents/ui/TerminalPage.qml:275
 #, kde-format
@@ -244,12 +238,13 @@ msgid ""
 "A process is currently running in this tab. Are you sure you want to close "
 "it?"
 msgstr ""
+"Egy folyamat jelenleg is fut ezen a lapon. Biztosan be szeretné zárni azt?"
 
 #: contents/ui/TerminalPage.qml:282
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Tab"
-msgstr ""
+msgstr "Lap kiválasztása"
 
 #: contents/ui/TerminalPage.qml:334
 #, kde-format
@@ -264,32 +259,32 @@ msgstr "Letiltás"
 #: main.cpp:38
 #, kde-format
 msgid "© 2020-2022 KDE Community"
-msgstr ""
+msgstr "© A KDE Közösség, 2020-2022."
 
 #: main.cpp:40
 #, kde-format
 msgid "Jonah Brüchert"
-msgstr ""
+msgstr "Jonah Brüchert"
 
 #: main.cpp:41
 #, kde-format
 msgid "Devin Lin"
-msgstr ""
+msgstr "Devin Lin"
 
 #: main.cpp:62
 #, kde-format
 msgid "Command to execute"
-msgstr ""
+msgstr "Végrehajtandó parancs"
 
 #: main.cpp:63
 #, kde-format
 msgid "Set the initial working directory to 'dir'"
-msgstr ""
+msgstr "A kezdőkönyvtár beállítása a „dir”-re"
 
 #: terminaltabmodel.cpp:68
 #, kde-format
 msgid "Tab %1"
-msgstr ""
+msgstr "%1. lap"
 
 #~ msgid "Quick Actions"
 #~ msgstr "Gyors műveletek"
