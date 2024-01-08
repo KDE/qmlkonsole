@@ -2988,7 +2988,7 @@ QString TerminalDisplay::colorScheme() const
     return _colorScheme;
 }
 
-void TerminalDisplay::simulateKeyPress(QKeyCombination key, int modifiers, bool pressed, quint32 nativeScanCode, const QString &text)
+void TerminalDisplay::simulateKeyPress(int key, int modifiers, bool pressed, quint32 nativeScanCode, const QString &text)
 {
     Q_UNUSED(nativeScanCode);
     QEvent::Type type = pressed ? QEvent::KeyPress : QEvent::KeyRelease;
