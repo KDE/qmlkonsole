@@ -12,4 +12,3 @@ Dependencies:
     'frameworks/kwindowsystem': '@latest-kf6'
     'frameworks/kpty': '@latest-kf6'
     'libraries/kirigami-addons': '@latest-kf6'
-    'third-party/qmltermwidget': '@latest'
