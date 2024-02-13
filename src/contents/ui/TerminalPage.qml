@@ -36,6 +36,9 @@ Kirigami.Page {
     Component.onCompleted: {
         // focus terminal text input immediately after load
         forceTerminalFocus();
+        
+        // show keyboard when a new page is created
+        Qt.inputMethod.show();
     }
 
     // switch tab button
