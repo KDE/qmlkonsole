@@ -1,13 +1,13 @@
-# Copyright (C) YEAR This file is copyright:
+# Copyright (C) 2024 This file is copyright:
 # This file is distributed under the same license as the qmlkonsole package.
 #
-# Kishore G <kishore96@gmail.com>, 2022.
+# SPDX-FileCopyrightText: 2022, 2024 Kishore G <kishore96@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: qmlkonsole\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-02-14 00:39+0000\n"
-"PO-Revision-Date: 2022-12-27 21:42+0530\n"
+"PO-Revision-Date: 2024-02-18 16:31+0530\n"
 "Last-Translator: Kishore G <kishore96@gmail.com>\n"
 "Language-Team: Tamil <kde-i18n-doc@kde.org>\n"
 "Language: ta\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 22.12.0\n"
+"X-Generator: Lokalize 23.08.5\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -74,7 +74,7 @@ msgstr "கட்டளையை சேர்"
 #: contents/ui/SavedCommandsSettings.qml:30
 #, kde-format
 msgid "Edit"
-msgstr ""
+msgstr "திருத்து"
 
 #: contents/ui/SavedCommandsSettings.qml:56
 #, kde-format
@@ -82,10 +82,9 @@ msgid "Add command"
 msgstr "கட்டளையை சேர்"
 
 #: contents/ui/SavedCommandsSettings.qml:87
-#, fuzzy, kde-format
-#| msgid "Action %1 removed"
+#, kde-format
 msgid "Command %1 removed"
-msgstr "%1 எனும் செயல் நீக்கப்பட்டது"
+msgstr "%1 எனும் கட்டளை நீக்கப்பட்டது"
 
 #: contents/ui/SettingsComponent.qml:35
 #, kde-format
