@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qmlkonsole\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-12-30 01:39+0000\n"
+"POT-Creation-Date: 2024-02-20 02:28+0000\n"
 "PO-Revision-Date: 2023-12-28 07:51+0200\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
@@ -46,7 +46,7 @@ msgstr "Ordres guardades"
 msgid "Configure"
 msgstr "Configura"
 
-#: contents/ui/SavedCommandsDialog.qml:34 contents/ui/TerminalPage.qml:321
+#: contents/ui/SavedCommandsDialog.qml:34 contents/ui/TerminalPage.qml:324
 #, kde-format
 msgid "Close"
 msgstr "Tanca"
@@ -136,7 +136,7 @@ msgid "Blur Background"
 msgstr "Difumina el fons"
 
 #: contents/ui/SettingsDialog.qml:17 contents/ui/SettingsPage.qml:16
-#: contents/ui/TerminalPage.qml:208
+#: contents/ui/TerminalPage.qml:211
 #, kde-format
 msgid "Settings"
 msgstr "Configuració"
@@ -172,70 +172,70 @@ msgstr "Tab"
 msgid "Toggle Virtual Keyboard"
 msgstr "Canvia el teclat virtual"
 
-#: contents/ui/TerminalPage.qml:119
+#: contents/ui/TerminalPage.qml:122
 #, kde-format
 msgctxt "@action:intoolbar"
 msgid "New Tab"
 msgstr "Pestanya nova"
 
-#: contents/ui/TerminalPage.qml:129
+#: contents/ui/TerminalPage.qml:132
 #, kde-format
 msgctxt "@action:intoolbar"
 msgid "Saved Commands"
 msgstr "Ordres guardades"
 
-#: contents/ui/TerminalPage.qml:136
+#: contents/ui/TerminalPage.qml:139
 #, kde-format
 msgid "reverse-i-search"
 msgstr "Busca inversa incremental"
 
-#: contents/ui/TerminalPage.qml:144
+#: contents/ui/TerminalPage.qml:147
 #, kde-format
 msgid "Cancel current command"
 msgstr "Cancel·la l'ordre actual"
 
-#: contents/ui/TerminalPage.qml:152
+#: contents/ui/TerminalPage.qml:155
 #, kde-format
 msgid "Send EOF"
 msgstr "Envia un EOF (final de fitxer)"
 
-#: contents/ui/TerminalPage.qml:160
+#: contents/ui/TerminalPage.qml:163
 #, kde-format
 msgid "Cursor to line start"
 msgstr "Cursor al començament de línia"
 
-#: contents/ui/TerminalPage.qml:168
+#: contents/ui/TerminalPage.qml:171
 #, kde-format
 msgid "Cursor to line end"
 msgstr "Cursor al final de línia"
 
-#: contents/ui/TerminalPage.qml:176
+#: contents/ui/TerminalPage.qml:179
 #, kde-format
 msgid "Kill to line end"
 msgstr "Neteja fins al final de línia"
 
-#: contents/ui/TerminalPage.qml:184
+#: contents/ui/TerminalPage.qml:187
 #, kde-format
 msgid "Paste from kill buffer"
 msgstr "Apega des de la memòria intermèdia de neteja"
 
-#: contents/ui/TerminalPage.qml:192
+#: contents/ui/TerminalPage.qml:195
 #, kde-format
 msgid "Copy"
 msgstr "Copia"
 
-#: contents/ui/TerminalPage.qml:202
+#: contents/ui/TerminalPage.qml:205
 #, kde-format
 msgid "Paste"
 msgstr "Apega"
 
-#: contents/ui/TerminalPage.qml:259
+#: contents/ui/TerminalPage.qml:262
 #, kde-format
 msgctxt "@title:window"
 msgid "Confirm closing %1"
 msgstr "Confirma el tancament de %1"
 
-#: contents/ui/TerminalPage.qml:275
+#: contents/ui/TerminalPage.qml:278
 #, kde-format
 msgid ""
 "A process is currently running in this tab. Are you sure you want to close "
@@ -244,18 +244,18 @@ msgstr ""
 "Actualment hi ha un procés executant-se en esta pestanya. Segur que voleu "
 "tancar-la?"
 
-#: contents/ui/TerminalPage.qml:282
+#: contents/ui/TerminalPage.qml:285
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Tab"
 msgstr "Selecciona la pestanya"
 
-#: contents/ui/TerminalPage.qml:334
+#: contents/ui/TerminalPage.qml:337
 #, kde-format
 msgid "selection mode"
 msgstr "mode de selecció"
 
-#: contents/ui/TerminalPage.qml:342
+#: contents/ui/TerminalPage.qml:345
 #, kde-format
 msgid "Disable"
 msgstr "Desactiva"

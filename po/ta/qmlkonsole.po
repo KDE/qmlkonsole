@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qmlkonsole\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-12-30 01:39+0000\n"
+"POT-Creation-Date: 2024-02-20 02:28+0000\n"
 "PO-Revision-Date: 2024-02-18 16:31+0530\n"
 "Last-Translator: Kishore G <kishore96@gmail.com>\n"
 "Language-Team: Tamil <kde-i18n-doc@kde.org>\n"
@@ -43,7 +43,7 @@ msgstr "சேமித்துள்ள கட்டளைகள்"
 msgid "Configure"
 msgstr "அமை"
 
-#: contents/ui/SavedCommandsDialog.qml:34 contents/ui/TerminalPage.qml:321
+#: contents/ui/SavedCommandsDialog.qml:34 contents/ui/TerminalPage.qml:324
 #, kde-format
 msgid "Close"
 msgstr "மூடு"
@@ -133,7 +133,7 @@ msgid "Blur Background"
 msgstr "பின்புலத்தை மங்கலாக்கு"
 
 #: contents/ui/SettingsDialog.qml:17 contents/ui/SettingsPage.qml:16
-#: contents/ui/TerminalPage.qml:208
+#: contents/ui/TerminalPage.qml:211
 #, kde-format
 msgid "Settings"
 msgstr "அமைப்புகள்"
@@ -168,88 +168,88 @@ msgstr "Tab"
 msgid "Toggle Virtual Keyboard"
 msgstr "மெய்நிகர் விசைப்பலகையை காட்டு/மறை"
 
-#: contents/ui/TerminalPage.qml:119
+#: contents/ui/TerminalPage.qml:122
 #, kde-format
 msgctxt "@action:intoolbar"
 msgid "New Tab"
 msgstr "புதிய கீற்று"
 
-#: contents/ui/TerminalPage.qml:129
+#: contents/ui/TerminalPage.qml:132
 #, kde-format
 msgctxt "@action:intoolbar"
 msgid "Saved Commands"
 msgstr "சேமித்துள்ள கட்டளைகள்"
 
-#: contents/ui/TerminalPage.qml:136
+#: contents/ui/TerminalPage.qml:139
 #, kde-format
 msgid "reverse-i-search"
 msgstr ""
 
-#: contents/ui/TerminalPage.qml:144
+#: contents/ui/TerminalPage.qml:147
 #, kde-format
 msgid "Cancel current command"
 msgstr "தற்போதைய கட்டளையை ரத்து செய்"
 
-#: contents/ui/TerminalPage.qml:152
+#: contents/ui/TerminalPage.qml:155
 #, kde-format
 msgid "Send EOF"
 msgstr "EOF-ஐ அனுப்பு"
 
-#: contents/ui/TerminalPage.qml:160
+#: contents/ui/TerminalPage.qml:163
 #, kde-format
 msgid "Cursor to line start"
 msgstr "வரிதுவக்கத்திற்கு இடஞ்சுட்டியை நகர்த்து"
 
-#: contents/ui/TerminalPage.qml:168
+#: contents/ui/TerminalPage.qml:171
 #, kde-format
 msgid "Cursor to line end"
 msgstr "வரிமுடிவுக்கு இடஞ்சுட்டியை நகர்த்து"
 
-#: contents/ui/TerminalPage.qml:176
+#: contents/ui/TerminalPage.qml:179
 #, kde-format
 msgid "Kill to line end"
 msgstr ""
 
-#: contents/ui/TerminalPage.qml:184
+#: contents/ui/TerminalPage.qml:187
 #, kde-format
 msgid "Paste from kill buffer"
 msgstr ""
 
-#: contents/ui/TerminalPage.qml:192
+#: contents/ui/TerminalPage.qml:195
 #, kde-format
 msgid "Copy"
 msgstr "நகலெடு"
 
-#: contents/ui/TerminalPage.qml:202
+#: contents/ui/TerminalPage.qml:205
 #, kde-format
 msgid "Paste"
 msgstr "ஒட்டு"
 
-#: contents/ui/TerminalPage.qml:259
+#: contents/ui/TerminalPage.qml:262
 #, kde-format
 msgctxt "@title:window"
 msgid "Confirm closing %1"
 msgstr "%1 தனை மூடுவதை உறுதி செய்யுங்கள்"
 
-#: contents/ui/TerminalPage.qml:275
+#: contents/ui/TerminalPage.qml:278
 #, kde-format
 msgid ""
 "A process is currently running in this tab. Are you sure you want to close "
 "it?"
 msgstr "இக்கீற்றில் ஓர் பணி ஓடிக்கொண்டிருக்கிறது. உறுதியாக இதை மூட வேண்டுமா?"
 
-#: contents/ui/TerminalPage.qml:282
+#: contents/ui/TerminalPage.qml:285
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Tab"
 msgstr "கீற்றை தேர்வு செய்வது"
 
-#: contents/ui/TerminalPage.qml:334
+#: contents/ui/TerminalPage.qml:337
 #, kde-format
 msgid "selection mode"
 msgstr "தேர்வு பயன்முறை"
 
-#: contents/ui/TerminalPage.qml:342
+#: contents/ui/TerminalPage.qml:345
 #, kde-format
 msgid "Disable"
 msgstr "முடக்கு"
