@@ -33,12 +33,20 @@ Kirigami.Page {
         }
     }
 
-    Component.onCompleted: {
-        // focus terminal text input immediately after load
-        forceTerminalFocus();
-        
-        // show keyboard when a new page is created
-        Qt.inputMethod.show();
+    // HACK: delay focus after initial load, otherwise vkbd closes
+    Component.onCompleted: initialFocusTimer.restart()
+
+    Timer {
+        id: initialFocusTimer
+        interval: 1
+        repeat: false
+        onTriggered: {
+            // focus terminal text input immediately after load
+            forceTerminalFocus();
+
+            // show keyboard when a new page is created
+            Qt.inputMethod.show();
+        }
     }
 
     // switch tab button
