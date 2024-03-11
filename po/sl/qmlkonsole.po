@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qmlkonsole\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-02-20 02:28+0000\n"
+"POT-Creation-Date: 2024-03-11 02:21+0000\n"
 "PO-Revision-Date: 2023-12-28 12:44+0100\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
@@ -44,7 +44,7 @@ msgstr "Shranjeni ukazi"
 msgid "Configure"
 msgstr "Sestavi"
 
-#: contents/ui/SavedCommandsDialog.qml:34 contents/ui/TerminalPage.qml:324
+#: contents/ui/SavedCommandsDialog.qml:34 contents/ui/TerminalPage.qml:332
 #, kde-format
 msgid "Close"
 msgstr "Zapri"
@@ -134,7 +134,7 @@ msgid "Blur Background"
 msgstr "Zamegli ozadje"
 
 #: contents/ui/SettingsDialog.qml:17 contents/ui/SettingsPage.qml:16
-#: contents/ui/TerminalPage.qml:211
+#: contents/ui/TerminalPage.qml:219
 #, kde-format
 msgid "Settings"
 msgstr "Nastavitve"
@@ -164,75 +164,75 @@ msgctxt ""
 msgid "Tab"
 msgstr "Tab"
 
-#: contents/ui/TerminalKeyToolBar.qml:162
+#: contents/ui/TerminalKeyToolBar.qml:163
 #, kde-format
 msgid "Toggle Virtual Keyboard"
 msgstr "Preklopi navidezno tipkovnico"
 
-#: contents/ui/TerminalPage.qml:122
+#: contents/ui/TerminalPage.qml:130
 #, kde-format
 msgctxt "@action:intoolbar"
 msgid "New Tab"
 msgstr "Novi zavihek"
 
-#: contents/ui/TerminalPage.qml:132
+#: contents/ui/TerminalPage.qml:140
 #, kde-format
 msgctxt "@action:intoolbar"
 msgid "Saved Commands"
 msgstr "Shranjeni ukazi"
 
-#: contents/ui/TerminalPage.qml:139
+#: contents/ui/TerminalPage.qml:147
 #, kde-format
 msgid "reverse-i-search"
 msgstr "povratno-i-iskanje"
 
-#: contents/ui/TerminalPage.qml:147
+#: contents/ui/TerminalPage.qml:155
 #, kde-format
 msgid "Cancel current command"
 msgstr "Prekliči trenutni ukaz"
 
-#: contents/ui/TerminalPage.qml:155
+#: contents/ui/TerminalPage.qml:163
 #, kde-format
 msgid "Send EOF"
 msgstr "Pošlji EOF"
 
-#: contents/ui/TerminalPage.qml:163
+#: contents/ui/TerminalPage.qml:171
 #, kde-format
 msgid "Cursor to line start"
 msgstr "Kazalka na začetek vrstice"
 
-#: contents/ui/TerminalPage.qml:171
+#: contents/ui/TerminalPage.qml:179
 #, kde-format
 msgid "Cursor to line end"
 msgstr "Kazalka na konec vrstice"
 
-#: contents/ui/TerminalPage.qml:179
+#: contents/ui/TerminalPage.qml:187
 #, kde-format
 msgid "Kill to line end"
 msgstr "Uniči do konca vrstice"
 
-#: contents/ui/TerminalPage.qml:187
+#: contents/ui/TerminalPage.qml:195
 #, kde-format
 msgid "Paste from kill buffer"
 msgstr "Prilepi iz medpomnilnika uničenega"
 
-#: contents/ui/TerminalPage.qml:195
+#: contents/ui/TerminalPage.qml:203
 #, kde-format
 msgid "Copy"
 msgstr "Kopiraj"
 
-#: contents/ui/TerminalPage.qml:205
+#: contents/ui/TerminalPage.qml:213
 #, kde-format
 msgid "Paste"
 msgstr "Prilepi"
 
-#: contents/ui/TerminalPage.qml:262
+#: contents/ui/TerminalPage.qml:270
 #, kde-format
 msgctxt "@title:window"
 msgid "Confirm closing %1"
 msgstr "Potrdi zapiranje %1"
 
-#: contents/ui/TerminalPage.qml:278
+#: contents/ui/TerminalPage.qml:286
 #, kde-format
 msgid ""
 "A process is currently running in this tab. Are you sure you want to close "
@@ -241,18 +241,18 @@ msgstr ""
 "V tem zavihku se trenutno odvija postopek. Ali ste prepričani, da ga želite "
 "zapreti?"
 
-#: contents/ui/TerminalPage.qml:285
+#: contents/ui/TerminalPage.qml:293
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Tab"
 msgstr "Izberi zavihek"
 
-#: contents/ui/TerminalPage.qml:337
+#: contents/ui/TerminalPage.qml:345
 #, kde-format
 msgid "selection mode"
 msgstr "način izbire"
 
-#: contents/ui/TerminalPage.qml:345
+#: contents/ui/TerminalPage.qml:353
 #, kde-format
 msgid "Disable"
 msgstr "Onemogoči"
