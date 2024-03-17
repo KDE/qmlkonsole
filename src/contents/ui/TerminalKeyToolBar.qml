@@ -156,13 +156,11 @@ ToolBar {
         
         // control vkbd visibility
         ToolButton {
-            focusPolicy: Qt.NoFocus // ensure it doesn't trigger keyboard hide
             Layout.preferredWidth: height
             Layout.preferredHeight: Kirigami.Units.gridUnit * 2
             icon.name: "input-keyboard-virtual"
             text: i18n("Toggle Virtual Keyboard")
             display: AbstractButton.IconOnly
-
             onClicked: {
                 if (Qt.inputMethod.visible) {
                     Qt.inputMethod.hide();
