@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qmlkonsole\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-03-11 02:21+0000\n"
+"POT-Creation-Date: 2024-03-18 03:06+0000\n"
 "PO-Revision-Date: 2023-12-29 16:24+0100\n"
 "Last-Translator: Xavier Besnard <xavier.besnard@kde.org>\n"
 "Language-Team: French <kde-francophone@kde.org>\n"
@@ -161,7 +161,7 @@ msgctxt ""
 msgid "Tab"
 msgstr "Tab"
 
-#: contents/ui/TerminalKeyToolBar.qml:163
+#: contents/ui/TerminalKeyToolBar.qml:162
 #, kde-format
 msgid "Toggle Virtual Keyboard"
 msgstr "Ouvrir ou quitter le clavier virtuel"

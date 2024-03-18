@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-03-11 02:21+0000\n"
+"POT-Creation-Date: 2024-03-18 03:06+0000\n"
 "PO-Revision-Date: 2024-01-06 03:32\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
@@ -163,7 +163,7 @@ msgctxt ""
 msgid "Tab"
 msgstr "Tab"
 
-#: contents/ui/TerminalKeyToolBar.qml:163
+#: contents/ui/TerminalKeyToolBar.qml:162
 #, kde-format
 msgid "Toggle Virtual Keyboard"
 msgstr "虚拟键盘开关"
