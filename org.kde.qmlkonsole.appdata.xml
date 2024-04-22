@@ -22,7 +22,6 @@
   <name xml:lang="fi">QMLKonsole</name>
   <name xml:lang="fr">QMLKonsole</name>
   <name xml:lang="gl">QMLKonsole</name>
-  <name xml:lang="he">QMLKonsole</name>
   <name xml:lang="hi">क्यूएमएल कॉनसोल</name>
   <name xml:lang="hu">QMLKonsole</name>
   <name xml:lang="ia">QMLKonsole</name>
@@ -60,7 +59,6 @@
   <summary xml:lang="fi">Mobiilipäätesovellus</summary>
   <summary xml:lang="fr">Application mobile de console</summary>
   <summary xml:lang="gl">Aplicación móbil de terminal.</summary>
-  <summary xml:lang="he">יישום מסוף לניידים</summary>
   <summary xml:lang="hi">मोबाइल टर्मिनल अनुप्रयोग</summary>
   <summary xml:lang="hu">Mobil terminálalkalmazás</summary>
   <summary xml:lang="ia">Application de terminal mobile</summary>
@@ -102,7 +100,6 @@
   <developer_name xml:lang="fi">KDE-yhteisö</developer_name>
   <developer_name xml:lang="fr">Communauté KDE</developer_name>
   <developer_name xml:lang="gl">Comunidade KDE</developer_name>
-  <developer_name xml:lang="he">קהילת KDE</developer_name>
   <developer_name xml:lang="hi">केडीई समुदाय</developer_name>
   <developer_name xml:lang="hu">A KDE Közösség</developer_name>
   <developer_name xml:lang="ia">Communitate de KDE</developer_name>
@@ -140,7 +137,6 @@
     <p xml:lang="fi">Päätesovellus, joka tarjoaa kosketusnäytöillä hyödyllisiä näppäimistön lisäpainikkeita.</p>
     <p xml:lang="fr">L'application de console propose des boutons additionnels utiles pour les périphériques tactiles.</p>
     <p xml:lang="gl">Aplicación de terminal que fornece botóns de teclado adicionais que resultan útiles en dispositivos táctiles.</p>
-    <p xml:lang="he">יישום מסוף שמציע כפתורי מקלדת נוספים שמותאמים למסכי מגע.</p>
     <p xml:lang="hi">टर्मिनल अनुप्रयोग जो स्पर्श उपकरणों के लिए अतिरिक्त कुञ्जीयाँ प्रदान करता है।</p>
     <p xml:lang="hu">Érintőképernyős eszközökön hasznos billentyűzetet biztosító terminálalkalmazás.</p>
     <p xml:lang="ia">Application de Terminal offerente buttones de claviero additional utile sur dispositivos tactile</p>
@@ -181,7 +177,6 @@
       <caption xml:lang="fi">QMLKonsole</caption>
       <caption xml:lang="fr">QMLKonsole</caption>
       <caption xml:lang="gl">QMLKonsole</caption>
-      <caption xml:lang="he">QMLKonsole</caption>
       <caption xml:lang="hi">क्यूएमएल कॉनसोल</caption>
       <caption xml:lang="hu">QMLKonsole</caption>
       <caption xml:lang="ia">QMLKonsole</caption>
@@ -222,7 +217,6 @@
       <caption xml:lang="fi">Asetukset</caption>
       <caption xml:lang="fr">Configuration</caption>
       <caption xml:lang="gl">Configuración.</caption>
-      <caption xml:lang="he">הגדרות</caption>
       <caption xml:lang="hu">Beállítások</caption>
       <caption xml:lang="ia">Preferentias</caption>
       <caption xml:lang="it">Impostazioni</caption>
