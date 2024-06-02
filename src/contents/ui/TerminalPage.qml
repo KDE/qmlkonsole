@@ -25,10 +25,12 @@ Kirigami.Page {
 
     property bool initialSessionCreated: false
 
-    function forceTerminalFocus() {
+    function forceTerminalFocus(forceInput) {
         const wasVisible = Qt.inputMethod.visible;
         currentTerminal.forceActiveFocus();
-        if (!wasVisible) {
+        if (forceInput) {
+            Qt.inputMethod.show();
+        } else if (!wasVisible) {
             Qt.inputMethod.hide();
         }
     }
