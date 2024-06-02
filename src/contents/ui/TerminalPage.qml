@@ -92,6 +92,13 @@ Kirigami.Page {
         sourceComponent: SettingsDialog {
             id: settingsDialog
             terminal: currentTerminal
+
+            Connections {
+                target: settingsDialog
+                function onClosed() {
+                    root.forceTerminalFocus();
+                }
+            }
         }
     }
 
@@ -149,6 +156,7 @@ Kirigami.Page {
             text: i18n("reverse-i-search")
             onTriggered: {
                 currentTerminal.pressKey(Qt.Key_R, Qt.ControlModifier, true)
+                root.forceTerminalFocus();
             }
         },
         Kirigami.Action {
@@ -157,6 +165,7 @@ Kirigami.Page {
             text: i18n("Cancel current command")
             onTriggered: {
                 currentTerminal.pressKey(Qt.Key_C, Qt.ControlModifier, true)
+                root.forceTerminalFocus();
             }
         },
         Kirigami.Action {
@@ -165,6 +174,7 @@ Kirigami.Page {
             text: i18n("Send EOF")
             onTriggered: {
                 currentTerminal.pressKey(Qt.Key_D, Qt.ControlModifier, true)
+                root.forceTerminalFocus();
             }
         },
         Kirigami.Action {
@@ -173,6 +183,7 @@ Kirigami.Page {
             text: i18n("Cursor to line start")
             onTriggered: {
                 currentTerminal.pressKey(Qt.Key_A, Qt.ControlModifier, true)
+                root.forceTerminalFocus();
             }
         },
         Kirigami.Action {
@@ -181,6 +192,7 @@ Kirigami.Page {
             text: i18n("Cursor to line end")
             onTriggered: {
                 currentTerminal.pressKey(Qt.Key_E, Qt.ControlModifier, true)
+                root.forceTerminalFocus();
             }
         },
         Kirigami.Action {
@@ -189,6 +201,7 @@ Kirigami.Page {
             text: i18n("Kill to line end")
             onTriggered: {
                 currentTerminal.pressKey(Qt.Key_K, Qt.ControlModifier, true)
+                root.forceTerminalFocus();
             }
         },
         Kirigami.Action {
@@ -197,6 +210,7 @@ Kirigami.Page {
             text: i18n("Paste from kill buffer")
             onTriggered: {
                 currentTerminal.pressKey(Qt.Key_Y, Qt.ControlModifier, true)
+                root.forceTerminalFocus();
             }
         },
         Kirigami.Action {
@@ -206,6 +220,7 @@ Kirigami.Page {
             onTriggered: {
                 currentTerminal.copyClipboard();
                 root.currentTerminal.touchSelectionMode = false;
+                root.forceTerminalFocus();
             }
             shortcut: "Ctrl+Shift+C"
         },
@@ -213,7 +228,10 @@ Kirigami.Page {
             displayHint: Kirigami.DisplayHint.AlwaysHide
             icon.name: "edit-paste"
             text: i18n("Paste")
-            onTriggered: currentTerminal.pasteClipboard();
+            onTriggered: {
+                currentTerminal.pasteClipboard();
+                root.forceTerminalFocus();
+            }
             shortcut: "Ctrl+Shift+V"
         },
         Kirigami.Action {
@@ -261,6 +279,13 @@ Kirigami.Page {
         SavedCommandsDialog {
             id: savedCommandsDialog
             terminal: root.currentTerminal
+
+            Connections {
+                target: savedCommandsDialog
+                function onClosed() {
+                    root.forceTerminalFocus();
+                }
+            }
         }
 
         Kirigami.Dialog {
@@ -294,6 +319,13 @@ Kirigami.Page {
             id: selectTabDialog
             title: i18nc("@title:window", "Select Tab")
             standardButtons: Dialog.Close
+
+            Connections {
+                target: selectTabDialog
+                function onClosed() {
+                    root.forceTerminalFocus();
+                }
+            }
 
             ListView {
                 id: tabListView
@@ -464,7 +496,7 @@ Kirigami.Page {
                         // terminal focus on mouse click
                         TapHandler {
                             cursorShape: Qt.IBeamCursor
-                            onTapped: root.forceTerminalFocus();
+                            onTapped: root.forceTerminalFocus(true);
                         }
 
                         // enter touch selection mode
