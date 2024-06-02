@@ -461,7 +461,6 @@ Kirigami.Page {
 
                         // terminal focus on mouse click
                         TapHandler {
-                            acceptedDevices: PointerDevice.Mouse | PointerDevice.Stylus
                             cursorShape: Qt.IBeamCursor
                             onTapped: root.forceTerminalFocus();
                         }
