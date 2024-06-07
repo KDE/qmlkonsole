@@ -92,13 +92,7 @@ Kirigami.Page {
         sourceComponent: SettingsDialog {
             id: settingsDialog
             terminal: currentTerminal
-
-            Connections {
-                target: settingsDialog
-                function onClosed() {
-                    root.forceTerminalFocus();
-                }
-            }
+            onClosed: root.forceTerminalFocus()
         }
     }
 
