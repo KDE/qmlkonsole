@@ -91,10 +91,9 @@ Kirigami.ScrollablePage {
         }
     }
 
-    Kirigami.PromptDialog {
+    Kirigami.Dialog {
         id: actionDialog
         title: i18n("Add Command")
-        preferredWidth: Kirigami.Units.gridUnit * 30
         padding: Kirigami.Units.largeSpacing
         standardButtons: Dialog.Save | Dialog.Cancel
 
@@ -111,7 +110,7 @@ Kirigami.ScrollablePage {
             TextField {
                 id: textField
                 font.family: "Monospace"
-                Layout.fillWidth: true
+                Layout.preferredWidth: Kirigami.Units.gridUnit * 30
             }
         }
     }
