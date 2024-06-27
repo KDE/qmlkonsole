@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qmlkonsole\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-03-11 00:39+0000\n"
+"POT-Creation-Date: 2024-06-27 00:40+0000\n"
 "PO-Revision-Date: 2024-05-20 19:20+0100\n"
 "Last-Translator: Steve Allewell <steve.allewell@gmail.com>\n"
 "Language-Team: British English\n"
@@ -43,7 +43,7 @@ msgstr "Saved Commands"
 msgid "Configure"
 msgstr "Configure"
 
-#: contents/ui/SavedCommandsDialog.qml:34 contents/ui/TerminalPage.qml:332
+#: contents/ui/SavedCommandsDialog.qml:34 contents/ui/TerminalPage.qml:360
 #, kde-format
 msgid "Close"
 msgstr "Close"
@@ -133,7 +133,7 @@ msgid "Blur Background"
 msgstr "Blur Background"
 
 #: contents/ui/SettingsDialog.qml:17 contents/ui/SettingsPage.qml:16
-#: contents/ui/TerminalPage.qml:219
+#: contents/ui/TerminalPage.qml:233
 #, kde-format
 msgid "Settings"
 msgstr "Settings"
@@ -168,70 +168,70 @@ msgstr "Tab"
 msgid "Toggle Virtual Keyboard"
 msgstr "Toggle Virtual Keyboard"
 
-#: contents/ui/TerminalPage.qml:130
+#: contents/ui/TerminalPage.qml:133
 #, kde-format
 msgctxt "@action:intoolbar"
 msgid "New Tab"
 msgstr "New Tab"
 
-#: contents/ui/TerminalPage.qml:140
+#: contents/ui/TerminalPage.qml:143
 #, kde-format
 msgctxt "@action:intoolbar"
 msgid "Saved Commands"
 msgstr "Saved Commands"
 
-#: contents/ui/TerminalPage.qml:147
+#: contents/ui/TerminalPage.qml:150
 #, kde-format
 msgid "reverse-i-search"
 msgstr "reverse-i-search"
 
-#: contents/ui/TerminalPage.qml:155
+#: contents/ui/TerminalPage.qml:159
 #, kde-format
 msgid "Cancel current command"
 msgstr "Cancel current command"
 
-#: contents/ui/TerminalPage.qml:163
+#: contents/ui/TerminalPage.qml:168
 #, kde-format
 msgid "Send EOF"
 msgstr "Send EOF"
 
-#: contents/ui/TerminalPage.qml:171
+#: contents/ui/TerminalPage.qml:177
 #, kde-format
 msgid "Cursor to line start"
 msgstr "Cursor to line start"
 
-#: contents/ui/TerminalPage.qml:179
+#: contents/ui/TerminalPage.qml:186
 #, kde-format
 msgid "Cursor to line end"
 msgstr "Cursor to line end"
 
-#: contents/ui/TerminalPage.qml:187
+#: contents/ui/TerminalPage.qml:195
 #, kde-format
 msgid "Kill to line end"
 msgstr "Kill to line end"
 
-#: contents/ui/TerminalPage.qml:195
+#: contents/ui/TerminalPage.qml:204
 #, kde-format
 msgid "Paste from kill buffer"
 msgstr "Paste from kill buffer"
 
-#: contents/ui/TerminalPage.qml:203
+#: contents/ui/TerminalPage.qml:213
 #, kde-format
 msgid "Copy"
 msgstr "Copy"
 
-#: contents/ui/TerminalPage.qml:213
+#: contents/ui/TerminalPage.qml:224
 #, kde-format
 msgid "Paste"
 msgstr "Paste"
 
-#: contents/ui/TerminalPage.qml:270
+#: contents/ui/TerminalPage.qml:291
 #, kde-format
 msgctxt "@title:window"
 msgid "Confirm closing %1"
 msgstr "Confirm closing %1"
 
-#: contents/ui/TerminalPage.qml:286
+#: contents/ui/TerminalPage.qml:307
 #, kde-format
 msgid ""
 "A process is currently running in this tab. Are you sure you want to close "
@@ -240,18 +240,18 @@ msgstr ""
 "A process is currently running in this tab. Are you sure you want to close "
 "it?"
 
-#: contents/ui/TerminalPage.qml:293
+#: contents/ui/TerminalPage.qml:314
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Tab"
 msgstr "Select Tab"
 
-#: contents/ui/TerminalPage.qml:345
+#: contents/ui/TerminalPage.qml:373
 #, kde-format
 msgid "selection mode"
 msgstr "selection mode"
 
-#: contents/ui/TerminalPage.qml:353
+#: contents/ui/TerminalPage.qml:381
 #, kde-format
 msgid "Disable"
 msgstr "Disable"

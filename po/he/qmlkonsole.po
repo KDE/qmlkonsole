@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qmlkonsole\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-03-11 00:39+0000\n"
+"POT-Creation-Date: 2024-06-27 00:40+0000\n"
 "PO-Revision-Date: 2024-04-08 18:41+0300\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
@@ -44,7 +44,7 @@ msgstr "פקודות שמורות"
 msgid "Configure"
 msgstr "הגדרה"
 
-#: contents/ui/SavedCommandsDialog.qml:34 contents/ui/TerminalPage.qml:332
+#: contents/ui/SavedCommandsDialog.qml:34 contents/ui/TerminalPage.qml:360
 #, kde-format
 msgid "Close"
 msgstr "סגירה"
@@ -134,7 +134,7 @@ msgid "Blur Background"
 msgstr "טשטוש הרקע"
 
 #: contents/ui/SettingsDialog.qml:17 contents/ui/SettingsPage.qml:16
-#: contents/ui/TerminalPage.qml:219
+#: contents/ui/TerminalPage.qml:233
 #, kde-format
 msgid "Settings"
 msgstr "הגדרות"
@@ -169,88 +169,88 @@ msgstr "Tab"
 msgid "Toggle Virtual Keyboard"
 msgstr "החלפת תצוגת מקלדת וירטואלית"
 
-#: contents/ui/TerminalPage.qml:130
+#: contents/ui/TerminalPage.qml:133
 #, kde-format
 msgctxt "@action:intoolbar"
 msgid "New Tab"
 msgstr "לשונית חדשה"
 
-#: contents/ui/TerminalPage.qml:140
+#: contents/ui/TerminalPage.qml:143
 #, kde-format
 msgctxt "@action:intoolbar"
 msgid "Saved Commands"
 msgstr "פקודות שמורות"
 
-#: contents/ui/TerminalPage.qml:147
+#: contents/ui/TerminalPage.qml:150
 #, kde-format
 msgid "reverse-i-search"
 msgstr "חיפוש בהיסטוריה"
 
-#: contents/ui/TerminalPage.qml:155
+#: contents/ui/TerminalPage.qml:159
 #, kde-format
 msgid "Cancel current command"
 msgstr "ביטול הפקודה הנוכחית"
 
-#: contents/ui/TerminalPage.qml:163
+#: contents/ui/TerminalPage.qml:168
 #, kde-format
 msgid "Send EOF"
 msgstr "שליחת EOF (סוף קובץ)"
 
-#: contents/ui/TerminalPage.qml:171
+#: contents/ui/TerminalPage.qml:177
 #, kde-format
 msgid "Cursor to line start"
 msgstr "סמן לתחילת השורה"
 
-#: contents/ui/TerminalPage.qml:179
+#: contents/ui/TerminalPage.qml:186
 #, kde-format
 msgid "Cursor to line end"
 msgstr "סמן לסוף השורה"
 
-#: contents/ui/TerminalPage.qml:187
+#: contents/ui/TerminalPage.qml:195
 #, kde-format
 msgid "Kill to line end"
 msgstr "חיסול לסוף השורה"
 
-#: contents/ui/TerminalPage.qml:195
+#: contents/ui/TerminalPage.qml:204
 #, kde-format
 msgid "Paste from kill buffer"
 msgstr "הדבקה מחוצץ החיסול"
 
-#: contents/ui/TerminalPage.qml:203
+#: contents/ui/TerminalPage.qml:213
 #, kde-format
 msgid "Copy"
 msgstr "העתקה"
 
-#: contents/ui/TerminalPage.qml:213
+#: contents/ui/TerminalPage.qml:224
 #, kde-format
 msgid "Paste"
 msgstr "הדבקה"
 
-#: contents/ui/TerminalPage.qml:270
+#: contents/ui/TerminalPage.qml:291
 #, kde-format
 msgctxt "@title:window"
 msgid "Confirm closing %1"
 msgstr "אישור סגירת %1"
 
-#: contents/ui/TerminalPage.qml:286
+#: contents/ui/TerminalPage.qml:307
 #, kde-format
 msgid ""
 "A process is currently running in this tab. Are you sure you want to close "
 "it?"
 msgstr "יש תהליך שרץ כרגע בלשונית הזאת. לסגור אותו?"
 
-#: contents/ui/TerminalPage.qml:293
+#: contents/ui/TerminalPage.qml:314
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Tab"
 msgstr "בחירת לשונית"
 
-#: contents/ui/TerminalPage.qml:345
+#: contents/ui/TerminalPage.qml:373
 #, kde-format
 msgid "selection mode"
 msgstr "מצב בחירה"
 
-#: contents/ui/TerminalPage.qml:353
+#: contents/ui/TerminalPage.qml:381
 #, kde-format
 msgid "Disable"
 msgstr "השבתה"

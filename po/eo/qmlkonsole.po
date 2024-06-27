@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qmlkonsole\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-03-11 00:39+0000\n"
+"POT-Creation-Date: 2024-06-27 00:40+0000\n"
 "PO-Revision-Date: 2023-12-30 07:09+0100\n"
 "Last-Translator: Oliver Kellogg <olivermkellogg@gmail.com>\n"
 "Language-Team: Esperanto <kde-i18n-eo@kde.org>\n"
@@ -44,7 +44,7 @@ msgstr "Konservitaj Komandoj"
 msgid "Configure"
 msgstr "Agordi"
 
-#: contents/ui/SavedCommandsDialog.qml:34 contents/ui/TerminalPage.qml:332
+#: contents/ui/SavedCommandsDialog.qml:34 contents/ui/TerminalPage.qml:360
 #, kde-format
 msgid "Close"
 msgstr "Fermi"
@@ -134,7 +134,7 @@ msgid "Blur Background"
 msgstr "Neklara Fono"
 
 #: contents/ui/SettingsDialog.qml:17 contents/ui/SettingsPage.qml:16
-#: contents/ui/TerminalPage.qml:219
+#: contents/ui/TerminalPage.qml:233
 #, kde-format
 msgid "Settings"
 msgstr "Agordoj"
@@ -169,70 +169,70 @@ msgstr "Tab"
 msgid "Toggle Virtual Keyboard"
 msgstr "Baskuligi Virtualan Klavaron"
 
-#: contents/ui/TerminalPage.qml:130
+#: contents/ui/TerminalPage.qml:133
 #, kde-format
 msgctxt "@action:intoolbar"
 msgid "New Tab"
 msgstr "Nova Langeto"
 
-#: contents/ui/TerminalPage.qml:140
+#: contents/ui/TerminalPage.qml:143
 #, kde-format
 msgctxt "@action:intoolbar"
 msgid "Saved Commands"
 msgstr "Konservitaj Komandoj"
 
-#: contents/ui/TerminalPage.qml:147
+#: contents/ui/TerminalPage.qml:150
 #, kde-format
 msgid "reverse-i-search"
 msgstr "inversa-i-serĉo"
 
-#: contents/ui/TerminalPage.qml:155
+#: contents/ui/TerminalPage.qml:159
 #, kde-format
 msgid "Cancel current command"
 msgstr "Nuligi aktualan komandon"
 
-#: contents/ui/TerminalPage.qml:163
+#: contents/ui/TerminalPage.qml:168
 #, kde-format
 msgid "Send EOF"
 msgstr "Sendu EOF"
 
-#: contents/ui/TerminalPage.qml:171
+#: contents/ui/TerminalPage.qml:177
 #, kde-format
 msgid "Cursor to line start"
 msgstr "Kursoro al liniokomenco"
 
-#: contents/ui/TerminalPage.qml:179
+#: contents/ui/TerminalPage.qml:186
 #, kde-format
 msgid "Cursor to line end"
 msgstr "Kursoro al liniofino"
 
-#: contents/ui/TerminalPage.qml:187
+#: contents/ui/TerminalPage.qml:195
 #, kde-format
 msgid "Kill to line end"
 msgstr "Mortigi al liniofino"
 
-#: contents/ui/TerminalPage.qml:195
+#: contents/ui/TerminalPage.qml:204
 #, kde-format
 msgid "Paste from kill buffer"
 msgstr "Alglui el mortiga bufro"
 
-#: contents/ui/TerminalPage.qml:203
+#: contents/ui/TerminalPage.qml:213
 #, kde-format
 msgid "Copy"
 msgstr "Kopii"
 
-#: contents/ui/TerminalPage.qml:213
+#: contents/ui/TerminalPage.qml:224
 #, kde-format
 msgid "Paste"
 msgstr "Alglui"
 
-#: contents/ui/TerminalPage.qml:270
+#: contents/ui/TerminalPage.qml:291
 #, kde-format
 msgctxt "@title:window"
 msgid "Confirm closing %1"
 msgstr "Konfirmi fermon de %1"
 
-#: contents/ui/TerminalPage.qml:286
+#: contents/ui/TerminalPage.qml:307
 #, kde-format
 msgid ""
 "A process is currently running in this tab. Are you sure you want to close "
@@ -241,18 +241,18 @@ msgstr ""
 "Procezo nuntempe rulas en ĉi tiu langeto. Ĉu vi certas, ke vi volas fermi "
 "ĝin?"
 
-#: contents/ui/TerminalPage.qml:293
+#: contents/ui/TerminalPage.qml:314
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Tab"
 msgstr "Elekti Langeton"
 
-#: contents/ui/TerminalPage.qml:345
+#: contents/ui/TerminalPage.qml:373
 #, kde-format
 msgid "selection mode"
 msgstr "elekta reĝimo"
 
-#: contents/ui/TerminalPage.qml:353
+#: contents/ui/TerminalPage.qml:381
 #, kde-format
 msgid "Disable"
 msgstr "Malebligi"
