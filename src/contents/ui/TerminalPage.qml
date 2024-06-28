@@ -110,6 +110,22 @@ Kirigami.Page {
         }
     }
 
+    function closeWindow() {
+        confirmDialogWindow.activeProcessCount = 0;
+
+        for (let index = 0; index < tabSwipeView.count; index++) {
+            if (tabSwipeView.contentChildren[index].termWidget.session.hasActiveProcess) {
+                confirmDialogWindow.activeProcessCount++;
+            }
+        }
+
+        if (confirmDialogWindow.activeProcessCount > 0) {
+            confirmDialogWindow.open();
+        } else {
+            Qt.quit();
+        }
+    }
+
     Shortcut {
         sequence: "Shift+Left"
         onActivated: {
@@ -305,6 +321,30 @@ Kirigami.Page {
                     Layout.maximumWidth: Kirigami.Units.gridUnit * 15
                     wrapMode: Text.Wrap
                     text: i18n("A process is currently running in this tab. Are you sure you want to close it?")
+                }
+            }
+        }
+
+        Kirigami.Dialog {
+            id: confirmDialogWindow
+
+            property int activeProcessCount: 0
+
+            title: i18nc("@title:window", "Confirm closing window")
+            standardButtons: Dialog.Yes | Dialog.Cancel
+            padding: Kirigami.Units.gridUnit
+
+            onAccepted: {
+                Qt.quit();
+            }
+
+            RowLayout {
+                Label {
+                    Layout.maximumWidth: Kirigami.Units.gridUnit * 15
+                    wrapMode: Text.Wrap
+                    text: confirmDialogWindow.activeProcessCount > 1
+                        ? i18n("There are processes currently running in this window. Are you sure you want to close it?")
+                        : i18n("A process is currently running in this window. Are you sure you want to close it?");
                 }
             }
         }

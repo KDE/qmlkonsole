@@ -29,4 +29,9 @@ Kirigami.ApplicationWindow {
             Util.setBlur(pageStack, true);
         }
     }
+
+    onClosing: {
+        close.accepted = false;
+        pageStack.currentItem.closeWindow();
+    }
 }
