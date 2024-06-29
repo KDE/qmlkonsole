@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qmlkonsole\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-06-27 00:40+0000\n"
+"POT-Creation-Date: 2024-06-29 00:41+0000\n"
 "PO-Revision-Date: 2023-12-28 20:24+0100\n"
 "Last-Translator: Vincenzo Reale <smart2128vr@gmail.com>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
@@ -43,7 +43,7 @@ msgstr "Comandi salvati"
 msgid "Configure"
 msgstr "Configura"
 
-#: contents/ui/SavedCommandsDialog.qml:34 contents/ui/TerminalPage.qml:360
+#: contents/ui/SavedCommandsDialog.qml:34 contents/ui/TerminalPage.qml:400
 #, kde-format
 msgid "Close"
 msgstr "Chiudi"
@@ -133,7 +133,7 @@ msgid "Blur Background"
 msgstr "Sfondo sfocato"
 
 #: contents/ui/SettingsDialog.qml:17 contents/ui/SettingsPage.qml:16
-#: contents/ui/TerminalPage.qml:233
+#: contents/ui/TerminalPage.qml:249
 #, kde-format
 msgid "Settings"
 msgstr "Impostazioni"
@@ -168,70 +168,70 @@ msgstr "Tab"
 msgid "Toggle Virtual Keyboard"
 msgstr "Commuta la tastiera virtuale"
 
-#: contents/ui/TerminalPage.qml:133
+#: contents/ui/TerminalPage.qml:149
 #, kde-format
 msgctxt "@action:intoolbar"
 msgid "New Tab"
 msgstr "Nuova scheda"
 
-#: contents/ui/TerminalPage.qml:143
+#: contents/ui/TerminalPage.qml:159
 #, kde-format
 msgctxt "@action:intoolbar"
 msgid "Saved Commands"
 msgstr "Comandi salvati"
 
-#: contents/ui/TerminalPage.qml:150
+#: contents/ui/TerminalPage.qml:166
 #, kde-format
 msgid "reverse-i-search"
 msgstr "ricerca-i-inversa"
 
-#: contents/ui/TerminalPage.qml:159
+#: contents/ui/TerminalPage.qml:175
 #, kde-format
 msgid "Cancel current command"
 msgstr "Annulla il comando attuale"
 
-#: contents/ui/TerminalPage.qml:168
+#: contents/ui/TerminalPage.qml:184
 #, kde-format
 msgid "Send EOF"
 msgstr "Invia EOF"
 
-#: contents/ui/TerminalPage.qml:177
+#: contents/ui/TerminalPage.qml:193
 #, kde-format
 msgid "Cursor to line start"
 msgstr "Cursore all'inizio della riga"
 
-#: contents/ui/TerminalPage.qml:186
+#: contents/ui/TerminalPage.qml:202
 #, kde-format
 msgid "Cursor to line end"
 msgstr "Cursore alla fine della riga"
 
-#: contents/ui/TerminalPage.qml:195
+#: contents/ui/TerminalPage.qml:211
 #, kde-format
 msgid "Kill to line end"
 msgstr "Elimina alla fine della riga"
 
-#: contents/ui/TerminalPage.qml:204
+#: contents/ui/TerminalPage.qml:220
 #, kde-format
 msgid "Paste from kill buffer"
 msgstr "Incolla dal buffer di eliminazione"
 
-#: contents/ui/TerminalPage.qml:213
+#: contents/ui/TerminalPage.qml:229
 #, kde-format
 msgid "Copy"
 msgstr "Copia"
 
-#: contents/ui/TerminalPage.qml:224
+#: contents/ui/TerminalPage.qml:240
 #, kde-format
 msgid "Paste"
 msgstr "Incolla"
 
-#: contents/ui/TerminalPage.qml:291
+#: contents/ui/TerminalPage.qml:307
 #, kde-format
 msgctxt "@title:window"
 msgid "Confirm closing %1"
 msgstr "Conferma la chiusura di %1"
 
-#: contents/ui/TerminalPage.qml:307
+#: contents/ui/TerminalPage.qml:323
 #, kde-format
 msgid ""
 "A process is currently running in this tab. Are you sure you want to close "
@@ -240,18 +240,50 @@ msgstr ""
 "Un processo è attualmente in esecuzione in questa scheda. Sei sicuro di "
 "volerla chiudere?"
 
-#: contents/ui/TerminalPage.qml:314
+#: contents/ui/TerminalPage.qml:333
+#, fuzzy, kde-format
+#| msgctxt "@title:window"
+#| msgid "Confirm closing %1"
+msgctxt "@title:window"
+msgid "Confirm closing window"
+msgstr "Conferma la chiusura di %1"
+
+#: contents/ui/TerminalPage.qml:346
+#, fuzzy, kde-format
+#| msgid ""
+#| "A process is currently running in this tab. Are you sure you want to "
+#| "close it?"
+msgid ""
+"There are processes currently running in this window. Are you sure you want "
+"to close it?"
+msgstr ""
+"Un processo è attualmente in esecuzione in questa scheda. Sei sicuro di "
+"volerla chiudere?"
+
+#: contents/ui/TerminalPage.qml:347
+#, fuzzy, kde-format
+#| msgid ""
+#| "A process is currently running in this tab. Are you sure you want to "
+#| "close it?"
+msgid ""
+"A process is currently running in this window. Are you sure you want to "
+"close it?"
+msgstr ""
+"Un processo è attualmente in esecuzione in questa scheda. Sei sicuro di "
+"volerla chiudere?"
+
+#: contents/ui/TerminalPage.qml:354
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Tab"
 msgstr "Seleziona la scheda"
 
-#: contents/ui/TerminalPage.qml:373
+#: contents/ui/TerminalPage.qml:413
 #, kde-format
 msgid "selection mode"
 msgstr "modalità di selezione"
 
-#: contents/ui/TerminalPage.qml:381
+#: contents/ui/TerminalPage.qml:421
 #, kde-format
 msgid "Disable"
 msgstr "Disabilita"

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qmlkonsole\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-06-27 00:40+0000\n"
+"POT-Creation-Date: 2024-06-29 00:41+0000\n"
 "PO-Revision-Date: 2022-02-16 10:33+0000\n"
 "Last-Translator: Sergiu Bivol <sergiu@cip.md>\n"
 "Language-Team: Romanian\n"
@@ -44,7 +44,7 @@ msgstr ""
 msgid "Configure"
 msgstr ""
 
-#: contents/ui/SavedCommandsDialog.qml:34 contents/ui/TerminalPage.qml:360
+#: contents/ui/SavedCommandsDialog.qml:34 contents/ui/TerminalPage.qml:400
 #, kde-format
 msgid "Close"
 msgstr "Închide"
@@ -137,7 +137,7 @@ msgid "Blur Background"
 msgstr ""
 
 #: contents/ui/SettingsDialog.qml:17 contents/ui/SettingsPage.qml:16
-#: contents/ui/TerminalPage.qml:233
+#: contents/ui/TerminalPage.qml:249
 #, kde-format
 msgid "Settings"
 msgstr "Configurări"
@@ -180,88 +180,116 @@ msgstr "Tab"
 msgid "Toggle Virtual Keyboard"
 msgstr "Comută tastatura virtuală"
 
-#: contents/ui/TerminalPage.qml:133
+#: contents/ui/TerminalPage.qml:149
 #, kde-format
 msgctxt "@action:intoolbar"
 msgid "New Tab"
 msgstr "Filă nouă"
 
-#: contents/ui/TerminalPage.qml:143
+#: contents/ui/TerminalPage.qml:159
 #, kde-format
 msgctxt "@action:intoolbar"
 msgid "Saved Commands"
 msgstr ""
 
-#: contents/ui/TerminalPage.qml:150
+#: contents/ui/TerminalPage.qml:166
 #, kde-format
 msgid "reverse-i-search"
 msgstr ""
 
-#: contents/ui/TerminalPage.qml:159
+#: contents/ui/TerminalPage.qml:175
 #, kde-format
 msgid "Cancel current command"
 msgstr "Anulează comanda actuală"
 
-#: contents/ui/TerminalPage.qml:168
+#: contents/ui/TerminalPage.qml:184
 #, kde-format
 msgid "Send EOF"
 msgstr "Trimite EOF"
 
-#: contents/ui/TerminalPage.qml:177
+#: contents/ui/TerminalPage.qml:193
 #, kde-format
 msgid "Cursor to line start"
 msgstr "Cursor la început de linie"
 
-#: contents/ui/TerminalPage.qml:186
+#: contents/ui/TerminalPage.qml:202
 #, kde-format
 msgid "Cursor to line end"
 msgstr "Cursor la sfârșit de linie"
 
-#: contents/ui/TerminalPage.qml:195
+#: contents/ui/TerminalPage.qml:211
 #, kde-format
 msgid "Kill to line end"
 msgstr "Taie spre sfârșitul liniei"
 
-#: contents/ui/TerminalPage.qml:204
+#: contents/ui/TerminalPage.qml:220
 #, kde-format
 msgid "Paste from kill buffer"
 msgstr "Lipește din tamponul tăierilor"
 
-#: contents/ui/TerminalPage.qml:213
+#: contents/ui/TerminalPage.qml:229
 #, kde-format
 msgid "Copy"
 msgstr "Copiază"
 
-#: contents/ui/TerminalPage.qml:224
+#: contents/ui/TerminalPage.qml:240
 #, kde-format
 msgid "Paste"
 msgstr "Lipește"
 
-#: contents/ui/TerminalPage.qml:291
+#: contents/ui/TerminalPage.qml:307
 #, kde-format
 msgctxt "@title:window"
 msgid "Confirm closing %1"
 msgstr "Confirmă închiderea %1"
 
-#: contents/ui/TerminalPage.qml:307
+#: contents/ui/TerminalPage.qml:323
 #, kde-format
 msgid ""
 "A process is currently running in this tab. Are you sure you want to close "
 "it?"
 msgstr "Un proces rulează în această filă. Sigur o închideți?"
 
-#: contents/ui/TerminalPage.qml:314
+#: contents/ui/TerminalPage.qml:333
+#, fuzzy, kde-format
+#| msgctxt "@title:window"
+#| msgid "Confirm closing %1"
+msgctxt "@title:window"
+msgid "Confirm closing window"
+msgstr "Confirmă închiderea %1"
+
+#: contents/ui/TerminalPage.qml:346
+#, fuzzy, kde-format
+#| msgid ""
+#| "A process is currently running in this tab. Are you sure you want to "
+#| "close it?"
+msgid ""
+"There are processes currently running in this window. Are you sure you want "
+"to close it?"
+msgstr "Un proces rulează în această filă. Sigur o închideți?"
+
+#: contents/ui/TerminalPage.qml:347
+#, fuzzy, kde-format
+#| msgid ""
+#| "A process is currently running in this tab. Are you sure you want to "
+#| "close it?"
+msgid ""
+"A process is currently running in this window. Are you sure you want to "
+"close it?"
+msgstr "Un proces rulează în această filă. Sigur o închideți?"
+
+#: contents/ui/TerminalPage.qml:354
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Tab"
 msgstr "Alege fila"
 
-#: contents/ui/TerminalPage.qml:373
+#: contents/ui/TerminalPage.qml:413
 #, kde-format
 msgid "selection mode"
 msgstr "regim selecție"
 
-#: contents/ui/TerminalPage.qml:381
+#: contents/ui/TerminalPage.qml:421
 #, kde-format
 msgid "Disable"
 msgstr "Dezactivează"

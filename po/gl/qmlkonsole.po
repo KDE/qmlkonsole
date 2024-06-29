@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qmlkonsole\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-06-27 00:40+0000\n"
+"POT-Creation-Date: 2024-06-29 00:41+0000\n"
 "PO-Revision-Date: 2023-12-28 17:54+0100\n"
 "Last-Translator: Adrián Chaves (Gallaecio) <adrian@chaves.io>\n"
 "Language-Team: Proxecto Trasno (proxecto@trasno.gal)\n"
@@ -43,7 +43,7 @@ msgstr "Ordes gardadas"
 msgid "Configure"
 msgstr "Configurar"
 
-#: contents/ui/SavedCommandsDialog.qml:34 contents/ui/TerminalPage.qml:360
+#: contents/ui/SavedCommandsDialog.qml:34 contents/ui/TerminalPage.qml:400
 #, kde-format
 msgid "Close"
 msgstr "Pechar"
@@ -133,7 +133,7 @@ msgid "Blur Background"
 msgstr "Desenfocar o fondo"
 
 #: contents/ui/SettingsDialog.qml:17 contents/ui/SettingsPage.qml:16
-#: contents/ui/TerminalPage.qml:233
+#: contents/ui/TerminalPage.qml:249
 #, kde-format
 msgid "Settings"
 msgstr "Configuración"
@@ -168,88 +168,116 @@ msgstr "Tab"
 msgid "Toggle Virtual Keyboard"
 msgstr "Conmutar o teclado virtual"
 
-#: contents/ui/TerminalPage.qml:133
+#: contents/ui/TerminalPage.qml:149
 #, kde-format
 msgctxt "@action:intoolbar"
 msgid "New Tab"
 msgstr "Novo separador"
 
-#: contents/ui/TerminalPage.qml:143
+#: contents/ui/TerminalPage.qml:159
 #, kde-format
 msgctxt "@action:intoolbar"
 msgid "Saved Commands"
 msgstr "Ordes gardadas"
 
-#: contents/ui/TerminalPage.qml:150
+#: contents/ui/TerminalPage.qml:166
 #, kde-format
 msgid "reverse-i-search"
 msgstr "Busca no historial"
 
-#: contents/ui/TerminalPage.qml:159
+#: contents/ui/TerminalPage.qml:175
 #, kde-format
 msgid "Cancel current command"
 msgstr "Cancelar a orde actual"
 
-#: contents/ui/TerminalPage.qml:168
+#: contents/ui/TerminalPage.qml:184
 #, kde-format
 msgid "Send EOF"
 msgstr "Enviar un fin de ficheiro"
 
-#: contents/ui/TerminalPage.qml:177
+#: contents/ui/TerminalPage.qml:193
 #, kde-format
 msgid "Cursor to line start"
 msgstr "Cursor no inicio da liña"
 
-#: contents/ui/TerminalPage.qml:186
+#: contents/ui/TerminalPage.qml:202
 #, kde-format
 msgid "Cursor to line end"
 msgstr "Cursor no final da liña"
 
-#: contents/ui/TerminalPage.qml:195
+#: contents/ui/TerminalPage.qml:211
 #, kde-format
 msgid "Kill to line end"
 msgstr "Matar ao final da liña"
 
-#: contents/ui/TerminalPage.qml:204
+#: contents/ui/TerminalPage.qml:220
 #, kde-format
 msgid "Paste from kill buffer"
 msgstr "Pegar do búfer de matar"
 
-#: contents/ui/TerminalPage.qml:213
+#: contents/ui/TerminalPage.qml:229
 #, kde-format
 msgid "Copy"
 msgstr "Copiar"
 
-#: contents/ui/TerminalPage.qml:224
+#: contents/ui/TerminalPage.qml:240
 #, kde-format
 msgid "Paste"
 msgstr "Pegar"
 
-#: contents/ui/TerminalPage.qml:291
+#: contents/ui/TerminalPage.qml:307
 #, kde-format
 msgctxt "@title:window"
 msgid "Confirm closing %1"
 msgstr "Confirmar o peche de %1"
 
-#: contents/ui/TerminalPage.qml:307
+#: contents/ui/TerminalPage.qml:323
 #, kde-format
 msgid ""
 "A process is currently running in this tab. Are you sure you want to close "
 "it?"
 msgstr "Hai un proceso a executarse neste separador. Seguro que quere pechalo?"
 
-#: contents/ui/TerminalPage.qml:314
+#: contents/ui/TerminalPage.qml:333
+#, fuzzy, kde-format
+#| msgctxt "@title:window"
+#| msgid "Confirm closing %1"
+msgctxt "@title:window"
+msgid "Confirm closing window"
+msgstr "Confirmar o peche de %1"
+
+#: contents/ui/TerminalPage.qml:346
+#, fuzzy, kde-format
+#| msgid ""
+#| "A process is currently running in this tab. Are you sure you want to "
+#| "close it?"
+msgid ""
+"There are processes currently running in this window. Are you sure you want "
+"to close it?"
+msgstr "Hai un proceso a executarse neste separador. Seguro que quere pechalo?"
+
+#: contents/ui/TerminalPage.qml:347
+#, fuzzy, kde-format
+#| msgid ""
+#| "A process is currently running in this tab. Are you sure you want to "
+#| "close it?"
+msgid ""
+"A process is currently running in this window. Are you sure you want to "
+"close it?"
+msgstr "Hai un proceso a executarse neste separador. Seguro que quere pechalo?"
+
+#: contents/ui/TerminalPage.qml:354
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Tab"
 msgstr "Seleccione un separador"
 
-#: contents/ui/TerminalPage.qml:373
+#: contents/ui/TerminalPage.qml:413
 #, kde-format
 msgid "selection mode"
 msgstr "modo de selección"
 
-#: contents/ui/TerminalPage.qml:381
+#: contents/ui/TerminalPage.qml:421
 #, kde-format
 msgid "Disable"
 msgstr "Desactivar"
