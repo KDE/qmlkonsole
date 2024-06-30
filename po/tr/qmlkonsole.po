@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: qmlkonsole\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-06-29 00:41+0000\n"
-"PO-Revision-Date: 2024-03-22 16:14+0300\n"
+"PO-Revision-Date: 2024-06-29 13:29+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 24.02.1\n"
+"X-Generator: Lokalize 24.07.70\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -115,7 +115,7 @@ msgstr "Yazıtipi Ailesi"
 #, kde-format
 msgctxt "@title:window"
 msgid "Pick font"
-msgstr "Yazıtipi seç"
+msgstr "Yazıtipi Seç"
 
 #: contents/ui/SettingsComponent.qml:207
 #, kde-format
@@ -183,7 +183,7 @@ msgstr "Kaydedilen Komutlar"
 #: contents/ui/TerminalPage.qml:166
 #, kde-format
 msgid "reverse-i-search"
-msgstr "ters-i-arama"
+msgstr "ters–i–arama"
 
 #: contents/ui/TerminalPage.qml:175
 #, kde-format
@@ -229,7 +229,7 @@ msgstr "Yapıştır"
 #, kde-format
 msgctxt "@title:window"
 msgid "Confirm closing %1"
-msgstr "%1 kapatmayı onayla"
+msgstr "%1 Kapatmayı Onayla"
 
 #: contents/ui/TerminalPage.qml:323
 #, kde-format
@@ -240,34 +240,28 @@ msgstr ""
 "Bu sekmede şu an bir süreç çalışıyor. Kapatmak istediğinizden emin misiniz?"
 
 #: contents/ui/TerminalPage.qml:333
-#, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "Confirm closing %1"
+#, kde-format
 msgctxt "@title:window"
 msgid "Confirm closing window"
-msgstr "%1 kapatmayı onayla"
+msgstr "Pencereyi Kapatmayı Onayla"
 
 #: contents/ui/TerminalPage.qml:346
-#, fuzzy, kde-format
-#| msgid ""
-#| "A process is currently running in this tab. Are you sure you want to "
-#| "close it?"
+#, kde-format
 msgid ""
 "There are processes currently running in this window. Are you sure you want "
 "to close it?"
 msgstr ""
-"Bu sekmede şu an bir süreç çalışıyor. Kapatmak istediğinizden emin misiniz?"
+"Bu pencerede şu anda çalışan süreçler var. Kapatmak istediğinizden emin "
+"misiniz?"
 
 #: contents/ui/TerminalPage.qml:347
-#, fuzzy, kde-format
-#| msgid ""
-#| "A process is currently running in this tab. Are you sure you want to "
-#| "close it?"
+#, kde-format
 msgid ""
 "A process is currently running in this window. Are you sure you want to "
 "close it?"
 msgstr ""
-"Bu sekmede şu an bir süreç çalışıyor. Kapatmak istediğinizden emin misiniz?"
+"Bu pencerede şu anda bir süreç çalışıyor. Kapatmak istediğinizden emin "
+"misiniz?"
 
 #: contents/ui/TerminalPage.qml:354
 #, kde-format
@@ -288,7 +282,7 @@ msgstr "Devre Dışı Bırak"
 #: main.cpp:38
 #, kde-format
 msgid "© 2020-2022 KDE Community"
-msgstr "© 2020-2022 KDE Topluluğu"
+msgstr "© 2020–2022 KDE Topluluğu"
 
 #: main.cpp:40
 #, kde-format
@@ -308,7 +302,7 @@ msgstr "Yürütülecek komut"
 #: main.cpp:63
 #, kde-format
 msgid "Set the initial working directory to 'dir'"
-msgstr "Başlangıç çalışma dizinini 'dizin' olarak ayarla"
+msgstr "Başlangıç çalışma dizinini “dizin” olarak ayarla"
 
 #: terminaltabmodel.cpp:68
 #, kde-format
