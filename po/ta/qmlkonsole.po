@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: qmlkonsole\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-06-29 00:41+0000\n"
-"PO-Revision-Date: 2024-02-18 16:31+0530\n"
+"PO-Revision-Date: 2024-06-30 13:16+0530\n"
 "Last-Translator: Kishore G <kishore96@gmail.com>\n"
 "Language-Team: Tamil <kde-i18n-doc@kde.org>\n"
 "Language: ta\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 23.08.5\n"
+"X-Generator: Lokalize 24.05.1\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -205,15 +205,16 @@ msgstr "வரிதுவக்கத்திற்கு இடஞ்சு�
 msgid "Cursor to line end"
 msgstr "வரிமுடிவுக்கு இடஞ்சுட்டியை நகர்த்து"
 
+# Assuming this means 'delete all characters till the line end'.
 #: contents/ui/TerminalPage.qml:211
 #, kde-format
 msgid "Kill to line end"
-msgstr ""
+msgstr "வரியின் முடிவுவரை நீக்கு"
 
 #: contents/ui/TerminalPage.qml:220
 #, kde-format
 msgid "Paste from kill buffer"
-msgstr ""
+msgstr "நீக்கியவற்றை ஒட்டு"
 
 #: contents/ui/TerminalPage.qml:229
 #, kde-format
@@ -239,32 +240,24 @@ msgid ""
 msgstr "இக்கீற்றில் ஓர் பணி ஓடிக்கொண்டிருக்கிறது. உறுதியாக இதை மூட வேண்டுமா?"
 
 #: contents/ui/TerminalPage.qml:333
-#, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "Confirm closing %1"
+#, kde-format
 msgctxt "@title:window"
 msgid "Confirm closing window"
-msgstr "%1 தனை மூடுவதை உறுதி செய்யுங்கள்"
+msgstr "சாளரத்தை மூடுவதை உறுதி செய்யவும்"
 
 #: contents/ui/TerminalPage.qml:346
-#, fuzzy, kde-format
-#| msgid ""
-#| "A process is currently running in this tab. Are you sure you want to "
-#| "close it?"
+#, kde-format
 msgid ""
 "There are processes currently running in this window. Are you sure you want "
 "to close it?"
-msgstr "இக்கீற்றில் ஓர் பணி ஓடிக்கொண்டிருக்கிறது. உறுதியாக இதை மூட வேண்டுமா?"
+msgstr "இச்சாளரத்தில் பணிகள் ஓடிக்கொண்டிருக்கின்றன. உறுதியாக இதை மூட வேண்டுமா?"
 
 #: contents/ui/TerminalPage.qml:347
-#, fuzzy, kde-format
-#| msgid ""
-#| "A process is currently running in this tab. Are you sure you want to "
-#| "close it?"
+#, kde-format
 msgid ""
 "A process is currently running in this window. Are you sure you want to "
 "close it?"
-msgstr "இக்கீற்றில் ஓர் பணி ஓடிக்கொண்டிருக்கிறது. உறுதியாக இதை மூட வேண்டுமா?"
+msgstr "இச்சாளரத்தில் ஓர் பணி ஓடிக்கொண்டிருக்கிறது. உறுதியாக இதை மூட வேண்டுமா?"
 
 #: contents/ui/TerminalPage.qml:354
 #, kde-format
@@ -290,12 +283,12 @@ msgstr "© 2020-2022 கே.டீ.யீ. சமூகம்"
 #: main.cpp:40
 #, kde-format
 msgid "Jonah Brüchert"
-msgstr ""
+msgstr "ஜோனா புருச்செற்டு"
 
 #: main.cpp:41
 #, kde-format
 msgid "Devin Lin"
-msgstr ""
+msgstr "டெவின் லின்"
 
 #: main.cpp:62
 #, kde-format
