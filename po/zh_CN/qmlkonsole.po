@@ -242,21 +242,21 @@ msgstr "此标签页当前有正在运行的进程。您确定要关闭它吗？
 #, kde-format
 msgctxt "@title:window"
 msgid "Confirm closing window"
-msgstr ""
+msgstr "确认关闭窗口"
 
 #: contents/ui/TerminalPage.qml:346
 #, kde-format
 msgid ""
 "There are processes currently running in this window. Are you sure you want "
 "to close it?"
-msgstr ""
+msgstr "此窗口当前有正在运行的进程。您确定要关闭它吗？"
 
 #: contents/ui/TerminalPage.qml:347
 #, kde-format
 msgid ""
 "A process is currently running in this window. Are you sure you want to "
 "close it?"
-msgstr ""
+msgstr "此窗口当前有正在运行的进程。您确定要关闭它吗？"
 
 #: contents/ui/TerminalPage.qml:354
 #, kde-format

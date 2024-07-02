@@ -1,19 +1,19 @@
-# SPDX-FileCopyrightText: 2020, 2021, 2022, 2023 Xavier Besnard <xavier.besnard@kde.org>
+# SPDX-FileCopyrightText: 2020, 2021, 2022, 2023, 2024 Xavier Besnard <xavier.besnard@kde.org>
 # Xavier Besnard <xavier.besnard@kde.org>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: qmlkonsole\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-06-29 00:41+0000\n"
-"PO-Revision-Date: 2023-12-29 16:24+0100\n"
+"PO-Revision-Date: 2024-06-30 11:21+0200\n"
 "Last-Translator: Xavier Besnard <xavier.besnard@kde.org>\n"
-"Language-Team: French <kde-francophone@kde.org>\n"
+"Language-Team: French <French <kde-francophone@kde.org>>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 23.08.4\n"
+"X-Generator: Lokalize 23.08.5\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -239,36 +239,28 @@ msgstr ""
 "sûr de vouloir le fermer ?"
 
 #: contents/ui/TerminalPage.qml:333
-#, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "Confirm closing %1"
+#, kde-format
 msgctxt "@title:window"
 msgid "Confirm closing window"
-msgstr "Confirmer la fermeture de %1"
+msgstr "Confirmer la fermeture de la fenêtre"
 
 #: contents/ui/TerminalPage.qml:346
-#, fuzzy, kde-format
-#| msgid ""
-#| "A process is currently running in this tab. Are you sure you want to "
-#| "close it?"
+#, kde-format
 msgid ""
 "There are processes currently running in this window. Are you sure you want "
 "to close it?"
 msgstr ""
-"Un processus est actuellement en cours dans cet onglet. Êtes-vous vraiment "
-"sûr de vouloir le fermer ?"
+"Il y a des processus actuellement en cours d'exécution dans cette fenêtre. "
+"Voulez-vous vraiment la fermer ?"
 
 #: contents/ui/TerminalPage.qml:347
-#, fuzzy, kde-format
-#| msgid ""
-#| "A process is currently running in this tab. Are you sure you want to "
-#| "close it?"
+#, kde-format
 msgid ""
 "A process is currently running in this window. Are you sure you want to "
 "close it?"
 msgstr ""
-"Un processus est actuellement en cours dans cet onglet. Êtes-vous vraiment "
-"sûr de vouloir le fermer ?"
+"Il y a un processus actuellement en cours d'exécution dans cette fenêtre. "
+"Voulez-vous vraiment la fermer ?"
 
 #: contents/ui/TerminalPage.qml:354
 #, kde-format
