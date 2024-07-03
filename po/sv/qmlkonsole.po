@@ -7,8 +7,8 @@ msgstr ""
 "Project-Id-Version: qmlkonsole\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-06-29 00:41+0000\n"
-"PO-Revision-Date: 2024-06-18 00:30+0200\n"
-"Last-Translator: Stefan Asserhäll <stefan.asserhall@bredband.net>\n"
+"PO-Revision-Date: 2024-07-02 21:53+0200\n"
+"Last-Translator: Stefan Asserhäll <stefan.asserhall@gmail.com>\n"
 "Language-Team: Swedish <kde-i18n-doc@kde.org>\n"
 "Language: sv\n"
 "MIME-Version: 1.0\n"
@@ -237,40 +237,32 @@ msgid ""
 "A process is currently running in this tab. Are you sure you want to close "
 "it?"
 msgstr ""
-"Ett process kör för närvarande under fliken. Är du säker på att du vill "
+"En process kör för närvarande under fliken. Är du säker på att du vill "
 "stänga den?"
 
 #: contents/ui/TerminalPage.qml:333
-#, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "Confirm closing %1"
+#, kde-format
 msgctxt "@title:window"
 msgid "Confirm closing window"
-msgstr "Bekräfta stängning av %1"
+msgstr "Bekräfta stängning av fönster"
 
 #: contents/ui/TerminalPage.qml:346
-#, fuzzy, kde-format
-#| msgid ""
-#| "A process is currently running in this tab. Are you sure you want to "
-#| "close it?"
+#, kde-format
 msgid ""
 "There are processes currently running in this window. Are you sure you want "
 "to close it?"
 msgstr ""
-"Ett process kör för närvarande under fliken. Är du säker på att du vill "
-"stänga den?"
+"Processer kör för närvarande i fönstret. Är du säker på att du vill stänga "
+"det?"
 
 #: contents/ui/TerminalPage.qml:347
-#, fuzzy, kde-format
-#| msgid ""
-#| "A process is currently running in this tab. Are you sure you want to "
-#| "close it?"
+#, kde-format
 msgid ""
 "A process is currently running in this window. Are you sure you want to "
 "close it?"
 msgstr ""
-"Ett process kör för närvarande under fliken. Är du säker på att du vill "
-"stänga den?"
+"En process kör för närvarande i fönstret. Är du säker på att du vill stänga "
+"det?"
 
 #: contents/ui/TerminalPage.qml:354
 #, kde-format

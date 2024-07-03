@@ -1,13 +1,13 @@
 # Copyright (C) 2023 This file is copyright:
 # This file is distributed under the same license as the qmlkonsole package.
-# SPDX-FileCopyrightText: 2023 Adrián Chaves (Gallaecio)
+# SPDX-FileCopyrightText: 2023, 2024 Adrián Chaves (Gallaecio)
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: qmlkonsole\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-06-29 00:41+0000\n"
-"PO-Revision-Date: 2023-12-28 17:54+0100\n"
+"PO-Revision-Date: 2024-07-02 17:53+0200\n"
 "Last-Translator: Adrián Chaves (Gallaecio) <adrian@chaves.io>\n"
 "Language-Team: Proxecto Trasno (proxecto@trasno.gal)\n"
 "Language: gl\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 23.08.4\n"
+"X-Generator: Lokalize 24.05.1\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -236,35 +236,27 @@ msgstr "Confirmar o peche de %1"
 msgid ""
 "A process is currently running in this tab. Are you sure you want to close "
 "it?"
-msgstr "Hai un proceso a executarse neste separador. Seguro que quere pechalo?"
+msgstr "Hai un proceso a executarse nesta lapela. Seguro que quere pechala?"
 
 #: contents/ui/TerminalPage.qml:333
-#, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "Confirm closing %1"
+#, kde-format
 msgctxt "@title:window"
 msgid "Confirm closing window"
-msgstr "Confirmar o peche de %1"
+msgstr "Confirmar o peche da xanela"
 
 #: contents/ui/TerminalPage.qml:346
-#, fuzzy, kde-format
-#| msgid ""
-#| "A process is currently running in this tab. Are you sure you want to "
-#| "close it?"
+#, kde-format
 msgid ""
 "There are processes currently running in this window. Are you sure you want "
 "to close it?"
-msgstr "Hai un proceso a executarse neste separador. Seguro que quere pechalo?"
+msgstr "Hai procesos a executarse nesta xanela. Seguro que quere pechala?"
 
 #: contents/ui/TerminalPage.qml:347
-#, fuzzy, kde-format
-#| msgid ""
-#| "A process is currently running in this tab. Are you sure you want to "
-#| "close it?"
+#, kde-format
 msgid ""
 "A process is currently running in this window. Are you sure you want to "
 "close it?"
-msgstr "Hai un proceso a executarse neste separador. Seguro que quere pechalo?"
+msgstr "Hai un proceso a executarse nesta xanela. Seguro que quere pechala?"
 
 #: contents/ui/TerminalPage.qml:354
 #, kde-format
