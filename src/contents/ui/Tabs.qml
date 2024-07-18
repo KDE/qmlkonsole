@@ -17,6 +17,8 @@ import org.kde.qmlkonsole
 ListView {
     id: root
 
+    spacing: 0
+
     signal switchToTabRequested(int index)
     signal closeTabRequested(int index)
     signal addTabRequested()
@@ -56,6 +58,12 @@ ListView {
 
     delegate: ItemDelegate {
         id: control
+
+        padding: 0
+        leftInset: 0
+        rightInset: 0
+        topInset: 0
+        bottomInset: 0
 
         highlighted: ListView.isCurrentItem
 
