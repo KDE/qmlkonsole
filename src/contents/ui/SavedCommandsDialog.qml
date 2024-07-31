@@ -29,11 +29,6 @@ Kirigami.Dialog {
                 pageStack.push("qrc:/SavedCommandsSettings.qml");
                 savedCommandsDialog.close();
             }
-        },
-        Kirigami.Action {
-            text: i18n("Close")
-            icon.name: "dialog-close"
-            onTriggered: savedCommandsDialog.close()
         }
     ]
     
