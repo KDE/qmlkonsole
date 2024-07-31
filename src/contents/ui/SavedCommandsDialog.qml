@@ -18,6 +18,7 @@ Kirigami.Dialog {
     
     title: i18nc("@title:window", "Saved Commands")
     standardButtons: Kirigami.Dialog.NoButton
+    padding: 0
     
     customFooterActions: [
         Kirigami.Action {
