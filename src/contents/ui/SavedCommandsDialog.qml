@@ -51,8 +51,10 @@ Kirigami.Dialog {
         }
         
         delegate: ItemDelegate {
-            width: tabListView.width
-            
+            id: delegate
+
+            width: ListView.view.width
+
             onClicked: {
                 terminal.simulateKeyPress(0, 0, 0, 0, model.display);
                 savedCommandsDialog.close();
@@ -60,16 +62,14 @@ Kirigami.Dialog {
             }
         
             contentItem: RowLayout {
-                Kirigami.Icon {
-                    source: "dialog-scripts"
-                }
-                Label {
-                    id: label
-                    text: model.display
-                    font.family: "Monospace"
-                }
-                Item {
+                spacing: 0
+                Kirigami.IconTitleSubtitle {
                     Layout.fillWidth: true
+
+                    icon.source: "dialog-scripts"
+                    title: model.display
+                    selected: delegate.highlighted || delegate.down
+                    font.family: "Monospace"
                 }
             }
         }
