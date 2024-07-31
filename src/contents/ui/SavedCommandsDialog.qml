@@ -17,8 +17,6 @@ Kirigami.Dialog {
     property var terminal
     
     title: i18nc("@title:window", "Saved Commands")
-    preferredHeight: Kirigami.Units.gridUnit * 25
-    preferredWidth: Kirigami.Units.gridUnit * 16
     standardButtons: Kirigami.Dialog.NoButton
     
     customFooterActions: [
@@ -35,7 +33,10 @@ Kirigami.Dialog {
     ListView {
         id: listView
         model: SavedCommandsModel
-        
+
+        implicitWidth: Kirigami.Units.gridUnit * 16
+        implicitHeight: Math.min(contentHeight, Kirigami.Units.gridUnit * 25)
+
         Kirigami.PlaceholderMessage {
             anchors.verticalCenter: parent.verticalCenter
             anchors.left: parent.left
