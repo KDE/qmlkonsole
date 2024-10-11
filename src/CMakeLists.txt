@@ -21,7 +21,7 @@ add_executable(qmlkonsole ${qmlkonsole_SRCS})
 kconfig_add_kcfg_files(qmlkonsole GENERATE_MOC terminalsettings.kcfgc)
 target_include_directories(qmlkonsole PRIVATE ${CMAKE_CURRENT_BINARY_DIR} ${CMAKE_BINARY_DIR})
 
-target_link_libraries(qmlkonsole 
+target_link_libraries(qmlkonsole
     Qt::Core
     Qt::Qml
     Qt::Quick

@@ -33,7 +33,7 @@ target_link_libraries(KonsoleQML
     KF${QT_MAJOR_VERSION}::CoreAddons
     KF${QT_MAJOR_VERSION}::Pty)
 
-if (${QT_MAJOR_VERSION} EQUAL 6)
+if(${QT_MAJOR_VERSION} EQUAL 6)
     target_link_libraries(KonsoleQML PUBLIC Qt::Core5Compat)
 endif()
 
