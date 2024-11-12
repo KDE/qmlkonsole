@@ -1,0 +1,306 @@
+# Copyright (C) 2024 This file is copyright:
+# This file is distributed under the same license as the qmlkonsole package.
+# SPDX-FileCopyrightText: 2024 Zayed Al-Saidi <zayed.alsaidi@gmail.com>
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: qmlkonsole\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2024-06-29 00:41+0000\n"
+"PO-Revision-Date: 2024-11-11 16:52+0400\n"
+"Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
+"Language-Team: ar\n"
+"Language: ar\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
+"X-Generator: Lokalize 23.08.5\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "أحمد النجماوي"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "iramosu@protonmail.com"
+
+#: contents/ui/main.qml:15
+#, kde-format
+msgid "Terminal"
+msgstr "الطرفية"
+
+#: contents/ui/SavedCommandsDialog.qml:19
+#, kde-format
+msgctxt "@title:window"
+msgid "Saved Commands"
+msgstr "الأوامر المحفوظة"
+
+#: contents/ui/SavedCommandsDialog.qml:26
+#, kde-format
+msgid "Configure"
+msgstr "اضبط"
+
+#: contents/ui/SavedCommandsDialog.qml:34 contents/ui/TerminalPage.qml:400
+#, kde-format
+msgid "Close"
+msgstr "أغلق"
+
+#: contents/ui/SavedCommandsDialog.qml:53
+#: contents/ui/SavedCommandsSettings.qml:51
+#, kde-format
+msgid "No saved commands"
+msgstr "لا أوامر محفوظة"
+
+#: contents/ui/SavedCommandsDialog.qml:54
+#: contents/ui/SavedCommandsSettings.qml:52
+#, kde-format
+msgid "Save commands to quickly run them without typing them out."
+msgstr "احفظ الأوامر لتشغيلهم بسرعة دون كتابتهم."
+
+#: contents/ui/SavedCommandsSettings.qml:18
+#, kde-format
+msgid "Saved Commands"
+msgstr "الأوامر المحفوظة"
+
+#: contents/ui/SavedCommandsSettings.qml:25
+#: contents/ui/SavedCommandsSettings.qml:96
+#, kde-format
+msgid "Add Command"
+msgstr "أضِف أمرًا"
+
+#: contents/ui/SavedCommandsSettings.qml:30
+#, kde-format
+msgid "Edit"
+msgstr "حرّر"
+
+#: contents/ui/SavedCommandsSettings.qml:56
+#, kde-format
+msgid "Add command"
+msgstr "أضِف أمرًا"
+
+#: contents/ui/SavedCommandsSettings.qml:87
+#, kde-format
+msgid "Command %1 removed"
+msgstr "أُزيل الأمر %1"
+
+#: contents/ui/SettingsComponent.qml:35
+#, kde-format
+msgid "General"
+msgstr "عام"
+
+#: contents/ui/SettingsComponent.qml:44
+#, kde-format
+msgid "About"
+msgstr "عَنْ"
+
+#: contents/ui/SettingsComponent.qml:55
+#, kde-format
+msgid "Appearance"
+msgstr "المظهر"
+
+#: contents/ui/SettingsComponent.qml:64
+#, kde-format
+msgid "Color scheme"
+msgstr "مخطّط الألوان"
+
+#: contents/ui/SettingsComponent.qml:96 contents/ui/SettingsComponent.qml:110
+#, kde-format
+msgid "Font Family"
+msgstr "عائلة الخط"
+
+#: contents/ui/SettingsComponent.qml:143
+#, kde-format
+msgctxt "@title:window"
+msgid "Pick font"
+msgstr "انتقِ خطًا"
+
+#: contents/ui/SettingsComponent.qml:207
+#, kde-format
+msgid "Font Size"
+msgstr "حجم الخط"
+
+#: contents/ui/SettingsComponent.qml:232
+#, kde-format
+msgid "Window Transparency"
+msgstr "شفافية النافذة"
+
+#: contents/ui/SettingsComponent.qml:270
+#, kde-format
+msgid "Blur Background"
+msgstr "إعماء الخلفية"
+
+#: contents/ui/SettingsDialog.qml:17 contents/ui/SettingsPage.qml:16
+#: contents/ui/TerminalPage.qml:249
+#, kde-format
+msgid "Settings"
+msgstr "الإعدادات"
+
+#: contents/ui/TerminalKeyToolBar.qml:72
+#, kde-format
+msgctxt "Control Key (should match the key on the keyboard of the locale)"
+msgid "Ctrl"
+msgstr "Ctrl"
+
+#: contents/ui/TerminalKeyToolBar.qml:90
+#, kde-format
+msgctxt "Alt Key (should match the key on the keyboard of the locale)"
+msgid "Alt"
+msgstr "Alt"
+
+#: contents/ui/TerminalKeyToolBar.qml:106
+#, kde-format
+msgctxt "Escape key (should match the key on the keyboard of the locale)"
+msgid "Esc"
+msgstr "Esc"
+
+#: contents/ui/TerminalKeyToolBar.qml:113
+#, kde-format
+msgctxt ""
+"Tab character key (should match the key on the keyboard of the locale)"
+msgid "Tab"
+msgstr "Tab"
+
+#: contents/ui/TerminalKeyToolBar.qml:163
+#, kde-format
+msgid "Toggle Virtual Keyboard"
+msgstr "بدّل لوحة المفاتيح الافتراضية"
+
+#: contents/ui/TerminalPage.qml:149
+#, kde-format
+msgctxt "@action:intoolbar"
+msgid "New Tab"
+msgstr "لسان جديد"
+
+#: contents/ui/TerminalPage.qml:159
+#, kde-format
+msgctxt "@action:intoolbar"
+msgid "Saved Commands"
+msgstr "الأوامر المحفوظة"
+
+#: contents/ui/TerminalPage.qml:166
+#, kde-format
+msgid "reverse-i-search"
+msgstr "reverse-i-search"
+
+#: contents/ui/TerminalPage.qml:175
+#, kde-format
+msgid "Cancel current command"
+msgstr "ألغِ الأمر الحالي"
+
+#: contents/ui/TerminalPage.qml:184
+#, kde-format
+msgid "Send EOF"
+msgstr "أرسل نهاية الملف (EOF)"
+
+#: contents/ui/TerminalPage.qml:193
+#, kde-format
+msgid "Cursor to line start"
+msgstr "المنزلقة عند بداية السطر"
+
+#: contents/ui/TerminalPage.qml:202
+#, kde-format
+msgid "Cursor to line end"
+msgstr "المنزلقة عند نهاية السطر"
+
+#: contents/ui/TerminalPage.qml:211
+#, kde-format
+msgid "Kill to line end"
+msgstr "اقتُل حتى نهاية السطر"
+
+#: contents/ui/TerminalPage.qml:220
+#, kde-format
+msgid "Paste from kill buffer"
+msgstr "انسخ من صِوان القتل"
+
+#: contents/ui/TerminalPage.qml:229
+#, kde-format
+msgid "Copy"
+msgstr "انسخ"
+
+#: contents/ui/TerminalPage.qml:240
+#, kde-format
+msgid "Paste"
+msgstr "ألصق"
+
+#: contents/ui/TerminalPage.qml:307
+#, kde-format
+msgctxt "@title:window"
+msgid "Confirm closing %1"
+msgstr "تأكيد إغلاق %1"
+
+#: contents/ui/TerminalPage.qml:323
+#, kde-format
+msgid ""
+"A process is currently running in this tab. Are you sure you want to close "
+"it?"
+msgstr "هناك عملية تجري في هذه النافذة حاليًا. أمتأكد من إغلاقها؟"
+
+#: contents/ui/TerminalPage.qml:333
+#, kde-format
+msgctxt "@title:window"
+msgid "Confirm closing window"
+msgstr "تأكيد إغلاق النافذة"
+
+#: contents/ui/TerminalPage.qml:346
+#, kde-format
+msgid ""
+"There are processes currently running in this window. Are you sure you want "
+"to close it?"
+msgstr "هناك عمليات تجري في هذه النافذة حاليًا. أمتأكد من إغلاقها؟"
+
+#: contents/ui/TerminalPage.qml:347
+#, kde-format
+msgid ""
+"A process is currently running in this window. Are you sure you want to "
+"close it?"
+msgstr "هناك عملية تجري في هذه النافذة حاليًا. أمتأكد من إغلاقها؟"
+
+#: contents/ui/TerminalPage.qml:354
+#, kde-format
+msgctxt "@title:window"
+msgid "Select Tab"
+msgstr "اختر لسانًا"
+
+#: contents/ui/TerminalPage.qml:413
+#, kde-format
+msgid "selection mode"
+msgstr "نمط الاختيار"
+
+#: contents/ui/TerminalPage.qml:421
+#, kde-format
+msgid "Disable"
+msgstr "عطّل"
+
+#: main.cpp:38
+#, kde-format
+msgid "© 2020-2022 KDE Community"
+msgstr "© 2020-2022 مجتمع كِيدِي"
+
+#: main.cpp:40
+#, kde-format
+msgid "Jonah Brüchert"
+msgstr "جوناه بروكيرت"
+
+#: main.cpp:41
+#, kde-format
+msgid "Devin Lin"
+msgstr "ديفين لين"
+
+#: main.cpp:62
+#, kde-format
+msgid "Command to execute"
+msgstr "الأمر لتنفيذه"
+
+#: main.cpp:63
+#, kde-format
+msgid "Set the initial working directory to 'dir'"
+msgstr "عيّن دليل العمل الابتدائي إلى 'dir'"
+
+#: terminaltabmodel.cpp:68
+#, kde-format
+msgid "Tab %1"
+msgstr "اللسان %1"
