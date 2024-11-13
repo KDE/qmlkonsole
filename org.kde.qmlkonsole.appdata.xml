@@ -9,6 +9,7 @@
   <project_license>GPL-2.0-or-later</project_license>
   <content_rating type="oars-1.1"/>
   <name>QMLKonsole</name>
+  <name xml:lang="ar">كيو إم إل كونسول</name>
   <name xml:lang="ast">QMLKonsole</name>
   <name xml:lang="ca">QMLKonsole</name>
   <name xml:lang="ca-valencia">QMLKonsole</name>
@@ -48,6 +49,7 @@
   <name xml:lang="zh-CN">QMLKonsole</name>
   <name xml:lang="zh-TW">QMLKonsole</name>
   <summary>Mobile terminal application</summary>
+  <summary xml:lang="ar">تطبيق طرفية للمحمول</summary>
   <summary xml:lang="ca">Aplicació de terminal mòbil</summary>
   <summary xml:lang="ca-valencia">Aplicació de terminal mòbil</summary>
   <summary xml:lang="cs">Mobilní terminálová aplikace</summary>
@@ -89,6 +91,7 @@
   <url type="donation">https://kde.org/community/donations</url>
   <url type="bugtracker">https://bugs.kde.org/enter_bug.cgi?product=QMLKonsole</url>
   <developer_name>KDE Community</developer_name>
+  <developer_name xml:lang="ar">مجتمع كِيدِي</developer_name>
   <developer_name xml:lang="ast">La comunidá KDE</developer_name>
   <developer_name xml:lang="ca">La comunitat KDE</developer_name>
   <developer_name xml:lang="ca-valencia">La comunitat KDE</developer_name>
@@ -129,6 +132,7 @@
   <developer_name xml:lang="zh-TW">KDE 社群</developer_name>
   <description>
     <p>Terminal application offering additional keyboard buttons useful on touch devices.</p>
+    <p xml:lang="ar">تطبيق طرفيّة يوفر أزرار لوحة مفاتيح إضافية من أجل أجهزة اللمس.</p>
     <p xml:lang="ca">Aplicació de terminal que ofereix botons de teclat addicionals, el qual és útil en els dispositius tàctils.</p>
     <p xml:lang="ca-valencia">Aplicació de terminal que oferix botons de teclat addicionals, el qual és útil en els dispositius tàctils.</p>
     <p xml:lang="de">Terminal-Anwendung mit zusätzlichen Tasten-Knöpfen für Touch-Geräte.</p>
@@ -168,6 +172,7 @@
   <screenshots>
     <screenshot type="default">
       <caption>QMLKonsole</caption>
+      <caption xml:lang="ar">كيو إم إل كونسول</caption>
       <caption xml:lang="ast">QMLKonsole</caption>
       <caption xml:lang="ca">QMLKonsole</caption>
       <caption xml:lang="ca-valencia">QMLKonsole</caption>
@@ -210,6 +215,7 @@
     </screenshot>
     <screenshot type="default">
       <caption>Settings</caption>
+      <caption xml:lang="ar">الإعدادات</caption>
       <caption xml:lang="ast">Configuración</caption>
       <caption xml:lang="ca">Configuració</caption>
       <caption xml:lang="ca-valencia">Configuració</caption>
