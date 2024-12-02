@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qmlkonsole\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-06-29 00:41+0000\n"
+"POT-Creation-Date: 2024-12-02 00:44+0000\n"
 "PO-Revision-Date: 2024-06-29 21:30+0200\n"
 "Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
@@ -40,23 +40,18 @@ msgctxt "@title:window"
 msgid "Saved Commands"
 msgstr "Órdenes guardadas"
 
-#: contents/ui/SavedCommandsDialog.qml:26
+#: contents/ui/SavedCommandsDialog.qml:25
 #, kde-format
 msgid "Configure"
 msgstr "Configurar"
 
-#: contents/ui/SavedCommandsDialog.qml:34 contents/ui/TerminalPage.qml:400
-#, kde-format
-msgid "Close"
-msgstr "Cerrar"
-
-#: contents/ui/SavedCommandsDialog.qml:53
+#: contents/ui/SavedCommandsDialog.qml:50
 #: contents/ui/SavedCommandsSettings.qml:51
 #, kde-format
 msgid "No saved commands"
 msgstr "No hay órdenes guardadas"
 
-#: contents/ui/SavedCommandsDialog.qml:54
+#: contents/ui/SavedCommandsDialog.qml:51
 #: contents/ui/SavedCommandsSettings.qml:52
 #, kde-format
 msgid "Save commands to quickly run them without typing them out."
@@ -269,6 +264,11 @@ msgstr ""
 msgctxt "@title:window"
 msgid "Select Tab"
 msgstr "Seleccionar pestaña"
+
+#: contents/ui/TerminalPage.qml:400
+#, kde-format
+msgid "Close"
+msgstr "Cerrar"
 
 #: contents/ui/TerminalPage.qml:413
 #, kde-format

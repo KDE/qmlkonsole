@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qmlkonsole\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-06-29 00:41+0000\n"
+"POT-Creation-Date: 2024-12-02 00:44+0000\n"
 "PO-Revision-Date: 2022-12-24 07:23+0000\n"
 "Last-Translator: José Nuno Coelho Pires <zepires@gmail.com>\n"
 "Language-Team: Portuguese <kde-i18n-pt@kde.org>\n"
@@ -34,23 +34,18 @@ msgctxt "@title:window"
 msgid "Saved Commands"
 msgstr "Comandos Gravados"
 
-#: contents/ui/SavedCommandsDialog.qml:26
+#: contents/ui/SavedCommandsDialog.qml:25
 #, kde-format
 msgid "Configure"
 msgstr "Configurar"
 
-#: contents/ui/SavedCommandsDialog.qml:34 contents/ui/TerminalPage.qml:400
-#, kde-format
-msgid "Close"
-msgstr "Fechar"
-
-#: contents/ui/SavedCommandsDialog.qml:53
+#: contents/ui/SavedCommandsDialog.qml:50
 #: contents/ui/SavedCommandsSettings.qml:51
 #, kde-format
 msgid "No saved commands"
 msgstr "Sem comandos gravados"
 
-#: contents/ui/SavedCommandsDialog.qml:54
+#: contents/ui/SavedCommandsDialog.qml:51
 #: contents/ui/SavedCommandsSettings.qml:52
 #, kde-format
 msgid "Save commands to quickly run them without typing them out."
@@ -271,6 +266,11 @@ msgstr ""
 msgctxt "@title:window"
 msgid "Select Tab"
 msgstr "Seleccionar a Página"
+
+#: contents/ui/TerminalPage.qml:400
+#, kde-format
+msgid "Close"
+msgstr "Fechar"
 
 #: contents/ui/TerminalPage.qml:413
 #, kde-format

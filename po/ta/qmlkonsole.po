@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qmlkonsole\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-06-29 00:41+0000\n"
+"POT-Creation-Date: 2024-12-02 00:44+0000\n"
 "PO-Revision-Date: 2024-06-30 13:16+0530\n"
 "Last-Translator: Kishore G <kishore96@gmail.com>\n"
 "Language-Team: Tamil <kde-i18n-doc@kde.org>\n"
@@ -38,23 +38,18 @@ msgctxt "@title:window"
 msgid "Saved Commands"
 msgstr "சேமித்துள்ள கட்டளைகள்"
 
-#: contents/ui/SavedCommandsDialog.qml:26
+#: contents/ui/SavedCommandsDialog.qml:25
 #, kde-format
 msgid "Configure"
 msgstr "அமை"
 
-#: contents/ui/SavedCommandsDialog.qml:34 contents/ui/TerminalPage.qml:400
-#, kde-format
-msgid "Close"
-msgstr "மூடு"
-
-#: contents/ui/SavedCommandsDialog.qml:53
+#: contents/ui/SavedCommandsDialog.qml:50
 #: contents/ui/SavedCommandsSettings.qml:51
 #, kde-format
 msgid "No saved commands"
 msgstr "எக்கட்டளையும் சேமிக்கப்படவில்லை"
 
-#: contents/ui/SavedCommandsDialog.qml:54
+#: contents/ui/SavedCommandsDialog.qml:51
 #: contents/ui/SavedCommandsSettings.qml:52
 #, kde-format
 msgid "Save commands to quickly run them without typing them out."
@@ -264,6 +259,11 @@ msgstr "இச்சாளரத்தில் ஓர் பணி ஓடிக
 msgctxt "@title:window"
 msgid "Select Tab"
 msgstr "கீற்றை தேர்வு செய்வது"
+
+#: contents/ui/TerminalPage.qml:400
+#, kde-format
+msgid "Close"
+msgstr "மூடு"
 
 #: contents/ui/TerminalPage.qml:413
 #, kde-format

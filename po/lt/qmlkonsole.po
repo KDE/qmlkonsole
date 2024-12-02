@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qmlkonsole\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-06-29 00:41+0000\n"
+"POT-Creation-Date: 2024-12-02 00:44+0000\n"
 "PO-Revision-Date: 2020-08-13 02:28+0200\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -39,23 +39,18 @@ msgctxt "@title:window"
 msgid "Saved Commands"
 msgstr ""
 
-#: contents/ui/SavedCommandsDialog.qml:26
+#: contents/ui/SavedCommandsDialog.qml:25
 #, kde-format
 msgid "Configure"
 msgstr ""
 
-#: contents/ui/SavedCommandsDialog.qml:34 contents/ui/TerminalPage.qml:400
-#, kde-format
-msgid "Close"
-msgstr ""
-
-#: contents/ui/SavedCommandsDialog.qml:53
+#: contents/ui/SavedCommandsDialog.qml:50
 #: contents/ui/SavedCommandsSettings.qml:51
 #, kde-format
 msgid "No saved commands"
 msgstr ""
 
-#: contents/ui/SavedCommandsDialog.qml:54
+#: contents/ui/SavedCommandsDialog.qml:51
 #: contents/ui/SavedCommandsSettings.qml:52
 #, kde-format
 msgid "Save commands to quickly run them without typing them out."
@@ -263,6 +258,11 @@ msgstr ""
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Tab"
+msgstr ""
+
+#: contents/ui/TerminalPage.qml:400
+#, kde-format
+msgid "Close"
 msgstr ""
 
 #: contents/ui/TerminalPage.qml:413

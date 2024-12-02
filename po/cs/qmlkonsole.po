@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qmlkonsole\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-06-29 00:41+0000\n"
+"POT-Creation-Date: 2024-12-02 00:44+0000\n"
 "PO-Revision-Date: 2024-07-03 10:44+0200\n"
 "Last-Translator: Vit Pelcak <vit@pelcak.org>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
@@ -38,23 +38,18 @@ msgctxt "@title:window"
 msgid "Saved Commands"
 msgstr "Uložené příkazy"
 
-#: contents/ui/SavedCommandsDialog.qml:26
+#: contents/ui/SavedCommandsDialog.qml:25
 #, kde-format
 msgid "Configure"
 msgstr "Nastavit"
 
-#: contents/ui/SavedCommandsDialog.qml:34 contents/ui/TerminalPage.qml:400
-#, kde-format
-msgid "Close"
-msgstr "Zavřít"
-
-#: contents/ui/SavedCommandsDialog.qml:53
+#: contents/ui/SavedCommandsDialog.qml:50
 #: contents/ui/SavedCommandsSettings.qml:51
 #, kde-format
 msgid "No saved commands"
 msgstr "Žádné uložené příkazy"
 
-#: contents/ui/SavedCommandsDialog.qml:54
+#: contents/ui/SavedCommandsDialog.qml:51
 #: contents/ui/SavedCommandsSettings.qml:52
 #, kde-format
 msgid "Save commands to quickly run them without typing them out."
@@ -263,6 +258,11 @@ msgstr "V tomto okně právě běží nějaký proces. Opravdu si přejete jej z
 msgctxt "@title:window"
 msgid "Select Tab"
 msgstr "Vyberte kartu"
+
+#: contents/ui/TerminalPage.qml:400
+#, kde-format
+msgid "Close"
+msgstr "Zavřít"
 
 #: contents/ui/TerminalPage.qml:413
 #, kde-format

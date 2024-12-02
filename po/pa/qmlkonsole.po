@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qmlkonsole\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-06-29 00:41+0000\n"
+"POT-Creation-Date: 2024-12-02 00:44+0000\n"
 "PO-Revision-Date: 2024-01-01 08:29-0600\n"
 "Last-Translator: A S Alam <aalam@punlinux.org>\n"
 "Language-Team: Punjabi <kde-i18n-doc@kde.org>\n"
@@ -38,23 +38,18 @@ msgctxt "@title:window"
 msgid "Saved Commands"
 msgstr "ਸੰਭਾਲੀਆਂ ਹੋਈਆਂ ਕਮਾਡਾਂ"
 
-#: contents/ui/SavedCommandsDialog.qml:26
+#: contents/ui/SavedCommandsDialog.qml:25
 #, kde-format
 msgid "Configure"
 msgstr "ਸੰਰਚਨਾ"
 
-#: contents/ui/SavedCommandsDialog.qml:34 contents/ui/TerminalPage.qml:400
-#, kde-format
-msgid "Close"
-msgstr "ਬੰਦ ਕਰੋ"
-
-#: contents/ui/SavedCommandsDialog.qml:53
+#: contents/ui/SavedCommandsDialog.qml:50
 #: contents/ui/SavedCommandsSettings.qml:51
 #, kde-format
 msgid "No saved commands"
 msgstr "ਕੋਈ ਕਮਾਂਡ ਨਹੀਂ ਸੰਭਾਲੀ"
 
-#: contents/ui/SavedCommandsDialog.qml:54
+#: contents/ui/SavedCommandsDialog.qml:51
 #: contents/ui/SavedCommandsSettings.qml:52
 #, kde-format
 msgid "Save commands to quickly run them without typing them out."
@@ -271,6 +266,11 @@ msgstr "ਇਸ ਟੈਬ ਵਿੱਚ ਹਾਲੇ ਇੱਕ ਕਾਰਵਾਈ 
 msgctxt "@title:window"
 msgid "Select Tab"
 msgstr "ਟੈਬ ਚੁਣੋ"
+
+#: contents/ui/TerminalPage.qml:400
+#, kde-format
+msgid "Close"
+msgstr "ਬੰਦ ਕਰੋ"
 
 #: contents/ui/TerminalPage.qml:413
 #, kde-format

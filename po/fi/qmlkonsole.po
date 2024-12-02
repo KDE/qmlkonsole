@@ -1,13 +1,13 @@
-# Copyright (C) YEAR This file is copyright:
+# Copyright (C) 2024 This file is copyright:
 # This file is distributed under the same license as the qmlkonsole package.
-# Tommi Nieminen <translator@legisign.org>, 2022, 2023.
+# SPDX-FileCopyrightText: 2022, 2023, 2024 Tommi Nieminen <translator@legisign.org>
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: qmlkonsole\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-06-29 00:41+0000\n"
-"PO-Revision-Date: 2023-05-02 18:24+0300\n"
+"POT-Creation-Date: 2024-12-02 00:44+0000\n"
+"PO-Revision-Date: 2024-10-27 10:06+0200\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
 "Language: fi\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 23.04.0\n"
+"X-Generator: Lokalize 23.08.5\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -38,23 +38,18 @@ msgctxt "@title:window"
 msgid "Saved Commands"
 msgstr "Tallennetut komennot"
 
-#: contents/ui/SavedCommandsDialog.qml:26
+#: contents/ui/SavedCommandsDialog.qml:25
 #, kde-format
 msgid "Configure"
 msgstr "Asetukset"
 
-#: contents/ui/SavedCommandsDialog.qml:34 contents/ui/TerminalPage.qml:400
-#, kde-format
-msgid "Close"
-msgstr "Sulje"
-
-#: contents/ui/SavedCommandsDialog.qml:53
+#: contents/ui/SavedCommandsDialog.qml:50
 #: contents/ui/SavedCommandsSettings.qml:51
 #, kde-format
 msgid "No saved commands"
 msgstr "Ei tallennettuja komentoja"
 
-#: contents/ui/SavedCommandsDialog.qml:54
+#: contents/ui/SavedCommandsDialog.qml:51
 #: contents/ui/SavedCommandsSettings.qml:52
 #, kde-format
 msgid "Save commands to quickly run them without typing them out."
@@ -75,7 +70,7 @@ msgstr "Lisää komento"
 #: contents/ui/SavedCommandsSettings.qml:30
 #, kde-format
 msgid "Edit"
-msgstr ""
+msgstr "Muokkaa"
 
 #: contents/ui/SavedCommandsSettings.qml:56
 #, kde-format
@@ -83,10 +78,9 @@ msgid "Add command"
 msgstr "Lisää komento"
 
 #: contents/ui/SavedCommandsSettings.qml:87
-#, fuzzy, kde-format
-#| msgid "Action %1 removed"
+#, kde-format
 msgid "Command %1 removed"
-msgstr "Toiminto %1 poistettu"
+msgstr "Komento %1 poistettu"
 
 #: contents/ui/SettingsComponent.qml:35
 #, kde-format
@@ -241,38 +235,35 @@ msgid ""
 msgstr "Välilehdessä on yhä prosessi käynnissä. Haluatko varmasti sulkea sen?"
 
 #: contents/ui/TerminalPage.qml:333
-#, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "Confirm closing %1"
+#, kde-format
 msgctxt "@title:window"
 msgid "Confirm closing window"
-msgstr "%1 – vahvista sulkeminen"
+msgstr "Vahvista ikkunan sulkeminen"
 
 #: contents/ui/TerminalPage.qml:346
-#, fuzzy, kde-format
-#| msgid ""
-#| "A process is currently running in this tab. Are you sure you want to "
-#| "close it?"
+#, kde-format
 msgid ""
 "There are processes currently running in this window. Are you sure you want "
 "to close it?"
-msgstr "Välilehdessä on yhä prosessi käynnissä. Haluatko varmasti sulkea sen?"
+msgstr "Ikkunassa on yhä prosesseja käynnissä. Haluatko varmasti sulkea sen?"
 
 #: contents/ui/TerminalPage.qml:347
-#, fuzzy, kde-format
-#| msgid ""
-#| "A process is currently running in this tab. Are you sure you want to "
-#| "close it?"
+#, kde-format
 msgid ""
 "A process is currently running in this window. Are you sure you want to "
 "close it?"
-msgstr "Välilehdessä on yhä prosessi käynnissä. Haluatko varmasti sulkea sen?"
+msgstr "Ikkunassa on yhä prosessi käynnissä. Haluatko varmasti sulkea sen?"
 
 #: contents/ui/TerminalPage.qml:354
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Tab"
 msgstr "Valitse välilehti"
+
+#: contents/ui/TerminalPage.qml:400
+#, kde-format
+msgid "Close"
+msgstr "Sulje"
 
 #: contents/ui/TerminalPage.qml:413
 #, kde-format
