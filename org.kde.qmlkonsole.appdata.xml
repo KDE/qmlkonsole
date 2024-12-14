@@ -40,6 +40,7 @@
   <name xml:lang="pt-BR">QMLKonsole</name>
   <name xml:lang="ro">QMLKonsole</name>
   <name xml:lang="ru">QMLKonsole</name>
+  <name xml:lang="sa">QMLKonsole</name>
   <name xml:lang="sk">QMLKonsole</name>
   <name xml:lang="sl">QMLKonsole</name>
   <name xml:lang="sv">QML-terminal</name>
@@ -79,6 +80,7 @@
   <summary xml:lang="pt-BR">Aplicativo de terminal móvel</summary>
   <summary xml:lang="ro">Aplicație mobilă de terminal</summary>
   <summary xml:lang="ru">Терминал для мобильных устройств</summary>
+  <summary xml:lang="sa">मोबाइल टर्मिनल अनुप्रयोग</summary>
   <summary xml:lang="sk">Mobilná terminálová aplikácia</summary>
   <summary xml:lang="sl">Aplikacija mobilnega terminala</summary>
   <summary xml:lang="sv">Mobilt terminalprogram</summary>
@@ -122,6 +124,7 @@
   <developer_name xml:lang="pt-BR">Comunidade KDE</developer_name>
   <developer_name xml:lang="ro">Comunitatea KDE</developer_name>
   <developer_name xml:lang="ru">Сообщество KDE</developer_name>
+  <developer_name xml:lang="sa">केडीई समुदाय</developer_name>
   <developer_name xml:lang="sk">KDE komunita</developer_name>
   <developer_name xml:lang="sl">Skupnost KDE</developer_name>
   <developer_name xml:lang="sv">KDE-gemenskapen</developer_name>
@@ -161,6 +164,7 @@
     <p xml:lang="pt-BR">Aplicativo de terminal que oferece botões do teclado adicionais e úteis em dispositivos de toque.</p>
     <p xml:lang="ro">Aplicație de terminal ce oferă butoane de tastatură suplimentare, utile pe dispozitivele tactile.</p>
     <p xml:lang="ru">Приложение терминала, предоставляющее дополнительные кнопки клавиатуры для сенсорных устройств.</p>
+    <p xml:lang="sa">स्पर्शयन्त्रेषु उपयोगिनो अतिरिक्तकीबोर्डबटनं प्रदातुं टर्मिनल् अनुप्रयोगः।</p>
     <p xml:lang="sl">Aplikacija terminala nudi dodatne tipke na tipkovnici, koristne pri napravah na dotik.</p>
     <p xml:lang="sv">Terminalprogram som erbjuder ytterligare tangentbordsknappar användbar på pekenheter.</p>
     <p xml:lang="tr">Dokunmatik aygıtlarda kullanışlı ek klavye düğmeleri sunan uçbirim uygulaması.</p>
@@ -203,6 +207,7 @@
       <caption xml:lang="pt-BR">QMLKonsole</caption>
       <caption xml:lang="ro">QMLKonsole</caption>
       <caption xml:lang="ru">QMLKonsole</caption>
+      <caption xml:lang="sa">QMLKonsole</caption>
       <caption xml:lang="sk">QMLKonsole</caption>
       <caption xml:lang="sl">QMLKonsole</caption>
       <caption xml:lang="sv">QML-terminal</caption>
@@ -241,6 +246,7 @@
       <caption xml:lang="pt">Configuração</caption>
       <caption xml:lang="pt-BR">Configurações</caption>
       <caption xml:lang="ru">Параметры</caption>
+      <caption xml:lang="sa">सेटिंग्स्</caption>
       <caption xml:lang="sl">Nastavitve</caption>
       <caption xml:lang="sv">Inställningar</caption>
       <caption xml:lang="tr">Ayarlar</caption>
