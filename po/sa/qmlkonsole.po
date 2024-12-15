@@ -19,12 +19,12 @@ msgstr ""
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr ""
+msgstr "भवतः नामानि"
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr ""
+msgstr "भवतः ईमेलपत्राणि"
 
 #: contents/ui/main.qml:15
 #, kde-format
@@ -109,7 +109,7 @@ msgstr "फॉन्ट परिवार"
 #, kde-format
 msgctxt "@title:window"
 msgid "Pick font"
-msgstr ""
+msgstr "फन्ट् चिनुत"
 
 #: contents/ui/SettingsComponent.qml:207
 #, kde-format
@@ -136,26 +136,26 @@ msgstr "सेटिंग्स्"
 #, kde-format
 msgctxt "Control Key (should match the key on the keyboard of the locale)"
 msgid "Ctrl"
-msgstr ""
+msgstr "Ctrl"
 
 #: contents/ui/TerminalKeyToolBar.qml:90
 #, kde-format
 msgctxt "Alt Key (should match the key on the keyboard of the locale)"
 msgid "Alt"
-msgstr ""
+msgstr "सर्वे"
 
 #: contents/ui/TerminalKeyToolBar.qml:106
 #, kde-format
 msgctxt "Escape key (should match the key on the keyboard of the locale)"
 msgid "Esc"
-msgstr ""
+msgstr "Esc"
 
 #: contents/ui/TerminalKeyToolBar.qml:113
 #, kde-format
 msgctxt ""
 "Tab character key (should match the key on the keyboard of the locale)"
 msgid "Tab"
-msgstr ""
+msgstr "टब"
 
 #: contents/ui/TerminalKeyToolBar.qml:163
 #, kde-format
@@ -166,7 +166,7 @@ msgstr "वर्चुअल कीबोर्ड टॉगल करें"
 #, kde-format
 msgctxt "@action:intoolbar"
 msgid "New Tab"
-msgstr ""
+msgstr "नवीन ट्याब्"
 
 #: contents/ui/TerminalPage.qml:159
 #, kde-format
@@ -223,7 +223,7 @@ msgstr "चिनोतु"
 #, kde-format
 msgctxt "@title:window"
 msgid "Confirm closing %1"
-msgstr ""
+msgstr "%1 समापनस्य पुष्टिं कुर्वन्तु"
 
 #: contents/ui/TerminalPage.qml:323
 #, kde-format
@@ -237,7 +237,7 @@ msgstr ""
 #, kde-format
 msgctxt "@title:window"
 msgid "Confirm closing window"
-msgstr ""
+msgstr "समापनविण्डो पुष्टिं कुर्वन्तु"
 
 #: contents/ui/TerminalPage.qml:346
 #, kde-format
@@ -261,7 +261,7 @@ msgstr ""
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Tab"
-msgstr ""
+msgstr "Tab इति चिनोतु"
 
 #: contents/ui/TerminalPage.qml:400
 #, kde-format
