@@ -51,6 +51,17 @@ QString ShellCommand::command() const
 
         return QStringLiteral("host-spawn %1").arg(shell);
     } else {
-        return qEnvironmentVariable("SHELL");
+        QString exec = qEnvironmentVariable("SHELL");
+
+        if (!exec.isEmpty()) {
+            return exec;
+        } else {
+            auto pw = getpwuid(getuid());
+            if (pw != nullptr) {
+                return QString::fromLocal8Bit(pw->pw_shell);
+            } else {
+                return QStringLiteral("bash");
+            }
+        }
     }
 }
