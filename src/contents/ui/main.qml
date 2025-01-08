@@ -32,6 +32,6 @@ Kirigami.ApplicationWindow {
 
     onClosing: {
         close.accepted = false;
-        pageStack.currentItem.closeWindow();
+        pageStack.get(0).closeWindow();
     }
 }
