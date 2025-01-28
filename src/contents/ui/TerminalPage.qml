@@ -383,15 +383,11 @@ Kirigami.Page {
                         Label {
                             text: model.name
                             Layout.fillWidth: true
-                        }
-
-                        RadioButton {
-                            Layout.alignment: Qt.AlignVCenter
-                            checked: tabSwipeView.currentIndex == index
                             onClicked: {
                                 root.switchToTab(index);
                                 selectTabDialog.close();
                             }
+
                         }
 
                         ToolButton {
