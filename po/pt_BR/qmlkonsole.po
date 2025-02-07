@@ -1,22 +1,23 @@
-# Copyright (C) YEAR This file is copyright:
+# Copyright (C) 2025 This file is copyright:
 # This file is distributed under the same license as the qmlkonsole package.
 #
 # Luiz Fernando Ranghetti <elchevive@opensuse.org>, 2020, 2021, 2022, 2023, 2024.
 # Geraldo Simiao <geraldosimiao@fedoraproject.org>, 2023.
+# SPDX-FileCopyrightText: 2025 Guilherme Marçal Silva <guimarcalsilva@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: qmlkonsole\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-12-02 00:44+0000\n"
-"PO-Revision-Date: 2024-01-11 20:45-0300\n"
-"Last-Translator: Luiz Fernando Ranghetti <elchevive@opensuse.org>\n"
+"PO-Revision-Date: 2025-02-05 23:55-0300\n"
+"Last-Translator: Guilherme Marçal Silva <guimarcalsilva@gmail.com>\n"
 "Language-Team: Brazilian Portuguese <kde-i18n-pt_BR@kde.org>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 22.12.3\n"
+"X-Generator: Lokalize 24.12.1\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -237,36 +238,28 @@ msgstr ""
 "fechá-la?"
 
 #: contents/ui/TerminalPage.qml:333
-#, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "Confirm closing %1"
+#, kde-format
 msgctxt "@title:window"
 msgid "Confirm closing window"
-msgstr "Confirmar fechamento de %1"
+msgstr "Confirmar fechamento da janela"
 
 #: contents/ui/TerminalPage.qml:346
-#, fuzzy, kde-format
-#| msgid ""
-#| "A process is currently running in this tab. Are you sure you want to "
-#| "close it?"
+#, kde-format
 msgid ""
 "There are processes currently running in this window. Are you sure you want "
 "to close it?"
 msgstr ""
-"Um processo está atualmente em execução nesta aba. Tem certeza de que deseja "
+"Há processos atualmente em execução nesta janela. Tem certeza de que deseja "
 "fechá-la?"
 
 #: contents/ui/TerminalPage.qml:347
-#, fuzzy, kde-format
-#| msgid ""
-#| "A process is currently running in this tab. Are you sure you want to "
-#| "close it?"
+#, kde-format
 msgid ""
 "A process is currently running in this window. Are you sure you want to "
 "close it?"
 msgstr ""
-"Um processo está atualmente em execução nesta aba. Tem certeza de que deseja "
-"fechá-la?"
+"Um processo está atualmente em execução nesta janela. Tem certeza de que "
+"deseja fechá-la?"
 
 #: contents/ui/TerminalPage.qml:354
 #, kde-format
