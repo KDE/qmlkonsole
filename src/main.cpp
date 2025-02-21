@@ -61,6 +61,22 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
         QCommandLineParser parser;
         parser.addOption(QCommandLineOption(QStringLiteral("e"), i18n("Command to execute"), QStringLiteral("command")));
         parser.addOption(QCommandLineOption(QStringLiteral("workdir"), i18n("Set the initial working directory to 'dir'"), QStringLiteral("dir")));
+
+        // Add a no-op compatibility option to make Konsole compatible with
+        // Debian's policy on X terminal emulators.
+        // -T is technically meant to set a title, that is not really meaningful
+        // for Konsole as we have multiple user-facing options controlling
+        // the title and overriding whatever is set elsewhere.
+        // https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=532029
+        // https://www.debian.org/doc/debian-policy/ch-customized-programs.html#s11.8.3
+        // --title is used by the VirtualBox Guest Additions installer
+        auto titleOption = QCommandLineOption(
+            {QStringLiteral("T"), QStringLiteral("title")},
+            QStringLiteral("Debian policy compatibility, not used"),
+            QStringLiteral("value"));
+        titleOption.setFlags(QCommandLineOption::HiddenFromHelp);
+        parser.addOption(titleOption);
+
         parser.addVersionOption();
         parser.addHelpOption();
         parser.process(app);
