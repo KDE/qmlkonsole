@@ -22,12 +22,12 @@ msgstr ""
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr "Frank Steinmetzger"
+msgstr "Deutsches KDE-Übersetzungsteam"
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr "dev-kde@felsenfleischer.de"
+msgstr "kde-i18n-de@kde.org"
 
 #: contents/ui/main.qml:15
 #, kde-format
