@@ -561,7 +561,7 @@ Kirigami.Page {
     }
 
     footer: TerminalKeyToolBar {
-        visible: Kirigami.Settings.isMobile || Kirigami.Settings.tabletMode
+        visible: Kirigami.Settings.isMobile || Kirigami.Settings.tabletMode || TerminalSettings.forceModifierButtons
         terminal: root.currentTerminal
     }
 }

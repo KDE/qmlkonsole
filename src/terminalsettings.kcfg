@@ -28,5 +28,8 @@
         <entry key="blurWindow" type="bool">
             <default>false</default>
         </entry>
+        <entry key="forceModifierButtons" type="bool">
+            <default>false</default>
+        </entry>
     </group>
 </kcfg>

@@ -276,6 +276,19 @@ ColumnLayout {
                 Util.setBlur(applicationWindow().pageStack, TerminalSettings.blurWindow);
             }
         }
+
+        MobileForm.FormDelegateSeparator { below: forceModifierButtons }
+
+        MobileForm.FormSwitchDelegate {
+            id: forceModifierButtons
+            text: i18n("Always Show Keyboard Modifier Buttons")
+            checked: TerminalSettings.forceModifierButtons
+
+            onCheckedChanged: {
+                TerminalSettings.forceModifierButtons = checked;
+                TerminalSettings.save();
+            }
+        }
     }
 
     Item { Layout.fillHeight: true }
