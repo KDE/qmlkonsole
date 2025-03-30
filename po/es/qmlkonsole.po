@@ -1,15 +1,15 @@
 # Spanish translations for qmlkonsole.po package.
-# Copyright (C) 2020 This file is copyright:
+# Copyright (C) 2020-2025 This file is copyright:
 # This file is distributed under the same license as the qmlkonsole package.
 #
 # Automatically generated, 2020.
-# SPDX-FileCopyrightText: 2020, 2021, 2022, 2023, 2024 Eloy Cuadra <ecuadra@eloihr.net>
+# SPDX-FileCopyrightText: 2020, 2021, 2022, 2023, 2024, 2025 Eloy Cuadra <ecuadra@eloihr.net>
 msgid ""
 msgstr ""
 "Project-Id-Version: qmlkonsole\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-03-29 00:44+0000\n"
-"PO-Revision-Date: 2024-06-29 21:30+0200\n"
+"PO-Revision-Date: 2025-03-30 01:40+0100\n"
 "Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
 "Language: es\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 24.05.1\n"
+"X-Generator: Lokalize 24.12.3\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -133,7 +133,7 @@ msgstr "Desenfocar el fondo"
 #: contents/ui/SettingsComponent.qml:284
 #, kde-format
 msgid "Always Show Keyboard Modifier Buttons"
-msgstr ""
+msgstr "Mostrar siempre los botones modificadores del teclado"
 
 #: contents/ui/SettingsDialog.qml:17 contents/ui/SettingsPage.qml:16
 #: contents/ui/TerminalPage.qml:249
@@ -314,27 +314,3 @@ msgstr "Define el directorio de trabajo inicial a «dir»"
 #, kde-format
 msgid "Tab %1"
 msgstr "Pestaña %1"
-
-#~ msgid "%1%"
-#~ msgstr "%1%"
-
-#, fuzzy
-#~| msgid "Close"
-#~ msgctxt "@action:button"
-#~ msgid "Close"
-#~ msgstr "Cerrar"
-
-#~ msgid "More Info:"
-#~ msgstr "Más información:"
-
-#~ msgid "Quick Actions"
-#~ msgstr "Acciones rápidas"
-
-#~ msgid "Quick Action Settings"
-#~ msgstr "Preferencias de acción rápida"
-
-#~ msgid "Add Actions"
-#~ msgstr "Añadir acciones"
-
-#~ msgid "Save"
-#~ msgstr "Guardar"
