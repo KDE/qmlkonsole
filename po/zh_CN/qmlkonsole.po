@@ -130,7 +130,7 @@ msgstr "背景模糊"
 #: contents/ui/SettingsComponent.qml:284
 #, kde-format
 msgid "Always Show Keyboard Modifier Buttons"
-msgstr ""
+msgstr "总是显示键盘修饰键按钮"
 
 #: contents/ui/SettingsDialog.qml:17 contents/ui/SettingsPage.qml:16
 #: contents/ui/TerminalPage.qml:249
