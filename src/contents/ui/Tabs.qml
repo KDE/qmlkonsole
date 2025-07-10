@@ -130,11 +130,24 @@ ListView {
                 }
 
                 ToolButton {
+                    id: closeButton
                     Layout.alignment: Qt.AlignRight | Qt.AlignVCenter
-                    Layout.preferredWidth: Kirigami.Units.iconSizes.small
+                    Layout.preferredWidth: Kirigami.Units.iconSizes.smallMedium
                     Layout.preferredHeight: width
                     icon.name: "tab-close"
                     onClicked: root.closeTabRequested(model.index)
+
+                    topPadding: 0
+                    bottomPadding: 0
+                    leftPadding: 0
+                    rightPadding: 0
+                    background: Item {}
+                    contentItem: Kirigami.Icon {
+                        source: closeButton.icon.name
+                        implicitHeight: Kirigami.Units.iconSizes.smallMedium
+                        implicitWidth: Kirigami.Units.iconSizes.smallMedium
+                        opacity: Kirigami.Settings.tabletMode ? 1 : (closeButton.hovered ? 0.5 : 1)
+                    }
 
                     opacity: Kirigami.Settings.tabletMode ? 1 : (control.hovered ? 1 : 0);
                     Behavior on opacity {
