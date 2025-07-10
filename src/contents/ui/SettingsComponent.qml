@@ -20,17 +20,6 @@ ColumnLayout {
 
     spacing: 0
 
-    // HACK: dialog switching requires some time between closing and opening
-    Timer {
-        id: dialogTimer
-        interval: 1
-        property var dialog
-        onTriggered: {
-            root.dialog.close();
-            dialog.open();
-        }
-    }
-
     MobileForm.FormHeader {
         title: i18n("General")
     }
@@ -65,22 +54,6 @@ ColumnLayout {
             displayMode: MobileForm.FormComboBoxDelegate.Dialog
             Component.onCompleted: currentIndex = indexOfValue(TerminalSettings.colorScheme)
             model: terminal.availableColorSchemes
-
-            onClicked: {
-                if (root.dialog && displayMode === MobileForm.FormComboBoxDelegate.Dialog) {
-                    dialogTimer.dialog = colorSchemeDropdown.dialog;
-                    dialogTimer.restart();
-                }
-            }
-
-            Connections {
-                target: colorSchemeDropdown.dialog
-                function onClosed() {
-                    if (root.dialog) {
-                        root.dialog.open();
-                    }
-                }
-            }
 
             onCurrentValueChanged: {
                 TerminalSettings.colorScheme = currentValue;
@@ -142,6 +115,9 @@ ColumnLayout {
                     id: fontFamilyPicker
                     title: i18nc("@title:window", "Pick font")
 
+                    preferredWidth: Kirigami.Units.gridUnit * 18
+                    preferredHeight: Kirigami.Units.gridUnit * 24
+
                     onClosed: {
                         if (root.dialog) {
                             root.dialog.open();
@@ -155,9 +131,6 @@ ColumnLayout {
                     }
 
                     ListView {
-                        implicitWidth: Kirigami.Units.gridUnit * 18
-                        implicitHeight: Kirigami.Units.gridUnit * 24
-
                         reuseItems: true
                         model: FontListSearchModel
                         currentIndex: -1
