@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qmlkonsole\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-03-29 00:44+0000\n"
+"POT-Creation-Date: 2025-07-11 02:38+0000\n"
 "PO-Revision-Date: 2024-07-03 10:44+0200\n"
 "Last-Translator: Vit Pelcak <vit@pelcak.org>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
@@ -81,53 +81,53 @@ msgstr "Přidat příkaz"
 msgid "Command %1 removed"
 msgstr "Příkaz %1 byl odstraněn"
 
-#: contents/ui/SettingsComponent.qml:35
+#: contents/ui/SettingsComponent.qml:24
 #, kde-format
 msgid "General"
 msgstr "Obecné"
 
-#: contents/ui/SettingsComponent.qml:44
+#: contents/ui/SettingsComponent.qml:33
 #, kde-format
 msgid "About"
 msgstr "O aplikaci"
 
-#: contents/ui/SettingsComponent.qml:55
+#: contents/ui/SettingsComponent.qml:44
 #, kde-format
 msgid "Appearance"
 msgstr "Vzhled"
 
-#: contents/ui/SettingsComponent.qml:64
+#: contents/ui/SettingsComponent.qml:53
 #, kde-format
 msgid "Color scheme"
 msgstr "Barevné schéma"
 
-#: contents/ui/SettingsComponent.qml:96 contents/ui/SettingsComponent.qml:110
+#: contents/ui/SettingsComponent.qml:69 contents/ui/SettingsComponent.qml:83
 #, kde-format
 msgid "Font Family"
 msgstr "Rodina písma"
 
-#: contents/ui/SettingsComponent.qml:143
+#: contents/ui/SettingsComponent.qml:116
 #, kde-format
 msgctxt "@title:window"
 msgid "Pick font"
 msgstr "Vyberte písmo"
 
-#: contents/ui/SettingsComponent.qml:207
+#: contents/ui/SettingsComponent.qml:180
 #, kde-format
 msgid "Font Size"
 msgstr "Velikost písma"
 
-#: contents/ui/SettingsComponent.qml:232
+#: contents/ui/SettingsComponent.qml:205
 #, kde-format
 msgid "Window Transparency"
 msgstr "Průhlednost okna"
 
-#: contents/ui/SettingsComponent.qml:270
+#: contents/ui/SettingsComponent.qml:243
 #, kde-format
 msgid "Blur Background"
 msgstr "Rozmazat pozadí"
 
-#: contents/ui/SettingsComponent.qml:284
+#: contents/ui/SettingsComponent.qml:257
 #, kde-format
 msgid "Always Show Keyboard Modifier Buttons"
 msgstr ""

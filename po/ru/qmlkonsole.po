@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qmlkonsole\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-03-29 00:44+0000\n"
+"POT-Creation-Date: 2025-07-11 02:38+0000\n"
 "PO-Revision-Date: 2025-06-30 15:24+0300\n"
 "Last-Translator: Alexander Yavorsky <kekcuha@gmail.com>\n"
 "Language-Team: Russian <kde-russian@lists.kde.ru>\n"
@@ -84,53 +84,53 @@ msgstr "Добавить команду"
 msgid "Command %1 removed"
 msgstr "Команда %1 удалена"
 
-#: contents/ui/SettingsComponent.qml:35
+#: contents/ui/SettingsComponent.qml:24
 #, kde-format
 msgid "General"
 msgstr "Общие"
 
-#: contents/ui/SettingsComponent.qml:44
+#: contents/ui/SettingsComponent.qml:33
 #, kde-format
 msgid "About"
 msgstr "О программе"
 
-#: contents/ui/SettingsComponent.qml:55
+#: contents/ui/SettingsComponent.qml:44
 #, kde-format
 msgid "Appearance"
 msgstr "Внешний вид"
 
-#: contents/ui/SettingsComponent.qml:64
+#: contents/ui/SettingsComponent.qml:53
 #, kde-format
 msgid "Color scheme"
 msgstr "Цветовая схема"
 
-#: contents/ui/SettingsComponent.qml:96 contents/ui/SettingsComponent.qml:110
+#: contents/ui/SettingsComponent.qml:69 contents/ui/SettingsComponent.qml:83
 #, kde-format
 msgid "Font Family"
 msgstr "Гарнитура шрифта"
 
-#: contents/ui/SettingsComponent.qml:143
+#: contents/ui/SettingsComponent.qml:116
 #, kde-format
 msgctxt "@title:window"
 msgid "Pick font"
 msgstr "Выбор шрифта"
 
-#: contents/ui/SettingsComponent.qml:207
+#: contents/ui/SettingsComponent.qml:180
 #, kde-format
 msgid "Font Size"
 msgstr "Размер шрифта"
 
-#: contents/ui/SettingsComponent.qml:232
+#: contents/ui/SettingsComponent.qml:205
 #, kde-format
 msgid "Window Transparency"
 msgstr "Прозрачность окна"
 
-#: contents/ui/SettingsComponent.qml:270
+#: contents/ui/SettingsComponent.qml:243
 #, kde-format
 msgid "Blur Background"
 msgstr "Размытие фона"
 
-#: contents/ui/SettingsComponent.qml:284
+#: contents/ui/SettingsComponent.qml:257
 #, kde-format
 msgid "Always Show Keyboard Modifier Buttons"
 msgstr "Всегда показывать клавиши-модификаторы"

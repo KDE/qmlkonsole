@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qmlkonsole\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-03-29 00:44+0000\n"
+"POT-Creation-Date: 2025-07-11 02:38+0000\n"
 "PO-Revision-Date: 2025-03-29 11:24+0100\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
@@ -82,53 +82,53 @@ msgstr "Dodaj ukaz"
 msgid "Command %1 removed"
 msgstr "Ukaz %1 odstranjen"
 
-#: contents/ui/SettingsComponent.qml:35
+#: contents/ui/SettingsComponent.qml:24
 #, kde-format
 msgid "General"
 msgstr "Splošno"
 
-#: contents/ui/SettingsComponent.qml:44
+#: contents/ui/SettingsComponent.qml:33
 #, kde-format
 msgid "About"
 msgstr "O programu"
 
-#: contents/ui/SettingsComponent.qml:55
+#: contents/ui/SettingsComponent.qml:44
 #, kde-format
 msgid "Appearance"
 msgstr "Videz"
 
-#: contents/ui/SettingsComponent.qml:64
+#: contents/ui/SettingsComponent.qml:53
 #, kde-format
 msgid "Color scheme"
 msgstr "Barvna shema"
 
-#: contents/ui/SettingsComponent.qml:96 contents/ui/SettingsComponent.qml:110
+#: contents/ui/SettingsComponent.qml:69 contents/ui/SettingsComponent.qml:83
 #, kde-format
 msgid "Font Family"
 msgstr "Družina pisav"
 
-#: contents/ui/SettingsComponent.qml:143
+#: contents/ui/SettingsComponent.qml:116
 #, kde-format
 msgctxt "@title:window"
 msgid "Pick font"
 msgstr "Poberi pisavo"
 
-#: contents/ui/SettingsComponent.qml:207
+#: contents/ui/SettingsComponent.qml:180
 #, kde-format
 msgid "Font Size"
 msgstr "Velikost pisave"
 
-#: contents/ui/SettingsComponent.qml:232
+#: contents/ui/SettingsComponent.qml:205
 #, kde-format
 msgid "Window Transparency"
 msgstr "Prosojnost okna"
 
-#: contents/ui/SettingsComponent.qml:270
+#: contents/ui/SettingsComponent.qml:243
 #, kde-format
 msgid "Blur Background"
 msgstr "Zamegli ozadje"
 
-#: contents/ui/SettingsComponent.qml:284
+#: contents/ui/SettingsComponent.qml:257
 #, kde-format
 msgid "Always Show Keyboard Modifier Buttons"
 msgstr "Vedno prikazuj gumbe za spreminjanje tipkovnice"
