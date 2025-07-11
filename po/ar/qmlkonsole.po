@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qmlkonsole\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-03-29 00:44+0000\n"
+"POT-Creation-Date: 2025-07-11 00:45+0000\n"
 "PO-Revision-Date: 2025-04-05 12:09+0400\n"
 "Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
 "Language-Team: ar\n"
@@ -82,53 +82,53 @@ msgstr "أضِف أمرًا"
 msgid "Command %1 removed"
 msgstr "أُزيل الأمر %1"
 
-#: contents/ui/SettingsComponent.qml:35
+#: contents/ui/SettingsComponent.qml:24
 #, kde-format
 msgid "General"
 msgstr "عام"
 
-#: contents/ui/SettingsComponent.qml:44
+#: contents/ui/SettingsComponent.qml:33
 #, kde-format
 msgid "About"
 msgstr "عَنْ"
 
-#: contents/ui/SettingsComponent.qml:55
+#: contents/ui/SettingsComponent.qml:44
 #, kde-format
 msgid "Appearance"
 msgstr "المظهر"
 
-#: contents/ui/SettingsComponent.qml:64
+#: contents/ui/SettingsComponent.qml:53
 #, kde-format
 msgid "Color scheme"
 msgstr "مخطّط الألوان"
 
-#: contents/ui/SettingsComponent.qml:96 contents/ui/SettingsComponent.qml:110
+#: contents/ui/SettingsComponent.qml:69 contents/ui/SettingsComponent.qml:83
 #, kde-format
 msgid "Font Family"
 msgstr "عائلة الخط"
 
-#: contents/ui/SettingsComponent.qml:143
+#: contents/ui/SettingsComponent.qml:116
 #, kde-format
 msgctxt "@title:window"
 msgid "Pick font"
 msgstr "انتقِ خطًا"
 
-#: contents/ui/SettingsComponent.qml:207
+#: contents/ui/SettingsComponent.qml:180
 #, kde-format
 msgid "Font Size"
 msgstr "حجم الخط"
 
-#: contents/ui/SettingsComponent.qml:232
+#: contents/ui/SettingsComponent.qml:205
 #, kde-format
 msgid "Window Transparency"
 msgstr "شفافية النافذة"
 
-#: contents/ui/SettingsComponent.qml:270
+#: contents/ui/SettingsComponent.qml:243
 #, kde-format
 msgid "Blur Background"
 msgstr "إعماء الخلفية"
 
-#: contents/ui/SettingsComponent.qml:284
+#: contents/ui/SettingsComponent.qml:257
 #, kde-format
 msgid "Always Show Keyboard Modifier Buttons"
 msgstr "أظهر أزرار تعديل لوحة المفاتيح دائمًا"

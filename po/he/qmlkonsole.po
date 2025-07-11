@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qmlkonsole\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-03-29 00:44+0000\n"
+"POT-Creation-Date: 2025-07-11 00:45+0000\n"
 "PO-Revision-Date: 2025-03-30 07:48+0300\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
@@ -82,53 +82,53 @@ msgstr "הוספת פקודה"
 msgid "Command %1 removed"
 msgstr "הפקודה %1 הוסרה"
 
-#: contents/ui/SettingsComponent.qml:35
+#: contents/ui/SettingsComponent.qml:24
 #, kde-format
 msgid "General"
 msgstr "כללי"
 
-#: contents/ui/SettingsComponent.qml:44
+#: contents/ui/SettingsComponent.qml:33
 #, kde-format
 msgid "About"
 msgstr "על אודות"
 
-#: contents/ui/SettingsComponent.qml:55
+#: contents/ui/SettingsComponent.qml:44
 #, kde-format
 msgid "Appearance"
 msgstr "מראה"
 
-#: contents/ui/SettingsComponent.qml:64
+#: contents/ui/SettingsComponent.qml:53
 #, kde-format
 msgid "Color scheme"
 msgstr "ערכת צבעים"
 
-#: contents/ui/SettingsComponent.qml:96 contents/ui/SettingsComponent.qml:110
+#: contents/ui/SettingsComponent.qml:69 contents/ui/SettingsComponent.qml:83
 #, kde-format
 msgid "Font Family"
 msgstr "משפחת גופנים"
 
-#: contents/ui/SettingsComponent.qml:143
+#: contents/ui/SettingsComponent.qml:116
 #, kde-format
 msgctxt "@title:window"
 msgid "Pick font"
 msgstr "בחירת גופן"
 
-#: contents/ui/SettingsComponent.qml:207
+#: contents/ui/SettingsComponent.qml:180
 #, kde-format
 msgid "Font Size"
 msgstr "גודל כתב"
 
-#: contents/ui/SettingsComponent.qml:232
+#: contents/ui/SettingsComponent.qml:205
 #, kde-format
 msgid "Window Transparency"
 msgstr "שקיפות חלון"
 
-#: contents/ui/SettingsComponent.qml:270
+#: contents/ui/SettingsComponent.qml:243
 #, kde-format
 msgid "Blur Background"
 msgstr "טשטוש הרקע"
 
-#: contents/ui/SettingsComponent.qml:284
+#: contents/ui/SettingsComponent.qml:257
 #, kde-format
 msgid "Always Show Keyboard Modifier Buttons"
 msgstr "תמיד להציג מקשי החלפה במקלדת"
