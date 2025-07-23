@@ -16,6 +16,22 @@
         "--device=dri",
         "--talk-name=org.freedesktop.Flatpak"
     ],
+    "cleanup": [
+        "*.a",
+        "*.la",
+        "/doc",
+        "/docs",
+        "/include",
+        "/lib/cmake",
+        "/lib/pkgconfig",
+        "/lib/x86_64-linux-gnu/cmake",
+        "/lib/x86_64-linux-gnu/pkgconfig",
+        "/man",
+        "/share/cmake",
+        "/share/doc",
+        "/share/man",
+        "/share/pkgconfig"
+    ],
     "separate-locales": false,
     "sdk-extensions": [
         "org.freedesktop.Sdk.Extension.golang"
@@ -82,13 +98,7 @@
                     "path": ".",
                     "skip": [
                         ".git"
-                    ],
-                    "x-checker-data": {
-                        "type": "anitya",
-                        "project-id": 326638,
-                        "stable-only": true,
-                        "url-template": "https://download.kde.org/stable/plasma-mobile/$version/qmlkonsole-$version.tar.xz"
-                    }
+                    ]
                 }
             ]
         }
