@@ -272,7 +272,7 @@ msgstr ""
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Tab"
-msgstr "Selecciona la pestanya"
+msgstr "Tria la pestanya"
 
 #: contents/ui/TerminalPage.qml:400
 #, kde-format
