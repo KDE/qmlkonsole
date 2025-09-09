@@ -46,7 +46,6 @@
   <name xml:lang="sv">QML-terminal</name>
   <name xml:lang="tr">QMLKonsole</name>
   <name xml:lang="uk">QMLKonsole</name>
-  <name xml:lang="x-test">xxQMLKonsolexx</name>
   <name xml:lang="zh-CN">QMLKonsole</name>
   <name xml:lang="zh-TW">QMLKonsole</name>
   <summary>Mobile terminal application</summary>
@@ -86,7 +85,6 @@
   <summary xml:lang="sv">Mobilt terminalprogram</summary>
   <summary xml:lang="tr">Taşınabilir uçbirim uygulaması</summary>
   <summary xml:lang="uk">Програма-термінал для мобільних пристроїв</summary>
-  <summary xml:lang="x-test">xxMobile terminal applicationxx</summary>
   <summary xml:lang="zh-CN">移动终端程序</summary>
   <summary xml:lang="zh-TW">行動端終端機應用程式</summary>
   <url type="homepage">https://apps.kde.org/qmlkonsole</url>
@@ -130,7 +128,6 @@
   <developer_name xml:lang="sv">KDE-gemenskapen</developer_name>
   <developer_name xml:lang="tr">KDE Topluluğu</developer_name>
   <developer_name xml:lang="uk">Спільнота KDE</developer_name>
-  <developer_name xml:lang="x-test">xxKDE Communityxx</developer_name>
   <developer_name xml:lang="zh-CN">KDE 社区</developer_name>
   <developer_name xml:lang="zh-TW">KDE 社群</developer_name>
   <description>
@@ -169,7 +166,6 @@
     <p xml:lang="sv">Terminalprogram som erbjuder ytterligare tangentbordsknappar användbar på pekenheter.</p>
     <p xml:lang="tr">Dokunmatik aygıtlarda kullanışlı ek klavye düğmeleri sunan uçbirim uygulaması.</p>
     <p xml:lang="uk">Програма-термінал, у якій передбачено додаткові клавіші, які є зручними на сенсорних пристроях.</p>
-    <p xml:lang="x-test">xxTerminal application offering additional keyboard buttons useful on touch devices.xx</p>
     <p xml:lang="zh-CN">提供额外实用触屏键盘按钮的终端应用程序。</p>
     <p xml:lang="zh-TW">一個終端機應用程式，提供觸控裝置實用的額外鍵盤按鍵。</p>
   </description>
@@ -213,7 +209,6 @@
       <caption xml:lang="sv">QML-terminal</caption>
       <caption xml:lang="tr">QMLKonsole</caption>
       <caption xml:lang="uk">QMLKonsole</caption>
-      <caption xml:lang="x-test">xxQMLKonsolexx</caption>
       <caption xml:lang="zh-CN">QMLKonsole</caption>
       <caption xml:lang="zh-TW">QMLKonsole</caption>
       <image>https://cdn.kde.org/screenshots/qmlkonsole/main.png</image>
@@ -251,7 +246,6 @@
       <caption xml:lang="sv">Inställningar</caption>
       <caption xml:lang="tr">Ayarlar</caption>
       <caption xml:lang="uk">Параметри</caption>
-      <caption xml:lang="x-test">xxSettingsxx</caption>
       <caption xml:lang="zh-CN">设置</caption>
       <caption xml:lang="zh-TW">設定</caption>
       <image>https://cdn.kde.org/screenshots/qmlkonsole/settings.png</image>
