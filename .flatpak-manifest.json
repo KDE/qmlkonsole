@@ -1,7 +1,7 @@
 {
     "id": "org.kde.qmlkonsole",
     "runtime": "org.kde.Platform",
-    "runtime-version": "6.9",
+    "runtime-version": "6.10",
     "sdk": "org.kde.Sdk",
     "command": "qmlkonsole",
     "tags": [
@@ -73,16 +73,6 @@
             "build-commands": [
                 ". /usr/lib/sdk/golang/enable.sh; export GOPATH=$PWD; export GO111MODULE=off; go build -v",
                 "install -Dm755 host-spawn -t /app/bin"
-            ]
-        },
-        {
-            "name": "kirigami-addons",
-            "config-opts": [
-                "-DBUILD_TESTING=OFF"
-            ],
-            "buildsystem": "cmake-ninja",
-            "sources": [
-                { "type": "git", "url": "https://invent.kde.org/libraries/kirigami-addons.git", "branch": "master" }
             ]
         },
         {
