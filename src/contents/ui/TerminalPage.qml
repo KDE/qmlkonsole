@@ -53,8 +53,8 @@ Kirigami.Page {
 
     // switch tab button
     titleDelegate: ToolButton {
-        Layout.fillHeight: true
         onClicked: selectTabDialog.open()
+        padding: Kirigami.Units.smallSpacing
         contentItem: RowLayout {
             spacing: 0
             Kirigami.Heading {
