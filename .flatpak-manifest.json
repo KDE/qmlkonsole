@@ -44,12 +44,12 @@
                 {
                     "type": "git",
                     "url": "https://github.com/1player/host-spawn/",
-                    "tag": "1.4.1",
+                    "tag": "1.5.0",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^([\\d.]+)$"
                     },
-                    "commit": "2d7561681b97186f7f9fb9385435ef7d2dff9a13"
+                    "commit": "d1b5a7092d604f8467bc57a5470c3e25969da196"
                 },
                 {
                     "type": "git",
