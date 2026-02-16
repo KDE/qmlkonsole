@@ -266,7 +266,17 @@
       <description>
         <ul>
           <li>Fix bar and tilde toolbar buttons not working</li>
+          <li xml:lang="ca">Corregeix els botons de barra d'eines de barra i titlla que no funcionen</li>
+          <li xml:lang="he">תוקנו כפתורי הסרגל והטילדה בסרגל העלים שלא עבדו</li>
+          <li xml:lang="ka">გასწორდა პანელისა და ტილდას პანელის ღილაკების პრობლემა</li>
+          <li xml:lang="pt-BR">Corrigido problema com os botões da barra de ferramentas (barra e til) que não estavam funcionando</li>
+          <li xml:lang="sl">Odpravi težave z delovanjem gumbov orodne vrstice in tilde</li>
           <li>General user interface improvements</li>
+          <li xml:lang="ca">Millores generals en la interfície d'usuari</li>
+          <li xml:lang="he">שיפור ממשק משתמש כלליים</li>
+          <li xml:lang="ka">მომხმარებლის ინტერფეისის ზოგადი გაუმჯობესება</li>
+          <li xml:lang="pt-BR">Melhorias gerais na interface do usuário</li>
+          <li xml:lang="sl">Splošne izboljšave uporabniškega vmesnika</li>
         </ul>
       </description>
     </release>
@@ -278,7 +288,17 @@
       <description>
         <ul>
           <li>Fix support for modifier keys like Alt and Ctrl</li>
+          <li xml:lang="ca">Corregeix la implementació de les tecles modificadores com Alt i Ctrl</li>
+          <li xml:lang="he">תוקנה התמיכה במקשי החלפה כמו Alt ו־Ctrl</li>
+          <li xml:lang="ka">გასწორდა Alt/Ctrl-ის მსგავსი მოდიფიკატორი ღილაკების მხარდაჭერა</li>
+          <li xml:lang="pt-BR">Corrigido o suporte para teclas modificadoras como Alt e Ctrl</li>
+          <li xml:lang="sl">Popravljena podpora za modifikacijske tipke, kot sta Alt in Ctrl</li>
           <li>Code refactoring and general user interface improvements</li>
+          <li xml:lang="ca">Reestructuració de codi i millores generals en la interfície d'usuari</li>
+          <li xml:lang="he">שכתוב קוד ושיפורי ממשק משתמשים כלליים</li>
+          <li xml:lang="ka">კოდის რეფაქტორინგი და მომხმარებლის ინტერფეისის გაუმჯობესებები</li>
+          <li xml:lang="pt-BR">Refatoração de código e melhorias gerais na interface do usuário</li>
+          <li xml:lang="sl">Preoblikovanje kode in splošne izboljšave uporabniškega vmesnika</li>
         </ul>
       </description>
     </release>
@@ -287,8 +307,23 @@
       <description>
         <ul>
           <li>Fit more action buttons in toolbar</li>
+          <li xml:lang="ca">Encabeix més botons d'acció a la barra d'eines</li>
+          <li xml:lang="he">להכניס יותר כפתורי פעולה בסרגל הכלים</li>
+          <li xml:lang="ka">მეტი ქმედების ღილაკის ჩატევა პანელზე</li>
+          <li xml:lang="pt-BR">Adiciona mais botões de ação à barra de ferramentas</li>
+          <li xml:lang="sl">Postavi več gumbov za dejanja v orodno vrstico</li>
           <li>Rework toolbar layouts and add tab support</li>
+          <li xml:lang="ca">Refà les disposicions de la barra d'eines i afegeix la implementació de pestanyes</li>
+          <li xml:lang="he">עבודה מחדש על פריסות סרגל הכלים ותמיכה בהוספת לשוניות</li>
+          <li xml:lang="ka">გადამუშავდა ხელსაწყოთა პანელის განლაგებები და დაემატა ჩანართის მხარდაჭერა</li>
+          <li xml:lang="pt-BR">Reformulação dos layouts das barras de ferramentas e adição do suporte a abas</li>
+          <li xml:lang="sl">Preoblikuje postavitve orodnih vrstic in doda podporo za zavihke</li>
           <li>Add confirmation dialog for closing tab</li>
+          <li xml:lang="ca">Afegeix un diàleg de confirmació per a tancar la pestanya</li>
+          <li xml:lang="he">נוספה חלונית אישור לסגירת לשוניות</li>
+          <li xml:lang="ka">დაემატა დადასტურების დიალოგი ჩანართის დახურვისას</li>
+          <li xml:lang="pt-BR">Adicionada a caixa de diálogo de confirmação para fechar a aba</li>
+          <li xml:lang="sl">Doda potrditveno pogovorno okno za zapiranje zavihka</li>
         </ul>
       </description>
     </release>
@@ -301,8 +336,18 @@
     <release version="21.06" date="2021-06-10">
       <description>
         <p>Plasma Mobile Gear 21.06</p>
+        <p xml:lang="ca">Plasma Mobile Gear 21.06</p>
+        <p xml:lang="he">Plasma Mobile Gear 21.06</p>
+        <p xml:lang="ka">Plasma Mobile Gear 21.06</p>
+        <p xml:lang="pt-BR">Plasma Mobile Gear 21.06</p>
+        <p xml:lang="sl">Plasma Mobile Gear 21.06</p>
         <ul>
           <li>buildsystem: search for qmltermwidget</li>
+          <li xml:lang="ca">Buildsystem: cerca «qmltermwidget»</li>
+          <li xml:lang="he">מערכת הבנייה: חיפוש אחר qmltermwidget</li>
+          <li xml:lang="ka">buildsystem: qmltermwidget-ის ძებნა</li>
+          <li xml:lang="pt-BR">compilação: pesquisar por qmltermwidget</li>
+          <li xml:lang="sl">buildsystem: iskanje za qmltermwidget</li>
         </ul>
       </description>
       <url>https://www.plasma-mobile.org/2021/06/10/plasma-mobile-update-june/</url>
