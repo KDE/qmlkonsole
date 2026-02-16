@@ -303,7 +303,15 @@
       <description>
         <ul>
           <li>Fix bar and tilde toolbar buttons not working</li>
+          <li xml:lang="ca">Corregeix els botons de barra d'eines de barra i titlla que no funcionen</li>
+          <li xml:lang="ca-valencia">Corregix els botons de barra d'eines de barra i titlla que no funcionen</li>
+          <li xml:lang="he">תוקנו כפתורי הסרגל והטילדה בסרגל העלים שלא עבדו</li>
+          <li xml:lang="pt-BR">Corrigido problema com os botões da barra de ferramentas (barra e til) que não estavam funcionando</li>
           <li>General user interface improvements</li>
+          <li xml:lang="ca">Millores generals en la interfície d'usuari</li>
+          <li xml:lang="ca-valencia">Millores generals en la interfície d'usuari</li>
+          <li xml:lang="he">שיפור ממשק משתמש כלליים</li>
+          <li xml:lang="pt-BR">Melhorias gerais na interface do usuário</li>
         </ul>
       </description>
     </release>
@@ -315,7 +323,15 @@
       <description>
         <ul>
           <li>Fix support for modifier keys like Alt and Ctrl</li>
+          <li xml:lang="ca">Corregeix la implementació de les tecles modificadores com Alt i Ctrl</li>
+          <li xml:lang="ca-valencia">Corregix la implementació de les tecles modificadores com «Alt» i «Ctrl»</li>
+          <li xml:lang="he">תוקנה התמיכה במקשי החלפה כמו Alt ו־Ctrl</li>
+          <li xml:lang="pt-BR">Corrigido o suporte para teclas modificadoras como Alt e Ctrl</li>
           <li>Code refactoring and general user interface improvements</li>
+          <li xml:lang="ca">Reestructuració de codi i millores generals en la interfície d'usuari</li>
+          <li xml:lang="ca-valencia">Reestructuració de codi i millores generals en la interfície d'usuari</li>
+          <li xml:lang="he">שכתוב קוד ושיפורי ממשק משתמשים כלליים</li>
+          <li xml:lang="pt-BR">Refatoração de código e melhorias gerais na interface do usuário</li>
         </ul>
       </description>
     </release>
@@ -324,8 +340,20 @@
       <description>
         <ul>
           <li>Fit more action buttons in toolbar</li>
+          <li xml:lang="ca">Encabeix més botons d'acció a la barra d'eines</li>
+          <li xml:lang="ca-valencia">Encabix més botons d'acció a la barra d'eines</li>
+          <li xml:lang="he">להכניס יותר כפתורי פעולה בסרגל הכלים</li>
+          <li xml:lang="pt-BR">Adiciona mais botões de ação à barra de ferramentas</li>
           <li>Rework toolbar layouts and add tab support</li>
+          <li xml:lang="ca">Refà les disposicions de la barra d'eines i afegeix la implementació de pestanyes</li>
+          <li xml:lang="ca-valencia">Refà les disposicions de la barra d'eines i afig la implementació de pestanyes</li>
+          <li xml:lang="he">עבודה מחדש על פריסות סרגל הכלים ותמיכה בהוספת לשוניות</li>
+          <li xml:lang="pt-BR">Reformulação dos layouts das barras de ferramentas e adição do suporte a abas</li>
           <li>Add confirmation dialog for closing tab</li>
+          <li xml:lang="ca">Afegeix un diàleg de confirmació per a tancar la pestanya</li>
+          <li xml:lang="ca-valencia">Afig un diàleg de confirmació per a tancar la pestanya</li>
+          <li xml:lang="he">נוספה חלונית אישור לסגירת לשוניות</li>
+          <li xml:lang="pt-BR">Adicionada a caixa de diálogo de confirmação para fechar a aba</li>
         </ul>
       </description>
     </release>
@@ -338,8 +366,16 @@
     <release version="21.06" date="2021-06-10">
       <description>
         <p>Plasma Mobile Gear 21.06</p>
+        <p xml:lang="ca">Plasma Mobile Gear 21.06</p>
+        <p xml:lang="ca-valencia">Plasma Mobile Gear 21.06</p>
+        <p xml:lang="he">Plasma Mobile Gear 21.06</p>
+        <p xml:lang="pt-BR">Plasma Mobile Gear 21.06</p>
         <ul>
           <li>buildsystem: search for qmltermwidget</li>
+          <li xml:lang="ca">Buildsystem: cerca «qmltermwidget»</li>
+          <li xml:lang="ca-valencia">Buildsystem: busca «qmltermwidget»</li>
+          <li xml:lang="he">מערכת הבנייה: חיפוש אחר qmltermwidget</li>
+          <li xml:lang="pt-BR">compilação: pesquisar por qmltermwidget</li>
         </ul>
       </description>
       <url>https://www.plasma-mobile.org/2021/06/10/plasma-mobile-update-june/</url>
