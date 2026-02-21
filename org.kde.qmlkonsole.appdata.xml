@@ -308,6 +308,7 @@
           <li xml:lang="ca-valencia">Corregix els botons de barra d'eines de barra i titlla que no funcionen</li>
           <li xml:lang="es">Se han corregido la barra y los botones de la barra de herramientas de tilde que no funcionaban.</li>
           <li xml:lang="he">תוקנו כפתורי הסרגל והטילדה בסרגל העלים שלא עבדו</li>
+          <li xml:lang="ia">Corrige buttones de barra de instrumentos e de tilde que non functiona </li>
           <li xml:lang="nl">Werkbalkknoppen balk en tilde, die niet werken, gerepareerd</li>
           <li xml:lang="pt-BR">Corrigido problema com os botões da barra de ferramentas (barra e til) que não estavam funcionando</li>
           <li xml:lang="ru">Исправлена неработоспособность кнопок панели инструментов для символов «|» и «~»;</li>
@@ -320,6 +321,7 @@
           <li xml:lang="ca-valencia">Millores generals en la interfície d'usuari</li>
           <li xml:lang="es">Mejoras generales de la interfaz de usuario.</li>
           <li xml:lang="he">שיפור ממשק משתמש כלליים</li>
+          <li xml:lang="ia">Melioramentos general de interfacie de usator</li>
           <li xml:lang="nl">Algemene verbeteringen aan het gebruikersinterface</li>
           <li xml:lang="pt-BR">Melhorias gerais na interface do usuário</li>
           <li xml:lang="ru">Улучшения пользовательского интерфейса;</li>
@@ -342,6 +344,7 @@
           <li xml:lang="ca-valencia">Corregix la implementació de les tecles modificadores com «Alt» i «Ctrl»</li>
           <li xml:lang="es">Se ha corregido la compatibilidad con teclas modificadoras, como Alt y Ctrl</li>
           <li xml:lang="he">תוקנה התמיכה במקשי החלפה כמו Alt ו־Ctrl</li>
+          <li xml:lang="ia">Corrige supporto per claves de modificator como ALt e Ctrl</li>
           <li xml:lang="nl">Ondersteuning voor samensteltoetsen zoals Alt en Ctrl gerepareerd</li>
           <li xml:lang="pt-BR">Corrigido o suporte para teclas modificadoras como Alt e Ctrl</li>
           <li xml:lang="ru">Исправлена поддержка клавиш-модификаторов, таких как Alt и Ctrl;</li>
@@ -354,6 +357,7 @@
           <li xml:lang="ca-valencia">Reestructuració de codi i millores generals en la interfície d'usuari</li>
           <li xml:lang="es">Refactorización del código y mejoras generales de la interfaz de usuario.</li>
           <li xml:lang="he">שכתוב קוד ושיפורי ממשק משתמשים כלליים</li>
+          <li xml:lang="ia">Refactorisar de codice e melioramentos general de interfacie de usator</li>
           <li xml:lang="nl">Herziening van code en algemene verbeteringen aan het gebruikersinterface</li>
           <li xml:lang="pt-BR">Refatoração de código e melhorias gerais na interface do usuário</li>
           <li xml:lang="ru">Рефакторинг кода и улучшение пользовательского интерфейса;</li>
@@ -373,6 +377,7 @@
           <li xml:lang="ca-valencia">Encabix més botons d'acció a la barra d'eines</li>
           <li xml:lang="es">Permitir más botones de acción en la barra de herramientas.</li>
           <li xml:lang="he">להכניס יותר כפתורי פעולה בסרגל הכלים</li>
+          <li xml:lang="ia">Corrige altere buttones de action in barra de instrumento</li>
           <li xml:lang="nl">Laat meer actieknoppen passen in werkbalk</li>
           <li xml:lang="pt-BR">Adiciona mais botões de ação à barra de ferramentas</li>
           <li xml:lang="ru">На панели инструментов размещено больше кнопок действий;</li>
@@ -385,6 +390,7 @@
           <li xml:lang="ca-valencia">Refà les disposicions de la barra d'eines i afig la implementació de pestanyes</li>
           <li xml:lang="es">Reajuste de los diseños de las barras de herramientas y compatibilidad con pestañas.</li>
           <li xml:lang="he">עבודה מחדש על פריסות סרגל הכלים ותמיכה בהוספת לשוניות</li>
+          <li xml:lang="ia">Relabora dispositiones de barra de instrumento e adde supporto per scheda</li>
           <li xml:lang="nl">Indeling van werkbalk en ondersteuning voor tabblad toegevoegd</li>
           <li xml:lang="pt-BR">Reformulação dos layouts das barras de ferramentas e adição do suporte a abas</li>
           <li xml:lang="ru">Изменено расположение панелей инструментов и добавлена поддержка вкладок;</li>
@@ -397,6 +403,7 @@
           <li xml:lang="ca-valencia">Afig un diàleg de confirmació per a tancar la pestanya</li>
           <li xml:lang="es">Se ha añadido un diálogo de confirmación para cerrar pestañas.</li>
           <li xml:lang="he">נוספה חלונית אישור לסגירת לשוניות</li>
+          <li xml:lang="ia">Adde dialogo de confirmation per scheda de clauder</li>
           <li xml:lang="nl">Dialoog voor bevestiging van tabblad voor sluiten toegevoegd</li>
           <li xml:lang="pt-BR">Adicionada a caixa de diálogo de confirmação para fechar a aba</li>
           <li xml:lang="ru">Добавлен диалог подтверждения закрытия вкладки;</li>
@@ -420,6 +427,7 @@
         <p xml:lang="ca-valencia">Plasma Mobile Gear 21.06</p>
         <p xml:lang="es">Plasma Mobile Gear 21.06</p>
         <p xml:lang="he">Plasma Mobile Gear 21.06</p>
+        <p xml:lang="ia">Plasma Mobile Gear 21.06</p>
         <p xml:lang="nl">Plasma Mobile Gear 21.06</p>
         <p xml:lang="pt-BR">Plasma Mobile Gear 21.06</p>
         <p xml:lang="ru">Plasma Mobile Gear 21.06</p>
@@ -433,6 +441,7 @@
           <li xml:lang="ca-valencia">Buildsystem: busca «qmltermwidget»</li>
           <li xml:lang="es">buildsystem: búsqueda de qmltermwidget.</li>
           <li xml:lang="he">מערכת הבנייה: חיפוש אחר qmltermwidget</li>
+          <li xml:lang="ia">buildsystem: cerca qmltermwidget</li>
           <li xml:lang="nl">bouwsysteem: zoeken naar qmltermwidget</li>
           <li xml:lang="pt-BR">compilação: pesquisar por qmltermwidget</li>
           <li xml:lang="ru">Система сборки: поиск qmltermwidget.</li>
