@@ -280,7 +280,7 @@
           <li xml:lang="pt-BR">Corrigido problema com os botões da barra de ferramentas (barra e til) que não estavam funcionando</li>
           <li xml:lang="ru">Исправлена неработоспособность кнопок панели инструментов для символов «|» и «~»;</li>
           <li xml:lang="sl">Odpravi težave z delovanjem gumbov orodne vrstice in tilde</li>
-          <li xml:lang="tr">Fix bar and tilde toolbar buttons not working</li>
+          <li xml:lang="tr">Çubuk ve yaklaşık işareti (tilde) araç çubuğu düğmelerinin çalışmaması düzeltildi.</li>
           <li xml:lang="uk">Виправлено працездатність кнопок з рискою та тильдою на панелі інструментів</li>
           <li xml:lang="zh-CN">修复工具栏和工具栏按钮不工作</li>
           <li>General user interface improvements</li>
@@ -297,7 +297,7 @@
           <li xml:lang="pt-BR">Melhorias gerais na interface do usuário</li>
           <li xml:lang="ru">Улучшения пользовательского интерфейса;</li>
           <li xml:lang="sl">Splošne izboljšave uporabniškega vmesnika</li>
-          <li xml:lang="tr">General user interface improvements</li>
+          <li xml:lang="tr">Genel kullanıcı arayüzü iyileştirmeleri</li>
           <li xml:lang="uk">Загальні удосконалення інтерфейсу користувача</li>
           <li xml:lang="zh-CN">常规用户界面改进</li>
         </ul>
@@ -324,7 +324,7 @@
           <li xml:lang="pt-BR">Corrigido o suporte para teclas modificadoras como Alt e Ctrl</li>
           <li xml:lang="ru">Исправлена поддержка клавиш-модификаторов, таких как Alt и Ctrl;</li>
           <li xml:lang="sl">Popravljena podpora za modifikacijske tipke, kot sta Alt in Ctrl</li>
-          <li xml:lang="tr">Fix support for modifier keys like Alt and Ctrl</li>
+          <li xml:lang="tr">Seçenek ve Kontrol gibi niteleyici düğmeler desteği düzeltildi.</li>
           <li xml:lang="uk">Виправлено підтримку клавіш-модифікаторів, зокрема Alt і Ctrl</li>
           <li xml:lang="zh-CN">修复对 Alt 和 Ctrl 等修饰键的支持</li>
           <li>Code refactoring and general user interface improvements</li>
@@ -341,7 +341,7 @@
           <li xml:lang="pt-BR">Refatoração de código e melhorias gerais na interface do usuário</li>
           <li xml:lang="ru">Рефакторинг кода и улучшение пользовательского интерфейса;</li>
           <li xml:lang="sl">Preoblikovanje kode in splošne izboljšave uporabniškega vmesnika</li>
-          <li xml:lang="tr">Code refactoring and general user interface improvements</li>
+          <li xml:lang="tr">Kod iyileştirmesi ve genel kullanıcı arayüzü iyileştirmeleri</li>
           <li xml:lang="uk">Переформатування програмного коду та загальні удосконалення інтерфейсу користувача</li>
           <li xml:lang="zh-CN">代码重构和常规用户界面改进</li>
         </ul>
@@ -365,7 +365,7 @@
           <li xml:lang="pt-BR">Adiciona mais botões de ação à barra de ferramentas</li>
           <li xml:lang="ru">На панели инструментов размещено больше кнопок действий;</li>
           <li xml:lang="sl">Postavi več gumbov za dejanja v orodno vrstico</li>
-          <li xml:lang="tr">Fit more action buttons in toolbar</li>
+          <li xml:lang="tr">Araç çubuğuna daha fazla eylem düğmesi sığdırıldı.</li>
           <li xml:lang="uk">Реалізовано збільшення кількості кнопок дій на панелі інструментів</li>
           <li xml:lang="zh-CN">在工具栏中显示更多操作按钮</li>
           <li>Rework toolbar layouts and add tab support</li>
@@ -382,7 +382,7 @@
           <li xml:lang="pt-BR">Reformulação dos layouts das barras de ferramentas e adição do suporte a abas</li>
           <li xml:lang="ru">Изменено расположение панелей инструментов и добавлена поддержка вкладок;</li>
           <li xml:lang="sl">Preoblikuje postavitve orodnih vrstic in doda podporo za zavihke</li>
-          <li xml:lang="tr">Rework toolbar layouts and add tab support</li>
+          <li xml:lang="tr">Araç çubuğu yerleşimleri yeniden çalışıldı ve sekme desteği eklendi.</li>
           <li xml:lang="uk">Перероблено компонування панелей інструментів та додано підтримку вкладок</li>
           <li xml:lang="zh-CN">重构工具栏布局并添加标签页支持</li>
           <li>Add confirmation dialog for closing tab</li>
@@ -399,7 +399,7 @@
           <li xml:lang="pt-BR">Adicionada a caixa de diálogo de confirmação para fechar a aba</li>
           <li xml:lang="ru">Добавлен диалог подтверждения закрытия вкладки;</li>
           <li xml:lang="sl">Doda potrditveno pogovorno okno za zapiranje zavihka</li>
-          <li xml:lang="tr">Add confirmation dialog for closing tab</li>
+          <li xml:lang="tr">Sekme kapatma için onay iletişim kutusu eklendi.</li>
           <li xml:lang="uk">Додано вікно підтвердження для закриття вкладки</li>
           <li xml:lang="zh-CN">关闭标签页前显示确认对话框</li>
         </ul>
@@ -446,7 +446,7 @@
           <li xml:lang="pt-BR">compilação: pesquisar por qmltermwidget</li>
           <li xml:lang="ru">Система сборки: поиск qmltermwidget.</li>
           <li xml:lang="sl">buildsystem: iskanje za qmltermwidget</li>
-          <li xml:lang="tr">buildsystem: search for qmltermwidget</li>
+          <li xml:lang="tr">buildsystem: qmltermwidget için arama yap</li>
           <li xml:lang="uk">Система збирання: реалізовано пошук qmltermwidget</li>
           <li xml:lang="zh-CN">构建系统：搜索 qmltermwidget</li>
         </ul>
