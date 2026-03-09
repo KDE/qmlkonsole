@@ -45,7 +45,7 @@ Keywords[zh_CN]=terminal;console;script;run;execute;command;command-line;command
 Keywords[zh_TW]=terminal;console;script;run;execute;command;command-line;commandline;cli;bash;sh;shell;zsh;cmd;command prompt;指令;命令;主控台
 
 Name=Terminal
-Name[ar]=الطّرفيّة
+Name[ar]=الطرفية
 Name[ast]=Terminal
 Name[ca]=Terminal
 Name[ca@valencia]=Terminal
@@ -84,7 +84,7 @@ Name[uk]=Термінал
 Name[zh_CN]=终端
 Name[zh_TW]=終端機
 GenericName=Terminal
-GenericName[ar]=الطّرفيّة
+GenericName[ar]=الطرفية
 GenericName[ast]=Terminal
 GenericName[ca]=Terminal
 GenericName[ca@valencia]=Terminal
