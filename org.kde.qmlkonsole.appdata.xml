@@ -285,6 +285,7 @@
           <li xml:lang="tr">Çubuk ve yaklaşık işareti (tilde) araç çubuğu düğmelerinin çalışmaması düzeltildi.</li>
           <li xml:lang="uk">Виправлено працездатність кнопок з рискою та тильдою на панелі інструментів</li>
           <li xml:lang="zh-CN">修复工具栏和工具栏按钮不工作</li>
+          <li xml:lang="zh-TW">修正 "|" 和 "~" 工作列按鈕無法正常運作的問題</li>
           <li>General user interface improvements</li>
           <li xml:lang="ar">تحسينات عامة على واجهة المستخدم</li>
           <li xml:lang="ca">Millores generals en la interfície d'usuari</li>
@@ -304,6 +305,7 @@
           <li xml:lang="tr">Genel kullanıcı arayüzü iyileştirmeleri</li>
           <li xml:lang="uk">Загальні удосконалення інтерфейсу користувача</li>
           <li xml:lang="zh-CN">常规用户界面改进</li>
+          <li xml:lang="zh-TW">一些使用者介面改善</li>
         </ul>
       </description>
     </release>
@@ -333,6 +335,7 @@
           <li xml:lang="tr">Seçenek ve Kontrol gibi niteleyici düğmeler desteği düzeltildi.</li>
           <li xml:lang="uk">Виправлено підтримку клавіш-модифікаторів, зокрема Alt і Ctrl</li>
           <li xml:lang="zh-CN">修复对 Alt 和 Ctrl 等修饰键的支持</li>
+          <li xml:lang="zh-TW">修正對 Alt 或 Ctrl 等修飾鍵的支援</li>
           <li>Code refactoring and general user interface improvements</li>
           <li xml:lang="ar">إعادة صياغة الكود وتحسينات عامة على واجهة المستخدم</li>
           <li xml:lang="ca">Reestructuració de codi i millores generals en la interfície d'usuari</li>
@@ -352,6 +355,7 @@
           <li xml:lang="tr">Kod iyileştirmesi ve genel kullanıcı arayüzü iyileştirmeleri</li>
           <li xml:lang="uk">Переформатування програмного коду та загальні удосконалення інтерфейсу користувача</li>
           <li xml:lang="zh-CN">代码重构和常规用户界面改进</li>
+          <li xml:lang="zh-TW">程式碼重構與一些使用者介面改善</li>
         </ul>
       </description>
     </release>
@@ -378,6 +382,7 @@
           <li xml:lang="tr">Araç çubuğuna daha fazla eylem düğmesi sığdırıldı.</li>
           <li xml:lang="uk">Реалізовано збільшення кількості кнопок дій на панелі інструментів</li>
           <li xml:lang="zh-CN">在工具栏中显示更多操作按钮</li>
+          <li xml:lang="zh-TW">讓工具列包含更多動作按鈕</li>
           <li>Rework toolbar layouts and add tab support</li>
           <li xml:lang="ar">إعادة صياغة مخططات شريط الأدوات وإضافة دعم لعلامات التبويب</li>
           <li xml:lang="ca">Refà les disposicions de la barra d'eines i afegeix la implementació de pestanyes</li>
@@ -397,6 +402,7 @@
           <li xml:lang="tr">Araç çubuğu yerleşimleri yeniden çalışıldı ve sekme desteği eklendi.</li>
           <li xml:lang="uk">Перероблено компонування панелей інструментів та додано підтримку вкладок</li>
           <li xml:lang="zh-CN">重构工具栏布局并添加标签页支持</li>
+          <li xml:lang="zh-TW">修改工具列佈局，新增分頁支援</li>
           <li>Add confirmation dialog for closing tab</li>
           <li xml:lang="ar">إضافة مربع حوار تأكيد لإغلاق علامة التبويب</li>
           <li xml:lang="ca">Afegeix un diàleg de confirmació per a tancar la pestanya</li>
@@ -416,6 +422,7 @@
           <li xml:lang="tr">Sekme kapatma için onay iletişim kutusu eklendi.</li>
           <li xml:lang="uk">Додано вікно підтвердження для закриття вкладки</li>
           <li xml:lang="zh-CN">关闭标签页前显示确认对话框</li>
+          <li xml:lang="zh-TW">關閉分頁時顯示確認對話框</li>
         </ul>
       </description>
     </release>
@@ -467,6 +474,7 @@
           <li xml:lang="tr">buildsystem: qmltermwidget için arama yap</li>
           <li xml:lang="uk">Система збирання: реалізовано пошук qmltermwidget</li>
           <li xml:lang="zh-CN">构建系统：搜索 qmltermwidget</li>
+          <li xml:lang="zh-TW">編譯系統：尋找 qmltermwidget</li>
         </ul>
       </description>
       <url>https://www.plasma-mobile.org/2021/06/10/plasma-mobile-update-june/</url>
