@@ -125,6 +125,7 @@
     <p xml:lang="ro">Aplicație de terminal ce oferă butoane de tastatură suplimentare, utile pe dispozitivele tactile.</p>
     <p xml:lang="ru">Приложение терминала, предоставляющее дополнительные кнопки клавиатуры для сенсорных устройств.</p>
     <p xml:lang="sa">स्पर्शयन्त्रेषु उपयोगिनो अतिरिक्तकीबोर्डबटनं प्रदातुं टर्मिनल् अनुप्रयोगः।</p>
+    <p xml:lang="sk">Terminal application offering additional keyboard buttons useful on touch devices.</p>
     <p xml:lang="sl">Aplikacija terminala nudi dodatne tipke na tipkovnici, koristne pri napravah na dotik.</p>
     <p xml:lang="sv">Terminalprogram som erbjuder ytterligare tangentbordsknappar användbar på pekenheter.</p>
     <p xml:lang="tr">Dokunmatik aygıtlarda kullanışlı ek klavye düğmeleri sunan uçbirim uygulaması.</p>
@@ -206,6 +207,7 @@
       <caption xml:lang="pt-BR">Configurações</caption>
       <caption xml:lang="ru">Параметры</caption>
       <caption xml:lang="sa">सेटिंग्स्</caption>
+      <caption xml:lang="sk">Nastavenia</caption>
       <caption xml:lang="sl">Nastavitve</caption>
       <caption xml:lang="sv">Inställningar</caption>
       <caption xml:lang="tr">Ayarlar</caption>
@@ -282,6 +284,7 @@
           <li xml:lang="pl">Naprawiono niedziałające przyciski paska i tyldy na pasku narzędzi</li>
           <li xml:lang="pt-BR">Corrigido problema com os botões da barra de ferramentas (barra e til) que não estavam funcionando</li>
           <li xml:lang="ru">Исправлена неработоспособность кнопок панели инструментов для символов «|» и «~»;</li>
+          <li xml:lang="sk">Fix bar and tilde toolbar buttons not working</li>
           <li xml:lang="sl">Odpravi težave z delovanjem gumbov orodne vrstice in tilde</li>
           <li xml:lang="tr">Çubuk ve yaklaşık işareti (tilde) araç çubuğu düğmelerinin çalışmaması düzeltildi.</li>
           <li xml:lang="uk">Виправлено працездатність кнопок з рискою та тильдою на панелі інструментів</li>
@@ -302,6 +305,7 @@
           <li xml:lang="pl">Ogólne usprawnienia interfejsu użytkownika</li>
           <li xml:lang="pt-BR">Melhorias gerais na interface do usuário</li>
           <li xml:lang="ru">Улучшения пользовательского интерфейса;</li>
+          <li xml:lang="sk">General user interface improvements</li>
           <li xml:lang="sl">Splošne izboljšave uporabniškega vmesnika</li>
           <li xml:lang="tr">Genel kullanıcı arayüzü iyileştirmeleri</li>
           <li xml:lang="uk">Загальні удосконалення інтерфейсу користувача</li>
@@ -332,6 +336,7 @@
           <li xml:lang="pl">Naprawiono obsługę klawiszy odmieniających takich jak Alt oraz Ctrl</li>
           <li xml:lang="pt-BR">Corrigido o suporte para teclas modificadoras como Alt e Ctrl</li>
           <li xml:lang="ru">Исправлена поддержка клавиш-модификаторов, таких как Alt и Ctrl;</li>
+          <li xml:lang="sk">Fix support for modifier keys like Alt and Ctrl</li>
           <li xml:lang="sl">Popravljena podpora za modifikacijske tipke, kot sta Alt in Ctrl</li>
           <li xml:lang="tr">Seçenek ve Kontrol gibi niteleyici düğmeler desteği düzeltildi.</li>
           <li xml:lang="uk">Виправлено підтримку клавіш-модифікаторів, зокрема Alt і Ctrl</li>
@@ -352,6 +357,7 @@
           <li xml:lang="pl">Przepisano kod oraz dokonano ogólnych ulepszeń interfejsu</li>
           <li xml:lang="pt-BR">Refatoração de código e melhorias gerais na interface do usuário</li>
           <li xml:lang="ru">Рефакторинг кода и улучшение пользовательского интерфейса;</li>
+          <li xml:lang="sk">Code refactoring and general user interface improvements</li>
           <li xml:lang="sl">Preoblikovanje kode in splošne izboljšave uporabniškega vmesnika</li>
           <li xml:lang="tr">Kod iyileştirmesi ve genel kullanıcı arayüzü iyileştirmeleri</li>
           <li xml:lang="uk">Переформатування програмного коду та загальні удосконалення інтерфейсу користувача</li>
@@ -379,6 +385,7 @@
           <li xml:lang="pl">Zmieszczono więcej przycisków na pasku narzędzi</li>
           <li xml:lang="pt-BR">Adiciona mais botões de ação à barra de ferramentas</li>
           <li xml:lang="ru">На панели инструментов размещено больше кнопок действий;</li>
+          <li xml:lang="sk">Fit more action buttons in toolbar</li>
           <li xml:lang="sl">Postavi več gumbov za dejanja v orodno vrstico</li>
           <li xml:lang="tr">Araç çubuğuna daha fazla eylem düğmesi sığdırıldı.</li>
           <li xml:lang="uk">Реалізовано збільшення кількості кнопок дій на панелі інструментів</li>
@@ -399,6 +406,7 @@
           <li xml:lang="pl">Przebudowano układ pasków narzędzi i dodano obsługę kart</li>
           <li xml:lang="pt-BR">Reformulação dos layouts das barras de ferramentas e adição do suporte a abas</li>
           <li xml:lang="ru">Изменено расположение панелей инструментов и добавлена поддержка вкладок;</li>
+          <li xml:lang="sk">Rework toolbar layouts and add tab support</li>
           <li xml:lang="sl">Preoblikuje postavitve orodnih vrstic in doda podporo za zavihke</li>
           <li xml:lang="tr">Araç çubuğu yerleşimleri yeniden çalışıldı ve sekme desteği eklendi.</li>
           <li xml:lang="uk">Перероблено компонування панелей інструментів та додано підтримку вкладок</li>
@@ -419,6 +427,7 @@
           <li xml:lang="pl">Dodano zapytanie o potwierdzenie przy zamykaniu kart</li>
           <li xml:lang="pt-BR">Adicionada a caixa de diálogo de confirmação para fechar a aba</li>
           <li xml:lang="ru">Добавлен диалог подтверждения закрытия вкладки;</li>
+          <li xml:lang="sk">Add confirmation dialog for closing tab</li>
           <li xml:lang="sl">Doda potrditveno pogovorno okno za zapiranje zavihka</li>
           <li xml:lang="tr">Sekme kapatma için onay iletişim kutusu eklendi.</li>
           <li xml:lang="uk">Додано вікно підтвердження для закриття вкладки</li>
@@ -450,6 +459,7 @@
         <p xml:lang="pl">Wyposażenie Przenośnej Plazmy 21.06</p>
         <p xml:lang="pt-BR">Plasma Mobile Gear 21.06</p>
         <p xml:lang="ru">Plasma Mobile Gear 21.06</p>
+        <p xml:lang="sk">Plasma Mobile Gear 21.06</p>
         <p xml:lang="sl">Plasma Mobile Gear 21.06</p>
         <p xml:lang="tr">Plasma Mobile Gear 21.06</p>
         <p xml:lang="uk">Plasma Mobile Gear 21.06</p>
@@ -471,6 +481,7 @@
           <li xml:lang="pl">system budowania: szukanie po qmltermwidget</li>
           <li xml:lang="pt-BR">compilação: pesquisar por qmltermwidget</li>
           <li xml:lang="ru">Система сборки: поиск qmltermwidget.</li>
+          <li xml:lang="sk">buildsystem: search for qmltermwidget</li>
           <li xml:lang="sl">buildsystem: iskanje za qmltermwidget</li>
           <li xml:lang="tr">buildsystem: qmltermwidget için arama yap</li>
           <li xml:lang="uk">Система збирання: реалізовано пошук qmltermwidget</li>
