@@ -10,25 +10,25 @@
                           http://www.kde.org/standards/kcfg/1.0/kcfg.xsd" >
     <kcfgfile name="qmlkonsolerc" />
     <group name="General">
-        <entry key="colorScheme" type="string">
-            <default>"cool-retro-term"</default>
+        <entry key="colorScheme" type="String">
+            <default>cool-retro-term</default>
         </entry>
-        <entry key="fontFamily" type="string">
-            <default>"Monospace"</default>
+        <entry key="fontFamily" type="String">
+            <default>Monospace</default>
         </entry>
-        <entry key="fontSize" type="int">
+        <entry key="fontSize" type="Int">
             <default>12</default>
         </entry>
-        <entry key="windowOpacity" type="double">
+        <entry key="windowOpacity" type="Double">
             <default>1</default>
         </entry>
         <entry key="actions" type="StringList">
             <default></default>
         </entry>
-        <entry key="blurWindow" type="bool">
+        <entry key="blurWindow" type="Bool">
             <default>false</default>
         </entry>
-        <entry key="forceModifierButtons" type="bool">
+        <entry key="forceModifierButtons" type="Bool">
             <default>false</default>
         </entry>
     </group>
