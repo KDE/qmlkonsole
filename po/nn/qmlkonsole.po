@@ -5,7 +5,7 @@ msgstr ""
 "Project-Id-Version: qmlkonsole\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-11-17 11:54+0000\n"
-"PO-Revision-Date: 2024-07-06 14:32+0200\n"
+"PO-Revision-Date: 2026-04-21 18:54+0200\n"
 "Last-Translator: Karl Ove Hufthammer <karl@huftis.org>\n"
 "Language-Team: Norwegian Nynorsk <l10n-no@lister.huftis.org>\n"
 "Language: nn\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 24.05.1\n"
+"X-Generator: Lokalize 25.12.3\n"
 "X-Environment: kde\n"
 "X-Accelerator-Marker: &\n"
 "X-Text-Markup: kde4\n"
@@ -128,10 +128,11 @@ msgstr "Vindaugsgjennomsikt"
 msgid "Blur Background"
 msgstr "Uklar bakgrunn"
 
+# Eksemplvis knappar for «Ctrl», «Alt», «Escape», «Pil opp», røyret «|» og symbolet «~».
 #: contents/ui/SettingsComponent.qml:257
 #, kde-format
 msgid "Always Show Keyboard Modifier Buttons"
-msgstr ""
+msgstr "Vis alltid knappar for spesialtastar"
 
 #: contents/ui/SettingsDialog.qml:17 contents/ui/SettingsPage.qml:16
 #: contents/ui/TerminalPage.qml:249
