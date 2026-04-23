@@ -281,6 +281,7 @@
           <li xml:lang="it">Corregge i pulsanti della barra degli strumenti e della tilde che non funzionano</li>
           <li xml:lang="ka">გასწორდა პანელისა და ტილდას პანელის ღილაკების პრობლემა</li>
           <li xml:lang="nl">Werkbalkknoppen balk en tilde, die niet werken, gerepareerd</li>
+          <li xml:lang="nn">Fiksa ikkje-fungerande røyr- og tildeknappar på verktøylinja</li>
           <li xml:lang="pl">Naprawiono niedziałające przyciski paska i tyldy na pasku narzędzi</li>
           <li xml:lang="pt-BR">Corrigido problema com os botões da barra de ferramentas (barra e til) que não estavam funcionando</li>
           <li xml:lang="ru">Исправлена неработоспособность кнопок панели инструментов для символов «|» и «~»;</li>
@@ -302,6 +303,7 @@
           <li xml:lang="it">Miglioramenti generali dell'interfaccia utente</li>
           <li xml:lang="ka">მომხმარებლის ინტერფეისის ზოგადი გაუმჯობესება</li>
           <li xml:lang="nl">Algemene verbeteringen aan het gebruikersinterface</li>
+          <li xml:lang="nn">Generelle forbetringar for brukarflata</li>
           <li xml:lang="pl">Ogólne usprawnienia interfejsu użytkownika</li>
           <li xml:lang="pt-BR">Melhorias gerais na interface do usuário</li>
           <li xml:lang="ru">Улучшения пользовательского интерфейса;</li>
@@ -333,6 +335,7 @@
           <li xml:lang="it">Corregge il supporto per i tasti modificatori come Alt e Ctrl</li>
           <li xml:lang="ka">გასწორდა Alt/Ctrl-ის მსგავსი მოდიფიკატორი ღილაკების მხარდაჭერა</li>
           <li xml:lang="nl">Ondersteuning voor samensteltoetsen zoals Alt en Ctrl gerepareerd</li>
+          <li xml:lang="nn">Fiksa støtte for valtastar som «Alt» og «Ctrl»</li>
           <li xml:lang="pl">Naprawiono obsługę klawiszy odmieniających takich jak Alt oraz Ctrl</li>
           <li xml:lang="pt-BR">Corrigido o suporte para teclas modificadoras como Alt e Ctrl</li>
           <li xml:lang="ru">Исправлена поддержка клавиш-модификаторов, таких как Alt и Ctrl;</li>
@@ -354,6 +357,7 @@
           <li xml:lang="it">Revisione del codice e miglioramenti generali dell'interfaccia utente</li>
           <li xml:lang="ka">კოდის რეფაქტორინგი და მომხმარებლის ინტერფეისის გაუმჯობესებები</li>
           <li xml:lang="nl">Herziening van code en algemene verbeteringen aan het gebruikersinterface</li>
+          <li xml:lang="nn">Koderefaktorering og generelle forbetringar i brukarflata</li>
           <li xml:lang="pl">Przepisano kod oraz dokonano ogólnych ulepszeń interfejsu</li>
           <li xml:lang="pt-BR">Refatoração de código e melhorias gerais na interface do usuário</li>
           <li xml:lang="ru">Рефакторинг кода и улучшение пользовательского интерфейса;</li>
@@ -382,6 +386,7 @@
           <li xml:lang="it">Aggiunge più pulsanti di azione alla barra degli strumenti</li>
           <li xml:lang="ka">მეტი ქმედების ღილაკის ჩატევა პანელზე</li>
           <li xml:lang="nl">Laat meer actieknoppen passen in werkbalk</li>
+          <li xml:lang="nn">Plass til fleire handlingsknappar i verktøylinja</li>
           <li xml:lang="pl">Zmieszczono więcej przycisków na pasku narzędzi</li>
           <li xml:lang="pt-BR">Adiciona mais botões de ação à barra de ferramentas</li>
           <li xml:lang="ru">На панели инструментов размещено больше кнопок действий;</li>
@@ -403,6 +408,7 @@
           <li xml:lang="it">Rielabora la disposizione della barra degli strumenti e aggiunge il supporto per le schede</li>
           <li xml:lang="ka">გადამუშავდა ხელსაწყოთა პანელის განლაგებები და დაემატა ჩანართის მხარდაჭერა</li>
           <li xml:lang="nl">Indeling van werkbalk en ondersteuning voor tabblad toegevoegd</li>
+          <li xml:lang="nn">Forbetra verktøylinjeutforming og lagt til støtte for faner</li>
           <li xml:lang="pl">Przebudowano układ pasków narzędzi i dodano obsługę kart</li>
           <li xml:lang="pt-BR">Reformulação dos layouts das barras de ferramentas e adição do suporte a abas</li>
           <li xml:lang="ru">Изменено расположение панелей инструментов и добавлена поддержка вкладок;</li>
@@ -424,6 +430,7 @@
           <li xml:lang="it">Aggiunge la finestra di conferma per la chiusura della scheda</li>
           <li xml:lang="ka">დაემატა დადასტურების დიალოგი ჩანართის დახურვისას</li>
           <li xml:lang="nl">Dialoog voor bevestiging van tabblad voor sluiten toegevoegd</li>
+          <li xml:lang="nn">Lagt til stadfestingsvindauge ved fanelukking</li>
           <li xml:lang="pl">Dodano zapytanie o potwierdzenie przy zamykaniu kart</li>
           <li xml:lang="pt-BR">Adicionada a caixa de diálogo de confirmação para fechar a aba</li>
           <li xml:lang="ru">Добавлен диалог подтверждения закрытия вкладки;</li>
@@ -456,6 +463,7 @@
         <p xml:lang="it">Plasma Mobile Gear 21.06</p>
         <p xml:lang="ka">Plasma Mobile Gear 21.06</p>
         <p xml:lang="nl">Plasma Mobile Gear 21.06</p>
+        <p xml:lang="nn">Plasma Mobile Gear 21.06</p>
         <p xml:lang="pl">Wyposażenie Przenośnej Plazmy 21.06</p>
         <p xml:lang="pt-BR">Plasma Mobile Gear 21.06</p>
         <p xml:lang="ru">Plasma Mobile Gear 21.06</p>
@@ -478,6 +486,7 @@
           <li xml:lang="it">buildsystem: cerca qmltermwidget</li>
           <li xml:lang="ka">buildsystem: qmltermwidget-ის ძებნა</li>
           <li xml:lang="nl">bouwsysteem: zoeken naar qmltermwidget</li>
+          <li xml:lang="nn">Byggjesystem: søk etter qmltermwidget</li>
           <li xml:lang="pl">system budowania: szukanie po qmltermwidget</li>
           <li xml:lang="pt-BR">compilação: pesquisar por qmltermwidget</li>
           <li xml:lang="ru">Система сборки: поиск qmltermwidget.</li>
