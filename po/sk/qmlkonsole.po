@@ -302,7 +302,7 @@ msgstr "Príkaz na vykonanie"
 #: main.cpp:63
 #, kde-format
 msgid "Set the initial working directory to 'dir'"
-msgstr "Nastaviť the initial working directory to 'dir'"
+msgstr "Nastaviť počiatočný pracovný adresár na „dir“"
 
 #: terminaltabmodel.cpp:68
 #, kde-format
