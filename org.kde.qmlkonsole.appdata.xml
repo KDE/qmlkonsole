@@ -340,7 +340,7 @@
           <li xml:lang="ko">Alt나 Ctrl 같은 수정자 키 지원 개선</li>
           <li xml:lang="nl">Ondersteuning voor samensteltoetsen zoals Alt en Ctrl gerepareerd</li>
           <li xml:lang="nn">Fiksa støtte for valtastar som «Alt» og «Ctrl»</li>
-          <li xml:lang="pl">Naprawiono obsługę klawiszy odmieniających takich jak Alt oraz Ctrl</li>
+          <li xml:lang="pl">Naprawiono obsługę klawiszy przełączających takich jak Alt oraz Ctrl</li>
           <li xml:lang="pt-BR">Corrigido o suporte para teclas modificadoras como Alt e Ctrl</li>
           <li xml:lang="ru">Исправлена поддержка клавиш-модификаторов, таких как Alt и Ctrl;</li>
           <li xml:lang="sk">Fix support for modifier keys like Alt and Ctrl</li>
