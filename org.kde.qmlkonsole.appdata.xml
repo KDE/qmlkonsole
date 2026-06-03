@@ -211,6 +211,7 @@
       <caption xml:lang="sl">Nastavitve</caption>
       <caption xml:lang="sv">Inställningar</caption>
       <caption xml:lang="tr">Ayarlar</caption>
+      <caption xml:lang="ug">تەڭشەك</caption>
       <caption xml:lang="uk">Параметри</caption>
       <caption xml:lang="zh-CN">设置</caption>
       <caption xml:lang="zh-TW">設定</caption>
@@ -400,6 +401,7 @@
           <li xml:lang="sk">Fit more action buttons in toolbar</li>
           <li xml:lang="sl">Postavi več gumbov za dejanja v orodno vrstico</li>
           <li xml:lang="tr">Araç çubuğuna daha fazla eylem düğmesi sığdırıldı.</li>
+          <li xml:lang="ug">قورال بالداقتا تېخىمۇ كۆپ مەشغۇلات توپچىسىنى سىغدۇرىدۇ</li>
           <li xml:lang="uk">Реалізовано збільшення кількості кнопок дій на панелі інструментів</li>
           <li xml:lang="zh-CN">在工具栏中显示更多操作按钮</li>
           <li xml:lang="zh-TW">讓工具列包含更多動作按鈕</li>
