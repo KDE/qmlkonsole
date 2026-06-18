@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: qmlkonsole\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-11-17 11:54+0000\n"
-"PO-Revision-Date: 2020-08-13 02:28+0200\n"
+"PO-Revision-Date: 2026-06-17 16:44+0300\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
 "Language: lt\n"
@@ -17,220 +17,222 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n==1 ? 0 : n%10>=2 && (n%100<10 || n"
 "%100>=20) ? 1 : n%10==0 || (n%100>10 && n%100<20) ? 2 : 3);\n"
+"X-Generator: Poedit 3.9\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr ""
+msgstr "Moo"
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr ""
+msgstr "<>"
 
 #: contents/ui/main.qml:15
 #, kde-format
 msgid "Terminal"
-msgstr ""
+msgstr "Terminalas"
 
 #: contents/ui/SavedCommandsDialog.qml:19
 #, kde-format
 msgctxt "@title:window"
 msgid "Saved Commands"
-msgstr ""
+msgstr "Įrašytos komandos"
 
 #: contents/ui/SavedCommandsDialog.qml:25
 #, kde-format
 msgid "Configure"
-msgstr ""
+msgstr "Konfigūruoti"
 
 #: contents/ui/SavedCommandsDialog.qml:50
 #: contents/ui/SavedCommandsSettings.qml:51
 #, kde-format
 msgid "No saved commands"
-msgstr ""
+msgstr "Nėra įrašytų komandų"
 
 #: contents/ui/SavedCommandsDialog.qml:51
 #: contents/ui/SavedCommandsSettings.qml:52
 #, kde-format
 msgid "Save commands to quickly run them without typing them out."
 msgstr ""
+"Įrašykite komandas, kad galėtumėte greitai jas paleisti net jų nerašydami."
 
 #: contents/ui/SavedCommandsSettings.qml:18
 #, kde-format
 msgid "Saved Commands"
-msgstr ""
+msgstr "Įrašytos komandos"
 
 #: contents/ui/SavedCommandsSettings.qml:25
 #: contents/ui/SavedCommandsSettings.qml:96
 #, kde-format
 msgid "Add Command"
-msgstr ""
+msgstr "Pridėti komandą"
 
 #: contents/ui/SavedCommandsSettings.qml:30
 #, kde-format
 msgid "Edit"
-msgstr ""
+msgstr "Taisyti"
 
 #: contents/ui/SavedCommandsSettings.qml:56
 #, kde-format
 msgid "Add command"
-msgstr ""
+msgstr "Pridėti komandą"
 
 #: contents/ui/SavedCommandsSettings.qml:87
 #, kde-format
 msgid "Command %1 removed"
-msgstr ""
+msgstr "Komanda %1 pašalinta"
 
 #: contents/ui/SettingsComponent.qml:24
 #, kde-format
 msgid "General"
-msgstr ""
+msgstr "Bendra"
 
 #: contents/ui/SettingsComponent.qml:33
 #, kde-format
 msgid "About"
-msgstr ""
+msgstr "Apie"
 
 #: contents/ui/SettingsComponent.qml:44
 #, kde-format
 msgid "Appearance"
-msgstr ""
+msgstr "Išvaizda"
 
 #: contents/ui/SettingsComponent.qml:53
 #, kde-format
 msgid "Color scheme"
-msgstr ""
+msgstr "Spalvų rinkinys"
 
 #: contents/ui/SettingsComponent.qml:69 contents/ui/SettingsComponent.qml:83
 #, kde-format
 msgid "Font Family"
-msgstr ""
+msgstr "Šrifto šeima"
 
 #: contents/ui/SettingsComponent.qml:116
 #, kde-format
 msgctxt "@title:window"
 msgid "Pick font"
-msgstr ""
+msgstr "Pasirinkti šriftą"
 
 #: contents/ui/SettingsComponent.qml:180
 #, kde-format
 msgid "Font Size"
-msgstr ""
+msgstr "Šrifto dydis"
 
 #: contents/ui/SettingsComponent.qml:205
 #, kde-format
 msgid "Window Transparency"
-msgstr ""
+msgstr "Lango permatomumas"
 
 #: contents/ui/SettingsComponent.qml:243
 #, kde-format
 msgid "Blur Background"
-msgstr ""
+msgstr "Sulieti foną"
 
 #: contents/ui/SettingsComponent.qml:257
 #, kde-format
 msgid "Always Show Keyboard Modifier Buttons"
-msgstr ""
+msgstr "Visada rodyti klaviatūros modifikatorių mygtukus"
 
 #: contents/ui/SettingsDialog.qml:17 contents/ui/SettingsPage.qml:16
 #: contents/ui/TerminalPage.qml:249
 #, kde-format
 msgid "Settings"
-msgstr ""
+msgstr "Nuostatos"
 
 #: contents/ui/TerminalKeyToolBar.qml:72
 #, kde-format
 msgctxt "Control Key (should match the key on the keyboard of the locale)"
 msgid "Ctrl"
-msgstr ""
+msgstr "Vald"
 
 #: contents/ui/TerminalKeyToolBar.qml:90
 #, kde-format
 msgctxt "Alt Key (should match the key on the keyboard of the locale)"
 msgid "Alt"
-msgstr ""
+msgstr "Alt"
 
 #: contents/ui/TerminalKeyToolBar.qml:106
 #, kde-format
 msgctxt "Escape key (should match the key on the keyboard of the locale)"
 msgid "Esc"
-msgstr ""
+msgstr "Gr"
 
 #: contents/ui/TerminalKeyToolBar.qml:113
 #, kde-format
 msgctxt ""
 "Tab character key (should match the key on the keyboard of the locale)"
 msgid "Tab"
-msgstr ""
+msgstr "Tab"
 
 #: contents/ui/TerminalKeyToolBar.qml:163
 #, kde-format
 msgid "Toggle Virtual Keyboard"
-msgstr ""
+msgstr "Perjungti virtualią klaviatūrą"
 
 #: contents/ui/TerminalPage.qml:149
 #, kde-format
 msgctxt "@action:intoolbar"
 msgid "New Tab"
-msgstr ""
+msgstr "Nauja kortelė"
 
 #: contents/ui/TerminalPage.qml:159
 #, kde-format
 msgctxt "@action:intoolbar"
 msgid "Saved Commands"
-msgstr ""
+msgstr "Įrašytos komandos"
 
 #: contents/ui/TerminalPage.qml:166
 #, kde-format
 msgid "reverse-i-search"
-msgstr ""
+msgstr "atvirkštinė paieška"
 
 #: contents/ui/TerminalPage.qml:175
 #, kde-format
 msgid "Cancel current command"
-msgstr ""
+msgstr "Atsisakyti dabartinės komandos"
 
 #: contents/ui/TerminalPage.qml:184
 #, kde-format
 msgid "Send EOF"
-msgstr ""
+msgstr "Siųsti EOF"
 
 #: contents/ui/TerminalPage.qml:193
 #, kde-format
 msgid "Cursor to line start"
-msgstr ""
+msgstr "Žymeklį į eilutės pradžią"
 
 #: contents/ui/TerminalPage.qml:202
 #, kde-format
 msgid "Cursor to line end"
-msgstr ""
+msgstr "Žymeklį į eilutės pabaigą"
 
 #: contents/ui/TerminalPage.qml:211
 #, kde-format
 msgid "Kill to line end"
-msgstr ""
+msgstr "Ištrinti iki eilutės pabaigos"
 
 #: contents/ui/TerminalPage.qml:220
 #, kde-format
 msgid "Paste from kill buffer"
-msgstr ""
+msgstr "Įdėti iš ištrynimo buferio"
 
 #: contents/ui/TerminalPage.qml:229
 #, kde-format
 msgid "Copy"
-msgstr ""
+msgstr "Kopijuoti"
 
 #: contents/ui/TerminalPage.qml:240
 #, kde-format
 msgid "Paste"
-msgstr ""
+msgstr "Įdėti"
 
 #: contents/ui/TerminalPage.qml:307
 #, kde-format
 msgctxt "@title:window"
 msgid "Confirm closing %1"
-msgstr ""
+msgstr "Patvirtinti %1 užvėrimą"
 
 #: contents/ui/TerminalPage.qml:323
 #, kde-format
@@ -238,12 +240,14 @@ msgid ""
 "A process is currently running in this tab. Are you sure you want to close "
 "it?"
 msgstr ""
+"Šiuo metu šioje kortelėje yra paleistas procesas. Ar tikrai norite ją "
+"užverti?"
 
 #: contents/ui/TerminalPage.qml:333
 #, kde-format
 msgctxt "@title:window"
 msgid "Confirm closing window"
-msgstr ""
+msgstr "Patvirtinti lango užvėrimą"
 
 #: contents/ui/TerminalPage.qml:346
 #, kde-format
@@ -251,6 +255,7 @@ msgid ""
 "There are processes currently running in this window. Are you sure you want "
 "to close it?"
 msgstr ""
+"Šiuo metu šiame lange yra paleisti procesai. Ar tikrai norite jį užverti?"
 
 #: contents/ui/TerminalPage.qml:347
 #, kde-format
@@ -258,54 +263,55 @@ msgid ""
 "A process is currently running in this window. Are you sure you want to "
 "close it?"
 msgstr ""
+"Šiuo metu šiame lange yra paleistas procesas. Ar tikrai norite jį užverti?"
 
 #: contents/ui/TerminalPage.qml:354
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Tab"
-msgstr ""
+msgstr "Pasirinkti kortelę"
 
 #: contents/ui/TerminalPage.qml:400
 #, kde-format
 msgid "Close"
-msgstr ""
+msgstr "Užverti"
 
 #: contents/ui/TerminalPage.qml:413
 #, kde-format
 msgid "selection mode"
-msgstr ""
+msgstr "žymėjimo veiksena"
 
 #: contents/ui/TerminalPage.qml:421
 #, kde-format
 msgid "Disable"
-msgstr ""
+msgstr "Išjungti"
 
 #: main.cpp:38
 #, kde-format
 msgid "© 2020-2022 KDE Community"
-msgstr ""
+msgstr "© 2020–2022 KDE bendruomenė"
 
 #: main.cpp:40
 #, kde-format
 msgid "Jonah Brüchert"
-msgstr ""
+msgstr "Jonah Brüchert"
 
 #: main.cpp:41
 #, kde-format
 msgid "Devin Lin"
-msgstr ""
+msgstr "Devin Lin"
 
 #: main.cpp:62
 #, kde-format
 msgid "Command to execute"
-msgstr ""
+msgstr "Komanda, kurią vykdyti"
 
 #: main.cpp:63
 #, kde-format
 msgid "Set the initial working directory to 'dir'"
-msgstr ""
+msgstr "Nustatyti pradinį darbinį katalogą į „dir“"
 
 #: terminaltabmodel.cpp:68
 #, kde-format
 msgid "Tab %1"
-msgstr ""
+msgstr "Kortelė %1"
