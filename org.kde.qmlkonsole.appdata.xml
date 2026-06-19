@@ -115,7 +115,7 @@
     <p xml:lang="it">Applicazione di terminale che offre pulsanti della tastiera aggiuntivi utili su dispositivi tattili.</p>
     <p xml:lang="ka">ტერმინალის აპლიკაცია, რომელიც სენსორული მოწყობილობებისთვის განკუთვნილ დამატებით ღილაკებს შეიცავს.</p>
     <p xml:lang="ko">터치 장치에서 유용한 추가 키보드 단추가 있는 터미널 앱입니다.</p>
-    <p xml:lang="lt">Terminalo programa, siūlanti papildomus klaviatūros mygtukus, kurie praverčia jutiklinės įvesties įrenginiuose.</p>
+    <p xml:lang="lt">Terminalo programa, siūlanti papildomus klaviatūros mygtukus, kurie praverčia jutiklinio įvedimo įrenginiuose.</p>
     <p xml:lang="nl">Terminalprogramma die extra toetsen biedt nuttig op aanraakapparaten.</p>
     <p xml:lang="nn">Terminalprogram med fleire tastatur­knappar som er nyttige på trykkskjermar.</p>
     <p xml:lang="pa">ਟਰਮੀਨਲ ਐਪਲੀਕੇਸ਼ਨ ਵਧੀਕ ਕੀਬੋਰਡ ਬਟਨ ਦਿੰਦੀ ਹੈ, ਜੋ ਕਿ ਟੱਚ ਸਕਰੀਨ ਡਿਵਾਈਸਾਂ ਲਈ ਫਾਇਦੇਮੰਦ ਹੁੰਦੇ ਹਨ।</p>
@@ -284,6 +284,7 @@
           <li xml:lang="it">Corregge i pulsanti della barra degli strumenti e della tilde che non funzionano</li>
           <li xml:lang="ka">გასწორდა პანელისა და ტილდას პანელის ღილაკების პრობლემა</li>
           <li xml:lang="ko">도구 모음의 바와 틸드 아이콘이 작동하지 않는 문제 수정</li>
+          <li xml:lang="lt">Pataisyta klaida, dėl kurios įrankių juostoje neveikė stataus brūkšnio ir tildės mygtukai</li>
           <li xml:lang="nl">Werkbalkknoppen balk en tilde, die niet werken, gerepareerd</li>
           <li xml:lang="nn">Fiksa ikkje-fungerande røyr- og tildeknappar på verktøylinja</li>
           <li xml:lang="pl">Naprawiono niedziałające przyciski paska i tyldy na pasku narzędzi</li>
@@ -307,6 +308,7 @@
           <li xml:lang="it">Miglioramenti generali dell'interfaccia utente</li>
           <li xml:lang="ka">მომხმარებლის ინტერფეისის ზოგადი გაუმჯობესება</li>
           <li xml:lang="ko">일반 사용자 인터페이스 개선</li>
+          <li xml:lang="lt">Bendri naudotojo sąsajos patobulinimai</li>
           <li xml:lang="nl">Algemene verbeteringen aan het gebruikersinterface</li>
           <li xml:lang="nn">Generelle forbetringar for brukarflata</li>
           <li xml:lang="pl">Ogólne usprawnienia interfejsu użytkownika</li>
@@ -340,6 +342,7 @@
           <li xml:lang="it">Corregge il supporto per i tasti modificatori come Alt e Ctrl</li>
           <li xml:lang="ka">გასწორდა Alt/Ctrl-ის მსგავსი მოდიფიკატორი ღილაკების მხარდაჭერა</li>
           <li xml:lang="ko">Alt나 Ctrl 같은 수정자 키 지원 개선</li>
+          <li xml:lang="lt">Pataisytas modifikavimo klavišų, tokių kaip Alt ir Vald, palaikymas</li>
           <li xml:lang="nl">Ondersteuning voor samensteltoetsen zoals Alt en Ctrl gerepareerd</li>
           <li xml:lang="nn">Fiksa støtte for valtastar som «Alt» og «Ctrl»</li>
           <li xml:lang="pl">Naprawiono obsługę klawiszy przełączających takich jak Alt oraz Ctrl</li>
@@ -363,6 +366,7 @@
           <li xml:lang="it">Revisione del codice e miglioramenti generali dell'interfaccia utente</li>
           <li xml:lang="ka">კოდის რეფაქტორინგი და მომხმარებლის ინტერფეისის გაუმჯობესებები</li>
           <li xml:lang="ko">코드 리팩터링 및 일반 사용자 인터페이스 개선</li>
+          <li xml:lang="lt">Kodo pertvarkymas ir bendri naudotojo sąsajos patobulinimai</li>
           <li xml:lang="nl">Herziening van code en algemene verbeteringen aan het gebruikersinterface</li>
           <li xml:lang="nn">Koderefaktorering og generelle forbetringar i brukarflata</li>
           <li xml:lang="pl">Przepisano kod oraz dokonano ogólnych ulepszeń interfejsu</li>
@@ -393,6 +397,7 @@
           <li xml:lang="it">Aggiunge più pulsanti di azione alla barra degli strumenti</li>
           <li xml:lang="ka">მეტი ქმედების ღილაკის ჩატევა პანელზე</li>
           <li xml:lang="ko">도구 모음에 더 많은 동작 단추 배치</li>
+          <li xml:lang="lt">Į įrankių juosta patalpinta daugiau veiksmo mygtukų</li>
           <li xml:lang="nl">Laat meer actieknoppen passen in werkbalk</li>
           <li xml:lang="nn">Plass til fleire handlingsknappar i verktøylinja</li>
           <li xml:lang="pl">Zmieszczono więcej przycisków na pasku narzędzi</li>
@@ -417,6 +422,7 @@
           <li xml:lang="it">Rielabora la disposizione della barra degli strumenti e aggiunge il supporto per le schede</li>
           <li xml:lang="ka">გადამუშავდა ხელსაწყოთა პანელის განლაგებები და დაემატა ჩანართის მხარდაჭერა</li>
           <li xml:lang="ko">도구 모음 레이아웃 재작업 및 탭 지원 추가</li>
+          <li xml:lang="lt">Perdaryti įrankių juostos išdėstymai ir pridėtas kortelių palaikymas</li>
           <li xml:lang="nl">Indeling van werkbalk en ondersteuning voor tabblad toegevoegd</li>
           <li xml:lang="nn">Forbetra verktøylinjeutforming og lagt til støtte for faner</li>
           <li xml:lang="pl">Przebudowano układ pasków narzędzi i dodano obsługę kart</li>
@@ -440,6 +446,7 @@
           <li xml:lang="it">Aggiunge la finestra di conferma per la chiusura della scheda</li>
           <li xml:lang="ka">დაემატა დადასტურების დიალოგი ჩანართის დახურვისას</li>
           <li xml:lang="ko">탭 닫기 확인 대화 상자 추가</li>
+          <li xml:lang="lt">Pridėtas patvirtinimo dialogas užveriant kortelę</li>
           <li xml:lang="nl">Dialoog voor bevestiging van tabblad voor sluiten toegevoegd</li>
           <li xml:lang="nn">Lagt til stadfestingsvindauge ved fanelukking</li>
           <li xml:lang="pl">Dodano zapytanie o potwierdzenie przy zamykaniu kart</li>
@@ -474,6 +481,7 @@
         <p xml:lang="it">Plasma Mobile Gear 21.06</p>
         <p xml:lang="ka">Plasma Mobile Gear 21.06</p>
         <p xml:lang="ko">Plasma Mobile Gear 21.06</p>
+        <p xml:lang="lt">Plasma Mobile Gear 21.06</p>
         <p xml:lang="nl">Plasma Mobile Gear 21.06</p>
         <p xml:lang="nn">Plasma Mobile Gear 21.06</p>
         <p xml:lang="pl">Wyposażenie Przenośnej Plazmy 21.06</p>
@@ -498,6 +506,7 @@
           <li xml:lang="it">buildsystem: cerca qmltermwidget</li>
           <li xml:lang="ka">buildsystem: qmltermwidget-ის ძებნა</li>
           <li xml:lang="ko">buildsystem: qmltermwidget 검색</li>
+          <li xml:lang="lt">Darinio sistema: qmltermwidget paieška</li>
           <li xml:lang="nl">bouwsysteem: zoeken naar qmltermwidget</li>
           <li xml:lang="nn">Byggjesystem: søk etter qmltermwidget</li>
           <li xml:lang="pl">system budowania: szukanie po qmltermwidget</li>
