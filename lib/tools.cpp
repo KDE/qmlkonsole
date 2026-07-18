@@ -36,5 +36,9 @@ But in some cases (apple bundle) there can be more locations).
 */
 const QStringList colorSchemesDirs()
 {
-    return {QStringLiteral(":/konsoleqml/color-schemes/")};
+    QStringList dirs = {QStringLiteral(":/konsoleqml/color-schemes/")};
+    dirs << QDir::homePath() + QStringLiteral("/.local/share/konsole");
+    dirs << QStringLiteral("/usr/share/konsole");
+    dirs << custom_color_schemes_dirs;
+    return dirs;
 }
