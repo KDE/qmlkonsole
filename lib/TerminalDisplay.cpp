@@ -1536,6 +1536,7 @@ void TerminalDisplay::blinkCursorEvent()
 void TerminalDisplay::resizeEvent(QResizeEvent *)
 {
     updateImageSize();
+    updateImage();
     processFilters();
 }
 

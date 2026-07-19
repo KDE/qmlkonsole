@@ -183,6 +183,9 @@ public:
     void addCellsVector(const QVector<Character> &cells) override;
     void addLine(bool previousWrapped = false) override;
 
+    void removeCells();
+    int reflowLines(int columns);
+
     void setMaxNbLines(unsigned int nbLines);
     unsigned int maxNbLines() const
     {
