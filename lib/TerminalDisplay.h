@@ -108,7 +108,7 @@ class KONSOLEPRIVATE_EXPORT TerminalDisplay : public QQuickPaintedItem
     Q_PROPERTY(bool blinkingCursor READ blinkingCursor WRITE setBlinkingCursor NOTIFY blinkingCursorStateChanged)
     Q_PROPERTY(bool antialiasText READ antialias WRITE setAntialias)
     Q_PROPERTY(QStringList availableColorSchemes READ availableColorSchemes NOTIFY availableColorSchemesChanged)
-    Q_PROPERTY(qreal backgroundOpacity READ opacity WRITE setOpacity NOTIFY opacityChanged)
+    Q_PROPERTY(qreal backgroundOpacity READ backgroundOpacity WRITE setBackgroundOpacity NOTIFY backgroundOpacityChanged)
 
 public:
     /** Constructs a new terminal display widget with the specified parent. */
@@ -133,8 +133,8 @@ public:
      */
     uint randomSeed() const;
 
-    /** Sets the opacity of the terminal display. */
-    void setOpacity(qreal opacity);
+    qreal backgroundOpacity() const;
+    void setBackgroundOpacity(qreal opacity);
 
     /**
      * This enum describes the location where the scroll bar is positioned in the display widget.
@@ -698,6 +698,7 @@ Q_SIGNALS:
     void fullCursorHeightChanged();
     void blinkingCursorStateChanged();
     void boldIntenseChanged();
+    void backgroundOpacityChanged();
 
 protected:
     bool event(QEvent *) override;
@@ -794,7 +795,7 @@ private:
     void drawTextFragment(QPainter &painter, const QRect &rect, const QString &text, const Character *style);
     // draws the background for a text fragment
     // if useOpacitySetting is true then the color's alpha value will be set to
-    // the display's transparency (set with setOpacity()), otherwise the background
+    // the display's transparency (set with setBackgroundOpacity()), otherwise the background
     // will be drawn fully opaque
     void drawBackground(QPainter &painter, const QRect &rect, const QColor &color, bool useOpacitySetting);
     // draws the cursor character
@@ -944,7 +945,7 @@ private:
 
     QSize _size;
 
-    qreal _opacity;
+    qreal _backgroundOpacity;
 
     // list of filters currently applied to the display.  used for links and
     // search highlight

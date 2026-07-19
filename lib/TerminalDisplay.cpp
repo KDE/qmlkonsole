@@ -298,7 +298,7 @@ TerminalDisplay::TerminalDisplay(QQuickItem *parent)
     , _outputSuspendedLabel(nullptr)
     , _lineSpacing(0)
     , _colorsInverted(false)
-    , _opacity(static_cast<qreal>(1))
+    , _backgroundOpacity(static_cast<qreal>(1))
     , _filterChain(std::make_unique<TerminalImageFilterChain>())
     , _cursorShape(Emulation::KeyboardCursorShape::BlockCursor)
     , mMotionAfterPasting(NoMoveScreenWindow)
@@ -362,6 +362,7 @@ TerminalDisplay::TerminalDisplay(QQuickItem *parent)
     // TODO Forcing rendering to Framebuffer. We need to determine if this is ok
     // always or if we need to make this customizable.
     setRenderTarget(QQuickPaintedItem::FramebufferObject);
+    setFillColor(Qt::transparent);
 
     //  setFocusPolicy( Qt::WheelFocus );
 
@@ -641,10 +642,21 @@ QColor TerminalDisplay::keyboardCursorColor() const
     return _cursorColor;
 }
 
-void TerminalDisplay::setOpacity(qreal opacity)
+qreal TerminalDisplay::backgroundOpacity() const
 {
-    _opacity = qBound(static_cast<qreal>(0), opacity, static_cast<qreal>(1));
+    return _backgroundOpacity;
+}
+
+void TerminalDisplay::setBackgroundOpacity(qreal opacity)
+{
+    const qreal boundedOpacity = qBound(static_cast<qreal>(0), opacity, static_cast<qreal>(1));
+    if (qFuzzyCompare(_backgroundOpacity, boundedOpacity)) {
+        return;
+    }
+
+    _backgroundOpacity = boundedOpacity;
     update();
+    Q_EMIT backgroundOpacityChanged();
 }
 
 void TerminalDisplay::drawBackground(QPainter &painter, const QRect &rect, const QColor &backgroundColor, bool useOpacitySetting)
@@ -654,7 +666,7 @@ void TerminalDisplay::drawBackground(QPainter &painter, const QRect &rect, const
     // left to the widget style for a consistent look.
     if (useOpacitySetting) {
         QColor color(backgroundColor);
-        color.setAlphaF(_opacity);
+        color.setAlphaF(color.alphaF() * _backgroundOpacity);
 
         painter.save();
         painter.setCompositionMode(QPainter::CompositionMode_Source);
@@ -1367,7 +1379,7 @@ QRect TerminalDisplay::calculateTextArea(int topLeftX, int topLeftY, int startCo
 
 void TerminalDisplay::drawContents(QPainter &paint, const QRect &rect)
 {
-    // Draw opaque background
+    // Draw background
     drawBackground(paint, contentsRect(), _colorTable[DEFAULT_BACK_COLOR].color, true);
 
     QPoint tL = contentsRect().topLeft();
@@ -2978,7 +2990,6 @@ void TerminalDisplay::setColorScheme(const QString &name)
 
         setColorTable(cs->getColorTable());
 
-        setFillColor(cs->backgroundColor());
         _colorScheme = name;
         Q_EMIT colorSchemeChanged();
     }

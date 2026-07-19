@@ -468,7 +468,7 @@ Kirigami.Page {
                         font.pixelSize: TerminalSettings.fontSize
 
                         colorScheme: TerminalSettings.colorScheme
-                        opacity: TerminalSettings.windowOpacity
+                        backgroundOpacity: TerminalSettings.windowOpacity
 
                         Component.onCompleted: {
                             if (!root.initialSessionCreated) {
