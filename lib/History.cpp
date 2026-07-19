@@ -293,7 +293,7 @@ HistoryScrollBuffer::HistoryScrollBuffer(unsigned int maxLineCount)
     , _historyBuffer()
     , _maxLineCount(0)
     , _usedLines(0)
-    , _head(0)
+    , _head(-1)
 {
     setMaxNbLines(maxLineCount);
 }
@@ -305,16 +305,22 @@ HistoryScrollBuffer::~HistoryScrollBuffer()
 
 void HistoryScrollBuffer::addCellsVector(const QVector<Character> &cells)
 {
-    _head++;
-    if (_usedLines < _maxLineCount)
-        _usedLines++;
-
-    if (_head >= _maxLineCount) {
-        _head = 0;
+    if (_maxLineCount == 0) {
+        return;
     }
 
-    _historyBuffer[bufferIndex(_usedLines - 1)] = cells;
-    _wrappedLine[bufferIndex(_usedLines - 1)] = false;
+    int index;
+    if (_usedLines < _maxLineCount) {
+        index = _usedLines;
+        _usedLines++;
+        _head = index;
+    } else {
+        _head = (_head + 1) % _maxLineCount;
+        index = _head;
+    }
+
+    _historyBuffer[index] = cells;
+    _wrappedLine[index] = false;
 }
 void HistoryScrollBuffer::addCells(std::span<const Character> a, int count)
 {
@@ -326,6 +332,9 @@ void HistoryScrollBuffer::addCells(std::span<const Character> a, int count)
 
 void HistoryScrollBuffer::addLine(bool previousWrapped)
 {
+    if (_usedLines == 0) {
+        return;
+    }
     _wrappedLine[bufferIndex(_usedLines - 1)] = previousWrapped;
 }
 
@@ -379,23 +388,98 @@ void HistoryScrollBuffer::getCells(int lineNumber, int startColumn, int count, s
     memcpy(buffer.data(), line.constData() + startColumn, count * sizeof(Character));
 }
 
-void HistoryScrollBuffer::setMaxNbLines(unsigned int lineCount)
+void HistoryScrollBuffer::removeCells()
 {
-    HistoryLine *oldBuffer = _historyBuffer;
-    HistoryLine *newBuffer = new HistoryLine[lineCount];
-
-    for (int i = 0; i < qMin(_usedLines, (int)lineCount); i++) {
-        newBuffer[i] = oldBuffer[bufferIndex(i)];
+    if (_usedLines == 0) {
+        return;
     }
 
-    _usedLines = qMin(_usedLines, (int)lineCount);
-    _maxLineCount = lineCount;
-    _head = (_usedLines == _maxLineCount) ? 0 : _usedLines - 1;
+    if (_usedLines < _maxLineCount) {
+        _historyBuffer[_usedLines - 1].clear();
+        _wrappedLine[_usedLines - 1] = false;
+        --_usedLines;
+        _head = _usedLines - 1;
+        return;
+    }
 
+    auto *newBuffer = new HistoryLine[_maxLineCount];
+    QBitArray newWrappedLine(_maxLineCount);
+    for (int line = 0; line < _usedLines - 1; ++line) {
+        const int oldIndex = bufferIndex(line);
+        newBuffer[line] = std::move(_historyBuffer[oldIndex]);
+        newWrappedLine[line] = _wrappedLine[oldIndex];
+    }
+
+    delete[] _historyBuffer;
     _historyBuffer = newBuffer;
-    delete[] oldBuffer;
+    _wrappedLine = std::move(newWrappedLine);
+    --_usedLines;
+    _head = _usedLines - 1;
+}
 
-    _wrappedLine.resize(lineCount);
+int HistoryScrollBuffer::reflowLines(int columns)
+{
+    QVector<HistoryLine> reflowedLines;
+    QBitArray reflowedWrappedLines;
+
+    int currentLine = 0;
+    while (currentLine < _usedLines) {
+        HistoryLine logicalLine = _historyBuffer[bufferIndex(currentLine)];
+        while (currentLine < _usedLines - 1 && isWrappedLine(currentLine)) {
+            ++currentLine;
+            logicalLine.append(_historyBuffer[bufferIndex(currentLine)]);
+        }
+
+        for (int offset = 0; offset < logicalLine.size(); offset += columns) {
+            const int count = qMin(columns, logicalLine.size() - offset);
+            reflowedLines.append(logicalLine.mid(offset, count));
+            reflowedWrappedLines.resize(reflowedLines.size());
+            reflowedWrappedLines[reflowedLines.size() - 1] = offset + count < logicalLine.size();
+        }
+
+        if (logicalLine.isEmpty()) {
+            reflowedLines.append(HistoryLine{});
+            reflowedWrappedLines.resize(reflowedLines.size());
+            reflowedWrappedLines[reflowedLines.size() - 1] = false;
+        }
+        ++currentLine;
+    }
+
+    const int removedLines = qMax(0, reflowedLines.size() - _maxLineCount);
+    auto *newBuffer = new HistoryLine[_maxLineCount];
+    QBitArray newWrappedLine(_maxLineCount);
+    const int firstLine = removedLines;
+    _usedLines = qMin(reflowedLines.size(), _maxLineCount);
+    for (int line = 0; line < _usedLines; ++line) {
+        newBuffer[line] = std::move(reflowedLines[firstLine + line]);
+        newWrappedLine[line] = reflowedWrappedLines[firstLine + line];
+    }
+
+    delete[] _historyBuffer;
+    _historyBuffer = newBuffer;
+    _wrappedLine = std::move(newWrappedLine);
+    _head = _usedLines - 1;
+    return removedLines;
+}
+
+void HistoryScrollBuffer::setMaxNbLines(unsigned int lineCount)
+{
+    const int keptLines = qMin(_usedLines, static_cast<int>(lineCount));
+    const int firstKeptLine = _usedLines - keptLines;
+    HistoryLine *newBuffer = new HistoryLine[lineCount];
+    QBitArray newWrappedLine(lineCount);
+    for (int line = 0; line < keptLines; ++line) {
+        const int oldIndex = bufferIndex(firstKeptLine + line);
+        newBuffer[line] = std::move(_historyBuffer[oldIndex]);
+        newWrappedLine[line] = _wrappedLine[oldIndex];
+    }
+
+    delete[] _historyBuffer;
+    _historyBuffer = newBuffer;
+    _wrappedLine = std::move(newWrappedLine);
+    _maxLineCount = lineCount;
+    _usedLines = keptLines;
+    _head = _usedLines - 1;
     dynamic_cast<HistoryTypeBuffer *>(m_histType)->m_nbLines = lineCount;
 }
 

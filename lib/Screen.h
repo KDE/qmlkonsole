@@ -351,9 +351,9 @@ public:
 
     /**
      * Resizes the image to a new fixed size of @p new_lines by @p new_columns.
-     * In the case that @p new_columns is smaller than the current number of columns,
-     * existing lines are not truncated.  This prevents characters from being lost
-     * if the terminal display is resized smaller and then larger again.
+     * Wrapped lines in a finite scrollback-backed screen are reflowed to fit
+     * @p new_columns. Other screens preserve oversized lines so characters are
+     * not lost when the terminal display is resized smaller and then larger again.
      *
      * The top and bottom margins are reset to the top and bottom of the new
      * screen size.  Tab stops are also reset and the current selection is

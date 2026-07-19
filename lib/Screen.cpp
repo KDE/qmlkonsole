@@ -326,35 +326,94 @@ void Screen::resizeImage(int new_lines, int new_columns)
     if ((new_lines == lines) && (new_columns == columns))
         return;
 
-    if (cuY > new_lines - 1) { // attempt to preserve focus and lines
-        _bottomMargin = lines - 1; // FIXME: margin lost
-        for (int i = 0; i < cuY - (new_lines - 1); i++) {
+    auto *reflowHistory = dynamic_cast<HistoryScrollBuffer *>(history.get());
+    int cursorLine = cuY;
+    const int oldCursorLine = (cursorLine == lines - 1 || cursorLine >= new_lines) ? new_lines - 1 : cursorLine;
+
+    if (reflowHistory && new_columns != columns && history->getLines()) {
+        while (history->getLines() && history->isWrappedLine(history->getLines() - 1)) {
             addHistLine();
             scrollUp(0, 1);
+            --cursorLine;
+        }
+        _droppedLines += reflowHistory->reflowLines(new_columns);
+    }
+
+    if (reflowHistory && new_columns != columns) {
+        int currentLine = 0;
+        while (currentLine < cursorLine && currentLine < screenLines.size() - 1) {
+            if (lineProperties.at(currentLine) & LINE_WRAPPED) {
+                screenLines[currentLine].append(screenLines.at(currentLine + 1));
+                screenLines.removeAt(currentLine + 1);
+                lineProperties.remove(currentLine);
+                --cursorLine;
+                continue;
+            }
+
+            int lineSize = screenLines.at(currentLine).size();
+            while (lineSize > 0 && screenLines.at(currentLine).at(lineSize - 1).character.isSpace()) {
+                --lineSize;
+            }
+
+            if (lineSize > new_columns && !(lineProperties.at(currentLine) & (LINE_DOUBLEWIDTH | LINE_DOUBLEHEIGHT))) {
+                auto overflow = screenLines.at(currentLine).mid(new_columns);
+                screenLines[currentLine].resize(new_columns);
+                const LineProperty properties = lineProperties.at(currentLine);
+                lineProperties.insert(currentLine + 1, properties);
+                screenLines.insert(currentLine + 1, std::move(overflow));
+                lineProperties[currentLine] = static_cast<LineProperty>(lineProperties.at(currentLine) | LINE_WRAPPED);
+                ++cursorLine;
+            }
+            ++currentLine;
         }
     }
 
-    // create new screen lines and copy from old to new
+    while (cursorLine > new_lines - 1) {
+        addHistLine();
+        scrollUp(0, 1);
+        --cursorLine;
+    }
 
-    auto newScreenLines = QVector<ImageLine>(new_lines + 1);
-    for (int i = 0; i < qMin(lines, new_lines + 1); i++)
-        newScreenLines[i] = screenLines[i];
-    for (int i = lines; (i > 0) && (i < new_lines + 1); i++)
-        newScreenLines[i].resize(new_columns);
+    if (reflowHistory) {
+        while (cursorLine < oldCursorLine && history->getLines()) {
+            const int historyLine = history->getLines() - 1;
+            const int lineLength = history->getLineLen(historyLine);
+            ImageLine characters(lineLength);
+            history->getCells(historyLine, 0, lineLength, characters);
+            const LineProperty properties = history->isWrappedLine(historyLine) ? LINE_WRAPPED : LINE_DEFAULT;
+            screenLines.insert(0, std::move(characters));
+            lineProperties.insert(qsizetype(0), properties);
+            reflowHistory->removeCells();
+            ++cursorLine;
+        }
+    }
 
-    lineProperties.resize(new_lines + 1);
-    for (int i = lines; (i > 0) && (i < new_lines + 1); i++)
-        lineProperties[i] = LINE_DEFAULT;
+    if (reflowHistory) {
+        const int previousScreenLineCount = screenLines.size();
+        lineProperties.resize(new_lines + 1);
+        if (lineProperties.size() > previousScreenLineCount) {
+            std::fill(lineProperties.begin() + previousScreenLineCount, lineProperties.end(), LINE_DEFAULT);
+        }
+        screenLines.resize(new_lines + 1);
+    } else {
+        // create new screen lines and copy from old to new
+        auto newScreenLines = QVector<ImageLine>(new_lines + 1);
+        for (int i = 0; i < qMin(lines, new_lines + 1); i++)
+            newScreenLines[i] = screenLines[i];
+        for (int i = lines; (i > 0) && (i < new_lines + 1); i++)
+            newScreenLines[i].resize(new_columns);
 
-    clearSelection();
+        lineProperties.resize(new_lines + 1);
+        for (int i = lines; (i > 0) && (i < new_lines + 1); i++)
+            lineProperties[i] = LINE_DEFAULT;
 
-    screenLines.clear();
-    screenLines = std::move(newScreenLines);
+        screenLines = std::move(newScreenLines);
+    }
 
     lines = new_lines;
     columns = new_columns;
     cuX = qMin(cuX, columns - 1);
-    cuY = qMin(cuY, lines - 1);
+    cuY = reflowHistory ? qBound(0, cursorLine, lines - 1) : qMin(cuY, lines - 1);
 
     // FIXME: try to keep values, evtl.
     _topMargin = 0;
