@@ -278,6 +278,12 @@ Kirigami.Page {
                 onSwitchToTabRequested: index => root.switchToTab(index)
                 onCloseTabRequested: index => root.closeTab(index)
                 onAddTabRequested: newTabAction.trigger()
+
+                Kirigami.Separator {
+                    anchors.bottom: parent.bottom
+                    anchors.left: parent.left
+                    anchors.right: parent.right
+                }
             }
         }
     }
