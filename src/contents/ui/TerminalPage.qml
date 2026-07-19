@@ -546,19 +546,10 @@ Kirigami.Page {
                             onLongPressed: terminal.touchSelectionMode = true
                         }
 
-                        // simulate scrolling for touch (TODO velocity)
-                        DragHandler {
-                            acceptedDevices: PointerDevice.TouchScreen
+                        TerminalTouchScrollHandler {
+                            anchors.fill: parent
                             enabled: !terminal.touchSelectionMode
-
-                            property real previousY
-                            onActiveChanged: {
-                                previousY = 0;
-                            }
-                            onTranslationChanged: {
-                                terminal.simulateWheel(0, 0, 0, 0, Qt.point(0, (translation.y - previousY) * 2));
-                                previousY = translation.y;
-                            }
+                            terminalItem: terminal
                         }
                     }
                 }
