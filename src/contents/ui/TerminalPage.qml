@@ -79,7 +79,7 @@ Kirigami.Page {
             root.settingsDialogLoader.active = true;
             root.settingsDialogLoader.item.open();
         } else {
-            pageStack.push("qrc:/SettingsPage.qml",
+            applicationWindow().pageStack.push("qrc:/SettingsPage.qml",
                 {
                     terminal: currentTerminal
                 }
