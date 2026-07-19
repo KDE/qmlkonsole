@@ -14,7 +14,14 @@ import org.kde.qmlkonsole
 
 Kirigami.Page {
     id: root
-    property TerminalEmulator currentTerminal: tabSwipeView.contentChildren[tabSwipeView.currentIndex].termWidget
+    property TerminalEmulator currentTerminal: {
+        if (tabView.currentIndex < 0 || tabView.currentIndex >= terminalRepeater.count) {
+            return null;
+        }
+
+        const item = terminalRepeater.itemAt(tabView.currentIndex);
+        return item ? item.termWidget : null;
+    }
 
     background: Item {}
 
@@ -26,6 +33,10 @@ Kirigami.Page {
     property bool initialSessionCreated: false
 
     function forceTerminalFocus(forceInput) {
+        if (!currentTerminal) {
+            return;
+        }
+
         const wasVisible = Qt.inputMethod.visible;
         currentTerminal.forceActiveFocus();
         if (forceInput) {
@@ -58,7 +69,7 @@ Kirigami.Page {
         contentItem: RowLayout {
             spacing: 0
             Kirigami.Heading {
-                text: currentTerminal.tabName
+                text: currentTerminal ? currentTerminal.tabName : ""
                 Layout.leftMargin: Kirigami.Units.largeSpacing
                 Layout.rightMargin: Kirigami.Units.largeSpacing
             }
@@ -97,24 +108,46 @@ Kirigami.Page {
     }
 
     function switchToTab(index) {
-        tabSwipeView.setCurrentIndex(index);
+        if (index >= 0 && index < terminalRepeater.count) {
+            tabView.currentIndex = index;
+        }
+    }
+
+    function removeTab(index) {
+        const currentIndex = tabView.currentIndex;
+        const previousCount = terminalRepeater.count;
+        if (index < 0 || index >= previousCount) {
+            return;
+        }
+
+        TerminalTabModel.removeTab(index);
+
+        if (previousCount === 1) {
+            tabView.currentIndex = 0;
+        } else if (index < currentIndex) {
+            tabView.currentIndex = currentIndex - 1;
+        } else if (currentIndex >= previousCount - 1) {
+            tabView.currentIndex = previousCount - 2;
+        }
     }
 
     function closeTab(index) {
-        if (tabSwipeView.contentChildren[index].termWidget.session.hasActiveProcess) {
+        const item = terminalRepeater.itemAt(index);
+        if (item && item.termWidget.session.hasActiveProcess) {
             selectTabDialog.close();
             confirmDialog.indexToClose = index;
             confirmDialog.open();
         } else {
-            TerminalTabModel.removeTab(index);
+            removeTab(index);
         }
     }
 
     function closeWindow() {
         confirmDialogWindow.activeProcessCount = 0;
 
-        for (let index = 0; index < tabSwipeView.count; index++) {
-            if (tabSwipeView.contentChildren[index].termWidget.session.hasActiveProcess) {
+        for (let index = 0; index < terminalRepeater.count; index++) {
+            const item = terminalRepeater.itemAt(index);
+            if (item && item.termWidget.session.hasActiveProcess) {
                 confirmDialogWindow.activeProcessCount++;
             }
         }
@@ -129,16 +162,16 @@ Kirigami.Page {
     Shortcut {
         sequence: "Shift+Left"
         onActivated: {
-            if (tabSwipeView.currentIndex > 0)
-                tabSwipeView.currentIndex--
+            if (tabView.currentIndex > 0)
+                tabView.currentIndex--
         }
     }
 
     Shortcut {
         sequence: "Shift+Right"
         onActivated: {
-            if (tabSwipeView.currentIndex < tabSwipeView.count - 1)
-                tabSwipeView.currentIndex++
+            if (tabView.currentIndex < terminalRepeater.count - 1)
+                tabView.currentIndex++
         }
     }
 
@@ -148,8 +181,9 @@ Kirigami.Page {
             icon.name: "list-add"
             text: i18nc("@action:intoolbar", "New Tab")
             onTriggered: {
+                const newIndex = terminalRepeater.count;
                 TerminalTabModel.newTab();
-                tabSwipeView.currentIndex = tabSwipeView.contentChildren.length - 1;
+                tabView.currentIndex = newIndex;
             }
             shortcut: "Ctrl+Shift+T"
             displayHint: Kirigami.DisplayHint.KeepVisible
@@ -273,7 +307,7 @@ Kirigami.Page {
 
             contentItem: Tabs {
                 id: tabControlListView
-                currentIndex: tabSwipeView.currentIndex
+                currentIndex: tabView.currentIndex
 
                 onSwitchToTabRequested: index => root.switchToTab(index)
                 onCloseTabRequested: index => root.closeTab(index)
@@ -308,14 +342,14 @@ Kirigami.Page {
             id: confirmDialog
 
             property int indexToClose: 0
-            property var selectedTerminal: tabSwipeView.contentChildren[indexToClose]
+            property var selectedTerminal: terminalRepeater.itemAt(indexToClose)
 
             title: i18nc("@title:window", "Confirm closing %1", selectedTerminal ? selectedTerminal.termWidget.tabName : "")
             standardButtons: Dialog.Yes | Dialog.Cancel
             padding: Kirigami.Units.gridUnit
 
             onAccepted: {
-                TerminalTabModel.removeTab(indexToClose);
+                root.removeTab(indexToClose);
                 selectTabDialog.open();
             }
             onRejected: {
@@ -381,7 +415,7 @@ Kirigami.Page {
                     bottomPadding: Kirigami.Units.smallSpacing
 
                     onClicked: {
-                        tabSwipeView.currentIndex = index;
+                        root.switchToTab(index);
                         selectTabDialog.close();
                     }
 
@@ -393,7 +427,7 @@ Kirigami.Page {
 
                         RadioButton {
                             Layout.alignment: Qt.AlignVCenter
-                            checked: tabSwipeView.currentIndex == index
+                            checked: tabView.currentIndex == index
                             onClicked: {
                                 root.switchToTab(index);
                                 selectTabDialog.close();
@@ -414,7 +448,7 @@ Kirigami.Page {
 
         Kirigami.InlineMessage {
             id: selectionModePopup
-            visible: root.currentTerminal.touchSelectionMode
+            visible: root.currentTerminal && root.currentTerminal.touchSelectionMode
             implicitWidth: parent.width
             text: i18n("selection mode")
 
@@ -425,20 +459,22 @@ Kirigami.Page {
             actions: [
                 Kirigami.Action {
                     text: i18n("Disable")
-                    onTriggered: root.currentTerminal.touchSelectionMode = false
+                    onTriggered: {
+                        if (root.currentTerminal) {
+                            root.currentTerminal.touchSelectionMode = false;
+                        }
+                    }
                 }
             ]
         }
 
         // tabs
-        SwipeView {
-            id: tabSwipeView
-            interactive: !selectionModePopup.visible && Kirigami.Settings.hasTransientTouchInput // don't conflict with selection mode
+        Item {
+            id: tabView
+            property int currentIndex: 0
 
             Layout.fillWidth: true
             Layout.fillHeight: true
-
-            onCurrentItemChanged: currentTerminal.forceActiveFocus()
 
             Repeater {
                 id: terminalRepeater
@@ -446,6 +482,9 @@ Kirigami.Page {
 
                 delegate: Item {
                     property alias termWidget: terminal
+                    anchors.fill: parent
+                    visible: model.index === tabView.currentIndex
+                    enabled: visible
 
                     TerminalEmulator {
                         id: terminal
@@ -453,7 +492,7 @@ Kirigami.Page {
 
                         readonly property string tabName: model.name
                         readonly property int modelIndex: model.index
-                        readonly property bool isCurrentItem: SwipeView.isCurrentItem
+                        readonly property bool isCurrentItem: model.index === tabView.currentIndex
 
                         // with touch, to select text we first require users to press-and-hold to enter the selection mode
                         property bool touchSelectionMode: false
