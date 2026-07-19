@@ -15,15 +15,14 @@ Kirigami.ApplicationWindow {
     title: i18n("Terminal")
 
     pageStack.initialPage: "qrc:/TerminalPage.qml"
-    
+
     pageStack.globalToolBar.style: Kirigami.ApplicationHeaderStyle.ToolBar
     pageStack.globalToolBar.showNavigationButtons: Kirigami.ApplicationHeaderStyle.ShowBackButton;
-    
+
     pageStack.columnView.columnResizeMode: Kirigami.ColumnView.SingleColumn
-    pageStack.popHiddenPages: true
-    
+
     color: "transparent"
-    
+
     Component.onCompleted: {
         if (TerminalSettings.blurWindow) {
             Util.setBlur(pageStack, true);
