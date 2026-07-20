@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qmlkonsole\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:54+0000\n"
+"POT-Creation-Date: 2026-07-20 00:46+0000\n"
 "PO-Revision-Date: 2024-01-01 08:29-0600\n"
 "Last-Translator: A S Alam <aalam@punlinux.org>\n"
 "Language-Team: Punjabi <kde-i18n-doc@kde.org>\n"
@@ -133,7 +133,7 @@ msgid "Always Show Keyboard Modifier Buttons"
 msgstr ""
 
 #: contents/ui/SettingsDialog.qml:17 contents/ui/SettingsPage.qml:16
-#: contents/ui/TerminalPage.qml:249
+#: contents/ui/TerminalPage.qml:283
 #, kde-format
 msgid "Settings"
 msgstr "ਸੈਟਿੰਗਾਂ"
@@ -168,77 +168,77 @@ msgstr "ਟੈਬ"
 msgid "Toggle Virtual Keyboard"
 msgstr "ਵਰਚੁਅਲ ਕੀਬੋਰਡ ਨੂੰ ਬਦਲੋ"
 
-#: contents/ui/TerminalPage.qml:149
+#: contents/ui/TerminalPage.qml:182
 #, kde-format
 msgctxt "@action:intoolbar"
 msgid "New Tab"
 msgstr "ਨਵੀਂ ਟੈਬ"
 
-#: contents/ui/TerminalPage.qml:159
+#: contents/ui/TerminalPage.qml:193
 #, kde-format
 msgctxt "@action:intoolbar"
 msgid "Saved Commands"
 msgstr "ਸੰਭਾਲੀਆਂ ਹੋਈਆਂ ਕਮਾਡਾਂ"
 
-#: contents/ui/TerminalPage.qml:166
+#: contents/ui/TerminalPage.qml:200
 #, kde-format
 msgid "reverse-i-search"
 msgstr ""
 
-#: contents/ui/TerminalPage.qml:175
+#: contents/ui/TerminalPage.qml:209
 #, kde-format
 msgid "Cancel current command"
 msgstr "ਮੌਜੂਦਾ ਕਮਾਂਡ ਰੱਦ ਕਰੋ"
 
-#: contents/ui/TerminalPage.qml:184
+#: contents/ui/TerminalPage.qml:218
 #, kde-format
 msgid "Send EOF"
 msgstr "EOF ਭੇਜੋ"
 
-#: contents/ui/TerminalPage.qml:193
+#: contents/ui/TerminalPage.qml:227
 #, kde-format
 msgid "Cursor to line start"
 msgstr ""
 
-#: contents/ui/TerminalPage.qml:202
+#: contents/ui/TerminalPage.qml:236
 #, kde-format
 msgid "Cursor to line end"
 msgstr ""
 
-#: contents/ui/TerminalPage.qml:211
+#: contents/ui/TerminalPage.qml:245
 #, kde-format
 msgid "Kill to line end"
 msgstr ""
 
-#: contents/ui/TerminalPage.qml:220
+#: contents/ui/TerminalPage.qml:254
 #, kde-format
 msgid "Paste from kill buffer"
 msgstr ""
 
-#: contents/ui/TerminalPage.qml:229
+#: contents/ui/TerminalPage.qml:263
 #, kde-format
 msgid "Copy"
 msgstr "ਕਾਪੀ ਕਰੋ"
 
-#: contents/ui/TerminalPage.qml:240
+#: contents/ui/TerminalPage.qml:274
 #, kde-format
 msgid "Paste"
 msgstr "ਚੇਪੋ"
 
-#: contents/ui/TerminalPage.qml:307
+#: contents/ui/TerminalPage.qml:347
 #, kde-format
 msgctxt "@title:window"
 msgid "Confirm closing %1"
 msgstr "%1 ਨੂੰ ਬੰਦ ਕਰਨ ਦੀ ਪੁਸ਼ਟੀ"
 
-#: contents/ui/TerminalPage.qml:323
+#: contents/ui/TerminalPage.qml:363
 #, kde-format
 msgid ""
 "A process is currently running in this tab. Are you sure you want to close "
 "it?"
 msgstr "ਇਸ ਟੈਬ ਵਿੱਚ ਹਾਲੇ ਇੱਕ ਕਾਰਵਾਈ ਚੱਲ ਰਹੀ ਹੈ। ਕੀ ਤੁਸੀਂ ਇਸ ਨੂੰ ਬੰਦ ਕਰਨਾ ਚਾਹੁੰਦੇ ਹੋ?"
 
-#: contents/ui/TerminalPage.qml:333
+#: contents/ui/TerminalPage.qml:373
 #, fuzzy, kde-format
 #| msgctxt "@title:window"
 #| msgid "Confirm closing %1"
@@ -246,7 +246,7 @@ msgctxt "@title:window"
 msgid "Confirm closing window"
 msgstr "%1 ਨੂੰ ਬੰਦ ਕਰਨ ਦੀ ਪੁਸ਼ਟੀ"
 
-#: contents/ui/TerminalPage.qml:346
+#: contents/ui/TerminalPage.qml:386
 #, fuzzy, kde-format
 #| msgid ""
 #| "A process is currently running in this tab. Are you sure you want to "
@@ -256,7 +256,7 @@ msgid ""
 "to close it?"
 msgstr "ਇਸ ਟੈਬ ਵਿੱਚ ਹਾਲੇ ਇੱਕ ਕਾਰਵਾਈ ਚੱਲ ਰਹੀ ਹੈ। ਕੀ ਤੁਸੀਂ ਇਸ ਨੂੰ ਬੰਦ ਕਰਨਾ ਚਾਹੁੰਦੇ ਹੋ?"
 
-#: contents/ui/TerminalPage.qml:347
+#: contents/ui/TerminalPage.qml:387
 #, fuzzy, kde-format
 #| msgid ""
 #| "A process is currently running in this tab. Are you sure you want to "
@@ -266,23 +266,23 @@ msgid ""
 "close it?"
 msgstr "ਇਸ ਟੈਬ ਵਿੱਚ ਹਾਲੇ ਇੱਕ ਕਾਰਵਾਈ ਚੱਲ ਰਹੀ ਹੈ। ਕੀ ਤੁਸੀਂ ਇਸ ਨੂੰ ਬੰਦ ਕਰਨਾ ਚਾਹੁੰਦੇ ਹੋ?"
 
-#: contents/ui/TerminalPage.qml:354
+#: contents/ui/TerminalPage.qml:394
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Tab"
 msgstr "ਟੈਬ ਚੁਣੋ"
 
-#: contents/ui/TerminalPage.qml:400
+#: contents/ui/TerminalPage.qml:440
 #, kde-format
 msgid "Close"
 msgstr "ਬੰਦ ਕਰੋ"
 
-#: contents/ui/TerminalPage.qml:413
+#: contents/ui/TerminalPage.qml:453
 #, kde-format
 msgid "selection mode"
 msgstr "ਚੋਣ ਢੰਗ"
 
-#: contents/ui/TerminalPage.qml:421
+#: contents/ui/TerminalPage.qml:461
 #, kde-format
 msgid "Disable"
 msgstr "ਅਸਮਰੱਥ"
