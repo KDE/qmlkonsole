@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qmlkonsole\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:54+0000\n"
+"POT-Creation-Date: 2026-07-20 02:40+0000\n"
 "PO-Revision-Date: 2025-04-27 22:23+0200\n"
 "Last-Translator: Kristof Kiszel <ulysses@fsf.hu>\n"
 "Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
@@ -134,7 +134,7 @@ msgid "Always Show Keyboard Modifier Buttons"
 msgstr "Mindig jelenjenek meg a billentyűmódosító gombok"
 
 #: contents/ui/SettingsDialog.qml:17 contents/ui/SettingsPage.qml:16
-#: contents/ui/TerminalPage.qml:249
+#: contents/ui/TerminalPage.qml:283
 #, kde-format
 msgid "Settings"
 msgstr "Beállítások"
@@ -169,70 +169,70 @@ msgstr "Tab"
 msgid "Toggle Virtual Keyboard"
 msgstr "Virtuális billentyűzet kapcsolása"
 
-#: contents/ui/TerminalPage.qml:149
+#: contents/ui/TerminalPage.qml:182
 #, kde-format
 msgctxt "@action:intoolbar"
 msgid "New Tab"
 msgstr "Új lap"
 
-#: contents/ui/TerminalPage.qml:159
+#: contents/ui/TerminalPage.qml:193
 #, kde-format
 msgctxt "@action:intoolbar"
 msgid "Saved Commands"
 msgstr "Mentett parancsok"
 
-#: contents/ui/TerminalPage.qml:166
+#: contents/ui/TerminalPage.qml:200
 #, kde-format
 msgid "reverse-i-search"
 msgstr "fordított-keresés"
 
-#: contents/ui/TerminalPage.qml:175
+#: contents/ui/TerminalPage.qml:209
 #, kde-format
 msgid "Cancel current command"
 msgstr "Jelenlegi parancs megszakítása"
 
-#: contents/ui/TerminalPage.qml:184
+#: contents/ui/TerminalPage.qml:218
 #, kde-format
 msgid "Send EOF"
 msgstr "EOF küldése"
 
-#: contents/ui/TerminalPage.qml:193
+#: contents/ui/TerminalPage.qml:227
 #, kde-format
 msgid "Cursor to line start"
 msgstr "Kurzor a sor elejére"
 
-#: contents/ui/TerminalPage.qml:202
+#: contents/ui/TerminalPage.qml:236
 #, kde-format
 msgid "Cursor to line end"
 msgstr "Kurzor a sor végére"
 
-#: contents/ui/TerminalPage.qml:211
+#: contents/ui/TerminalPage.qml:245
 #, kde-format
 msgid "Kill to line end"
 msgstr "Kilövés a sor végére"
 
-#: contents/ui/TerminalPage.qml:220
+#: contents/ui/TerminalPage.qml:254
 #, kde-format
 msgid "Paste from kill buffer"
 msgstr "Beillesztés a kilövési pufferből"
 
-#: contents/ui/TerminalPage.qml:229
+#: contents/ui/TerminalPage.qml:263
 #, kde-format
 msgid "Copy"
 msgstr "Másolás"
 
-#: contents/ui/TerminalPage.qml:240
+#: contents/ui/TerminalPage.qml:274
 #, kde-format
 msgid "Paste"
 msgstr "Beillesztés"
 
-#: contents/ui/TerminalPage.qml:307
+#: contents/ui/TerminalPage.qml:347
 #, kde-format
 msgctxt "@title:window"
 msgid "Confirm closing %1"
 msgstr "%1 bezárásának megerősítése"
 
-#: contents/ui/TerminalPage.qml:323
+#: contents/ui/TerminalPage.qml:363
 #, kde-format
 msgid ""
 "A process is currently running in this tab. Are you sure you want to close "
@@ -240,13 +240,13 @@ msgid ""
 msgstr ""
 "Egy folyamat jelenleg is fut ezen a lapon. Biztosan be szeretné zárni azt?"
 
-#: contents/ui/TerminalPage.qml:333
+#: contents/ui/TerminalPage.qml:373
 #, kde-format
 msgctxt "@title:window"
 msgid "Confirm closing window"
 msgstr "Ablak bezárásának megerősítése"
 
-#: contents/ui/TerminalPage.qml:346
+#: contents/ui/TerminalPage.qml:386
 #, kde-format
 msgid ""
 "There are processes currently running in this window. Are you sure you want "
@@ -255,7 +255,7 @@ msgstr ""
 "Folyamatok futnak jelenleg is ebben az ablakban. Biztosan be szeretné zárni "
 "azt?"
 
-#: contents/ui/TerminalPage.qml:347
+#: contents/ui/TerminalPage.qml:387
 #, kde-format
 msgid ""
 "A process is currently running in this window. Are you sure you want to "
@@ -264,23 +264,23 @@ msgstr ""
 "Egy folyamat jelenleg is fut ebben az ablakban. Biztosan be szeretné zárni "
 "azt?"
 
-#: contents/ui/TerminalPage.qml:354
+#: contents/ui/TerminalPage.qml:394
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Tab"
 msgstr "Lap kiválasztása"
 
-#: contents/ui/TerminalPage.qml:400
+#: contents/ui/TerminalPage.qml:440
 #, kde-format
 msgid "Close"
 msgstr "Bezárás"
 
-#: contents/ui/TerminalPage.qml:413
+#: contents/ui/TerminalPage.qml:453
 #, kde-format
 msgid "selection mode"
 msgstr "kijelölési mód"
 
-#: contents/ui/TerminalPage.qml:421
+#: contents/ui/TerminalPage.qml:461
 #, kde-format
 msgid "Disable"
 msgstr "Letiltás"

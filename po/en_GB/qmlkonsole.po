@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qmlkonsole\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:54+0000\n"
+"POT-Creation-Date: 2026-07-20 02:40+0000\n"
 "PO-Revision-Date: 2024-06-29 11:31+0100\n"
 "Last-Translator: Steve Allewell <steve.allewell@gmail.com>\n"
 "Language-Team: British English\n"
@@ -133,7 +133,7 @@ msgid "Always Show Keyboard Modifier Buttons"
 msgstr ""
 
 #: contents/ui/SettingsDialog.qml:17 contents/ui/SettingsPage.qml:16
-#: contents/ui/TerminalPage.qml:249
+#: contents/ui/TerminalPage.qml:283
 #, kde-format
 msgid "Settings"
 msgstr "Settings"
@@ -168,70 +168,70 @@ msgstr "Tab"
 msgid "Toggle Virtual Keyboard"
 msgstr "Toggle Virtual Keyboard"
 
-#: contents/ui/TerminalPage.qml:149
+#: contents/ui/TerminalPage.qml:182
 #, kde-format
 msgctxt "@action:intoolbar"
 msgid "New Tab"
 msgstr "New Tab"
 
-#: contents/ui/TerminalPage.qml:159
+#: contents/ui/TerminalPage.qml:193
 #, kde-format
 msgctxt "@action:intoolbar"
 msgid "Saved Commands"
 msgstr "Saved Commands"
 
-#: contents/ui/TerminalPage.qml:166
+#: contents/ui/TerminalPage.qml:200
 #, kde-format
 msgid "reverse-i-search"
 msgstr "reverse-i-search"
 
-#: contents/ui/TerminalPage.qml:175
+#: contents/ui/TerminalPage.qml:209
 #, kde-format
 msgid "Cancel current command"
 msgstr "Cancel current command"
 
-#: contents/ui/TerminalPage.qml:184
+#: contents/ui/TerminalPage.qml:218
 #, kde-format
 msgid "Send EOF"
 msgstr "Send EOF"
 
-#: contents/ui/TerminalPage.qml:193
+#: contents/ui/TerminalPage.qml:227
 #, kde-format
 msgid "Cursor to line start"
 msgstr "Cursor to line start"
 
-#: contents/ui/TerminalPage.qml:202
+#: contents/ui/TerminalPage.qml:236
 #, kde-format
 msgid "Cursor to line end"
 msgstr "Cursor to line end"
 
-#: contents/ui/TerminalPage.qml:211
+#: contents/ui/TerminalPage.qml:245
 #, kde-format
 msgid "Kill to line end"
 msgstr "Kill to line end"
 
-#: contents/ui/TerminalPage.qml:220
+#: contents/ui/TerminalPage.qml:254
 #, kde-format
 msgid "Paste from kill buffer"
 msgstr "Paste from kill buffer"
 
-#: contents/ui/TerminalPage.qml:229
+#: contents/ui/TerminalPage.qml:263
 #, kde-format
 msgid "Copy"
 msgstr "Copy"
 
-#: contents/ui/TerminalPage.qml:240
+#: contents/ui/TerminalPage.qml:274
 #, kde-format
 msgid "Paste"
 msgstr "Paste"
 
-#: contents/ui/TerminalPage.qml:307
+#: contents/ui/TerminalPage.qml:347
 #, kde-format
 msgctxt "@title:window"
 msgid "Confirm closing %1"
 msgstr "Confirm closing %1"
 
-#: contents/ui/TerminalPage.qml:323
+#: contents/ui/TerminalPage.qml:363
 #, kde-format
 msgid ""
 "A process is currently running in this tab. Are you sure you want to close "
@@ -240,13 +240,13 @@ msgstr ""
 "A process is currently running in this tab. Are you sure you want to close "
 "it?"
 
-#: contents/ui/TerminalPage.qml:333
+#: contents/ui/TerminalPage.qml:373
 #, kde-format
 msgctxt "@title:window"
 msgid "Confirm closing window"
 msgstr "Confirm closing window"
 
-#: contents/ui/TerminalPage.qml:346
+#: contents/ui/TerminalPage.qml:386
 #, kde-format
 msgid ""
 "There are processes currently running in this window. Are you sure you want "
@@ -255,7 +255,7 @@ msgstr ""
 "There are processes currently running in this window. Are you sure you want "
 "to close it?"
 
-#: contents/ui/TerminalPage.qml:347
+#: contents/ui/TerminalPage.qml:387
 #, kde-format
 msgid ""
 "A process is currently running in this window. Are you sure you want to "
@@ -264,23 +264,23 @@ msgstr ""
 "A process is currently running in this window. Are you sure you want to "
 "close it?"
 
-#: contents/ui/TerminalPage.qml:354
+#: contents/ui/TerminalPage.qml:394
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Tab"
 msgstr "Select Tab"
 
-#: contents/ui/TerminalPage.qml:400
+#: contents/ui/TerminalPage.qml:440
 #, kde-format
 msgid "Close"
 msgstr "Close"
 
-#: contents/ui/TerminalPage.qml:413
+#: contents/ui/TerminalPage.qml:453
 #, kde-format
 msgid "selection mode"
 msgstr "selection mode"
 
-#: contents/ui/TerminalPage.qml:421
+#: contents/ui/TerminalPage.qml:461
 #, kde-format
 msgid "Disable"
 msgstr "Disable"

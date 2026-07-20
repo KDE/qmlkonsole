@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qmlkonsole\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:54+0000\n"
+"POT-Creation-Date: 2026-07-20 02:40+0000\n"
 "PO-Revision-Date: 2026-06-17 16:44+0300\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -136,7 +136,7 @@ msgid "Always Show Keyboard Modifier Buttons"
 msgstr "Visada rodyti klaviatūros modifikatorių mygtukus"
 
 #: contents/ui/SettingsDialog.qml:17 contents/ui/SettingsPage.qml:16
-#: contents/ui/TerminalPage.qml:249
+#: contents/ui/TerminalPage.qml:283
 #, kde-format
 msgid "Settings"
 msgstr "Nuostatos"
@@ -171,70 +171,70 @@ msgstr "Tab"
 msgid "Toggle Virtual Keyboard"
 msgstr "Perjungti virtualią klaviatūrą"
 
-#: contents/ui/TerminalPage.qml:149
+#: contents/ui/TerminalPage.qml:182
 #, kde-format
 msgctxt "@action:intoolbar"
 msgid "New Tab"
 msgstr "Nauja kortelė"
 
-#: contents/ui/TerminalPage.qml:159
+#: contents/ui/TerminalPage.qml:193
 #, kde-format
 msgctxt "@action:intoolbar"
 msgid "Saved Commands"
 msgstr "Įrašytos komandos"
 
-#: contents/ui/TerminalPage.qml:166
+#: contents/ui/TerminalPage.qml:200
 #, kde-format
 msgid "reverse-i-search"
 msgstr "atvirkštinė paieška"
 
-#: contents/ui/TerminalPage.qml:175
+#: contents/ui/TerminalPage.qml:209
 #, kde-format
 msgid "Cancel current command"
 msgstr "Atsisakyti dabartinės komandos"
 
-#: contents/ui/TerminalPage.qml:184
+#: contents/ui/TerminalPage.qml:218
 #, kde-format
 msgid "Send EOF"
 msgstr "Siųsti EOF"
 
-#: contents/ui/TerminalPage.qml:193
+#: contents/ui/TerminalPage.qml:227
 #, kde-format
 msgid "Cursor to line start"
 msgstr "Žymeklį į eilutės pradžią"
 
-#: contents/ui/TerminalPage.qml:202
+#: contents/ui/TerminalPage.qml:236
 #, kde-format
 msgid "Cursor to line end"
 msgstr "Žymeklį į eilutės pabaigą"
 
-#: contents/ui/TerminalPage.qml:211
+#: contents/ui/TerminalPage.qml:245
 #, kde-format
 msgid "Kill to line end"
 msgstr "Ištrinti iki eilutės pabaigos"
 
-#: contents/ui/TerminalPage.qml:220
+#: contents/ui/TerminalPage.qml:254
 #, kde-format
 msgid "Paste from kill buffer"
 msgstr "Įdėti iš ištrynimo buferio"
 
-#: contents/ui/TerminalPage.qml:229
+#: contents/ui/TerminalPage.qml:263
 #, kde-format
 msgid "Copy"
 msgstr "Kopijuoti"
 
-#: contents/ui/TerminalPage.qml:240
+#: contents/ui/TerminalPage.qml:274
 #, kde-format
 msgid "Paste"
 msgstr "Įdėti"
 
-#: contents/ui/TerminalPage.qml:307
+#: contents/ui/TerminalPage.qml:347
 #, kde-format
 msgctxt "@title:window"
 msgid "Confirm closing %1"
 msgstr "Patvirtinti %1 užvėrimą"
 
-#: contents/ui/TerminalPage.qml:323
+#: contents/ui/TerminalPage.qml:363
 #, kde-format
 msgid ""
 "A process is currently running in this tab. Are you sure you want to close "
@@ -243,13 +243,13 @@ msgstr ""
 "Šiuo metu šioje kortelėje yra paleistas procesas. Ar tikrai norite ją "
 "užverti?"
 
-#: contents/ui/TerminalPage.qml:333
+#: contents/ui/TerminalPage.qml:373
 #, kde-format
 msgctxt "@title:window"
 msgid "Confirm closing window"
 msgstr "Patvirtinti lango užvėrimą"
 
-#: contents/ui/TerminalPage.qml:346
+#: contents/ui/TerminalPage.qml:386
 #, kde-format
 msgid ""
 "There are processes currently running in this window. Are you sure you want "
@@ -257,7 +257,7 @@ msgid ""
 msgstr ""
 "Šiuo metu šiame lange yra paleisti procesai. Ar tikrai norite jį užverti?"
 
-#: contents/ui/TerminalPage.qml:347
+#: contents/ui/TerminalPage.qml:387
 #, kde-format
 msgid ""
 "A process is currently running in this window. Are you sure you want to "
@@ -265,23 +265,23 @@ msgid ""
 msgstr ""
 "Šiuo metu šiame lange yra paleistas procesas. Ar tikrai norite jį užverti?"
 
-#: contents/ui/TerminalPage.qml:354
+#: contents/ui/TerminalPage.qml:394
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Tab"
 msgstr "Pasirinkti kortelę"
 
-#: contents/ui/TerminalPage.qml:400
+#: contents/ui/TerminalPage.qml:440
 #, kde-format
 msgid "Close"
 msgstr "Užverti"
 
-#: contents/ui/TerminalPage.qml:413
+#: contents/ui/TerminalPage.qml:453
 #, kde-format
 msgid "selection mode"
 msgstr "žymėjimo veiksena"
 
-#: contents/ui/TerminalPage.qml:421
+#: contents/ui/TerminalPage.qml:461
 #, kde-format
 msgid "Disable"
 msgstr "Išjungti"
