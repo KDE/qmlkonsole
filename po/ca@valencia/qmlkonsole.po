@@ -292,7 +292,7 @@ msgstr "Desactiva"
 #: main.cpp:38
 #, kde-format
 msgid "© 2020-2022 KDE Community"
-msgstr "© 2020-2022 Comunitat KDE"
+msgstr "© 2020-2022 La comunitat KDE"
 
 #: main.cpp:40
 #, kde-format
