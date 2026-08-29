@@ -98,6 +98,7 @@
     <p xml:lang="ar">تطبيق طرفيّة يوفر أزرار لوحة مفاتيح إضافية من أجل أجهزة اللمس.</p>
     <p xml:lang="ca">Aplicació de terminal que ofereix botons de teclat addicionals, el qual és útil en els dispositius tàctils.</p>
     <p xml:lang="ca-valencia">Aplicació de terminal que oferix botons de teclat addicionals, el qual és útil en els dispositius tàctils.</p>
+    <p xml:lang="cs">Terminálová aplikace nabízející další klávesové zkratky, které se hodí na dotykových zařízeních.</p>
     <p xml:lang="de">Terminal-Anwendung mit zusätzlichen Tasten-Knöpfen für Touch-Geräte.</p>
     <p xml:lang="en-GB">Terminal application offering additional keyboard buttons useful on touch devices.</p>
     <p xml:lang="eo">Terminala aplikaĵo ofertanta kromajn klavarbutonojn utilajn sur tuŝaj aparatoj.</p>
@@ -278,6 +279,7 @@
           <li xml:lang="ar">إصلاح عدم عمل أزرار شريط الأدوات (العمود والمدة)</li>
           <li xml:lang="ca">Corregeix els botons de barra d'eines de barra i titlla que no funcionen</li>
           <li xml:lang="ca-valencia">Corregix els botons de barra d'eines de barra i titlla que no funcionen</li>
+          <li xml:lang="cs">Oprava nefunkčních tlačítek na liště a na panelu nástrojů</li>
           <li xml:lang="es">Se han corregido la barra y los botones de la barra de herramientas de tilde que no funcionaban.</li>
           <li xml:lang="eu">Tresna-barrako barra eta tilde botoiak ez ibiltzearen arazoa konpondu da</li>
           <li xml:lang="fr">Correction des boutons de la barre d'outils « Barre » et « Tilde » ne fonctionnant pas</li>
@@ -304,6 +306,7 @@
           <li xml:lang="ar">تحسينات عامة على واجهة المستخدم</li>
           <li xml:lang="ca">Millores generals en la interfície d'usuari</li>
           <li xml:lang="ca-valencia">Millores generals en la interfície d'usuari</li>
+          <li xml:lang="cs">Obecná vylepšení uživatelského rozhraní</li>
           <li xml:lang="es">Mejoras generales de la interfaz de usuario.</li>
           <li xml:lang="eu">Erabiltzaile-interfazearen hobekuntza orokorrak</li>
           <li xml:lang="fr">Améliorations générales de l'interface utilisateur</li>
@@ -340,6 +343,7 @@
           <li xml:lang="ar">إصلاح دعم مفاتيح التغيير مثل Alt و Ctrl</li>
           <li xml:lang="ca">Corregeix la implementació de les tecles modificadores com Alt i Ctrl</li>
           <li xml:lang="ca-valencia">Corregix la implementació de les tecles modificadores com «Alt» i «Ctrl»</li>
+          <li xml:lang="cs">Opravena podpora modifikačních kláves, jako jsou Alt a Ctrl</li>
           <li xml:lang="es">Se ha corregido la compatibilidad con teclas modificadoras, como Alt y Ctrl</li>
           <li xml:lang="eu">Alt eta Ktrl gisako tekla aldatzaileetarako euskarria hobetu da</li>
           <li xml:lang="fr">Correction de la prise en charge des touches modificatrices comme « ALT » et « CTRL »</li>
@@ -366,6 +370,7 @@
           <li xml:lang="ar">إعادة صياغة الكود وتحسينات عامة على واجهة المستخدم</li>
           <li xml:lang="ca">Reestructuració de codi i millores generals en la interfície d'usuari</li>
           <li xml:lang="ca-valencia">Reestructuració de codi i millores generals en la interfície d'usuari</li>
+          <li xml:lang="cs">Přepis kódu a obecná vylepšení uživatelského rozhraní</li>
           <li xml:lang="es">Refactorización del código y mejoras generales de la interfaz de usuario.</li>
           <li xml:lang="eu">Kodearen berrantolaketa eta erabiltzaile-interfazearen hobekuntza orokorrak</li>
           <li xml:lang="fr">Ré-organisation du code et améliorations générales de l'interface utilisateur</li>
@@ -399,6 +404,7 @@
           <li xml:lang="ar">ملاءمة المزيد من أزرار الإجراءات في شريط الأدوات</li>
           <li xml:lang="ca">Encabeix més botons d'acció a la barra d'eines</li>
           <li xml:lang="ca-valencia">Encabix més botons d'acció a la barra d'eines</li>
+          <li xml:lang="cs">Umístěno více akčních tlačítek na panel nástrojů</li>
           <li xml:lang="es">Permitir más botones de acción en la barra de herramientas.</li>
           <li xml:lang="eu">Tresna-barran ekintza-botoi gehiago sartzen dira</li>
           <li xml:lang="fr">Afficher plus de boutons d'actions dans la barre d'outils</li>
@@ -426,6 +432,7 @@
           <li xml:lang="ar">إعادة صياغة مخططات شريط الأدوات وإضافة دعم لعلامات التبويب</li>
           <li xml:lang="ca">Refà les disposicions de la barra d'eines i afegeix la implementació de pestanyes</li>
           <li xml:lang="ca-valencia">Refà les disposicions de la barra d'eines i afig la implementació de pestanyes</li>
+          <li xml:lang="cs">Přepracované rozložení panelů nástrojů a přidání podpory záložek</li>
           <li xml:lang="es">Reajuste de los diseños de las barras de herramientas y compatibilidad con pestañas.</li>
           <li xml:lang="eu">Tresna-barren antolaerak berrantolatu dira eta fitxen euskarria gehitu da</li>
           <li xml:lang="fr">Réorganisation des dispositions de la barre d'outils et ajout de la prise en charge des onglets</li>
@@ -452,6 +459,7 @@
           <li xml:lang="ar">إضافة مربع حوار تأكيد لإغلاق علامة التبويب</li>
           <li xml:lang="ca">Afegeix un diàleg de confirmació per a tancar la pestanya</li>
           <li xml:lang="ca-valencia">Afig un diàleg de confirmació per a tancar la pestanya</li>
+          <li xml:lang="cs">Přidáno potvrzovací dialogové okno pro zavření karty</li>
           <li xml:lang="es">Se ha añadido un diálogo de confirmación para cerrar pestañas.</li>
           <li xml:lang="eu">Fitxa ixteko berrespen elkarrizketa-koadroa gehitu da</li>
           <li xml:lang="fr">Ajouter une boîte de dialogue de confirmation pour la fermeture d'onglet</li>
@@ -489,6 +497,7 @@
         <p xml:lang="ar">بلازما موبايل جير 21.06</p>
         <p xml:lang="ca">Plasma Mobile Gear 21.06</p>
         <p xml:lang="ca-valencia">Plasma Mobile Gear 21.06</p>
+        <p xml:lang="cs">Plasma Mobile Gear 21.06</p>
         <p xml:lang="es">Plasma Mobile Gear 21.06</p>
         <p xml:lang="eu">Plasma Mobile Gear 21.06</p>
         <p xml:lang="fr">Plasma Mobile Gear 21.06</p>
@@ -516,6 +525,7 @@
           <li xml:lang="ar">نظام البناء: البحث عن qmltermwidget</li>
           <li xml:lang="ca">Buildsystem: cerca «qmltermwidget»</li>
           <li xml:lang="ca-valencia">Buildsystem: busca «qmltermwidget»</li>
+          <li xml:lang="cs">buildsystem: vyhledávání pro qmltermwidget</li>
           <li xml:lang="es">buildsystem: búsqueda de qmltermwidget.</li>
           <li xml:lang="eu">eraikitze-sistema: qmltermwidget bilatzen du</li>
           <li xml:lang="fr">buildsystem : recherche de qmltermwidget</li>
