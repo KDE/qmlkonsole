@@ -32,7 +32,7 @@
             <default>false</default>
         </entry>
         <entry key="scrollbackLines" type="Int">
-            <default>1000</default>
+            <default>10000</default>
             <min>1</min>
             <max>1000000</max>
         </entry>
