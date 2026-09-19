@@ -13,6 +13,7 @@
 #include <KLocalizedContext>
 #include <KLocalizedString>
 
+#include "commandline.h"
 #include "fontlistmodel.h"
 #include "savedcommandsmodel.h"
 #include "shellcommand.h"
@@ -59,31 +60,15 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
     Util util;
     {
         QCommandLineParser parser;
-        parser.addOption(QCommandLineOption(QStringLiteral("e"), i18n("Command to execute"), QStringLiteral("command")));
-        parser.addOption(QCommandLineOption(QStringLiteral("workdir"), i18n("Set the initial working directory to 'dir'"), QStringLiteral("dir")));
-
-        // Add a no-op compatibility option to make Konsole compatible with
-        // Debian's policy on X terminal emulators.
-        // -T is technically meant to set a title, that is not really meaningful
-        // for Konsole as we have multiple user-facing options controlling
-        // the title and overriding whatever is set elsewhere.
-        // https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=532029
-        // https://www.debian.org/doc/debian-policy/ch-customized-programs.html#s11.8.3
-        // --title is used by the VirtualBox Guest Additions installer
-        auto titleOption = QCommandLineOption(
-            {QStringLiteral("T"), QStringLiteral("title")},
-            QStringLiteral("Debian policy compatibility, not used"),
-            QStringLiteral("value"));
-        titleOption.setFlags(QCommandLineOption::HiddenFromHelp);
-        parser.addOption(titleOption);
-
-        parser.addVersionOption();
-        parser.addHelpOption();
+        configureCommandLineParser(parser);
         parser.process(app);
+        if (parser.isSet(QStringLiteral("e")) && parser.positionalArguments().isEmpty()) {
+            parser.showHelp(1);
+        }
 
-        QString initialCommand = parser.isSet(QStringLiteral("e")) ? parser.value(QStringLiteral("e")) : "";
+        QString command = initialCommand(parser);
         QString initialWorkDir = parser.isSet(QStringLiteral("workdir")) ? parser.value(QStringLiteral("workdir")) : QDir::currentPath();
-        util.setInitialCommand(std::move(initialCommand));
+        util.setInitialCommand(std::move(command));
         util.setInitialWorkDir(std::move(initialWorkDir));
     }
 
