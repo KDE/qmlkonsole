@@ -539,6 +539,7 @@ Kirigami.Page {
 
                         session: TerminalSession {
                             id: mainsession
+                            historySize: TerminalSettings.unlimitedScrollback ? -1 : TerminalSettings.scrollbackLines
                             initialWorkingDirectory: "$HOME"
                             shellProgram: ShellCommand.executable
                             shellProgramArgs: ShellCommand.args
