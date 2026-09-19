@@ -36,6 +36,7 @@ class TerminalSession : public QObject
     Q_PROPERTY(QString shellProgram READ shellProgram WRITE setShellProgram NOTIFY shellProgramChanged)
     Q_PROPERTY(QStringList shellProgramArgs READ args WRITE setArgs NOTIFY argsChanged)
     Q_PROPERTY(QString history READ getHistory)
+    Q_PROPERTY(int historySize READ historySize WRITE setHistorySize NOTIFY historySizeChanged)
     Q_PROPERTY(bool hasActiveProcess READ hasActiveProcess)
     Q_PROPERTY(QString foregroundProcessName READ foregroundProcessName)
     Q_PROPERTY(QString currentDir READ currentDir)

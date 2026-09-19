@@ -264,5 +264,57 @@ ColumnLayout {
         }
     }
 
+    MobileForm.FormHeader {
+        title: i18nc("@title:group", "Scrollback")
+    }
+
+    MobileForm.FormCard {
+        Layout.alignment: Qt.AlignTop
+        Layout.fillWidth: true
+
+        MobileForm.FormSwitchDelegate {
+            id: unlimitedScrollbackDelegate
+            text: i18nc("@option:check", "Unlimited scrollback")
+            checked: TerminalSettings.unlimitedScrollback
+
+            onToggled: {
+                TerminalSettings.unlimitedScrollback = checked;
+                TerminalSettings.save();
+            }
+        }
+
+        MobileForm.FormDelegateSeparator { above: unlimitedScrollbackDelegate; below: scrollbackLinesDelegate }
+
+        MobileForm.AbstractFormDelegate {
+            id: scrollbackLinesDelegate
+            Layout.fillWidth: true
+            enabled: !TerminalSettings.unlimitedScrollback
+            background: Item {}
+
+            contentItem: ColumnLayout {
+                Controls.Label {
+                    id: scrollbackLinesLabel
+                    Layout.fillWidth: true
+                    text: i18nc("@label:spinbox", "Scrollback lines")
+                    wrapMode: Text.WordWrap
+                }
+
+                Controls.SpinBox {
+                    Layout.fillWidth: true
+                    Accessible.name: scrollbackLinesLabel.text
+                    from: 1
+                    to: 1000000
+                    editable: true
+                    value: TerminalSettings.scrollbackLines
+
+                    onValueModified: {
+                        TerminalSettings.scrollbackLines = value;
+                        TerminalSettings.save();
+                    }
+                }
+            }
+        }
+    }
+
     Item { Layout.fillHeight: true }
 }
