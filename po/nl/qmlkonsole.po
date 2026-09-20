@@ -1,13 +1,13 @@
 # Copyright (C) 2023 This file is copyright:
 # This file is distributed under the same license as the qmlkonsole package.
 #
-# SPDX-FileCopyrightText: 2020, 2021, 2022, 2023, 2024, 2025 Freek de Kruijf <freekdekruijf@kde.nl>
+# SPDX-FileCopyrightText: 2020-2026 Freek de Kruijf <freekdekruijf@kde.nl>
 msgid ""
 msgstr ""
 "Project-Id-Version: qmlkonsole\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-09-20 00:48+0000\n"
-"PO-Revision-Date: 2025-03-29 13:35+0100\n"
+"PO-Revision-Date: 2026-09-20 18:10+0200\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: \n"
 "Language: nl\n"
@@ -15,12 +15,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 24.12.3\n"
+"X-Generator: Lokalize 26.08.1\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr "Freek de Kruijf - 2022 t/m 2025"
+msgstr "Freek de Kruijf - 2022 t/m 2026"
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
@@ -30,12 +30,12 @@ msgstr "freekdekruijf@kde.nl"
 #: commandline.cpp:11
 #, kde-format
 msgid "Execute the following command and arguments"
-msgstr ""
+msgstr "Voer de volgende opdracht en de bijbehorende argumenten uit"
 
 #: commandline.cpp:12
 #, kde-format
 msgid "Command to execute, followed by its arguments"
-msgstr ""
+msgstr "Uit te voeren opdracht, gevolgd door zijn argumenten"
 
 #: commandline.cpp:13
 #, kde-format
@@ -151,19 +151,19 @@ msgstr "Altijd modifier-knoppen van toetsenbord tonen"
 #, kde-format
 msgctxt "@title:group"
 msgid "Scrollback"
-msgstr ""
+msgstr "Terugschuiven"
 
 #: contents/ui/SettingsComponent.qml:277
 #, kde-format
 msgctxt "@option:check"
 msgid "Unlimited scrollback"
-msgstr ""
+msgstr "Onbeperkt terugschuiven"
 
 #: contents/ui/SettingsComponent.qml:298
 #, kde-format
 msgctxt "@label:spinbox"
 msgid "Scrollback lines"
-msgstr ""
+msgstr "Terugschuifregels"
 
 #: contents/ui/SettingsDialog.qml:17 contents/ui/SettingsPage.qml:16
 #: contents/ui/TerminalPage.qml:283

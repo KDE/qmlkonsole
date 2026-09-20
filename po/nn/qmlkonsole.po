@@ -338,6 +338,3 @@ msgstr "Devin Lin"
 #, kde-format
 msgid "Tab %1"
 msgstr "Fane %1"
-
-#~ msgid "Command to execute"
-#~ msgstr "Kommando som skal køyrast"

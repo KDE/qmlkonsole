@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: qmlkonsole\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-09-20 00:48+0000\n"
-"PO-Revision-Date: 2025-03-29 11:24+0100\n"
+"PO-Revision-Date: 2026-09-20 15:32+0200\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
 "Language: sl\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || n"
 "%100==4 ? 3 : 0);\n"
-"X-Generator: Poedit 3.5\n"
+"X-Generator: Poedit 3.9\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -31,12 +31,12 @@ msgstr "matjaz.jeran@amis.net"
 #: commandline.cpp:11
 #, kde-format
 msgid "Execute the following command and arguments"
-msgstr ""
+msgstr "Izvedite naslednji ukaz in argumente"
 
 #: commandline.cpp:12
 #, kde-format
 msgid "Command to execute, followed by its arguments"
-msgstr ""
+msgstr "Ukaz za izvedbo, ki mu sledijo njegovi argumenti"
 
 #: commandline.cpp:13
 #, kde-format
@@ -152,19 +152,19 @@ msgstr "Vedno prikazuj gumbe za spreminjanje tipkovnice"
 #, kde-format
 msgctxt "@title:group"
 msgid "Scrollback"
-msgstr ""
+msgstr "Pomikanje nazaj"
 
 #: contents/ui/SettingsComponent.qml:277
 #, kde-format
 msgctxt "@option:check"
 msgid "Unlimited scrollback"
-msgstr ""
+msgstr "Neomejeno pomikanje nazaj"
 
 #: contents/ui/SettingsComponent.qml:298
 #, kde-format
 msgctxt "@label:spinbox"
 msgid "Scrollback lines"
-msgstr ""
+msgstr "Vrstice pomikanja nazaj"
 
 #: contents/ui/SettingsDialog.qml:17 contents/ui/SettingsPage.qml:16
 #: contents/ui/TerminalPage.qml:283
