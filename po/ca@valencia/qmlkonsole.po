@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qmlkonsole\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-07-20 00:46+0000\n"
+"POT-Creation-Date: 2026-09-20 00:48+0000\n"
 "PO-Revision-Date: 2025-03-29 13:57+0100\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
@@ -29,6 +29,21 @@ msgstr "Josep M. Ferrer"
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "txemaq@gmail.com"
+
+#: commandline.cpp:11
+#, kde-format
+msgid "Execute the following command and arguments"
+msgstr ""
+
+#: commandline.cpp:12
+#, kde-format
+msgid "Command to execute, followed by its arguments"
+msgstr ""
+
+#: commandline.cpp:13
+#, kde-format
+msgid "Set the initial working directory to 'dir'"
+msgstr "Establix el directori de treball inicial a «dir»"
 
 #: contents/ui/main.qml:15
 #, kde-format
@@ -134,6 +149,24 @@ msgstr "Difumina el fons"
 #, kde-format
 msgid "Always Show Keyboard Modifier Buttons"
 msgstr "Mostra sempre els botons del modificador del teclat"
+
+#: contents/ui/SettingsComponent.qml:268
+#, kde-format
+msgctxt "@title:group"
+msgid "Scrollback"
+msgstr ""
+
+#: contents/ui/SettingsComponent.qml:277
+#, kde-format
+msgctxt "@option:check"
+msgid "Unlimited scrollback"
+msgstr ""
+
+#: contents/ui/SettingsComponent.qml:298
+#, kde-format
+msgctxt "@label:spinbox"
+msgid "Scrollback lines"
+msgstr ""
 
 #: contents/ui/SettingsDialog.qml:17 contents/ui/SettingsPage.qml:16
 #: contents/ui/TerminalPage.qml:283
@@ -289,32 +322,25 @@ msgstr "mode de selecció"
 msgid "Disable"
 msgstr "Desactiva"
 
-#: main.cpp:38
+#: main.cpp:39
 #, kde-format
 msgid "© 2020-2022 KDE Community"
 msgstr "© 2020-2022 La comunitat KDE"
 
-#: main.cpp:40
+#: main.cpp:41
 #, kde-format
 msgid "Jonah Brüchert"
 msgstr "Jonah Brüchert"
 
-#: main.cpp:41
+#: main.cpp:42
 #, kde-format
 msgid "Devin Lin"
 msgstr "Devin Lin"
-
-#: main.cpp:62
-#, kde-format
-msgid "Command to execute"
-msgstr "Ordre que s'ha d'executar"
-
-#: main.cpp:63
-#, kde-format
-msgid "Set the initial working directory to 'dir'"
-msgstr "Establix el directori de treball inicial a «dir»"
 
 #: terminaltabmodel.cpp:68
 #, kde-format
 msgid "Tab %1"
 msgstr "Pestanya %1"
+
+#~ msgid "Command to execute"
+#~ msgstr "Ordre que s'ha d'executar"

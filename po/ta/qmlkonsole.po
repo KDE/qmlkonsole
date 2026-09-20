@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qmlkonsole\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-07-20 00:46+0000\n"
+"POT-Creation-Date: 2026-09-20 00:48+0000\n"
 "PO-Revision-Date: 2025-04-13 18:17+0530\n"
 "Last-Translator: Kishore G <kishore96@gmail.com>\n"
 "Language-Team: Tamil <kde-i18n-doc@kde.org>\n"
@@ -26,6 +26,21 @@ msgstr "கோ. கிஷோர்"
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "Kde-l10n-ta@kde.org"
+
+#: commandline.cpp:11
+#, kde-format
+msgid "Execute the following command and arguments"
+msgstr ""
+
+#: commandline.cpp:12
+#, kde-format
+msgid "Command to execute, followed by its arguments"
+msgstr ""
+
+#: commandline.cpp:13
+#, kde-format
+msgid "Set the initial working directory to 'dir'"
+msgstr "துவக்க அடைவை 'dir' என்பதாக அமைக்கும்"
 
 #: contents/ui/main.qml:15
 #, kde-format
@@ -131,6 +146,24 @@ msgstr "பின்புலத்தை மங்கலாக்கு"
 #, kde-format
 msgid "Always Show Keyboard Modifier Buttons"
 msgstr "மாற்றிவிசை நிலைகாட்டிகளை எப்போதும் காட்டு"
+
+#: contents/ui/SettingsComponent.qml:268
+#, kde-format
+msgctxt "@title:group"
+msgid "Scrollback"
+msgstr ""
+
+#: contents/ui/SettingsComponent.qml:277
+#, kde-format
+msgctxt "@option:check"
+msgid "Unlimited scrollback"
+msgstr ""
+
+#: contents/ui/SettingsComponent.qml:298
+#, kde-format
+msgctxt "@label:spinbox"
+msgid "Scrollback lines"
+msgstr ""
 
 #: contents/ui/SettingsDialog.qml:17 contents/ui/SettingsPage.qml:16
 #: contents/ui/TerminalPage.qml:283
@@ -280,35 +313,28 @@ msgstr "தேர்வு பயன்முறை"
 msgid "Disable"
 msgstr "முடக்கு"
 
-#: main.cpp:38
+#: main.cpp:39
 #, kde-format
 msgid "© 2020-2022 KDE Community"
 msgstr "© 2020-2022 கே.டீ.யீ. சமூகம்"
 
-#: main.cpp:40
+#: main.cpp:41
 #, kde-format
 msgid "Jonah Brüchert"
 msgstr "ஜோனா புருச்செற்டு"
 
-#: main.cpp:41
+#: main.cpp:42
 #, kde-format
 msgid "Devin Lin"
 msgstr "டெவின் லின்"
-
-#: main.cpp:62
-#, kde-format
-msgid "Command to execute"
-msgstr "செயல்படுத்த வேண்டிய கட்டளை"
-
-#: main.cpp:63
-#, kde-format
-msgid "Set the initial working directory to 'dir'"
-msgstr "துவக்க அடைவை 'dir' என்பதாக அமைக்கும்"
 
 #: terminaltabmodel.cpp:68
 #, kde-format
 msgid "Tab %1"
 msgstr "கீற்று %1"
+
+#~ msgid "Command to execute"
+#~ msgstr "செயல்படுத்த வேண்டிய கட்டளை"
 
 #~ msgid "%1%"
 #~ msgstr "%1%"

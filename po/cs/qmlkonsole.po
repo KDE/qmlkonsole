@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qmlkonsole\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-07-20 00:46+0000\n"
+"POT-Creation-Date: 2026-09-20 00:48+0000\n"
 "PO-Revision-Date: 2026-08-27 09:49+0200\n"
 "Last-Translator: Libor Filipek <libor.filipek@gmail.com>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
@@ -27,6 +27,21 @@ msgstr "Vít Pelčák,Libor Filípek"
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "vit@pelcak.org,libor.filipek@gmail.com"
+
+#: commandline.cpp:11
+#, kde-format
+msgid "Execute the following command and arguments"
+msgstr ""
+
+#: commandline.cpp:12
+#, kde-format
+msgid "Command to execute, followed by its arguments"
+msgstr ""
+
+#: commandline.cpp:13
+#, kde-format
+msgid "Set the initial working directory to 'dir'"
+msgstr "Nastaví výchozí pracovní adresář na 'adresář'"
 
 #: contents/ui/main.qml:15
 #, kde-format
@@ -133,6 +148,24 @@ msgstr "Rozmazat pozadí"
 #, kde-format
 msgid "Always Show Keyboard Modifier Buttons"
 msgstr "Vždy zobrazovat tlačítka klávesových zkratek"
+
+#: contents/ui/SettingsComponent.qml:268
+#, kde-format
+msgctxt "@title:group"
+msgid "Scrollback"
+msgstr ""
+
+#: contents/ui/SettingsComponent.qml:277
+#, kde-format
+msgctxt "@option:check"
+msgid "Unlimited scrollback"
+msgstr ""
+
+#: contents/ui/SettingsComponent.qml:298
+#, kde-format
+msgctxt "@label:spinbox"
+msgid "Scrollback lines"
+msgstr ""
 
 #: contents/ui/SettingsDialog.qml:17 contents/ui/SettingsPage.qml:16
 #: contents/ui/TerminalPage.qml:283
@@ -281,32 +314,25 @@ msgstr "režim označování"
 msgid "Disable"
 msgstr "Zakázat"
 
-#: main.cpp:38
+#: main.cpp:39
 #, kde-format
 msgid "© 2020-2022 KDE Community"
 msgstr "© 2020-2022 Komunita KDE"
 
-#: main.cpp:40
+#: main.cpp:41
 #, kde-format
 msgid "Jonah Brüchert"
 msgstr "Jonah Brüchert"
 
-#: main.cpp:41
+#: main.cpp:42
 #, kde-format
 msgid "Devin Lin"
 msgstr "Devin Lin"
-
-#: main.cpp:62
-#, kde-format
-msgid "Command to execute"
-msgstr "Příkaz ke spuštění"
-
-#: main.cpp:63
-#, kde-format
-msgid "Set the initial working directory to 'dir'"
-msgstr "Nastaví výchozí pracovní adresář na 'adresář'"
 
 #: terminaltabmodel.cpp:68
 #, kde-format
 msgid "Tab %1"
 msgstr "Karta %1"
+
+#~ msgid "Command to execute"
+#~ msgstr "Příkaz ke spuštění"

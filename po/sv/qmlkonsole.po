@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qmlkonsole\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-07-20 00:46+0000\n"
+"POT-Creation-Date: 2026-09-20 00:48+0000\n"
 "PO-Revision-Date: 2025-04-03 22:41+0200\n"
 "Last-Translator: Stefan Asserhäll <stefan.asserhall@gmail.com>\n"
 "Language-Team: Swedish <kde-i18n-doc@kde.org>\n"
@@ -26,6 +26,21 @@ msgstr "Stefan Asserhäll"
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "stefan.asserhall@gmail.com"
+
+#: commandline.cpp:11
+#, kde-format
+msgid "Execute the following command and arguments"
+msgstr ""
+
+#: commandline.cpp:12
+#, kde-format
+msgid "Command to execute, followed by its arguments"
+msgstr ""
+
+#: commandline.cpp:13
+#, kde-format
+msgid "Set the initial working directory to 'dir'"
+msgstr "Ställ in ursprunglig arbetskatalog till 'kat'"
 
 #: contents/ui/main.qml:15
 #, kde-format
@@ -131,6 +146,24 @@ msgstr "Gör bakgrund suddig"
 #, kde-format
 msgid "Always Show Keyboard Modifier Buttons"
 msgstr "Visa alltid tangentbordsväljarknappar"
+
+#: contents/ui/SettingsComponent.qml:268
+#, kde-format
+msgctxt "@title:group"
+msgid "Scrollback"
+msgstr ""
+
+#: contents/ui/SettingsComponent.qml:277
+#, kde-format
+msgctxt "@option:check"
+msgid "Unlimited scrollback"
+msgstr ""
+
+#: contents/ui/SettingsComponent.qml:298
+#, kde-format
+msgctxt "@label:spinbox"
+msgid "Scrollback lines"
+msgstr ""
 
 #: contents/ui/SettingsDialog.qml:17 contents/ui/SettingsPage.qml:16
 #: contents/ui/TerminalPage.qml:283
@@ -285,35 +318,28 @@ msgstr "markeringsläge"
 msgid "Disable"
 msgstr "Inaktivera"
 
-#: main.cpp:38
+#: main.cpp:39
 #, kde-format
 msgid "© 2020-2022 KDE Community"
 msgstr "© 2020-2022 KDE-gemenskapen"
 
-#: main.cpp:40
+#: main.cpp:41
 #, kde-format
 msgid "Jonah Brüchert"
 msgstr "Jonah Brüchert"
 
-#: main.cpp:41
+#: main.cpp:42
 #, kde-format
 msgid "Devin Lin"
 msgstr "Devin Lin"
-
-#: main.cpp:62
-#, kde-format
-msgid "Command to execute"
-msgstr "Kommando att köra"
-
-#: main.cpp:63
-#, kde-format
-msgid "Set the initial working directory to 'dir'"
-msgstr "Ställ in ursprunglig arbetskatalog till 'kat'"
 
 #: terminaltabmodel.cpp:68
 #, kde-format
 msgid "Tab %1"
 msgstr "Flik %1"
+
+#~ msgid "Command to execute"
+#~ msgstr "Kommando att köra"
 
 #~ msgid "%1%"
 #~ msgstr "%1 %"

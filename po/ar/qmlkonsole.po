@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qmlkonsole\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-07-20 00:46+0000\n"
+"POT-Creation-Date: 2026-09-20 00:48+0000\n"
 "PO-Revision-Date: 2025-04-05 12:09+0400\n"
 "Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
 "Language-Team: ar\n"
@@ -27,6 +27,21 @@ msgstr "أحمد النجماوي"
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "iramosu@protonmail.com"
+
+#: commandline.cpp:11
+#, kde-format
+msgid "Execute the following command and arguments"
+msgstr ""
+
+#: commandline.cpp:12
+#, kde-format
+msgid "Command to execute, followed by its arguments"
+msgstr ""
+
+#: commandline.cpp:13
+#, kde-format
+msgid "Set the initial working directory to 'dir'"
+msgstr "عيّن دليل العمل الابتدائي إلى 'dir'"
 
 #: contents/ui/main.qml:15
 #, kde-format
@@ -132,6 +147,24 @@ msgstr "إعماء الخلفية"
 #, kde-format
 msgid "Always Show Keyboard Modifier Buttons"
 msgstr "أظهر أزرار تعديل لوحة المفاتيح دائمًا"
+
+#: contents/ui/SettingsComponent.qml:268
+#, kde-format
+msgctxt "@title:group"
+msgid "Scrollback"
+msgstr ""
+
+#: contents/ui/SettingsComponent.qml:277
+#, kde-format
+msgctxt "@option:check"
+msgid "Unlimited scrollback"
+msgstr ""
+
+#: contents/ui/SettingsComponent.qml:298
+#, kde-format
+msgctxt "@label:spinbox"
+msgid "Scrollback lines"
+msgstr ""
 
 #: contents/ui/SettingsDialog.qml:17 contents/ui/SettingsPage.qml:16
 #: contents/ui/TerminalPage.qml:283
@@ -280,32 +313,25 @@ msgstr "نمط الاختيار"
 msgid "Disable"
 msgstr "عطّل"
 
-#: main.cpp:38
+#: main.cpp:39
 #, kde-format
 msgid "© 2020-2022 KDE Community"
 msgstr "© 2020-2022 مجتمع كِيدِي"
 
-#: main.cpp:40
+#: main.cpp:41
 #, kde-format
 msgid "Jonah Brüchert"
 msgstr "جوناه بروكيرت"
 
-#: main.cpp:41
+#: main.cpp:42
 #, kde-format
 msgid "Devin Lin"
 msgstr "ديفين لين"
-
-#: main.cpp:62
-#, kde-format
-msgid "Command to execute"
-msgstr "الأمر لتنفيذه"
-
-#: main.cpp:63
-#, kde-format
-msgid "Set the initial working directory to 'dir'"
-msgstr "عيّن دليل العمل الابتدائي إلى 'dir'"
 
 #: terminaltabmodel.cpp:68
 #, kde-format
 msgid "Tab %1"
 msgstr "اللسان %1"
+
+#~ msgid "Command to execute"
+#~ msgstr "الأمر لتنفيذه"
