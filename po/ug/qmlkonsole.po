@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: qmlkonsole\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-09-20 00:48+0000\n"
-"PO-Revision-Date: 2026-06-01 18:36-0400\n"
+"PO-Revision-Date: 2026-09-22 18:03+0900\n"
 "Last-Translator: Abduqadir Abliz <sahranbay@gmail.com>\n"
 "Language-Team: Uyghur <kde-i18n-doc@kde.org>\n"
 "Language: ug\n"
@@ -80,7 +80,7 @@ msgstr ""
 #: contents/ui/SavedCommandsSettings.qml:96
 #, kde-format
 msgid "Add Command"
-msgstr ""
+msgstr "بۇيرۇق قوش"
 
 #: contents/ui/SavedCommandsSettings.qml:30
 #, kde-format
@@ -90,7 +90,7 @@ msgstr "تەھرىر"
 #: contents/ui/SavedCommandsSettings.qml:56
 #, kde-format
 msgid "Add command"
-msgstr ""
+msgstr "بۇيرۇق قوش"
 
 #: contents/ui/SavedCommandsSettings.qml:87
 #, kde-format
@@ -176,26 +176,26 @@ msgstr "تەڭشەك"
 #, kde-format
 msgctxt "Control Key (should match the key on the keyboard of the locale)"
 msgid "Ctrl"
-msgstr "Ctrl"
+msgstr ""
 
 #: contents/ui/TerminalKeyToolBar.qml:90
 #, kde-format
 msgctxt "Alt Key (should match the key on the keyboard of the locale)"
 msgid "Alt"
-msgstr "Alt"
+msgstr ""
 
 #: contents/ui/TerminalKeyToolBar.qml:106
 #, kde-format
 msgctxt "Escape key (should match the key on the keyboard of the locale)"
 msgid "Esc"
-msgstr "Esc"
+msgstr ""
 
 #: contents/ui/TerminalKeyToolBar.qml:113
 #, kde-format
 msgctxt ""
 "Tab character key (should match the key on the keyboard of the locale)"
 msgid "Tab"
-msgstr "Tab"
+msgstr ""
 
 #: contents/ui/TerminalKeyToolBar.qml:163
 #, kde-format
@@ -321,12 +321,12 @@ msgstr ""
 #: main.cpp:41
 #, kde-format
 msgid "Jonah Brüchert"
-msgstr "Jonah Brüchert"
+msgstr ""
 
 #: main.cpp:42
 #, kde-format
 msgid "Devin Lin"
-msgstr "Devin Lin"
+msgstr ""
 
 #: terminaltabmodel.cpp:68
 #, kde-format
