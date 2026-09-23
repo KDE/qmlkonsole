@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: qmlkonsole\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-09-20 00:48+0000\n"
-"PO-Revision-Date: 2025-06-30 15:24+0300\n"
+"PO-Revision-Date: 2026-09-22 21:55+0200\n"
 "Last-Translator: Alexander Yavorsky <kekcuha@gmail.com>\n"
 "Language-Team: Russian <kde-russian@lists.kde.ru>\n"
 "Language: ru\n"
@@ -32,12 +32,12 @@ msgstr "kekcuha@gmail.com, translation-team@basealt.ru"
 #: commandline.cpp:11
 #, kde-format
 msgid "Execute the following command and arguments"
-msgstr ""
+msgstr "Выполнить указанную команду с аргументами"
 
 #: commandline.cpp:12
 #, kde-format
 msgid "Command to execute, followed by its arguments"
-msgstr ""
+msgstr "Команда для выполнения и её аргументы"
 
 #: commandline.cpp:13
 #, kde-format
@@ -154,19 +154,19 @@ msgstr "Всегда показывать клавиши-модификатор�
 #, kde-format
 msgctxt "@title:group"
 msgid "Scrollback"
-msgstr ""
+msgstr "Журнал вывода"
 
 #: contents/ui/SettingsComponent.qml:277
 #, kde-format
 msgctxt "@option:check"
 msgid "Unlimited scrollback"
-msgstr ""
+msgstr "Сохранять весь вывод"
 
 #: contents/ui/SettingsComponent.qml:298
 #, kde-format
 msgctxt "@label:spinbox"
 msgid "Scrollback lines"
-msgstr ""
+msgstr "Строк в журнале вывода"
 
 #: contents/ui/SettingsDialog.qml:17 contents/ui/SettingsPage.qml:16
 #: contents/ui/TerminalPage.qml:283
