@@ -6,7 +6,7 @@ msgstr ""
 "Project-Id-Version: qmlkonsole\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-09-20 00:48+0000\n"
-"PO-Revision-Date: 2026-04-21 18:54+0200\n"
+"PO-Revision-Date: 2026-09-25 17:48+0200\n"
 "Last-Translator: Karl Ove Hufthammer <karl@huftis.org>\n"
 "Language-Team: Norwegian Nynorsk <l10n-no@nuug.no>\n"
 "Language: nn\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 25.12.3\n"
+"X-Generator: Lokalize 26.08.1\n"
 "X-Environment: kde\n"
 "X-Accelerator-Marker: &\n"
 "X-Text-Markup: kde4\n"
@@ -32,12 +32,12 @@ msgstr "karl@huftis.org"
 #: commandline.cpp:11
 #, kde-format
 msgid "Execute the following command and arguments"
-msgstr ""
+msgstr "Køyr følgjande kommando og argument"
 
 #: commandline.cpp:12
 #, kde-format
 msgid "Command to execute, followed by its arguments"
-msgstr ""
+msgstr "Kommando som skal køyrast, etterfølgd av eventuelle argument"
 
 #: commandline.cpp:13
 #, kde-format
@@ -116,7 +116,7 @@ msgstr "Utsjånad"
 #: contents/ui/SettingsComponent.qml:53
 #, kde-format
 msgid "Color scheme"
-msgstr "Fargeoppsett"
+msgstr "Fargetema"
 
 #: contents/ui/SettingsComponent.qml:69 contents/ui/SettingsComponent.qml:83
 #, kde-format
@@ -154,19 +154,19 @@ msgstr "Vis alltid knappar for spesialtastar"
 #, kde-format
 msgctxt "@title:group"
 msgid "Scrollback"
-msgstr ""
+msgstr "Rulleminne"
 
 #: contents/ui/SettingsComponent.qml:277
 #, kde-format
 msgctxt "@option:check"
 msgid "Unlimited scrollback"
-msgstr ""
+msgstr "Uavgrensa rulleminne"
 
 #: contents/ui/SettingsComponent.qml:298
 #, kde-format
 msgctxt "@label:spinbox"
 msgid "Scrollback lines"
-msgstr ""
+msgstr "Linjer rulleminne"
 
 #: contents/ui/SettingsDialog.qml:17 contents/ui/SettingsPage.qml:16
 #: contents/ui/TerminalPage.qml:283
