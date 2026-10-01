@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: qmlkonsole\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-09-20 00:48+0000\n"
-"PO-Revision-Date: 2026-09-22 00:21+0900\n"
+"PO-Revision-Date: 2026-10-01 01:05+0900\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Traditional Chinese <zh-l10n@lists.slat.org>\n"
 "Language: zh_TW\n"
@@ -154,19 +154,19 @@ msgstr "總是顯示鍵盤修飾鍵按鈕"
 #, kde-format
 msgctxt "@title:group"
 msgid "Scrollback"
-msgstr ""
+msgstr "回捲歷史"
 
 #: contents/ui/SettingsComponent.qml:277
 #, kde-format
 msgctxt "@option:check"
 msgid "Unlimited scrollback"
-msgstr ""
+msgstr "無限回捲歷史"
 
 #: contents/ui/SettingsComponent.qml:298
 #, kde-format
 msgctxt "@label:spinbox"
 msgid "Scrollback lines"
-msgstr ""
+msgstr "回捲歷史行數"
 
 #: contents/ui/SettingsDialog.qml:17 contents/ui/SettingsPage.qml:16
 #: contents/ui/TerminalPage.qml:283
