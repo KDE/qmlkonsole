@@ -29,12 +29,12 @@ msgstr "wizzardsk@gmail.com"
 #: commandline.cpp:11
 #, kde-format
 msgid "Execute the following command and arguments"
-msgstr ""
+msgstr "Spustiť nasledujúci príkaz a argumenty"
 
 #: commandline.cpp:12
 #, kde-format
 msgid "Command to execute, followed by its arguments"
-msgstr ""
+msgstr "Príkaz na spustenie, nasledovaný jeho argumentmi"
 
 #: commandline.cpp:13
 #, kde-format
@@ -151,19 +151,19 @@ msgstr "Vždy zobraziť tlačidlá modifikátorov klávesnice"
 #, kde-format
 msgctxt "@title:group"
 msgid "Scrollback"
-msgstr ""
+msgstr "História posúvania"
 
 #: contents/ui/SettingsComponent.qml:277
 #, kde-format
 msgctxt "@option:check"
 msgid "Unlimited scrollback"
-msgstr ""
+msgstr "Neobmedzená história posúvania"
 
 #: contents/ui/SettingsComponent.qml:298
 #, kde-format
 msgctxt "@label:spinbox"
 msgid "Scrollback lines"
-msgstr ""
+msgstr "Riadky histórie posúvania"
 
 #: contents/ui/SettingsDialog.qml:17 contents/ui/SettingsPage.qml:16
 #: contents/ui/TerminalPage.qml:283
