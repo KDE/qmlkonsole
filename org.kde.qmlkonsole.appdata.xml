@@ -285,6 +285,7 @@
           <li xml:lang="cs">Oprava nefunkčních tlačítek na liště a na panelu nástrojů</li>
           <li xml:lang="es">Se han corregido la barra y los botones de la barra de herramientas de tilde que no funcionaban.</li>
           <li xml:lang="eu">Tresna-barrako barra eta tilde botoiak ez ibiltzearen arazoa konpondu da</li>
+          <li xml:lang="fi">Korjattu |- ja ~-työkalurivipainikkeiden toimimattomuus</li>
           <li xml:lang="fr">Correction des boutons de la barre d'outils « Barre » et « Tilde » ne fonctionnant pas</li>
           <li xml:lang="he">תוקנו כפתורי הסרגל והטילדה בסרגל העלים שלא עבדו</li>
           <li xml:lang="hu">A rögzített sáv és a tilde eszköztár gombjai nem működtek</li>
@@ -312,6 +313,7 @@
           <li xml:lang="cs">Obecná vylepšení uživatelského rozhraní</li>
           <li xml:lang="es">Mejoras generales de la interfaz de usuario.</li>
           <li xml:lang="eu">Erabiltzaile-interfazearen hobekuntza orokorrak</li>
+          <li xml:lang="fi">Yleisiä käyttöliittymäparannuksia</li>
           <li xml:lang="fr">Améliorations générales de l'interface utilisateur</li>
           <li xml:lang="he">שיפור ממשק משתמש כלליים</li>
           <li xml:lang="hu">Általános fejlesztések a felhasználói felületen</li>
@@ -349,6 +351,7 @@
           <li xml:lang="cs">Opravena podpora modifikačních kláves, jako jsou Alt a Ctrl</li>
           <li xml:lang="es">Se ha corregido la compatibilidad con teclas modificadoras, como Alt y Ctrl</li>
           <li xml:lang="eu">Alt eta Ktrl gisako tekla aldatzaileetarako euskarria hobetu da</li>
+          <li xml:lang="fi">Korjattu Alt- ja Ctrl-tyyppisten muunnosnäppäinten tuki</li>
           <li xml:lang="fr">Correction de la prise en charge des touches modificatrices comme « ALT » et « CTRL »</li>
           <li xml:lang="he">תוקנה התמיכה במקשי החלפה כמו Alt ו־Ctrl</li>
           <li xml:lang="hu">A módosító billentyűk, például az Alt és a Ctrl támogatásának javítása</li>
@@ -376,6 +379,7 @@
           <li xml:lang="cs">Přepis kódu a obecná vylepšení uživatelského rozhraní</li>
           <li xml:lang="es">Refactorización del código y mejoras generales de la interfaz de usuario.</li>
           <li xml:lang="eu">Kodearen berrantolaketa eta erabiltzaile-interfazearen hobekuntza orokorrak</li>
+          <li xml:lang="fi">Koodiuudistuksia ja yleisiä käyttöliittymäparannuksia</li>
           <li xml:lang="fr">Ré-organisation du code et améliorations générales de l'interface utilisateur</li>
           <li xml:lang="he">שכתוב קוד ושיפורי ממשק משתמשים כלליים</li>
           <li xml:lang="hu">Kódrefaktorálás és általános fejlesztések a felhasználói felületen</li>
@@ -410,6 +414,7 @@
           <li xml:lang="cs">Umístěno více akčních tlačítek na panel nástrojů</li>
           <li xml:lang="es">Permitir más botones de acción en la barra de herramientas.</li>
           <li xml:lang="eu">Tresna-barran ekintza-botoi gehiago sartzen dira</li>
+          <li xml:lang="fi">Sovitettu työkaluriville lisää toimintopainikkeita</li>
           <li xml:lang="fr">Afficher plus de boutons d'actions dans la barre d'outils</li>
           <li xml:lang="he">להכניס יותר כפתורי פעולה בסרגל הכלים</li>
           <li xml:lang="hu">Több műveletgomb elhelyezése az eszköztáron</li>
@@ -438,6 +443,7 @@
           <li xml:lang="cs">Přepracované rozložení panelů nástrojů a přidání podpory záložek</li>
           <li xml:lang="es">Reajuste de los diseños de las barras de herramientas y compatibilidad con pestañas.</li>
           <li xml:lang="eu">Tresna-barren antolaerak berrantolatu dira eta fitxen euskarria gehitu da</li>
+          <li xml:lang="fi">Työstetty työkalurivien asettelu uudelleen ja lisätty välilehtituki</li>
           <li xml:lang="fr">Réorganisation des dispositions de la barre d'outils et ajout de la prise en charge des onglets</li>
           <li xml:lang="he">עבודה מחדש על פריסות סרגל הכלים ותמיכה בהוספת לשוניות</li>
           <li xml:lang="hu">Eszköztár elrendezésének átalakítása és lapok támogatásának hozzáadása</li>
@@ -465,6 +471,7 @@
           <li xml:lang="cs">Přidáno potvrzovací dialogové okno pro zavření karty</li>
           <li xml:lang="es">Se ha añadido un diálogo de confirmación para cerrar pestañas.</li>
           <li xml:lang="eu">Fitxa ixteko berrespen elkarrizketa-koadroa gehitu da</li>
+          <li xml:lang="fi">Lisätty vahvistusikkuna välilehden sulkemisesta</li>
           <li xml:lang="fr">Ajouter une boite de dialogue de confirmation pour la fermeture d'onglet</li>
           <li xml:lang="he">נוספה חלונית אישור לסגירת לשוניות</li>
           <li xml:lang="hu">Lap bezárásához megerősítő párbeszédablak hozzáadása</li>
@@ -503,6 +510,7 @@
         <p xml:lang="cs">Plasma Mobile Gear 21.06</p>
         <p xml:lang="es">Plasma Mobile Gear 21.06</p>
         <p xml:lang="eu">Plasma Mobile Gear 21.06</p>
+        <p xml:lang="fi">Plasma Mobile Gear 21.06</p>
         <p xml:lang="fr">Plasma Mobile Gear 21.06</p>
         <p xml:lang="he">Plasma Mobile Gear 21.06</p>
         <p xml:lang="hu">Plasma Mobile Gear 21.06</p>
@@ -531,6 +539,7 @@
           <li xml:lang="cs">buildsystem: vyhledávání pro qmltermwidget</li>
           <li xml:lang="es">buildsystem: búsqueda de qmltermwidget.</li>
           <li xml:lang="eu">eraikitze-sistema: qmltermwidget bilatzen du</li>
+          <li xml:lang="fi">koostamisjärjestelmä: etsitään qmltermwidgetiä</li>
           <li xml:lang="fr">buildsystem : recherche de qmltermwidget</li>
           <li xml:lang="he">מערכת הבנייה: חיפוש אחר qmltermwidget</li>
           <li xml:lang="hu">buildsystem: qmltermwidget keresése</li>
