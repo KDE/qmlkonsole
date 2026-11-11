@@ -316,6 +316,7 @@
           <li xml:lang="ca">Millores generals en la interfície d'usuari</li>
           <li xml:lang="ca-valencia">Millores generals en la interfície d'usuari</li>
           <li xml:lang="cs">Obecná vylepšení uživatelského rozhraní</li>
+          <li xml:lang="de">Generelle Verbesserungen der Benutzeroberfläche</li>
           <li xml:lang="es">Mejoras generales de la interfaz de usuario.</li>
           <li xml:lang="eu">Erabiltzaile-interfazearen hobekuntza orokorrak</li>
           <li xml:lang="fi">Yleisiä käyttöliittymäparannuksia</li>
@@ -384,6 +385,7 @@
           <li xml:lang="ca">Reestructuració de codi i millores generals en la interfície d'usuari</li>
           <li xml:lang="ca-valencia">Reestructuració de codi i millores generals en la interfície d'usuari</li>
           <li xml:lang="cs">Přepis kódu a obecná vylepšení uživatelského rozhraní</li>
+          <li xml:lang="de">Programmcode-Umstrukturierung und generelle Verbesserungen der Benutzeroberfläche</li>
           <li xml:lang="es">Refactorización del código y mejoras generales de la interfaz de usuario.</li>
           <li xml:lang="eu">Kodearen berrantolaketa eta erabiltzaile-interfazearen hobekuntza orokorrak</li>
           <li xml:lang="fi">Koodiuudistuksia ja yleisiä käyttöliittymäparannuksia</li>
@@ -478,6 +480,7 @@
           <li xml:lang="ca">Afegeix un diàleg de confirmació per a tancar la pestanya</li>
           <li xml:lang="ca-valencia">Afig un diàleg de confirmació per a tancar la pestanya</li>
           <li xml:lang="cs">Přidáno potvrzovací dialogové okno pro zavření karty</li>
+          <li xml:lang="de">Bestätigungsdialog beim Schließen von Unterfenstern hinzugefügt</li>
           <li xml:lang="es">Se ha añadido un diálogo de confirmación para cerrar pestañas.</li>
           <li xml:lang="eu">Fitxa ixteko berrespen elkarrizketa-koadroa gehitu da</li>
           <li xml:lang="fi">Lisätty vahvistusikkuna välilehden sulkemisesta</li>
@@ -518,6 +521,7 @@
         <p xml:lang="ca">Plasma Mobile Gear 21.06</p>
         <p xml:lang="ca-valencia">Plasma Mobile Gear 21.06</p>
         <p xml:lang="cs">Plasma Mobile Gear 21.06</p>
+        <p xml:lang="de">Plasma Mobile Gear 21.06</p>
         <p xml:lang="es">Plasma Mobile Gear 21.06</p>
         <p xml:lang="eu">Plasma Mobile Gear 21.06</p>
         <p xml:lang="fi">Plasma Mobile Gear 21.06</p>
