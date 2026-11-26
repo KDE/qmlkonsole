@@ -14,8 +14,8 @@ msgstr ""
 "X-Crowdin-Project: kdeorg\n"
 "X-Crowdin-Project-ID: 269464\n"
 "X-Crowdin-Language: zh-CN\n"
-"X-Crowdin-File: /kf6-trunk/messages/qmlkonsole/qmlkonsole.pot\n"
-"X-Crowdin-File-ID: 46774\n"
+"X-Crowdin-File: /kf6-stable/messages/qmlkonsole/qmlkonsole.pot\n"
+"X-Crowdin-File-ID: 52960\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -30,12 +30,12 @@ msgstr "i@guoyunhe.me, tds00@qq.com"
 #: commandline.cpp:11
 #, kde-format
 msgid "Execute the following command and arguments"
-msgstr ""
+msgstr "执行以下命令和参数"
 
 #: commandline.cpp:12
 #, kde-format
 msgid "Command to execute, followed by its arguments"
-msgstr ""
+msgstr "要执行的命令，后跟其参数"
 
 #: commandline.cpp:13
 #, kde-format
@@ -151,19 +151,19 @@ msgstr "总是显示键盘修饰键按钮"
 #, kde-format
 msgctxt "@title:group"
 msgid "Scrollback"
-msgstr ""
+msgstr "回滚"
 
 #: contents/ui/SettingsComponent.qml:277
 #, kde-format
 msgctxt "@option:check"
 msgid "Unlimited scrollback"
-msgstr ""
+msgstr "无限回滚"
 
 #: contents/ui/SettingsComponent.qml:298
 #, kde-format
 msgctxt "@label:spinbox"
 msgid "Scrollback lines"
-msgstr ""
+msgstr "回滚行数"
 
 #: contents/ui/SettingsDialog.qml:17 contents/ui/SettingsPage.qml:16
 #: contents/ui/TerminalPage.qml:283
@@ -331,6 +331,3 @@ msgstr "Devin Lin"
 #, kde-format
 msgid "Tab %1"
 msgstr "标签页 %1"
-
-#~ msgid "Command to execute"
-#~ msgstr "要执行的命令"
